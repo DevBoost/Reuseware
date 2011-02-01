@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>reuseware</UCPI>
+  <UCPI>test</UCPI>
+  <UCPI>basic</UCPI>
+  <UCPI>valueHookContribution</UCPI>
+  <UCPI>composition.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='B.ecore']/@portInstances[portName='value_prototype',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='A.ecore']/@portInstances[portName='value_hook',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <fragmentInstances name="A.ecore" targetPhysicalLocation="../out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>valueHookContribution</UFI>
+    <UFI>A.ecore</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="value_hook" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <settings property=""/>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="value_prototype">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>valueHookContribution</targetUFI>
+    <targetUFI>composedA.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="B.ecore" targetPhysicalLocation="../out">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>valueHookContribution</UFI>
+    <UFI>B.ecore</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="value_hook">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <settings property=""/>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="value_prototype" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>valueHookContribution</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>B.ecore</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

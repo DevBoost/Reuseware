@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: All
+Bundle-SymbolicName: org.reuseware.sokan.test.all
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.junit4,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.reuseware.sokan.index.solr,
+ org.reuseware.sokan.test.index,
+ org.reuseware.sokan.test.indexer,
+ org.reuseware.sokan.test.misc,
+ org.reuseware.sokan.test.exampleindexer
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

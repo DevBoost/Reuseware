@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example Extensions
+Bundle-SymbolicName: org.reuseware.sokan.test.exampleindexer;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ org.reuseware.sokan.index,
+ org.eclipse.core.resources
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: 
+ org.reuseware.sokan.test.exampleindexer.emodeler,
+ org.reuseware.sokan.test.exampleindexer.indexer,
+ org.reuseware.sokan.test.exampleindexer.persister

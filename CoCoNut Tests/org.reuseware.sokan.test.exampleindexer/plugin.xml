@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.reuseware.sokan.index">
+      <indexer
+            class="org.reuseware.sokan.test.exampleindexer.indexer.FacetIndexer"
+            id="org.reuseware.sokan.test.exampleindexer.indexer.FacetIndexer">
+         <dependsOn
+               indexerID="org.reuseware.sokan.test.exampleindexer.indexer.DependentIndexer">
+         </dependsOn>
+      </indexer>
+      <indexer
+            class="org.reuseware.sokan.test.exampleindexer.indexer.ReuseIndexer"
+            id="org.reuseware.sokan.test.exampleindexer.indexer.ReuseIndexer">
+      </indexer>
+      <indexer
+            class="org.reuseware.sokan.test.exampleindexer.indexer.DependentIndexer"
+            id="org.reuseware.sokan.test.exampleindexer.indexer.DependentIndexer">
+         <dependsOn
+            indexerID="org.reuseware.sokan.test.exampleindexer.indexer.ReuseIndexer">
+         </dependsOn>
+      </indexer>
+      <eModeler
+            class="org.reuseware.sokan.test.exampleindexer.emodeler.TestEModeler">
+       </eModeler>
+   </extension>
+   <extension
+         point="org.reuseware.sokan.index">
+      <indexer
+            class="org.reuseware.sokan.test.exampleindexer.indexer.GeneratingIndexer"
+            id="org.reuseware.sokan.test.exampleindexer.indexer.GeneratingIndexer">
+      </indexer>
+   </extension>
+
+</plugin>

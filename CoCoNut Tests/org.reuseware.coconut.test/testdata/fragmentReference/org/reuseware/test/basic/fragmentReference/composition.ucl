@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  
+    <UCPI>org</UCPI>
+    <UCPI>reuseware</UCPI>
+    <UCPI>test</UCPI>
+    <UCPI>basic</UCPI>
+    <UCPI>fragmentReference</UCPI>
+    <UCPI>composition.ucl</UCPI>
+  
+  <compositionLinks source="//@fragmentInstances[name='opB.ecore2']/@portInstances[portName='Contrib',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']" target="//@fragmentInstances[name='noReference']/@portInstances[portName='Rec',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']"/>
+  <compositionLinks source="//@fragmentInstances[name='typeA.ecore']/@portInstances[portName='Contrib',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']" target="//@fragmentInstances[name='noReference']/@portInstances[portName='Rec',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']"/>
+  <compositionLinks source="//@fragmentInstances[name='typeA.ecore']/@portInstances[portName='Type',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']" target="//@fragmentInstances[name='opB.ecore2']/@portInstances[portName='TypeSlot',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']"/>
+  <compositionLinks source="//@fragmentInstances[name='opB.ecore']/@portInstances[portName='TypeSlot',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']" target="//@fragmentInstances[name='typeA.ecore2']/@portInstances[portName='Type',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']"/>
+  <compositionLinks source="//@fragmentInstances[name='opB.ecore']/@portInstances[portName='Contrib',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']" target="//@fragmentInstances[name='withReference']/@portInstances[portName='Rec',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']"/>
+  <fragmentInstances targetPhysicalLocation="../out" name="opB.ecore">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>fragmentReference</UFI>
+    <UFI>opB.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Contrib" sourceLinks="//@compositionLinks.4">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="TypeSlot" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="Type">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>fragmentReference</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>opB.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances targetPhysicalLocation="../out" name="typeA.ecore">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>fragmentReference</UFI>
+    <UFI>typeA.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Contrib" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="Type" sourceLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>fragmentReference</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>typeA.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances targetPhysicalLocation="../out" name="noReference" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>fragmentReference</UFI>
+    <UFI>rec.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Rec" targetLinks="//@compositionLinks.0 //@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>fragmentReference</targetUFI>
+    <targetUFI>noReference.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances targetPhysicalLocation="../out" name="typeA.ecore2" reference="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>fragmentReference</UFI>
+    <UFI>typeA.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Contrib">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="Type" targetLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>fragmentReference</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>typeA.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances targetPhysicalLocation="../out" name="opB.ecore2">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>fragmentReference</UFI>
+    <UFI>opB.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Contrib" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="TypeSlot" targetLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="Type">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>fragmentReference</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>opB.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances targetPhysicalLocation="../out" name="withReference" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>fragmentReference</UFI>
+    <UFI>rec.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Rec" targetLinks="//@compositionLinks.4">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>fragmentReference</targetUFI>
+    <targetUFI>withReference.ecore</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

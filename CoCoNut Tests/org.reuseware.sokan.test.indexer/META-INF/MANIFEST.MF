@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Indexer
+Bundle-SymbolicName: org.reuseware.sokan.test.indexer;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.junit4,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.reuseware.sokan.test;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.sokan.test.indexer.complex,
+ org.reuseware.sokan.test.indexer.list,
+ org.reuseware.sokan.test.indexer.loop,
+ org.reuseware.sokan.test.indexer.tests,
+ org.reuseware.sokan.test.indexer.tree,
+ org.reuseware.sokan.test.indexer.trivial

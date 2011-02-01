@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_SjFMwNxVEd-zJb7YdWQahw" type="Compositionprogram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_TetukNxVEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TetuldxVEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_Te3fkNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Te4GoNxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Te4GodxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Te3fkdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Te3fktxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Te3fk9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']/@portInstances[portName='p',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Te3flNxVEd-zJb7YdWQahw" x="-19" y="54"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Te4tsNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Te4ttdxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Te4tttxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Te4tsdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Te4tstxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Te4ts9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']/@portInstances[portName='s_SLOT',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Te4ttNxVEd-zJb7YdWQahw" x="36" y="79"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Te5UwNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Te570NxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Te570dxVEd-zJb7YdWQahw" x="-12" y="1"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Te5UwdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Te5UwtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Te5Uw9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']/@portInstances[portName='h',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Te5UxNxVEd-zJb7YdWQahw" x="9" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Te6i4NxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Te6i5dxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Te6i5txVEd-zJb7YdWQahw" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Te6i4dxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Te6i4txVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Te6i49xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']/@portInstances[portName='s_A',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Te6i5NxVEd-zJb7YdWQahw" x="60" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Te7J8NxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Te7xANxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Te7xAdxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Te7J8dxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Te7J8txVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Te7J89xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']/@portInstances[portName='a_A',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Te7J9NxVEd-zJb7YdWQahw" x="80" y="36"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Te8YENxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Te8YFdxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Te8YFtxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Te8YEdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Te8YEtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Te8YE9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']/@portInstances[portName='a_SLOT',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Te8YFNxVEd-zJb7YdWQahw" x="80" y="8"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_TetukdxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_TetuktxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_Tetuk9xVEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="composition.ucl#//@fragmentInstances[name='A.ecore']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TetulNxVEd-zJb7YdWQahw" x="261" y="162"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TeuVoNxVEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TeuVpdxVEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_TfejkNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TffKoNxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TffKodxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_TfejkdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_TfejktxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Tfejk9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='B.ecore']/@portInstances[portName='p',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TfejlNxVEd-zJb7YdWQahw" x="-19" y="27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_TffxsNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TfgYwNxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TfgYwdxVEd-zJb7YdWQahw" x="24" y="1"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_TffxsdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_TffxstxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Tffxs9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='B.ecore']/@portInstances[portName='a_B',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TffxtNxVEd-zJb7YdWQahw" x="27" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Tfg_0NxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Tfg_1dxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Tfg_1txVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Tfg_0dxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Tfg_0txVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Tfg_09xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='B.ecore']/@portInstances[portName='h',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tfg_1NxVEd-zJb7YdWQahw" x="79" y="27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Tfhm4NxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TfiN8NxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TfiN8dxVEd-zJb7YdWQahw" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Tfhm4dxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Tfhm4txVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Tfhm49xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='B.ecore']/@portInstances[portName='s_B',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tfhm5NxVEd-zJb7YdWQahw" x="27" y="70"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_TeuVodxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_TeuVotxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_TeuVo9xVEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="composition.ucl#//@fragmentInstances[name='B.ecore']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeuVpNxVEd-zJb7YdWQahw" x="270" y="342" height="71"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Teu8sNxVEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Teu8tdxVEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_Tg9xUNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Tg-YYNxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Tg-YYdxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Tg9xUdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Tg9xUtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Tg9xU9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='CORE.ecore']/@portInstances[portName='h',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tg9xVNxVEd-zJb7YdWQahw" x="105" y="54"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Tg-_cNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Tg-_ddxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Tg-_dtxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Tg-_cdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Tg-_ctxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Tg-_c9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='CORE.ecore']/@portInstances[portName='p',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Tg-_dNxVEd-zJb7YdWQahw" x="18" y="79"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Teu8sdxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Teu8stxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_Teu8s9xVEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="composition.ucl#//@fragmentInstances[name='CORE.ecore']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Teu8tNxVEd-zJb7YdWQahw" x="18" y="162"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TevjwNxVEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TevjxdxVEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_ThPeINxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ThQFMNxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ThQFMdxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ThPeIdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ThPeItxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_ThPeI9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='CORE.ecore2']/@portInstances[portName='h',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ThPeJNxVEd-zJb7YdWQahw" x="113" y="27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ThQsQNxVEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ThQsRdxVEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ThQsRtxVEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ThQsQdxVEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ThQsQtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_ThQsQ9xVEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="composition.ucl#//@fragmentInstances[name='CORE.ecore2']/@portInstances[portName='p',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ThQsRNxVEd-zJb7YdWQahw" x="18" y="70"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_TevjwdxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_TevjwtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_Tevjw9xVEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="composition.ucl#//@fragmentInstances[name='CORE.ecore2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TevjxNxVEd-zJb7YdWQahw" x="18" y="342" height="71"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_SjFMwdxVEd-zJb7YdWQahw"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="composition.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_ThvNYNxVEd-zJb7YdWQahw" type="4001" source="_TfejkNxVEd-zJb7YdWQahw" target="_ThPeINxVEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_ThvNYdxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ThvNYtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="composition.ucl#//@compositionLinks.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ThvNY9xVEd-zJb7YdWQahw" points="[42, 89, -20, -51]$[108, 149, 46, 9]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Th0F4NxVEd-zJb7YdWQahw" type="4001" source="_Te3fkNxVEd-zJb7YdWQahw" target="_Tg9xUNxVEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Th0F4dxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Th0F4txVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="composition.ucl#//@compositionLinks.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Th0F49xVEd-zJb7YdWQahw" points="[-10, -1, 129, -74]$[-139, -9, 0, -82]$[-139, 63, 0, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Th4XUNxVEd-zJb7YdWQahw" type="4001" source="_TffxsNxVEd-zJb7YdWQahw" target="_Te4tsNxVEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Th4XUdxVEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Th4XUtxVEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="composition.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Th4XU9xVEd-zJb7YdWQahw" points="[35, 69, 114, -71]$[-30, 129, 49, -11]"/>
+  </edges>
+</notation:Diagram>

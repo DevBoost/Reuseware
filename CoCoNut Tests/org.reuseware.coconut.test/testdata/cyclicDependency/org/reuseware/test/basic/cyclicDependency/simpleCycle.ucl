@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>reuseware</UCPI>
+  <UCPI>test</UCPI>
+  <UCPI>basic</UCPI>
+  <UCPI>cyclicDependency</UCPI>
+  <UCPI>simpleCycle.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='cyclicDependencyComposed.ecore']/@portInstances[portName='p',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='cyclicDependency.ecore']/@portInstances[portName='h',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <fragmentInstances name="cyclicDependency.ecore" targetPhysicalLocation="../out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>cyclicDependency</UFI>
+    <UFI>cyclicDependency.ecore</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="h" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="p">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>cyclicDependency</targetUFI>
+    <targetUFI>cyclicDependencyComposed.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="cyclicDependencyComposed.ecore" targetPhysicalLocation="../out">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>cyclicDependency</UFI>
+    <UFI>cyclicDependencyComposed.ecore</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="p" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="h">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>cyclicDependency</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>cyclicDependencyComposed.ecore</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

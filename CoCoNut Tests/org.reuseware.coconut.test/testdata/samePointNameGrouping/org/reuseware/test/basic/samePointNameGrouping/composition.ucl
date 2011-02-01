@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  
+    <UCPI>org</UCPI>
+    <UCPI>reuseware</UCPI>
+    <UCPI>test</UCPI>
+    <UCPI>basic</UCPI>
+    <UCPI>samePointNameGrouping</UCPI>
+    <UCPI>composition.ucl</UCPI>
+  
+  <compositionLinks source="//@fragmentInstances[name='Contrib.ecore']/@portInstances[portName='Contrib',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']" target="//@fragmentInstances[name='Rec.ecore']/@portInstances[portName='Rec',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems'],fracolName='default.fracol']"/>
+  <fragmentInstances targetPhysicalLocation="../out" name="Contrib.ecore">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>samePointNameGrouping</UFI>
+    <UFI>Contrib.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Contrib" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="Rec">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>samePointNameGrouping</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>Contrib.ecore</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances targetPhysicalLocation="../out" name="Rec.ecore" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>samePointNameGrouping</UFI>
+    <UFI>Rec.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="Rec" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="Contrib">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>samePointNameGrouping</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>Rec.ecore</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

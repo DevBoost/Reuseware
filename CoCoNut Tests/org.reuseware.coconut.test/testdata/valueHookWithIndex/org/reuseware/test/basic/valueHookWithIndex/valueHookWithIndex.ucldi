@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_NxhagERXEd6MI-o-xNSGpA" type="Compositionprogram" name="valueHookWithIndex.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_O6DI0ERXEd6MI-o-xNSGpA" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_O6J2gERXEd6MI-o-xNSGpA" type="5002"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_O6DI0URXEd6MI-o-xNSGpA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="valueHookWithIndex.ucl#//@fragmentInstances[name='valueHookWithIndex.ecore'"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O6DI0kRXEd6MI-o-xNSGpA" x="54" y="45"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_NxhagURXEd6MI-o-xNSGpA"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="valueHookWithIndex.ucl#/"/>
+</notation:Diagram>

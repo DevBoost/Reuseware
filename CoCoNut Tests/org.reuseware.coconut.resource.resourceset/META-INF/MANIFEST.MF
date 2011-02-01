@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Filebased
+Bundle-SymbolicName: org.reuseware.coconut.resource.resourceset;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ org.reuseware.coconut.resource,
+ org.reuseware.coconut.fracol,
+ org.reuseware.coconut.reuseextension,
+ org.reuseware.coconut.reuseextensionactivator,
+ org.reuseware.coconut.fragment,
+ org.reuseware.coconut.compositionprogram,
+ org.reuseware.coconut.compositionprogram.resource.ucl,
+ org.eclipse.emf.ecore.xmi
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.resource.resourceset

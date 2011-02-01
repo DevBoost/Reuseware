@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Index
+Bundle-SymbolicName: org.reuseware.sokan.test.index;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.junit4,
+ org.junit,
+ org.reuseware.sokan.index.solr,
+ org.reuseware.sokan.test;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.sokan.test.index.emodeler,
+ org.reuseware.sokan.test.index.indexer,
+ org.reuseware.sokan.test.index.tests

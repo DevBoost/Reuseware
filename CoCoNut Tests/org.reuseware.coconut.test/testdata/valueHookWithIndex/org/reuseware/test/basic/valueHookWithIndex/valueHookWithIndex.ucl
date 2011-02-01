@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  
+    <UCPI>org</UCPI>
+    <UCPI>reuseware</UCPI>
+    <UCPI>test</UCPI>
+    <UCPI>basic</UCPI>
+    <UCPI>valueHookWithIndex</UCPI>
+    <UCPI>valueHookWithIndex.ucl</UCPI>
+  
+  <fragmentInstances targetPhysicalLocation="../out" name="valueHookWithIndex.ecore" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>test</UFI>
+    <UFI>basic</UFI>
+    <UFI>valueHookWithIndex</UFI>
+    <UFI>valueHookWithIndex.ecore</UFI>
+    <portInstances fragmentRoleName="Default" portName="hook">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolName>default.fracol</fracolName>
+      <settings property="" value="TEST"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>test</targetUFI>
+    <targetUFI>basic</targetUFI>
+    <targetUFI>valueHookWithIndex</targetUFI>
+    <targetUFI>valueHookWithIndexComposed.ecore</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>
