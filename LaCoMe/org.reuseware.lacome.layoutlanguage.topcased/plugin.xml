@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+	<extension
+         point="org.reuseware.lacome.sourceDiagramInformationProvider">
+		<provider
+            provider="org.reuseware.lacome.layoutlanguage.topcased.TopcasedSourceDiagramInformationProvider">
+		</provider>
+	</extension>
+	
+ <extension
+       point="org.reuseware.lacome.diagramMerger">
+    <merger
+          id="org.reuseware.lacome.layoutlanguage.topcased.TopcasedMerger"
+          merger="org.reuseware.lacome.layoutlanguage.topcased.TopcasedMerger">
+    </merger>
+ </extension>
+   
+	<extension
+         point="org.reuseware.lacome.diagramAligner">
+		<aligner
+            aligner="org.reuseware.lacome.layoutlanguage.topcased.TopcasedAligner">
+		</aligner>
+	</extension>
+
+</plugin>

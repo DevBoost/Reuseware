@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   <extension-point id="diagramCompositionStrategy" name="Diagram Composition Strategy" schema="schema/diagramCompositionStrategy.exsd"/>
+   <extension-point id="diagramMerger" name="Diagram Merger" schema="schema/diagramMerger.exsd"/>
+   <extension-point id="diagramArranger" name="Diagram Arranger" schema="schema/diagramArranger.exsd"/>
+   <extension-point id="sourceDiagramInformationProvider" name="Source Diagram Information Provider" schema="schema/sourceDiagramInformationProvider.exsd"/>
+   <extension-point id="targetDiagramInformationProvider" name="Target Diagram Information Provider" schema="schema/targetDiagramInformationProvider.exsd"/>
+   <extension-point id="diagramAligner" name="Diagram Aligner" schema="schema/diagramAligner.exsd"/>
+
+</plugin>

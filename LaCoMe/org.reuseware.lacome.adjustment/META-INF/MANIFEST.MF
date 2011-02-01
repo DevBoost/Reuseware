@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Adjustment
+Bundle-SymbolicName: org.reuseware.lacome.adjustment;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.emf.ecore,
+ org.reuseware.lacome
+Bundle-ActivationPolicy: lazy
+Export-Package: org.reuseware.lacome.adjustment.arranger,
+ org.reuseware.lacome.adjustment.comparator

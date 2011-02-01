@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.reuseware.lacome.sourceDiagramInformationProvider">
+      <provider
+            provider="org.reuseware.lacome.layoutlanguage.emftext.EMFTextSourceDiagramInformationProvider">
+      </provider>
+   </extension>
+   <extension
+         point="org.reuseware.lacome.targetDiagramInformationProvider">
+      <provider
+            provider="org.reuseware.lacome.layoutlanguage.emftext.EMFTextTargetDiagramInformationProvider">
+      </provider>
+   </extension>
+
+<extension
+         point="org.reuseware.lacome.diagramMerger">
+		<merger
+      		id="org.reuseware.lacome.layoutlanguage.emftext.EMFTextMerger"    
+            merger="org.reuseware.lacome.layoutlanguage.emftext.EMFTextMerger">
+		</merger>
+	</extension>
+</plugin>
