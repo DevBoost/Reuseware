@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tracing Test Plugin
+Bundle-SymbolicName: org.reuseware.coconut.roundtrip.test
+Bundle-Version: 1.0.0
+Bundle-Activator: org.reuseware.coconut.roundtrip.test.CompositionTestPlugin
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.reuseware.coconut.compositionprogram,
+ org.reuseware.coconut.reuseextension.resource.rex,
+ org.reuseware.coconut.compositionsystem.resource.csys,
+ org.junit4,
+ org.emftext.language.java,
+ org.emftext.language.java.resource,
+ org.eclipse.emf.ecore.xmi,
+ org.reuseware.coconut.test,
+ org.reuseware.coconut.roundtrip,
+ org.reuseware.coconut.resource
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.roundtrip.test,
+ org.reuseware.coconut.roundtrip.test.util

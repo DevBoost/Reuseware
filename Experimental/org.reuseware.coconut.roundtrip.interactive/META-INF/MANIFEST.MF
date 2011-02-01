@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Roundtrip GUI
+Bundle-SymbolicName: org.reuseware.coconut.roundtrip.interactive;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.reuseware.coconut.roundtrip.interactive.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.reuseware.coconut.compositionprogram,
+ org.eclipse.emf.compare,
+ org.eclipse.emf.compare.diff,
+ org.eclipse.emf.compare.match,
+ org.eclipse.emf.compare.ui,
+ org.eclipse.compare,
+ org.eclipse.ui,
+ org.reuseware.coconut.ui.eclipse,
+ org.reuseware.coconut.roundtrip
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.roundtrip.interactive,
+ org.reuseware.coconut.roundtrip.interactive.impl,
+ org.reuseware.coconut.roundtrip.interactive.listener

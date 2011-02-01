@@ -1,0 +1,14 @@
+compositionsystem javaExt {
+
+	fragment role ReuseableMethod {
+		dynamic port Methods;
+	}
+
+	fragment role StatementVP {
+		dynamic port VP;
+	}
+
+	contributing association Link1 {
+		ReuseableMethod.Methods --> StatementVP.VP
+	}
+}

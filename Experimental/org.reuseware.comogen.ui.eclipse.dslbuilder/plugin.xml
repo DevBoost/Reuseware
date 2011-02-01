@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="org.reuseware.comogen.fragment.dslbuilder.ui.eclipse.contribution1"
+            nameFilter="*.ecore"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               label="Reuseware"
+               path="additions"
+               id="org.reuseware.comogen.fragment.dslbuilder.ui.eclipse.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Generate DSL Composer"
+               class="org.reuseware.comogen.fragment.dslbuilder.ui.eclipse.actions.GenerateDSLComposerAction"
+               menubarPath="org.reuseware.comogen.fragment.dslbuilder.ui.eclipse.menu1/group1"
+               enablesFor="1"
+               id="org.reuseware.comogen.fragment.dslbuilder.ui.eclipse.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

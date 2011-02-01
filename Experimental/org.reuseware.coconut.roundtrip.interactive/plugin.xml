@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.reuseware.coconut.fragment.modificationHandler">
+		<modificationHandler
+	    	class="org.reuseware.coconut.roundtrip.impl.RoundtripModificationHandler"
+			id="org.reuseware.coconut.roundtrip.RoundtripModificationHandler">
+		</modificationHandler>
+	</extension>
+	<extension point="org.reuseware.coconut.fragment.conflictResolver">
+		<conflictResolver
+	       class="org.reuseware.coconut.roundtrip.interactive.impl.InteractiveConflictResolver"
+	       id="org.reuseware.coconut.roundtrip.interactive.impl.InteractiveConflictResolver">
+		</conflictResolver>
+	</extension>
+</plugin>

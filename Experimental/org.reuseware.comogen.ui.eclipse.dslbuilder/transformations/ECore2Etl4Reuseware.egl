@@ -1,0 +1,193 @@
+[%import 'platform:/plugin/org.reuseware.comogen.ui.eclipse.dslbuilder/transformations/ECoreUtil.eol';%] 
+[%
+	var root := getRoot();
+	var targetReferenceUFI := root.getAnnotationValue('reuseware.root', 'targetUFI');
+	var targetPortName := root.getAnnotationValue('reuseware.root', 'targetPort');
+	var sourcePortName := root.getAnnotationValue('reuseware.root', 'sourcePort');
+%]
+pre {
+	var compositionProgram : new Fc!DerivedCompositionProgram;
+	var targetReference : new Fc!FragmentInstance;
+	compositionProgram.fragmentInstances.add(targetReference);
+	targetReference.name := '_core';
+	targetReference.target := true;
+	targetReference.setUFIAsString('[%=targetReferenceUFI%]');
+	-- Don't forget to specify the targetUFI parameter
+	targetReference.targetUFI := targetUFI;
+	var targetPortInstance := targetReference.createPort('[%=targetPortName%]');
+}
+
+[%for (class in getFragments()){%]
+[%if (class.getAnnotationValue('reuseware.fragment', 'UFIExpr').isDefined()){%]
+operation Source![%=class.name%] getUFI() : String {
+	[%=class.getAnnotationValue('reuseware.fragment', 'UFIExpr')%]
+}
+[%}%]
+
+rule [%=class.name%]2FragmentInstance
+	transform source : Source![%=class.name%]
+	to fc : Fc!FragmentInstance {
+	
+	[*Basic setup of fragment reference*]
+	[%var label := class.getAnnotationValue('reuseware.fragment', 'label');%]
+	[%if (label.isDefined()){%]
+	fc.name := source.[%=label%];
+	[%}%]
+	[%if (class.getAnnotationValue('reuseware.fragment', 'UFI').isDefined()) {%]
+	fc.setUFIAsString('[%=class.getAnnotationValue('reuseware.fragment', 'UFI')%]');
+	[%} else if (class.getAnnotationValue('reuseware.fragment', 'UFIExpr').isDefined()){%]
+	fc.setUFIAsString(source.getUFI());
+	[%} else if (class.getAnnotationValue('reuseware.fragment', 'UFIOperation').isDefined()){%]
+	fc.setUFIAsString([%=class.getAnnotationValue('reuseware.fragment', 'UFIOperation')%]());
+	[%}%]
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('[%=sourcePortName%]').link(targetPortInstance);
+
+    [*Handle normal attributes*]
+    var setting : Fc!Setting;
+	[%for (prop in class.getReusewareProperties()){%]
+	createSetting (fc, '[%=prop.name%]', source.[%=prop.name%], '[%=prop.getAnnotationValue('reuseware.property','port')%]');
+	[%}%]
+	
+	[*Handle normal references*]
+	[%if (not class.getNormalReferences().isEmpty()) {%]
+	var sourcePort : Fc!PortInstance;
+	
+	[%for (ref in class.getNormalReferences()) {%]
+	sourcePort := fc.createPort('[%=ref.getSourcePort()%]');
+	
+	for (i in source.[%=ref.name%]) {
+		i.equivalent().createPort('[%=ref.getTargetPort()%]').link(sourcePort);
+	}	
+	[%}%]
+	[%}%]
+	
+	[* Handle multiplicity properties *]
+	[%if (not class.getMultiplicityProperties().isEmpty()) {%]
+	var multTargetPort : Fc!PortInstance;
+	
+	[%for (prop in class.getMultiplicityProperties()) {%]
+	multTargetPort := fc.createPort('[%=prop.getAnnotationValue ('reuseware.multiplicity', 'targetPort')%]');
+	
+	for (i in Sequence{1..source.[%=prop.name%]}) {
+		
+		var fc : new Fc!FragmentInstance;
+		fc.UFI := '[%=prop.getAnnotationValue('reuseware.multiplicity', 'UFI').split('/')%]';
+		compositionProgram.fragmentInstances.add(fc);
+		
+		multTargetPort.link(fc.createPort('[%=prop.getAnnotationValue('reuseware.multiplicity', 'sourcePort')%]'));
+		targetPortInstance.link(fc.createPort('[%=sourcePortName%]'));
+		
+		[%if (prop.getAnnotationValue('reuseware.multiplicity', 'references').isDefined()) {
+		    var referencedRef := class.eAllStructuralFeatures.selectOne (r : ECore!EReference |
+		                          r.name = prop.getAnnotationValue('reuseware.multiplicity', 'references')
+		                        );
+		%]
+		var p := source.[%=prop.getAnnotationValue('reuseware.multiplicity', 'references')%].at(i-1);
+		if (p.isDefined()) {
+			p.equivalent().createPort('[%=referencedRef.getAnnotationValue('reuseware.link', 'targetPort')%]').link(fc.createPort('[%=referencedRef.getAnnotationValue('reuseware.link', 'sourcePort')%]'));
+		}
+		[%}%]
+	}	
+	[%}%]
+	[%}%]
+}
+
+[%}%]
+
+operation createSetting (fc:Fc!FragmentInstance, name: String, sourceAttr, portName: String) {
+	var port := fc.createPort(portName);
+	var setting := new Fc!Setting;
+	port.settings.add(setting);
+	setting.property := name;
+	setting.value := sourceAttr.toString();
+}
+ 
+[*
+rule SubNet2FragmentInstance
+	transform subnet : Cim!SubNet
+	to fc : Fc!FragmentInstance,
+	ivd : Fc!InlineValueDefinition 
+	extends CimModelElement2FragmentInstance {
+	
+	fc.name := subnet.name;
+	
+	fc.UFI := 'TID/level0/lib/StandardSubnetwork.cim';
+	
+	var membersPort := fc.createPort('members');
+	
+	for (ip in subnet.ips) {
+		var ipPort := ip.equivalent().createPort('IP');
+		ipPort.link(membersPort);
+	}
+	
+	ivd.name := 'values';
+	compositionProgram.fragmentInstances.add(ivd);
+	var ivdValuePort := ivd.createPort('value');
+	ivd.createDetail('name', subnet.name);
+	ivd.createDetail('subnetMask', subnet.subnetMask);
+	ivd.createDetail('number', subnet.number + '');
+	
+	ivdValuePort.link(fc.createPort('parameters')); -- Take 'parameters' from the annotation
+	
+}
+
+rule Hub2FragmentInstance
+	transform hub : Cim!Hub
+	to fc : Fc!FragmentInstance,
+	ivd : Fc!InlineValueDefinition 
+	extends CimModelElement2FragmentInstance {
+	
+	fc.name := hub.name;
+	
+	fc.UFI := 'TID/level0/lib/StandardHub.cim';
+	
+	var portsPort := fc.createPort('ports');
+	
+	for (i in Sequence{1..hub.numPort}) {
+		
+		var fcPort : new Fc!FragmentInstance;
+		fcPort.UFI := 'TID/level0/lib/Port.cim';
+		compositionProgram.fragmentInstances.add(fcPort);
+		
+		portsPort.link(fcPort.createPort('port'));
+		targetPortInstance.link(fcPort.createPort('contents'));
+		
+		var ip := hub.ips.at(i-1);
+		if (ip.isDefined()) {
+			ip.equivalent().createPort('IP').link(fcPort.createPort('IPHook'));
+		}
+	}
+	
+	ivd.name := 'values';
+	compositionProgram.fragmentInstances.add(ivd);
+	var ivdValuePort := ivd.createPort('value');
+	ivd.createDetail('name', hub.name);
+	
+	ivdValuePort.link(fc.createPort('parameters')); -- Take 'parameters' from the annotation
+	
+}
+*]
+
+operation Fc!PortInstance link(port : Fc!PortInstance) {
+		var compositionLink : new Fc!CompositionLink;
+		compositionProgram.compositionLinks.add(compositionLink);
+		compositionLink.source := self;
+		compositionLink.target := port;
+}
+
+operation Fc!FragmentInstance createPort(name : String) {
+    
+	var existingPort := self.portInstances.selectOne(p| p.portName = name);
+	if (existingPort.isUndefined()) {
+		var portInstance : new Fc!PortInstance;
+		portInstance.portName := name;
+		portInstance.fragmentRoleName := 'Default';
+		portInstance.compositionSystemID := Sequence{ 'org','reuseware','lib','systems','default.csys' };
+		self.portInstances.add(portInstance);
+		return portInstance;
+	}
+	else {
+		return existingPort;
+	}
+}
