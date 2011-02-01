@@ -1,0 +1,140 @@
+modeltype AS uses 'http://www.reuseware.org/air/language/abstractsyntax';
+modeltype ECORE uses 'http://www.eclipse.org/emf/2002/Ecore';
+ 
+transformation abstractsyntax2ecore(in as : AS, out ECORE);
+
+
+main(){
+	as.rootObjects()[AS::AbstractSyntax]->xcollect( pck | pck.map abstractSyntax2ePackage());
+}
+ 
+
+mapping AS::AbstractSyntax::abstractSyntax2ePackage() : ECORE::EPackage{
+	nsURI := self.nsuri;
+	nsPrefix := self.nsprefix;
+	name := self.name;
+	eClassifiers := self.unit->oclAsType(AS::ASProgram).statement[AS::Definition]->xcollect(cls | cls.map definition2eClass())->asOrderedSet();
+}
+
+
+
+query Definition::hasAbstractNodeDefinition():Boolean{
+	return not AS::InterfaceNodeDefinition.allInstances()->select( a | a.name = self.name)->isEmpty();
+}
+ 
+query Definition::hasConcreteNodeDefinition():Boolean{
+	return not AS::ConcreteNodeDefinition.allInstances()->select( a | a.name = self.name)->isEmpty();		
+}
+
+query InterfaceNodeDefinition::getConcreteNodeDefinition():AS::ConcreteNodeDefinition{
+	return AS::ConcreteNodeDefinition.allInstances()->select( a | a.name = self.name)->asOrderedSet()->first();		
+}
+
+query ConcreteNodeDefinition::getConcreteNodeDefinition():AS::InterfaceNodeDefinition{
+	return AS::InterfaceNodeDefinition.allInstances()->select( a | a.name = self.name)->asOrderedSet()->first();		
+}
+
+
+mapping AS::Definition::definition2eClass() : ECORE::EClass 
+disjuncts AS::ConcreteNodeDefinition::concreteNodeDefinition2eClass, 
+			AS::InterfaceNodeDefinition::abstractNodeDefinition2eClass,
+				AS::InterfaceNodeDefinition::abstractAndConcreteNodeDefinition2eClass{}
+
+abstract mapping AS::Definition::definition2eClassBase() : ECORE::EClass{
+ init{
+    var temp := self.hasAbstractNodeDefinition();
+ }	
+	name := self.name;
+	_abstract := temp;
+	_interface := temp;
+	eSuperTypes := self.interfaces.late resolve(ECORE::EClass)->asOrderedSet();	
+	
+}
+
+mapping AS::ConcreteNodeDefinition::concreteNodeDefinition2eClass() : ECORE::EClass
+inherits AS::Definition::definition2eClassBase
+when{not self.hasAbstractNodeDefinition()}
+ {
+	eStructuralFeatures := self.members->xcollect(feature| feature.map nodeFeature2eStructuralFeature())->asOrderedSet();
+	eSuperTypes += self.eSuperClass->asOrderedSet();
+}
+
+
+mapping AS::InterfaceNodeDefinition::abstractNodeDefinition2eClass() : ECORE::EClass 
+inherits AS::Definition::definition2eClassBase
+when {not self.hasConcreteNodeDefinition()}
+{
+}
+
+mapping AS::InterfaceNodeDefinition::abstractAndConcreteNodeDefinition2eClass() : ECORE::EClass 
+inherits AS::Definition::definition2eClassBase
+when {self.hasConcreteNodeDefinition()}
+{	
+	eStructuralFeatures := self.getConcreteNodeDefinition().members->xcollect(feature| feature.map nodeFeature2eStructuralFeature())->asOrderedSet();
+}
+
+
+helper AS::NodeFeature::getLowerBound():Integer{
+	return
+	if(self.cardinality->isEmpty())
+	then
+		1
+	else
+		if(self.cardinality.oclIsTypeOf(AS::QUESTIONMARK) or self.cardinality.oclIsKindOf(AS::STAR)) 
+		then
+			0
+		else
+			1
+		endif
+	endif
+}
+
+
+
+helper AS::NodeFeature::getUperBound():Integer{
+	return
+	if(self.cardinality->isEmpty() or self.cardinality.oclIsTypeOf(AS::QUESTIONMARK))
+	then
+		1
+	else
+		-1
+	endif
+}
+
+
+abstract mapping AS::NodeFeature::nodeFeature2eStructuralFeatureBase():ECORE::EStructuralFeature{
+	lowerBound := self.getLowerBound();
+	upperBound := self.getUperBound();
+	name := self.name;
+}
+
+mapping AS::NodeFeature::nodeFeature2eStructuralFeature():ECORE::EStructuralFeature
+disjuncts AS::InternalReference::reference2eStrucutralFeature,
+		  AS::ExternalReference::reference2eStrucutralFeature,
+		  AS::Containment::containment2eStructuralFeature,
+		  AS::Attribute::attribute2eStrucutralFeature{}
+
+mapping AS::InternalReference::reference2eStrucutralFeature():ECORE::EReference
+inherits AS::NodeFeature::nodeFeature2eStructuralFeatureBase{
+	containment := false;
+	eType := self.type.late resolveone(ECORE::EClass);
+	eOpposite := self.opposite.late resolveone(ECORE::EReference);
+}
+
+mapping AS::Containment::containment2eStructuralFeature():ECORE::EReference
+inherits AS::NodeFeature::nodeFeature2eStructuralFeatureBase{
+	containment := true;
+	eType := self.type.late resolveone(ECORE::EClass);
+}
+mapping AS::ExternalReference::reference2eStrucutralFeature():ECORE::EReference
+inherits AS::NodeFeature::nodeFeature2eStructuralFeatureBase{
+	containment := false;
+	eType := self.type;
+}
+mapping AS::Attribute::attribute2eStrucutralFeature():ECORE::EAttribute
+inherits AS::NodeFeature::nodeFeature2eStructuralFeatureBase{
+	eType := self.type;
+}
+
+
+

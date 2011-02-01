@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_13-119 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Reusewair Core Component Plugin
+Bundle-SymbolicName: org.reuseware.air.core; singleton:=true
+Bundle-Version: 0.6.0.v20080118
+Export-Package: org.reuseware.air.core.cm,org.reuseware.air.core.util
+Require-Bundle: org.eclipse.emf.ecore
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+

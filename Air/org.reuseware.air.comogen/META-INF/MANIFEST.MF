@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_13-119 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Reusewair CoMoGen Plugin
+Bundle-SymbolicName: org.reuseware.air.comogen; singleton:=true
+Bundle-Version: 0.6.0.v20080118
+Bundle-Activator: org.reuseware.air.comogen.plugin.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;bundle-version="2.4.0",
+ org.eclipse.core.resources;bundle-version="3.4.0",
+ org.eclipse.jdt.core;bundle-version="3.4.0",
+ org.eclipse.jdt.launching;bundle-version="3.4.0",
+ org.reuseware.air.util;bundle-version="0.6.0",
+ org.reuseware.air.language.cmsl;bundle-version="1.0.0",
+ org.reuseware.air.language.cmsl.resource.cmsl;bundle-version="1.0.0",
+ org.emftext.runtime;bundle-version="0.8.4",
+ org.eclipse.emf.search.genmodel;bundle-version="0.7.0",
+ org.eclipse.emf.search.ecore;bundle-version="0.7.0",
+ org.eclipse.emf.search;bundle-version="0.7.0",
+ org.eclipse.emf.search.ui;bundle-version="0.7.0",
+ org.eclipse.emf.codegen.ecore;bundle-version="2.4.1",
+ org.emftext.sdk.antlr;bundle-version="0.8.4"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.air.comogen,
+ org.reuseware.air.comogen.util
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension
+		point="org.eclipse.core.filebuffers.annotationModelCreation">
+		<factory
+			extensions="*"
+			class="org.eclipse.ui.texteditor.ResourceMarkerAnnotationModelFactory">
+		</factory>
+	</extension>
+	
+ <extension
+       point="org.eclipse.ui.commands">
+    <category
+          id="de.tudresden.reusewair.eclipse.commands.category"
+          name="Sample Category">
+    </category>
+    <command
+          categoryId="de.tudresden.reusewair.eclipse.commands.category"
+          id="de.tudresden.reusewair.eclipse.commands.sampleCommand"
+          name="Sample Command">
+    </command>
+ </extension>
+ <extension
+       point="org.eclipse.ui.handlers">
+    <handler
+          class="org.reuseware.air.ui.eclipse.handlers.SampleHandler"
+          commandId="de.tudresden.reusewair.eclipse.commands.sampleCommand">
+    </handler>
+ </extension>
+ <extension
+       point="org.eclipse.ui.bindings">
+    <key
+          commandId="de.tudresden.reusewair.eclipse.commands.sampleCommand"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+          sequence="M1+6">
+    </key>
+ </extension>
+ <extension
+       point="org.eclipse.ui.menus">
+       <!--
+    <menuContribution
+          locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+       <menu
+             id="de.tudresden.reusewair.eclipse.menus.sampleMenu"
+             label="Sample Menu"
+             mnemonic="M">
+          <command
+                commandId="de.tudresden.reusewair.eclipse.commands.sampleCommand"
+                id="de.tudresden.reusewair.eclipse.menus.sampleCommand"
+                mnemonic="S">
+          </command>
+       </menu>
+    </menuContribution>
+    -->
+    <menuContribution
+          locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+       <toolbar
+             id="de.tudresden.reusewair.eclipse.toolbars.sampleToolbar">
+          <command
+                commandId="de.tudresden.reusewair.eclipse.commands.sampleCommand"
+                icon="icons/reuseware-icon-16.png"
+                id="de.tudresden.reusewair.eclipse.toolbars.sampleCommand"
+                tooltip="Say hello world">
+          </command>
+       </toolbar>
+    </menuContribution>
+  </extension>
+    
+
+
+  <extension
+         point="org.eclipse.ui.popupMenus">    
+    
+      <!-- FOR *.CMSL FILES -->
+      
+      <objectContribution
+            adaptable="true"
+            id="de.tudresden.reuseware.comogen.ui.eclipse.generateplugincontributor4"
+            nameFilter="*.cmsl"
+            objectClass="org.eclipse.core.resources.IFile">
+        
+        <!-- REUSEWARE MENU -->    
+            
+        <menu
+               label="Reusewair"
+               path="additions"
+               id="de.tudresden.reuseware.comogen.ui.eclipse.reusewaremenu4">
+               	<separator
+                  name="de.tudresden.reuseware.comogen.ui.eclipse.reuseware.group4">
+            	</separator>
+         </menu>
+            
+         <action
+            class="org.reuseware.air.ui.eclipse.actions.GenerateReuseLanguageModelAction"
+            enablesFor="1"
+            id="de.tudresden.reuseware.comogen.ui.eclipse.extendgrammar4"
+            label="Generate Language Model"
+            menubarPath="de.tudresden.reuseware.comogen.ui.eclipse.reusewaremenu4/de.tudresden.reuseware.comogen.ui.eclipse.reuseware.group4" />
+
+         <action
+            class="org.reuseware.air.ui.eclipse.actions.GenerateComponentModelAction"
+            enablesFor="1"
+            id="de.tudresden.reuseware.comogen.ui.eclipse.extendgrammar5"
+            label="Generate Component Model Plugin"
+            menubarPath="de.tudresden.reuseware.comogen.ui.eclipse.reusewaremenu4/de.tudresden.reuseware.comogen.ui.eclipse.reuseware.group4" />
+
+         <action
+            class="org.reuseware.air.ui.eclipse.actions.GeneratePluginsAction"
+            enablesFor="1"
+            id="de.tudresden.reuseware.comogen.ui.eclipse.extendgrammar6"
+            label="Generate Component Model Plugins"
+            menubarPath="de.tudresden.reuseware.comogen.ui.eclipse.reusewaremenu4/de.tudresden.reuseware.comogen.ui.eclipse.reuseware.group4" />
+            
+      </objectContribution>         
+
+      <!-- FOR *.ECORE FILES -->
+
+      <objectContribution
+            adaptable="true"
+            id="de.tudresden.reuseware.comogen.ui.eclipse.generateplugincontributor2"
+            nameFilter="*.ecore"
+            objectClass="org.eclipse.core.resources.IFile">
+      
+      	<!-- REUSEWARE MENU -->
+            
+        <menu
+               label="Reuseware"
+               path="additions"
+               id="de.tudresden.reuseware.comogen.ui.eclipse.reusewaremenu2">
+               	<separator
+                  name="de.tudresden.reuseware.comogen.ui.eclipse.reuseware.group2">
+            	</separator>
+         </menu>
+         
+         <action
+               class="org.reuseware.air.ui.eclipse.actions.GenerateLanguagePluginAction"
+               enablesFor="1"
+               id="de.tudresden.reuseware.comogen.ui.eclipse.generatepluginaction2"
+               label="Generate Language Plugin"
+               menubarPath="de.tudresden.reuseware.comogen.ui.eclipse.reusewaremenu2/de.tudresden.reuseware.comogen.ui.eclipse.reuseware.group2" />
+
+      </objectContribution>
+    
+  </extension>
+  
+</plugin>

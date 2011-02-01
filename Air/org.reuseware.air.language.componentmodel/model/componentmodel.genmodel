@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.reuseware.air.language.componentmodel/src"
+    modelPluginID="org.reuseware.air.language.componentmodel" modelName="Componentmodel"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>componentmodel.ecore</foreignModel>
+  <genPackages prefix="Componentmodel" basePackage="org.reuseware.air.language" disposableProviderFactory="true"
+      ecorePackage="componentmodel.ecore#/">
+    <genClasses ecoreClass="componentmodel.ecore#//VariationPoint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference componentmodel.ecore#//VariationPoint/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference componentmodel.ecore#//VariationPoint/name"/>
+    </genClasses>
+    <genClasses ecoreClass="componentmodel.ecore#//Composer"/>
+    <genClasses ecoreClass="componentmodel.ecore#//Slot"/>
+    <genClasses ecoreClass="componentmodel.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute componentmodel.ecore#//Location/path"/>
+    </genClasses>
+    <genClasses ecoreClass="componentmodel.ecore#//AbstractVariationPointName"/>
+    <genClasses ecoreClass="componentmodel.ecore#//VariationPointName">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute componentmodel.ecore#//VariationPointName/name"/>
+    </genClasses>
+    <genClasses ecoreClass="componentmodel.ecore#//AbstractFragmentType"/>
+    <genClasses ecoreClass="componentmodel.ecore#//FragmentType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute componentmodel.ecore#//FragmentType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="componentmodel.ecore#//FragmentTypeSlot"/>
+  </genPackages>
+</genmodel:GenModel>

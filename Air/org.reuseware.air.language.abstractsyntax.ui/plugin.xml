@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="org.reuseware.air.language.abstractsyntax.ui.contribution1"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="&amp;transform"
+               class="org.reuseware.air.language.abstractsyntax.ui.popup.actions.TransformAction"
+               enablesFor="1"
+               id="org.reuseware.air.language.abstractsyntax.ui.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

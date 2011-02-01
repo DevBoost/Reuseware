@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax.ui">
+		<metaInformationProvider class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsUIMetaInformation" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsUIMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsEditor" contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor" extensions="as" icon="icons/editor_icon.gif" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsEditor" name="EMFText as Editor">
+		</editor>
+	</extension>
+	
+	<extension id="org.reuseware.air.language.abstractsyntax.resource.as.ui.problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="org.eclipse.core.resources.problemmarker">
+		</super>
+		<super type="org.eclipse.core.resources.textmarker">
+		</super>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsPreferenceInitializer">
+		</initializer>
+	</extension>
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page name="As Text Editor" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsPreferencePage" class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsPreferencePage" category="org.eclipse.ui.preferencePages.GeneralTextEditor">
+		</page>
+		<page name="Syntax Coloring" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsSyntaxColoringPreferencePage" class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsSyntaxColoringPreferencePage" category="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsPreferencePage">
+		</page>
+		<page name="Brackets" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsBracketPreferencePage" class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsBracketPreferencePage" category="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsPreferencePage">
+		</page>
+		<page name="Occurrence" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsOccurrencePreferencePage" class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsOccurrencePreferencePage" category="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsPreferencePage">
+		</page>
+	</extension>
+	
+	<extension point="org.eclipse.ui.newWizards">
+		<category id="org.emftext.runtime.ui.EMFTextFileCategory" name="EMFText File">
+		</category>
+		<wizard category="org.emftext.runtime.ui.EMFTextFileCategory" icon="/icons/default_new_icon.gif" class="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsNewFileWizard" id="org.reuseware.air.language.abstractsyntax.resource.as.ui.AsNewFileWizard" name="EMFText .as file">
+		</wizard>
+	</extension>
+	
+</plugin>

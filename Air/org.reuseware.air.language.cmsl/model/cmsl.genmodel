@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.reuseware.air.language.cmsl/src-gen"
+    editDirectory="/org.reuseware.air.language.cmsl.edit/src-gen" editorDirectory="/org.reuseware.air.language.cmsl.editor/src-gen"
+    modelPluginID="org.reuseware.air.language.cmsl" modelName="cmsl" testsDirectory="/org.reuseware.air.language.cmsl.tests/src-gen"
+    importerID="org.eclipse.emf.importer.java" language="">
+  <genPackages prefix="Cmsl" basePackage="org.reuseware.air.language" disposableProviderFactory="true"
+      ecorePackage="cmsl.ecore#/">
+    <genClasses ecoreClass="cmsl.ecore#//ExtensionStatement"/>
+    <genClasses ecoreClass="cmsl.ecore#//GrammarExtension">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//GrammarExtension/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//ExtensionProgram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//ExtensionProgram/base"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//ExtensionProgram/extension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//ExtensionProgram/statements"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//Reference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Reference/base"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Reference/cardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//UpperLevelReference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//UpperLevelReference/upper"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//BaseReference"/>
+    <genClasses ecoreClass="cmsl.ecore#//Fragtypes">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Fragtypes/fragtype"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//ExtensionDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//ExtensionDeclaration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//ExtensionDeclaration/nsuri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//ExtensionDeclaration/nsprefix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//ExtensionDeclaration/targeturl"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//Definition"/>
+    <genClasses ecoreClass="cmsl.ecore#//Arbitrary"/>
+    <genClasses ecoreClass="cmsl.ecore#//Annotation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Annotation/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Annotation/target"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//Injection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Injection/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Injection/target"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//DefinitionList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionList/refs"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//Role">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//Role/value"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//NonTerminal"/>
+    <genClasses ecoreClass="cmsl.ecore#//DefinitionChoice">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionChoice/newConstruct"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionChoice/choice"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//ConstructReference"/>
+    <genClasses ecoreClass="cmsl.ecore#//NonTerminalIdentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//NonTerminalIdentifier/value"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//GrammarExtensionUnit"/>
+    <genClasses ecoreClass="cmsl.ecore#//Construct">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Construct/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Construct/cardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//MoreThanOne"/>
+    <genClasses ecoreClass="cmsl.ecore#//Cardinality"/>
+    <genClasses ecoreClass="cmsl.ecore#//DefinitionConstruct">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionConstruct/newConstruct"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionConstruct/definition"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//Slotify">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//Slotify/construct"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//BaseDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//BaseDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute cmsl.ecore#//BaseDeclaration/nsuri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cmsl.ecore#//BaseDeclaration/sourceurl"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//DefinitionPart">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionPart/rolename"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionPart/construct"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//DefinitionPart/annotation"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//BaseLanguageReference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute cmsl.ecore#//BaseLanguageReference/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cmsl.ecore#//BaseLanguageReference/base"/>
+    </genClasses>
+    <genClasses ecoreClass="cmsl.ecore#//ZeroOne"/>
+  </genPackages>
+</genmodel:GenModel>

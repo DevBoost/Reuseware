@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Abstract Syntax UI Contributions
+Bundle-SymbolicName: org.reuseware.air.language.abstractsyntax.ui;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.emf;bundle-version="2.4.0",
+ org.eclipse.core.runtime;bundle-version="3.4.0",
+ org.eclipse.emf.ecore;bundle-version="2.4.1",
+ org.reuseware.air.language.abstractsyntax;bundle-version="1.0.0",
+ org.reuseware.air.language.abstractsyntax.resource.as;bundle-version="1.0.0",
+ org.eclipse.core.resources;bundle-version="3.4.1",
+ org.eclipse.m2m.qvt.oml.runtime;bundle-version="1.0.1"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Software Technology Group - TU Dresden Germany

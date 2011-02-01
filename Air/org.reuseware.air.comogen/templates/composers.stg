@@ -1,0 +1,74 @@
+group Java;
+
+composers(baselanguage, reuselanguage,composerpackage,fragmentpackage,signatures) ::= <<
+package <composerpackage>;
+
+import org.reuseware.air.coconut.IComplexOperator;
+import org.reuseware.air.coconut.ReusewairComposer; 
+import org.reuseware.air.algebra.fragment.FragmentSystem;
+
+<signatures:import(); separator="\n"> 
+
+public class Composers implements IComplexOperator { 
+
+	/**
+	 * Required by IComplexOperator 
+	 * 
+	 */
+	public void initialize() {
+	
+		FragmentSystem.getInstance().setGrammar("<reuselanguage>");
+	}
+
+	/**
+	 * Constructor  
+	 * 
+	 */
+	public Composers() {
+		
+	}
+	
+	/**
+	 * Methods corresponding to composers should be annotated with
+	 * the following annotation: @ReusewairComposer, e.g.:
+	 *
+	 * @ReusewairComposer("[Name of composer construct]") 
+	 * 
+	 */
+	 
+	 <signatures:signature(); separator="\n\n"> 
+
+}
+>>
+
+import() ::= <<
+<it.parameters:importparameterIt(); separator="\n">
+<importparameter(type=it.returnType); separator="\n">
+>>
+
+importparameterIt() ::= <<
+<importparameter(type=it); separator="\n">
+>>
+
+importparameter(type) ::= <<
+import <fragmentpackage>.I<type>;  
+>>
+
+
+signature() ::= <<
+/**
+ * <it.origName> Composer
+ * 
+ */
+@ReusewairComposer("<it.origName>")
+public static I<it.returnType> <it.methodName>(<it.parameters:parameter(); separator=", ">) {
+
+	// TODO: Implement composer 
+
+	return null; 
+} 
+>>
+
+parameter() ::= <<
+I<it> <it;format="firstlowercase">
+>>

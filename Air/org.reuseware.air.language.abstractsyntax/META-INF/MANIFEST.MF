@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Air Abstract Syntax Specification Language
+Bundle-SymbolicName: org.reuseware.air.language.abstractsyntax;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+Bundle-Localization: plugin
+Export-Package: org.reuseware.air.language.abstractsyntax,
+ org.reuseware.air.language.abstractsyntax.impl,
+ org.reuseware.air.language.abstractsyntax.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.m2m.qvt.oml.runtime
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax">
+		<metaInformationProvider class="org.reuseware.air.language.abstractsyntax.resource.as.mopp.AsMetaInformation" id="org.reuseware.air.language.abstractsyntax.resource.as.mopp.AsMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension id="org.reuseware.air.language.abstractsyntax.resource.as.nature" name="as nature" point="org.eclipse.core.resources.natures">
+		<runtime>
+			<run class="org.reuseware.air.language.abstractsyntax.resource.as.mopp.AsNature" />
+		</runtime>
+		<builder id="org.reuseware.air.language.abstractsyntax.resource.as.builder" />
+	</extension>
+	
+	<extension point="org.eclipse.core.resources.builders" id="org.reuseware.air.language.abstractsyntax.resource.as.builder" name="as Builder">
+		<builder hasNature="true">
+			<run class="org.reuseware.air.language.abstractsyntax.resource.as.mopp.AsBuilderAdapter" />
+		</builder>
+	</extension>
+	
+	<extension-point id="org.reuseware.air.language.abstractsyntax.resource.as.default_load_options" name="Default Load Options" schema="schema/default_load_options.exsd"/>
+	
+	<extension point="org.eclipse.emf.ecore.extension_parser">
+		<parser class="org.reuseware.air.language.abstractsyntax.resource.as.mopp.AsResourceFactoryDelegator" type="as">
+		</parser>
+	</extension>
+	
+	<extension-point id="org.reuseware.air.language.abstractsyntax.resource.as.additional_extension_parser" name="Additional Extension Parser" schema="schema/additional_extension_parser.exsd"/>
+	
+</plugin>

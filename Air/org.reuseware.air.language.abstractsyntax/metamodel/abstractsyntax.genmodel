@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.reuseware.air.language.abstractsyntax/src-gen"
+    editDirectory="/org.reuseware.air.language.abstractsyntax.edit/src-gen" editorDirectory="/org.reuseware.air.language.abstractsyntax.editor/src-gen"
+    modelPluginID="org.reuseware.air.language.abstractsyntax" modelName="Abstractsyntax"
+    testsDirectory="/org.reuseware.air.language.abstractsyntax.tests/src-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>abstractsyntax.ecore</foreignModel>
+  <genPackages prefix="Abstractsyntax" basePackage="org.reuseware.air.language" disposableProviderFactory="true"
+      multipleEditorPages="false" ecorePackage="abstractsyntax.ecore#/">
+    <genClasses ecoreClass="abstractsyntax.ecore#//AbstractSyntax">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//AbstractSyntax/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//AbstractSyntax/nsuri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//AbstractSyntax/nsprefix"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//AbstractSyntax/import"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//AbstractSyntax/name"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//Import/prefix"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Import/ePackage"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//ASUnit"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//ASProgram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ASProgram/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//ASStatement"/>
+    <genClasses image="false" ecoreClass="abstractsyntax.ecore#//Definition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//Definition/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Definition/interfaces"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//ConcreteNodeDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ConcreteNodeDefinition/members"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ConcreteNodeDefinition/eSuperClass"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//InterfaceNodeDefinition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//InterfaceNodeDefinition/options"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Cardinality"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//PLUS"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//STAR"/>
+    <genClasses ecoreClass="abstractsyntax.ecore#//QUESTIONMARK"/>
+    <genClasses image="false" ecoreClass="abstractsyntax.ecore#//NodeFeature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractsyntax.ecore#//NodeFeature/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//NodeFeature/cardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Attribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//Containment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//Containment/type"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//InternalReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//InternalReference/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//InternalReference/opposite"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractsyntax.ecore#//ExternalReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractsyntax.ecore#//ExternalReference/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

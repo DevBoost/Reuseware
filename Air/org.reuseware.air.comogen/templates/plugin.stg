@@ -1,0 +1,25 @@
+group Java; 
+
+xmlplugin(baselanguage,reuselanguage,composers,composerpackage,utilitypackage,reuselanguagens) ::= <<
+\<?xml version="1.0" encoding="UTF-8"?\>
+\<?eclipse version="3.2"?\>
+\<plugin\>
+   \<extension 
+         point="org.reuseware.air.coconut.composer"\> 
+      \<abstraction
+       		language="<reuselanguagens>"
+      		operators="<composerpackage>.Composers"
+      		wrapper="<utilitypackage>.ComposerWrapper">
+       
+      
+      	<composers:construct(); separator="\n">
+      \</abstraction\>
+
+   \</extension\>
+\</plugin\>
+>>
+
+construct(composers) ::= <<
+\<construct name="<it>" /\> 
+>>
+
