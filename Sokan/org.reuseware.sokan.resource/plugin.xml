@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="pluginStore" name="Plugin Store" schema="schema/pluginStore.exsd"/>
+
+   <extension
+         id="indexBuilder"
+         name="Index Project Builder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            hasNature="true">
+         <run
+               class="org.reuseware.sokan.resource.build.IndexBuilder">
+         </run>
+      </builder>
+   </extension>
+   <extension
+         id="repositoryNature"
+         name="Repository Project Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="org.reuseware.sokan.resource.build.RepositoryNature">
+         </run>
+      </runtime>
+      <builder
+            id="org.reuseware.sokan.resource.indexBuilder">
+      </builder>
+   </extension>
+   <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            adaptable="true"
+            class="org.reuseware.sokan.resource.ui.StoreDecorator"
+            id="org.reuseware.sokan.resource.storeDecorator"
+            label="Sokan Store Decorator"
+            lightweight="true"
+            state="true">
+         <enablement>
+            <and>
+               <objectClass
+                     name="org.eclipse.core.resources.IFolder">
+               </objectClass>
+               <objectClass
+                     name="org.eclipse.core.resources.IProject">
+               </objectClass>
+            </and>
+         </enablement>
+         <description>
+            Replaces standard icons of projects and folders that were marked as stores.
+This is part of the Sokan project to build a distributed repository in the Eclipse workspace.
+         </description>
+      </decorator>
+      <decorator
+            adaptable="true"
+            class="org.reuseware.sokan.resource.ui.GenDecorator"
+            id="org.reuseware.sokan.resource.genDecorator"
+            label="Sokan Generated Artifacts"
+            lightweight="true"
+            state="true">
+         <enablement>
+            <objectClass
+                  name="org.eclipse.core.resources.IFile">
+            </objectClass>
+         </enablement>
+         <description>
+            This decorates files that got generated during the Sokan indexing process.
+         </description>
+      </decorator>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="org.reuseware.sokan.resource.StartUp">
+      </startup>
+   </extension>
+
+</plugin>

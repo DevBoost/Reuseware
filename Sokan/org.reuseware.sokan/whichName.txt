@@ -1,0 +1,9 @@
+AnRepo  = Annotated Repository
+
+AnRepoS = Annotated Repository System
+ARfAA	= Annotated Repository for Arbitrary Artifacts
+
+- Annotated Resource Management System
+- Annotation Rich Repository
+
+Annotated, Indexed and Cross-Referenced Artifacts

@@ -1,0 +1,59 @@
+package org.reuseware.sokan.ui.internal.views;
+
+import org.eclipse.jface.util.LocalSelectionTransfer;
+import org.eclipse.jface.viewers.ISelection;
+import org.eclipse.jface.viewers.Viewer;
+import org.eclipse.swt.dnd.DragSourceEvent;
+import org.eclipse.swt.dnd.DragSourceListener;
+
+/**
+ * Drag adapter for dragging artifacts from the repository view.
+ */
+public class LocalSelectionTransferViewerDragAdapter implements
+		DragSourceListener {
+
+	protected Viewer viewer;
+	protected ISelection selection;
+
+	/**
+	 * Constructs a new LocalSelectionTransferViewerDragAdapter.
+	 * 
+	 * @param viewer the viewer of the repository view
+	 */
+	public LocalSelectionTransferViewerDragAdapter(Viewer viewer) {
+		super();
+		this.viewer = viewer;
+	}
+
+	/**
+	 * Sets the current selection as drag data.
+	 * 
+	 * @param event the information associated with the drag set data event
+	 */
+	public void dragSetData(DragSourceEvent event) {
+		if (LocalSelectionTransfer.getTransfer()
+				.isSupportedType(event.dataType)) {
+			event.data = selection;
+			LocalSelectionTransfer.getTransfer().setSelection(selection);
+		}
+	}
+
+	/**
+	 * Clears the current selection.
+	 * 
+	 * @param event the information associated with the drag finished event
+	 */
+	public void dragFinished(DragSourceEvent event) {
+		selection = null;
+		LocalSelectionTransfer.getTransfer().setSelection(null);
+	}
+
+	/**
+	 * Obtains the current selection from the viewer.
+	 * 
+	 * @param event the information associated with the drag start event
+	 */
+	public void dragStart(DragSourceEvent event) {
+		selection = viewer.getSelection();
+	}
+}

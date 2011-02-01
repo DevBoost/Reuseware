@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.reuseware.sokan.index" name="Repository Index" schema="schema/org.reuseware.sokan.index.exsd"/>
+
+	<extension id="org.reuseware.sokan.index.idProblem" name="Sokan ID Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="org.eclipse.core.resources.problemmarker">
+		</super>
+	</extension>
+</plugin>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.reuseware.sokan/src"
+    modelPluginID="org.reuseware.sokan" modelName="Sokan" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>sokan.ecore</foreignModel>
+  <genPackages prefix="Sokan" basePackage="org.reuseware" disposableProviderFactory="true"
+      ecorePackage="sokan.ecore#/">
+    <genClasses image="false" ecoreClass="sokan.ecore#//IdentifiableElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sokan.ecore#//IdentifiableElement/id"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//ID">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//ID/segments"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//Artifact">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//Artifact/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//Artifact/metaInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sokan.ecore#//Artifact/indexRepresentation"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//IndexRow">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//IndexRow/artifactID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//IndexRow/phyURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference sokan.ecore#//IndexRow/metaData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//IndexRow/generated"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//IndexMetaData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//IndexMetaData/multiValueFields"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//IndexMetaData/singleValueFields"/>
+      <genOperations ecoreOperation="sokan.ecore#//IndexMetaData/isEmpty"/>
+      <genOperations ecoreOperation="sokan.ecore#//IndexMetaData/putAll">
+        <genParameters ecoreParameter="sokan.ecore#//IndexMetaData/putAll/metaData"/>
+      </genOperations>
+      <genOperations ecoreOperation="sokan.ecore#//IndexMetaData/putMultiple">
+        <genParameters ecoreParameter="sokan.ecore#//IndexMetaData/putMultiple/field"/>
+        <genParameters ecoreParameter="sokan.ecore#//IndexMetaData/putMultiple/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="sokan.ecore#//IndexMetaData/putSingle">
+        <genParameters ecoreParameter="sokan.ecore#//IndexMetaData/putSingle/field"/>
+        <genParameters ecoreParameter="sokan.ecore#//IndexMetaData/putSingle/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//Store">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sokan.ecore#//Store/filters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//Store/uriBuffer"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//Filter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//Filter/pattern"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//IndexTransaction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//IndexTransaction/remArtifacts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//IndexTransaction/addArtifacts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//IndexTransaction/updateArtifacts"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//FacetedResponse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//FacetedResponse/valueCountMap"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//FacetedResponse/content"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokan.ecore#//FacetedResponse/query"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//FacetedRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//FacetedRequest/facetFields"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//FacetedRequest/rows"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//FacetedRequest/offset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//FacetedRequest/keywordSearchString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference sokan.ecore#//FacetedRequest/constraints"/>
+    </genClasses>
+    <genClasses ecoreClass="sokan.ecore#//Constraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//Constraint/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokan.ecore#//Constraint/values"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

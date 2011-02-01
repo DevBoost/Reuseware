@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            objectClass="org.eclipse.core.resources.IContainer"
+            nameFilter="*"
+            id="org.reuseware.sokan.ui.contContainer">
+         <action
+               class="org.reuseware.sokan.ui.internal.actions.SelectFilesStoreToggleAction"
+               enablesFor="+"
+               id="org.reuseware.sokan.ui.internal.actions.SelectFilesStoreToggleAction"
+               label="(Un)Mark as Store..."
+               menubarPath="org.reuseware.sokan.ui.menuSokan/additions">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            objectClass="org.eclipse.core.resources.IContainer"
+            nameFilter="*"
+            id="org.reuseware.sokan.ui.contContainer">
+         <action
+               class="org.reuseware.sokan.ui.internal.actions.AllFilesStoreToggleAction"
+               enablesFor="+"
+               id="org.reuseware.sokan.ui.internal.actions.AllFilesStoreToggleAction"
+               label="(Un)Mark as Store (All Files)"
+               menubarPath="org.reuseware.sokan.ui.menuSokan/additions">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            id="org.reuseware.sokan.ui.contFile"
+            nameFilter="*"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="org.reuseware.sokan.ui.internal.actions.QueryAction"
+               enablesFor="+"
+               id="org.reuseware.sokan.ui.internal.actions.QueryAction"
+               label="Query Index"
+               menubarPath="org.reuseware.sokan.ui.menuSokan/additions">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            id="org.reuseware.sokan.ui.contResource"
+            nameFilter="*"
+            objectClass="org.eclipse.core.resources.IResource">
+         <menu
+               id="org.reuseware.sokan.ui.menuSokan"
+               label="Sokan"
+               path="additions">
+         </menu>
+      </objectContribution>
+   </extension>
+    <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.reuseware.sokan.ui"
+            name="Sokan"/>
+      <view
+            category="org.reuseware.sokan.ui"
+            class="org.reuseware.sokan.ui.views.BasicRepositoryView"
+            icon="icons/Store.png"
+            id="org.reuseware.sokan.ui.views.BasicRepositoryView"
+            name="Sokan Repository"/>
+   </extension> 
+</plugin>
