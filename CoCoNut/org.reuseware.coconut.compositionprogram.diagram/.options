@@ -1,0 +1,7 @@
+# Tracing options for the org.reuseware.coconut.compositionprogram.diagram plug-in
+
+# Common issues
+org.reuseware.coconut.compositionprogram.diagram/debug=false
+
+# Visual IDs
+org.reuseware.coconut.compositionprogram.diagram/debug/visualID=false

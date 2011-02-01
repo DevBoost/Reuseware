@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2006-2010&#xA;Software Technology Group, Dresden University of Technology&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA;Software Technology Group - TU Dresden, Germany&#xA;     - initial API and implementation"
+    modelDirectory="/org.reuseware.coconut.fragment/src-gen" modelPluginID="org.reuseware.coconut.fragment"
+    modelName="Fragment" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.reuseware.coconut.fracol/model/fracol.genmodel#//fracol ../../org.reuseware.coconut.id/model/id.genmodel#//id ../../org.reuseware.coconut.reuseextension/model/reuseextension.genmodel#//reuseextension ../../org.reuseware.coconut.reuseextensionactivator/model/reuseextensionactivator.genmodel#//reuseextensionactivator">
+  <foreignModel>fragment.ecore</foreignModel>
+  <genPackages prefix="Fragment" basePackage="org.reuseware.coconut" disposableProviderFactory="true"
+      ecorePackage="fragment.ecore#/">
+    <genClasses image="false" ecoreClass="fragment.ecore#//APMatchGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fragment.ecore#//APMatchGroup/singleMatches"/>
+      <genOperations ecoreOperation="fragment.ecore#//APMatchGroup/execute">
+        <genParameters ecoreParameter="fragment.ecore#//APMatchGroup/execute/composedSource"/>
+        <genParameters ecoreParameter="fragment.ecore#//APMatchGroup/execute/composedTarget"/>
+        <genParameters ecoreParameter="fragment.ecore#//APMatchGroup/execute/result"/>
+        <genParameters ecoreParameter="fragment.ecore#//APMatchGroup/execute/additionalContext"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//APMatchGroup/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//APMatch">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//APMatch/inverse"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fragment.ecore#//APMatch/matchGroup"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//APMatch/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//APMatch/target"/>
+      <genOperations ecoreOperation="fragment.ecore#//APMatch/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//AddressablePoint">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fragment.ecore#//AddressablePoint/heterogeneousPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//AddressablePoint/name"/>
+      <genFeatures notify="false" children="true" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference fragment.ecore#//AddressablePoint/varTypedEObject"/>
+      <genFeatures notify="false" children="true" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference fragment.ecore#//AddressablePoint/varTypedEStructuralFeature"/>
+      <genOperations ecoreOperation="fragment.ecore#//AddressablePoint/match">
+        <genParameters ecoreParameter="fragment.ecore#//AddressablePoint/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//AddressablePoint/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//Anchor">
+      <genOperations ecoreOperation="fragment.ecore#//Anchor/match">
+        <genParameters ecoreParameter="fragment.ecore#//Anchor/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Anchor/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//ComposedFragment">
+      <genOperations ecoreOperation="fragment.ecore#//ComposedFragment/removeVariationPoints"/>
+      <genOperations ecoreOperation="fragment.ecore#//ComposedFragment/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//CompositionInterface">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fragment.ecore#//CompositionInterface/fragment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fragment.ecore#//CompositionInterface/ports"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//CompositionInterface/roleBinding"/>
+      <genOperations ecoreOperation="fragment.ecore#//CompositionInterface/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//Fragment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//Fragment/UFI"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//Fragment/componentModelActivators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fragment.ecore#//Fragment/compositionInterfaces"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//Fragment/compositionLanguageActivators"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//Fragment/contents"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//Fragment/diagrams"/>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/computeCompositionInterface"/>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/copy">
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/copy/copyUFI"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/createPort">
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createPort/ci"/>
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createPort/element"/>
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createPort/apRule"/>
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createPort/portBinding"/>
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createPort/activator"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/createStaticPorts">
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createStaticPorts/ci"/>
+        <genParameters ecoreParameter="fragment.ecore#//Fragment/createStaticPorts/portBinding"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/getAllAddressablePoints"/>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/getUFIAsID"/>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/removeEmptyInterfacesAndPorts"/>
+      <genOperations ecoreOperation="fragment.ecore#//Fragment/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//HeterogeneousPort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fragment.ecore#//HeterogeneousPort/addressablePoints"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fragment.ecore#//HeterogeneousPort/homogenousPort"/>
+      <genOperations ecoreOperation="fragment.ecore#//HeterogeneousPort/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//HomogeneousPort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fragment.ecore#//HomogeneousPort/heterogeneousPorts"/>
+      <genOperations ecoreOperation="fragment.ecore#//HomogeneousPort/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//Hook">
+      <genOperations ecoreOperation="fragment.ecore#//Hook/match">
+        <genParameters ecoreParameter="fragment.ecore#//Hook/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Hook/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//InstantiationSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//InstantiationSet/instantiations"/>
+      <genOperations ecoreOperation="fragment.ecore#//InstantiationSet/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//PhysicalFragment">
+      <genOperations ecoreOperation="fragment.ecore#//PhysicalFragment/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//Port">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fragment.ecore#//Port/compositionInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//Port/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fragment.ecore#//Port/portTypeBinding"/>
+      <genOperations ecoreOperation="fragment.ecore#//Port/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//Prototype">
+      <genOperations ecoreOperation="fragment.ecore#//Prototype/match">
+        <genParameters ecoreParameter="fragment.ecore#//Prototype/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Prototype/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//ReferencePoint">
+      <genOperations ecoreOperation="fragment.ecore#//ReferencePoint/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//Slot">
+      <genOperations ecoreOperation="fragment.ecore#//Slot/match">
+        <genParameters ecoreParameter="fragment.ecore#//Slot/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//Slot/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//ValueHook">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//ValueHook/beginIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//ValueHook/endIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//ValueHook/listIndex"/>
+      <genOperations ecoreOperation="fragment.ecore#//ValueHook/match">
+        <genParameters ecoreParameter="fragment.ecore#//ValueHook/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//ValueHook/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="fragment.ecore#//ValuePrototype">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//ValuePrototype/value"/>
+      <genOperations ecoreOperation="fragment.ecore#//ValuePrototype/match">
+        <genParameters ecoreParameter="fragment.ecore#//ValuePrototype/match/ap"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//ValuePrototype/removeYou"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="fragment.ecore#//VariationPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//VariationPoint/mode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fragment.ecore#//VariationPoint/remove.1"/>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/append">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/append/parent"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/append/feature"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/append/referenceNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/append/variationNode"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/basicCompose">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/basicCompose/parent"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/basicCompose/feature"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/basicCompose/referenceNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/basicCompose/variationNode"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/bind">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/bind/parent"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/bind/feature"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/bind/referenceNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/bind/variationNode"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/compose">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/compose/rp"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/compose/variationNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/compose/referenceNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/compose/result"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/compose/context"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/extend">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/extend/parent"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/extend/feature"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/extend/referenceNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/extend/variationNode"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/prepend">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/prepend/parent"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/prepend/feature"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/prepend/referenceNode"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/prepend/variationNode"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/primitiveCompose"/>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/remove">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/remove/parent"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/remove/feature"/>
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/remove/variationNode"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/typeMatch">
+        <genParameters ecoreParameter="fragment.ecore#//VariationPoint/typeMatch/rp"/>
+      </genOperations>
+      <genOperations ecoreOperation="fragment.ecore#//VariationPoint/removeYou"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

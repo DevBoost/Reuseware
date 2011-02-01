@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_16-133 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Composition Program Metamodel Edit
+Bundle-SymbolicName: org.reuseware.coconut.compositionprogram.edit; si
+ ngleton:=true
+Bundle-Version: 0.9.1.v200911130906
+Bundle-ClassPath: .
+Bundle-Activator: org.reuseware.coconut.compositionprogram.provider.Co
+ mpositionprogramEditPlugin$Implementation
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.compositionprogram.provider
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.edit,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.edit,
+ org.reuseware.coconut.fracol.edit,
+ org.reuseware.coconut.reuseextension.edit,
+ org.reuseware.coconut.reuseextensionactivator.edit,
+ org.reuseware.coconut.fragment.edit,
+ org.reuseware.coconut.id.edit,
+ org.reuseware.coconut.fracol,
+ org.reuseware.coconut.reuseextension,
+ org.reuseware.coconut.fragment,
+ org.reuseware.coconut.compositionprogram,
+ org.eclipse.ui
+Bundle-ActivationPolicy: lazy
+

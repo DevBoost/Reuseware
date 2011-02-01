@@ -1,0 +1,14 @@
+This file describes how to build the Reuseware metamodel code:
+
+INSTALLATION (OPTIONAL)
+=======================
+- Install Fujaba 5.3.1 from: 
+http://www.se.eecs.uni-kassel.de/fileadmin/se/projects/Fujaba/Fujaba_HEAD_RT-5.3.1-20090909.zip
+- Replace the 'java' and 'emf' templates of 'Fujaba/plugins/CodeGen2' with the ones provided in 'FujabaPlugins/CodeGen2'
+- Add the 'EMFImporter' folder (from 'FujabaPlugins') to the Fujaba 'plugins' folder
+- Remove 'Fujaba/plugins/CodeGen2Sequencer' because it is not compatible with our adjusted templates
+- Start Fujaba and open 'Ecore.ctr' and 'ReusewareMetamodel.ctr'
+
+CODE GENERATION
+===============
+- In Eclipse: Run ANT script 'build-reuseware-metamodel.xml' in same JRE as workspace (see JRE options in run dialogue)

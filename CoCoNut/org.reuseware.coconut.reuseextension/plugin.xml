@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   <extension-point id="evaluator" name="Evaluator" schema="schema/evaluator.exsd"/>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://reuseware.org/coconut/reuseextension"
+            class="org.reuseware.coconut.reuseextension.ReuseextensionPackage"
+            genModel="model/reuseextension.genmodel"/>
+   </extension>
+
+</plugin>

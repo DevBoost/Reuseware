@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== -->
+<project name="ReusewareGuid" default="build-guide">
+
+    <target name="build-guide">
+      <property file="path.properties"/> 
+    	
+      <!-- PDF -->
+      <exec executable="${pdflatex}" dir="latex">
+      	<arg value="-interaction=nonstopmode"/>
+      	<arg value="--src-specials"/>
+  	    <arg value="../latex/ReusewareGuide.tex"/>
+  	  	<env key="PATH" value="${path}" />
+  	  </exec>
+  	  <!-- CLEAN UP -->
+      <move file="latex/ReusewareGuide.pdf" todir="pdf" />
+      <delete dir="latex/" includes="*.aux,*.log,*.out,*.lol,*.lof,*.toc,*.pdf"/>      
+    
+      <!-- HTML -->
+	  <exec executable="${htlatex}" dir="latex">
+	    <arg value="../latex/ReusewareGuide.tex"/>
+	  	<env key="PATH" value="${path}" />
+	  </exec>
+	  <move file="latex/ReusewareGuide.html" todir="html"></move>
+      <move file="latex/ReusewareGuide.css" todir="html"></move>
+      <!-- CLEAN UP -->
+      <delete dir="latex" includes="*.4ct,*.4tc,*.aux,*.dvi,*.idv,*.lg,*.log,*.lol,*.tmp,*.xref,*.log"/>
+      
+    </target>
+	
+</project>

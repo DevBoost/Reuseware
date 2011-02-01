@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Lacome
+Bundle-SymbolicName: org.reuseware.coconut.compositionprogram.lacome;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.emf.ecore,
+ org.reuseware.coconut.fragment,
+ org.reuseware.coconut.compositionprogram,
+ org.reuseware.coconut.resource,
+ org.reuseware.lacome,
+ org.eclipse.gmf.runtime.notation

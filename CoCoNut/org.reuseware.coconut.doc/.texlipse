@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Fri Jul 09 11:29:58 CEST 2010
+builderNum=2
+outputDir=pdf/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=temp
+mainTexFile=ReusewareGuide.tex
+outputFile=ReusewareGuide.pdf
+langSpell=
+markDer=true
+srcDir=latex/

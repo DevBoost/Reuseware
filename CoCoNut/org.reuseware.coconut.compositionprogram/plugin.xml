@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   <extension-point id="compositionStepPostProcessor" name="Composition Step Post Processor" schema="schema/compositionStepPostProcessor.exsd"/>
+   <extension-point id="compositionProgramExtractor" name="Composition Program Extractor" schema="schema/compositionProgramExtractor.exsd"/>
+   <extension-point id="compositionInterfaceComputer" name="Composition Interface Computer" schema="schema/compositionInterfaceComputer.exsd"/>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://reuseware.org/coconut/compositionprogram"
+            class="org.reuseware.coconut.compositionprogram.CompositionprogramPackage"
+            genModel="model/compositionprogram.genmodel"/>
+   </extension>
+
+</plugin>

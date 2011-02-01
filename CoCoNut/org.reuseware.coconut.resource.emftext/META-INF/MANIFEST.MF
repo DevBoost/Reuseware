@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emftext
+Bundle-SymbolicName: org.reuseware.coconut.resource.emftext;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.reuseware.coconut.compositionprogram.resource.ucl,
+ org.emftext.access,
+ org.eclipse.core.resources,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.workspace

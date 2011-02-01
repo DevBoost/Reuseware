@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EMFText Parser Plugin: fracol
+Bundle-SymbolicName: org.reuseware.coconut.fracol.resource.fracol;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+Require-Bundle: org.eclipse.core.resources,
+  org.eclipse.emf,
+  org.eclipse.emf.codegen.ecore,
+  org.eclipse.emf.ecore,
+  org.eclipse.emf.ecore.edit,
+  org.eclipse.emf.validation,
+  org.eclipse.emf.workspace,
+  org.emftext.access;resolution:=optional,
+  org.reuseware.coconut.resource,
+  org.emftext.commons.antlr3_3_0,
+  org.reuseware.coconut.fracol
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.fracol.resource.fracol,
+  org.reuseware.coconut.fracol.resource.fracol.analysis,
+  org.reuseware.coconut.fracol.resource.fracol.mopp,
+  org.reuseware.coconut.fracol.resource.fracol.grammar,
+  org.reuseware.coconut.fracol.resource.fracol.util
+Bundle-Activator: org.reuseware.coconut.fracol.resource.fracol.mopp.FracolPlugin

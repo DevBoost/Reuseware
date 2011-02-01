@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2006-2010&#xA;Software Technology Group, Dresden University of Technology&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA;Software Technology Group - TU Dresden, Germany&#xA;     - initial API and implementation"
+    modelDirectory="/org.reuseware.coconut.compositionprogram/src-gen" modelPluginID="org.reuseware.coconut.compositionprogram"
+    modelName="Compositionprogram" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.reuseware.coconut.fracol/model/fracol.genmodel#//fracol ../../org.reuseware.coconut.fragment/model/fragment.genmodel#//fragment ../../org.reuseware.coconut.id/model/id.genmodel#//id ../../org.reuseware.coconut.reuseextension/model/reuseextension.genmodel#//reuseextension ../../org.reuseware.coconut.reuseextensionactivator/model/reuseextensionactivator.genmodel#//reuseextensionactivator">
+  <foreignModel>compositionprogram.ecore</foreignModel>
+  <genPackages prefix="Compositionprogram" basePackage="org.reuseware.coconut" disposableProviderFactory="true"
+      ecorePackage="compositionprogram.ecore#/">
+    <genClasses ecoreClass="compositionprogram.ecore#//CompositionLink">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionLink/compositionProgram"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//CompositionLink/contributes"/>
+      <genFeatures property="Readonly" notify="false" children="true" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionLink/derivedFrom"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//CompositionLink/empty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionLink/matches"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionLink/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionLink/target"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//CompositionLink/valid"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//CompositionLink/compositionAssociation"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//CompositionLink/match"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//CompositionLink/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="compositionprogram.ecore#//CompositionProgram">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//CompositionProgram/UCPI"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionProgram/composedFragments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionProgram/compositionLinks"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//CompositionProgram/fragmentInstances"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//CompositionProgram/compose"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//CompositionProgram/getUCPIAsID"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//CompositionProgram/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="compositionprogram.ecore#//DerivedCompositionProgram">
+      <genFeatures property="Readonly" notify="false" children="true" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//DerivedCompositionProgram/deriveFrom"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//DerivedCompositionProgram/createCompositionLink">
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createCompositionLink/fragment"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createCompositionLink/source"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createCompositionLink/target"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createCompositionLink/assocBinding"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createCompositionLink/activator"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//DerivedCompositionProgram/createFragmentInstance">
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createFragmentInstance/fragment"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createFragmentInstance/element"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createFragmentInstance/roleBinding"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//DerivedCompositionProgram/createFragmentInstance/activator"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//DerivedCompositionProgram/extractCompositionProgram"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//DerivedCompositionProgram/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="compositionprogram.ecore#//FragmentInstance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//FragmentInstance/UFI"/>
+      <genFeatures property="Readonly" children="true" createChild="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//FragmentInstance/arguments"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference compositionprogram.ecore#//FragmentInstance/compositionProgram"/>
+      <genFeatures property="Readonly" notify="false" children="true" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//FragmentInstance/derivedFrom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//FragmentInstance/fragment"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference compositionprogram.ecore#//FragmentInstance/instantiations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//FragmentInstance/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//FragmentInstance/portInstances"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//FragmentInstance/reference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//FragmentInstance/targetPhysicalLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//FragmentInstance/targetUFI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//FragmentInstance/target"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/completeInstantiation">
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/completeInstantiation/is"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/completeInstantiation/result"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/completeInstantiation/additionalInstantiations"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/completeInstantiation/additionalContext"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/compose">
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/compose/additionalInstantiations"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/compose/additionalContext"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/getSetting">
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/getSetting/port"/>
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/getSetting/property"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/getTargetUFIAsID"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/getUFIAsID"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/setTargetUFIAsString">
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/setTargetUFIAsString/targetUFIString"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/setUFIAsString">
+        <genParameters ecoreParameter="compositionprogram.ecore#//FragmentInstance/setUFIAsString/ufiString"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/update"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//FragmentInstance/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="compositionprogram.ecore#//PhysicalCompositionProgram">
+      <genOperations ecoreOperation="compositionprogram.ecore#//PhysicalCompositionProgram/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="compositionprogram.ecore#//PortInstance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//PortInstance/fracolName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//PortInstance/fracolNamespace"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference compositionprogram.ecore#//PortInstance/fragmentInstance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//PortInstance/fragmentRoleName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//PortInstance/portName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//PortInstance/settings"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//PortInstance/sourceLinks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference compositionprogram.ecore#//PortInstance/targetLinks"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/allPorts"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/canBeReferenced"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/canContribute"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/canReceive"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/isValue"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/port"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/update"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//PortInstance/removeYou"/>
+    </genClasses>
+    <genClasses ecoreClass="compositionprogram.ecore#//Setting">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference compositionprogram.ecore#//Setting/portInstance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//Setting/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute compositionprogram.ecore#//Setting/value"/>
+      <genOperations ecoreOperation="compositionprogram.ecore#//Setting/execute">
+        <genParameters ecoreParameter="compositionprogram.ecore#//Setting/execute/composedTarget"/>
+      </genOperations>
+      <genOperations ecoreOperation="compositionprogram.ecore#//Setting/removeYou"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

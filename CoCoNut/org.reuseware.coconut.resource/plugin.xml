@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="reuseResources" name="reuseResources" schema="schema/reuseResources.exsd"/>
+   <extension-point id="diagramType" name="Diagram Type" schema="schema/diagramType.exsd"/>
+   <extension
+         point="org.reuseware.sokan.resource.pluginStore">
+      <pluginStore
+            folder="store/">
+      </pluginStore>
+   </extension>
+
+</plugin>

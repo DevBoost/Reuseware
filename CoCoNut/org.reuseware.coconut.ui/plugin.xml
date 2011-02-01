@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension-point id="diagramInitializer" name="Diagram Initializer" schema="schema/diagramInitializer.exsd"/>
+    <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.reuseware.coconut.ui"
+            name="Reuseware"/>
+      <view
+            category="org.reuseware.coconut.ui"
+            class="org.reuseware.coconut.ui.views.FragmentRepositoryView"
+            icon="icons/Store.png"
+            id="org.reuseware.coconut.ui.views.FragmentRepositoryView"
+            name="Reuseware Fragment Repository"/>
+    </extension> 
+    <extension
+        point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.reuseware.coconut.ui.preferences.ReusewarePreferencePage"
+            id="org.reuseware.coconut.ui.preferences.ReusewarePreferencePage"
+            name="Reuseware">
+      </page>
+    </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category id="org.reuseware.coconut.ui.examples" name="Reuseware Examples" parentCategory="org.reuseware.coconut.ui">
+      </category>
+   </extension>   
+</plugin>

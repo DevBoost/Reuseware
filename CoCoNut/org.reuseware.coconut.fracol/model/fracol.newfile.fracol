@@ -1,0 +1,20 @@
+fracol ClassWeaving.ClassWeaving {
+
+	fragment role Core {
+		static port type Container;
+		dynamic port type Class;
+	}
+	
+	fragment role Aspect {
+		static port type Content;
+		dynamic port type Advice;
+	}
+	
+	contributing association weave {
+		Aspect.Advice --> Core.Class
+	}
+	
+	contributing association extendCore {
+		Aspect.Content --> Core.Container
+	}
+}

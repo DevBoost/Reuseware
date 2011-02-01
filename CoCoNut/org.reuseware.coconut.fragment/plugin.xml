@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   <extension-point id="fragmentUpdateOperation" name="fragmentUpdateOperation" schema="schema/fragmentUpdateOperation.exsd"/>
+   
+   <extension
+         point="org.eclipse.emf.ecore.generated_package">
+      <package
+            class="org.reuseware.coconut.fragment.FragmentPackage"
+            uri="http://reuseware.org/coconut/fragment"
+            genModel="model/fragment.genmodel">
+      </package>
+   </extension>
+
+</plugin>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.reuseware.coconut.id/src-gen"
+    modelPluginID="org.reuseware.coconut.id" modelName="Id" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>id.ecore</foreignModel>
+  <genPackages prefix="Id" basePackage="org.reuseware.coconut" disposableProviderFactory="true"
+      ecorePackage="id.ecore#/">
+    <genClasses ecoreClass="id.ecore#//ID">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute id.ecore#//ID/segments"/>
+      <genOperations ecoreOperation="id.ecore#//ID/appendAll">
+        <genParameters ecoreParameter="id.ecore#//ID/appendAll/segments"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/appendExtension">
+        <genParameters ecoreParameter="id.ecore#//ID/appendExtension/extension"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/append">
+        <genParameters ecoreParameter="id.ecore#//ID/append/segment"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/extension"/>
+      <genOperations ecoreOperation="id.ecore#//ID/prefix">
+        <genParameters ecoreParameter="id.ecore#//ID/prefix/i"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/replace">
+        <genParameters ecoreParameter="id.ecore#//ID/replace/segment1"/>
+        <genParameters ecoreParameter="id.ecore#//ID/replace/segment2"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/segment">
+        <genParameters ecoreParameter="id.ecore#//ID/segment/i"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/startsWith">
+        <genParameters ecoreParameter="id.ecore#//ID/startsWith/prefix"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/toString"/>
+      <genOperations ecoreOperation="id.ecore#//ID/trimExtension"/>
+      <genOperations ecoreOperation="id.ecore#//ID/trim">
+        <genParameters ecoreParameter="id.ecore#//ID/trim/i"/>
+      </genOperations>
+      <genOperations ecoreOperation="id.ecore#//ID/removeYou"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

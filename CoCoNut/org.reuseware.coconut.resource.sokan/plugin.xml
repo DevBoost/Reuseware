@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.reuseware.sokan.index">
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.indexer.RootEClassIndexer"
+            id="org.reuseware.coconut.resource.sokan.indexer.RootEClassIndexer">
+      </indexer>
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.indexer.DiagramIndexer"
+            id="org.reuseware.coconut.resource.sokan.indexer.DiagramIndexer">
+      </indexer>
+      
+      <!-- dependency calculator -->    
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.indexer.ReuseResourceDependencyIndexer"
+            id="org.reuseware.coconut.resource.sokan.indexer.ReuseResourceDependencyIndexer">
+            <dependsOn
+               indexerID="org.reuseware.coconut.resource.sokan.indexer.RootEClassIndexer"/>
+      </indexer>†
+      
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.indexer.CompositionProgramSourceIndexer"
+            id="org.reuseware.coconut.resource.sokan.indexer.CompositionProgramSourceIndexer">
+            <dependsOn
+               indexerID="org.reuseware.coconut.resource.sokan.indexer.ReuseResourceDependencyIndexer"/>
+      </indexer>
+ 
+      <!-- generators (all called indexers)-->
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.generators.FragmentCompositionInterfaceGenerator"
+            id="org.reuseware.coconut.resource.sokan.generators.FragmentCompositionInterfaceGenerator">
+            <dependsOn
+               indexerID="org.reuseware.coconut.resource.sokan.indexer.ReuseResourceDependencyIndexer"/>
+      </indexer>
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.generators.DerivedCompositionProgramGenerator"
+            id="org.reuseware.coconut.resource.sokan.generators.DerivedCompositionProgramGenerator">
+            <dependsOn
+               indexerID="org.reuseware.coconut.resource.sokan.indexer.CompositionProgramSourceIndexer"/>
+      </indexer>
+      <indexer
+            class="org.reuseware.coconut.resource.sokan.generators.ComposedFragmentsGenerator"
+            id="org.reuseware.coconut.resource.sokan.generators.ComposedFragmentsGenerator">
+            <dependsOn
+               indexerID="org.reuseware.coconut.resource.sokan.generators.FragmentCompositionInterfaceGenerator"/>
+            <dependsOn
+               indexerID="org.reuseware.coconut.resource.sokan.generators.DerivedCompositionProgramGenerator"/>
+      </indexer>
+     
+      <eModeler
+            class="org.reuseware.coconut.resource.sokan.emodeler.FragmentEModeler">
+      </eModeler>
+      <eModeler
+            class="org.reuseware.coconut.resource.sokan.emodeler.RexActivatorEModeler">
+      </eModeler>
+            
+      <eModeler
+            class="org.reuseware.coconut.resource.sokan.emodeler.MetaArtifactEModeler">
+      </eModeler>
+      
+      <!-- [XMLResource] to ensure that XML resources are loaded despite of small errors -->
+      <loadOption
+            key="RECORD_UNKNOWN_FEATURE"
+            value="true">
+      </loadOption>
+      <!-- [JaMoPP] to ensure that Java types are qualified -->
+      <loadOption
+            key="OPTION_ALWAYS_USE_FULLY_QUALIFIED_NAMES"
+            value="true">
+      </loadOption>
+   </extension>
+   
+   <extension
+         point="org.reuseware.coconut.resource.reuseResources">
+      <fragmentCompositionInterfaceCreator
+            class="org.reuseware.coconut.resource.sokan.SokanFragmentCompositionInterfaceCreator">
+      </fragmentCompositionInterfaceCreator>
+      <reuseResourceAccess
+            class="org.reuseware.coconut.resource.sokan.SokanReuseResourceAccess">
+      </reuseResourceAccess>
+      <resourceDependencyCalculator
+            class="org.reuseware.coconut.resource.sokan.SokanReuseResourceDependencyCalculator">
+      </resourceDependencyCalculator>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.protocol_parser">
+      <parser
+            class="org.reuseware.coconut.resource.sokan.FragmentResourceFactory"
+            protocolName="reuseware">
+      </parser>
+   </extension>
+
+</plugin>

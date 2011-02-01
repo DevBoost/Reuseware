@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_16-133 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Reuse Extension Metamodel
+Bundle-SymbolicName: org.reuseware.coconut.reuseextension; singleton:=
+ true
+Bundle-Version: 0.9.1.v200911130906
+Bundle-ClassPath: .
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.reuseextension,
+ org.reuseware.coconut.reuseextension.evaluator,
+ org.reuseware.coconut.reuseextension.impl,
+ org.reuseware.coconut.reuseextension.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ org.reuseware.coconut.fracol,
+ org.eclipse.ocl.ecore
+Bundle-ActivationPolicy: lazy
+

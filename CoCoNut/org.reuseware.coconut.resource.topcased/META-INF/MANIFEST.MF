@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Topcased
+Bundle-SymbolicName: org.reuseware.coconut.resource.topcased;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.reuseware.coconut.compositionprogram.resource.ucl,
+ org.eclipse.core.resources,
+ org.eclipse.emf.ecore,
+ org.reuseware.coconut.fragment,
+ org.reuseware.coconut.resource,
+ org.eclipse.emf.workspace
+Bundle-ActivationPolicy: lazy

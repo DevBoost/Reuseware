@@ -1,0 +1,15 @@
+fracol org.reuseware.lib.systems.default { 
+	fragment role Default { 
+		dynamic port type Config;
+		dynamic port type Contrib;
+		dynamic port type Rec;
+	} 
+	
+	contributing association Contribution {
+		Default.Contrib --> Default.Rec 
+	} 
+	
+	configuring association Configuration {
+		Default.Config --> Default.Config 
+	}
+} 

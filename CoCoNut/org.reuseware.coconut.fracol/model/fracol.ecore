@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="fracol"
+    nsURI="http://reuseware.org/coconut/fracol" nsPrefix="org.reuseware.coconut.fracol">
+  <eClassifiers xsi:type="ecore:EClass" name="CompositionAssociation" abstract="true">
+    <eOperations name="removeYou"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="end1Role" ordered="false"
+        lowerBound="1" eType="#//FragmentRole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="end1" ordered="false" lowerBound="1"
+        eType="#//PortType" eOpposite="#//PortType/compositionAssociations"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="end2Role" ordered="false"
+        lowerBound="1" eType="#//FragmentRole"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="end2" ordered="false" lowerBound="1"
+        eType="#//PortType" eOpposite="#//PortType/compositionAssociations2"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fragmentCollaboration"
+        ordered="false" eType="#//FragmentCollaboration" eOpposite="#//FragmentCollaboration/compositionAssociations"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration" eSuperTypes="#//CompositionAssociation">
+    <eOperations name="removeYou"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contribution" eSuperTypes="#//CompositionAssociation">
+    <eOperations name="removeYou"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DynamicPortType" eSuperTypes="#//PortType">
+    <eOperations name="removeYou"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FragmentCollaboration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="All"/>
+    </eAnnotations>
+    <eOperations name="getCompositionAssociation" eType="#//CompositionAssociation">
+      <eParameters name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="getFragmentRole" eType="#//FragmentRole">
+      <eParameters name="fragmentRoleName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="removeYou"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compositionAssociations"
+        ordered="false" upperBound="-1" eType="#//CompositionAssociation" containment="true"
+        eOpposite="#//CompositionAssociation/fragmentCollaboration" eKeys="#//CompositionAssociation/name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fracolName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fracolNamespace" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fragmentRoles" ordered="false"
+        upperBound="-1" eType="#//FragmentRole" containment="true" eOpposite="#//FragmentRole/fragmentCollaboration"
+        eKeys="#//FragmentRole/name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FragmentRole">
+    <eOperations name="getPortType" eType="#//PortType">
+      <eParameters name="portTypeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="removeYou"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fragmentCollaboration"
+        ordered="false" eType="#//FragmentCollaboration" eOpposite="#//FragmentCollaboration/fragmentRoles"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="portTypes" ordered="false"
+        upperBound="-1" eType="#//PortType" containment="true" eOpposite="#//PortType/fragmentRole"
+        eKeys="#//PortType/name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PortType" abstract="true">
+    <eOperations name="removeYou"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compositionAssociations2"
+        ordered="false" upperBound="-1" eType="#//CompositionAssociation" eOpposite="#//CompositionAssociation/end2"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compositionAssociations"
+        ordered="false" upperBound="-1" eType="#//CompositionAssociation" eOpposite="#//CompositionAssociation/end1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fragmentRole" ordered="false"
+        eType="#//FragmentRole" eOpposite="#//FragmentRole/portTypes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StaticPortType" eSuperTypes="#//PortType">
+    <eOperations name="removeYou"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax.ui">
+		<metaInformationProvider class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorUIMetaInformation" id="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorUIMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorEditor" contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor" extensions="rex_activator" icon="icons/ReuseExtensionActivatorList.gif" id="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorEditor" name="EMFText rex_activator Editor">
+			<contentTypeBinding contentTypeId="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator">
+			</contentTypeBinding>
+		</editor>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorPreferenceInitializer">
+		</initializer>
+	</extension>
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page name="Rex_activator Text Editor" id="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorPreferencePage" class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorPreferencePage" category="org.eclipse.ui.preferencePages.GeneralTextEditor">
+		</page>
+		<page name="Syntax Coloring" id="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorSyntaxColoringPreferencePage" class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorSyntaxColoringPreferencePage" category="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorPreferencePage">
+		</page>
+		<page name="Brackets" id="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorBracketPreferencePage" class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorBracketPreferencePage" category="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorPreferencePage">
+		</page>
+	</extension>
+	
+	<extension point="org.eclipse.ui.newWizards">
+		<category id="org.reuseware.coconut.ui" name="Reuseware">
+		</category>
+		<wizard category="org.reuseware.coconut.ui" icon="/icons/ReuseExtensionActivatorList.gif" class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorNewFileWizard" id="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.ui.Rex_activatorNewFileWizard" name="Reuseware Reuse Extension Activator File">
+		</wizard>
+	</extension>
+	
+	<extension point="org.eclipse.ui.ide.markerResolution">
+		<markerResolutionGenerator class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorMarkerResolutionGenerator" markerType="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.problem">
+		</markerResolutionGenerator>
+	</extension>
+	
+	<extension point="org.eclipse.core.filebuffers.annotationModelCreation">
+		<factory class="org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorAnnotationModelFactory" extensions="rex_activator">
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type id="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator" name=".rex_activator File" base-type="org.eclipse.core.runtime.text" file-extensions="rex_activator">
+		</content-type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.documentProviders">
+		<provider class="org.eclipse.ui.editors.text.TextFileDocumentProvider" extensions="rex_activator" id="org.reuseware.coconut.reuseextensionactivator.ui.provider">
+		</provider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="org.reuseware.coconut.reuseextensionactivator.ui.occurences">
+		</type>
+		<type name="org.reuseware.coconut.reuseextensionactivator.ui.occurences.declaration" super="org.reuseware.coconut.reuseextensionactivator.ui.occurences">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="org.reuseware.coconut.reuseextensionactivator.ui.occurences" label="Occurrences (in .rex_activator files)" icon="/icons/occurrence_icon.gif" textPreferenceKey="rex_activator.occurrenceIndication" textPreferenceValue="false" highlightPreferenceKey="rex_activator.occurrenceHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="rex_activator.occurrenceIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="rex_activator.occurrenceIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="rex_activator.occurrenceIndicationColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="rex_activator.showOccurrenceInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="rex_activator.isOccurrenceGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="rex_activator.isOccurrenceGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="rex_activator.occurrenceTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+		<specification annotationType="org.reuseware.coconut.reuseextensionactivator.ui.occurences.declaration" label="Declarations (in .rex_activator files)" textPreferenceKey="rex_activator.declarationIndication" textPreferenceValue="false" highlightPreferenceKey="rex_activator.declarationHighlighting" highlightPreferenceValue="true" overviewRulerPreferenceKey="rex_activator.declarationIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="rex_activator.declarationIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="rex_activator.declarationIndicationColor" colorPreferenceValue="240,216,168" presentationLayer="4" textStylePreferenceKey="rex_activator.declarationTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+</plugin>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Evaluator
+Bundle-SymbolicName: org.reuseware.coconut.reuseextension.evaluator.ocl;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.reuseware.coconut.reuseextension,
+ org.eclipse.ocl.ecore,
+ org.reuseware.coconut.id
+Export-Package: org.reuseware.coconut.reuseextension.evaluator.ocl
