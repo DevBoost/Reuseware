@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+    <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.reuseware.comogen.ui"
+            name="Reuseware Developer"/>
+      <view
+            category="org.reuseware.comogen.ui"
+            class="org.reuseware.comogen.ui.views.CompositionSystemRepositoryView"
+            icon="icons/Store.png"
+            id="org.reuseware.comogen.ui.views.CompositionSystemRepositoryView"
+            name="Reuseware Composition System Repository"/>
+   </extension>
+   
+</plugin>

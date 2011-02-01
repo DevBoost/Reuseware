@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax.ui">
+		<metaInformationProvider class="org.reuseware.comogen.fracol.ui.FracolUIMetaInformation" id="org.reuseware.comogen.fracol.ui.FracolUIMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor class="org.reuseware.comogen.fracol.ui.FracolEditor" contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor" extensions="fracol" icon="icons/Fracol.gif" id="org.reuseware.comogen.fracol.ui.FracolEditor" name="EMFText fracol Editor">
+			<contentTypeBinding contentTypeId="org.reuseware.coconut.fracol.resource.fracol">
+			</contentTypeBinding>
+		</editor>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="org.reuseware.comogen.fracol.ui.FracolPreferenceInitializer">
+		</initializer>
+	</extension>
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page name="Fracol Text Editor" id="org.reuseware.comogen.fracol.ui.FracolPreferencePage" class="org.reuseware.comogen.fracol.ui.FracolPreferencePage" category="org.reuseware.coconut.ui.preferences.ReusewarePreferencePage">
+		</page>
+		<page name="Syntax Coloring" id="org.reuseware.comogen.fracol.ui.FracolSyntaxColoringPreferencePage" class="org.reuseware.comogen.fracol.ui.FracolSyntaxColoringPreferencePage" category="org.reuseware.comogen.fracol.ui.FracolPreferencePage">
+		</page>
+		<page name="Brackets" id="org.reuseware.comogen.fracol.ui.FracolBracketPreferencePage" class="org.reuseware.comogen.fracol.ui.FracolBracketPreferencePage" category="org.reuseware.comogen.fracol.ui.FracolPreferencePage">
+		</page>
+	</extension>
+	
+	<extension point="org.eclipse.ui.newWizards">
+		<category id="org.reuseware.comogen.ui" name="Reuseware Developer">
+		</category>
+		<wizard category="org.reuseware.comogen.ui" icon="/icons/Fracol.gif" class="org.reuseware.comogen.fracol.ui.FracolNewFileWizard" id="org.reuseware.comogen.fracol.ui.FracolNewFileWizard" name="Reuseware Fracol Definition">
+		</wizard>
+	</extension>
+	
+	<extension point="org.eclipse.ui.ide.markerResolution">
+		<markerResolutionGenerator class="org.reuseware.comogen.fracol.ui.FracolMarkerResolutionGenerator" markerType="org.reuseware.coconut.fracol.resource.fracol.problem">
+		</markerResolutionGenerator>
+	</extension>
+	
+	<extension point="org.eclipse.core.filebuffers.annotationModelCreation">
+		<factory class="org.reuseware.comogen.fracol.ui.FracolAnnotationModelFactory" extensions="fracol">
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type id="org.reuseware.coconut.fracol.resource.fracol" name=".fracol File" base-type="org.eclipse.core.runtime.text" file-extensions="fracol">
+		</content-type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.documentProviders">
+		<provider class="org.eclipse.ui.editors.text.TextFileDocumentProvider" extensions="fracol" id="org.reuseware.comogen.fracol.ui.provider">
+		</provider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="org.reuseware.comogen.fracol.ui.occurences">
+		</type>
+		<type name="org.reuseware.comogen.fracol.ui.occurences.declaration" super="org.reuseware.comogen.fracol.ui.occurences">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="org.reuseware.comogen.fracol.ui.occurences" label="Occurrences (in .fracol files)" icon="/icons/occurrence_icon.gif" textPreferenceKey="fracol.occurrenceIndication" textPreferenceValue="false" highlightPreferenceKey="fracol.occurrenceHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="fracol.occurrenceIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="fracol.occurrenceIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="fracol.occurrenceIndicationColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="fracol.showOccurrenceInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="fracol.isOccurrenceGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="fracol.isOccurrenceGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="fracol.occurrenceTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+		<specification annotationType="org.reuseware.comogen.fracol.ui.occurences.declaration" label="Declarations (in .fracol files)" textPreferenceKey="fracol.declarationIndication" textPreferenceValue="false" highlightPreferenceKey="fracol.declarationHighlighting" highlightPreferenceValue="true" overviewRulerPreferenceKey="fracol.declarationIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="fracol.declarationIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="fracol.declarationIndicationColor" colorPreferenceValue="240,216,168" presentationLayer="4" textStylePreferenceKey="fracol.declarationTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+</plugin>

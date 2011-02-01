@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax.ui">
+		<metaInformationProvider class="org.reuseware.comogen.reuseextension.ui.RexUIMetaInformation" id="org.reuseware.comogen.reuseextension.ui.RexUIMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor class="org.reuseware.comogen.reuseextension.ui.RexEditor" contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor" extensions="rex" icon="icons/ReuseExtension.gif" id="org.reuseware.comogen.reuseextension.ui.RexEditor" name="EMFText rex Editor">
+			<contentTypeBinding contentTypeId="org.reuseware.coconut.reuseextension.resource.rex">
+			</contentTypeBinding>
+		</editor>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="org.reuseware.comogen.reuseextension.ui.RexPreferenceInitializer">
+		</initializer>
+	</extension>
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page name="Rex Text Editor" id="org.reuseware.comogen.reuseextension.ui.RexPreferencePage" class="org.reuseware.comogen.reuseextension.ui.RexPreferencePage" category="org.reuseware.coconut.ui.preferences.ReusewarePreferencePage">
+		</page>
+		<page name="Syntax Coloring" id="org.reuseware.comogen.reuseextension.ui.RexSyntaxColoringPreferencePage" class="org.reuseware.comogen.reuseextension.ui.RexSyntaxColoringPreferencePage" category="org.reuseware.comogen.reuseextension.ui.RexPreferencePage">
+		</page>
+		<page name="Brackets" id="org.reuseware.comogen.reuseextension.ui.RexBracketPreferencePage" class="org.reuseware.comogen.reuseextension.ui.RexBracketPreferencePage" category="org.reuseware.comogen.reuseextension.ui.RexPreferencePage">
+		</page>
+	</extension>
+	
+	<extension point="org.eclipse.ui.newWizards">
+		<category id="org.reuseware.comogen.ui" name="Reuseware Developer">
+		</category>
+		<wizard category="org.reuseware.comogen.ui" icon="/icons/ReuseExtension.gif" class="org.reuseware.comogen.reuseextension.ui.RexNewFileWizard" id="org.reuseware.coconut.reuseextension.resource.rex.ui.RexNewFileWizard" name="Reuseware Reuse Extension Definition">
+		</wizard>
+	</extension>
+	
+	<extension point="org.eclipse.ui.ide.markerResolution">
+		<markerResolutionGenerator class="org.reuseware.comogen.reuseextension.ui.RexMarkerResolutionGenerator" markerType="org.reuseware.coconut.reuseextension.resource.rex.problem">
+		</markerResolutionGenerator>
+	</extension>
+	
+	<extension point="org.eclipse.core.filebuffers.annotationModelCreation">
+		<factory class="org.reuseware.comogen.reuseextension.ui.RexAnnotationModelFactory" extensions="rex">
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type id="org.reuseware.coconut.reuseextension.resource.rex" name=".rex File" base-type="org.eclipse.core.runtime.text" file-extensions="rex">
+		</content-type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.documentProviders">
+		<provider class="org.eclipse.ui.editors.text.TextFileDocumentProvider" extensions="rex" id="org.reuseware.comogen.reuseextension.ui.provider">
+		</provider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="org.reuseware.comogen.reuseextension.ui.occurences">
+		</type>
+		<type name="org.reuseware.comogen.reuseextension.ui.occurences.declaration" super="org.reuseware.comogen.reuseextension.ui.occurences">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="org.reuseware.comogen.reuseextension.ui.occurences" label="Occurrences (in .rex files)" icon="/icons/occurrence_icon.gif" textPreferenceKey="rex.occurrenceIndication" textPreferenceValue="false" highlightPreferenceKey="rex.occurrenceHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="rex.occurrenceIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="rex.occurrenceIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="rex.occurrenceIndicationColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="rex.showOccurrenceInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="rex.isOccurrenceGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="rex.isOccurrenceGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="rex.occurrenceTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+		<specification annotationType="org.reuseware.comogen.reuseextension.ui.occurences.declaration" label="Declarations (in .rex files)" textPreferenceKey="rex.declarationIndication" textPreferenceValue="false" highlightPreferenceKey="rex.declarationHighlighting" highlightPreferenceValue="true" overviewRulerPreferenceKey="rex.declarationIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="rex.declarationIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="rex.declarationIndicationColor" colorPreferenceValue="240,216,168" presentationLayer="4" textStylePreferenceKey="rex.declarationTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+</plugin>
