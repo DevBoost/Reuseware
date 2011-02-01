@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 11.0-b16 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Library Metamodel
+Bundle-SymbolicName: org.reuseware.coconut.description; singleton:=tru
+ e
+Bundle-Version: 0.9.1.v200911130906
+Bundle-ClassPath: .
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.description,org.reuseware.coconu
+ t.description.impl,org.reuseware.coconut.description.util
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibil
+ ity:=reexport,org.reuseware.coconut.compositionsystem;visibility:=ree
+ xport,org.reuseware.coconut.fragment;visibility:=reexport,org.reusewa
+ re.coconut.repository;visibility:=reexport,org.reuseware.coconut.reus
+ eextension;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+

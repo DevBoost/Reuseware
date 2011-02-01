@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 11.0-b16 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Library Browser
+Bundle-SymbolicName: org.reuseware.coconut.description.browse; singlet
+ on:=true
+Bundle-Version: 0.9.1.v200911130906
+Bundle-Activator: org.reuseware.coconut.description.browse.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.reuseware.
+ coconut.description,org.reuseware.coconut.description.classify,org.ec
+ lipse.core.resources,org.reuseware.coconut.ui.eclipse,org.eclipse.ocl
+ .ecore,org.junit,org.reuseware.coconut.compositionprogram.diagram,org
+ .eclipse.emf.transaction,org.eclipse.gmf.runtime.diagram.ui.resources
+ .editor,org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,org.e
+ clipse.gmf.runtime.diagram.ui.properties,org.eclipse.ui.ide
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+Export-Package: org.reuseware.coconut.description.browse.util
+

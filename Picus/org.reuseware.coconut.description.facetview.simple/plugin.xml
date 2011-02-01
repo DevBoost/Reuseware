@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.reuseware.coconut.description.classify">
+      <facet_view
+            canShow="TreeFacet, ListFacet, RangeFacet, DateFacet, FreeTextFacet"
+            class="org.reuseware.coconut.description.facetview.simple.views.SimpleFacetView">
+      </facet_view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="true"
+            category="org.reuseware.coconut.description.classify.views"
+            class="org.reuseware.coconut.description.facetview.simple.views.SimpleFacetView"
+            fastViewWidthRatio="0.384615"
+            icon="icons/sample.gif"
+            id="org.reuseware.coconut.description.facetview.simple.views.SimpleFacetView"
+            name="Simple Facet View">
+      </view>
+   </extension>
+
+</plugin>

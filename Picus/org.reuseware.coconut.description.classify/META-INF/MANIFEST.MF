@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 11.0-b16 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Reuseware Library Classify
+Bundle-SymbolicName: org.reuseware.coconut.description.classify; singl
+ eton:=true
+Bundle-Version: 0.9.1.v200911130906
+Bundle-Activator: org.reuseware.coconut.description.classify.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.reuseware.
+ coconut.description,org.eclipse.core.resources,org.reuseware.coconut.
+ ui.eclipse,org.eclipse.ocl.ecore,org.junit
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.reuseware.coconut.description.classify,org.reusewa
+ re.coconut.description.classify.test,org.reuseware.coconut.descriptio
+ n.classify.views.describe,org.reuseware.coconut.description.classify.
+ views.facet
+Import-Package: org.eclipse.ui
+Bundle-Vendor: Software Technology Group - TU Dresden Germany
+

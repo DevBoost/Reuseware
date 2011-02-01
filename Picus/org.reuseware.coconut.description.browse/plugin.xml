@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.reuseware.coconut.description.browse.views"
+            name="Reuseware Fagment Browser">
+      </category>
+      <view
+            allowMultiple="false"
+            category="org.reuseware.coconut.description.browse.views"
+            class="org.reuseware.coconut.description.browse.views.search.SearchView"
+            icon="icons/views/search.gif"
+            id="org.reuseware.coconut.description.browse.views.search.SearchView"
+            name="Search"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            category="org.reuseware.coconut.description.browse.views"
+            class="org.reuseware.coconut.description.browse.views.selectedfacets.SelectedFacetsView"
+            icon="icons/views/selected.gif"
+            id="org.reuseware.coconut.description.browse.views.selectedfacets.SelectedFacetsView"
+            name="Selected Facets"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            category="org.reuseware.coconut.description.browse.views"
+            class="org.reuseware.coconut.description.browse.views.additionalfacets.AdditionalFacetsView"
+            icon="icons/views/additional.gif"
+            id="org.reuseware.coconut.description.browse.views.additionalfacets.AdditionalFacetsView"
+            name="Additional Facets"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            category="org.reuseware.coconut.description.browse.views"
+            class="org.reuseware.coconut.description.browse.views.content.ContentView"
+            icon="icons/views/content.gif"
+            id="org.reuseware.coconut.description.browse.views.content.ContentView"
+            name="Search Content"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            category="org.reuseware.coconut.description.browse.views"
+            class="org.reuseware.coconut.description.browse.views.groupsort.GroupSortView"
+            icon="icons/views/sort.gif"
+            id="org.reuseware.coconut.description.browse.views.groupsort.GroupSortView"
+            name="Group/Sort"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.reuseware.coconut.description.browse.views.BrowserPerspectiveFactory"
+            icon="icons/browser.gif"
+            id="org.reuseware.coconut.description.browse.perspective"
+            name="Fragment Browser">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="org.reuseware.coconut.description.browse.views.content.ContentView"
+               ratio="0.5"
+               relationship="stack"
+               relative="org.eclipse.jdt.ui.JavadocView">
+         </view>
+      </perspectiveExtension>
+      <perspectiveExtension
+            targetID="*">
+         <viewShortcut
+               id="org.reuseware.coconut.description.browse.views.content.ContentView">
+         </viewShortcut>
+         <perspectiveShortcut
+               id="org.reuseware.coconut.description.browse.perspective">
+         </perspectiveShortcut>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>
