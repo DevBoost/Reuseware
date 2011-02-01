@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:TraceModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:trace="http://www.eclipse.org/gmf/2006/Trace">
+  <nodeTraces
+      visualID="2001"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'USBDevice'">
+    <nodeLabelTraces
+        visualID="5001"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5002"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2002"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'OSPFVirtualInterface'">
+    <nodeLabelTraces
+        visualID="5003"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5004"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2003"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'WiFiPort'">
+    <nodeLabelTraces
+        visualID="5005"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5006"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2004"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ProtocolService'">
+    <nodeLabelTraces
+        visualID="5007"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5008"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2005"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'RoutingPolicy'">
+    <nodeLabelTraces
+        visualID="5009"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5010"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2006"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'EnabledLogicalElementCapabilities'">
+    <nodeLabelTraces
+        visualID="5011"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5012"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2007"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BufferPool'">
+    <nodeLabelTraces
+        visualID="5013"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5014"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2008"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'MPLSProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5015"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5016"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2009"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AutonomousSystem'">
+    <nodeLabelTraces
+        visualID="5017"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5018"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2010"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'DNSSettingData'">
+    <nodeLabelTraces
+        visualID="5019"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5020"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2011"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'UniModem'">
+    <nodeLabelTraces
+        visualID="5021"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5022"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2012"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'EFService'">
+    <nodeLabelTraces
+        visualID="5023"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5024"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2013"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPSubnet'">
+    <nodeLabelTraces
+        visualID="5025"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5026"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2014"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NamedAddressCollection'">
+    <nodeLabelTraces
+        visualID="5027"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5028"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2015"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BIOSElement'">
+    <nodeLabelTraces
+        visualID="5029"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5030"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2016"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'TelnetSettingData'">
+    <nodeLabelTraces
+        visualID="5031"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5032"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2017"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPPeerGroup'">
+    <nodeLabelTraces
+        visualID="5033"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5034"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2018"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LANConnectivitySegment'">
+    <nodeLabelTraces
+        visualID="5035"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5036"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2019"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'CableModem'">
+    <nodeLabelTraces
+        visualID="5037"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5038"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2020"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SwitchPort'">
+    <nodeLabelTraces
+        visualID="5039"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5040"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2021"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'TCPProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5041"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5042"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2022"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AdministrativeDistance'">
+    <nodeLabelTraces
+        visualID="5043"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5044"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2023"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPConnectivitySubnet'">
+    <nodeLabelTraces
+        visualID="5045"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5046"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2024"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'VolatileStorage'">
+    <nodeLabelTraces
+        visualID="5047"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5048"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2025"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'RangeOfIPAddresses'">
+    <nodeLabelTraces
+        visualID="5049"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5050"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2026"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5051"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5052"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2027"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'UnitaryComputerSystem'">
+    <nodeLabelTraces
+        visualID="5053"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5054"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2028"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'EthernetPort'">
+    <nodeLabelTraces
+        visualID="5055"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5056"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2029"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SNMPService'">
+    <nodeLabelTraces
+        visualID="5057"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5058"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2030"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalModule'">
+    <nodeLabelTraces
+        visualID="5059"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5060"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2031"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NextHopIPRoute'">
+    <nodeLabelTraces
+        visualID="5061"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5062"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2032"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'OperatingSystem'">
+    <nodeLabelTraces
+        visualID="5063"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5064"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2033"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SDSLModem'">
+    <nodeLabelTraces
+        visualID="5065"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5066"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2034"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'WiFiEndPoint'">
+    <nodeLabelTraces
+        visualID="5067"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5068"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2035"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NATService'">
+    <nodeLabelTraces
+        visualID="5069"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5070"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2036"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ADSLModem'">
+    <nodeLabelTraces
+        visualID="5071"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5072"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2037"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalFile'">
+    <nodeLabelTraces
+        visualID="5073"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5074"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2038"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPCluster'">
+    <nodeLabelTraces
+        visualID="5075"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5076"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2039"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ApplicationSystem'">
+    <nodeLabelTraces
+        visualID="5077"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5078"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2040"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SoftwareIdentity'">
+    <nodeLabelTraces
+        visualID="5079"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5080"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2041"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'WirelessPort'">
+    <nodeLabelTraces
+        visualID="5081"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5082"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2042"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'CLPSettingData'">
+    <nodeLabelTraces
+        visualID="5083"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5084"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2043"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'GenericService'">
+    <nodeLabelTraces
+        visualID="5085"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5086"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2044"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NATListBasedSettings'">
+    <nodeLabelTraces
+        visualID="5087"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5088"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2045"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'VDSLModem'">
+    <nodeLabelTraces
+        visualID="5089"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5090"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2046"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'USBPort'">
+    <nodeLabelTraces
+        visualID="5091"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5092"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2047"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'DNSProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5093"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5094"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2048"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'WiFiEndpointSettings'">
+    <nodeLabelTraces
+        visualID="5095"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5096"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2049"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SSHSettingData'">
+    <nodeLabelTraces
+        visualID="5097"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5098"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2050"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'WirelessLANEndpoint'">
+    <nodeLabelTraces
+        visualID="5099"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5100"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2051"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'DHCPProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5101"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5102"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2052"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPHeadersFilter'">
+    <nodeLabelTraces
+        visualID="5103"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5104"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2053"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Directory'">
+    <nodeLabelTraces
+        visualID="5105"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5106"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2054"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPAddressRange'">
+    <nodeLabelTraces
+        visualID="5107"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5108"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2055"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SNMPTrapTarget'">
+    <nodeLabelTraces
+        visualID="5109"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5110"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2056"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPXConnectivityNetwork'">
+    <nodeLabelTraces
+        visualID="5111"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5112"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2057"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ConnectivityMemberhipSettingData'">
+    <nodeLabelTraces
+        visualID="5113"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5114"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2058"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ConditioningService'">
+    <nodeLabelTraces
+        visualID="5115"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5116"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2059"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BIOSFeature'">
+    <nodeLabelTraces
+        visualID="5117"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5118"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2060"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'OSPFProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5119"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5120"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2061"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'FilterList'">
+    <nodeLabelTraces
+        visualID="5121"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5122"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2062"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPService'">
+    <nodeLabelTraces
+        visualID="5123"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5124"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2063"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'PrecedenceService'">
+    <nodeLabelTraces
+        visualID="5125"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5126"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2064"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'DHCPCapabilities'">
+    <nodeLabelTraces
+        visualID="5127"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5128"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2065"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Hdr8021PService'">
+    <nodeLabelTraces
+        visualID="5129"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5130"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2066"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ReplacementSet'">
+    <nodeLabelTraces
+        visualID="5131"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5132"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2067"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'HDSLModem'">
+    <nodeLabelTraces
+        visualID="5133"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5134"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2068"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ServiceAccessURI'">
+    <nodeLabelTraces
+        visualID="5135"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5136"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2069"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'FilterEntry'">
+    <nodeLabelTraces
+        visualID="5137"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5138"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2070"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SNMPCommunityStrings'">
+    <nodeLabelTraces
+        visualID="5139"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5140"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2071"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Network'">
+    <nodeLabelTraces
+        visualID="5141"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5142"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2072"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'FileSpecification'">
+    <nodeLabelTraces
+        visualID="5143"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5144"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2073"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPXNetwork'">
+    <nodeLabelTraces
+        visualID="5145"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5146"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2074"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'PowerManagementCapabilities'">
+    <nodeLabelTraces
+        visualID="5147"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5148"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2075"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'FlowService'">
+    <nodeLabelTraces
+        visualID="5149"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5150"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2076"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ISDNModem'">
+    <nodeLabelTraces
+        visualID="5151"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5152"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2077"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPXProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5153"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5154"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2078"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'IPProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5155"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5156"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2079"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'UDPProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5157"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5158"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2080"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Product'">
+    <nodeLabelTraces
+        visualID="5159"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5160"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2081"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'MemoryCapacity'">
+    <nodeLabelTraces
+        visualID="5161"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5162"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2082"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'RoutingProtocolDomain'">
+    <nodeLabelTraces
+        visualID="5163"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5164"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2083"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AFService'">
+    <nodeLabelTraces
+        visualID="5165"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5166"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2084"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LANSegment'">
+    <nodeLabelTraces
+        visualID="5167"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5168"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2085"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NATStaticSettings'">
+    <nodeLabelTraces
+        visualID="5169"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5170"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2086"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'TelnetProtocolEndpoint'">
+    <nodeLabelTraces
+        visualID="5171"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5172"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2087"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LANEndpoint'">
+    <nodeLabelTraces
+        visualID="5173"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5174"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2088"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'DropThresholdCalculationService'">
+    <nodeLabelTraces
+        visualID="5175"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5176"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2089"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AdminDomain'">
+    <nodeLabelTraces
+        visualID="5177"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5178"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2090"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SystemSpecificCollection'">
+    <nodeLabelTraces
+        visualID="5179"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5180"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2091"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NextHopRouting'">
+    <nodeLabelTraces
+        visualID="5181"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5182"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2092"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ComputerSystem'">
+    <nodeLabelTraces
+        visualID="5183"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5184"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2093"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NetworkPort'">
+    <nodeLabelTraces
+        visualID="5185"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5186"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2094"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'RemoteServiceAccessPoint'">
+    <nodeLabelTraces
+        visualID="5187"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5188"
+        queryText="true"/>
+  </nodeTraces>
+  <linkTraces
+      visualID="4001"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'DirectorySpecification') and _feature_.name = 'directorySpecificationFiles')">
+    <linkLabelTraces
+        visualID="6001"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4002"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'OperatingSystem') and _feature_.name = 'operatingSystemSoftwareFeature')">
+    <linkLabelTraces
+        visualID="6002"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4003"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SoftwareElement') and _feature_.name = 'softwareElementActions')">
+    <linkLabelTraces
+        visualID="6003"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4004"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SoftwareElement') and _feature_.name = 'softwareElementChecks')">
+    <linkLabelTraces
+        visualID="6004"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4005"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'InstalledProduct') and _feature_.name = 'softwareElements')">
+    <linkLabelTraces
+        visualID="6005"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4006"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPService') and _feature_.name = 'BGPPeerGroupServices')">
+    <linkLabelTraces
+        visualID="6006"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4007"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPCluster') and _feature_.name = 'reflectorClientService')">
+    <linkLabelTraces
+        visualID="6007"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4008"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPCluster') and _feature_.name = 'reflectorNonClientService')">
+    <linkLabelTraces
+        visualID="6008"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4009"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPCluster') and _feature_.name = 'reflectorService')">
+    <linkLabelTraces
+        visualID="6009"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4010"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ServiceAccessPoint') and _feature_.name = 'bindsTo')">
+    <linkLabelTraces
+        visualID="6010"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4011"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ManagedElement') and _feature_.name = 'components')">
+    <linkLabelTraces
+        visualID="6011"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4012"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AdminDomain') and _feature_.name = 'containedDomain')">
+    <linkLabelTraces
+        visualID="6012"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4013"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ManagedElement') and _feature_.name = 'dependencies')">
+    <linkLabelTraces
+        visualID="6013"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4014"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalDevice') and _feature_.name = 'deviceConnection')">
+    <linkLabelTraces
+        visualID="6014"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4015"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalDevice') and _feature_.name = 'deviceIdentity')">
+    <linkLabelTraces
+        visualID="6015"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4016"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalDevice') and _feature_.name = 'deviceSAPImplementation')">
+    <linkLabelTraces
+        visualID="6016"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4017"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ManagedElement') and _feature_.name = 'elementCapabilities')">
+    <linkLabelTraces
+        visualID="6017"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4018"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ManagedElement') and _feature_.name = 'elementSettingData')">
+    <linkLabelTraces
+        visualID="6018"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4019"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SoftwareIdentity') and _feature_.name = 'elementSoftwareIdentity')">
+    <linkLabelTraces
+        visualID="6019"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4020"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'hostedAccessPoint')">
+    <linkLabelTraces
+        visualID="6020"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4021"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'hostedCollection')">
+    <linkLabelTraces
+        visualID="6021"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4022"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ManagedElement') and _feature_.name = 'hostedDependency')">
+    <linkLabelTraces
+        visualID="6022"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4023"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'hostedServices')">
+    <linkLabelTraces
+        visualID="6023"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4024"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ElementSoftwareIdentity') and _feature_.name = 'managedElement')">
+    <linkLabelTraces
+        visualID="6024"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4025"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Product') and _feature_.name = 'productProductDependency')">
+    <linkLabelTraces
+        visualID="6025"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4026"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Product') and _feature_.name = 'productServiceComponent')">
+    <linkLabelTraces
+        visualID="6026"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4027"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'EnabledLogicalElement') and _feature_.name = 'remoteAccessAvailableToElement')">
+    <linkLabelTraces
+        visualID="6027"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4028"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'roles')">
+    <linkLabelTraces
+        visualID="6028"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4029"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ServiceAccessPoint') and _feature_.name = 'SAPSAPDependency')">
+    <linkLabelTraces
+        visualID="6029"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4030"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Service') and _feature_.name = 'serviceAccessBySAP')">
+    <linkLabelTraces
+        visualID="6030"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4031"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Service') and _feature_.name = 'serviceComponents')">
+    <linkLabelTraces
+        visualID="6031"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4032"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Service') and _feature_.name = 'serviceServiceDependency')">
+    <linkLabelTraces
+        visualID="6032"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4033"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ElementSettingData') and _feature_.name = 'settingData')">
+    <linkLabelTraces
+        visualID="6033"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4034"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SettingData') and _feature_.name = 'settingsDefineCapabilities')">
+    <linkLabelTraces
+        visualID="6034"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4035"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ManagedSystemElement') and _feature_.name = 'statusDescriptions')">
+    <linkLabelTraces
+        visualID="6035"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4036"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'systemComponents')">
+    <linkLabelTraces
+        visualID="6036"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4037"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'systemDevices')">
+    <linkLabelTraces
+        visualID="6037"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4038"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalModule') and _feature_.name = 'modulePort')">
+    <linkLabelTraces
+        visualID="6038"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4039"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AFService') and _feature_.name = 'AFRelatedServices')">
+    <linkLabelTraces
+        visualID="6039"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4040"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'QoSService') and _feature_.name = 'QoSConditioningSubService')">
+    <linkLabelTraces
+        visualID="6040"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4041"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'QoSService') and _feature_.name = 'QoSSubService')">
+    <linkLabelTraces
+        visualID="6041"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4042"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Collection') and _feature_.name = 'members')">
+    <linkLabelTraces
+        visualID="6042"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4043"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NATListBasedSettings') and _feature_.name = 'addressesToBeTranslated')">
+    <linkLabelTraces
+        visualID="6043"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4044"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPService') and _feature_.name = 'BGPAdminDistance')">
+    <linkLabelTraces
+        visualID="6044"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4045"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ServiceAccessPoint') and _feature_.name = 'bindsToLANEndpoint')">
+    <linkLabelTraces
+        visualID="6045"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4046"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'RouteCalculationService') and _feature_.name = 'calculatesAmong')">
+    <linkLabelTraces
+        visualID="6046"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4047"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ProtocolEndpoint') and _feature_.name = 'egressConditioningServiceOnEndpoint')">
+    <linkLabelTraces
+        visualID="6047"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4048"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'CIM_Model') and _feature_.name = 'elements')">
+    <linkLabelTraces
+        visualID="6048"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4049"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ForwardingService') and _feature_.name = 'forwardedRoutes')">
+    <linkLabelTraces
+        visualID="6049"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4050"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ForwardingService') and _feature_.name = 'forwardsAmong')">
+    <linkLabelTraces
+        visualID="6050"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4051"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ComputerSystem') and _feature_.name = 'hostedFilterList')">
+    <linkLabelTraces
+        visualID="6051"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4052"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ComputerSystem') and _feature_.name = 'hostedForwardingServices')">
+    <linkLabelTraces
+        visualID="6052"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4053"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'System') and _feature_.name = 'hostedRoute')">
+    <linkLabelTraces
+        visualID="6053"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4054"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ComputerSystem') and _feature_.name = 'hostedRoutingPolicy')">
+    <linkLabelTraces
+        visualID="6054"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4055"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ProtocolEndpoint') and _feature_.name = 'ingressConditioningServiceOnEndpoint')">
+    <linkLabelTraces
+        visualID="6055"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4056"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalNetwork') and _feature_.name = 'inLogicalNetwork')">
+    <linkLabelTraces
+        visualID="6056"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4057"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LANSegment') and _feature_.name = 'inSegment')">
+    <linkLabelTraces
+        visualID="6057"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4058"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NATService') and _feature_.name = 'NATServiceRunningOnEndpoint')">
+    <linkLabelTraces
+        visualID="6058"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4059"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AdminDomain') and _feature_.name = 'networksInAdminDomain')">
+    <linkLabelTraces
+        visualID="6059"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4060"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalPort') and _feature_.name = 'portImplementsEndPoint')">
+    <linkLabelTraces
+        visualID="6060"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4061"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'LogicalDevice') and _feature_.name = 'portOnDevice')">
+    <linkLabelTraces
+        visualID="6061"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4062"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ForwardingService') and _feature_.name = 'routeForwardedByService')">
+    <linkLabelTraces
+        visualID="6062"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4063"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AutonomousSystem') and _feature_.name = 'routerInAS')">
+    <linkLabelTraces
+        visualID="6063"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4064"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'BGPCluster') and _feature_.name = 'routersInBGPCluster')">
+    <linkLabelTraces
+        visualID="6064"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4065"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NextHopRoute') and _feature_.name = 'routeUsesEndpoint')">
+    <linkLabelTraces
+        visualID="6065"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4066"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'AutonomousSystem') and _feature_.name = 'routingProtocolDomainInAS')">
+    <linkLabelTraces
+        visualID="6066"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4067"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'ComputerSystem') and _feature_.name = 'runningOS')">
+    <linkLabelTraces
+        visualID="6067"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4068"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'Service') and _feature_.name = 'softwareFeatureServiceImplementation')">
+    <linkLabelTraces
+        visualID="6068"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4069"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NATListBasedSettings') and _feature_.name = 'translationPoolForNAT')">
+    <linkLabelTraces
+        visualID="6069"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4070"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'SNMPService') and _feature_.name = 'trapSourceForSNMPService')">
+    <linkLabelTraces
+        visualID="6070"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4071"
+      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.tid.es/cim' and _eClass_.name = 'NextHopRoute') and _feature_.name = 'associatedNextHop')">
+    <linkLabelTraces
+        visualID="6071"
+        queryText="true"/>
+  </linkTraces>
+</trace:TraceModel>

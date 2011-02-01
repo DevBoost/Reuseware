@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>org.reuseware.application.reuseuml</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.reuseware.sokan.resource.indexBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.reuseware.coconut.fracol.resource.fracol.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.reuseware.coconut.reuseextension.resource.rex.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.reuseware.sokan.resource.repositoryNature</nature>
+		<nature>org.reuseware.coconut.fracol.resource.fracol.nature</nature>
+		<nature>org.reuseware.coconut.reuseextension.resource.rex.nature</nature>
+	</natures>
+</projectDescription>

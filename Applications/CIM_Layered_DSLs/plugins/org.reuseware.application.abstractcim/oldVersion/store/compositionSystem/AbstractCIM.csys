@@ -1,0 +1,33 @@
+compositionsystem AbstractCIM {
+
+	fragment role Hub {
+		static port name;
+		static port ethernetPortHook;
+		static port hub; 
+	}
+
+	fragment role EthernetPort {
+		static port ethernetPort;
+		static port ipHook;
+	}
+
+	configuration Hub.ethernetPortHook --> EthernetPort.ethernetPort;
+	
+	fragment role IP {
+		static port ipV4Address;
+		static port subnetMask;
+		static port name;
+		static port ip;
+	}
+	
+	configuration EthernetPort.ipHook --> IP.ip;
+		
+	fragment role Network {
+		static port number;
+		static port subnetMask;
+	    static port name;
+		static port memberHook;
+	}
+	
+	configuration Network.memberHook --> IP.ip;
+}

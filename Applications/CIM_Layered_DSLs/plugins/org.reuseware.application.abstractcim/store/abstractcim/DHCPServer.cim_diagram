@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_04fs0BijEd6capPFbzLBBw" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_1nxNoBijEd6capPFbzLBBw" type="2004">
+    <children xmi:type="notation:Node" xmi:id="_1n2tMBijEd6capPFbzLBBw" type="5007"/>
+    <children xmi:type="notation:Node" xmi:id="_1n9a4BijEd6capPFbzLBBw" type="5008"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_1nxNoRijEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:ProtocolService" href="DHCPServer.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1nx0sBijEd6capPFbzLBBw" x="189" y="63"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_1n-pABijEd6capPFbzLBBw" type="2025">
+    <children xmi:type="notation:Node" xmi:id="_1oC6cBijEd6capPFbzLBBw" type="5049"/>
+    <children xmi:type="notation:Node" xmi:id="_1oEvoBijEd6capPFbzLBBw" type="5050"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_1n-pARijEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:RangeOfIPAddresses" href="DHCPServer.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1n-pAhijEd6capPFbzLBBw" x="171" y="216"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_1oF9wBijEd6capPFbzLBBw" type="2079">
+    <children xmi:type="notation:Node" xmi:id="_1oJBEBijEd6capPFbzLBBw" type="5157"/>
+    <children xmi:type="notation:Node" xmi:id="_1oN5kBijEd6capPFbzLBBw" type="5158"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_1oF9wRijEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:UDPProtocolEndpoint" href="DHCPServer.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1oF9whijEd6capPFbzLBBw" x="63" y="144"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_04fs0RijEd6capPFbzLBBw"/>
+  <element xmi:type="cim:CIM_Model" href="DHCPServer.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_14OrgBijEd6capPFbzLBBw" type="4022" source="_1nxNoBijEd6capPFbzLBBw" target="_1n-pABijEd6capPFbzLBBw">
+    <children xmi:type="notation:Node" xmi:id="_140hYBijEd6capPFbzLBBw" type="6022">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_140hYRijEd6capPFbzLBBw" x="2" y="-88"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_14OrgRijEd6capPFbzLBBw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_14OrghijEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_14OrgxijEd6capPFbzLBBw" points="[0, 0, 79, 60]$[-79, -60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_19rMMBijEd6capPFbzLBBw" id="(0.33027524,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_19rzQBijEd6capPFbzLBBw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_17eMwBijEd6capPFbzLBBw" type="4030" source="_1nxNoBijEd6capPFbzLBBw" target="_1oF9wBijEd6capPFbzLBBw">
+    <children xmi:type="notation:Node" xmi:id="_17gB8BijEd6capPFbzLBBw" type="6030">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_17gB8RijEd6capPFbzLBBw" x="52" y="57"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_17eMwRijEd6capPFbzLBBw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_17eMwhijEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_17eMwxijEd6capPFbzLBBw" points="[0, 0, -79, 60]$[79, -60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_19pXABijEd6capPFbzLBBw" id="(0.6605505,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_19qlIBijEd6capPFbzLBBw" id="(0.5,1.0)"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/es.tid.cim/src"
+    modelPluginID="es.tid.cim" modelName="CIMLevelZero" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>CIMLevelZero.ecore</foreignModel>
+  <genPackages prefix="Cim" basePackage="es.tid" disposableProviderFactory="true"
+      loadInitialization="true" literalsInterface="false" ecorePackage="CIMLevelZero.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumDedicated">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/NotDedicated"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Storage"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Router"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Switch"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Layer3Switch"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/CentralOfficeSwitch"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Hub"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/AccessServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Firewall"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Print"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/IO"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/WebCaching"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Management"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/BlockServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/FileServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/MobileUserDevice"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Repeater"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/BridgeExtender"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Gateway"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/StorageVirtualizer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/MediaLibrary"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/ExtenderNode"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/NASHead"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/SelfcontainedNAS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/UPS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/IPPhone"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/ManagementController"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/ChassisManager"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/HostbasedRAIDcontroller"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/StorageDeviceEnclosure"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Desktop"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/Laptop"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/VirtualTapeLibrary"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDedicated/VirtualLibrarySystem"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumSoftwareElementState">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumSoftwareElementState/Deployable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumSoftwareElementState/Installable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumSoftwareElementState/Executable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumSoftwareElementState/Running"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAddressType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressType/IPv4"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressType/IPv6"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAccessContext">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/DefaultGateway"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/DNSServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/SNMPTrapDestination"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/MPLSTunnelDestination"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/DHCPServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/SMTPServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAccessContext/LDAPServer"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumChangeableType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumChangeableType/NotChangeable_Persistent"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumChangeableType/Changeable_Transient"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumChangeableType/Changeable_Persistent"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumChangeableType/NotChangeable_Transient"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumClassifications">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Driver"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/ConfigurationSoftware"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/ApplicationSoftware"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Instrumentation"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Firmware_BIOS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/DiagnosticSoftware"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/OperatingSystem"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Middleware"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Firmware"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/BIOS_FCode"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/Support_ServicePack"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumClassifications/SoftwareBundle"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumHealthState">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/OK"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/Degraded_Warning"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/Minorfailure"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/Majorfailure"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/Criticalfailure"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumHealthState/Non_recoverableError"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumEnabledDefault">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledDefault/Enabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledDefault/Disabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledDefault/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledDefault/EnabledbutOffline"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledDefault/NoDefault"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledDefault/Quiesce"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumEnabledState">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Enabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Disabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/ShuttingDown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/EnabledbutOffline"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/InTest"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Deferred"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Quiesce"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEnabledState/Starting"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumElementSoftwareStatus">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Current"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Next"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/FallBack"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Default"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Installed"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/SingleUse"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Available"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumElementSoftwareStatus/Supports"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumExtendedResourceType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/LinuxRPM"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/HP_UXDepot"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/WindowsMSI"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/SolarisPackage"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/MacintoshDiskImage"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumExtendedResourceType/DebianlinuxPackage"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumInfoFormat">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/HostName"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPv4Address"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPv6Address"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPXAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/DECnetAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/SNAAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/AutonomousSystemNumber"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/MPLSLabel"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPv4SubnetAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPv6SubnetAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPv4AddressRange"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/IPv6AddressRange"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/DialString"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/EthernetAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/TokenRingAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/ATMAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/FrameRelayAddress"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/URL"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/FQDN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/UserFQDN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/DERASN1DN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/DERASN1GN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumInfoFormat/KeyID"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIsCurrent">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsCurrent/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsCurrent/IsCurrent"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsCurrent/IsNotCurrent"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIsDefault">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsDefault/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsDefault/IsDefault"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsDefault/IsNotDefault"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIsMaximum">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMaximum/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMaximum/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMaximum/IsMaximum"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMaximum/IsNotMaximum"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIsMinimum">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMinimum/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMinimum/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMinimum/IsMinimum"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsMinimum/IsNotMinimum"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIsNext">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsNext/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsNext/IsNext"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsNext/IsNotNext"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsNext/IsNextForSingleUse"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIsPending">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsPending/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsPending/IsPending"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIsPending/IsNotPending"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumNameFormat">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/AutonomousSystem"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/NetworkAccessProvider"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/NetworkOperationsCenter"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/PointofPresence"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/RegionalNetworkProvider"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/IP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/IPX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/SNA"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/Dial"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/WAN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/LAN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/ISDN"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/FrameRelay"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/ATM"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/E164"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/Infiniband"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/FibreChannel"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/PolicyRepository"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumNameFormat/FibreChannelWorldwideName"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumOperationalStatus">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/OK"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Degraded"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Stressed"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/PredictiveFailure"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Error"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/NonRecoverableError"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Starting"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Stopping"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Stopped"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/InService"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/NoContact"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/LostCommunication"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Aborted"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Dormant"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/SupportingEntityinError"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/Completed"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumOperationalStatus/PowerMode"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumProtocolIFType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/IPv4"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/IPv6"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/IPv4v6"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/HTTP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/HTTPS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/IEEE802_11"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/TCP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/_802_11_a"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/_802_11b"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/_802_11g"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolIFType/_802_11h"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumRequestedState">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Enabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Disabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/ShutDown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Offline"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Test"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Deferred"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Quiesce"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Reboot"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/Reset"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumRequestedState/NotApplicable"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumTargetOSTypes">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/MACOS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/ATTUNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/DGUX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/DECNT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Tru64UNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OpenVMS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/HPUX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/AIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/MVS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OS400"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OS_2"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/JavaVM"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/MSDOS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/WIN3x"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/WIN95"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/WIN98"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/WINNT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/WINCE"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/NCR3000"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/NetWare"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OSF"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/DC_OS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/ReliantUNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/SCOUnixWare"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/SCOOpenServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Sequent"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/IRIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Solaris"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/SunOS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/U6000"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/ASERIES"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/HPNonStopOS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/HPNonStopOSS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/BS2000"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/LINUX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Lynx"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/XENIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/VM"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/InteractiveUNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/BSDUNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/FreeBSD"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/NetBSD"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/GNUHurd"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OS9"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/MACHKernel"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Inferno"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/QNX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/IxWorks"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/VxWorks"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/MiNT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/BeOS"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/HPMPE"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/NextStep"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/PalmPilot"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Rhapsody"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Windows2000"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Dedicated"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OS_390"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/VSE"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/TPF"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/Windows_R_Me"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/CalderaOpenUNIX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/OpenBSD"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTargetOSTypes/NotApplicable"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumUpgradeCondition">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumUpgradeCondition/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumUpgradeCondition/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumUpgradeCondition/Residesoffdevice"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumUpgradeCondition/OwnerUpgradeable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumUpgradeCondition/FactoryUpgradeable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumUpgradeCondition/NotUpgradeable"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumDirection">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDirection/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDirection/Input"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDirection/Output"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDirection/Both"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDirection/Mirrored"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumMatchConditionType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/SourceAddressMask"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/DestinationAddressMask"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/SourcePort"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/SourcePortRange"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/DestinationPort"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/DestinationPortRange"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/ProtocolType"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/ProtocolTypeOption"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/DSCP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/ToSValue"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/PPriorityValue"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumMatchConditionType/Any"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAction">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAction/Permit"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAction/Deny"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumTrafficType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTrafficType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTrafficType/IPv4"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTrafficType/IPX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTrafficType/IPv6"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTrafficType/Any"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTrafficType/Other"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumIPVersion">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIPVersion/IPv4"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumIPVersion/IPv6"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAvailability">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAvailability/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAvailability/Running_FullPower"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAvailability/PowerOff"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumLinkTechnology">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/Ethernet"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/IB"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/FC"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/FDDI"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/ATM"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/TokenRing"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/FrameRelay"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/Infrared"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/BlueTooth"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLinkTechnology/WirelessLAN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumLogicalModuleType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLogicalModuleType/LineCard"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLogicalModuleType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLogicalModuleType/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLogicalModuleType/DeviceTray"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLogicalModuleType/Blade"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumPortType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10BaseT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10_100BaseT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_100BaseT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_1000BaseT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_2500BaseT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBaseT"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_CX4"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_802_11a"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_802_11b"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_802_11g"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_802_11n"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_100Base_FX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_100Base_SX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_1000Base_SX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_1000Base_LX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_1000Base_CX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_SR"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_SW"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_LX4"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_LR"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_LW"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_ER"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/_10GBase_EW"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/ClientStation"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/Repeater"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/AccessPoint"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/BridgeHost"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/Bridge"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumPortType/BridgeRoot"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumStatusInfo">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumStatusInfo/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumStatusInfo/Enabled"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumStatusInfo/Disabled"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumLineState">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLineState/NoDefect"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLineState/LossOfFraming"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLineState/LossOfSignal"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLineState/LossOfPower"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumLineState/LossOfSignalQuality"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumModulationScheme">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/V_90Issue1Asymmetric"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/V_90Issue2Symmetric"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/V_58"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/X2"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/K56FLEX"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/V_Fast"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumModulationScheme/PEP"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAddressOrigin">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/NotApplicable"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/Static"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/DHCP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/BOOTP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressOrigin/IPv4LinkLocal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumTerminalMode">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTerminalMode/VT100"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTerminalMode/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTerminalMode/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumTerminalMode/ANSI"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumCharacterDisplayMode">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumCharacterDisplayMode/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumCharacterDisplayMode/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumCharacterDisplayMode/Console"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumCharacterDisplayMode/Stream"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumDHCPOptions">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDHCPOptions/DomainNameServer"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDHCPOptions/HostName"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumDHCPOptions/DomainName"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAuthenticationMethod">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/OpenSystem"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/SharedKey"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/WPAPSK"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/WPAIEEE802_1x"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/WPA2PSK"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAuthenticationMethod/WPA2IEEE802_1x"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumEncryptionMethod">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEncryptionMethod/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEncryptionMethod/WEP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEncryptionMethod/TKIP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEncryptionMethod/CCMP"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumEncryptionMethod/None"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumBSSType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumBSSType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumBSSType/Independent"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumBSSType/Infrastructure"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumProtocolServiceReturnCode">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolServiceReturnCode/CompletedWithNoError"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolServiceReturnCode/NotSupported"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolServiceReturnCode/ErrorOccurred"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumProtocolType">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolType/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolType/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolType/SSH"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolType/Telnet"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumProtocolType/CLP"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CIMLevelZero.ecore#//EnumAddressExamined">
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressExamined/Source"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressExamined/Destination"/>
+      <genEnumLiterals ecoreEnumLiteral="CIMLevelZero.ecore#//EnumAddressExamined/BothSourcDestination"/>
+    </genEnums>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//CIM_Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//CIM_Model/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BGPCluster">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPCluster/clusterID"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPCluster/reflectorService"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPCluster/reflectorClientService"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPCluster/reflectorNonClientService"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPCluster/routersInBGPCluster"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BGPPeerGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/connectRetryInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/holdTimeConfigured"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/keepAliveConfigured"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/minASOriginationInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPPeerGroup/minRouteAdvertisementInterval"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BGPService">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPService/BGPPeerGroupServices"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPService/BGPVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPService/lastErrorCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPService/lastMessageErrorSubCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPService/lastOpenErrorSubCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPService/lastUpdatedErrorSubCode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPService/BGPRoutingPolicy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//BGPService/BGPAdminDistance"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//AutonomousSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AutonomousSystem/ASNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AutonomousSystem/isSingleHomed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AutonomousSystem/isTransit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AutonomousSystem/requireIGPSync"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AutonomousSystem/routingUpdateSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AutonomousSystem/aggregationType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//AutonomousSystem/routerInAS"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//AutonomousSystem/ASBGPEndpoints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//AutonomousSystem/routingProtocolDomainInAS"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//Network"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ComputerSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ComputerSystem/otherIdentifyingInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ComputerSystem/identifyingDescriptions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ComputerSystem/dedicated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ComputerSystem/otherDedicatedDescriptions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ComputerSystem/resetCapability"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ComputerSystem/hostedRoutingServices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ComputerSystem/hostedForwardingServices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ComputerSystem/hostedRoutingPolicy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ComputerSystem/hostedFilterList"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ComputerSystem/runningOS"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//Directory"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LogicalFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalFile/filename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalFile/fileSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalFile/creationDate"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//UnitaryComputerSystem"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//Action"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ArchitectureCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ApplicationSystem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BIOSElement"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BIOSFeature"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//Check">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/checkID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/checkMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/softwareElementID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/softwareElementState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/targetOperatingSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Check/version"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//CreateDirectoryAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//CopyFileAction"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//DirectoryAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DirectorySpecification">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//DirectorySpecification/directorySpecificationFiles"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DiskSpaceCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ExecuteProgram"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//FileAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//FileSpecification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/checkSum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/CRC1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/CRC2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/createTimeStamp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/fileName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/fileSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FileSpecification/MD5Checksum"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//InstalledProduct">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//InstalledProduct/softwareElements"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//MemoryCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ModifySettingAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//OperatingSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OperatingSystem/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OperatingSystem/CSCreationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OperatingSystem/CSName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//OperatingSystem/operatingSystemSoftwareFeature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OperatingSystem/OSType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OperatingSystem/otherTypeDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OperatingSystem/version"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//OSVersionCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RebootAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RemoveFileAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RemoveDirectoryAction"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SettingCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SoftwareElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//SoftwareElement/softwareElementChecks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//SoftwareElement/softwareElementActions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/buildNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/codeSet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/identificationCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/languageEdition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/manufacturer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/otherTargetOS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/serialNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/softwareElementID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/softwareElementState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/targetOperatingSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareElement/version"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SoftwareElementVersionCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SoftwareFeature"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SwapSpaceCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//VersionCompatibilityCheck"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BufferPool"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ConnectivityMemberhipSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ConnectivityMemberhipSettingData/connectivityMembershipType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ConnectivityMemberhipSettingData/otherConnectivityMembershipType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ConnectivityMemberhipSettingData/connectivityMembershipID"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ConnectivityCollection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ConnectivityCollection/connectivityStatus"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NamedAddressCollection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NamedAddressCollection/collectionAlias"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RangeOfIPAddresses">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RangeOfIPAddresses/startAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RangeOfIPAddresses/endAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RangeOfIPAddresses/addressType"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LANConnectivitySegment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANConnectivitySegment/LANID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANConnectivitySegment/connectivityType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANConnectivitySegment/otherTypeDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPConnectivitySubnet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPConnectivitySubnet/subnetNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPConnectivitySubnet/subnetMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPConnectivitySubnet/prefixLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPConnectivitySubnet/addressType"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPXConnectivityNetwork">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPXConnectivityNetwork/networkNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPAddressRange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPAddressRange/startAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPAddressRange/endAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPAddressRange/typeOfAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPAddressRange/allocationRange"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LogicalNetwork">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalNetwork/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalNetwork/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalNetwork/networkType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalNetwork/otherTypeDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalNetwork/inLogicalNetwork"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalNetwork/logicalNetworkService"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPXNetwork">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPXNetwork/networkNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LANSegment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANSegment/LANID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANSegment/LANType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANSegment/otherLANType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LANSegment/inSegment"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPSubnet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPSubnet/subnetNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPSubnet/subnetMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPSubnet/prefixLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPSubnet/addressType"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//AdminDomain">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//AdminDomain/containedDomain"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//AdminDomain/networksInAdminDomain"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//Capabilities">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Capabilities/instanceID"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//Collection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Collection/members"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//CollectionOfMSEs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CollectionOfMSEs/collectionId"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ElementSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSettingData/isCurrent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSettingData/isDefault"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSettingData/isMaximum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSettingData/isMinimum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSettingData/isNext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSettingData/isPending"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ElementSettingData/settingData"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ElementSoftwareIdentity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSoftwareIdentity/elementSoftwareStatus"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ElementSoftwareIdentity/managedElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSoftwareIdentity/otherUpgradeCondition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ElementSoftwareIdentity/upgradeCondition"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//EnabledLogicalElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElement/enabledDefault"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElement/enabledState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElement/otherEnabledState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElement/overwritePolicy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//EnabledLogicalElement/remoteAccessAvailableToElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElement/requestedState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElement/timeOfLastStateChange"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//EnabledLogicalElementCapabilities">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElementCapabilities/elementNameEditSupported"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EnabledLogicalElementCapabilities/maxElementNameLen"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//GenericService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//GenericService/genericProperties"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//LogicalDevice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalDevice/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalDevice/deviceId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalDevice/portOnDevice"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalDevice/deviceSAPImplementation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalDevice/systemCreationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalDevice/systemName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalDevice/deviceIdentity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalDevice/deviceConnection"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//LogicalElement"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//ManagedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedElement/caption"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedElement/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedElement/elementName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ManagedElement/components"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ManagedElement/dependencies"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ManagedElement/elementCapabilities"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ManagedElement/hostedDependency"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ManagedElement/elementSettingData"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//ManagedSystemElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedSystemElement/healthState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedSystemElement/installDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedSystemElement/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ManagedSystemElement/operationalStatus"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ManagedSystemElement/statusDescriptions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//PhysicalElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/tag"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/creationclassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/manufacturer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/SKU"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/serialNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/partNo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/otherIdentiyingInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/poweredOn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/manufactureDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/vendorEquipmentType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/userTracking"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalElement/canBeFRUed"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//PowerManagementCapabilities">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PowerManagementCapabilities/powerCapabilities"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//Product">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/identifyingNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/SKUNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Product/productProductDependency"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Product/productServiceComponent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/vendor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/warrantyDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Product/warrantyStartDate"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ProtocolEndpoint/nameFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ProtocolEndpoint/otherTypeDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ProtocolEndpoint/protocolIFType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ProtocolEndpoint/egressConditioningServiceOnEndpoint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ProtocolEndpoint/ingressConditioningServiceOnEndpoint"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RemotePort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemotePort/portInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemotePort/portProtocol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemotePort/otherProtocolDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RemoteServiceAccessPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemoteServiceAccessPoint/accessInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemoteServiceAccessPoint/accessContext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemoteServiceAccessPoint/infoFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemoteServiceAccessPoint/otherAccessContext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RemoteServiceAccessPoint/otherInfoFormatDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//Role">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Role/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//ScopedSettingData"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//Service">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Service/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Service/primaryOwnerName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Service/primaryOwnerContact"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Service/started"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Service/serviceComponents"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Service/serviceServiceDependency"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Service/softwareElementServiceImplementation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Service/softwareFeatureServiceImplementation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Service/systemCreationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Service/systemName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//Service/serviceAccessBySAP"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ServiceAccessURI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ServiceAccessURI/labeledURI"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//ServiceAccessPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ServiceAccessPoint/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ServiceAccessPoint/systemCreationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ServiceAccessPoint/systemName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ServiceAccessPoint/bindsToLANEndpoint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ServiceAccessPoint/SAPSAPDependency"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ServiceAccessPoint/bindsTo"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//SettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SettingData/changeableType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SettingData/configurationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SettingData/instanceID"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//SettingData/settingsDefineCapabilities"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SoftwareIdentity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/buildNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//SoftwareIdentity/elementSoftwareIdentity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/extendedResourceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/instanceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/isEntity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/majorVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/manufacturer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/minExtendedResourceTypeBuildNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/minExtendedResourceTypeMajorVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/minExtendedResourceTypeMinorVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/minExtendedResourceTypeRevisionNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/minorVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/otherExtendedResourceTypeDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/releaseDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/revisionNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/serialNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/versionString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/classificationDescriptions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/identityInfoType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/identityInfoValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/languages"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/targetOperatingSystems"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/targetOSTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SoftwareIdentity/targetTypes"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//StatusDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//StatusDescription/description"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//System">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//System/creationClassName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/systemDevices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/systemComponents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//System/nameFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//System/primaryOwnerName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//System/primaryOwnerContact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/roles"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/hostedServices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/hostedRoute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/hostedAccessPoint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//System/hostedCollection"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SystemSpecificCollection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SystemSpecificCollection/instanceID"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//StorageExtent"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//Memory"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//VolatileStorage"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//USBDevice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//USBDevice/USBVersion"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//FilterList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterList/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterList/direction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterList/systemCreationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterList/systemName"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//FilterEntryBase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntryBase/isNegated"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//FilterEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/action"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/defaultFilter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/matchConditionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/matchConditionValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/otherMatchConditionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/otherTrafficType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/trafficClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FilterEntry/trafficType"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPHeadersFilter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrDestPortEnd"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrDestPortStart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrIPVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrProtocolID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrSrcPortEnd"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrSrcPortStart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrDestAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrDestAddressEndOfRange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrDestMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrDSCP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrFlowLabel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrSrcAddressEndOfRange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPHeadersFilter/hdrSrcMask"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//EthernetPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EthernetPort/maxDataSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EthernetPort/capabilities"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EthernetPort/capabilityDescriptions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EthernetPort/enabledCapabilities"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//EthernetPort/otherEnabledCapabilities"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LogicalModule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalModule/moduleNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalModule/logicalModuleType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalModule/otherLogicalModuleTypeDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalModule/modulePort"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LogicalPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalPort/speed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalPort/maxSpeed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalPort/requestedSpeed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalPort/usageRestriction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalPort/portType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LogicalPort/otherPortType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//LogicalPort/portImplementsEndPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NetworkPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/portNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/linkTechnology"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/otherLinktechnology"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/networkAddresses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/fullDuplex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/autoSense"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/supportedMaximumTransmissionUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/permanentAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkPort/activeMaximumTransmissionUnit"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//USBPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//USBPort/availability"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//USBPort/statusInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//USBPort/suspended"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//WirelessPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WirelessPort/signalStrength"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//WiFiPort"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ADSLModem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ADSLModem/lineAttenuation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ADSLModem/lineState"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ADSLModem/maxDataRate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ADSLModem/noiseMargin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ADSLModem/totalOutputPower"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//CableModem"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//CallBasedModem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CallBasedModem/callSpeed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CallBasedModem/modulationScheme"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CallBasedModem/numberDialed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CallBasedModem/otherModulationDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CallBasedModem/modulationSupported"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//ConnectionBasedModem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ConnectionBasedModem/vendorId"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DSLModem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ISDNModem"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//Modem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//HDSLModem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SDSLModem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//VDSLModem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//POTSModem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//UniModem"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ReplacementSet"/>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//PhysicalCapcacity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PhysicalCapcacity/name"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//MemoryCapacity"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//LANEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/LANID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/LANType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/otherLANType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/MACAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/aliasAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/groupAddresses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//LANEndpoint/maxDataSize"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//OSPFProtocolEndpointBase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpointBase/transitDelay"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpointBase/retransmitInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpointBase/authType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpointBase/otherAuthType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpointBase/authKey"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//OSPFVirtualInterface"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//OSPFProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpoint/priority"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpoint/pollInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpoint/cost"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//OSPFProtocolEndpoint/ifDemand"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//BGPProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/isEBGP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/isEBGPMultihop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/localIdentifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/perrIdentifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/adminStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/negotiatedVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/localAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/localPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/remoteAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/remotePort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/remoteAS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/connectRetryInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/holdTimeConfigured"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/keepAliveConfigured"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/minASOriginationInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/minRouteAdvertisementInterval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/holdTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//BGPProtocolEndpoint/keepAlive"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPProtocolEndpoint/addressOrigin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPProtocolEndpoint/IPv4Address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPProtocolEndpoint/subnetMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPProtocolEndpoint/IPv6Address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPProtocolEndpoint/prefixLength"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPXProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPXProtocolEndpoint/address"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//MPLSProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//MPLSProtocolEndpoint/overruleLSR"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//MPLSProtocolEndpoint/totalBandwidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//MPLSProtocolEndpoint/availableBandwidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//MPLSProtocolEndpoint/resourceClasses"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SwitchPort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SwitchPort/portNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//TCPProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TCPProtocolEndpoint/portNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//UDPProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//UDPProtocolEndpoint/portNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//CLPSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/currentDefaultTarget"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/keepTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/waitBehaviour"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/outputFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/outputVerbosity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/outputLanguage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/outputPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/outputOrder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/outputCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//CLPSettingData/displayOption"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//TelnetSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/enabledTerminalModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/otherEnabledTerminalMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/terminalMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/otherTerminalMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/enabledCharacterDisplayModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/otherEnabledCharacterDisplayMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/characterDisplayMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/otherCharacterDisplayMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/escapeCharacter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetSettingData/idleTimeout"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SSHSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/enabledSSHVersions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/otherEnabledSSHVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/SSHVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/enabledEncryptionAlgorithms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/otherEnabledEncryptionAlgorithm"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/idleTimeout"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/keepAlive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/forwardX11"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SSHSettingData/compression"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DHCPCapabilities">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DHCPCapabilities/optionsSupported"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DHCPProtocolEndpoint"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//TelnetProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/characterDisplayMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/escapeCharacter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/idleTimeout"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/otherCharacterDisplayMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/otherEnabledCharacterDisplayMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/otherEnabledTerminalMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/otherTerminalMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/terminalMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/enabledCharacterDisplayModes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//TelnetProtocolEndpoint/enabledTerminalModes"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DNSProtocolEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/appendParentSuffixes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/appendPrimarySuffixes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/domainName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/hostname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/registerThisConnectionsAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/useSuffixWhenRegistering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/DHCPOptionsToUse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSProtocolEndpoint/DNSSuffixesToAppend"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DNSSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DNSSettingData/DNSServerAddresses"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//IPAssignmentSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPAssignmentSettingData/addressOrigin"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//WirelessLANEndpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WirelessLANEndpoint/SSID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WirelessLANEndpoint/WEPEnabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WirelessLANEndpoint/WEPKeyMixEnabled"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//WiFiEndPoint"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//WiFiEndpointSettings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/authenticationMethod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/BSSType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/encryptionMethod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/keyIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/otherAuthenticationMethod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/otherEncryptionMethod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/priority"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/PSKPassPhrase"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/SSID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/keys"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//WiFiEndpointSettings/PSKValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ProtocolService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ProtocolService/maxConnections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ProtocolService/otherProtocol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ProtocolService/protocol"/>
+      <genOperations ecoreOperation="CIMLevelZero.ecore#//ProtocolService/listenOnPort">
+        <genParameters ecoreParameter="CIMLevelZero.ecore#//ProtocolService/listenOnPort/portNumber"/>
+        <genParameters ecoreParameter="CIMLevelZero.ecore#//ProtocolService/listenOnPort/ipEndpoint"/>
+        <genParameters ecoreParameter="CIMLevelZero.ecore#//ProtocolService/listenOnPort/tcpEndpoint"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ConditioningService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ConditioningService/enabled"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//QoSService">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//QoSService/QoSSubService"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//QoSService/QoSConditioningSubService"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//PrecedenceService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//PrecedenceService/precedenceValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DiffServService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DiffServService/DSCP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DiffServService/PHBID"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//EFService"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//AFService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AFService/classNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AFService/dropperNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//AFService/AFRelatedServices"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//Hdr8021PService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//Hdr8021PService/priorityValue"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//DropThresholdCalculationService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DropThresholdCalculationService/smoothingWeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//DropThresholdCalculationService/timeInterval"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//FlowService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//FlowService/flowID"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//NextHopRoute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRoute/instanceID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRoute/destinationAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRoute/adminDistance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRoute/routeMetric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRoute/isStatic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRoute/typeOfRoute"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//NextHopRoute/routeUsesEndpoint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//NextHopRoute/associatedNextHop"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NextHopIPRoute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopIPRoute/routeDerivation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopIPRoute/otherDerivation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopIPRoute/destinationMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopIPRoute/prefixLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopIPRoute/addressType"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//AdministrativeDistance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/directConnect"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/static"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/EBGP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/EIGRPInternal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/IGRP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/OSPF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/ISIS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/RIP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/EGP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/IEGRPExternal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/IBGP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/BGPLocal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//AdministrativeDistance/unknown"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NextHopRouting">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRouting/destinationAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRouting/destinationMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRouting/nextHop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NextHopRouting/isStatic"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//IPRoute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPRoute/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPRoute/IPDestinationAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPRoute/IPDestinationMask"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//IPRoute/addressType"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RoutingPolicy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/creationClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/action"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/attributeAction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/BGPAction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/BGPValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/remarkAction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/remarkValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/conditioningAction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/otherConditioningAction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RoutingPolicy/conditioningValue"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//RouteCalculationService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RouteCalculationService/routerID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//RouteCalculationService/algorithmType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//RouteCalculationService/calculatesAmong"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//RouteCalculationService/calculatedRoutes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//NetworkService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkService/keywords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkService/serviceURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkService/startupConditions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NetworkService/startupParameters"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//ForwardingService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ForwardingService/protocolType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//ForwardingService/otherProtocolType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ForwardingService/forwardsAmong"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ForwardingService/routeForwardedByService"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//ForwardingService/forwardedRoutes"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//RoutingProtocolDomain"/>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NATService">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//NATService/NATServiceRunningOnEndpoint"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CIMLevelZero.ecore#//NATSettingData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NATSettingData/addressExamined"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NATSettingData/isInside"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NATStaticSettings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NATStaticSettings/insideAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NATStaticSettings/outsideAddress"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//NATListBasedSettings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//NATListBasedSettings/overloadingPermitted"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//NATListBasedSettings/translationPoolForNAT"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//NATListBasedSettings/addressesToBeTranslated"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SNMPCommunityStrings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPCommunityStrings/communityString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPCommunityStrings/typeOfAccess"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPCommunityStrings/logicalEntitiesAccessed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPCommunityStrings/logicalEntitiesDescriptions"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SNMPService">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CIMLevelZero.ecore#//SNMPService/trapSourceForSNMPService"/>
+    </genClasses>
+    <genClasses ecoreClass="CIMLevelZero.ecore#//SNMPTrapTarget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPTrapTarget/notificationMessage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPTrapTarget/SNMPVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CIMLevelZero.ecore#//SNMPTrapTarget/communityString"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

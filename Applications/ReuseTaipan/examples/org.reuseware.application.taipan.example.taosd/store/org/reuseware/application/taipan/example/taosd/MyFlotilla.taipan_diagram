@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:taipan="http://www.reuseware.org/application/taipan" xmi:id="_EyneQJaFEdyA2bAgiAvbpw" type="TaiPan" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_EzY6UJaFEdyA2bAgiAvbpw" type="2004">
+    <children xmi:type="notation:Node" xmi:id="_Ez-JIJaFEdyA2bAgiAvbpw" type="5081">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Ez-JIZaFEdyA2bAgiAvbpw" y="5"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_EzY6UZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:PortSlot" href="MyFlotilla.taipan#//@ports.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EzY6UpaFEdyA2bAgiAvbpw" x="170" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Ez-wMJaFEdyA2bAgiAvbpw" type="2004">
+    <children xmi:type="notation:Node" xmi:id="_Ez_XQJaFEdyA2bAgiAvbpw" type="5081">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Ez_XQZaFEdyA2bAgiAvbpw" y="5"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Ez-wMZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:PortSlot" href="MyFlotilla.taipan#//@ports.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ez-wMpaFEdyA2bAgiAvbpw" x="864" y="153"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Ez_XQpaFEdyA2bAgiAvbpw" type="2002">
+    <children xmi:type="notation:Node" xmi:id="_Ez_-UJaFEdyA2bAgiAvbpw" type="5004"/>
+    <children xmi:type="notation:Node" xmi:id="_Ez_-UZaFEdyA2bAgiAvbpw" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Ez_-UpaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Ez_-U5aFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Ez_-VJaFEdyA2bAgiAvbpw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Ez_-VZaFEdyA2bAgiAvbpw" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_E1nu8JaFEdyA2bAgiAvbpw" type="3004">
+        <children xmi:type="notation:Node" xmi:id="_E1o9EJaFEdyA2bAgiAvbpw" type="5080"/>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_E1oWAJaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+        <element xmi:type="taipan:LargeItemHook" href="MyFlotilla.taipan#//@ships.0/@cargo.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E1oWAZaFEdyA2bAgiAvbpw" width="91"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Ez_-VpaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Ez_-V5aFEdyA2bAgiAvbpw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Ez_XQ5aFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:Ship" href="MyFlotilla.taipan#//@ships.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ez_XRJaFEdyA2bAgiAvbpw" x="276" y="16"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_E0AlYJaFEdyA2bAgiAvbpw" type="2002">
+    <children xmi:type="notation:Node" xmi:id="_E0BMcJaFEdyA2bAgiAvbpw" type="5004"/>
+    <children xmi:type="notation:Node" xmi:id="_E0CakJaFEdyA2bAgiAvbpw" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_E0CakZaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_E0CakpaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_E0Cak5aFEdyA2bAgiAvbpw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_E0CalJaFEdyA2bAgiAvbpw" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_E3xEAJaFEdyA2bAgiAvbpw" type="3004">
+        <children xmi:type="notation:Node" xmi:id="_E3xrEJaFEdyA2bAgiAvbpw" type="5080"/>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_E3xEAZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+        <element xmi:type="taipan:LargeItemHook" href="MyFlotilla.taipan#//@ships.1/@cargo.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E3xEApaFEdyA2bAgiAvbpw" width="94"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_E0CalZaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_E0CalpaFEdyA2bAgiAvbpw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_E0AlYZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:Ship" href="MyFlotilla.taipan#//@ships.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E0AlYpaFEdyA2bAgiAvbpw" x="468" y="18" width="208"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_E0E20JaFEdyA2bAgiAvbpw" type="2005">
+    <children xmi:type="notation:Node" xmi:id="_E0efcJaFEdyA2bAgiAvbpw" type="5082">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_E0efcZaFEdyA2bAgiAvbpw" y="5"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_E0E20ZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:RouteSlot" href="MyFlotilla.taipan#//@routes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E0E20paFEdyA2bAgiAvbpw" x="169" y="11"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_E0fGgJaFEdyA2bAgiAvbpw" type="2005">
+    <children xmi:type="notation:Node" xmi:id="_E0ftkJaFEdyA2bAgiAvbpw" type="5082">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_E0ftkZaFEdyA2bAgiAvbpw" y="5"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_E0fGgZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:RouteSlot" href="MyFlotilla.taipan#//@routes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E0fGgpaFEdyA2bAgiAvbpw" x="855" y="9"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Qt2hMJaFEdyA2bAgiAvbpw" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_Qx1CQJaFEdyA2bAgiAvbpw" type="5005"/>
+    <children xmi:type="notation:Node" xmi:id="_Qx7I4JaFEdyA2bAgiAvbpw" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Qx7I4ZaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Qx7I4paFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Qx7I45aFEdyA2bAgiAvbpw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Qx8XAJaFEdyA2bAgiAvbpw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Qx8XAZaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Qx8XApaFEdyA2bAgiAvbpw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Qt2hMZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:Warship" href="MyFlotilla.taipan#//@ships.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qt2hMpaFEdyA2bAgiAvbpw" x="123" y="211" height="153"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_RyIBoJaFEdyA2bAgiAvbpw" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_RyIBo5aFEdyA2bAgiAvbpw" type="5005"/>
+    <children xmi:type="notation:Node" xmi:id="_RyIBpJaFEdyA2bAgiAvbpw" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_RyIBpZaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RyIBppaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RyIBp5aFEdyA2bAgiAvbpw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_RyIosJaFEdyA2bAgiAvbpw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RyIosZaFEdyA2bAgiAvbpw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RyIospaFEdyA2bAgiAvbpw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_RyIBoZaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12" lineColor="4210752"/>
+    <element xmi:type="taipan:Warship" href="MyFlotilla.taipan#//@ships.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RyIBopaFEdyA2bAgiAvbpw" x="648" y="225"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_EyneQZaFEdyA2bAgiAvbpw"/>
+  <element xmi:type="taipan:Aquatory" href="MyFlotilla.taipan#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_E4WS0JaFEdyA2bAgiAvbpw" type="4001" source="_Ez_XQpaFEdyA2bAgiAvbpw" target="_EzY6UJaFEdyA2bAgiAvbpw">
+    <children xmi:type="notation:Node" xmi:id="_E4Xg8JaFEdyA2bAgiAvbpw" type="6001">
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_E4Xg8ZaFEdyA2bAgiAvbpw"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_E4Xg8paFEdyA2bAgiAvbpw" y="40"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_E4WS0ZaFEdyA2bAgiAvbpw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_E4WS0paFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E4WS05aFEdyA2bAgiAvbpw" points="[0, 94, 50, -80]$[-50, 154, 0, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_E4gD0JaFEdyA2bAgiAvbpw" type="4004" source="_Ez_XQpaFEdyA2bAgiAvbpw" target="_E0E20JaFEdyA2bAgiAvbpw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_E4gD0ZaFEdyA2bAgiAvbpw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_E4gD0paFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E4gD05aFEdyA2bAgiAvbpw" points="[0, 94, -50, -80]$[50, 154, 0, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_E4juMJaFEdyA2bAgiAvbpw" type="4001" source="_E0AlYJaFEdyA2bAgiAvbpw" target="_Ez-wMJaFEdyA2bAgiAvbpw">
+    <children xmi:type="notation:Node" xmi:id="_E4kVQJaFEdyA2bAgiAvbpw" type="6001">
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_E4kVQZaFEdyA2bAgiAvbpw"/>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_E4kVQpaFEdyA2bAgiAvbpw" y="40"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_E4juMZaFEdyA2bAgiAvbpw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_E4juMpaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E4juM5aFEdyA2bAgiAvbpw" points="[0, 94, 50, -80]$[-50, 154, 0, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_E4mKcJaFEdyA2bAgiAvbpw" type="4004" source="_E0AlYJaFEdyA2bAgiAvbpw" target="_E0fGgJaFEdyA2bAgiAvbpw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_E4mKcZaFEdyA2bAgiAvbpw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_E4mKcpaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E4mKc5aFEdyA2bAgiAvbpw" points="[0, 94, -50, -80]$[50, 154, 0, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_nDMLgJaFEdyA2bAgiAvbpw" type="4006" source="_RyIBoJaFEdyA2bAgiAvbpw" target="_E0AlYJaFEdyA2bAgiAvbpw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_nDMLgZaFEdyA2bAgiAvbpw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_nDMLgpaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12"/>
+    <element xmi:type="taipan:EscortShipsOrder" href="MyFlotilla.taipan#//@ships.3/@escortOrder"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nDMLg5aFEdyA2bAgiAvbpw" points="[-64, 0, 71, 131]$[-135, 0, 0, 131]$[-135, -42, 0, 89]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nDwMMJaFEdyA2bAgiAvbpw" id="(0.46043167,0.13793103)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_ns2zkJaFEdyA2bAgiAvbpw" type="4006" source="_Qt2hMJaFEdyA2bAgiAvbpw" target="_Ez_XQpaFEdyA2bAgiAvbpw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_ns2zkZaFEdyA2bAgiAvbpw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ns2zkpaFEdyA2bAgiAvbpw" fontName="monospaced" fontHeight="12"/>
+    <element xmi:type="taipan:EscortShipsOrder" href="MyFlotilla.taipan#//@ships.2/@escortOrder"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ns2zk5aFEdyA2bAgiAvbpw" points="[70, 0, -73, 182]$[143, 0, 0, 182]$[143, -93, 0, 89]"/>
+  </edges>
+</notation:Diagram>

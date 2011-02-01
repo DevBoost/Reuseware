@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_2ZvAsE3vEd-XpZWKfy4CbQ" activeDiagram="_2ZvAsU3vEd-XpZWKfy4CbQ">
+  <model href="Bank.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_2ZvAsU3vEd-XpZWKfy4CbQ" position="0,0" size="100,100" name="Bank" viewport="0,0">
+    <property xmi:id="_2aLsoE3vEd-XpZWKfy4CbQ" key="pageFormatName" value="A4"/>
+    <property xmi:id="_2aLsoU3vEd-XpZWKfy4CbQ" key="diagramWidth" value="840"/>
+    <property xmi:id="_2aLsok3vEd-XpZWKfy4CbQ" key="diagramHeight" value="1188"/>
+    <property xmi:id="_2aLso03vEd-XpZWKfy4CbQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_2aLspE3vEd-XpZWKfy4CbQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_2aLspU3vEd-XpZWKfy4CbQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_2aLspk3vEd-XpZWKfy4CbQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_2aLsp03vEd-XpZWKfy4CbQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_2aLsqE3vEd-XpZWKfy4CbQ" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_2ZvAsk3vEd-XpZWKfy4CbQ" presentation="org.topcased.modeler.uml.usecasediagram">
+      <element href="Bank.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_282U0E3vEd-XpZWKfy4CbQ" position="64,28" size="80,80">
+      <anchorage xmi:id="_D09PsE3wEd-XpZWKfy4CbQ" graphEdge="_D0-d0E3wEd-XpZWKfy4CbQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_282U0U3vEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Bank.uml#_287NUE3vEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_AFU8QE3wEd-XpZWKfy4CbQ" position="36,143" size="148,34">
+      <anchorage xmi:id="_D08ooE3wEd-XpZWKfy4CbQ" graphEdge="_D0-d0E3wEd-XpZWKfy4CbQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_AFU8QU3wEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_D0-d0E3wEd-XpZWKfy4CbQ" anchor="_D08ooE3wEd-XpZWKfy4CbQ _D09PsE3wEd-XpZWKfy4CbQ">
+      <semanticModel xsi:type="di:SimpleSemanticModelElement" xmi:id="_D0-d0U3wEd-XpZWKfy4CbQ" presentation="default" typeInfo="CommentLink"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

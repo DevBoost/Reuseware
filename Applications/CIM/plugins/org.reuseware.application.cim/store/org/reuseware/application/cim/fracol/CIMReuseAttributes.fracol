@@ -1,0 +1,6 @@
+fracol org.reuseware.application.cim._fracol.CIMReuseAttributes
+{
+	fragment role AttributeHolder {
+		dynamic port type attribute;
+	}	
+}

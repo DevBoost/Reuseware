@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ComputerSystem" description="DSL Home gateway" elementName="ZyxelRouter" name="ZyxelRouter" requestedState="Enabled" creationClassName="ComputerSystem">
+    <dedicated>Router</dedicated>
+    <dedicated>Hub</dedicated>
+    <dedicated>Gateway</dedicated>
+    <dedicated>Other</dedicated>
+    <otherDedicatedDescriptions>HomeGateway</otherDedicatedDescriptions>
+  </elements>
+</cim:CIM_Model>

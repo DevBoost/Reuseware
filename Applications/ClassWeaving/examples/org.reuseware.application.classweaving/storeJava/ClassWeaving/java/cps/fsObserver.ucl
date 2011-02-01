@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>ClassWeaving</UCPI>
+  <UCPI>java</UCPI>
+  <UCPI>cps</UCPI>
+  <UCPI>fsObserver.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.modelquery']/@portInstances[portName='Subject',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FSFolder',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.modelquery2']/@portInstances[portName='Observer',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FileSystem',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.modelquery2']/@portInstances[portName='Subject',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FSFile',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.modelquery']/@portInstances[portName='Observer',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FileSystem',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <fragmentInstances name="ObserverAdvice.modelquery" targetPhysicalLocation="out">
+    <UFI>ClassWeaving</UFI>
+    <UFI>java</UFI>
+    <UFI>models</UFI>
+    <UFI>advices</UFI>
+    <UFI>ObserverAdvice.modelquery</UFI>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Observer" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+      <settings property="name" value="Folder"/>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Subject" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+      <settings property="name"/>
+    </portInstances>
+    <targetUFI>ClassWeaving</targetUFI>
+    <targetUFI>java</targetUFI>
+    <targetUFI>models</targetUFI>
+    <targetUFI>advices</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>ObserverAdvice.modelquery</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="FileSystem.modelquery" targetPhysicalLocation="out" target="true">
+    <UFI>ClassWeaving</UFI>
+    <UFI>java</UFI>
+    <UFI>models</UFI>
+    <UFI>core</UFI>
+    <UFI>FileSystem.modelquery</UFI>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Core" portName="FileSystem" targetLinks="//@compositionLinks.1 //@compositionLinks.3">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Core" portName="FSFile" targetLinks="//@compositionLinks.2">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Core" portName="FSFolder" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <targetUFI>ClassWeaving</targetUFI>
+    <targetUFI>java</targetUFI>
+    <targetUFI>models</targetUFI>
+    <targetUFI>core_composed</targetUFI>
+    <targetUFI>FileSystem.modelquery</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="ObserverAdvice.modelquery2" targetPhysicalLocation="out">
+    <UFI>ClassWeaving</UFI>
+    <UFI>java</UFI>
+    <UFI>models</UFI>
+    <UFI>advices</UFI>
+    <UFI>ObserverAdvice.modelquery</UFI>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Observer" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+      <settings property="name" value="File"/>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Subject" sourceLinks="//@compositionLinks.2">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+      <settings property="name"/>
+    </portInstances>
+    <targetUFI>ClassWeaving</targetUFI>
+    <targetUFI>java</targetUFI>
+    <targetUFI>models</targetUFI>
+    <targetUFI>advices</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>ObserverAdvice.modelquery</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

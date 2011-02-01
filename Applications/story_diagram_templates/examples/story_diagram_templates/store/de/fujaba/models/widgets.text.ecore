@@ -1,0 +1,22 @@
+package widgets // this is the package name 
+        widgets // this is the namespace prefix
+        "http://fujaba.de/widgets.ecore" // the namespace URI 
+	{
+
+	abstract class BasicWidget {
+		attribute EString name (1..1);
+		attribute EString type (1..1);
+		attribute EDouble xPosition (1..1);
+		attribute EDouble yPosition (1..1);
+	}
+	
+	class Widget extends BasicWidget {
+
+	}
+
+	class Panel extends Widget {
+		containment reference Widget widgets (0..-1);
+		attribute EDouble height (1..1);
+		attribute EDouble width (1..1);
+	}
+}

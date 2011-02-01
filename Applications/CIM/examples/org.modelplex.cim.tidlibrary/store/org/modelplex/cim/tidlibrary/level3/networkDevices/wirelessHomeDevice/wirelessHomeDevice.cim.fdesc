@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FragmentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:description="http://description/1.0">
+  <iD>
+    <segments>org</segments>
+    <segments>modelplex</segments>
+    <segments>cim</segments>
+    <segments>tidlibrary</segments>
+    <segments>level3</segments>
+    <segments>networkDevices</segments>
+    <segments>wirelessHomeDevice</segments>
+    <segments>wirelessHomeDevice.cim.fdesc</segments>
+  </iD>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Protocol</typeID>
+    <valueNames>DHCP</valueNames>
+    <valueNames>MPLS</valueNames>
+    <valueNames>Telnet</valueNames>
+    <valueNames>SSH</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Device</typeID>
+    <valueNames>Router</valueNames>
+    <valueNames>Home Device</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>ElementType</typeID>
+    <valueNames>Physical</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>CIM_Schema V2.21.0</typeID>
+    <valueNames>CIM_Database</valueNames>
+    <valueNames>CIM_Device</valueNames>
+    <valueNames>CIM_User</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Connection</typeID>
+    <valueNames>Wifi</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Structure</typeID>
+    <valueNames>MultiConcept</valueNames>
+  </facets>
+  <properties name="Name" value="Wifi Home Device"/>
+  <properties name="Author" value="Telefonica"/>
+  <properties name="Version" value=""/>
+  <properties name="Hint" value=""/>
+  <ID>cimlib</ID>
+  <ID>level1</ID>
+  <ID>wirelessHomeDevice</ID>
+  <ID>wirelessHomeDevice.cim.fdesc</ID>
+</description:FragmentDescription>

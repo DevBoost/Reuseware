@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ADSLModem" elementName="+ADSLModem" name="ProviderADSLModem" creationClassName="ADSLModem" deviceId="ProviderADSLModem" portOnDevice="//@elements.1"/>
+  <elements xsi:type="cim:NetworkPort" description="Provider ADSL network port" elementName="ProviderADSLNetworkPort" name="ProviderADSLNetworkPort" requestedState="Enabled" creationClassName="NetworkPort" deviceId="ProviderADSLNetworkPort" systemCreationClassName="ComputerSystem" systemName="CiscoProviderRouter" maxSpeed="20480" portImplementsEndPoint="//@elements.2" linkTechnology="Other" otherLinktechnology="ADSL"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" description="IP address" elementName="+WANIP" name="ProviderWANIP" requestedState="Enabled" creationClassName="IPProtocolEndpint" systemCreationClassName="ComputerSystem" systemName="CiscoProviderRouter" nameFormat="" protocolIFType="IPv4" addressOrigin="Static" IPv4Address="213.125.114.66" subnetMask="255.255.255.192"/>
+</cim:CIM_Model>

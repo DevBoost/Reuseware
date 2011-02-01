@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:attribute name="data-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="leader-char" type="text:character"/>
+  <xs:attributeGroup name="type">
+    <xs:attribute name="type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="right"/>
+          <xs:enumeration value="left"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="position">
+    <xs:attribute name="position" use="required" form="qualified" type="text:length"/>
+  </xs:attributeGroup>
+  <xs:element name="handout-master">
+    <xs:complexType>
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:shape"/>
+      <xs:attributeGroup ref="text:common-presentation-header-footer-attlist"/>
+      <xs:attributeGroup ref="text:style-handout-master-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="page-layout-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="rel-width">
+    <xs:attribute name="rel-width" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:union memberTypes="text:percent">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="scale"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="scale-min"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="rel-height">
+    <xs:simpleType>
+      <xs:union memberTypes="text:percent">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="scale"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="scale-min"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="legend-expansion">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="wide"/>
+        <xs:enumeration value="high"/>
+        <xs:enumeration value="balanced"/>
+        <xs:enumeration value="custom"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="legend-expansion-aspect-ratio" type="text:double"/>
+  <xs:attribute name="num-prefix" type="text:string"/>
+  <xs:attribute name="num-suffix" type="text:string"/>
+  <xs:attribute name="num-format">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:union>
+            <xs:simpleType>
+              <xs:union memberTypes="text:string">
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="i"/>
+                  </xs:restriction>
+                </xs:simpleType>
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="I"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:union>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:length value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="a"/>
+            <xs:enumeration value="A"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="num-letter-sync" type="text:boolean"/>
+  <xs:element name="style">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:style-style-content">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="style:map"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="text:style-style-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name">
+    <xs:attribute name="name" use="required" form="qualified" type="text:styleName"/>
+  </xs:attributeGroup>
+  <xs:attribute name="display-name" type="text:string"/>
+  <xs:attribute name="parent-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="next-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="list-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleName">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="master-page-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="auto-update" type="text:boolean"/>
+  <xs:attribute name="class" type="text:string"/>
+  <xs:attribute name="default-outline-level" type="text:positiveInteger"/>
+  <xs:element name="map">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:style-map-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="condition" type="text:string"/>
+  <xs:attribute name="apply-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="base-cell-address" type="text:cellAddress"/>
+  <xs:element name="default-style" type="text:style-style-content"/>
+  <xs:element name="page-layout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="style:page-layout-properties"/>
+        <xs:element minOccurs="0" ref="style:header-style"/>
+        <xs:element minOccurs="0" ref="style:footer-style"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:style-page-layout-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="page-usage">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="all"/>
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="mirrored"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="header-style">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="style:header-footer-properties"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer-style">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="style:header-footer-properties"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="master-page">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="style:header"/>
+          <xs:element minOccurs="0" ref="style:header-left"/>
+        </xs:sequence>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="style:footer"/>
+          <xs:element minOccurs="0" ref="style:footer-left"/>
+        </xs:sequence>
+        <xs:group minOccurs="0" ref="text:office-forms"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="style:style"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:shape"/>
+        <xs:element minOccurs="0" ref="presentation:notes"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:style-master-page-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:header-footer-content">
+          <xs:attributeGroup ref="text:common-style-header-footer-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:header-footer-content">
+          <xs:attributeGroup ref="text:common-style-header-footer-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="header-left">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:header-footer-content">
+          <xs:attributeGroup ref="text:common-style-header-footer-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer-left">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:header-footer-content">
+          <xs:attributeGroup ref="text:common-style-header-footer-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="display" type="text:boolean"/>
+  <xs:element name="region-left" type="text:region-content"/>
+  <xs:element name="region-center" type="text:region-content"/>
+  <xs:element name="region-right" type="text:region-content"/>
+  <xs:element name="font-face">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:font-face-src"/>
+        <xs:element minOccurs="0" ref="svg:definition-src"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:style-font-face-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name1">
+    <xs:attribute name="name" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attribute name="font-adornments" type="text:string"/>
+  <xs:attribute name="font-family-generic" type="text:fontFamilyGeneric"/>
+  <xs:attribute name="font-pitch" type="text:fontPitch"/>
+  <xs:attribute name="font-charset" type="text:textEncoding"/>
+  <xs:attribute name="volatile" type="text:boolean"/>
+  <xs:attribute name="family">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="text"/>
+        <xs:enumeration value="paragraph"/>
+        <xs:enumeration value="section"/>
+        <xs:enumeration value="ruby"/>
+        <xs:enumeration value="table"/>
+        <xs:enumeration value="table-column"/>
+        <xs:enumeration value="table-row"/>
+        <xs:enumeration value="table-cell"/>
+        <xs:enumeration value="graphic"/>
+        <xs:enumeration value="presentation"/>
+        <xs:enumeration value="drawing-page"/>
+        <xs:enumeration value="chart"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="graphic-properties" type="text:style-graphic-properties-content"/>
+  <xs:element name="drawing-page-properties" type="text:style-drawing-page-properties-content"/>
+  <xs:element name="presentation-page-layout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="presentation:placeholder"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required" form="qualified" type="text:styleName"/>
+      <xs:attribute ref="style:display-name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="page-layout-properties" type="text:style-page-layout-properties-content"/>
+  <xs:attribute name="paper-tray-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="default"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="print-orientation">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="portrait"/>
+        <xs:enumeration value="landscape"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="register-truth-ref-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="print">
+    <xs:simpleType>
+      <xs:list>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="headers"/>
+            <xs:enumeration value="grid"/>
+            <xs:enumeration value="annotations"/>
+            <xs:enumeration value="objects"/>
+            <xs:enumeration value="charts"/>
+            <xs:enumeration value="drawings"/>
+            <xs:enumeration value="formulas"/>
+            <xs:enumeration value="zero-values"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:list>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="print-page-order">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="ttb"/>
+        <xs:enumeration value="ltr"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="first-page-number">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveInteger">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="continue"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="scale-to" type="text:percent"/>
+  <xs:attribute name="scale-to-pages" type="text:positiveInteger"/>
+  <xs:attribute name="table-centering">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="horizontal"/>
+        <xs:enumeration value="vertical"/>
+        <xs:enumeration value="both"/>
+        <xs:enumeration value="none"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="footnote-max-height" type="text:length"/>
+  <xs:attribute name="layout-grid-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="line"/>
+        <xs:enumeration value="both"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout-grid-base-height" type="text:length"/>
+  <xs:attribute name="layout-grid-ruby-height" type="text:length"/>
+  <xs:attribute name="layout-grid-lines" type="text:positiveInteger"/>
+  <xs:attribute name="layout-grid-color" type="text:color"/>
+  <xs:attribute name="layout-grid-ruby-below" type="text:boolean"/>
+  <xs:attribute name="layout-grid-print" type="text:boolean"/>
+  <xs:attribute name="layout-grid-display" type="text:boolean"/>
+  <xs:element name="footnote-sep">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:style-footnote-sep-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="width">
+    <xs:attribute name="width" use="required" form="qualified" type="text:length"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="rel-width1">
+    <xs:attribute name="rel-width" use="required" form="qualified" type="text:percent"/>
+  </xs:attributeGroup>
+  <xs:attribute name="color" type="text:color"/>
+  <xs:attribute name="line-style" type="text:lineStyle"/>
+  <xs:attribute name="adjustment">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="distance-before-sep" type="text:length"/>
+  <xs:attribute name="distance-after-sep" type="text:length"/>
+  <xs:element name="header-footer-properties" type="text:style-header-footer-properties-content"/>
+  <xs:attribute name="dynamic-spacing" type="text:boolean"/>
+  <xs:element name="text-properties" type="text:style-text-properties-content"/>
+  <xs:attribute name="use-window-font-color" type="text:boolean"/>
+  <xs:attribute name="text-outline" type="text:boolean"/>
+  <xs:attribute name="text-line-through-type" type="text:lineType"/>
+  <xs:attribute name="text-line-through-style" type="text:lineStyle"/>
+  <xs:attribute name="text-line-through-width" type="text:lineWidth"/>
+  <xs:attribute name="text-line-through-color">
+    <xs:simpleType>
+      <xs:union memberTypes="text:color">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="font-color"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-line-through-text" type="text:string"/>
+  <xs:attribute name="text-line-through-text-style">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-position">
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list>
+            <xs:simpleType>
+              <xs:union memberTypes="text:percent">
+                <xs:simpleType>
+                  <xs:union memberTypes="text:percent">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:token">
+                        <xs:enumeration value="super"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:token">
+                        <xs:enumeration value="sub"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:union>
+                </xs:simpleType>
+              </xs:union>
+            </xs:simpleType>
+          </xs:list>
+        </xs:simpleType>
+        <xs:minLength value="1"/>
+        <xs:maxLength value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="font-name" type="text:string"/>
+  <xs:attribute name="font-name-asian" type="text:string"/>
+  <xs:attribute name="font-name-complex" type="text:string"/>
+  <xs:attribute name="font-family-asian" type="text:string"/>
+  <xs:attribute name="font-family-complex" type="text:string"/>
+  <xs:attribute name="font-family-generic-asian" type="text:fontFamilyGeneric"/>
+  <xs:attribute name="font-family-generic-complex" type="text:fontFamilyGeneric"/>
+  <xs:attribute name="font-style-name" type="text:string"/>
+  <xs:attribute name="font-style-name-asian" type="text:string"/>
+  <xs:attribute name="font-style-name-complex" type="text:string"/>
+  <xs:attribute name="font-pitch-asian" type="text:fontPitch"/>
+  <xs:attribute name="font-pitch-complex" type="text:fontPitch"/>
+  <xs:attribute name="font-charset-asian" type="text:textEncoding"/>
+  <xs:attribute name="font-charset-complex" type="text:textEncoding"/>
+  <xs:attribute name="font-size-asian">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveLength text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="font-size-complex">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveLength text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="font-size-rel" type="text:length"/>
+  <xs:attribute name="font-size-rel-asian" type="text:length"/>
+  <xs:attribute name="font-size-rel-complex" type="text:length"/>
+  <xs:attribute name="script-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="latin"/>
+        <xs:enumeration value="asian"/>
+        <xs:enumeration value="complex"/>
+        <xs:enumeration value="ignore"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="language-asian" type="text:languageCode"/>
+  <xs:attribute name="language-complex" type="text:languageCode"/>
+  <xs:attribute name="country-asian" type="text:countryCode"/>
+  <xs:attribute name="country-complex" type="text:countryCode"/>
+  <xs:attribute name="font-style-asian" type="text:fontStyle"/>
+  <xs:attribute name="font-style-complex" type="text:fontStyle"/>
+  <xs:attribute name="font-relief">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="embossed"/>
+        <xs:enumeration value="engraved"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-underline-type" type="text:lineType"/>
+  <xs:attribute name="text-underline-style" type="text:lineStyle"/>
+  <xs:attribute name="text-underline-width" type="text:lineWidth"/>
+  <xs:attribute name="text-underline-color">
+    <xs:simpleType>
+      <xs:union memberTypes="text:color">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="font-color"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="font-weight-asian" type="text:fontWeight"/>
+  <xs:attribute name="font-weight-complex" type="text:fontWeight"/>
+  <xs:attribute name="text-underline-mode" type="text:lineMode"/>
+  <xs:attribute name="text-line-through-mode" type="text:lineMode"/>
+  <xs:attribute name="letter-kerning" type="text:boolean"/>
+  <xs:attribute name="text-blinking" type="text:boolean"/>
+  <xs:attribute name="text-combine">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="letters"/>
+        <xs:enumeration value="lines"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-combine-start-char" type="text:character"/>
+  <xs:attribute name="text-combine-end-char" type="text:character"/>
+  <xs:attribute name="text-emphasize">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="none"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction>
+            <xs:simpleType>
+              <xs:list>
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="none"/>
+                    <xs:enumeration value="accent"/>
+                    <xs:enumeration value="dot"/>
+                    <xs:enumeration value="circle"/>
+                    <xs:enumeration value="disc"/>
+                    <xs:enumeration value="above"/>
+                    <xs:enumeration value="below"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:list>
+            </xs:simpleType>
+            <xs:length value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-scale" type="text:percent"/>
+  <xs:attribute name="text-rotation-angle" type="text:integer"/>
+  <xs:attribute name="text-rotation-scale">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="fixed"/>
+        <xs:enumeration value="line-height"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="paragraph-properties" type="text:style-paragraph-properties-content"/>
+  <xs:attribute name="line-height-at-least" type="text:nonNegativeLength"/>
+  <xs:attribute name="line-spacing" type="text:length"/>
+  <xs:attribute name="font-independent-line-spacing" type="text:boolean"/>
+  <xs:attribute name="justify-single-word" type="text:boolean"/>
+  <xs:attribute name="tab-stop-distance" type="text:nonNegativeLength"/>
+  <xs:attribute name="register-true" type="text:boolean"/>
+  <xs:attribute name="auto-text-indent" type="text:boolean"/>
+  <xs:attribute name="text-autospace">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="ideograph-alpha"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="punctuation-wrap">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="simple"/>
+        <xs:enumeration value="hanging"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="line-break">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="normal"/>
+        <xs:enumeration value="strict"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="vertical-align">
+    <xs:attribute name="vertical-align" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="top"/>
+          <xs:enumeration value="middle"/>
+          <xs:enumeration value="bottom"/>
+          <xs:enumeration value="auto"/>
+          <xs:enumeration value="baseline"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="writing-mode-automatic" type="text:boolean"/>
+  <xs:attribute name="snap-to-layout-grid" type="text:boolean"/>
+  <xs:attribute name="background-transparency" type="text:percent"/>
+  <xs:element name="tab-stops">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="style:tab-stop"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tab-stop">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:style-tab-stop-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="position1">
+    <xs:attribute name="position" use="required" form="qualified" type="text:nonNegativeLength"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="type1">
+    <xs:attribute name="type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="left"/>
+          <xs:enumeration value="center"/>
+          <xs:enumeration value="right"/>
+          <xs:enumeration value="char"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="char" type="text:character"/>
+  <xs:attribute name="leader-type" type="text:lineType"/>
+  <xs:attribute name="leader-style" type="text:lineStyle"/>
+  <xs:attribute name="leader-width" type="text:lineWidth"/>
+  <xs:attribute name="leader-color">
+    <xs:simpleType>
+      <xs:union memberTypes="text:color">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="font-color"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="leader-text" type="text:string"/>
+  <xs:attribute name="leader-text-style">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="drop-cap">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:style-drop-cap-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="length">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveInteger">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="word"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="lines" type="text:positiveInteger"/>
+  <xs:attribute name="distance" type="text:length"/>
+  <xs:attribute name="style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="background-image">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="office:binary-data"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:style-background-image-attlist"/>
+      <xs:attribute ref="xlink:href"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:show"/>
+      <xs:attributeGroup ref="xlink:actuate1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="repeat">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="no-repeat"/>
+        <xs:enumeration value="repeat"/>
+        <xs:enumeration value="stretch"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="position2">
+    <xs:attribute name="position" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:union>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="left"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="center"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="right"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="top"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="bottom"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction>
+              <xs:simpleType>
+                <xs:list>
+                  <xs:simpleType>
+                    <xs:union memberTypes="text:horiBackPos text:vertBackPos"/>
+                  </xs:simpleType>
+                </xs:list>
+              </xs:simpleType>
+              <xs:length value="2"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction>
+              <xs:simpleType>
+                <xs:list>
+                  <xs:simpleType>
+                    <xs:union memberTypes="text:vertBackPos text:horiBackPos"/>
+                  </xs:simpleType>
+                </xs:list>
+              </xs:simpleType>
+              <xs:length value="2"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="filter-name" type="text:string"/>
+  <xs:attribute name="border-line-width" type="text:borderWidths"/>
+  <xs:attribute name="border-line-width-top" type="text:borderWidths"/>
+  <xs:attribute name="border-line-width-bottom" type="text:borderWidths"/>
+  <xs:attribute name="border-line-width-left" type="text:borderWidths"/>
+  <xs:attribute name="border-line-width-right" type="text:borderWidths"/>
+  <xs:attribute name="shadow" type="text:shadowType"/>
+  <xs:attribute name="writing-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="lr-tb"/>
+        <xs:enumeration value="rl-tb"/>
+        <xs:enumeration value="tb-rl"/>
+        <xs:enumeration value="tb-lr"/>
+        <xs:enumeration value="lr"/>
+        <xs:enumeration value="rl"/>
+        <xs:enumeration value="tb"/>
+        <xs:enumeration value="page"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="page-number">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveInteger">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="auto"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="ruby-properties" type="text:style-ruby-properties-content"/>
+  <xs:attribute name="ruby-position">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="above"/>
+        <xs:enumeration value="below"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="ruby-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="distribute-letter"/>
+        <xs:enumeration value="distribute-space"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="section-properties" type="text:style-section-properties-content"/>
+  <xs:attributeGroup name="protect">
+    <xs:attribute name="protect" use="required" form="qualified" type="text:boolean"/>
+  </xs:attributeGroup>
+  <xs:element name="columns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="style:column-sep"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="style:column"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:style-columns-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="column">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:style-column-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="rel-width2">
+    <xs:attribute name="rel-width" use="required" form="qualified" type="text:relativeLength"/>
+  </xs:attributeGroup>
+  <xs:element name="column-sep">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:style-column-sep-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="style">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="solid"/>
+        <xs:enumeration value="dotted"/>
+        <xs:enumeration value="dashed"/>
+        <xs:enumeration value="dot-dashed"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="height" type="text:percent"/>
+  <xs:attributeGroup name="vertical-align1">
+    <xs:attribute name="vertical-align" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="top"/>
+          <xs:enumeration value="middle"/>
+          <xs:enumeration value="bottom"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="table-properties" type="text:style-table-properties-content"/>
+  <xs:attributeGroup name="width1">
+    <xs:attribute name="width" use="required" form="qualified" type="text:positiveLength"/>
+  </xs:attributeGroup>
+  <xs:attribute name="may-break-between-rows" type="text:boolean"/>
+  <xs:element name="table-column-properties" type="text:style-table-column-properties-content"/>
+  <xs:attribute name="column-width" type="text:positiveLength"/>
+  <xs:attribute name="rel-column-width" type="text:relativeLength"/>
+  <xs:attribute name="use-optimal-column-width" type="text:boolean"/>
+  <xs:element name="table-row-properties" type="text:style-table-row-properties-content"/>
+  <xs:attribute name="row-height" type="text:positiveLength"/>
+  <xs:attribute name="min-row-height" type="text:nonNegativeLength"/>
+  <xs:attribute name="use-optimal-row-height" type="text:boolean"/>
+  <xs:element name="table-cell-properties" type="text:style-table-cell-properties-content"/>
+  <xs:attributeGroup name="vertical-align2">
+    <xs:attribute name="vertical-align" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="top"/>
+          <xs:enumeration value="middle"/>
+          <xs:enumeration value="bottom"/>
+          <xs:enumeration value="automatic"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="text-align-source">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="fix"/>
+        <xs:enumeration value="value-type"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="glyph-orientation-vertical">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="diagonal-tl-br" type="text:string"/>
+  <xs:attribute name="diagonal-tl-br-widths" type="text:borderWidths"/>
+  <xs:attribute name="diagonal-bl-tr" type="text:string"/>
+  <xs:attribute name="diagonal-bl-tr-widths" type="text:borderWidths"/>
+  <xs:attribute name="rotation-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="bottom"/>
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="center"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="cell-protect">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="none"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="hidden-and-protected"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction>
+            <xs:simpleType>
+              <xs:list>
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="protected"/>
+                    <xs:enumeration value="formula-hidden"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:list>
+            </xs:simpleType>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="print-content" type="text:boolean"/>
+  <xs:attribute name="decimal-places" type="text:nonNegativeInteger"/>
+  <xs:attribute name="repeat-content" type="text:boolean"/>
+  <xs:attribute name="shrink-to-fit" type="text:boolean"/>
+  <xs:attribute name="direction">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="ltr"/>
+        <xs:enumeration value="ttb"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="rotation-angle" type="text:nonNegativeInteger"/>
+  <xs:element name="list-level-properties" type="text:style-list-level-properties-content"/>
+  <xs:attributeGroup name="protect1">
+    <xs:attribute name="protect" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:union>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="none"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction>
+              <xs:simpleType>
+                <xs:list>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                      <xs:enumeration value="content"/>
+                      <xs:enumeration value="position"/>
+                      <xs:enumeration value="size"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:list>
+              </xs:simpleType>
+              <xs:minLength value="1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="horizontal-pos">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="from-left"/>
+        <xs:enumeration value="inside"/>
+        <xs:enumeration value="outside"/>
+        <xs:enumeration value="from-inside"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="horizontal-rel">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="page"/>
+        <xs:enumeration value="page-content"/>
+        <xs:enumeration value="page-start-margin"/>
+        <xs:enumeration value="page-end-margin"/>
+        <xs:enumeration value="frame"/>
+        <xs:enumeration value="frame-content"/>
+        <xs:enumeration value="frame-start-margin"/>
+        <xs:enumeration value="frame-end-margin"/>
+        <xs:enumeration value="paragraph"/>
+        <xs:enumeration value="paragraph-content"/>
+        <xs:enumeration value="paragraph-start-margin"/>
+        <xs:enumeration value="paragraph-end-margin"/>
+        <xs:enumeration value="char"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="editable" type="text:boolean"/>
+  <xs:attribute name="wrap">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="parallel"/>
+        <xs:enumeration value="dynamic"/>
+        <xs:enumeration value="run-through"/>
+        <xs:enumeration value="biggest"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="wrap-dynamic-threshold" type="text:nonNegativeLength"/>
+  <xs:attribute name="number-wrapped-paragraphs">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveInteger">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="no-limit"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="wrap-contour" type="text:boolean"/>
+  <xs:attribute name="wrap-contour-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="full"/>
+        <xs:enumeration value="outside"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="run-through">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="foreground"/>
+        <xs:enumeration value="background"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="flow-with-text" type="text:boolean"/>
+  <xs:attribute name="overflow-behavior">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="clip"/>
+        <xs:enumeration value="auto-create-new-frame"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="mirror">
+    <xs:simpleType>
+      <xs:union memberTypes="text:horizontal-mirror">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="none"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="vertical"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction>
+            <xs:simpleType>
+              <xs:list>
+                <xs:simpleType>
+                  <xs:union memberTypes="text:horizontal-mirror">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:token">
+                        <xs:enumeration value="vertical"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:union>
+                </xs:simpleType>
+              </xs:list>
+            </xs:simpleType>
+            <xs:length value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction>
+            <xs:simpleType>
+              <xs:list>
+                <xs:simpleType>
+                  <xs:union memberTypes="text:horizontal-mirror">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:token">
+                        <xs:enumeration value="vertical"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:union>
+                </xs:simpleType>
+              </xs:list>
+            </xs:simpleType>
+            <xs:length value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="vertical-pos">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="middle"/>
+        <xs:enumeration value="bottom"/>
+        <xs:enumeration value="from-top"/>
+        <xs:enumeration value="below"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="vertical-rel">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="page"/>
+        <xs:enumeration value="page-content"/>
+        <xs:enumeration value="frame"/>
+        <xs:enumeration value="frame-content"/>
+        <xs:enumeration value="paragraph"/>
+        <xs:enumeration value="paragraph-content"/>
+        <xs:enumeration value="char"/>
+        <xs:enumeration value="line"/>
+        <xs:enumeration value="baseline"/>
+        <xs:enumeration value="text"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="chart-properties" type="text:style-chart-properties-content"/>
+</xs:schema>

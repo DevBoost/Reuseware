@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<abstractcim:CimModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:abstractcim="http://www.reuseware.org/application/abstractcim">
+  <contents xsi:type="abstractcim:Router" name="ZyxelRouter" devices="//@contents.2 //@contents.1 //@contents.3" services="//@contents.4" forwardingServices="//@contents.5" filterList="//@contents.5"/>
+  <contents xsi:type="abstractcim:EthernetIPInterface" name="Ethernet1" ipV4Address="192.168.1.1" subnetMask="255.255.255.0" numPort="8"/>
+  <contents xsi:type="abstractcim:ADSLIPInterface" name="ADSL1" ipV4Address="213.125.114.75" subnetMask="255.255.255.0"/>
+  <contents xsi:type="abstractcim:WifiInterface" name="Wifi1" endPoint="//@contents.1"/>
+  <contents xsi:type="abstractcim:DHCPServer" name="DHCP1" startAddress="192.168.1.10" endAddress="192.168.1.254" bindsTo="//@contents.1"/>
+  <contents xsi:type="abstractcim:NATService" name="NAT1" endPoint="//@contents.2"/>
+</abstractcim:CimModel>

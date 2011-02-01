@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FragmentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:description="http://description/1.0">
+  <iD>
+    <segments>org</segments>
+    <segments>modelplex</segments>
+    <segments>cim</segments>
+    <segments>tidlibrary</segments>
+    <segments>level1</segments>
+    <segments>protocols</segments>
+    <segments>ip</segments>
+    <segments>ip.cim.fdesc</segments>
+  </iD>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Protocol</typeID>
+    <valueNames>IP</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Structure</typeID>
+    <valueNames>SingleConcept</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>CIM_Schema V2.21.0</typeID>
+    <valueNames>CIM_Interop</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>ElementType</typeID>
+    <valueNames>Logical</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Device</typeID>
+    <valueNames>Router</valueNames>
+    <valueNames>Home Device</valueNames>
+    <valueNames>Modem</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Connection</typeID>
+    <valueNames>Ethernet</valueNames>
+    <valueNames>Wifi</valueNames>
+  </facets>
+  <properties name="Name" value="ip"/>
+  <properties name="Author" value=""/>
+  <properties name="Version" value=""/>
+  <properties name="Hint" value="some decription"/>
+  <ID>cimlib</ID>
+  <ID>level1</ID>
+  <ID>ip</ID>
+  <ID>ip.cim.fdesc</ID>
+</description:FragmentDescription>

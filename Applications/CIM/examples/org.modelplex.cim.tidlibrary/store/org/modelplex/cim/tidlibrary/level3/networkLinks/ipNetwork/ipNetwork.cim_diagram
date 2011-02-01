@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_gKsd8MfwEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_gZzQ8MfwEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_gZzQ8cfwEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_gZzQ8sfwEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_gZzQ88fwEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="IP Network" fillColor="10011046" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gZzQ9MfwEd6WrsmzKVDL7w" x="36" y="18" width="205" height="84"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_gZzQ9cfwEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_gZzQ9sfwEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_gZzQ98fwEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_gZzQ-MfwEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name&#x9;&#x9;--> IPConnectivitySubnet.ElementName, IPConnectivitySubnet.InstanceID&#xD;&#xA;- ip address&#x9;--> IPConnectivitySubnet.subnetNumber&#xD;&#xA;- submask&#x9;&#x9;--> IPConnectivitySubnet.subnetMask&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (IPConnectivitySubnet)Collection.members --> (IPProtocolEndpoint)ProtocolEndpoint" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gZzQ-cfwEd6WrsmzKVDL7w" x="-18" y="126" width="517" height="109"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_gLqHQMfwEd6WrsmzKVDL7w" type="2023">
+    <children xmi:type="notation:Node" xmi:id="_gLquUMfwEd6WrsmzKVDL7w" type="5045"/>
+    <children xmi:type="notation:Node" xmi:id="_gLquUcfwEd6WrsmzKVDL7w" type="5046"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_gLqHQcfwEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPConnectivitySubnet" href="ipNetwork.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gLqHQsfwEd6WrsmzKVDL7w" x="71" y="53"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_w-FE4AWkEd-Or-QaeuUltQ" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_w-FE4wWkEd-Or-QaeuUltQ" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_w-Fr8AWkEd-Or-QaeuUltQ" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_w-FE4QWkEd-Or-QaeuUltQ" fontName="Lucida Grande" fillColor="8047085"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="ipNetwork.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w-FE4gWkEd-Or-QaeuUltQ" x="351" y="54"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_gKsd8cfwEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="ipNetwork.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_1ynK4AWkEd-Or-QaeuUltQ" type="4042" source="_gLqHQMfwEd6WrsmzKVDL7w" target="_w-FE4AWkEd-Or-QaeuUltQ">
+    <children xmi:type="notation:Node" xmi:id="_1yrcUAWkEd-Or-QaeuUltQ" type="6042">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1yrcUQWkEd-Or-QaeuUltQ" x="24" y="18"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_1ynK4QWkEd-Or-QaeuUltQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1ynK4gWkEd-Or-QaeuUltQ" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1ynK4wWkEd-Or-QaeuUltQ" points="[65, 14, -239, -9]$[263, 23, -41, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1yt4kAWkEd-Or-QaeuUltQ" id="(0.024793388429752067,0.425)"/>
+  </edges>
+</notation:Diagram>

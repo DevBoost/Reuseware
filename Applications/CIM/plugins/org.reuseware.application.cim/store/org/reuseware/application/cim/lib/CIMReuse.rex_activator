@@ -1,0 +1,3 @@
+componentmodel org.reuseware.application.cim.rex.CIMReuseCore
+componentmodel org.reuseware.application.cim.rex.CIMReuse
+componentmodel org.reuseware.application.cim.rex.CIMReuseAttributes

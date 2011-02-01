@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<secprop:SecPropModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:secprop="http://www.emftext.org/language/SecProp">
+  <data name="AccountSecurity">
+    <securityInformation xsi:type="secprop:Encryption" value="TLS"/>
+    <securityInformation xsi:type="secprop:Access"/>
+  </data>
+</secprop:SecPropModel>

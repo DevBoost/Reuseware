@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:element name="header">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="footer">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="date-time">
+    <xs:complexType/>
+  </xs:element>
+  <xs:attribute name="presentation-page-layout-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="use-header-name" type="text:string"/>
+  <xs:attribute name="use-footer-name" type="text:string"/>
+  <xs:attribute name="use-date-time-name" type="text:string"/>
+  <xs:attribute name="style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="class-names" type="text:styleNameRefs"/>
+  <xs:attribute name="class" type="text:presentation-classes"/>
+  <xs:attribute name="placeholder" type="text:boolean"/>
+  <xs:attribute name="user-transformed" type="text:boolean"/>
+  <xs:element name="animations">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="text:presentation-animation-elements"/>
+        <xs:element ref="presentation:animation-group"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sound">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:presentation-sound-attlist"/>
+      <xs:attribute ref="xlink:href" use="required"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:actuate"/>
+      <xs:attributeGroup ref="xlink:show1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="play-full" type="text:boolean"/>
+  <xs:element name="show-shape" substitutionGroup="text:presentation-animation-elements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="presentation:sound"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-presentation-effect-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="effect" type="text:presentationEffects"/>
+  <xs:attribute name="direction" type="text:presentationEffectDirections"/>
+  <xs:attribute name="speed" type="text:presentationSpeeds"/>
+  <xs:attribute name="delay" type="text:duration"/>
+  <xs:attribute name="start-scale" type="text:percent"/>
+  <xs:attribute name="path-id"/>
+  <xs:element name="show-text" substitutionGroup="text:presentation-animation-elements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="presentation:sound"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-presentation-effect-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hide-shape" substitutionGroup="text:presentation-animation-elements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="presentation:sound"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-presentation-effect-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hide-text" substitutionGroup="text:presentation-animation-elements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="presentation:sound"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-presentation-effect-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dim" substitutionGroup="text:presentation-animation-elements">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="presentation:sound"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:presentation-dim-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="play" substitutionGroup="text:presentation-animation-elements">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:presentation-play-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="animation-group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text:presentation-animation-elements"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="node-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="default"/>
+        <xs:enumeration value="on-click"/>
+        <xs:enumeration value="with-previous"/>
+        <xs:enumeration value="after-previous"/>
+        <xs:enumeration value="timing-root"/>
+        <xs:enumeration value="main-sequence"/>
+        <xs:enumeration value="interactive-sequence"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="preset-id" type="text:string"/>
+  <xs:attribute name="preset-sub-type" type="text:string"/>
+  <xs:attribute name="preset-class">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="custom"/>
+        <xs:enumeration value="entrance"/>
+        <xs:enumeration value="exit"/>
+        <xs:enumeration value="emphasis"/>
+        <xs:enumeration value="motion-path"/>
+        <xs:enumeration value="ole-action"/>
+        <xs:enumeration value="media-call"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="master-element" type="text:IDREF"/>
+  <xs:attribute name="group-id" type="text:string"/>
+  <xs:element name="event-listener">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="presentation:sound"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:presentation-event-listener-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="action">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="previous-page"/>
+        <xs:enumeration value="next-page"/>
+        <xs:enumeration value="first-page"/>
+        <xs:enumeration value="last-page"/>
+        <xs:enumeration value="hide"/>
+        <xs:enumeration value="stop"/>
+        <xs:enumeration value="execute"/>
+        <xs:enumeration value="show"/>
+        <xs:enumeration value="verb"/>
+        <xs:enumeration value="fade-out"/>
+        <xs:enumeration value="sound"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="verb" type="text:nonNegativeInteger"/>
+  <xs:element name="header-decl" substitutionGroup="text:presentation-decl">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="text:presentation-header-decl-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer-decl" substitutionGroup="text:presentation-decl">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="text:presentation-footer-decl-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date-time-decl" substitutionGroup="text:presentation-decl">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="text:presentation-date-time-decl-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="name" type="text:string"/>
+  <xs:attribute name="source">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="fixed"/>
+        <xs:enumeration value="current-date"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="presentation:show"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:presentation-settings-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="start-page" type="text:string"/>
+  <xs:attribute name="show" type="text:string"/>
+  <xs:attribute name="full-screen" type="text:boolean"/>
+  <xs:attribute name="endless" type="text:boolean"/>
+  <xs:attribute name="pause" type="text:duration"/>
+  <xs:attribute name="show-logo" type="text:boolean"/>
+  <xs:attribute name="force-manual" type="text:boolean"/>
+  <xs:attribute name="mouse-visible" type="text:boolean"/>
+  <xs:attribute name="mouse-as-pen" type="text:boolean"/>
+  <xs:attribute name="start-with-navigator" type="text:boolean"/>
+  <xs:attribute name="animations">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="enabled"/>
+        <xs:enumeration value="disabled"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="transition-on-click">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="enabled"/>
+        <xs:enumeration value="disabled"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="stay-on-top" type="text:boolean"/>
+  <xs:attribute name="show-end-of-presentation-slide" type="text:boolean"/>
+  <xs:element name="show">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:presentation-show-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="pages"/>
+  <xs:element name="notes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-forms"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:shape"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-presentation-header-footer-attlist"/>
+      <xs:attributeGroup ref="text:presentation-notes-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="placeholder">
+    <xs:complexType>
+      <xs:attribute name="object" use="required" form="qualified" type="text:presentation-classes"/>
+      <xs:attributeGroup ref="svg:x2"/>
+      <xs:attributeGroup ref="svg:y2"/>
+      <xs:attributeGroup ref="svg:width1"/>
+      <xs:attributeGroup ref="svg:height1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="transition-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="manual"/>
+        <xs:enumeration value="automatic"/>
+        <xs:enumeration value="semi-automatic"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="transition-style">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="fade-from-left"/>
+        <xs:enumeration value="fade-from-top"/>
+        <xs:enumeration value="fade-from-right"/>
+        <xs:enumeration value="fade-from-bottom"/>
+        <xs:enumeration value="fade-from-upperleft"/>
+        <xs:enumeration value="fade-from-upperright"/>
+        <xs:enumeration value="fade-from-lowerleft"/>
+        <xs:enumeration value="fade-from-lowerright"/>
+        <xs:enumeration value="move-from-left"/>
+        <xs:enumeration value="move-from-top"/>
+        <xs:enumeration value="move-from-right"/>
+        <xs:enumeration value="move-from-bottom"/>
+        <xs:enumeration value="move-from-upperleft"/>
+        <xs:enumeration value="move-from-upperright"/>
+        <xs:enumeration value="move-from-lowerleft"/>
+        <xs:enumeration value="move-from-lowerright"/>
+        <xs:enumeration value="uncover-to-left"/>
+        <xs:enumeration value="uncover-to-top"/>
+        <xs:enumeration value="uncover-to-right"/>
+        <xs:enumeration value="uncover-to-bottom"/>
+        <xs:enumeration value="uncover-to-upperleft"/>
+        <xs:enumeration value="uncover-to-upperright"/>
+        <xs:enumeration value="uncover-to-lowerleft"/>
+        <xs:enumeration value="uncover-to-lowerright"/>
+        <xs:enumeration value="fade-to-center"/>
+        <xs:enumeration value="fade-from-center"/>
+        <xs:enumeration value="vertical-stripes"/>
+        <xs:enumeration value="horizontal-stripes"/>
+        <xs:enumeration value="clockwise"/>
+        <xs:enumeration value="counterclockwise"/>
+        <xs:enumeration value="open-vertical"/>
+        <xs:enumeration value="open-horizontal"/>
+        <xs:enumeration value="close-vertical"/>
+        <xs:enumeration value="close-horizontal"/>
+        <xs:enumeration value="wavyline-from-left"/>
+        <xs:enumeration value="wavyline-from-top"/>
+        <xs:enumeration value="wavyline-from-right"/>
+        <xs:enumeration value="wavyline-from-bottom"/>
+        <xs:enumeration value="spiralin-left"/>
+        <xs:enumeration value="spiralin-right"/>
+        <xs:enumeration value="spiralout-left"/>
+        <xs:enumeration value="spiralout-right"/>
+        <xs:enumeration value="roll-from-top"/>
+        <xs:enumeration value="roll-from-left"/>
+        <xs:enumeration value="roll-from-right"/>
+        <xs:enumeration value="roll-from-bottom"/>
+        <xs:enumeration value="stretch-from-left"/>
+        <xs:enumeration value="stretch-from-top"/>
+        <xs:enumeration value="stretch-from-right"/>
+        <xs:enumeration value="stretch-from-bottom"/>
+        <xs:enumeration value="vertical-lines"/>
+        <xs:enumeration value="horizontal-lines"/>
+        <xs:enumeration value="dissolve"/>
+        <xs:enumeration value="random"/>
+        <xs:enumeration value="vertical-checkerboard"/>
+        <xs:enumeration value="horizontal-checkerboard"/>
+        <xs:enumeration value="interlocking-horizontal-left"/>
+        <xs:enumeration value="interlocking-horizontal-right"/>
+        <xs:enumeration value="interlocking-vertical-top"/>
+        <xs:enumeration value="interlocking-vertical-bottom"/>
+        <xs:enumeration value="fly-away"/>
+        <xs:enumeration value="open"/>
+        <xs:enumeration value="close"/>
+        <xs:enumeration value="melt"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="transition-speed" type="text:presentationSpeeds"/>
+  <xs:attribute name="duration" type="text:duration"/>
+  <xs:attribute name="visibility">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="visible"/>
+        <xs:enumeration value="hidden"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="background-objects-visible" type="text:boolean"/>
+  <xs:attribute name="background-visible" type="text:boolean"/>
+  <xs:attribute name="display-header" type="text:boolean"/>
+  <xs:attribute name="display-footer" type="text:boolean"/>
+  <xs:attribute name="display-page-number" type="text:boolean"/>
+  <xs:attribute name="display-date-time" type="text:boolean"/>
+</xs:schema>

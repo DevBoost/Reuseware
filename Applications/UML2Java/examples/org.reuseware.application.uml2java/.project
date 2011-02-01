@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>org.reuseware.application.uml2java</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.reuseware.sokan.resource.indexBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.reuseware.coconut.fracol.resource.fracol.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.reuseware.coconut.reuseextension.resource.rex.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.emftext.language.java.reusejava.resource.reusejava.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.emftext.language.java.resource.java.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.reuseware.sokan.resource.repositoryNature</nature>
+		<nature>org.reuseware.coconut.fracol.resource.fracol.nature</nature>
+		<nature>org.reuseware.coconut.reuseextension.resource.rex.nature</nature>
+		<nature>org.emftext.language.java.reusejava.resource.reusejava.nature</nature>
+		<nature>org.emftext.language.java.resource.java.nature</nature>
+	</natures>
+</projectDescription>

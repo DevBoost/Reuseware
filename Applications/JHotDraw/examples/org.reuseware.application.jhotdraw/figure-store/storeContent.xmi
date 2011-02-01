@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.reuseware.coconut.store:Store xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.store="http://reuseware.org/coconut/store" baseUFI="reuseware:/">
+  <fileNames>org/jhotdraw/draw/RectangleFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/RectangleFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/DefaultDrawing.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/TriangleFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/EllipseFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/RoundRectangleFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/QuadTreeDrawing.java</fileNames>
+  <fileNames>org/jhotdraw/draw/TriangleFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/TextAreaFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/DiamondFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/DefaultDrawing.java</fileNames>
+  <fileNames>org/jhotdraw/draw/TextFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/TextFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/EllipseFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/ImageFigure.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/jhotdraw.rex_activator</fileNames>
+  <fileNames>org/jhotdraw/draw/ImageFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/TextAreaFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/DiamondFigure.java</fileNames>
+  <fileNames>org/jhotdraw/draw/QuadTreeDrawing.java.fdesc</fileNames>
+  <fileNames>org/jhotdraw/draw/RoundRectangleFigure.java.fdesc</fileNames>
+</org.reuseware.coconut.store:Store>

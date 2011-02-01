@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:RemoteServiceAccessPoint" description="DHCPServerRemoteServiceAccess" elementName="DHCPServerRemoteServiceAccess" name="DHCPServerRemoteServiceAccess" requestedState="Enabled" creationClassName="RemoteServiceAccessPoint" systemCreationClassName="ComputerSystem" systemName="" accessInfo="192.168.1.1" accessContext="DHCP Server"/>
+  <elements xsi:type="cim:DHCPProtocolEndpoint" caption="%DHCPClient" description="%DHCPClient" elementName="+DHCPClient" name="%DHCPClient" remoteAccessAvailableToElement="//@elements.0" requestedState="Enabled" creationClassName="DHCPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="" SAPSAPDependency="//@elements.2" nameFormat="" protocolIFType="IPv4"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="?Dependency"/>
+</cim:CIM_Model>

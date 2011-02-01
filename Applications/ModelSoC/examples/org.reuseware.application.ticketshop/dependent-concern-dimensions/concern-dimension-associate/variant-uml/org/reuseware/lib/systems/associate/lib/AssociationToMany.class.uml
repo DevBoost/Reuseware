@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QYnX8EI7Ed6V3ObiT9Cc3g" name="SLOT_SOURCE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RDxNwEI7Ed6V3ObiT9Cc3g" name="SLOT_TARGET"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_U5dF6kI7Ed6V3ObiT9Cc3g" name="assoc" memberEnd="_U5dF60I7Ed6V3ObiT9Cc3g _U5dF7kI7Ed6V3ObiT9Cc3g" navigableOwnedEnd="_U5dF7kI7Ed6V3ObiT9Cc3g">
+      <ownedEnd xmi:id="_U5dF60I7Ed6V3ObiT9Cc3g" name="SOURCE" type="_QYnX8EI7Ed6V3ObiT9Cc3g" association="_U5dF6kI7Ed6V3ObiT9Cc3g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U5dF7EI7Ed6V3ObiT9Cc3g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U5dF7UI7Ed6V3ObiT9Cc3g" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_U5dF7kI7Ed6V3ObiT9Cc3g" name="TARGET" visibility="public" type="_RDxNwEI7Ed6V3ObiT9Cc3g" association="_U5dF6kI7Ed6V3ObiT9Cc3g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U5dF70I7Ed6V3ObiT9Cc3g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U5dF8EI7Ed6V3ObiT9Cc3g"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

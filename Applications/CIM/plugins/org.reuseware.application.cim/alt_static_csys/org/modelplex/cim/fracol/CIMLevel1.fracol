@@ -1,0 +1,51 @@
+fracol org.modelplex.cim._fracol.CIMLevel1 {
+
+	fragment role BuiltInEthernetHub {
+		static port ports;
+		dynamic port portNames;
+		static port hub; 
+	}
+
+	configuring association PortIP {
+		BuiltInEthernetHub.ports --> IP.ip
+	}
+	
+	fragment role DHCPClient {
+		static port name;
+		static port protocolEndpoint;
+		static port serviceAccessPoint;
+	}
+	
+	fragment role EthernetPort {
+		static port name;
+		static port ethernetPort;
+		static port protocolEndpoint;
+	}
+	
+	fragment role IP {
+		static port name;
+		static port ipAddress;
+		static port submask;
+		static port assignment;
+		static port ip;
+	}
+	
+	configuring association EndpointIP {
+		EthernetPort.protocolEndpoint --> IP.ip
+	}
+		
+	fragment role IPConnectedToGateway {
+		static port name;
+		static port ipAddress;
+		static port submask;
+		static port gateway;
+		static port assignment;
+		static port ip;		
+	}
+	
+	configuring association EndpointGateway {
+		EthernetPort.protocolEndpoint --> IPConnectedToGateway.ip
+	}
+	
+
+}

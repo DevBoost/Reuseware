@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_VlmkAMfvEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_XEtmUMfvEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_XEtmUcfvEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_XEtmUsfvEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_XEtmU8fvEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="Wifi Interface" fillColor="10354638" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XEtmVMfvEd6WrsmzKVDL7w" x="22" y="22" width="342" height="192"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_XEtmVcfvEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_XEtmVsfvEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_XEtmV8fvEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_XEtmWMfvEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name&#x9;--> WiFiPort.deviceId, WiFiPort.ElementName, WiFiPort.Name&#xD;&#xA;&#x9;&#x9;     WiFiEndPoint.Name&#xD;&#xA;&#x9;&#x9;     ElementSettingData.ElementName&#xD;&#xA;&#x9;&#x9;     WiFiEndpointSettings.InstanceId&#xD;&#xA;- SSID&#x9;--> WiFiEndpointSettings.SSID&#xD;&#xA;- authenticationMethod&#x9;--> WiFiEndpoint.authenticationMethod, WiFiEndpointSettings.authenticationMethod&#xD;&#xA;- encryptionMethod&#x9;&#x9;--> WiFiEndpoint.encryptionMethod, WiFiEndpointSettings.encryptionMethod&#xD;&#xA;- key&#x9;&#x9;-->&#xD;&#xA;&#x9;switch (WiFiEndpoint.encryptionMethod) &#xD;&#xA;&#x9;&#x9;case &quot;WEP&quot;:&#xD;&#xA;&#x9;&#x9;&#x9;WiFiEndpointSettings.keyIndex&lt;--(0);&#xD;&#xA;&#x9;&#x9;&#x9;WiFiEndpointSettings.keys[0] &lt;-- key;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;case &quot;TKIP&quot;:&#xD;&#xA;&#x9;&#x9;case &quot;CCMP&quot;:&#xD;&#xA;&#x9;&#x9;&#x9;WiFiEndpointSettings.PSKPassPhrase &lt;-- key;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;Rules:&#xD;&#xA;- WiFiEndpoint.authenticationMethod (enumerated). Values: Open System(2) or Shared Key(3) or WPA PSK(4) or WPA IEEE 802.1x(5) or WPA2 PSK(6) or WPA2 IEEE 802.1x(7)&#xD;&#xA;- WiFiEndpoint.encryptionMethod (enumerated). Values: WEP(2) or TKIP(3) or CCMP(4) or None(5)&#xD;&#xD;&#xA;&#xD;&#xA;- if (WiFiEndpoint.authenticationMethod is Open System(2) or Shared Key(3)) then (WiFiEndpoint.encryptionMethod is WEP(2) or None(5))&#xD;&#xA;- if (WiFiEndpoint.authenticationMethod is WPA PSK(4) or WPA IEEE 802.1x(5) or WPA2 PSK(6) or WPA2 IEEE 802.1x(7)) then (WiFiEndpoint.encryptionMethod is TKIP(3) or CCMP(4))&#xD;&#xA;&#xD;&#xA;- if (WiFiEndpoint.encryptionMethod is WEP(2) or None(5)) then (WiFiEndpoint.authenticationMethod is Open System(2) or Shared Key(3))&#xD;&#xA;- if (WiFiEndpoint.encryptionMethod is TKIP(3) or CCMP(4)) then (WiFiEndpoint.authenticationMethod is WPA PSK(4) or WPA IEEE 802.1x(5) or WPA2 PSK(6) or WPA2 IEEE 802.1x(7))&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (WiFiPort)LogicalPort.portImplementsEndPoint&#x9;--> (IPProtocolEndpoint)ProtocolEndpoint&#xD;&#xA;- (ComputerSystem)System.systemdevices&#x9;&#x9;--> (WiFiPort)LogicalPort&#xD;&#xA;- (LANConnectivitySegment)Collection.members&#x9;--> (WiFiEndpoint)ProtocolEndpoint" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XEtmWcfvEd6WrsmzKVDL7w" x="22" y="238" width="1021" height="481"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_VmqT8MfvEd6WrsmzKVDL7w" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_Vmq7AMfvEd6WrsmzKVDL7w" type="5005"/>
+    <children xmi:type="notation:Node" xmi:id="_Vmq7AcfvEd6WrsmzKVDL7w" type="5006"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_VmqT8cfvEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiPort" href="wifiInterface.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VmqT8sfvEd6WrsmzKVDL7w" x="45" y="99"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Vmq7AsfvEd6WrsmzKVDL7w" type="2034">
+    <children xmi:type="notation:Node" xmi:id="_VmriEMfvEd6WrsmzKVDL7w" type="5067"/>
+    <children xmi:type="notation:Node" xmi:id="_VmriEcfvEd6WrsmzKVDL7w" type="5068"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Vmq7A8fvEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiEndPoint" href="wifiInterface.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vmq7BMfvEd6WrsmzKVDL7w" x="225" y="63"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_VmriEsfvEd6WrsmzKVDL7w" type="2048">
+    <children xmi:type="notation:Node" xmi:id="_VmsJIMfvEd6WrsmzKVDL7w" type="5095"/>
+    <children xmi:type="notation:Node" xmi:id="_VmsJIcfvEd6WrsmzKVDL7w" type="5096"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_VmriE8fvEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiEndpointSettings" href="wifiInterface.cim#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VmriFMfvEd6WrsmzKVDL7w" x="207" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BVH58ATjEd-mRrkioYeU3g" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_BVIhAATjEd-mRrkioYeU3g" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_BVIhAQTjEd-mRrkioYeU3g" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_BVH58QTjEd-mRrkioYeU3g" fontName="Lucida Grande" fillColor="8047085"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="wifiInterface.cim#//@elements.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BVH58gTjEd-mRrkioYeU3g" x="27" y="243" width="136" height="46"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_VlmkAcfvEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="wifiInterface.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_VmvzgMfvEd6WrsmzKVDL7w" type="4060" source="_VmqT8MfvEd6WrsmzKVDL7w" target="_Vmq7AsfvEd6WrsmzKVDL7w">
+    <children xmi:type="notation:Node" xmi:id="_VmvzhMfvEd6WrsmzKVDL7w" type="6060">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_VmvzhcfvEd6WrsmzKVDL7w" x="-39" y="-48"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_VmvzgcfvEd6WrsmzKVDL7w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_VmvzgsfvEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Vmvzg8fvEd6WrsmzKVDL7w" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Vm4WYMfvEd6WrsmzKVDL7w" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Vm4WYcfvEd6WrsmzKVDL7w" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_VmxosMfvEd6WrsmzKVDL7w" type="4013" source="_Vmq7AsfvEd6WrsmzKVDL7w" target="_VmriEsfvEd6WrsmzKVDL7w">
+    <children xmi:type="notation:Node" xmi:id="_VmxotMfvEd6WrsmzKVDL7w" type="6013">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_VmxotcfvEd6WrsmzKVDL7w" x="-3" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_VmxoscfvEd6WrsmzKVDL7w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_VmxossfvEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Vmxos8fvEd6WrsmzKVDL7w" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Vm49cMfvEd6WrsmzKVDL7w" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Vm49ccfvEd6WrsmzKVDL7w" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_ICslMATjEd-mRrkioYeU3g" type="4060" source="_VmqT8MfvEd6WrsmzKVDL7w" target="_BVH58ATjEd-mRrkioYeU3g">
+    <children xmi:type="notation:Node" xmi:id="_ICtMQATjEd-mRrkioYeU3g" type="6060">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ICtMQQTjEd-mRrkioYeU3g" y="40"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_ICslMQTjEd-mRrkioYeU3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ICslMgTjEd-mRrkioYeU3g" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ICslMwTjEd-mRrkioYeU3g" points="[2, 20, -25, -150]$[27, 170, 0, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ICvogATjEd-mRrkioYeU3g" id="(0.6029411764705882,1.0)"/>
+  </edges>
+</notation:Diagram>

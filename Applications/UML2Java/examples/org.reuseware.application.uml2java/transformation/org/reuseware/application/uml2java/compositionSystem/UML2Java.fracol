@@ -1,0 +1,31 @@
+fracol org.reuseware.application.uml2java.compositionSystem.UML2Java {
+
+	fragment role Class {
+		static port type Name;
+		static port type Hook;
+		static port type Self;
+	}
+	
+	fragment role Operation {
+		static port type Name;
+		static port type Content;
+		static port type Hook;
+		static port type TypeSlot;
+	}
+	
+	fragment role StatementUnit {
+		static port type Content;
+	}
+	
+	contributing association ExtendClass {
+		Operation.Content --> Class.Hook
+	}
+	
+	contributing association ExtendOperation {
+		StatementUnit.Content --> Operation.Hook
+	}
+	
+	configuring association Type {
+		Class.Self --> Operation.TypeSlot
+	}
+}

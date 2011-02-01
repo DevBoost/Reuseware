@@ -1,0 +1,13 @@
+fracol org.reuseware.application.cim._fracol.CIMReuseCore
+{
+	fragment role Core {
+		static port type extension;
+	}	
+	fragment role Element {
+		static port type contents;
+	}
+	
+	contributing association extension {
+		Element.contents --> Core.extension
+	}
+}

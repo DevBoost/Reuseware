@@ -1,0 +1,5 @@
+compositionlanguage org.reuseware.lib.systems.usecase.cl.odt(format='valueflow',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.odt(format='valueflow',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.usecase_uml(format='valueflow',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.exchange.cl.usecase_uml(format='valueflow',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.flow.cl.valueflow(format='valueflow',outFolder='out')

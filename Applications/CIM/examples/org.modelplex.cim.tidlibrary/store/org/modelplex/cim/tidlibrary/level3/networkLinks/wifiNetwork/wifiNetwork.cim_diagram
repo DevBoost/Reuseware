@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_dzM3kMfvEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_eFTUMMfvEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_eFTUMcfvEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eFTUMsfvEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eFTUM8fvEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="Wifi Network" fillColor="5614335" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eFTUNMfvEd6WrsmzKVDL7w" x="34" y="46" width="205" height="84"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_eFT7QMfvEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_eFT7QcfvEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eFT7QsfvEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eFT7Q8fvEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name&#x9;--> LANConnectivitySegmen.ElementName, LANConnectivitySegment.InstanceID&#xD;&#xA;- SSID&#x9;--> LANConnectivitySegmen.LANID&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (LANConnectivitySegment)Collection.members --> (WiFiEndpoint)ProtocolEndpoint" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eFT7RMfvEd6WrsmzKVDL7w" x="34" y="154" width="529" height="109"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_d0IrsMfvEd6WrsmzKVDL7w" type="2018">
+    <children xmi:type="notation:Node" xmi:id="_d0Irs8fvEd6WrsmzKVDL7w" type="5035"/>
+    <children xmi:type="notation:Node" xmi:id="_d0JSwMfvEd6WrsmzKVDL7w" type="5036"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_d0IrscfvEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:LANConnectivitySegment" href="wifiNetwork.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d0IrssfvEd6WrsmzKVDL7w" x="63" y="81"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_56xTEAWkEd-Or-QaeuUltQ" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_56x6IAWkEd-Or-QaeuUltQ" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_56x6IQWkEd-Or-QaeuUltQ" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_56xTEQWkEd-Or-QaeuUltQ" fontName="Lucida Grande" fillColor="8047085"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="wifiNetwork.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_56xTEgWkEd-Or-QaeuUltQ" x="396" y="90"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_dzM3kcfvEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="wifiNetwork.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_8l9G8AWkEd-Or-QaeuUltQ" type="4042" source="_d0IrsMfvEd6WrsmzKVDL7w" target="_56xTEAWkEd-Or-QaeuUltQ">
+    <children xmi:type="notation:Node" xmi:id="_8l9uAAWkEd-Or-QaeuUltQ" type="6042">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8l9uAQWkEd-Or-QaeuUltQ" x="14" y="15"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_8l9G8QWkEd-Or-QaeuUltQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8l9G8gWkEd-Or-QaeuUltQ" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8l9G8wWkEd-Or-QaeuUltQ" points="[15, -1, -245, 7]$[242, 12, -18, 20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8l_jMAWkEd-Or-QaeuUltQ" id="(0.8986486486486487,0.7)"/>
+  </edges>
+</notation:Diagram>

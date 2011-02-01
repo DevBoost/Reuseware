@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_sg-hsCVdEeCigM-OVvFScQ" type="Compositionprogram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_sg-hsSVdEeCigM-OVvFScQ"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:DerivedCompositionProgram" href="Main.ucl#/"/>
+</notation:Diagram>

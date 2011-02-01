@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="animation"
+    nsURI="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" nsPrefix="odfanimation">
+  <eClassifiers xsi:type="ecore:EClass" name="AnimateColorType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="animateColor_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accumulate" eType="ecore:EEnum smil.ecore#//AccumulateType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accumulate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additive" eType="ecore:EEnum smil.ecore#//AdditiveType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="additive"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="attributeName"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="by" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="by"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="calcMode" eType="ecore:EEnum smil.ecore#//CalcModeType"
+        defaultValueLiteral="discrete" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="calcMode"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorInterpolation" eType="#//ColorInterpolationType"
+        defaultValueLiteral="rgb" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="color-interpolation"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorInterpolationDirection"
+        eType="#//ColorInterpolationDirectionType" defaultValueLiteral="clockwise"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="color-interpolation-direction"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="formula"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="from"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keySplines" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="keySplines"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keyTimes" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="keyTimes"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="to"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="values"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnimateMotionType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="animateMotion_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accumulate" eType="ecore:EEnum smil.ecore#//AccumulateType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accumulate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additive" eType="ecore:EEnum smil.ecore#//AdditiveType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="additive"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="attributeName"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="by" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="by"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="calcMode" eType="ecore:EEnum smil.ecore#//CalcModeType"
+        defaultValueLiteral="paced" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="calcMode"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="formula"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="from"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keySplines" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="keySplines"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keyTimes" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="keyTimes"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="origin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="origin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType text.ecore#//PathData">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="path"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="to"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="values"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnimateTransformType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="animateTransform_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accumulate" eType="ecore:EEnum smil.ecore#//AccumulateType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accumulate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additive" eType="ecore:EEnum smil.ecore#//AdditiveType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="additive"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="attributeName"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="by" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="by"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="formula"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="from"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="to"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EEnum svg.ecore#//TypeType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="values"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnimateType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="animate_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accumulate" eType="ecore:EEnum smil.ecore#//AccumulateType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accumulate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additive" eType="ecore:EEnum smil.ecore#//AdditiveType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="additive"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="attributeName"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="by" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="by"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="calcMode" eType="ecore:EEnum smil.ecore#//CalcModeType"
+        defaultValueLiteral="discrete" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="calcMode"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="formula"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="from"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keySplines" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="keySplines"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keyTimes" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="keyTimes"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="to"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="values"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AudioType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="audio_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="audioLevel" eType="ecore:EDataType text.ecore#//Double"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="audio-level"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="group-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="href" eType="ecore:EDataType text.ecore#//AnyURI">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="href"/>
+        <details key="namespace" value="http://www.w3.org/1999/xlink"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="master-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeType" eType="ecore:EEnum presentation.ecore#//NodeTypeType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="node-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetClass" eType="ecore:EEnum presentation.ecore#//PresetClassType"
+        defaultValueLiteral="custom" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-class"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetSubType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-sub-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ColorInterpolationDirectionType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="color-interpolation-direction_._type"/>
+    </eAnnotations>
+    <eLiterals name="clockwise"/>
+    <eLiterals name="counterClockwise" value="1" literal="counter-clockwise"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ColorInterpolationDirectionTypeObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="color-interpolation-direction_._type:Object"/>
+      <details key="baseType" value="color-interpolation-direction_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ColorInterpolationType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="color-interpolation_._type"/>
+    </eAnnotations>
+    <eLiterals name="rgb"/>
+    <eLiterals name="hsl" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ColorInterpolationTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="color-interpolation_._type:Object"/>
+      <details key="baseType" value="color-interpolation_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CommandType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="command_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="param" upperBound="-1"
+        eType="#//ParamType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="param"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="command" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="command"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="group-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="master-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeType" eType="ecore:EEnum presentation.ecore#//NodeTypeType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="node-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetClass" eType="ecore:EEnum presentation.ecore#//PresetClassType"
+        defaultValueLiteral="custom" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-class"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetSubType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-sub-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value=""/>
+      <details key="kind" value="mixed"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mixed" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="elementWildcard"/>
+        <details key="name" value=":mixed"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xMLNSPrefixMap" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xmlns:prefix"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xSISchemaLocation" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xsi:schemaLocation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animate" upperBound="-2"
+        eType="#//AnimateType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animate"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animateColor" upperBound="-2"
+        eType="#//AnimateColorType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animateColor"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animateMotion" upperBound="-2"
+        eType="#//AnimateMotionType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animateMotion"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animateTransform" upperBound="-2"
+        eType="#//AnimateTransformType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animateTransform"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="audio" upperBound="-2"
+        eType="#//AudioType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="audio"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="command" upperBound="-2"
+        eType="#//CommandType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="command"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iterate" upperBound="-2"
+        eType="#//IterateType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="iterate"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="par" upperBound="-2" eType="#//ParType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="par"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="param" upperBound="-2"
+        eType="#//ParamType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="param"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seq" upperBound="-2" eType="#//SeqType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="seq"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="set" upperBound="-2" eType="#//SetType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="set"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transitionFilter" upperBound="-2"
+        eType="#//TransitionFilterType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="transitionFilter"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="audioLevel" eType="ecore:EDataType text.ecore#//Double"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="audio-level"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorInterpolation" eType="#//ColorInterpolationType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="color-interpolation"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="colorInterpolationDirection"
+        eType="#//ColorInterpolationDirectionType" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="color-interpolation-direction"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="command1" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="command"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="formula"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iterateInterval" eType="ecore:EDataType text.ecore#//Duration">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="iterate-interval"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iterateType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="iterate-type"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IterateType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="iterate_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="animationElementGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="animation-element:group"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animationElement" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" changeable="false"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animation-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endsync" eType="ecore:EEnum smil.ecore#//EndsyncType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="endsync"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="group-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iterateInterval" eType="ecore:EDataType text.ecore#//Duration">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="iterate-interval"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iterateType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="iterate-type"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="master-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeType" eType="ecore:EEnum presentation.ecore#//NodeTypeType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="node-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetClass" eType="ecore:EEnum presentation.ecore#//PresetClassType"
+        defaultValueLiteral="custom" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-class"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetSubType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-sub-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParamType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="param_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="name"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//AnySimpleType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="value"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="par_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="animationElementGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="animation-element:group"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animationElement" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" changeable="false"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animation-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endsync" eType="ecore:EEnum smil.ecore#//EndsyncType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="endsync"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="group-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="master-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeType" eType="ecore:EEnum presentation.ecore#//NodeTypeType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="node-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetClass" eType="ecore:EEnum presentation.ecore#//PresetClassType"
+        defaultValueLiteral="custom" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-class"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetSubType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-sub-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SeqType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="seq_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="animationElementGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="animation-element:group"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="animationElement" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" changeable="false"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="animation-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#animation-element:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endsync" eType="ecore:EEnum smil.ecore#//EndsyncType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="endsync"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="group-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="master-element"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeType" eType="ecore:EEnum presentation.ecore#//NodeTypeType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="node-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetClass" eType="ecore:EEnum presentation.ecore#//PresetClassType"
+        defaultValueLiteral="custom" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-class"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetId" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presetSubType" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="preset-sub-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SetType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="set_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accumulate" eType="ecore:EEnum smil.ecore#//AccumulateType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accumulate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additive" eType="ecore:EEnum smil.ecore#//AdditiveType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="additive"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="attributeName"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="to"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionFilterType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="transitionFilter_._type"/>
+      <details key="kind" value="empty"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accumulate" eType="ecore:EEnum smil.ecore#//AccumulateType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="accumulate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="additive" eType="ecore:EEnum smil.ecore#//AdditiveType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="additive"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoReverse" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="autoReverse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="begin" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="begin"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="by" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="by"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="calcMode" eType="ecore:EEnum smil.ecore#//CalcModeType"
+        defaultValueLiteral="discrete" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="calcMode"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decelerate" eType="ecore:EDataType text.ecore#//Double"
+        defaultValueLiteral="0.0" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="decelerate"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" eType="ecore:EEnum smil.ecore#//DirectionType"
+        defaultValueLiteral="forward" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="direction"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fadeColor" lowerBound="1"
+        eType="ecore:EEnum smil.ecore#//FadeColorType" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fadeColor"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fill" eType="ecore:EEnum smil.ecore#//FillType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fill"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillDefault" eType="ecore:EEnum smil.ecore#//FillDefaultType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="fillDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="formula"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="from"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mode" eType="ecore:EEnum smil.ecore#//ModeType"
+        defaultValueLiteral="in" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="mode"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType smil.ecore#//RepeatCountType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatCount"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatDur" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="repeatDur"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restart" eType="ecore:EEnum smil.ecore#//RestartType"
+        defaultValueLiteral="default" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restart"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="restartDefault" eType="ecore:EEnum smil.ecore#//RestartDefaultType"
+        defaultValueLiteral="inherit" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="restartDefault"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="sub-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subtype" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="subtype"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetElement" eType="ecore:EDataType text.ecore#//IDREF">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="targetElement"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="to"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="values"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

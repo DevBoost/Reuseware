@@ -1,0 +1,2695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="office"
+    nsURI="urn:oasis:names:tc:opendocument:xmlns:office:1.0" nsPrefix="odfoffice">
+  <eClassifiers xsi:type="ecore:EClass" name="AnnotationType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="annotation_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creator" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="creator"/>
+        <details key="namespace" value="http://purl.org/dc/elements/1.1/"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType text.ecore#//DateTime">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="date"/>
+        <details key="namespace" value="http://purl.org/dc/elements/1.1/"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateString" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="date-string"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p" upperBound="-1" eType="ecore:EClass text.ecore#//PType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="p"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list" upperBound="-1" eType="ecore:EClass text.ecore#//ListType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="list"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="anchorPageNumber" eType="ecore:EDataType text.ecore#//PositiveInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="anchor-page-number"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="anchorType" eType="ecore:EEnum text.ecore#//AnchorTypeType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="anchor-type"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="captionPointX" eType="ecore:EDataType text.ecore#//Coordinate">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="caption-point-x"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="captionPointY" eType="ecore:EDataType text.ecore#//Coordinate">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="caption-point-y"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="classNames" eType="ecore:EDataType text.ecore#//StyleNameRefs">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="class-names"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="classNames1" eType="ecore:EDataType text.ecore#//StyleNameRefs">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="class-names"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cornerRadius" eType="ecore:EDataType text.ecore#//NonNegativeLength">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="corner-radius"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="display" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="display"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endCellAddress" eType="ecore:EDataType text.ecore#//CellAddress">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end-cell-address"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endX" eType="ecore:EDataType text.ecore#//Coordinate">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end-x"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endY" eType="ecore:EDataType text.ecore#//Coordinate">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="end-y"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//Length">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="height"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType text.ecore#//ID"
+        iD="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="id"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="layer" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="layer"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="name"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="styleName" eType="ecore:EDataType drawing.ecore#//StyleNameType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="style-name"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="styleName1" eType="ecore:EDataType presentation.ecore#//StyleNameType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="style-name"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tableBackground" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="table-background"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textStyleName" eType="ecore:EDataType drawing.ecore#//TextStyleNameType">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="text-style-name"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transform" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="transform"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" lowerBound="1" eType="ecore:EDataType text.ecore#//Length">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="width"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" lowerBound="1" eType="ecore:EDataType text.ecore#//Coordinate">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="x"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="y" lowerBound="1" eType="ecore:EDataType text.ecore#//Coordinate">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="y"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="zIndex" eType="ecore:EDataType text.ecore#//NonNegativeInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="z-index"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AutomaticStylesType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="automatic-styles_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="style" upperBound="-1"
+        eType="ecore:EClass style.ecore#//StyleType1" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listStyle" upperBound="-1"
+        eType="ecore:EClass text.ecore#//ListStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="list-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="numberStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//NumberStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="number-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="currencyStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//CurrencyStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="currency-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="percentageStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//PercentageStyleType" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="percentage-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dateStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//DateStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="date-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="timeStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//TimeStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="time-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="booleanStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//BooleanStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="boolean-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//TextStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="text-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageLayout" upperBound="-1"
+        eType="ecore:EClass style.ecore#//PageLayoutType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="page-layout"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChangeInfoType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="change-info_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creator" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="creator"/>
+        <details key="namespace" value="http://purl.org/dc/elements/1.1/"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" lowerBound="1" eType="ecore:EDataType text.ecore#//DateTime">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="date"/>
+        <details key="namespace" value="http://purl.org/dc/elements/1.1/"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p" upperBound="-1" eType="ecore:EClass text.ecore#//PType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="p"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChartType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="chart_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDecls" eType="ecore:EClass text.ecore#//VariableDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="variable-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sequenceDecls" eType="ecore:EClass text.ecore#//SequenceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="sequence-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="userFieldDecls" eType="ecore:EClass text.ecore#//UserFieldDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="user-field-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeConnectionDecls" eType="ecore:EClass text.ecore#//DdeConnectionDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-connection-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alphabeticalIndexAutoMarkFile"
+        eType="ecore:EClass text.ecore#//AlphabeticalIndexAutoMarkFileType" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="alphabetical-index-auto-mark-file"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculationSettings" eType="ecore:EClass table.ecore#//CalculationSettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="calculation-settings"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentValidations" eType="ecore:EClass table.ecore#//ContentValidationsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="content-validations"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labelRanges" eType="ecore:EClass table.ecore#//LabelRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="label-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="officeChartContentMainGroup"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="office-chart-content-main:group"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="officeChartContentMain"
+        lowerBound="1" eType="ecore:EClass text.ecore#//OfficeChartContentMainType"
+        changeable="false" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="office-chart-content-main"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-chart-content-main:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="namedExpressions" eType="ecore:EClass table.ecore#//NamedExpressionsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="named-expressions"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="databaseRanges" eType="ecore:EClass table.ecore#//DatabaseRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="database-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataPilotTables" eType="ecore:EClass table.ecore#//DataPilotTablesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="data-pilot-tables"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consolidation" eType="ecore:EClass table.ecore#//ConsolidationType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="consolidation"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeLinks" eType="ecore:EClass table.ecore#//DdeLinksType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-links"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ConversionModeType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="conversion-mode_._type"/>
+    </eAnnotations>
+    <eLiterals name="intoDefaultStyleDataStyle" literal="into-default-style-data-style"/>
+    <eLiterals name="intoEnglishNumber" value="1" literal="into-english-number"/>
+    <eLiterals name="keepText" value="2" literal="keep-text"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ConversionModeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="conversion-mode_._type:Object"/>
+      <details key="baseType" value="conversion-mode_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentContentType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="document-content_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scripts" eType="#//ScriptsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="scripts"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fontFaceDecls" eType="#//FontFaceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="font-face-decls"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="automaticStyles" eType="#//AutomaticStylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="automatic-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" eType="ecore:EClass text.ecore#//OfficeBodyContent"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="body"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="version"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentMetaType" eSuperTypes="text.ecore#//OfficeMeta">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="document-meta_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="version"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentSettingsType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="document-settings_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="settings" eType="#//SettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="settings"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="version"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentStylesType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="document-styles_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fontFaceDecls" eType="#//FontFaceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="font-face-decls"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="styles" eType="#//StylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="automaticStyles" eType="#//AutomaticStylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="automatic-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="masterStyles" eType="#//MasterStylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="master-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="version"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentType" eSuperTypes="text.ecore#//OfficeMeta">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="document_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="settings" eType="#//SettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="settings"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scripts" eType="#//ScriptsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="scripts"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fontFaceDecls" eType="#//FontFaceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="font-face-decls"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="styles" eType="#//StylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="automaticStyles" eType="#//AutomaticStylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="automatic-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="masterStyles" eType="#//MasterStylesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="master-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" eType="ecore:EClass text.ecore#//OfficeBodyContent"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="body"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimetype" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="mimetype"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="version"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DrawingType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="drawing_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDecls" eType="ecore:EClass text.ecore#//VariableDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="variable-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sequenceDecls" eType="ecore:EClass text.ecore#//SequenceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="sequence-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="userFieldDecls" eType="ecore:EClass text.ecore#//UserFieldDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="user-field-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeConnectionDecls" eType="ecore:EClass text.ecore#//DdeConnectionDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-connection-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alphabeticalIndexAutoMarkFile"
+        eType="ecore:EClass text.ecore#//AlphabeticalIndexAutoMarkFileType" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="alphabetical-index-auto-mark-file"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculationSettings" eType="ecore:EClass table.ecore#//CalculationSettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="calculation-settings"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentValidations" eType="ecore:EClass table.ecore#//ContentValidationsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="content-validations"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labelRanges" eType="ecore:EClass table.ecore#//LabelRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="label-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="page" upperBound="-1" eType="ecore:EClass drawing.ecore#//PageType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="page"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="namedExpressions" eType="ecore:EClass table.ecore#//NamedExpressionsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="named-expressions"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="databaseRanges" eType="ecore:EClass table.ecore#//DatabaseRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="database-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataPilotTables" eType="ecore:EClass table.ecore#//DataPilotTablesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="data-pilot-tables"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consolidation" eType="ecore:EClass table.ecore#//ConsolidationType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="consolidation"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeLinks" eType="ecore:EClass table.ecore#//DdeLinksType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-links"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventListenersType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="event-listeners_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventListener" upperBound="-1"
+        eType="ecore:EClass script.ecore#//EventListenerType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="event-listener"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:script:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventListener1" upperBound="-1"
+        eType="ecore:EClass presentation.ecore#//EventListenerType" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="event-listener"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FontFaceDeclsType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="font-face-decls_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fontFace" upperBound="-1"
+        eType="ecore:EClass style.ecore#//FontFaceType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="font-face"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FormsType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="forms_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="form" upperBound="-1" eType="ecore:EClass form.ecore#//FormType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="form"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:form:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="model" upperBound="-1"
+        eType="ecore:EClass text.ecore#//AnyAttListOrElements" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="model"/>
+        <details key="namespace" value="http://www.w3.org/2002/xforms"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="applyDesignMode" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="true" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="apply-design-mode"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:form:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="automaticFocus" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="automatic-focus"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:form:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MasterStylesType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="master-styles_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="masterPage" upperBound="-1"
+        eType="ecore:EClass style.ecore#//MasterPageType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="master-page"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="handoutMaster" upperBound="-1"
+        eType="ecore:EClass style.ecore#//HandoutMasterType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="handout-master"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="layerSet" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//LayerSetType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="layer-set"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PresentationType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="presentation_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDecls" eType="ecore:EClass text.ecore#//VariableDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="variable-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sequenceDecls" eType="ecore:EClass text.ecore#//SequenceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="sequence-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="userFieldDecls" eType="ecore:EClass text.ecore#//UserFieldDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="user-field-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeConnectionDecls" eType="ecore:EClass text.ecore#//DdeConnectionDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-connection-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alphabeticalIndexAutoMarkFile"
+        eType="ecore:EClass text.ecore#//AlphabeticalIndexAutoMarkFileType" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="alphabetical-index-auto-mark-file"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculationSettings" eType="ecore:EClass table.ecore#//CalculationSettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="calculation-settings"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentValidations" eType="ecore:EClass table.ecore#//ContentValidationsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="content-validations"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labelRanges" eType="ecore:EClass table.ecore#//LabelRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="label-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="presentationDeclGroup"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="presentation-decl:group"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentationDecl" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" changeable="false"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="presentation-decl"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#presentation-decl:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="page" upperBound="-1" eType="ecore:EClass drawing.ecore#//PageType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="page"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="settings" eType="ecore:EClass presentation.ecore#//SettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="settings"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="namedExpressions" eType="ecore:EClass table.ecore#//NamedExpressionsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="named-expressions"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="databaseRanges" eType="ecore:EClass table.ecore#//DatabaseRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="database-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataPilotTables" eType="ecore:EClass table.ecore#//DataPilotTablesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="data-pilot-tables"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consolidation" eType="ecore:EClass table.ecore#//ConsolidationType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="consolidation"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeLinks" eType="ecore:EClass table.ecore#//DdeLinksType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-links"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ScriptsType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="scripts_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="script" upperBound="-1"
+        eType="#//ScriptType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="script"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventListeners" eType="#//EventListenersType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="event-listeners"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ScriptType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="script_._type"/>
+      <details key="kind" value="mixed"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mixed" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="elementWildcard"/>
+        <details key="name" value=":mixed"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="any" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="elementWildcard"/>
+        <details key="wildcards" value="##any"/>
+        <details key="name" value=":1"/>
+        <details key="processing" value="skip"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="language"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:script:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SettingsType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="settings_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configItemSet" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass config.ecore#//ConfigItemSetType" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="config-item-set"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:config:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpreadsheetType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="spreadsheet_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trackedChanges" eType="ecore:EClass table.ecore#//TrackedChangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="tracked-changes"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDecls" eType="ecore:EClass text.ecore#//VariableDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="variable-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sequenceDecls" eType="ecore:EClass text.ecore#//SequenceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="sequence-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="userFieldDecls" eType="ecore:EClass text.ecore#//UserFieldDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="user-field-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeConnectionDecls" eType="ecore:EClass text.ecore#//DdeConnectionDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-connection-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alphabeticalIndexAutoMarkFile"
+        eType="ecore:EClass text.ecore#//AlphabeticalIndexAutoMarkFileType" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="alphabetical-index-auto-mark-file"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculationSettings" eType="ecore:EClass table.ecore#//CalculationSettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="calculation-settings"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentValidations" eType="ecore:EClass table.ecore#//ContentValidationsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="content-validations"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labelRanges" eType="ecore:EClass table.ecore#//LabelRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="label-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="table" upperBound="-1"
+        eType="ecore:EClass table.ecore#//TableType" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="table"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="namedExpressions" eType="ecore:EClass table.ecore#//NamedExpressionsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="named-expressions"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="databaseRanges" eType="ecore:EClass table.ecore#//DatabaseRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="database-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataPilotTables" eType="ecore:EClass table.ecore#//DataPilotTablesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="data-pilot-tables"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consolidation" eType="ecore:EClass table.ecore#//ConsolidationType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="consolidation"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeLinks" eType="ecore:EClass table.ecore#//DdeLinksType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-links"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protectionKey" lowerBound="1"
+        eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="protection-key"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="structureProtected" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="structure-protected"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StylesType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="styles_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="style" upperBound="-1"
+        eType="ecore:EClass style.ecore#//StyleType1" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listStyle" upperBound="-1"
+        eType="ecore:EClass text.ecore#//ListStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="list-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="numberStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//NumberStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="number-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="currencyStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//CurrencyStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="currency-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="percentageStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//PercentageStyleType" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="percentage-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dateStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//DateStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="date-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="timeStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//TimeStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="time-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="booleanStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//BooleanStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="boolean-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textStyle" upperBound="-1"
+        eType="ecore:EClass datastyle.ecore#//TextStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="text-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultStyle" upperBound="-1"
+        eType="ecore:EClass text.ecore#//StyleStyleContent" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="default-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outlineStyle" upperBound="-1"
+        eType="ecore:EClass text.ecore#//OutlineStyleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="outline-style"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="notesConfiguration" upperBound="-1"
+        eType="ecore:EClass text.ecore#//TextNotesConfigurationContent" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="notes-configuration"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bibliographyConfiguration"
+        upperBound="-1" eType="ecore:EClass text.ecore#//BibliographyConfigurationType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="bibliography-configuration"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linenumberingConfiguration"
+        upperBound="-1" eType="ecore:EClass text.ecore#//LinenumberingConfigurationType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="linenumbering-configuration"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gradient" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//GradientType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="gradient"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linearGradient" upperBound="-1"
+        eType="ecore:EClass svg.ecore#//LinearGradientType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="linearGradient"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="radialGradient" upperBound="-1"
+        eType="ecore:EClass svg.ecore#//RadialGradientType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="radialGradient"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hatch" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//HatchType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="hatch"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fillImage" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//FillImageType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="fill-image"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="marker" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//MarkerType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="marker"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="strokeDash" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//StrokeDashType1" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="stroke-dash"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opacity" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//OpacityType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="opacity"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentationPageLayout"
+        upperBound="-1" eType="ecore:EClass style.ecore#//PresentationPageLayoutType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="presentation-page-layout"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:style:1.0"/>
+        <details key="group" value="#group:0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="text_._type"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="forms" eType="#//FormsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="forms"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trackedChanges" eType="ecore:EClass text.ecore#//TrackedChangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="tracked-changes"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variableDecls" eType="ecore:EClass text.ecore#//VariableDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="variable-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sequenceDecls" eType="ecore:EClass text.ecore#//SequenceDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="sequence-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="userFieldDecls" eType="ecore:EClass text.ecore#//UserFieldDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="user-field-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeConnectionDecls" eType="ecore:EClass text.ecore#//DdeConnectionDeclsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-connection-decls"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alphabeticalIndexAutoMarkFile"
+        eType="ecore:EClass text.ecore#//AlphabeticalIndexAutoMarkFileType" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="alphabetical-index-auto-mark-file"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculationSettings" eType="ecore:EClass table.ecore#//CalculationSettingsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="calculation-settings"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentValidations" eType="ecore:EClass table.ecore#//ContentValidationsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="content-validations"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labelRanges" eType="ecore:EClass table.ecore#//LabelRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="label-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="officeTextContentMain"
+        unique="false" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="h" upperBound="-1" eType="ecore:EClass text.ecore#//HType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="h"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p" upperBound="-1" eType="ecore:EClass text.ecore#//PType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="p"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list" upperBound="-1" eType="ecore:EClass text.ecore#//ListType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="list"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="numberedParagraph" upperBound="-1"
+        eType="ecore:EClass text.ecore#//NumberedParagraphType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="numbered-paragraph"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="table" upperBound="-1"
+        eType="ecore:EClass table.ecore#//TableType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="table"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="a" upperBound="-1" eType="ecore:EClass drawing.ecore#//AType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="a"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="section" upperBound="-1"
+        eType="ecore:EClass text.ecore#//SectionType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="section"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="softPageBreak" upperBound="-1"
+        eType="ecore:EClass text.ecore#//SoftPageBreakType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="soft-page-break"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tableOfContent" upperBound="-1"
+        eType="ecore:EClass text.ecore#//TableOfContentType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="table-of-content"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="illustrationIndex" upperBound="-1"
+        eType="ecore:EClass text.ecore#//IllustrationIndexType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="illustration-index"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tableIndex" upperBound="-1"
+        eType="ecore:EClass text.ecore#//TableIndexType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="table-index"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objectIndex" upperBound="-1"
+        eType="ecore:EClass text.ecore#//ObjectIndexType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="object-index"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="userIndex" upperBound="-1"
+        eType="ecore:EClass text.ecore#//UserIndexType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="user-index"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alphabeticalIndex" upperBound="-1"
+        eType="ecore:EClass text.ecore#//AlphabeticalIndexType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="alphabetical-index"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bibliography" upperBound="-1"
+        eType="ecore:EClass text.ecore#//BibliographyType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="bibliography"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rect" upperBound="-1" eType="ecore:EClass drawing.ecore#//RectType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="rect"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="line" upperBound="-1" eType="ecore:EClass drawing.ecore#//LineType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="line"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="polyline" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PolylineType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="polyline"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="polygon" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PolygonType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="polygon"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regularPolygon" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//RegularPolygonType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="regular-polygon"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="path" upperBound="-1" eType="ecore:EClass drawing.ecore#//PathType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="path"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="circle" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//CircleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="circle"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ellipse" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//EllipseType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ellipse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="g" upperBound="-1" eType="ecore:EClass drawing.ecore#//GType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="g"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageThumbnail" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PageThumbnailType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="page-thumbnail"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="frame" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//FrameType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="frame"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="measure" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//MeasureType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="measure"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="caption" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//CaptionType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="caption"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connector" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//ConnectorType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="connector"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="control" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//ControlType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="control"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scene" upperBound="-1"
+        eType="ecore:EClass dr3d.ecore#//SceneType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="scene"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customShape" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//CustomShapeType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="custom-shape"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="changeMarksGroup" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="group"/>
+        <details key="name" value="change-marks:group"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="changeMarks" upperBound="-1"
+        eType="ecore:EClass text.ecore#//ChangeMarksType" changeable="false" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="change-marks"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#change-marks:group"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageSequence" upperBound="-1"
+        eType="ecore:EClass text.ecore#//PageSequenceType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="page-sequence"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="a1" upperBound="-1" eType="ecore:EClass drawing.ecore#//AType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="a"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rect1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//RectType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="rect"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="line1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//LineType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="line"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="polyline1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PolylineType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="polyline"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="polygon1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PolygonType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="polygon"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regularPolygon1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//RegularPolygonType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="regular-polygon"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="path1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PathType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="path"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="circle1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//CircleType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="circle"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ellipse1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//EllipseType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ellipse"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="g1" upperBound="-1" eType="ecore:EClass drawing.ecore#//GType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="g"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageThumbnail1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//PageThumbnailType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="page-thumbnail"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="frame1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//FrameType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="frame"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="measure1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//MeasureType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="measure"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="caption1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//CaptionType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="caption"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connector1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//ConnectorType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="connector"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="control1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//ControlType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="control"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scene1" upperBound="-1"
+        eType="ecore:EClass dr3d.ecore#//SceneType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="scene"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customShape1" upperBound="-1"
+        eType="ecore:EClass drawing.ecore#//CustomShapeType" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="custom-shape"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"/>
+        <details key="group" value="#OfficeTextContentMain:10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="namedExpressions" eType="ecore:EClass table.ecore#//NamedExpressionsType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="named-expressions"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="databaseRanges" eType="ecore:EClass table.ecore#//DatabaseRangesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="database-ranges"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataPilotTables" eType="ecore:EClass table.ecore#//DataPilotTablesType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="data-pilot-tables"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consolidation" eType="ecore:EClass table.ecore#//ConsolidationType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="consolidation"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeLinks" eType="ecore:EClass table.ecore#//DdeLinksType"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-links"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:table:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="global" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="global"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="useSoftPageBreaks" eType="ecore:EEnum text.ecore#//Boolean"
+        defaultValueLiteral="false" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="use-soft-page-breaks"/>
+        <details key="namespace" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ValueTypeType">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="value-type_._1_._type"/>
+    </eAnnotations>
+    <eLiterals name="float"/>
+    <eLiterals name="percentage" value="1"/>
+    <eLiterals name="currency" value="2"/>
+    <eLiterals name="date" value="3"/>
+    <eLiterals name="time" value="4"/>
+    <eLiterals name="boolean" value="5"/>
+    <eLiterals name="string" value="6"/>
+    <eLiterals name="void" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ValueTypeType1">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="value-type_._type"/>
+    </eAnnotations>
+    <eLiterals name="float"/>
+    <eLiterals name="percentage" value="1"/>
+    <eLiterals name="currency" value="2"/>
+    <eLiterals name="date" value="3"/>
+    <eLiterals name="time" value="4"/>
+    <eLiterals name="boolean" value="5"/>
+    <eLiterals name="string" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ValueTypeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="value-type_._1_._type:Object"/>
+      <details key="baseType" value="value-type_._1_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ValueTypeTypeObject1" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="value-type_._type:Object"/>
+      <details key="baseType" value="value-type_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value=""/>
+      <details key="kind" value="mixed"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mixed" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="elementWildcard"/>
+        <details key="name" value=":mixed"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xMLNSPrefixMap" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xmlns:prefix"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xSISchemaLocation" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xsi:schemaLocation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" upperBound="-2"
+        eType="#//AnnotationType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="annotation"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="automaticStyles" upperBound="-2"
+        eType="#//AutomaticStylesType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="automatic-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="binaryData" unique="false"
+        upperBound="-2" eType="ecore:EDataType text.ecore#//Base64Binary" volatile="true"
+        transient="true" derived="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="binary-data"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" upperBound="-2" eType="ecore:EClass text.ecore#//OfficeBodyContent"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="body"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="changeInfo" upperBound="-2"
+        eType="#//ChangeInfoType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="change-info"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="chart" upperBound="-2"
+        eType="#//ChartType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="chart"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-body-content"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ddeSource" upperBound="-2"
+        eType="ecore:EClass text.ecore#//TextSectionSourceDdeType" volatile="true"
+        transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="dde-source"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#text-section-source-dde"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="document" upperBound="-2"
+        eType="#//DocumentType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="document"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentContent" upperBound="-2"
+        eType="#//DocumentContentType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="document-content"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentMeta" upperBound="-2"
+        eType="#//DocumentMetaType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="document-meta"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentSettings" upperBound="-2"
+        eType="#//DocumentSettingsType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="document-settings"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentStyles" upperBound="-2"
+        eType="#//DocumentStylesType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="document-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="drawing" upperBound="-2"
+        eType="#//DrawingType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="drawing"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-body-content"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventListeners" upperBound="-2"
+        eType="#//EventListenersType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="event-listeners"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fontFaceDecls" upperBound="-2"
+        eType="#//FontFaceDeclsType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="font-face-decls"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="forms" upperBound="-2"
+        eType="#//FormsType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="forms"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="image" upperBound="-2"
+        eType="ecore:EClass text.ecore#//OfficeImageContentMain" volatile="true" transient="true"
+        derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="image"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-body-content"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="masterStyles" upperBound="-2"
+        eType="#//MasterStylesType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="master-styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="meta" upperBound="-2" eType="ecore:EClass text.ecore#//OfficeMetaContent"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="meta"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentation" upperBound="-2"
+        eType="#//PresentationType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="presentation"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-body-content"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="script" upperBound="-2"
+        eType="#//ScriptType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="script"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scripts" upperBound="-2"
+        eType="#//ScriptsType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="scripts"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="settings" upperBound="-2"
+        eType="#//SettingsType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="settings"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="spreadsheet" upperBound="-2"
+        eType="#//SpreadsheetType" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="spreadsheet"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-body-content"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="styles" upperBound="-2"
+        eType="#//StylesType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="styles"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="text" upperBound="-2" eType="#//TextType"
+        volatile="true" transient="true" derived="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="text"/>
+        <details key="namespace" value="##targetNamespace"/>
+        <details key="affiliation" value="urn:oasis:names:tc:opendocument:xmlns:text:1.0#office-body-content"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="automaticUpdate" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="automatic-update"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="booleanValue" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="boolean-value"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="conversionMode" eType="#//ConversionModeType"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="conversion-mode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currency" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="currency"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateValue" eType="ecore:EDataType text.ecore#//DateOrDateTime">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="date-value"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ddeApplication" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dde-application"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ddeItem" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dde-item"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ddeTopic" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="dde-topic"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="display" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="display"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mimetype" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="mimetype"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="name"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="processContent" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="process-content"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serverMap" eType="ecore:EEnum text.ecore#//Boolean"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="server-map"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stringValue" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="string-value"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetFrame" eType="ecore:EDataType text.ecore#//TargetFrameName">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="target-frame"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetFrameName" eType="ecore:EDataType text.ecore#//TargetFrameName">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="target-frame-name"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeValue" eType="ecore:EDataType text.ecore#//Duration">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="time-value"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="title"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType text.ecore#//Double"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="value"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType text.ecore#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="version"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

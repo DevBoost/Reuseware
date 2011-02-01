@@ -1,0 +1,25 @@
+fracol org.reuseware.lib.systems.flow.flow { 
+
+	fragment role Participant1 {
+		static port type Self;
+		static port type Next;
+	} 
+
+	fragment role Participant2 {
+		static port type Self;
+		static port type Next;
+	} 
+
+	configuring association Flow1To1 {
+		Participant1.Next --> Participant1.Self
+	}
+	configuring association Flow1To2 {
+		Participant1.Next --> Participant2.Self
+	}
+	configuring association Flow2To1 {
+		Participant2.Next --> Participant1.Self
+	}
+	configuring association Flow2To2 {
+		Participant2.Next --> Participant2.Self
+	}
+} 

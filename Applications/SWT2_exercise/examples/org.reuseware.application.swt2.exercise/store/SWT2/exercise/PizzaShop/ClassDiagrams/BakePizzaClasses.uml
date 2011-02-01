@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <elementImport xmi:id="_jgS1YDF5Ed2mV9Z0JtzXAA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_jgVRoDF5Ed2mV9Z0JtzXAA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_jgVRoTF5Ed2mV9Z0JtzXAA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="BakePizzaClasses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_MOMSwDF3Ed2A1p8LtiDTWg" name="Oven">
+      <ownedOperation xmi:id="_epZCwDF3Ed2A1p8LtiDTWg" name="putPizzaIn">
+        <ownedParameter xmi:id="_hcyXcDF3Ed2A1p8LtiDTWg" name="pizza" type="_O5LSUDF3Ed2A1p8LtiDTWg"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_kjgQwDF3Ed2A1p8LtiDTWg" name="getPizzaOut">
+        <ownedParameter xmi:id="_n23e8DF3Ed2A1p8LtiDTWg" name="pizza" type="_O5LSUDF3Ed2A1p8LtiDTWg"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O5LSUDF3Ed2A1p8LtiDTWg" name="ExtensionFor_Pizza">
+      <ownedAttribute xmi:id="_3NXH0DF3Ed2A1p8LtiDTWg" name="readyToDeliver">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UEUsEDF4Ed2mV9Z0JtzXAA" name="ExtensionFor_Order">
+      <ownedOperation xmi:id="_pruc4DF5Ed2mV9Z0JtzXAA" name="isOrderReady">
+        <ownedParameter xmi:id="_ySNKgDF5Ed2mV9Z0JtzXAA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

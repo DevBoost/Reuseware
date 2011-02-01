@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:secprop="http://www.emftext.org/language/SecProp" xmi:id="_0OeEkBsOEd-xmef1IZ1UNw" type="Secprop" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_0f82IBsOEd-xmef1IZ1UNw" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_0f9dMBsOEd-xmef1IZ1UNw" type="5001"/>
+    <element xmi:type="secprop:Element" href="Participant.secprop#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0f82IRsOEd-xmef1IZ1UNw" x="36" y="18" width="82" height="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_0OeEkRsOEd-xmef1IZ1UNw"/>
+  <element xmi:type="secprop:SecPropModel" href="Participant.secprop#/"/>
+</notation:Diagram>

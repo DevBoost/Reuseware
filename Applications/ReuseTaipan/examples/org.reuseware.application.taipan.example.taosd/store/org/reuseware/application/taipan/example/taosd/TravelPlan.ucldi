@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_agwaoN0pEd-0M-B5nXPZPg" type="Compositionprogram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_bMvW4N0pEd-0M-B5nXPZPg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bMv98d0pEd-0M-B5nXPZPg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_bM6WAN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bM69EN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bM69Ed0pEd-0M-B5nXPZPg" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bM6WAd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bM6WAt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bM6WA90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='VehicleContainer',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bM6WBN0pEd-0M-B5nXPZPg" x="18" y="324"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bM7kIN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bM7kJd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bM7kJt0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bM7kId0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bM7kIt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bM7kI90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='Vehicles',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bM7kJN0pEd-0M-B5nXPZPg" x="171" y="288"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bM8LMN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bM8yQN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bM8yQd0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bM8LMd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bM8LMt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bM8LM90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='tobacco',fragmentRoleName='ItemContainer',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bM8LNN0pEd-0M-B5nXPZPg" x="-19" y="207"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bM9ZUN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bM9ZVd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bM9ZVt0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bM9ZUd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bM9ZUt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bM9ZU90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='coffee',fragmentRoleName='ItemContainer',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bM9ZVN0pEd-0M-B5nXPZPg" x="-19" y="243"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bM-AYN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bM-ncN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bM-ncd0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bM-AYd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bM-AYt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bM-AY90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='guns',fragmentRoleName='ItemContainer',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bM-AZN0pEd-0M-B5nXPZPg" x="-19" y="162"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_bMvW4d0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bMvW4t0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_bMvW490pEd-0M-B5nXPZPg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyCargo.taipan2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bMv98N0pEd-0M-B5nXPZPg" x="675" y="72" width="172" height="316"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_bMv98t0pEd-0M-B5nXPZPg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bMwlAd0pEd-0M-B5nXPZPg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_bN3_UN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN4mYN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN4mYd0pEd-0M-B5nXPZPg" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN3_Ud0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN3_Ut0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN3_U90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='VehicleContainer',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN3_VN0pEd-0M-B5nXPZPg" x="9" y="315"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bN5NcN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN50gN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN50gd0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN5Ncd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN5Nct0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN5Nc90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='Vehicles',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN5NdN0pEd-0M-B5nXPZPg" x="-19" y="27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bN6bkN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN7CoN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN7Cod0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN6bkd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN6bkt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN6bk90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship1Route',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN6blN0pEd-0M-B5nXPZPg" x="-19" y="99"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bN7psN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN7ptd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN8QwN0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN7psd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN7pst0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN7ps90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship2Route',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN7ptN0pEd-0M-B5nXPZPg" x="-19" y="171"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bN830N0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN831d0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN831t0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN830d0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN830t0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN83090pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship1Port',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN831N0pEd-0M-B5nXPZPg" x="-19" y="72"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bN9e4N0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN-F9N0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN-F9d0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN-F8N0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN-F8d0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN-F8t0pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship2Port',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN-F890pEd-0M-B5nXPZPg" x="-19" y="144"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bN_UEN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bN_UFd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bN_UFt0pEd-0M-B5nXPZPg" x="-140" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bN_UEd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bN_UEt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bN_UE90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='Ship1Cargo',fragmentRoleName='ItemHolder',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bN_UFN0pEd-0M-B5nXPZPg" x="144" y="207"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bOAiMN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bOAiNd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bOAiNt0pEd-0M-B5nXPZPg" x="-140" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bOAiMd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bOAiMt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bOAiM90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='Ship2Cargo',fragmentRoleName='ItemHolder',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bOAiNN0pEd-0M-B5nXPZPg" x="144" y="243"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_bMv9890pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bMv99N0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_bMv99d0pEd-0M-B5nXPZPg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="TravelPlan.ucl#//@fragmentInstances[name='MyFlotilla.taipan2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bMwlAN0pEd-0M-B5nXPZPg" x="396" y="72" width="163" height="316"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_bMwlAt0pEd-0M-B5nXPZPg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bMxMEN0pEd-0M-B5nXPZPg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_bPHVcN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPH8gN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPH8gd0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPHVcd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPHVct0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPHVc90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='VehicleContainer',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPHVdN0pEd-0M-B5nXPZPg" x="163" y="27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bPa3cN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPa3dd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPbegN0pEd-0M-B5nXPZPg" x="-142" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPa3cd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPa3ct0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPa3c90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='BalticRoute',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPa3dN0pEd-0M-B5nXPZPg" x="163" y="171"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bPcFkN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPcFld0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPcFlt0pEd-0M-B5nXPZPg" x="-163" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPcFkd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPcFkt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPcFk90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='NorthernRoute',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPcFlN0pEd-0M-B5nXPZPg" x="163" y="99"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bPcsoN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPdTsd0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPdTst0pEd-0M-B5nXPZPg" x="-155" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPcsod0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPcsot0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPcso90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='HamburgPort',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPdTsN0pEd-0M-B5nXPZPg" x="163" y="72"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bPd6wN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPeh0N0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPeh0d0pEd-0M-B5nXPZPg" x="-147" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPd6wd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPd6wt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPd6w90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='RostockPort',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPd6xN0pEd-0M-B5nXPZPg" x="163" y="144"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bPfI4N0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPfv8N0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPfv8d0pEd-0M-B5nXPZPg" x="-162" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPfI4d0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPfI4t0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPfI490pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='StockholmPort',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPfI5N0pEd-0M-B5nXPZPg" x="163" y="252"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bPgXAN0pEd-0M-B5nXPZPg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bPg-EN0pEd-0M-B5nXPZPg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bPg-Ed0pEd-0M-B5nXPZPg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bPgXAd0pEd-0M-B5nXPZPg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bPgXAt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bPgXA90pEd-0M-B5nXPZPg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='Vehicles',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bPgXBN0pEd-0M-B5nXPZPg" x="-19" y="351"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_bMwlA90pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bMwlBN0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_bMwlBd0pEd-0M-B5nXPZPg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="TravelPlan.ucl#//@fragmentInstances[name='EuropeanSea.taipan2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bMwlBt0pEd-0M-B5nXPZPg" x="99" y="72" width="173" height="316"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_agwaod0pEd-0M-B5nXPZPg"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="TravelPlan.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_bRQDcN0pEd-0M-B5nXPZPg" type="4001" source="_bM8LMN0pEd-0M-B5nXPZPg" target="_bN_UEN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bRQDcd0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bRQDct0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bRQDc90pEd-0M-B5nXPZPg" points="[79, 41, 5, -149]$[79, 101, 5, -89]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bRVjAN0pEd-0M-B5nXPZPg" type="4001" source="_bM9ZUN0pEd-0M-B5nXPZPg" target="_bOAiMN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bRVjAd0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bRVjAt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bRVjA90pEd-0M-B5nXPZPg" points="[79, 13, -23, -149]$[79, 73, -23, -89]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bRabgN0pEd-0M-B5nXPZPg" type="4001" source="_bN5NcN0pEd-0M-B5nXPZPg" target="_bPHVcN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bRabgd0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bRabgt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bRabg90pEd-0M-B5nXPZPg" points="[81, 69, 71, -51]$[81, 129, 71, 9]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bRf7EN0pEd-0M-B5nXPZPg" type="4001" source="_bN830N0pEd-0M-B5nXPZPg" target="_bPcsoN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bRf7Ed0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bRf7Et0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bRf7E90pEd-0M-B5nXPZPg" points="[61, -9, 91, -127]$[61, 51, 91, -67]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bRq6MN0pEd-0M-B5nXPZPg" type="4001" source="_bN6bkN0pEd-0M-B5nXPZPg" target="_bPcFkN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bRrhQN0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bRrhQd0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bRrhQt0pEd-0M-B5nXPZPg" points="[81, 41, 91, -99]$[81, 101, 91, -39]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bR1SQN0pEd-0M-B5nXPZPg" type="4001" source="_bN9e4N0pEd-0M-B5nXPZPg" target="_bPd6wN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bR1SQd0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bR1SQt0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.5"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bR1SQ90pEd-0M-B5nXPZPg" points="[33, -9, 71, -149]$[33, 51, 71, -89]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bSYr4N0pEd-0M-B5nXPZPg" type="4001" source="_bN7psN0pEd-0M-B5nXPZPg" target="_bPa3cN0pEd-0M-B5nXPZPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bSYr4d0pEd-0M-B5nXPZPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bSYr4t0pEd-0M-B5nXPZPg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TravelPlan.ucl#//@compositionLinks.6"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bSYr490pEd-0M-B5nXPZPg" points="[81, 13, 91, -71]$[81, 73, 91, -11]"/>
+  </edges>
+</notation:Diagram>

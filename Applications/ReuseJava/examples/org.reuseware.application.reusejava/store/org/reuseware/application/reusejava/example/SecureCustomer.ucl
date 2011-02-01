@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>reuseware</UCPI>
+  <UCPI>application</UCPI>
+  <UCPI>reusejava</UCPI>
+  <UCPI>example</UCPI>
+  <UCPI>SecureCustomer.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='SecurityCheckFragment.java']/@portInstances[portName='SecurityCheckFragment',fragmentRoleName='Statement',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]" target="//@fragmentInstances[name='Customer.java']/@portInstances[portName='getSSN_Entry',fragmentRoleName='MethodEntry',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='SecurityCheckFragment.java2']/@portInstances[portName='SecurityCheckFragment',fragmentRoleName='Statement',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]" target="//@fragmentInstances[name='Customer.java']/@portInstances[portName='getName_Entry',fragmentRoleName='MethodEntry',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='SecurityCheckFragment.java2']/@portInstances[portName='SecurityCheckFragment',fragmentRoleName='Statement',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]" target="//@fragmentInstances[name='Customer.java']/@portInstances[portName='getName_Entry',fragmentRoleName='MethodEntry',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+  <fragmentInstances name="Customer.java" targetPhysicalLocation="out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>reusejava</UFI>
+    <UFI>example</UFI>
+    <UFI>Customer.java</UFI>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="MethodEntry" portName="getName_Entry" targetLinks="//@compositionLinks.1 //@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="MethodEntry" portName="getSSN_Entry" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="Statement" portName="Customer">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="MethodEntry" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+      <settings property="name" value="SecureCustomer"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>reusejava</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>SecureCustomer.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="SecurityCheckFragment.java">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>reusejava</UFI>
+    <UFI>example</UFI>
+    <UFI>SecurityCheckFragment.java</UFI>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="Statement" portName="SecurityCheckFragment" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="MethodEntry" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+      <settings property="name"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>reusejava</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>SecurityCheckFragment.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="SecurityCheckFragment.java2">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>reusejava</UFI>
+    <UFI>example</UFI>
+    <UFI>SecurityCheckFragment.java</UFI>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="Statement" portName="SecurityCheckFragment" sourceLinks="//@compositionLinks.1 //@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseJava.fracol" fragmentRoleName="MethodEntry" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reusejava</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+      <settings property="name"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>reusejava</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>SecurityCheckFragment.java</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

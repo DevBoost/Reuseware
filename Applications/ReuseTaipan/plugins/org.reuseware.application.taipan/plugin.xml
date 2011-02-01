@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.reuseware.org/application/taipan" 
+       class = "org.reuseware.application.taipan.TaiPanPackage"
+       genModel = "models/taipan.genmodel" /> 
+  </extension>
+
+   <extension
+         point="org.reuseware.sokan.resource.pluginStore">
+      <pluginStore
+            folder="store/">
+      </pluginStore>
+   </extension>
+   
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="TaiPan Composition Example" icon="icons/Ship.gif" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.taipan.example.taosd.ExampleUnzipperNewWizard" 
+      	project="true" id="org.modelplex.cim.tidlibrary">
+      </wizard>   
+   </extension>
+   
+</plugin>
+

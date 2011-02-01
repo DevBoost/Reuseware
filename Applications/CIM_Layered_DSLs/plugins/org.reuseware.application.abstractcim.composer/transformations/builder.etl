@@ -1,0 +1,195 @@
+ 
+pre {
+	var compositionProgram : new Fc!DerivedCompositionProgram;
+	var targetReference : new Fc!FragmentInstance;
+	compositionProgram.fragmentInstances.add(targetReference);
+	targetReference.name := '_core';
+	targetReference.target := true;
+	targetReference.setUFIAsString('abstractcim/EmptyCore.cim');
+	-- Don't forget to specify the targetUFI parameter
+	targetReference.targetUFI := targetUFI;
+	var targetPortInstance := targetReference.createPort('extension');
+}
+
+
+rule Router2FragmentInstance
+	transform source : Source!Router
+	to fc : Fc!FragmentInstance {
+	
+	fc.name := source.name;
+	fc.setUFIAsString('abstractcim/Router.cim');
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('contents').link(targetPortInstance);
+
+    var setting : Fc!Setting;
+	createSetting (fc, 'name', source.name, 'name');
+	
+	var sourcePort : Fc!PortInstance;
+	
+	sourcePort := fc.createPort('devices');
+	
+	for (i in source.devices) {
+		i.equivalent().createPort('device').link(sourcePort);
+	}	
+	sourcePort := fc.createPort('services');
+	
+	for (i in source.services) {
+		i.equivalent().createPort('service').link(sourcePort);
+	}	
+	sourcePort := fc.createPort('forwardingServices');
+	
+	for (i in source.forwardingServices) {
+		i.equivalent().createPort('forwardingService').link(sourcePort);
+	}	
+	sourcePort := fc.createPort('filterLists');
+	
+	for (i in source.filterList) {
+		i.equivalent().createPort('filterList').link(sourcePort);
+	}	
+	
+}
+
+operation Source!EthernetIPInterface getUFI() : String {
+	
+			if (self.numPort = 4) return 'abstractcim/4PortEthernetIPInterface.cim';
+			if (self.numPort = 8) return 'abstractcim/8PortEthernetIPInterface.cim';
+}
+
+rule EthernetIPInterface2FragmentInstance
+	transform source : Source!EthernetIPInterface
+	to fc : Fc!FragmentInstance {
+	
+	fc.name := source.name;
+	fc.setUFIAsString(source.getUFI());
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('contents').link(targetPortInstance);
+
+    var setting : Fc!Setting;
+	createSetting (fc, 'name', source.name, 'name');
+	createSetting (fc, 'ipV4Address', source.ipV4Address, 'ipAddress');
+	createSetting (fc, 'subnetMask', source.subnetMask, 'subnetMask');
+	
+	
+}
+
+
+rule ADSLIPInterface2FragmentInstance
+	transform source : Source!ADSLIPInterface
+	to fc : Fc!FragmentInstance {
+	
+	fc.name := source.name;
+	fc.setUFIAsString('abstractcim/ADSLIPInterface.cim');
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('contents').link(targetPortInstance);
+
+    var setting : Fc!Setting;
+	createSetting (fc, 'name', source.name, 'name');
+	createSetting (fc, 'ipV4Address', source.ipV4Address, 'ipAddress');
+	createSetting (fc, 'subnetMask', source.subnetMask, 'subnetMask');
+	
+	
+}
+
+
+rule WifiInterface2FragmentInstance
+	transform source : Source!WifiInterface
+	to fc : Fc!FragmentInstance {
+	
+	fc.name := source.name;
+	fc.setUFIAsString('abstractcim/WifiInterface.cim');
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('contents').link(targetPortInstance);
+
+    var setting : Fc!Setting;
+	createSetting (fc, 'name', source.name, 'name');
+	
+	var sourcePort : Fc!PortInstance;
+	
+	sourcePort := fc.createPort('endPoint');
+	
+	for (i in source.endPoint) {
+		i.equivalent().createPort('ip').link(sourcePort);
+	}	
+	
+}
+
+
+rule DHCPServer2FragmentInstance
+	transform source : Source!DHCPServer
+	to fc : Fc!FragmentInstance {
+	
+	fc.name := source.name;
+	fc.setUFIAsString('abstractcim/DHCPServer.cim');
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('contents').link(targetPortInstance);
+
+    var setting : Fc!Setting;
+	createSetting (fc, 'name', source.name, 'name');
+	createSetting (fc, 'startAddress', source.startAddress, 'startAddress');
+	createSetting (fc, 'endAddress', source.endAddress, 'endAddress');
+	
+	var sourcePort : Fc!PortInstance;
+	
+	sourcePort := fc.createPort('bindsTo');
+	
+	for (i in source.bindsTo) {
+		i.equivalent().createPort('ip').link(sourcePort);
+	}	
+	
+}
+
+
+rule NATService2FragmentInstance
+	transform source : Source!NATService
+	to fc : Fc!FragmentInstance {
+	
+	fc.name := source.name;
+	fc.setUFIAsString('abstractcim/NATService.cim');
+	compositionProgram.fragmentInstances.add(fc);
+	fc.createPort('contents').link(targetPortInstance);
+
+    var setting : Fc!Setting;
+	createSetting (fc, 'name', source.name, 'name');
+	
+	var sourcePort : Fc!PortInstance;
+	
+	sourcePort := fc.createPort('endPoint');
+	
+	for (i in source.endPoint) {
+		i.equivalent().createPort('ip').link(sourcePort);
+	}	
+	
+}
+
+
+operation createSetting (fc:Fc!FragmentInstance, name: String, sourceAttr, portName: String) {
+	var port := fc.createPort(portName);
+	var setting := new Fc!Setting;
+	port.settings.add(setting);
+	setting.property := name;
+	setting.value := sourceAttr.toString();
+}
+ 
+
+operation Fc!PortInstance link(port : Fc!PortInstance) {
+		var compositionLink : new Fc!CompositionLink;
+		compositionProgram.compositionLinks.add(compositionLink);
+		compositionLink.source := self;
+		compositionLink.target := port;
+}
+
+operation Fc!FragmentInstance createPort(name : String) {
+    
+	var existingPort := self.portInstances.selectOne(p| p.portName = name);
+	if (existingPort.isUndefined()) {
+		var portInstance : new Fc!PortInstance;
+		portInstance.portName := name;
+		portInstance.fragmentRoleName := 'Default';
+		portInstance.compositionSystemID := Sequence{ 'org','reuseware','lib','systems','default.csys' };
+		self.portInstances.add(portInstance);
+		return portInstance;
+	}
+	else {
+		return existingPort;
+	}
+}

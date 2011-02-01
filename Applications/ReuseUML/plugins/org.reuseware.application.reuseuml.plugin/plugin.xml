@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="Example Composition System for UML Activity Diagrams" icon="icons/uml.gif" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.reuseuml.ExampleUnzipperNewWizard" 
+      	project="true" id="org.reuseware.application.reuseuml.plugin">
+      </wizard>   
+   </extension>
+</plugin>

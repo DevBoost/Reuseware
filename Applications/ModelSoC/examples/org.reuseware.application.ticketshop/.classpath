@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="dependent-concern-dimensions/concern-dimension-app/variant-java/org/reuseware/lib/systems/app/lib/src"/>
+	<classpathentry kind="src" path="dependent-concern-dimensions/concern-dimension-exchange/variant-java/org/reuseware/lib/systems/exchange/lib/src"/>
+	<classpathentry kind="src" path="dependent-concern-dimensions/concern-dimension-participation/variant-java/org/reuseware/lib/systems/participation/lib/src"/>
+	<classpathentry kind="src" path="independent-concern-dimensions/concern-dimension-usecase/variant-java/org/reuseware/lib/systems/usecase/lib/src"/>
+	<classpathentry kind="src" path="out"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="Hall">
+    <ownedComment xmi:id="_Z9BMoE3oEd-uZb9cq7NKpg" annotatedElement="_WYOQME3oEd-uZb9cq7NKpg">
+      <body>Seat N (before) (inSet)</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_WYOQME3oEd-uZb9cq7NKpg" name="Hall"/>
+  </packagedElement>
+</uml:Model>

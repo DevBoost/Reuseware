@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_To1tQCJZEeCSfOO35mChtA" type="Compositionprogram" name="homeADSLService.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_Yc7uYCJZEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Yc8VcCJZEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_YdZocCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YdaPgCJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Yda2kCJZEeCSfOO35mChtA" x="24" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_YdZocSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YdZociJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_YdZocyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='routerGateway.cim']/@portInstances[portName='RouterWANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YdZodCJZEeCSfOO35mChtA" x="27" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_YdcrwCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YddS0CJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YddS0SJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_YdcrwSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YdcrwiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_YdcrwyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='routerGateway.cim']/@portInstances[portName='RouterLANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YdcrxCJZEeCSfOO35mChtA" x="27" y="90"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_YdfIACJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YdfvECJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YdfvESJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_YdfIASJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YdfIAiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_YdfIAyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='routerGateway.cim']/@portInstances[portName='WiFiAccessPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YdfIBCJZEeCSfOO35mChtA" x="189" y="90"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Yc7uYSJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Yc7uYiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_Yc7uYyJZEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='routerGateway.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Yc7uZCJZEeCSfOO35mChtA" x="198" y="216" width="226" height="91"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_eR2TUCJZEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eR3hcCJZEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_eSLqgCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eSMRkCJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eSMRkSJZEeCSfOO35mChtA" x="24" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eSLqgSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eSLqgiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eSLqgyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim']/@portInstances[portName='*Members',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eSLqhCJZEeCSfOO35mChtA" x="-19" y="29"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eSOGwCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eSOt0CJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eSPU4CJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eSOGwSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eSOGwiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eSOGwyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eSOGxCJZEeCSfOO35mChtA" x="6" y="49"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_eR2TUSJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_eR26YCJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_eR26YSJZEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eR26YiJZEeCSfOO35mChtA" x="243" y="99"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_jF-JoCJZEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_jF_XwCJZEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_jGWkICJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jGXyQCJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jGXyQSJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_jGWkISJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_jGWkIiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_jGWkIyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='providerRouter.cim']/@portInstances[portName='ProviderWANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jGWkJCJZEeCSfOO35mChtA" x="27" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_jGZncCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jGaOgCJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jGaOgSJZEeCSfOO35mChtA" x="-149" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_jGZncSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_jGZnciJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_jGZncyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='providerRouter.cim']/@portInstances[portName='ProviderNetworkRouterIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jGZndCJZEeCSfOO35mChtA" x="171" y="18"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_jF-wsCJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_jF-wsSJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_jF-wsiJZEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='providerRouter.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jF-wsyJZEeCSfOO35mChtA" x="198" y="18" width="172"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_sOVcUCJZEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sOWqcCJZEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_sOsosCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_sOtPwCJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sOtPwSJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_sOsosSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_sOsosiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_sOsosyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim2']/@portInstances[portName='*Members',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sOsotCJZEeCSfOO35mChtA" x="-19" y="18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sOvE8CJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_sOvsACJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sOwTECJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_sOvE8SJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_sOvE8iJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_sOvE8yJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim2']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sOvE9CJZEeCSfOO35mChtA" x="9" y="49"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_sOVcUSJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sOVcUiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_sOWDYCJZEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sOWDYSJZEeCSfOO35mChtA" x="459" y="18"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zhtjUCJZEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zhuKYCJZEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_ziHL8CJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ziIaECJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ziIaESJZEeCSfOO35mChtA" x="24" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ziHL8SJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ziHzACJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_ziHzASJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim3']/@portInstances[portName='*Members',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ziHzAiJZEeCSfOO35mChtA" x="145" y="29"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ziKPQCJZEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ziK2UCJZEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ziK2USJZEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ziKPQSJZEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ziKPQiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_ziKPQyJZEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim3']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ziKPRCJZEeCSfOO35mChtA" x="-19" y="22"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_zhtjUSJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_zhtjUiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_zhtjUyJZEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='ipNetwork.cim3']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zhtjVCJZEeCSfOO35mChtA" x="81" y="387"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_MLlcECJaEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MLmDICJaEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_MMJcwCJaEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MMKD0CJaEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MMKD0SJaEeCSfOO35mChtA" x="-145" y="2"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_MMJcwSJaEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_MMJcwiJaEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_MMJcwyJaEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wiredHomeDevice.cim']/@portInstances[portName='PersonalComputerLANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MMJcxCJaEeCSfOO35mChtA"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_MLlcESJaEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_MLlcEiJaEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_MLlcEyJaEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wiredHomeDevice.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MLlcFCJaEeCSfOO35mChtA" x="63" y="495"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_IgqawCJgEeCgtqHguJAAbg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IgrB0CJgEeCgtqHguJAAbg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_Ihb20CJgEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IhdE8CJgEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IhdE8SJgEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ihcd4CJgEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Ihcd4SJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Ihcd4iJgEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wirelessHomeDevice.cim']/@portInstances[portName='PDALANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ihcd4yJgEeCgtqHguJAAbg" x="-19" y="18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Ihe6ICJgEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IhfhMCJgEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IhgIQCJgEeCgtqHguJAAbg" x="24" y="1"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ihe6ISJgEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Ihe6IiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Ihe6IyJgEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wirelessHomeDevice.cim']/@portInstances[portName='PDAWiFiAccessPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ihe6JCJgEeCgtqHguJAAbg" x="9" y="-19"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_IgqawSJgEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IgqawiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_IgqawyJgEeCgtqHguJAAbg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wirelessHomeDevice.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IgqaxCJgEeCgtqHguJAAbg" x="378" y="495"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_UOhJACJgEeCgtqHguJAAbg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UOhwECJgEeCgtqHguJAAbg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_UP0JgCJgEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UP1XoCJgEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UP1XoSJgEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_UP0JgSJgEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UP0JgiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_UP0JgyJgEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wifiNetwork.cim']/@portInstances[portName='*Members',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UP0JhCJgEeCgtqHguJAAbg" x="-19" y="19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_UP3M0CJgEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UP3z4CJgEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UP3z4SJgEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_UP3M0SJgEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UP3M0iJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_UP3M0yJgEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wifiNetwork.cim']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UP3M1CJgEeCgtqHguJAAbg" x="17" y="49"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_UOhJASJgEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_UOhJAiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_UOhJAyJgEeCgtqHguJAAbg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="homeADSLService.ucl#//@fragmentInstances[name='wifiNetwork.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UOhJBCJgEeCgtqHguJAAbg" x="405" y="369"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_To1tQSJZEeCSfOO35mChtA"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="homeADSLService.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_g2300CJZEeCSfOO35mChtA" type="4001" source="_eSLqgCJZEeCSfOO35mChtA" target="_YdZocCJZEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_g2300SJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_g2300iJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_g2300yJZEeCSfOO35mChtA" points="[-1, 10, -2, -59]$[-1, 59, -2, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_qi1j0CJZEeCSfOO35mChtA" type="4001" source="_eSLqgCJZEeCSfOO35mChtA" target="_jGWkICJZEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_qi1j0SJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_qi1j0iJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qi1j0yJZEeCSfOO35mChtA" points="[-1, -10, -2, 51]$[-1, -71, -2, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_v7m_UCJZEeCSfOO35mChtA" type="4001" source="_sOsosCJZEeCSfOO35mChtA" target="_jGZncCJZEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_v7m_USJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_v7m_UiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.6"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v7nmYCJZEeCSfOO35mChtA" points="[-2, -1, 61, 3]$[-64, 6, -1, 10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v7tF8CJZEeCSfOO35mChtA" id="(0.1,0.45)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_2NE9YCJZEeCSfOO35mChtA" type="4001" source="_YdcrwCJZEeCSfOO35mChtA" target="_ziHL8CJZEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_2NE9YSJZEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2NE9YiJZEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.8"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2NE9YyJZEeCSfOO35mChtA" points="[-1, 10, -2, -100]$[-1, 120, -2, 10]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_OWLEUCJaEeCSfOO35mChtA" type="4001" source="_ziHL8CJZEeCSfOO35mChtA" target="_MMJcwCJaEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_OWLEUSJaEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_OWLEUiJaEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.10"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OWLEUyJaEeCSfOO35mChtA" points="[-2, 10, 0, -94]$[-2, 94, 0, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_NjDWkCJgEeCgtqHguJAAbg" type="4001" source="_Ihe6ICJgEeCgtqHguJAAbg" target="_UP0JgCJgEeCgtqHguJAAbg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_NjDWkSJgEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NjDWkiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.12"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NjDWkyJgEeCgtqHguJAAbg" points="[-2, -2, -3, 160]$[-9, -172, -10, -10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NjKrUCJgEeCgtqHguJAAbg" id="(0.45,0.1)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_OoPdACJgEeCgtqHguJAAbg" type="4001" source="_ziHL8CJZEeCSfOO35mChtA" target="_Ihb20CJgEeCgtqHguJAAbg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_OoPdASJgEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_OoPdAiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.13"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OoPdAyJgEeCgtqHguJAAbg" points="[10, 7, -116, -84]$[123, 88, -3, -3]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OoWKsCJgEeCgtqHguJAAbg" id="(0.15,0.2)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_WdVxACJgEeCgtqHguJAAbg" type="4001" source="_UP0JgCJgEeCgtqHguJAAbg" target="_YdfIACJZEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_WdVxASJgEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WdVxAiJgEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="homeADSLService.ucl#//@compositionLinks.15"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WdVxAyJgEeCgtqHguJAAbg" points="[2, -3, -1, 72]$[2, -65, -1, 10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WdcesCJgEeCgtqHguJAAbg" id="(0.4,0.15)"/>
+  </edges>
+</notation:Diagram>

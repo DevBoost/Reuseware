@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<valueflow:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:valueflow="http://www.emftext.org/language/valueflow" name="ChangeSeat">
+  <agents name="Hall">
+    <states xsi:type="valueflow:GiveState" name="Seat_newSeat" previousState="//@agents.0/@states.1" value="Seat" ID="newSeat" giveTo="//@agents.1/@states.0"/>
+    <states xsi:type="valueflow:TakeState" name="Seat_oldSeat" nextState="//@agents.0/@states.0" takeFrom="//@agents.1/@states.1"/>
+  </agents>
+  <agents name="Customer">
+    <states xsi:type="valueflow:TakeState" name="Seat_newSeat" nextState="//@agents.1/@states.2" previousState="//@agents.1/@states.1" takeFrom="//@agents.0/@states.0"/>
+    <states xsi:type="valueflow:GiveState" name="Seat_oldSeat" nextState="//@agents.1/@states.0" value="Seat" ID="oldSeat" giveTo="//@agents.0/@states.1"/>
+    <states xsi:type="valueflow:GiveState" name="Address_add" nextState="//@agents.1/@states.3" previousState="//@agents.1/@states.0" value="Address" ID="add" giveTo="//@agents.2/@states.0"/>
+    <states xsi:type="valueflow:TakeState" name="Shipment_M2" previousState="//@agents.1/@states.2" takeFrom="//@agents.2/@states.1"/>
+  </agents>
+  <agents name="Clerk">
+    <states xsi:type="valueflow:TakeState" name="Address_add" nextState="//@agents.2/@states.1" takeFrom="//@agents.1/@states.2"/>
+    <states xsi:type="valueflow:GiveState" name="Shipment_M2" previousState="//@agents.2/@states.0" value="Shipment" ID="M2" giveTo="//@agents.1/@states.3"/>
+  </agents>
+</valueflow:Model>

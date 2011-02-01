@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:IPConnectivitySubnet" caption="%IPNetwork" description="IP Network" elementName="%IPNetwork" members="//@elements.1" instanceID="%IPNetwork" connectivityStatus="" subnetNumber="213.125.114.64" subnetMask="255.255.255.192" addressType="IPv4"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="*Members"/>
+</cim:CIM_Model>

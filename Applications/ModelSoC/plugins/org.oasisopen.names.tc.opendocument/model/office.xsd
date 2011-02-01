@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:attribute name="process-content" type="text:boolean"/>
+  <xs:element name="document">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:office-meta">
+          <xs:sequence>
+            <xs:group ref="text:office-settings"/>
+            <xs:group ref="text:office-scripts"/>
+            <xs:group ref="text:office-font-face-decls"/>
+            <xs:group ref="text:office-styles"/>
+            <xs:group ref="text:office-automatic-styles"/>
+            <xs:group ref="text:office-master-styles"/>
+            <xs:element ref="office:body"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="text:office-document-attrs"/>
+          <xs:attributeGroup ref="text:office-document-common-attrs"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="document-content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-scripts"/>
+        <xs:group ref="text:office-font-face-decls"/>
+        <xs:group ref="text:office-automatic-styles"/>
+        <xs:element ref="office:body"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:office-document-common-attrs"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="document-styles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-font-face-decls"/>
+        <xs:group ref="text:office-styles"/>
+        <xs:group ref="text:office-automatic-styles"/>
+        <xs:group ref="text:office-master-styles"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:office-document-common-attrs"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="document-meta">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:office-meta">
+          <xs:attributeGroup ref="text:office-document-common-attrs"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="document-settings">
+    <xs:complexType>
+      <xs:group ref="text:office-settings"/>
+      <xs:attributeGroup ref="text:office-document-common-attrs"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="version" type="text:string"/>
+  <xs:attribute name="mimetype" type="text:string"/>
+  <xs:element name="meta" type="text:office-meta-content"/>
+  <xs:element name="body" type="text:office-body-content"/>
+  <xs:element name="text" substitutionGroup="text:office-body-content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-text-content-prelude"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:office-text-content-main"/>
+        <xs:group ref="text:office-text-content-epilogue"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:office-text-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="drawing" substitutionGroup="text:office-body-content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-drawing-content-prelude"/>
+        <xs:group ref="text:office-drawing-content-main"/>
+        <xs:group ref="text:office-drawing-content-epilogue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="presentation" substitutionGroup="text:office-body-content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-presentation-content-prelude"/>
+        <xs:group ref="text:office-presentation-content-main"/>
+        <xs:group ref="text:office-presentation-content-epilogue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spreadsheet" substitutionGroup="text:office-body-content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-spreadsheet-content-prelude"/>
+        <xs:group ref="text:office-spreadsheet-content-main"/>
+        <xs:group ref="text:office-spreadsheet-content-epilogue"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:office-spreadsheet-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chart" substitutionGroup="text:office-body-content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="text:office-chart-content-prelude"/>
+        <xs:element ref="text:office-chart-content-main"/>
+        <xs:group ref="text:office-chart-content-epilogue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image" substitutionGroup="text:office-body-content" type="text:office-image-content-main"/>
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="config:config-item-set"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scripts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="office:script"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="script">
+    <xs:complexType mixed="true">
+      <xs:group ref="text:anyElements"/>
+      <xs:attributeGroup ref="text:office-script-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="font-face-decls">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="style:font-face"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="styles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="text:styles"/>
+        <xs:element ref="style:default-style"/>
+        <xs:element ref="text:outline-style"/>
+        <xs:element ref="text:notes-configuration"/>
+        <xs:element ref="text:bibliography-configuration"/>
+        <xs:element ref="text:linenumbering-configuration"/>
+        <xs:element ref="draw:gradient"/>
+        <xs:element ref="svg:linearGradient"/>
+        <xs:element ref="svg:radialGradient"/>
+        <xs:element ref="draw:hatch"/>
+        <xs:element ref="draw:fill-image"/>
+        <xs:element ref="draw:marker"/>
+        <xs:element ref="draw:stroke-dash"/>
+        <xs:element ref="draw:opacity"/>
+        <xs:element ref="style:presentation-page-layout"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="automatic-styles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="text:styles"/>
+        <xs:element ref="style:page-layout"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="master-styles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="style:master-page"/>
+        <xs:element ref="style:handout-master"/>
+        <xs:element ref="draw:layer-set"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="target-frame-name" type="text:targetFrameName"/>
+  <xs:attributeGroup name="value-type">
+    <xs:attribute name="value-type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="float"/>
+          <xs:enumeration value="percentage"/>
+          <xs:enumeration value="currency"/>
+          <xs:enumeration value="date"/>
+          <xs:enumeration value="time"/>
+          <xs:enumeration value="boolean"/>
+          <xs:enumeration value="string"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="value" type="text:double"/>
+  <xs:attribute name="currency" type="text:string"/>
+  <xs:attribute name="date-value" type="text:dateOrDateTime"/>
+  <xs:attribute name="time-value" type="text:duration"/>
+  <xs:attribute name="boolean-value" type="text:boolean"/>
+  <xs:attribute name="string-value" type="text:string"/>
+  <xs:attribute name="name" type="text:string"/>
+  <xs:attribute name="title" type="text:string"/>
+  <xs:attributeGroup name="value-type1">
+    <xs:attribute name="value-type" use="required" form="qualified" type="text:valueType"/>
+  </xs:attributeGroup>
+  <xs:element name="binary-data" type="text:base64Binary"/>
+  <xs:attribute name="server-map" type="text:boolean"/>
+  <xs:element name="forms">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="form:form"/>
+        <xs:element ref="xforms:model"/>
+      </xs:choice>
+      <xs:attributeGroup ref="text:office-forms-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="target-frame" type="text:targetFrameName"/>
+  <xs:attributeGroup name="value-type2">
+    <xs:attribute name="value-type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="float"/>
+          <xs:enumeration value="percentage"/>
+          <xs:enumeration value="currency"/>
+          <xs:enumeration value="date"/>
+          <xs:enumeration value="time"/>
+          <xs:enumeration value="boolean"/>
+          <xs:enumeration value="string"/>
+          <xs:enumeration value="void"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="annotation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="dc:creator"/>
+        <xs:element minOccurs="0" ref="dc:date"/>
+        <xs:element minOccurs="0" ref="meta:date-string"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="text:p"/>
+          <xs:element ref="text:list"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:office-annotation-attlist"/>
+      <xs:attributeGroup ref="text:draw-caption-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="display" type="text:boolean"/>
+  <xs:element name="change-info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dc:creator"/>
+        <xs:element ref="dc:date"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text:p"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="event-listeners">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="script:event-listener"/>
+        <xs:element ref="presentation:event-listener"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="dde-application" type="text:string"/>
+  <xs:attribute name="dde-topic" type="text:string"/>
+  <xs:attribute name="dde-item" type="text:string"/>
+  <xs:attribute name="automatic-update" type="text:boolean"/>
+  <xs:element name="dde-source" substitutionGroup="text:text-section-source-dde"/>
+  <xs:attribute name="conversion-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="into-default-style-data-style"/>
+        <xs:enumeration value="into-english-number"/>
+        <xs:enumeration value="keep-text"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

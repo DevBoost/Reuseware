@@ -1,0 +1,23 @@
+fracol org.reuseware.lib.systems.security.security {
+
+	fragment role SecurityInformation {
+		static port type Contrib;
+		static port type ElementSlot;
+	}
+
+	fragment role Container {
+		static port type Rec;
+	}
+
+	fragment role SecureElement {
+		static port type Self;
+	}
+
+	contributing association Contributution {
+		SecurityInformation.Contrib --> Container.Rec
+	}
+
+	configuring association Secure {
+		SecurityInformation.ElementSlot --> SecureElement.Self
+	}
+}

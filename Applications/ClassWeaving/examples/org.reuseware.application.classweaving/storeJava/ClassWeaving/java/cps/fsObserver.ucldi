@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_AuZ_UNxXEd-zJb7YdWQahw" type="Compositionprogram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_BeFIwNxXEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BeFIxdxXEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_W92OYN1GEd-nBOv3QY_a8g" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_W921cN1GEd-nBOv3QY_a8g" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W93cgN1GEd-nBOv3QY_a8g" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W92OYd1GEd-nBOv3QY_a8g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W92OYt1GEd-nBOv3QY_a8g" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W92OY91GEd-nBOv3QY_a8g"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='ObserverAdvice.modelquery']/@portInstances[portName='Observer',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W92OZN1GEd-nBOv3QY_a8g" x="-19" y="63"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_W94DkN1GEd-nBOv3QY_a8g" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_W94qoN1GEd-nBOv3QY_a8g" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_W94qod1GEd-nBOv3QY_a8g" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_W94Dkd1GEd-nBOv3QY_a8g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_W94Dkt1GEd-nBOv3QY_a8g" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_W94Dk91GEd-nBOv3QY_a8g"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='ObserverAdvice.modelquery']/@portInstances[portName='Subject',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W94DlN1GEd-nBOv3QY_a8g" x="-19" y="108"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BeFIwdxXEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BeFIwtxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_BeFIw9xXEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="fsObserver.ucl#//@fragmentInstances[name='ObserverAdvice.modelquery']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BeFIxNxXEd-zJb7YdWQahw" x="333" y="99" width="172" height="136"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BeFv0NxXEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BeFv1dxXEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_BedjQNxXEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BedjRdxXEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BedjRtxXEd-zJb7YdWQahw" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BedjQdxXEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BedjQtxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BedjQ9xXEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FileSystem',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BedjRNxXEd-zJb7YdWQahw" x="100" y="180"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_BeeKUNxXEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BeeKVdxXEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BeeKVtxXEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BeeKUdxXEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BeeKUtxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BeeKU9xXEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FSFile',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BeeKVNxXEd-zJb7YdWQahw" x="177" y="306"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_BeexYNxXEd-zJb7YdWQahw" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BeexZdxXEd-zJb7YdWQahw" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BefYcNxXEd-zJb7YdWQahw" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BeexYdxXEd-zJb7YdWQahw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BeexYtxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BeexY9xXEd-zJb7YdWQahw"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='FileSystem.modelquery']/@portInstances[portName='FSFolder',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BeexZNxXEd-zJb7YdWQahw" x="100" y="252"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BeFv0dxXEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BeFv0txXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_BeFv09xXEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="fsObserver.ucl#//@fragmentInstances[name='FileSystem.modelquery']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BeFv1NxXEd-zJb7YdWQahw" x="36" y="99" height="352"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BeGW4NxXEd-zJb7YdWQahw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BeGW5dxXEd-zJb7YdWQahw" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_XBuBwN1GEd-nBOv3QY_a8g" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XBuo0N1GEd-nBOv3QY_a8g" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XBuo0d1GEd-nBOv3QY_a8g" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_XBuBwd1GEd-nBOv3QY_a8g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_XBuBwt1GEd-nBOv3QY_a8g" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_XBuBw91GEd-nBOv3QY_a8g"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='ObserverAdvice.modelquery2']/@portInstances[portName='Observer',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XBuBxN1GEd-nBOv3QY_a8g" x="-19" y="63"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_XBvP4N1GEd-nBOv3QY_a8g" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XBvP5d1GEd-nBOv3QY_a8g" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XBvP5t1GEd-nBOv3QY_a8g" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_XBvP4d1GEd-nBOv3QY_a8g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_XBvP4t1GEd-nBOv3QY_a8g" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_XBvP491GEd-nBOv3QY_a8g"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="fsObserver.ucl#//@fragmentInstances[name='ObserverAdvice.modelquery2']/@portInstances[portName='Subject',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XBvP5N1GEd-nBOv3QY_a8g" x="-19" y="126"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BeGW4dxXEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BeGW4txXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_BeGW49xXEd-zJb7YdWQahw"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="fsObserver.ucl#//@fragmentInstances[name='ObserverAdvice.modelquery2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BeGW5NxXEd-zJb7YdWQahw" x="342" y="279" height="172"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_AuZ_UdxXEd-zJb7YdWQahw"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="fsObserver.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_BfSpsNxXEd-zJb7YdWQahw" type="4001" source="_W94DkN1GEd-nBOv3QY_a8g" target="_BeexYNxXEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_BfSpsdxXEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BfSpstxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="fsObserver.ucl#//@compositionLinks.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BfSps9xXEd-zJb7YdWQahw" points="[93, 41, -53, -127]$[183, 101, 37, -67]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_BfcasNxXEd-zJb7YdWQahw" type="4001" source="_XBuBwN1GEd-nBOv3QY_a8g" target="_BedjQNxXEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_BfcasdxXEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BfcastxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="fsObserver.ucl#//@compositionLinks.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Bfcas9xXEd-zJb7YdWQahw" points="[129, 69, 211, -71]$[13, 129, 95, -11]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KYvWoNxXEd-zJb7YdWQahw" type="4001" source="_XBvP4N1GEd-nBOv3QY_a8g" target="_BeeKUNxXEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_KYvWodxXEd-zJb7YdWQahw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_KYvWotxXEd-zJb7YdWQahw" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="fsObserver.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KYvWo9xXEd-zJb7YdWQahw" points="[2, -3, -143, 150]$[144, -163, -1, -10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KY0PINxXEd-zJb7YdWQahw" id="(0.15,0.35)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bLbpIN1GEd-nBOv3QY_a8g" type="4001" source="_W92OYN1GEd-nBOv3QY_a8g" target="_BedjQNxXEd-zJb7YdWQahw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bLbpId1GEd-nBOv3QY_a8g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bLbpIt1GEd-nBOv3QY_a8g" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="fsObserver.ucl#//@compositionLinks.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bLbpI91GEd-nBOv3QY_a8g" points="[-10, 6, 168, -111]$[-168, 107, 10, -10]"/>
+  </edges>
+</notation:Diagram>

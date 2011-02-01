@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<secprop:SecPropModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:secprop="http://www.emftext.org/language/SecProp">
+  <elements name="Hall"/>
+  <elements name="Customer"/>
+  <elements name="Clerk"/>
+  <elements name="Bank"/>
+  <channels name="Account_acc1" source="//@elements.1" target="//@elements.3"/>
+  <channels name="Seat_N" source="//@elements.0" target="//@elements.1"/>
+  <channels name="Address_add1" source="//@elements.1" target="//@elements.2"/>
+  <channels name="Shipment_M" source="//@elements.2" target="//@elements.1"/>
+  <data name="AccountSecurity" channel="//@channels.0">
+    <securityInformation xsi:type="secprop:Encryption" value="TLS"/>
+    <securityInformation xsi:type="secprop:Access"/>
+  </data>
+</secprop:SecPropModel>

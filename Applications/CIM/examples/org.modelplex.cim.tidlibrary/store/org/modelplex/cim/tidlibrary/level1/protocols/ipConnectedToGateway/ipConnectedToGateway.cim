@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:IPProtocolEndpoint" caption="+IPConnectedToGateway" description="Ip connected to gateway" elementName="+IPConnectedToGateway" name="+IPConnectedToGateway" remoteAccessAvailableToElement="//@elements.1" requestedState="Enabled" creationClassName="IPProtocolEndpint" systemCreationClassName="ComputerSystem" systemName="" nameFormat="" protocolIFType="IPv4" IPv4Address="192.168.1.11" subnetMask="255.255.255.0"/>
+  <elements xsi:type="cim:RemoteServiceAccessPoint" description="IPConnectedToGateway" elementName="IPConnectedToGateway" name="IPConnectedToGateway" requestedState="Enabled" creationClassName="RemoteServiceAccessPoint" systemCreationClassName="ComputerSystem" systemName="" accessInfo="192.168.1.1" accessContext="Default Gateway" infoFormat="IPv4 Address"/>
+</cim:CIM_Model>

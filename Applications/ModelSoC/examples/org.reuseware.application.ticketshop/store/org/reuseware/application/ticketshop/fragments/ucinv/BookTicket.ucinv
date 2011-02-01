@@ -1,0 +1,6 @@
+invariants for PLACEHOLDER : 
+	actor Bank : [ ] --> [ Account set including acc1] . 
+	counter Hall : [Seat set including N] --> [] . 
+	actor Clerk : [Shipment set including M] --> [Address add1] . 
+	actor Customer : [Account acc1, Address add1] --> [Shipment M, Seat N] .
+. 

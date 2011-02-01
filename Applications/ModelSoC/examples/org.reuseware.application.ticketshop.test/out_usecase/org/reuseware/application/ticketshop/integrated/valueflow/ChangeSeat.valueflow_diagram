@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:valueflow="http://www.emftext.org/language/valueflow" xmi:id="_eS7PICV_EeCsOIfnX6yosA" type="Valueflow" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_eS7PISV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS7PIiV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS7PIyV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS7PJCV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="ChangeSeat.valueflow#//@agents.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS7PJSV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eS7PJiV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS7PJyV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS7PKCV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS7PKSV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="ChangeSeat.valueflow#//@agents.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS7PKiV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eS7PKyV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS7PLCV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS7PLSV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS7PLiV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="ChangeSeat.valueflow#//@agents.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS7PLyV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_eS7PMCV_EeCsOIfnX6yosA"/>
+  <element xmi:type="valueflow:Model" href="ChangeSeat.valueflow#/"/>
+</notation:Diagram>

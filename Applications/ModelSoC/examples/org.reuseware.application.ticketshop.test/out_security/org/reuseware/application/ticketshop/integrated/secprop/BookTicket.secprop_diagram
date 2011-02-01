@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:secprop="http://www.emftext.org/language/SecProp" xmi:id="_mJDXgCV3EeCsOIfnX6yosA" type="Secprop" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_mJDXgSV3EeCsOIfnX6yosA" type="2002" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJDXgiV3EeCsOIfnX6yosA" type="5004"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_mJDXgyV3EeCsOIfnX6yosA" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_mJDXhCV3EeCsOIfnX6yosA" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_mJDXhSV3EeCsOIfnX6yosA" type="5003"/>
+        <element xmi:type="secprop:Encryption" href="BookTicket.secprop#//@data.0/@securityInformation.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJDXhiV3EeCsOIfnX6yosA" x="17" y="22" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_mJDXhyV3EeCsOIfnX6yosA" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_mJDXiCV3EeCsOIfnX6yosA" type="5002"/>
+        <element xmi:type="secprop:Access" href="BookTicket.secprop#//@data.0/@securityInformation.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJDXiSV3EeCsOIfnX6yosA" x="80" y="22" width="55" height="46"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_mJDXiiV3EeCsOIfnX6yosA"/>
+    <element xmi:type="secprop:Data" href="BookTicket.secprop#//@data.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJDXiyV3EeCsOIfnX6yosA" x="-1" y="-1" width="271" height="145"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mJDXjCV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJDXjSV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="BookTicket.secprop#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJDXjiV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mJDXjyV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJD-kCV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="BookTicket.secprop#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJD-kSV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mJD-kiV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJD-kyV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="BookTicket.secprop#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJD-lCV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mJD-lSV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJD-liV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="BookTicket.secprop#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJD-lyV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_mJD-mCV3EeCsOIfnX6yosA"/>
+  <element xmi:type="secprop:SecPropModel" href="BookTicket.secprop#/"/>
+</notation:Diagram>

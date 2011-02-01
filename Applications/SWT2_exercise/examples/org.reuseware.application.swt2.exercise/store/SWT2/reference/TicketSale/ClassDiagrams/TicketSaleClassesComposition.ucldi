@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_tU_5gN3pEd-7pvQe_KvDAQ" type="Compositionprogram" measurementUnit="Pixel">
+  <children xmi:id="_LAgH4CPtEeCdeIrZlH8S0A" type="2001">
+    <children xsi:type="notation:DecorationNode" xmi:id="_LAgH5SPtEeCdeIrZlH8S0A" type="5002"/>
+    <children xmi:id="_LDX1sCPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LDX1tSPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LDX1tiPtEeCdeIrZlH8S0A" x="-159" y="9"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LDX1sSPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LDX1siPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LDX1syPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketSaleDataModel.uml']/@portInstances[portName='DataModel_ExtensionPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LDX1tCPtEeCdeIrZlH8S0A" x="189" y="99"/>
+    </children>
+    <children xmi:id="_LDZD0CPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LDZD1SPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LDZD1iPtEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LDZD0SPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LDZD0iPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LDZD0yPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketSaleDataModel.uml']/@portInstances[portName='DataModel_NewClasses',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LDZD1CPtEeCdeIrZlH8S0A" x="-19" y="36"/>
+    </children>
+    <children xmi:id="_LDaR8CPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LDaR9SPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LDaR9iPtEeCdeIrZlH8S0A" x="-40" y="9"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LDaR8SPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LDaR8iPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LDaR8yPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketSaleDataModel.uml']/@portInstances[portName='Ticket',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LDaR9CPtEeCdeIrZlH8S0A" x="189" y="72"/>
+    </children>
+    <styles xsi:type="notation:DescriptionStyle" xmi:id="_LAgH4SPtEeCdeIrZlH8S0A"/>
+    <styles xsi:type="notation:FontStyle" xmi:id="_LAgH4iPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <styles xsi:type="notation:FillStyle" xmi:id="_LAgH4yPtEeCdeIrZlH8S0A"/>
+    <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketSaleDataModel.uml']"/>
+    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LAgH5CPtEeCdeIrZlH8S0A" x="54" y="45" width="190" height="136"/>
+  </children>
+  <children xmi:id="_LAgu8CPtEeCdeIrZlH8S0A" type="2001">
+    <children xsi:type="notation:DecorationNode" xmi:id="_LAhWACPtEeCdeIrZlH8S0A" type="5002"/>
+    <children xmi:id="_LEpBACPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LEpBBSPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LEpBBiPtEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LEpBASPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LEpBAiPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LEpBAyPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketShippingClasses.uml']/@portInstances[portName='TicketOrderClasses_ExtensionPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LEpBBCPtEeCdeIrZlH8S0A" x="-19" y="45"/>
+    </children>
+    <children xmi:id="_LEqPICPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LEq2MCPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LEq2MSPtEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LEqPISPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LEqPIiPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LEqPIyPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketShippingClasses.uml']/@portInstances[portName='TicketOrderClasses_NewClasses',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LEqPJCPtEeCdeIrZlH8S0A" x="-19" y="99"/>
+    </children>
+    <children xmi:id="_LEsEUCPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LEsEVSPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LEsEViPtEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LEsEUSPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LEsEUiPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LEsEUyPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketShippingClasses.uml']/@portInstances[portName='Customer',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LEsEVCPtEeCdeIrZlH8S0A" x="-19" y="18"/>
+    </children>
+    <children xmi:id="_LEtScCPtEeCdeIrZlH8S0A" type="3001">
+      <children xsi:type="notation:DecorationNode" xmi:id="_LEt5gCPtEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_LEt5gSPtEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xsi:type="notation:DescriptionStyle" xmi:id="_LEtScSPtEeCdeIrZlH8S0A"/>
+      <styles xsi:type="notation:FontStyle" xmi:id="_LEtSciPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xsi:type="notation:FillStyle" xmi:id="_LEtScyPtEeCdeIrZlH8S0A"/>
+      <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketShippingClasses.uml']/@portInstances[portName='ExtensionFor_Ticket',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LEtSdCPtEeCdeIrZlH8S0A" x="-19" y="72"/>
+    </children>
+    <styles xsi:type="notation:DescriptionStyle" xmi:id="_LAgu8SPtEeCdeIrZlH8S0A"/>
+    <styles xsi:type="notation:FontStyle" xmi:id="_LAgu8iPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <styles xsi:type="notation:FillStyle" xmi:id="_LAgu8yPtEeCdeIrZlH8S0A"/>
+    <element href="TicketSaleClassesComposition.ucl#//@fragmentInstances[name='TicketShippingClasses.uml']"/>
+    <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LAgu9CPtEeCdeIrZlH8S0A" x="405" y="45" width="226" height="136"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle" xmi:id="_tU_5gd3pEd-7pvQe_KvDAQ"/>
+  <element href="TicketSaleClassesComposition.ucl#/"/>
+  <edges xmi:id="_gUmXoCPtEeCdeIrZlH8S0A" type="4001" source="_LEtScCPtEeCdeIrZlH8S0A" target="_LDaR8CPtEeCdeIrZlH8S0A">
+    <styles xsi:type="notation:RoutingStyle" xmi:id="_gUmXoSPtEeCdeIrZlH8S0A"/>
+    <styles xsi:type="notation:FontStyle" xmi:id="_gUmXoiPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <element href="TicketSaleClassesComposition.ucl#//@compositionLinks.0"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_gUmXoyPtEeCdeIrZlH8S0A" points="[-10, -1, 133, -1]$[-143, -10, 0, -10]"/>
+  </edges>
+  <edges xmi:id="_yaeX4CPtEeCdeIrZlH8S0A" type="4001" source="_LEqPICPtEeCdeIrZlH8S0A" target="_LDX1sCPtEeCdeIrZlH8S0A">
+    <styles xsi:type="notation:RoutingStyle" xmi:id="_yaeX4SPtEeCdeIrZlH8S0A"/>
+    <styles xsi:type="notation:FontStyle" xmi:id="_yaeX4iPtEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <element href="TicketSaleClassesComposition.ucl#//@compositionLinks.1"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_yaeX4yPtEeCdeIrZlH8S0A" points="[-4, 1, 133, 1]$[-139, 10, -2, 10]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_yaipUCPtEeCdeIrZlH8S0A" id="(0.2,0.5)"/>
+  </edges>
+</notation:Diagram>

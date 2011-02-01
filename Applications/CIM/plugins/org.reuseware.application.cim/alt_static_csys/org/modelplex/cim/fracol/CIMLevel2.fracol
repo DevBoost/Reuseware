@@ -1,0 +1,24 @@
+fracol org.modelplex.cim._fracol.CIMLevel2 {
+
+	fragment role EthernetIPInterface {
+		static port hub; 
+		static port ip; 
+	}
+
+	fragment role System {
+		static port name; 
+		static port systemDevices; 
+	}
+	
+	fragment role ADSLStaticIPInterface {
+		static port modem;
+		static port ip;
+	}
+	
+	configuring association System2Hub {
+		System.systemDevices --> EthernetIPInterface.hub
+	}
+	configuring association System2ADSLStaticIPInterface {
+		System.systemDevices --> ADSLStaticIPInterface.modem
+	}
+}

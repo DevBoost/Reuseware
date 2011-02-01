@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taipan:Aquatory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taipan="http://www.reuseware.org/application/taipan">
+  <ports xsi:type="taipan:Port" location="Hamburg"/>
+  <ports xsi:type="taipan:Port" location="Rostock"/>
+  <ports xsi:type="taipan:Port" location="Stockholm"/>
+  <routes xsi:type="taipan:Route" source="//@ports.1" destination="//@ports.2" description="BalticRoute" reliability="0.8"/>
+  <routes xsi:type="taipan:Route" source="//@ports.0" destination="//@ports.2" description="NorthernRoute" reliability="0.8"/>
+</taipan:Aquatory>

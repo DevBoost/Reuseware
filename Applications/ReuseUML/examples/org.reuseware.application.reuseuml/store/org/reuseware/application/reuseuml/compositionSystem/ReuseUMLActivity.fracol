@@ -1,0 +1,19 @@
+fracol org.reuseware.application.reuseuml.compositionSystem.ReuseUMLActivity {
+	fragment role ActivityCore {
+		static port type ContentsHook;
+		dynamic port type ExportedAction;
+	}
+	
+	fragment role ActivityAspect {
+		static port type Contents;
+		dynamic port type ExportedAction;
+	}	
+
+	contributing association extend {
+		ActivityAspect.Contents --> ActivityCore.ContentsHook
+	}
+	
+	configuring association weave {
+		ActivityAspect.ExportedAction --> ActivityCore.ExportedAction
+	}
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_xhjk0JSOEd2CZosdWJl3zg" type="CIMLevelZero" name="EmptyCore.cim_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_xhjk0ZSOEd2CZosdWJl3zg"/>
+  <element xmi:type="cim:CIM_Model" href="EmptyCore.cim#/"/>
+</notation:Diagram>

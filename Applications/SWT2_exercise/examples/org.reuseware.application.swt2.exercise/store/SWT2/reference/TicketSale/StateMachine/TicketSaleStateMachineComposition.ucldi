@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_rQayoN3pEd-7pvQe_KvDAQ" type="Compositionprogram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_-ML9UCPrEeCdeIrZlH8S0A" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-MMkZCPrEeCdeIrZlH8S0A" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_-MiioCPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-MjJsCPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-MjJsSPrEeCdeIrZlH8S0A" x="-114" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-MiioSPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-MiioiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-MiioyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='Hook_TicketOrder',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MiipCPrEeCdeIrZlH8S0A" x="205" y="18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-MjwwCPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-MkX0CPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-MkX0SPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-MjwwSPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-MjwwiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-MjwwyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='Hook_TicketShipping',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MjwxCPrEeCdeIrZlH8S0A" x="26" y="90"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-Mll8CPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-Mll9SPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-Mll9iPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-Mll8SPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-Mll8iPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-Mll8yPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='TicketSalePackage_ExtensionPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Mll9CPrEeCdeIrZlH8S0A" x="-19" y="63"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-Mm0ECPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-MnbICPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-MnbISPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-Mm0ESPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-Mm0EiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-Mm0EyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='TicketSalePackage_NewClasses',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Mm0FCPrEeCdeIrZlH8S0A" x="-19" y="91"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-MopQCPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-MopRSPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-MopRiPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-MopQSPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-MopQiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-MopQyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='TicketSaleStateMachine',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MopRCPrEeCdeIrZlH8S0A" x="-19" y="36"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-MMkYCPrEeCdeIrZlH8S0A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-MMkYSPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_-MMkYiPrEeCdeIrZlH8S0A"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TicketSaleStateMachine.uml']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MMkYyPrEeCdeIrZlH8S0A" x="108" width="225" height="127"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_-MNLcCPrEeCdeIrZlH8S0A" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-MNLdSPrEeCdeIrZlH8S0A" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_-OOksCPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-OOktSPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-OOktiPrEeCdeIrZlH8S0A" x="24" y="1"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-OOksSPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-OOksiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-OOksyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='ShippingStateMachine.uml']/@portInstances[portName='Shipping',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-OOktCPrEeCdeIrZlH8S0A" x="27" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-OPy0CPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-OPy1SPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-OPy1iPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-OPy0SPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-OPy0iPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-OPy0yPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='ShippingStateMachine.uml']/@portInstances[portName='ShippingStateMachinePackage_ExtensionPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-OPy1CPrEeCdeIrZlH8S0A" x="-19" y="72"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-ORA8CPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-ORA9SPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-ORA9iPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-ORA8SPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-ORA8iPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-ORA8yPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='ShippingStateMachine.uml']/@portInstances[portName='ShippingStateMachinePackage_NewClasses',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-ORA9CPrEeCdeIrZlH8S0A" x="-19" y="45"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-OSPECPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-OSPFSPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-OSPFiPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-OSPESPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-OSPEiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-OSPEyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='ShippingStateMachine.uml']/@portInstances[portName='ShippingStateMachine',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-OSPFCPrEeCdeIrZlH8S0A" x="-19" y="99"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-MNLcSPrEeCdeIrZlH8S0A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-MNLciPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_-MNLcyPrEeCdeIrZlH8S0A"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='ShippingStateMachine.uml']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MNLdCPrEeCdeIrZlH8S0A" x="108" y="459" width="307" height="136"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_-MNygCPrEeCdeIrZlH8S0A" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-MNyhSPrEeCdeIrZlH8S0A" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_-PbekCPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-PcFoCPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-PcFoSPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-PbekSPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-PbekiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-PbekyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TakeOrderStateMachine.uml']/@portInstances[portName='TakeOrder',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-PbelCPrEeCdeIrZlH8S0A" x="-19" y="18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-Pd60CPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-Pd61SPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-Pd61iPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-Pd60SPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-Pd60iPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-Pd60yPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TakeOrderStateMachine.uml']/@portInstances[portName='TakeOrderStateMachinePackage_ExtensionPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Pd61CPrEeCdeIrZlH8S0A" x="-19" y="99"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-PfI8CPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-PfwACPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-PfwASPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-PfI8SPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-PfI8iPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-PfI8yPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TakeOrderStateMachine.uml']/@portInstances[portName='TakeOrderStateMachinePackage_NewClasses',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-PfI9CPrEeCdeIrZlH8S0A" x="-19" y="45"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-QcyQCPrEeCdeIrZlH8S0A" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-QdZUCPrEeCdeIrZlH8S0A" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-QdZUSPrEeCdeIrZlH8S0A" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_-QcyQSPrEeCdeIrZlH8S0A"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-QcyQiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-QcyQyPrEeCdeIrZlH8S0A"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TakeOrderStateMachine.uml']/@portInstances[portName='TakeOrderStateMachine',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-QcyRCPrEeCdeIrZlH8S0A" x="-19" y="72"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-MNygSPrEeCdeIrZlH8S0A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-MNygiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_-MNygyPrEeCdeIrZlH8S0A"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="TicketSaleStateMachineComposition.ucl#//@fragmentInstances[name='TakeOrderStateMachine.uml']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MNyhCPrEeCdeIrZlH8S0A" x="441" width="325" height="136"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_rQayod3pEd-7pvQe_KvDAQ"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="TicketSaleStateMachineComposition.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_-S96wCPrEeCdeIrZlH8S0A" type="4001" source="_-PbekCPrEeCdeIrZlH8S0A" target="_-MiioCPrEeCdeIrZlH8S0A">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_-S96wSPrEeCdeIrZlH8S0A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-S96wiPrEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TicketSaleStateMachineComposition.ucl#//@compositionLinks.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-S96wyPrEeCdeIrZlH8S0A" points="[106, 69, 15, -31]$[106, 129, 15, 29]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_5BwqYCPsEeCdeIrZlH8S0A" type="4001" source="_-OOksCPrEeCdeIrZlH8S0A" target="_-MjwwCPrEeCdeIrZlH8S0A">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_5BwqYSPsEeCdeIrZlH8S0A"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5BwqYiPsEeCdeIrZlH8S0A" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="TicketSaleStateMachineComposition.ucl#//@compositionLinks.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5BwqYyPsEeCdeIrZlH8S0A" points="[1, -4, -2, 223]$[1, -217, -2, 10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5B2J8CPsEeCdeIrZlH8S0A" id="(0.3,0.2)"/>
+  </edges>
+</notation:Diagram>

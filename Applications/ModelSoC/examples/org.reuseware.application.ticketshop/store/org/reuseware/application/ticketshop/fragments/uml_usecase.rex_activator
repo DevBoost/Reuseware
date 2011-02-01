@@ -1,0 +1,4 @@
+compositionlanguage org.reuseware.lib.systems.usecase.cl.odt(format='usecase.uml',layoutStrategy='vsort',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.odt(format='usecase.uml',layoutStrategy='vsort',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.usecase_uml(format='usecase.uml',layoutStrategy='vsort',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.exchange.cl.usecase_uml(format='usecase.uml',layoutStrategy='vsort',outFolder='out')

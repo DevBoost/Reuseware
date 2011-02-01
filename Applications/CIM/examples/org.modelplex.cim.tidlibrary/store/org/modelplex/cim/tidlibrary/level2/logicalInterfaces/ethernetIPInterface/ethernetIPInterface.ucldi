@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_f6bTICI3EeCTTblpCKwUtA" type="Compositionprogram" name="ethernetIPInterface.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_5zMA4CI3EeCTTblpCKwUtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5zMn8CI3EeCTTblpCKwUtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_5zj0UCI3EeCTTblpCKwUtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5zlCcCI3EeCTTblpCKwUtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5zlCcSI3EeCTTblpCKwUtA" x="-65" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_5zj0USI3EeCTTblpCKwUtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_5zj0UiI3EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_5zkbYCI3EeCTTblpCKwUtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="ethernetIPInterface.ucl#//@fragmentInstances[name='builtInEthernetHub4ports.cim']/@portInstances[portName='BuiltInHub',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5zkbYSI3EeCTTblpCKwUtA" x="224" y="29"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_5znesCI3EeCTTblpCKwUtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5zoFwCI3EeCTTblpCKwUtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5zoFwSI3EeCTTblpCKwUtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_5znesSI3EeCTTblpCKwUtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_5znesiI3EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_5znesyI3EeCTTblpCKwUtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="ethernetIPInterface.ucl#//@fragmentInstances[name='builtInEthernetHub4ports.cim']/@portInstances[portName='?ProtocolEndpoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5znetCI3EeCTTblpCKwUtA" x="63" y="49"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_5zMA4SI3EeCTTblpCKwUtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5zMA4iI3EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_5zMA4yI3EeCTTblpCKwUtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="ethernetIPInterface.ucl#//@fragmentInstances[name='builtInEthernetHub4ports.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5zMA5CI3EeCTTblpCKwUtA" x="45" y="54"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BMVYsCI4EeCTTblpCKwUtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BMV_wCI4EeCTTblpCKwUtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_BMslECI4EeCTTblpCKwUtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BMtzMCI4EeCTTblpCKwUtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BMtzMSI4EeCTTblpCKwUtA" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BMslESI4EeCTTblpCKwUtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BMslEiI4EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BMtMICI4EeCTTblpCKwUtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="ethernetIPInterface.ucl#//@fragmentInstances[name='ip.cim']/@portInstances[portName='IP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BMtMISI4EeCTTblpCKwUtA" x="-19" y="19"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BMVYsSI4EeCTTblpCKwUtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BMVYsiI4EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_BMVYsyI4EeCTTblpCKwUtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="ethernetIPInterface.ucl#//@fragmentInstances[name='ip.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BMVYtCI4EeCTTblpCKwUtA" x="135" y="198"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_f6bTISI3EeCTTblpCKwUtA"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="ethernetIPInterface.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_gwYjYCI6EeCTTblpCKwUtA" type="4001" source="_5znesCI3EeCTTblpCKwUtA" target="_BMslECI4EeCTTblpCKwUtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_gwYjYSI6EeCTTblpCKwUtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_gwYjYiI6EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="ethernetIPInterface.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gwYjYyI6EeCTTblpCKwUtA" points="[4, 10, -31, -77]$[45, 97, 10, 10]"/>
+  </edges>
+</notation:Diagram>

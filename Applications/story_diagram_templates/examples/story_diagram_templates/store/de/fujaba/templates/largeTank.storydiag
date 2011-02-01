@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.hpi.sam.storyDiagramEcore="http://de/hpi/sam/storyDiagramEcore.ecore" xmlns:de.hpi.sam.storyDiagramEcore.nodes="http://de/hpi/sam/storyDiagramEcore/nodes.ecore" xmlns:de.hpi.sam.storyDiagramEcore.sdm="http://de/hpi/sam/storyDiagramEcore/sdm.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xsi:schemaLocation="http://de/hpi/sam/storyDiagramEcore/nodes.ecore http://de/hpi/sam/storyDiagramEcore.ecore#//nodes http://de/hpi/sam/storyDiagramEcore/sdm.ecore http://de/hpi/sam/storyDiagramEcore.ecore#//sdm" xmi:id="_8IPFMNLYEd6z9YvI3qVOKA" type="StoryDiagramEcore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_8JN8oNLYEd6z9YvI3qVOKA" type="2026" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8JN8otLYEd6z9YvI3qVOKA" type="5030"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8JN8o9LYEd6z9YvI3qVOKA" type="7015">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_8JN8pNLYEd6z9YvI3qVOKA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_8JN8pdLYEd6z9YvI3qVOKA"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8JN8ptLYEd6z9YvI3qVOKA" type="7016">
+      <children xmi:type="notation:Shape" xmi:id="_8JRnANLYEd6z9YvI3qVOKA" type="3035" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JRnAtLYEd6z9YvI3qVOKA" type="5026"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JSOENLYEd6z9YvI3qVOKA" type="5027"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JSOEdLYEd6z9YvI3qVOKA" type="5028"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JSOEtLYEd6z9YvI3qVOKA" type="7017">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_8JSOE9LYEd6z9YvI3qVOKA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_8JSOFNLYEd6z9YvI3qVOKA"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JSOFdLYEd6z9YvI3qVOKA" type="7018">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_8JSOFtLYEd6z9YvI3qVOKA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_8JSOF9LYEd6z9YvI3qVOKA"/>
+        </children>
+        <element xmi:type="de.hpi.sam.storyDiagramEcore.sdm:StoryPatternObject" href="largeTank.story#//@activities.0/@nodes.0/@storyPatternObjects.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8JRnAdLYEd6z9YvI3qVOKA" x="22" y="3"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_8JSOGNLYEd6z9YvI3qVOKA" type="3035" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JS1INLYEd6z9YvI3qVOKA" type="5026"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JS1IdLYEd6z9YvI3qVOKA" type="5027"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JS1ItLYEd6z9YvI3qVOKA" type="5028"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JS1I9LYEd6z9YvI3qVOKA" type="7017">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_8JS1JNLYEd6z9YvI3qVOKA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_8JS1JdLYEd6z9YvI3qVOKA"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_8JS1JtLYEd6z9YvI3qVOKA" type="7018">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_8JS1J9LYEd6z9YvI3qVOKA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_8JS1KNLYEd6z9YvI3qVOKA"/>
+        </children>
+        <element xmi:type="de.hpi.sam.storyDiagramEcore.sdm:StoryPatternObject" href="largeTank.story#//@activities.0/@nodes.0/@storyPatternObjects.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8JSOGdLYEd6z9YvI3qVOKA" x="211" y="-3"/>
+      </children>
+    </children>
+    <element xmi:type="de.hpi.sam.storyDiagramEcore.nodes:StoryActionNode" href="largeTank.story#//@activities.0/@nodes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8JN8odLYEd6z9YvI3qVOKA" x="153" y="162" width="343"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_8IPFMdLYEd6z9YvI3qVOKA"/>
+  <element xmi:type="de.hpi.sam.storyDiagramEcore:Activity" href="largeTank.story#//@activities.0"/>
+  <edges xmi:type="notation:Edge" xmi:id="_Tj2K4NNkEd6aiejjaJGomg" type="4007" source="_8JRnANLYEd6z9YvI3qVOKA" target="_8JSOGNLYEd6z9YvI3qVOKA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Tj2x8NNkEd6aiejjaJGomg" type="6010">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Tj2x8dNkEd6aiejjaJGomg" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Tj2K4dNkEd6aiejjaJGomg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Tj2K4tNkEd6aiejjaJGomg" fontName="Lucida Grande"/>
+    <element xmi:type="de.hpi.sam.storyDiagramEcore.sdm:StoryPatternLink" href="largeTank.story#//@activities.0/@nodes.0/@storyPatternLinks.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Tj2K49NkEd6aiejjaJGomg" points="[45, 5, -139, -1]$[99, 12, -85, 6]$[144, 8, -40, 2]"/>
+  </edges>
+</notation:Diagram>

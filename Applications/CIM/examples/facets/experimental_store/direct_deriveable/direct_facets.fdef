@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FacetDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://description/1.0">
+  <ID>direct_deriveable</ID>
+  <ID>direct_facets.fdef</ID>
+  <facetTypes xsi:type="description:ListFacet" name="Meta Language" description="This is the language the fragment was implemented in.">
+    <derivationData xsi:type="description:DirectDerivation" derivatorID="OCL" rule="eRootClass.ePackage.name"/>
+  </facetTypes>
+</description:FacetDefinition>

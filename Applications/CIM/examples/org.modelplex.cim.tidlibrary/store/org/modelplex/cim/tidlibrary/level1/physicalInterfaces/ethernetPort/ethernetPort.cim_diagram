@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_vRovQMftEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_5bEdYMftEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_5bFEcMftEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_5bFEccftEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_5bFEcsftEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name&#x9;--> EthernetPort.ElementName, EthernetPort.Name, EthernetPort.DeviceID&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (EthernetPort)LogicalPort.portImplementsEndPoint --> (IPProtocolEndpoint)ProtocolEndpoint&#xD;&#xA;- LogicalModule.modulePort --> (EthernetPort)NetworkPort&#xD;&#xA;- System.devices --> (EthernetPort)LogicalDevice" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5bFEc8ftEd6WrsmzKVDL7w" x="46" y="142" width="553" height="109"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_6Rg9McftEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_6Rg9MsftEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_6Rg9M8ftEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_6Rg9NMftEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="Ethernet Port" fillColor="13369343" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Rg9NcftEd6WrsmzKVDL7w" x="40" y="40" width="241" height="85"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_33Wn4MftEd6WrsmzKVDL7w" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_33XO8MftEd6WrsmzKVDL7w" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_33XO8cftEd6WrsmzKVDL7w" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_33Wn4cftEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="ethernetPort.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_33Wn4sftEd6WrsmzKVDL7w" x="108" y="72"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_D6AuAATiEd-mRrkioYeU3g" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_D6BVEATiEd-mRrkioYeU3g" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_D6B8IATiEd-mRrkioYeU3g" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_D6AuAQTiEd-mRrkioYeU3g" fontName="Lucida Grande" fillColor="8047085"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="ethernetPort.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D6AuAgTiEd-mRrkioYeU3g" x="450" y="72"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_vRovQcftEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="ethernetPort.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_HBrpkATiEd-mRrkioYeU3g" type="4060" source="_33Wn4MftEd6WrsmzKVDL7w" target="_D6AuAATiEd-mRrkioYeU3g">
+    <children xmi:type="notation:Node" xmi:id="_HBsQoATiEd-mRrkioYeU3g" type="6060">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HBsQoQTiEd-mRrkioYeU3g" x="43" y="15"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_HBrpkQTiEd-mRrkioYeU3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HBrpkgTiEd-mRrkioYeU3g" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HBrpkwTiEd-mRrkioYeU3g" points="[17, 1, -237, -1]$[315, 1, 61, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HBv7AATiEd-mRrkioYeU3g" id="(0.8172043010752689,0.45)"/>
+  </edges>
+</notation:Diagram>

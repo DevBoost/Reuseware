@@ -1,0 +1,14 @@
+fracol org.reuseware.lib.systems.typebinding.typebinding { 
+
+	fragment role GenericEntity {
+		static port type TypeParameter;
+	} 
+
+	fragment role Type {
+		static port type Self; 
+	} 
+
+	configuring association Binding {
+		Type.Self --> GenericEntity.TypeParameter
+	} 
+} 

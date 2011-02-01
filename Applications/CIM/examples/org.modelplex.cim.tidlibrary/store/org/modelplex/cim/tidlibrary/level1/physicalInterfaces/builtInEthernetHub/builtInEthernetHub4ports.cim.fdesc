@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FragmentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:description="http://description/1.0" derivationState="UP_TO_DATE">
+  <iD>
+    <segments>org</segments>
+    <segments>modelplex</segments>
+    <segments>cim</segments>
+    <segments>tidlibrary</segments>
+    <segments>level1</segments>
+    <segments>physicalInterfaces</segments>
+    <segments>builtInEthernetHub</segments>
+    <segments>builtInEthernetHub4ports.cim.fdesc</segments>
+  </iD>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Protocol</typeID>
+    <valueNames>IP</valueNames>
+    <valueNames>IPX</valueNames>
+    <valueNames>SSH</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Device</typeID>
+    <valueNames>Hub</valueNames>
+    <valueNames>Port</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>ElementType</typeID>
+    <valueNames>Physical</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Connection</typeID>
+    <valueNames>Ethernet</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>CIM_Schema V2.21.0</typeID>
+    <valueNames>CIM_Core</valueNames>
+    <valueNames>CIM_Event</valueNames>
+    <valueNames>CIM_System</valueNames>
+  </facets>
+  <properties name="Name" value="builtInEthernetHub4ports"/>
+  <properties name="Author" value="Telefonica "/>
+  <properties name="Version" value="0.37"/>
+  <properties name="Hint" value="This is a Hub"/>
+</description:FragmentDescription>

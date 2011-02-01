@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:table-source"/>
+        <xs:element minOccurs="0" ref="office:dde-source"/>
+        <xs:element minOccurs="0" ref="table:scenario"/>
+        <xs:group minOccurs="0" ref="text:office-forms"/>
+        <xs:element minOccurs="0" ref="table:shapes"/>
+        <xs:group ref="text:table-columns-and-groups"/>
+        <xs:group ref="text:table-rows-and-groups"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-table-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name">
+    <xs:attribute name="name" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attribute name="style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="protected" type="text:boolean"/>
+  <xs:attributeGroup name="protection-key">
+    <xs:attribute name="protection-key" use="required" form="qualified"/>
+  </xs:attributeGroup>
+  <xs:attribute name="print" type="text:boolean"/>
+  <xs:attribute name="print-ranges" type="text:cellRangeAddressList"/>
+  <xs:attribute name="is-sub-table" type="text:boolean"/>
+  <xs:element name="table-row">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="table:table-cell"/>
+        <xs:element ref="table:covered-table-cell"/>
+      </xs:choice>
+      <xs:attributeGroup ref="text:table-table-row-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="number-rows-repeated" type="text:positiveInteger"/>
+  <xs:attribute name="default-cell-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="visibility" type="text:table-visibility-value"/>
+  <xs:element name="table-cell">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:table-table-cell-content">
+          <xs:attributeGroup ref="text:table-table-cell-attlist"/>
+          <xs:attributeGroup ref="text:table-table-cell-attlist-extra"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="covered-table-cell">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:table-table-cell-content">
+          <xs:attributeGroup ref="text:table-table-cell-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="number-columns-repeated" type="text:positiveInteger"/>
+  <xs:attribute name="content-validation-name" type="text:string"/>
+  <xs:attribute name="formula" type="text:string"/>
+  <xs:attribute name="protect" type="text:boolean"/>
+  <xs:attribute name="number-columns-spanned" type="text:positiveInteger"/>
+  <xs:attribute name="number-rows-spanned" type="text:positiveInteger"/>
+  <xs:attribute name="number-matrix-columns-spanned" type="text:positiveInteger"/>
+  <xs:attribute name="number-matrix-rows-spanned" type="text:positiveInteger"/>
+  <xs:element name="table-column">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-table-column-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-header-columns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:table-column"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-columns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:table-column"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-column-group">
+    <xs:complexType>
+      <xs:group ref="text:table-columns-and-groups"/>
+      <xs:attributeGroup ref="text:table-table-column-group-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="display" type="text:boolean"/>
+  <xs:element name="table-header-rows">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element minOccurs="0" ref="text:soft-page-break"/>
+        <xs:element ref="table:table-row"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-rows">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element minOccurs="0" ref="text:soft-page-break"/>
+        <xs:element ref="table:table-row"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-row-group">
+    <xs:complexType>
+      <xs:group ref="text:table-rows-and-groups"/>
+      <xs:attributeGroup ref="text:table-table-row-group-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-source">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-table-source-attlist"/>
+      <xs:attributeGroup ref="text:table-linked-source-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="copy-all"/>
+        <xs:enumeration value="copy-results-only"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="table-name" type="text:string"/>
+  <xs:attribute name="filter-name" type="text:string"/>
+  <xs:attribute name="filter-options" type="text:string"/>
+  <xs:attributeGroup name="refresh-delay">
+    <xs:attribute name="refresh-delay" use="required" form="qualified" type="text:duration"/>
+  </xs:attributeGroup>
+  <xs:element name="scenario">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-scenario-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="scenario-ranges" type="text:cellRangeAddressList"/>
+  <xs:attribute name="is-active" type="text:boolean"/>
+  <xs:attribute name="display-border" type="text:boolean"/>
+  <xs:attribute name="border-color" type="text:color"/>
+  <xs:attribute name="copy-back" type="text:boolean"/>
+  <xs:attribute name="copy-styles" type="text:boolean"/>
+  <xs:attribute name="copy-formulas" type="text:boolean"/>
+  <xs:attribute name="comment" type="text:string"/>
+  <xs:element name="shapes">
+    <xs:complexType>
+      <xs:group maxOccurs="unbounded" ref="text:shape"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell-range-source">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-table-cell-range-source-attlist"/>
+      <xs:attributeGroup ref="text:table-linked-source-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="last-column-spanned" type="text:positiveInteger"/>
+  <xs:attribute name="last-row-spanned" type="text:positiveInteger"/>
+  <xs:element name="detective">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:highlighted-range"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:operation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="operation">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-operation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name1">
+    <xs:attribute name="name" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="trace-dependents"/>
+          <xs:enumeration value="remove-dependents"/>
+          <xs:enumeration value="trace-precedents"/>
+          <xs:enumeration value="remove-precedents"/>
+          <xs:enumeration value="trace-errors"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="index" type="text:nonNegativeInteger"/>
+  <xs:element name="highlighted-range">
+    <xs:complexType>
+      <xs:attribute ref="table:cell-range-address"/>
+      <xs:attribute ref="table:direction"/>
+      <xs:attribute ref="table:contains-error" default="false"/>
+      <xs:attribute ref="table:marked-invalid"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="cell-range-address" type="text:cellRangeAddress"/>
+  <xs:attribute name="direction">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="from-another-table"/>
+        <xs:enumeration value="to-another-table"/>
+        <xs:enumeration value="from-same-table"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contains-error" type="text:boolean"/>
+  <xs:attribute name="marked-invalid" type="text:boolean"/>
+  <xs:attribute name="structure-protected" type="text:boolean"/>
+  <xs:attributeGroup name="protection-key1">
+    <xs:attribute name="protection-key" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:element name="calculation-settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:null-date"/>
+        <xs:element minOccurs="0" ref="table:iteration"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-calculation-setting-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="case-sensitive">
+    <xs:attribute name="case-sensitive" use="required" form="qualified" type="text:boolean"/>
+  </xs:attributeGroup>
+  <xs:attribute name="precision-as-shown" type="text:boolean"/>
+  <xs:attribute name="search-criteria-must-apply-to-whole-cell" type="text:boolean"/>
+  <xs:attribute name="automatic-find-labels" type="text:boolean"/>
+  <xs:attribute name="use-regular-expressions" type="text:boolean"/>
+  <xs:attribute name="null-year" type="text:positiveInteger"/>
+  <xs:element name="null-date">
+    <xs:complexType>
+      <xs:attribute name="value-type" default="date" form="qualified" type="text:valueType"/>
+      <xs:attribute name="date-value" default="1899-12-30" form="qualified" type="text:date"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="iteration">
+    <xs:complexType>
+      <xs:attribute name="status" default="disable" form="qualified">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="enable"/>
+            <xs:enumeration value="disable"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="steps" default="100" form="qualified" type="text:positiveInteger"/>
+      <xs:attribute name="maximum-difference" default="0.001" form="qualified" type="text:double"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="content-validations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:content-validation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="content-validation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:help-message"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="table:error-message"/>
+          <xs:sequence>
+            <xs:element ref="table:error-macro"/>
+            <xs:element minOccurs="0" ref="office:event-listeners"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-validation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="condition" type="text:string"/>
+  <xs:attribute name="base-cell-address" type="text:cellAddress"/>
+  <xs:attribute name="allow-empty-cell" type="text:boolean"/>
+  <xs:attribute name="display-list">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="unsorted"/>
+        <xs:enumeration value="sort-ascending"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="help-message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text:p"/>
+      </xs:sequence>
+      <xs:attribute name="title" form="qualified" type="text:string"/>
+      <xs:attribute ref="table:display" default="false"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="error-message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text:p"/>
+      </xs:sequence>
+      <xs:attribute name="title" form="qualified" type="text:string"/>
+      <xs:attribute ref="table:display" default="false"/>
+      <xs:attribute name="message-type" default="stop" form="qualified">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="stop"/>
+            <xs:enumeration value="warning"/>
+            <xs:enumeration value="information"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="error-macro">
+    <xs:complexType>
+      <xs:attribute name="execute" default="true" form="qualified" type="text:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="label-ranges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:label-range"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="label-range">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-label-range-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="label-cell-range-address" type="text:cellRangeAddress"/>
+  <xs:attribute name="data-cell-range-address" type="text:cellRangeAddress"/>
+  <xs:attributeGroup name="orientation">
+    <xs:attribute name="orientation" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="column"/>
+          <xs:enumeration value="row"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="named-expressions">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="table:named-range"/>
+        <xs:element ref="table:named-expression"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="named-range">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-named-range-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="range-usable-as">
+    <xs:simpleType>
+      <xs:union>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="none"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction>
+            <xs:simpleType>
+              <xs:list>
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="print-range"/>
+                    <xs:enumeration value="filter"/>
+                    <xs:enumeration value="repeat-row"/>
+                    <xs:enumeration value="repeat-column"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:list>
+            </xs:simpleType>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="named-expression">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-named-expression-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="expression" type="text:string"/>
+  <xs:element name="database-ranges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:database-range"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="database-range">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:element ref="table:database-source-sql"/>
+          <xs:element ref="table:database-source-query"/>
+          <xs:element ref="table:database-source-table"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="table:filter"/>
+        <xs:element minOccurs="0" ref="table:sort"/>
+        <xs:element minOccurs="0" ref="table:subtotal-rules"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-database-range-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="is-selection" type="text:boolean"/>
+  <xs:attribute name="on-update-keep-styles" type="text:boolean"/>
+  <xs:attribute name="on-update-keep-size" type="text:boolean"/>
+  <xs:attribute name="has-persistent-data" type="text:boolean"/>
+  <xs:attribute name="contains-header" type="text:boolean"/>
+  <xs:attribute name="display-filter-buttons" type="text:boolean"/>
+  <xs:attribute name="target-range-address" type="text:cellRangeAddress"/>
+  <xs:attributeGroup name="refresh-delay1">
+    <xs:attribute name="refresh-delay" use="required" form="qualified" type="text:boolean"/>
+  </xs:attributeGroup>
+  <xs:element name="database-source-sql">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-database-source-sql-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="database-name" type="text:string"/>
+  <xs:attribute name="sql-statement" type="text:string"/>
+  <xs:attribute name="parse-sql-statement" type="text:boolean"/>
+  <xs:element name="database-source-table">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-database-source-table-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="database-table-name" type="text:string"/>
+  <xs:element name="database-source-query">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-database-source-query-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="query-name" type="text:string"/>
+  <xs:element name="sort">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:sort-by"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-sort-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="bind-styles-to-content" type="text:boolean"/>
+  <xs:attribute name="language" type="text:languageCode"/>
+  <xs:attribute name="country" type="text:countryCode"/>
+  <xs:attribute name="algorithm" type="text:string"/>
+  <xs:element name="sort-by">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-sort-by-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="field-number" type="text:nonNegativeInteger"/>
+  <xs:attributeGroup name="data-type">
+    <xs:attribute name="data-type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:union memberTypes="text:string">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="text"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="number"/>
+            </xs:restriction>
+          </xs:simpleType>
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="automatic"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:union>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="order">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="ascending"/>
+        <xs:enumeration value="descending"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="subtotal-rules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:sort-groups"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:subtotal-rule"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-subtotal-rules-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="page-breaks-on-group-change" type="text:boolean"/>
+  <xs:element name="sort-groups">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-sort-groups-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subtotal-rule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:subtotal-field"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-subtotal-rule-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="group-by-field-number" type="text:nonNegativeInteger"/>
+  <xs:element name="subtotal-field">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-subtotal-field-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="function">
+    <xs:simpleType>
+      <xs:union memberTypes="text:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="auto"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="average"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="count"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="countnums"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="max"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="min"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="product"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="stdev"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="stdevp"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="sum"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="var"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="varp"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="filter">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="table:filter-condition"/>
+        <xs:element ref="table:filter-and"/>
+        <xs:element ref="table:filter-or"/>
+      </xs:choice>
+      <xs:attributeGroup ref="text:table-filter-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="condition-source">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="self"/>
+        <xs:enumeration value="cell-range"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="condition-source-range-address" type="text:cellRangeAddress"/>
+  <xs:attribute name="display-duplicates" type="text:boolean"/>
+  <xs:element name="filter-and">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="table:filter-or"/>
+        <xs:element ref="table:filter-condition"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="filter-or">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="table:filter-and"/>
+        <xs:element ref="table:filter-condition"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="filter-condition">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-filter-condition-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="value" type="text:string"/>
+  <xs:attribute name="operator" type="text:string"/>
+  <xs:attributeGroup name="case-sensitive1">
+    <xs:attribute name="case-sensitive" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="data-type1">
+    <xs:attribute name="data-type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="text"/>
+          <xs:enumeration value="number"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="data-pilot-tables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:data-pilot-table"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data-pilot-table">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:element ref="table:database-source-sql"/>
+          <xs:element ref="table:database-source-query"/>
+          <xs:element ref="table:database-source-table"/>
+          <xs:element ref="table:source-service"/>
+          <xs:element ref="table:source-cell-range"/>
+        </xs:choice>
+        <xs:element maxOccurs="unbounded" ref="table:data-pilot-field"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-data-pilot-table-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="application-data" type="text:string"/>
+  <xs:attribute name="grand-total">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="row"/>
+        <xs:enumeration value="column"/>
+        <xs:enumeration value="both"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="ignore-empty-rows" type="text:boolean"/>
+  <xs:attribute name="identify-categories" type="text:boolean"/>
+  <xs:attribute name="buttons" type="text:cellRangeAddressList"/>
+  <xs:attribute name="show-filter-button" type="text:boolean"/>
+  <xs:attribute name="drill-down-on-double-click" type="text:boolean"/>
+  <xs:element name="source-cell-range">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:filter"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-source-cell-range-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="source-service">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-source-service-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="source-name" type="text:string"/>
+  <xs:attribute name="object-name" type="text:string"/>
+  <xs:attribute name="user-name" type="text:string"/>
+  <xs:attribute name="password" type="text:string"/>
+  <xs:element name="data-pilot-field">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:data-pilot-level"/>
+        <xs:element minOccurs="0" ref="table:data-pilot-field-reference"/>
+        <xs:element minOccurs="0" ref="table:data-pilot-groups"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-data-pilot-field-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="source-field-name" type="text:string"/>
+  <xs:attributeGroup name="orientation1">
+    <xs:attribute name="orientation" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="row"/>
+          <xs:enumeration value="column"/>
+          <xs:enumeration value="data"/>
+          <xs:enumeration value="hidden"/>
+          <xs:enumeration value="page"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="selected-page" type="text:string"/>
+  <xs:attribute name="is-data-layout-field" type="text:string"/>
+  <xs:attribute name="used-hierarchy" type="text:integer"/>
+  <xs:element name="data-pilot-level">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:data-pilot-subtotals"/>
+        <xs:element minOccurs="0" ref="table:data-pilot-members"/>
+        <xs:element minOccurs="0" ref="table:data-pilot-display-info"/>
+        <xs:element minOccurs="0" ref="table:data-pilot-sort-info"/>
+        <xs:element minOccurs="0" ref="table:data-pilot-layout-info"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-data-pilot-level-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="show-empty" type="text:boolean"/>
+  <xs:element name="data-pilot-subtotals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:data-pilot-subtotal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data-pilot-subtotal">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-subtotal-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data-pilot-members">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:data-pilot-member"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data-pilot-member">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-member-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="show-details" type="text:boolean"/>
+  <xs:element name="data-pilot-display-info">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-display-info-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="enabled" type="text:boolean"/>
+  <xs:attribute name="data-field" type="text:string"/>
+  <xs:attribute name="member-count" type="text:nonNegativeInteger"/>
+  <xs:attribute name="display-member-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="from-top"/>
+        <xs:enumeration value="from-bottom"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="data-pilot-sort-info">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-sort-info-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="sort-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="data"/>
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="manual"/>
+        <xs:enumeration value="name"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="data-pilot-layout-info">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-layout-info-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="layout-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="tabular-layout"/>
+        <xs:enumeration value="outline-subtotals-top"/>
+        <xs:enumeration value="outline-subtotals-bottom"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="add-empty-lines" type="text:boolean"/>
+  <xs:element name="data-pilot-field-reference">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-field-reference-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="field-name" type="text:string"/>
+  <xs:attribute name="member-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="named"/>
+        <xs:enumeration value="previous"/>
+        <xs:enumeration value="next"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="member-name" type="text:string"/>
+  <xs:attributeGroup name="type">
+    <xs:attribute name="type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="none"/>
+          <xs:enumeration value="member-difference"/>
+          <xs:enumeration value="member-percentage"/>
+          <xs:enumeration value="member-percentage-difference"/>
+          <xs:enumeration value="running-total"/>
+          <xs:enumeration value="row-percentage"/>
+          <xs:enumeration value="column-percentage"/>
+          <xs:enumeration value="total-percentage"/>
+          <xs:enumeration value="index"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="data-pilot-groups">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:data-pilot-group"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-data-pilot-groups-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="date-start">
+    <xs:simpleType>
+      <xs:union memberTypes="text:dateOrDateTime">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="auto"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="start">
+    <xs:simpleType>
+      <xs:union memberTypes="text:double">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="auto"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="date-end">
+    <xs:simpleType>
+      <xs:union memberTypes="text:dateOrDateTime">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="auto"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="end">
+    <xs:simpleType>
+      <xs:union memberTypes="text:double">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="auto"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="step" type="text:double"/>
+  <xs:attribute name="grouped-by">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="seconds"/>
+        <xs:enumeration value="minutes"/>
+        <xs:enumeration value="hours"/>
+        <xs:enumeration value="days"/>
+        <xs:enumeration value="months"/>
+        <xs:enumeration value="quarters"/>
+        <xs:enumeration value="years"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="data-pilot-group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:data-pilot-group-member"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-data-pilot-group-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data-pilot-group-member">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-data-pilot-group-member-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consolidation">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-consolidation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="source-cell-range-addresses" type="text:cellRangeAddressList"/>
+  <xs:attribute name="target-cell-address" type="text:cellAddress"/>
+  <xs:attribute name="use-labels">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="row"/>
+        <xs:enumeration value="column"/>
+        <xs:enumeration value="both"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="link-to-source-data" type="text:boolean"/>
+  <xs:element name="dde-links">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:dde-link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tracked-changes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="table:cell-content-change"/>
+        <xs:element ref="table:insertion"/>
+        <xs:element ref="table:deletion"/>
+        <xs:element ref="table:movement"/>
+      </xs:choice>
+      <xs:attributeGroup ref="text:table-tracked-changes-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="track-changes" type="text:boolean"/>
+  <xs:element name="insertion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="office:change-info"/>
+        <xs:element minOccurs="0" ref="table:dependencies"/>
+        <xs:element minOccurs="0" ref="table:deletions"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-insertion-attlist"/>
+      <xs:attributeGroup ref="text:common-table-change-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="type1">
+    <xs:attribute name="type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="row"/>
+          <xs:enumeration value="column"/>
+          <xs:enumeration value="table"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="position" type="text:integer"/>
+  <xs:attribute name="count" type="text:positiveInteger"/>
+  <xs:attribute name="table" type="text:integer"/>
+  <xs:element name="dependencies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="table:dependency"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dependency">
+    <xs:complexType>
+      <xs:attribute ref="table:id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deletions">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="table:cell-content-deletion"/>
+        <xs:element ref="table:change-deletion"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell-content-deletion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:cell-address"/>
+        <xs:element minOccurs="0" ref="table:change-track-table-cell"/>
+      </xs:sequence>
+      <xs:attribute ref="table:id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="change-deletion">
+    <xs:complexType>
+      <xs:attribute ref="table:id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deletion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="office:change-info"/>
+        <xs:element minOccurs="0" ref="table:dependencies"/>
+        <xs:element minOccurs="0" ref="table:deletions"/>
+        <xs:element minOccurs="0" ref="table:cut-offs"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-deletion-attlist"/>
+      <xs:attributeGroup ref="text:common-table-change-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="multi-deletion-spanned" type="text:integer"/>
+  <xs:element name="cut-offs">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="table:movement-cut-off"/>
+        <xs:sequence>
+          <xs:element ref="table:insertion-cut-off"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="table:movement-cut-off"/>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertion-cut-off">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-insertion-cut-off-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="id" type="text:string"/>
+  <xs:element name="movement-cut-off">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:table-movement-cut-off-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="start-position" type="text:integer"/>
+  <xs:attribute name="end-position" type="text:integer"/>
+  <xs:element name="movement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="table:source-range-address"/>
+        <xs:element ref="table:target-range-address"/>
+        <xs:element ref="office:change-info"/>
+        <xs:element minOccurs="0" ref="table:dependencies"/>
+        <xs:element minOccurs="0" ref="table:deletions"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-table-change-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="source-range-address">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-range-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="target-range-address">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-range-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="column" type="text:integer"/>
+  <xs:attribute name="row" type="text:integer"/>
+  <xs:attribute name="start-column" type="text:integer"/>
+  <xs:attribute name="start-row" type="text:integer"/>
+  <xs:attribute name="start-table" type="text:integer"/>
+  <xs:attribute name="end-column" type="text:integer"/>
+  <xs:attribute name="end-row" type="text:integer"/>
+  <xs:attribute name="end-table" type="text:integer"/>
+  <xs:element name="change-track-table-cell">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text:p"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-change-track-table-cell-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="cell-address" type="text:cellAddress"/>
+  <xs:attribute name="matrix-covered" type="text:boolean"/>
+  <xs:element name="cell-content-change">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="table:cell-address"/>
+        <xs:element ref="office:change-info"/>
+        <xs:element minOccurs="0" ref="table:dependencies"/>
+        <xs:element minOccurs="0" ref="table:deletions"/>
+        <xs:element ref="table:previous"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-table-change-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell-address">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-cell-address-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="previous">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="table:change-track-table-cell"/>
+      </xs:sequence>
+      <xs:attribute ref="table:id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="acceptance-state">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="accepted"/>
+        <xs:enumeration value="rejected"/>
+        <xs:enumeration value="pending"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="rejecting-change-id" type="text:string"/>
+  <xs:attribute name="end-cell-address" type="text:cellAddress"/>
+  <xs:attribute name="end-x" type="text:coordinate"/>
+  <xs:attribute name="end-y" type="text:coordinate"/>
+  <xs:attribute name="table-background" type="text:boolean"/>
+  <xs:attribute name="cell-range" type="text:cellAddress"/>
+  <xs:element name="dde-link">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="office:dde-source"/>
+        <xs:element ref="table:table"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table-template">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="table:first-row"/>
+        <xs:element minOccurs="0" ref="table:last-row"/>
+        <xs:element minOccurs="0" ref="table:first-column"/>
+        <xs:element minOccurs="0" ref="table:last-column"/>
+        <xs:choice>
+          <xs:element ref="table:body"/>
+          <xs:sequence>
+            <xs:element ref="table:even-rows"/>
+            <xs:element ref="table:odd-rows"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element ref="table:even-columns"/>
+            <xs:element ref="table:odd-columns"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:table-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="first-row">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="last-row">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="first-column">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="last-column">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="even-rows">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="odd-rows">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="even-columns">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="odd-columns">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-table-template-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="margins"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="border-model">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="collapsing"/>
+        <xs:enumeration value="separating"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>CBSE</UCPI>
+  <UCPI>reference</UCPI>
+  <UCPI>TicketSale</UCPI>
+  <UCPI>StateMachine</UCPI>
+  <UCPI>TicketSaleStateMachineComposition.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ShippingStateMachine.uml']/@portInstances[portName='Shipping',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='Hook_TicketShipping',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='TakeOrderStateMachine.uml']/@portInstances[portName='TakeOrder',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='TicketSaleStateMachine.uml']/@portInstances[portName='Hook_TicketOrder',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <fragmentInstances name="TicketSaleStateMachine.uml" targetPhysicalLocation="out" target="true">
+    <UFI>CBSE</UFI>
+    <UFI>reference</UFI>
+    <UFI>TicketSale</UFI>
+    <UFI>StateMachine</UFI>
+    <UFI>TicketSaleStateMachine.uml</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="Hook_TicketOrder" targetLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="Hook_TicketShipping" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <targetUFI>CBSE</targetUFI>
+    <targetUFI>reference</targetUFI>
+    <targetUFI>TicketSale</targetUFI>
+    <targetUFI>StateMachine_composed</targetUFI>
+    <targetUFI>TicketSaleStateMachine.uml</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="ShippingStateMachine.uml" targetPhysicalLocation="out">
+    <UFI>CBSE</UFI>
+    <UFI>library</UFI>
+    <UFI>StateMachines</UFI>
+    <UFI>ShippingStateMachine.uml</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="Shipping" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <settings property=""/>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="TakeOrderStateMachine.uml" targetPhysicalLocation="out">
+    <UFI>CBSE</UFI>
+    <UFI>library</UFI>
+    <UFI>StateMachines</UFI>
+    <UFI>TakeOrderStateMachine.uml</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="TakeOrder" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <settings property=""/>
+    </portInstances>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

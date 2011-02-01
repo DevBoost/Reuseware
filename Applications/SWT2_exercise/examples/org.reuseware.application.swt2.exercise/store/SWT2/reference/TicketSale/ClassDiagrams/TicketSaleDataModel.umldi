@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_i8LGgDI7Ed2Ce_UcFkjmeQ" activeDiagram="_i8M7sDI7Ed2Ce_UcFkjmeQ">
+  <model href="TicketSaleDataModel.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_i8M7sDI7Ed2Ce_UcFkjmeQ" position="0,0" size="100,100" name="DataModel" viewport="0,0">
+    <property xmi:id="_i9OPYDI7Ed2Ce_UcFkjmeQ" key="pageFormatName" value="A4"/>
+    <property xmi:id="_i9OPYTI7Ed2Ce_UcFkjmeQ" key="diagramWidth" value="840"/>
+    <property xmi:id="_i9OPYjI7Ed2Ce_UcFkjmeQ" key="diagramHeight" value="1188"/>
+    <property xmi:id="_i9OPYzI7Ed2Ce_UcFkjmeQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_i9OPZDI7Ed2Ce_UcFkjmeQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_i9OPZTI7Ed2Ce_UcFkjmeQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_i9OPZjI7Ed2Ce_UcFkjmeQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_i9OPZzI7Ed2Ce_UcFkjmeQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_i9OPaDI7Ed2Ce_UcFkjmeQ" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_i8M7sTI7Ed2Ce_UcFkjmeQ" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="TicketSaleDataModel.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_jV7qUDI7Ed2Ce_UcFkjmeQ" position="175,108" size="125,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_jV7qUTI7Ed2Ce_UcFkjmeQ" presentation="default">
+        <element href="TicketSaleDataModel.uml#_jWUE0DI7Ed2Ce_UcFkjmeQ"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_jV7qUjI7Ed2Ce_UcFkjmeQ">
+        <property xmi:id="_jV7qUzI7Ed2Ce_UcFkjmeQ" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_jV7qVDI7Ed2Ce_UcFkjmeQ" presentation="default">
+          <element href="TicketSaleDataModel.uml#_jWUE0DI7Ed2Ce_UcFkjmeQ"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_kwLawDI7Ed2Ce_UcFkjmeQ" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_kwLawTI7Ed2Ce_UcFkjmeQ" presentation="default">
+            <element href="TicketSaleDataModel.uml#_kwVy0DI7Ed2Ce_UcFkjmeQ"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" xmi:id="_m3S4QDI7Ed2Ce_UcFkjmeQ" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_m3S4QTI7Ed2Ce_UcFkjmeQ" presentation="default">
+            <element href="TicketSaleDataModel.uml#_m3TfUDI7Ed2Ce_UcFkjmeQ"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_jV7qVTI7Ed2Ce_UcFkjmeQ">
+        <property xmi:id="_jV7qVjI7Ed2Ce_UcFkjmeQ" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_jV7qVzI7Ed2Ce_UcFkjmeQ" presentation="default">
+          <element href="TicketSaleDataModel.uml#_jWUE0DI7Ed2Ce_UcFkjmeQ"/>
+        </semanticModel>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

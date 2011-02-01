@@ -1,0 +1,38 @@
+fracol org.reuseware.application.taipan.reuseTaipan
+{
+
+	fragment role TravelSpace {
+		static port type VehicleContainer;
+		dynamic port type Routes;
+		dynamic port type Places;
+	}
+	
+	fragment role Flotilla {
+		static port type Vehicles;
+		dynamic port type RouteSlots;
+		dynamic port type PlaceSlots;
+	}
+	
+	contributing association a1 {
+		Flotilla.Vehicles --> TravelSpace.VehicleContainer
+	}
+	configuring association a2 { 
+		Flotilla.RouteSlots --> TravelSpace.Routes
+	}
+	configuring association a3 {
+		Flotilla.PlaceSlots --> TravelSpace.Places
+	}
+	
+		
+	fragment role ItemContainer {
+		dynamic port type Items;
+	}
+	
+	fragment role ItemHolder {
+		dynamic port type ItemSpaces;
+	}
+	
+	contributing association a4 { 
+		ItemContainer.Items --> ItemHolder.ItemSpaces
+	}
+}

@@ -1,0 +1,6 @@
+//component models need to be activated to identify hooks for removement in composed src files
+componentmodel org.reuseware.lib.systems.participation.cm.java
+componentmodel org.reuseware.lib.systems.trigger.cm.java
+componentmodel org.reuseware.lib.systems.app.cm.java
+
+componentmodel org.reuseware.lib.systems.participation.cm.odt

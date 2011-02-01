@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:attribute name="automatic-focus" type="text:boolean"/>
+  <xs:attribute name="apply-design-mode" type="text:boolean"/>
+  <xs:element name="form">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="form:properties"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="text:controls"/>
+          <xs:element ref="form:form"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="form:connection-resource"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-form-control-attlist"/>
+      <xs:attributeGroup ref="text:form-form-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="method">
+    <xs:simpleType>
+      <xs:union memberTypes="text:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="get"/>
+          </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="post"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="enctype" type="text:string"/>
+  <xs:attribute name="allow-deletes" type="text:boolean"/>
+  <xs:attribute name="allow-inserts" type="text:boolean"/>
+  <xs:attribute name="allow-updates" type="text:boolean"/>
+  <xs:attribute name="apply-filter" type="text:boolean"/>
+  <xs:attribute name="command-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="table"/>
+        <xs:enumeration value="query"/>
+        <xs:enumeration value="command"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="command"/>
+  <xs:attribute name="datasource">
+    <xs:simpleType>
+      <xs:union memberTypes="text:anyURI text:string"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="master-fields" type="text:string"/>
+  <xs:attribute name="detail-fields" type="text:string"/>
+  <xs:attribute name="escape-processing" type="text:boolean"/>
+  <xs:attribute name="filter" type="text:string"/>
+  <xs:attribute name="ignore-result" type="text:boolean"/>
+  <xs:attribute name="navigation-mode" type="text:navigation"/>
+  <xs:attribute name="order" type="text:string"/>
+  <xs:attribute name="tab-cycle" type="text:tab-cycles"/>
+  <xs:element name="connection-resource">
+    <xs:complexType>
+      <xs:attribute ref="xlink:href" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-text-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textarea" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="text:p"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="text:form-textarea-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formatted-text" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-formatted-text-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="number" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-number-attlist"/>
+          <xs:attributeGroup ref="text:common-numeric-control-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-date-attlist"/>
+          <xs:attributeGroup ref="text:common-numeric-control-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="combobox" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="form:item"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="text:form-combobox-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listbox" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="form:option"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="text:form-listbox-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkbox" substitutionGroup="text:column-controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-checkbox-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="password" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-password-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="file" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-file-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="time" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-time-attlist"/>
+          <xs:attributeGroup ref="text:common-numeric-control-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fixed-text" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-fixed-text-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="button" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-button-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-image-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="radio" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-radio-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frame" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-frame-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image-frame" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-image-frame-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hidden" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-hidden-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="grid" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="form:column"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="text:form-grid-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="value-range" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-value-range-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="generic-control" substitutionGroup="text:controls">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:common-form-control-content">
+          <xs:attributeGroup ref="text:form-generic-control-attlist"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="echo-char" type="text:character"/>
+  <xs:attributeGroup name="max-value">
+    <xs:attribute name="max-value" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="min-value">
+    <xs:attribute name="min-value" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attribute name="validation" type="text:boolean"/>
+  <xs:attributeGroup name="value">
+    <xs:attribute name="value" use="required" form="qualified" type="text:double"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="current-value">
+    <xs:attribute name="current-value" use="required" form="qualified" type="text:double"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="min-value1">
+    <xs:attribute name="min-value" use="required" form="qualified" type="text:double"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="max-value1">
+    <xs:attribute name="max-value" use="required" form="qualified" type="text:double"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="value1">
+    <xs:attribute name="value" use="required" form="qualified" type="text:date"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="current-value1">
+    <xs:attribute name="current-value" use="required" form="qualified" type="text:date"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="min-value2">
+    <xs:attribute name="min-value" use="required" form="qualified" type="text:date"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="max-value2">
+    <xs:attribute name="max-value" use="required" form="qualified" type="text:date"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="value2">
+    <xs:attribute name="value" use="required" form="qualified" type="text:time"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="current-value2">
+    <xs:attribute name="current-value" use="required" form="qualified" type="text:time"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="min-value3">
+    <xs:attribute name="min-value" use="required" form="qualified" type="text:time"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="max-value3">
+    <xs:attribute name="max-value" use="required" form="qualified" type="text:time"/>
+  </xs:attributeGroup>
+  <xs:attribute name="multi-line" type="text:boolean"/>
+  <xs:attribute name="auto-complete" type="text:boolean"/>
+  <xs:element name="item">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="text:form-item-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="multiple" type="text:boolean"/>
+  <xs:attribute name="xforms-list-source" type="text:string"/>
+  <xs:element name="option">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="text:form-option-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="default-button" type="text:boolean"/>
+  <xs:attribute name="toggle" type="text:boolean"/>
+  <xs:attribute name="focus-on-click" type="text:boolean"/>
+  <xs:attribute name="xforms-submission" type="text:string"/>
+  <xs:attribute name="current-state" type="text:states"/>
+  <xs:attribute name="is-tristate" type="text:boolean"/>
+  <xs:attribute name="state" type="text:states"/>
+  <xs:element name="column">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="text:column-controls"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:form-column-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="text-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="step-size" type="text:positiveInteger"/>
+  <xs:attribute name="page-step-size" type="text:positiveInteger"/>
+  <xs:attribute name="delay-for-repeat" type="text:duration"/>
+  <xs:attribute name="orientation">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="horizontal"/>
+        <xs:enumeration value="vertical"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="name" type="text:string"/>
+  <xs:attribute name="control-implementation" type="text:namespacedToken"/>
+  <xs:attribute name="button-type" type="text:types"/>
+  <xs:attribute name="id" type="text:ID"/>
+  <xs:attribute name="current-selected" type="text:boolean"/>
+  <xs:attributeGroup name="value3">
+    <xs:attribute name="value" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="current-value3">
+    <xs:attribute name="current-value" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attribute name="disabled" type="text:boolean"/>
+  <xs:attribute name="dropdown" type="text:boolean"/>
+  <xs:attribute name="for" type="text:string"/>
+  <xs:attribute name="image-data" type="text:anyURI"/>
+  <xs:attribute name="label" type="text:string"/>
+  <xs:attribute name="max-length" type="text:nonNegativeInteger"/>
+  <xs:attribute name="printable" type="text:boolean"/>
+  <xs:attribute name="readonly" type="text:boolean"/>
+  <xs:attribute name="selected" type="text:boolean"/>
+  <xs:attribute name="size" type="text:nonNegativeInteger"/>
+  <xs:attribute name="tab-index" type="text:nonNegativeInteger"/>
+  <xs:attribute name="tab-stop" type="text:boolean"/>
+  <xs:attribute name="title"/>
+  <xs:attribute name="visual-effect">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="flat"/>
+        <xs:enumeration value="3d"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="image-position">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="start"/>
+        <xs:enumeration value="end"/>
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="bottom"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="image-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="start"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="end"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="bound-column" type="text:string"/>
+  <xs:attribute name="convert-empty-to-null" type="text:boolean"/>
+  <xs:attribute name="data-field" type="text:string"/>
+  <xs:attribute name="list-source" type="text:string"/>
+  <xs:attribute name="list-source-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="table"/>
+        <xs:enumeration value="query"/>
+        <xs:enumeration value="sql"/>
+        <xs:enumeration value="sql-pass-through"/>
+        <xs:enumeration value="value-list"/>
+        <xs:enumeration value="table-fields"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="text:form-property"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="property" substitutionGroup="text:form-property">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:form-property-name"/>
+      <xs:attributeGroup ref="text:form-property-value-and-type-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="list-property" substitutionGroup="text:form-property">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="text:form-property-type-and-value-list">
+          <xs:attributeGroup ref="text:form-property-name"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="property-name" type="text:string"/>
+  <xs:group name="list-value">
+    <xs:sequence>
+      <xs:element name="list-value">
+        <xs:complexType>
+          <xs:attribute ref="office:value" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="list-value1">
+    <xs:sequence>
+      <xs:element name="list-value">
+        <xs:complexType>
+          <xs:attribute ref="office:value" use="required"/>
+          <xs:attribute ref="office:currency"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="list-value2">
+    <xs:sequence>
+      <xs:element name="list-value">
+        <xs:complexType>
+          <xs:attribute ref="office:date-value" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="list-value3">
+    <xs:sequence>
+      <xs:element name="list-value">
+        <xs:complexType>
+          <xs:attribute ref="office:time-value" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="list-value4">
+    <xs:sequence>
+      <xs:element name="list-value">
+        <xs:complexType>
+          <xs:attribute ref="office:boolean-value" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="list-value5">
+    <xs:sequence>
+      <xs:element name="list-value">
+        <xs:complexType>
+          <xs:attribute ref="office:string-value" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+</xs:schema>

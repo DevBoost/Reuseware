@@ -1,0 +1,17 @@
+#Wed Oct 27 16:00:44 CEST 2010
+eclipse.preferences.version=1
+encoding//additional-security-concern-dimension/concern-dimension-participation/variant-secprop/org/reuseware/lib/systems/participation/lib/Participant.secprop_diagram=UTF-8
+encoding//dependent-concern-dimensions/concern-dimension-participation/variant-valueflow/org/reuseware/lib/systems/participation/lib/Participant.valueflow_diagram=UTF-8
+encoding//out/org/reuseware/application/ticketshop/integrated/valueflow/BookTicket2.valueflow_diagram=UTF-8
+encoding//out/org/reuseware/application/ticketshop/integrated/valueflow/ChangeSeat.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/BookTicket/Bank.valueflow=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/BookTicket/Bank.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/BookTicket/Clerk.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/BookTicket/Customer.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/BookTicket/Hall.valueflow=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/BookTicket/Hall.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/ChangeSeat/Clerk.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/ChangeSeat/Customer.valueflow_diagram=UTF-8
+encoding//store/org/reuseware/application/ticketshop/fragments/valueflow/ChangeSeat/Hall.valueflow_diagram=UTF-8
+encoding//store_security/org/reuseware/application/ticketshop/fragments/secprop/BookTicket/Account_acc1.secprop=UTF-8
+encoding//store_security/org/reuseware/application/ticketshop/fragments/secprop/BookTicket/Account_acc1.secprop_diagram=UTF-8

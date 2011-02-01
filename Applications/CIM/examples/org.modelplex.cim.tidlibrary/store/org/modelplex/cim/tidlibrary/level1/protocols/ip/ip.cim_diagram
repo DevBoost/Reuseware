@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_FpoE8MfuEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_GBkq4MfuEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_GBkq4cfuEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_GBkq4sfuEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_GBkq48fuEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="IP" fillColor="12500670" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GBkq5MfuEd6WrsmzKVDL7w" x="46" y="46" width="205" height="74"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_GBkq5cfuEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_GBkq5sfuEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_GBkq58fuEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_GBkq6MfuEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name&#x9;&#x9;--> IPProtocolEndpoint.ElementName, IPProtocolEndpoint.Name&#xD;&#xA;- ip address&#x9;--> IPProtocolEndpoint.IPv4Address&#xD;&#xA;- submask&#x9;&#x9;--> IPProtocolEndpoint.subnetMask&#xD;&#xA;- assignment&#x9;--> IPProtocolEndpoint.addressOrigin&#xD;&#xA;&#xD;&#xA;Rules:&#xD;&#xA;- assignment values &lt;-- Static or DHCP&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (NetworkPort)LogicalPort.portImplementsEndPoint --> (IPProtocolEndpoint)ProtocolEndpoint&#xD;&#xA;- (IPConnectivitySubnet)Collection.members --> (IPProtocolEndpoint)ProtocolEndpoint" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GBkq6cfuEd6WrsmzKVDL7w" x="9" y="135" width="553" height="169"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_FqrN0MfuEd6WrsmzKVDL7w" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_Fqr04MfuEd6WrsmzKVDL7w" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_Fqr04cfuEd6WrsmzKVDL7w" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_FqrN0cfuEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="ip.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FqrN0sfuEd6WrsmzKVDL7w" x="63" y="72"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_FpoE8cfuEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="ip.cim#/"/>
+</notation:Diagram>

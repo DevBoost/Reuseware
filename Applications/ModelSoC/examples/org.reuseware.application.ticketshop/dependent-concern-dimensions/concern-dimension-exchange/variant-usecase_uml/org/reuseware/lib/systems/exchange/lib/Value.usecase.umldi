@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_o4NDcE3xEd-XpZWKfy4CbQ" activeDiagram="_o4NDcU3xEd-XpZWKfy4CbQ">
+  <model href="Value.usecase.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_o4NDcU3xEd-XpZWKfy4CbQ" position="0,0" size="100,100" name="Value.usecase" viewport="0,0">
+    <property xmi:id="_o4diIE3xEd-XpZWKfy4CbQ" key="pageFormatName" value="A4"/>
+    <property xmi:id="_o4diIU3xEd-XpZWKfy4CbQ" key="diagramWidth" value="840"/>
+    <property xmi:id="_o4diIk3xEd-XpZWKfy4CbQ" key="diagramHeight" value="1188"/>
+    <property xmi:id="_o4diI03xEd-XpZWKfy4CbQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_o4diJE3xEd-XpZWKfy4CbQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_o4diJU3xEd-XpZWKfy4CbQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_o4diJk3xEd-XpZWKfy4CbQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_o4diJ03xEd-XpZWKfy4CbQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_o4diKE3xEd-XpZWKfy4CbQ" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_o4NDck3xEd-XpZWKfy4CbQ" presentation="org.topcased.modeler.uml.usecasediagram">
+      <element href="Value.usecase.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_tOWkUE3xEd-XpZWKfy4CbQ" position="22,25" size="185,30">
+      <property xmi:id="__lh5cIIGEd-gQ4lobK47Lw" key="backgroundColor" value="204,204,204"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_tOWkUU3xEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Value.usecase.uml#_tOXycE3xEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_lHeR4E3zEd-XpZWKfy4CbQ" position="23,71" size="184,25">
+      <property xmi:id="_A9B34IIHEd-gQ4lobK47Lw" key="backgroundColor" value="204,204,204"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_lHeR4U3zEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Value.usecase.uml#_lHfgAE3zEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

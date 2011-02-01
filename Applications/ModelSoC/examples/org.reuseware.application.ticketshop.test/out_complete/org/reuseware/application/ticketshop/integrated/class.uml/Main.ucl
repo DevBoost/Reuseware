@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.reuseware.coconut.compositionprogram:DerivedCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>reuseware</UCPI>
+  <UCPI>application</UCPI>
+  <UCPI>ticketshop</UCPI>
+  <UCPI>integrated</UCPI>
+  <UCPI>class.uml</UCPI>
+  <UCPI>Main.ucl</UCPI>
+  <compositionLinks source="//@fragmentInstances[name='Class%3AClerk']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','class']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','class']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_Hyy-QE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.1"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/ChangeSeat.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.1"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_Hyy-QE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3AShipment']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','dataclass']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','dataclass']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3AAddress']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','dataclass']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','dataclass']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AClerk2Shipment']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AClerk2Shipment']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AClerk']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AClerk2Shipment']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AShipment']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AClerk2Address']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AClerk2Address']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AClerk']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AClerk2Address']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AAddress']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3ACustomer']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','class']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','class']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_Y5wfME3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.0"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/ChangeSeat.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.0"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_Y5wfME3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3ASeat']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','dataclass']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','dataclass']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_4UPasFQzEd-uzP3NDEuuMw"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Seat']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Seat']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ACustomer']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Seat']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ASeat']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Address']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Address']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ACustomer']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Address']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AAddress']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Shipment']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Shipment']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ACustomer']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Shipment']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AShipment']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3AHall']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','class']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','class']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_WYOQME3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_WYOQME3oEd-uZb9cq7NKpg"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AHall2Seat']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_4UPasFQzEd-uzP3NDEuuMw"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AHall2Seat']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AHall']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_4UPasFQzEd-uzP3NDEuuMw"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3AHall2Seat']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ASeat']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_4UPasFQzEd-uzP3NDEuuMw"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3ABank']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','class']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','class']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.2"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_287NUE3vEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Class%3AAccount']/@portInstances[portName='Contrib',fragmentRoleName='Class',fracolNamespace=['org','reuseware','lib','systems','dataclass']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','dataclass']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ABank2Account']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ABank2Account']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ABank']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ABank2Account']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AAccount']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Account']/@portInstances[portName='Contrib',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='CLASS_CORE']/@portInstances[portName='Rec',fragmentRoleName='Core',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Account']/@portInstances[portName='Source',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3ACustomer']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <compositionLinks source="//@fragmentInstances[name='Association%3ACustomer2Account']/@portInstances[portName='Target',fragmentRoleName='Association',fracolNamespace=['org','reuseware','lib','systems','associate']]" target="//@fragmentInstances[name='Class%3AAccount']/@portInstances[portName='Self',fragmentRoleName='Associated',fracolNamespace=['org','reuseware','lib','systems','associate']]">
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+  </compositionLinks>
+  <fragmentInstances name="Class:Clerk">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>class</UFI>
+    <UFI>lib</UFI>
+    <UFI>Class.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_Hyy-QE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.1"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/ChangeSeat.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.1"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_Hyy-QE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+      <settings property="name" value="Clerk"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.4 //@compositionLinks.7">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="CLASS_CORE" targetPhysicalLocation="out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>class</UFI>
+    <UFI>lib</UFI>
+    <UFI>Core.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/ChangeSeat.odt#/0"/>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Core" portName="Rec" targetLinks="//@compositionLinks.0 //@compositionLinks.9 //@compositionLinks.20 //@compositionLinks.24">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Core" portName="Rec" targetLinks="//@compositionLinks.1 //@compositionLinks.2 //@compositionLinks.10 //@compositionLinks.25">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Core" portName="Rec" targetLinks="//@compositionLinks.3 //@compositionLinks.6 //@compositionLinks.11 //@compositionLinks.14 //@compositionLinks.17 //@compositionLinks.21 //@compositionLinks.26 //@compositionLinks.29">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>ticketshop</targetUFI>
+    <targetUFI>integrated</targetUFI>
+    <targetUFI>class.uml</targetUFI>
+    <targetUFI>Main.class.uml</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Shipment">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>dataclass</UFI>
+    <UFI>lib</UFI>
+    <UFI>EntityClass.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+      <settings property="name" value="Shipment"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.5 //@compositionLinks.19">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Address">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>dataclass</UFI>
+    <UFI>lib</UFI>
+    <UFI>EntityClass.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+      <settings property="name" value="Address"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.8 //@compositionLinks.16">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Clerk2Shipment">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToMany.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Shipment"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="shipment"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.4">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.5">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Clerk2Address">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToOne.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Address"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="address"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.6">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.7">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.8">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Customer">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>class</UFI>
+    <UFI>lib</UFI>
+    <UFI>Class.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_Y5wfME3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.0"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/ChangeSeat.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.0"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_Y5wfME3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+      <settings property="name" value="Customer"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.9">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.12 //@compositionLinks.15 //@compositionLinks.18 //@compositionLinks.30">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Seat">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>dataclass</UFI>
+    <UFI>lib</UFI>
+    <UFI>EntityClass.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_4UPasFQzEd-uzP3NDEuuMw"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+      <settings property="name" value="Seat"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.10">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.13 //@compositionLinks.23">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Customer2Seat">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToOne.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_gJMhYE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Seat"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="seat"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.11">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.12">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.13">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Customer2Address">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToOne.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_dGp9cE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Address"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="address"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.14">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.15">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.16">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Customer2Shipment">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToOne.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_e3QYYE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Shipment"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="shipment"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.17">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.18">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.19">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Hall">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>class</UFI>
+    <UFI>lib</UFI>
+    <UFI>Class.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_WYOQME3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_WYOQME3oEd-uZb9cq7NKpg"/>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+      <settings property="name" value="Hall"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.20">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.22">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Hall2Seat">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToMany.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/ChangeSeat/Hall.uml#_4UPasFQzEd-uzP3NDEuuMw"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Seat"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="seat"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.21">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.22">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.23">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Bank">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>class</UFI>
+    <UFI>lib</UFI>
+    <UFI>Class.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/odt/BookTicket.odt#/0/@documentContent/@body/@officeBodyContentGroup.0/@p.4/@span.2"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_287NUE3vEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+      <settings property="name" value="Bank"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="class.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.24">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>class</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.27">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Class:Account">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>dataclass</UFI>
+    <UFI>lib</UFI>
+    <UFI>EntityClass.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+      <settings property="name" value="Account"/>
+      <settings property="namespace" value="org/reuseware/application/ticketshop/integrated/class.uml"/>
+    </portInstances>
+    <portInstances fracolName="dataclass.fracol" fragmentRoleName="Class" portName="Contrib" sourceLinks="//@compositionLinks.25">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>dataclass</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Associated" portName="Self" targetLinks="//@compositionLinks.28 //@compositionLinks.31">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Bank2Account">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToMany.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Bank.uml#_AFWxcE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Account"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="account"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.26">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.27">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.28">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="Association:Customer2Account">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>lib</UFI>
+    <UFI>systems</UFI>
+    <UFI>associate</UFI>
+    <UFI>lib</UFI>
+    <UFI>AssociationToOne.class.uml</UFI>
+    <arguments key="format" value="class.uml"/>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <arguments key="outFolder" value="out"/>
+    <derivedFrom href="../../../../../../../store/org/reuseware/application/ticketshop/fragments/usecase.uml/BookTicket/Customer.uml#_aYjYcE3wEd-XpZWKfy4CbQ"/>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Name">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="Account"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="NameLowerCase">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+      <settings property="name" value="account"/>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Contrib" sourceLinks="//@compositionLinks.29">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Source" sourceLinks="//@compositionLinks.30">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="associate.fracol" fragmentRoleName="Association" portName="Target" sourceLinks="//@compositionLinks.31">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <fracolNamespace>associate</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:DerivedCompositionProgram>

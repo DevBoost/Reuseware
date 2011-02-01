@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_eV7M4BilEd6gGoP9gUErXQ" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_eXR3wBilEd6gGoP9gUErXQ" type="2035">
+    <children xmi:type="notation:Node" xmi:id="_eXfTIBilEd6gGoP9gUErXQ" type="5069"/>
+    <children xmi:type="notation:Node" xmi:id="_eXjkkBilEd6gGoP9gUErXQ" type="5070"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eXR3wRilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:NATService" href="NATService.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eXR3whilEd6gGoP9gUErXQ" x="36" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_eXjkkRilEd6gGoP9gUErXQ" type="2044">
+    <children xmi:type="notation:Node" xmi:id="_eXkysBilEd6gGoP9gUErXQ" type="5087"/>
+    <children xmi:type="notation:Node" xmi:id="_eXlZwBilEd6gGoP9gUErXQ" type="5088"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eXjkkhilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:NATListBasedSettings" href="NATService.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eXjkkxilEd6gGoP9gUErXQ" x="9" y="180"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_eXmA0BilEd6gGoP9gUErXQ" type="2061">
+    <children xmi:type="notation:Node" xmi:id="_eXsHcBilEd6gGoP9gUErXQ" type="5121"/>
+    <children xmi:type="notation:Node" xmi:id="_eYMdwBilEd6gGoP9gUErXQ" type="5122"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eXmA0RilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:FilterList" href="NATService.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eXmA0hilEd6gGoP9gUErXQ" x="18" y="270"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_eYNE0BilEd6gGoP9gUErXQ" type="2052">
+    <children xmi:type="notation:Node" xmi:id="_eYR9UBilEd6gGoP9gUErXQ" type="5103"/>
+    <children xmi:type="notation:Node" xmi:id="_eYSkYBilEd6gGoP9gUErXQ" type="5104"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eYNE0RilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPHeadersFilter" href="NATService.cim#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eYNE0hilEd6gGoP9gUErXQ" x="27" y="369"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_eV7M4RilEd6gGoP9gUErXQ"/>
+  <element xmi:type="cim:CIM_Model" href="NATService.cim#/"/>
+</notation:Diagram>

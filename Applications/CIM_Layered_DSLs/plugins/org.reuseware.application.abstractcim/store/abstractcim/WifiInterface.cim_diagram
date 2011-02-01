@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_wEECkBilEd6gGoP9gUErXQ" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_wGtt8BilEd6gGoP9gUErXQ" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_wG5UIBilEd6gGoP9gUErXQ" type="5005"/>
+    <children xmi:type="notation:Node" xmi:id="_wG_awBilEd6gGoP9gUErXQ" type="5006"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_wGtt8RilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiPort" href="WifiInterface.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wGtt8hilEd6gGoP9gUErXQ" x="36" y="18"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_wHAB0BilEd6gGoP9gUErXQ" type="2034">
+    <children xmi:type="notation:Node" xmi:id="_wHIksBilEd6gGoP9gUErXQ" type="5067"/>
+    <children xmi:type="notation:Node" xmi:id="_wHJLwBilEd6gGoP9gUErXQ" type="5068"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_wHAB0RilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiEndPoint" href="WifiInterface.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wHAB0hilEd6gGoP9gUErXQ" x="18" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_wHJy0BilEd6gGoP9gUErXQ" type="2048">
+    <children xmi:type="notation:Node" xmi:id="_wHKZ4BilEd6gGoP9gUErXQ" type="5095"/>
+    <children xmi:type="notation:Node" xmi:id="_wHM2IBilEd6gGoP9gUErXQ" type="5096"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_wHJy0RilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiEndpointSettings" href="WifiInterface.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wHJy0hilEd6gGoP9gUErXQ" x="243" y="90"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_wEECkRilEd6gGoP9gUErXQ"/>
+  <element xmi:type="cim:CIM_Model" href="WifiInterface.cim#/"/>
+</notation:Diagram>

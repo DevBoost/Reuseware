@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:valueflow="http://www.emftext.org/language/valueflow" xmi:id="_lyB-oSV3EeCsOIfnX6yosA" type="Valueflow" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_lyB-oiV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lyB-oyV3EeCsOIfnX6yosA" type="5003">
+      <children xmi:type="notation:Shape" xmi:id="_lyClsCV3EeCsOIfnX6yosA" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyClsSV3EeCsOIfnX6yosA" type="5002"/>
+        <element xmi:type="valueflow:TakeState" href="ChangeSeat.valueflow#//@agents.0/@states.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyClsiV3EeCsOIfnX6yosA" x="98" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lyClsyV3EeCsOIfnX6yosA" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyCltCV3EeCsOIfnX6yosA" type="5001"/>
+        <element xmi:type="valueflow:GiveState" href="ChangeSeat.valueflow#//@agents.0/@states.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyCltSV3EeCsOIfnX6yosA" x="8" y="4"/>
+      </children>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_lyCltiV3EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_lyCltyV3EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="ChangeSeat.valueflow#//@agents.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyCluCV3EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_lyCluSV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lyCluiV3EeCsOIfnX6yosA" type="5003">
+      <children xmi:type="notation:Shape" xmi:id="_lyCluyV3EeCsOIfnX6yosA" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyClvCV3EeCsOIfnX6yosA" type="5001"/>
+        <element xmi:type="valueflow:GiveState" href="ChangeSeat.valueflow#//@agents.1/@states.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyClvSV3EeCsOIfnX6yosA" x="8" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lyDMwCV3EeCsOIfnX6yosA" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyDMwSV3EeCsOIfnX6yosA" type="5002"/>
+        <element xmi:type="valueflow:TakeState" href="ChangeSeat.valueflow#//@agents.1/@states.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyDMwiV3EeCsOIfnX6yosA" x="98" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lyDMwyV3EeCsOIfnX6yosA" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyDMxCV3EeCsOIfnX6yosA" type="5001"/>
+        <element xmi:type="valueflow:GiveState" href="ChangeSeat.valueflow#//@agents.1/@states.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyDMxSV3EeCsOIfnX6yosA" x="8" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lyDMxiV3EeCsOIfnX6yosA" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyDz0CV3EeCsOIfnX6yosA" type="5002"/>
+        <element xmi:type="valueflow:TakeState" href="ChangeSeat.valueflow#//@agents.1/@states.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyDz0SV3EeCsOIfnX6yosA" x="98" y="4"/>
+      </children>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_lyDz0iV3EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_lyDz0yV3EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="ChangeSeat.valueflow#//@agents.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyDz1CV3EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_lyDz1SV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lyDz1iV3EeCsOIfnX6yosA" type="5003">
+      <children xmi:type="notation:Shape" xmi:id="_lyDz1yV3EeCsOIfnX6yosA" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyDz2CV3EeCsOIfnX6yosA" type="5002"/>
+        <element xmi:type="valueflow:TakeState" href="ChangeSeat.valueflow#//@agents.2/@states.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyDz2SV3EeCsOIfnX6yosA" x="98" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lyDz2iV3EeCsOIfnX6yosA" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lyDz2yV3EeCsOIfnX6yosA" type="5001"/>
+        <element xmi:type="valueflow:GiveState" href="ChangeSeat.valueflow#//@agents.2/@states.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyDz3CV3EeCsOIfnX6yosA" x="8" y="4"/>
+      </children>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_lyEa4CV3EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_lyEa4SV3EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="ChangeSeat.valueflow#//@agents.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lyEa4iV3EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_lyEa4yV3EeCsOIfnX6yosA"/>
+  <element xmi:type="valueflow:Model" href="ChangeSeat.valueflow#/"/>
+</notation:Diagram>

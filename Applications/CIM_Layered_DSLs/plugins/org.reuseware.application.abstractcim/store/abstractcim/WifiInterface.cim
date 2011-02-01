@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:WiFiPort" elementName="WiFiPort" name="WiFiPort" requestedState="Enabled" creationClassName="WiFiPort" deviceId="WiFiPort" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" portImplementsEndPoint="//@elements.1" linkTechnology="Other" otherLinktechnology="WiFi"/>
+  <elements xsi:type="cim:WiFiEndPoint" elementName="WiFiAccessPoint" dependencies="//@elements.2" name="WiFiAccessPoint" requestedState="Enabled" creationClassName="WiFiEndPoint" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" protocolIFType="_802_11g"/>
+  <elements xsi:type="cim:WiFiEndpointSettings" caption="WiFiEndpointSettings" elementName="WiFiEndpointSettings" configurationName="WiFiEndpointSettings" instanceID="WiFiEndpointSettings" authenticationMethod="SharedKey" BSSType="Infrastructure" encryptionMethod="WEP" SSID="WIFI_SSID">
+    <keys>WEP_KEY</keys>
+  </elements>
+</cim:CIM_Model>

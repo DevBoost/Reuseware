@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ComputerSystem" description="DSL Home gateway" elementName="ZyxelRouter" name="ZyxelRouter" requestedState="Enabled" creationClassName="ComputerSystem" systemDevices="//@elements.1 //@elements.4 //@elements.14" hostedServices="//@elements.17" hostedForwardingServices="//@elements.20" hostedFilterList="//@elements.22">
+    <dedicated>Router</dedicated>
+    <dedicated>Hub</dedicated>
+    <dedicated>Gateway</dedicated>
+    <dedicated>Other</dedicated>
+    <otherDedicatedDescriptions>HomeGateway</otherDedicatedDescriptions>
+  </elements>
+  <elements xsi:type="cim:ADSLModem" elementName="ADSL1" name="ProviderADSLModem" creationClassName="ADSLModem" deviceId="ProviderADSLModem" portOnDevice="//@elements.2"/>
+  <elements xsi:type="cim:NetworkPort" description="Provider ADSL network port" elementName="ProviderADSLNetworkPort" name="ProviderADSLNetworkPort" requestedState="Enabled" creationClassName="NetworkPort" deviceId="ProviderADSLNetworkPort" systemCreationClassName="ComputerSystem" systemName="CiscoProviderRouter" maxSpeed="20480" portImplementsEndPoint="//@elements.3" linkTechnology="Other" otherLinktechnology="ADSL"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" description="IP address" elementName="ProviderWANIP" name="ProviderWANIP" requestedState="Enabled" creationClassName="IPProtocolEndpint" systemCreationClassName="ComputerSystem" systemName="CiscoProviderRouter" nameFormat="" protocolIFType="IPv4" addressOrigin="Static" IPv4Address="213.125.114.66" subnetMask="255.255.255.0"/>
+  <elements xsi:type="cim:LogicalModule" caption="" description="Built-inHub" elementName="Ethernet1" name="BuiltInHub" requestedState="Enabled" creationClassName="LogicalModule" deviceId="BuiltInHub" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" modulePort="//@elements.5 //@elements.6 //@elements.7 //@elements.8 //@elements.9 //@elements.10 //@elements.11 //@elements.12"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 0X" elementName="EthernetPort0" name="EthernetPort0" creationClassName="EthernetPort" deviceId="EthernetPort0" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 1" elementName="EthernetPort1" name="EthernetPort1" creationClassName="EthernetPort" deviceId="EthernetPort1" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="3" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 2" elementName="EthernetPort2" name="EthernetPort2" creationClassName="EthernetPort" deviceId="EthernetPort2" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="3" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 3" elementName="EthernetPort3" name="EthernetPort3" creationClassName="EthernetPort" deviceId="EthernetPort3" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="3" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 4" elementName="EthernetPort4" name="EthernetPort4" creationClassName="EthernetPort" deviceId="EthernetPort4" systemCreationClassName="ComputerSystem" systemName="" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="4" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 5" elementName="EthernetPort5" name="EthernetPort5" creationClassName="EthernetPort" deviceId="EthernetPort5" systemCreationClassName="ComputerSystem" systemName="" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="5" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 6" elementName="EthernetPort6" name="EthernetPort6" creationClassName="EthernetPort" deviceId="EthernetPort6" systemCreationClassName="ComputerSystem" systemName="" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="6" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port number 7" elementName="EthernetPort7" name="EthernetPort7" creationClassName="EthernetPort" deviceId="EthernetPort7" systemCreationClassName="ComputerSystem" systemName="" portType="10-100BaseT" portImplementsEndPoint="//@elements.13" portNumber="7" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" description="IP address" elementName="IP" name="IP" requestedState="Enabled" creationClassName="IPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="" nameFormat="" protocolIFType="IPv4" addressOrigin="Static" IPv4Address="192.168.1.1" subnetMask="255.255.255.0"/>
+  <elements xsi:type="cim:WiFiPort" elementName="WiFiPort" name="WiFiPort" requestedState="Enabled" creationClassName="WiFiPort" deviceId="WiFiPort" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" portImplementsEndPoint="//@elements.15 //@elements.13" linkTechnology="Other" otherLinktechnology="WiFi"/>
+  <elements xsi:type="cim:WiFiEndPoint" elementName="Wifi1" dependencies="//@elements.16" name="WiFiAccessPoint" requestedState="Enabled" creationClassName="WiFiEndPoint" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" protocolIFType="_802_11g"/>
+  <elements xsi:type="cim:WiFiEndpointSettings" caption="WiFiEndpointSettings" elementName="WiFiEndpointSettings" configurationName="WiFiEndpointSettings" instanceID="WiFiEndpointSettings" authenticationMethod="SharedKey" BSSType="Infrastructure" encryptionMethod="WEP" SSID="WIFI_SSID">
+    <keys>WEP_KEY</keys>
+  </elements>
+  <elements xsi:type="cim:ProtocolService" caption="DHCPServer" description="DHCPServer" elementName="DHCP1" hostedDependency="//@elements.18" name="DHCPServer" requestedState="Enabled" creationClassName="ProtocolService" started="true" systemCreationClassName="ComputerSystem" systemName="PersonalComputer" serviceAccessBySAP="//@elements.19" otherProtocol="DHCP" protocol="Other"/>
+  <elements xsi:type="cim:RangeOfIPAddresses" caption="DHCPIPRange" description="DHCPIPRange" elementName="LANDHCPIPRange" instanceID="LANDHCPIPRange" startAddress="192.168.1.10" endAddress="192.168.1.254" addressType="IPv4"/>
+  <elements xsi:type="cim:UDPProtocolEndpoint" elementName="DHCPListeningPort" name="DHCPListeningPort" creationClassName="UDPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" bindsTo="//@elements.13" protocolIFType="IPv4" portNumber="67"/>
+  <elements xsi:type="cim:NATService" description="NATService" elementName="NAT1" dependencies="//@elements.21" name="NATService" requestedState="Enabled" creationClassName="NATService" started="true" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" protocolType="" NATServiceRunningOnEndpoint="//@elements.3"/>
+  <elements xsi:type="cim:NATListBasedSettings" caption="" description="DefaultNATServiceSetting" elementName="DefaultNATServiceSetting" configurationName="DefaultNATServiceSetting" instanceID="DefaultNATServiceSetting" addressesToBeTranslated="//@elements.22"/>
+  <elements xsi:type="cim:FilterList" caption="PortAddressTranslation" description="PortAddressTranslation" elementName="PortAddressTranslation" dependencies="//@elements.23" name="PortAddressTranslation" creationClassName="FilterList" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter"/>
+  <elements xsi:type="cim:IPHeadersFilter" caption="HTTPPortMapping" description="HTTPPortMapping" elementName="HTTPPortMapping" name="HTTPPortMapping" hdrDestPortEnd="80" hdrDestPortStart="80" hdrSrcPortEnd="80" hdrSrcPortStart="80">
+    <hdrDestAddress>9</hdrDestAddress>
+    <hdrDestAddress>1</hdrDestAddress>
+    <hdrDestAddress>168</hdrDestAddress>
+    <hdrDestAddress>192</hdrDestAddress>
+    <hdrDestAddressEndOfRange>9</hdrDestAddressEndOfRange>
+    <hdrDestAddressEndOfRange>1</hdrDestAddressEndOfRange>
+    <hdrDestAddressEndOfRange>168</hdrDestAddressEndOfRange>
+    <hdrDestAddressEndOfRange>192</hdrDestAddressEndOfRange>
+  </elements>
+</cim:CIM_Model>

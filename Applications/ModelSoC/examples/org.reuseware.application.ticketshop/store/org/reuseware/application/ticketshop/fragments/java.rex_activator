@@ -1,0 +1,20 @@
+compositionlanguage org.reuseware.lib.systems.usecase.cl.odt(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.odt(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.usecase_uml(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.exchange.cl.usecase_uml(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.flow.cl.valueflow(format='java',outFolder='out')
+
+compositionlanguage org.reuseware.lib.systems.class.cl.odt(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.class.cl.usecase_uml(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.dataclass.cl.usecase_uml(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.associate.cl.usecase_uml(format='java',outFolder='out')
+
+compositionlanguage org.reuseware.lib.systems.trigger.cl.valueflow(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.factory.cl.odt(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.factory.cl.usecase_uml(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.typebinding.cl.odt(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.typebinding.cl.usecase_uml(format='java',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.app.cl.odt(format='java',outFolder='out')
+
+//components: The factory definitions in Java
+componentmodel org.reuseware.lib.systems.factory.cm.java

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_plpUECJfEeCgtqHguJAAbg" type="Compositionprogram" name="wirelessHomeDevice.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_rMbEoCJfEeCgtqHguJAAbg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rMcSwCJfEeCgtqHguJAAbg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_rNCIoCJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_rNCvsCJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rNDWwCJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_rNCIoSJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_rNCIoiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_rNCIoyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='wirelessDynamicIPInterface.cim']/@portInstances[portName='PDALANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNCIpCJfEeCgtqHguJAAbg" x="27" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_rNFzACJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_rNGaECJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rNHBICJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_rNFzASJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_rNFzAiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_rNFzAyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='wirelessDynamicIPInterface.cim']/@portInstances[portName='PDAWiFiPort',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNFzBCJfEeCgtqHguJAAbg" x="135" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_rNJdYCJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_rNKEcCJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rNKEcSJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_rNJdYSJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_rNJdYiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_rNJdYyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='wirelessDynamicIPInterface.cim']/@portInstances[portName='PDAWiFiAccessPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rNJdZCJfEeCgtqHguJAAbg" x="-19" y="16"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_rMbEoSJfEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rMbEoiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_rMbEoyJfEeCgtqHguJAAbg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='wirelessDynamicIPInterface.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rMbEpCJfEeCgtqHguJAAbg" x="135" y="54"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uuUeECJfEeCgtqHguJAAbg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uuVFICJfEeCgtqHguJAAbg" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_uvhX8CJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uvh_ACJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uvimECJfEeCgtqHguJAAbg" x="24" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uvhX8SJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uvhX8iJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uvhX8yJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='System',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvhX9CJfEeCgtqHguJAAbg" x="153" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uvkbQCJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uvlpYCJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uvlpYSJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uvkbQSJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uvkbQiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uvkbQyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='?HostedService',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvlCUCJfEeCgtqHguJAAbg" x="9" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uvoFoCJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uvpTwCJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uvpTwSJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uvoFoSJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uvoFoiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uvoFoyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='?FilterList',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvoFpCJfEeCgtqHguJAAbg" x="135" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uvsXECJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uvs-ICJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uvs-ISJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uvsXESJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uvsXEiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uvsXEyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='?HostedForwardingService',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvsXFCJfEeCgtqHguJAAbg" x="180"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uvwBcCJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uvxPkCJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uvxPkSJfEeCgtqHguJAAbg" x="24" y="1"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uvwBcSJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uvwBciJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uvwBcyJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='*Modules',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvwBdCJfEeCgtqHguJAAbg" x="63" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uv0S4CJfEeCgtqHguJAAbg" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uv058CJfEeCgtqHguJAAbg" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uv1hACJfEeCgtqHguJAAbg" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uv0S4SJfEeCgtqHguJAAbg"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uv0S4iJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uv0S4yJfEeCgtqHguJAAbg"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uv0S5CJfEeCgtqHguJAAbg" x="180" y="29"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uuUeESJfEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uuUeEiJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uuUeEyJfEeCgtqHguJAAbg"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="wirelessHomeDevice.ucl#//@fragmentInstances[name='system.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uuUeFCJfEeCgtqHguJAAbg" x="207" y="306" width="181" height="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_plpUESJfEeCgtqHguJAAbg"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="wirelessHomeDevice.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_38WT4CJfEeCgtqHguJAAbg" type="4001" source="_rNFzACJfEeCgtqHguJAAbg" target="_uvwBcCJfEeCgtqHguJAAbg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_38WT4SJfEeCgtqHguJAAbg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_38WT4iJfEeCgtqHguJAAbg" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="wirelessHomeDevice.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_38WT4yJfEeCgtqHguJAAbg" points="[0, 10, 0, -83]$[0, 93, 0, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_38ePsCJfEeCgtqHguJAAbg" id="(0.5,0.0)"/>
+  </edges>
+</notation:Diagram>

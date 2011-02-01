@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:element name="chart" substitutionGroup="text:office-chart-content-main"/>
+  <xs:attributeGroup name="class">
+    <xs:attribute name="class" use="required" form="qualified" type="text:namespacedToken"/>
+  </xs:attributeGroup>
+  <xs:attribute name="column-mapping" type="text:string"/>
+  <xs:attribute name="row-mapping" type="text:string"/>
+  <xs:attribute name="style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="title">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="text:p"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:chart-title-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subtitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="text:p"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:chart-title-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="text:p"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:chart-title-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="legend">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-legend-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="legend-position">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="start"/>
+        <xs:enumeration value="end"/>
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="bottom"/>
+        <xs:enumeration value="top-start"/>
+        <xs:enumeration value="bottom-start"/>
+        <xs:enumeration value="top-end"/>
+        <xs:enumeration value="bottom-end"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="legend-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="start"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="end"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="plot-area">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="dr3d:light"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="chart:axis"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="chart:series"/>
+        <xs:element minOccurs="0" ref="chart:stock-gain-marker"/>
+        <xs:element minOccurs="0" ref="chart:stock-loss-marker"/>
+        <xs:element minOccurs="0" ref="chart:stock-range-line"/>
+        <xs:element minOccurs="0" ref="chart:wall"/>
+        <xs:element minOccurs="0" ref="chart:floor"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:chart-plot-area-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="data-source-has-labels">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="row"/>
+        <xs:enumeration value="column"/>
+        <xs:enumeration value="both"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="wall">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-wall-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="floor">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-floor-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="axis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="chart:title"/>
+        <xs:element minOccurs="0" ref="chart:categories"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="chart:grid"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:chart-axis-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="dimension">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="x"/>
+        <xs:enumeration value="y"/>
+        <xs:enumeration value="z"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="name" type="text:string"/>
+  <xs:element name="grid">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-grid-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="class1">
+    <xs:attribute name="class" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="major"/>
+          <xs:enumeration value="minor"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="series">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="chart:domain"/>
+        <xs:element minOccurs="0" ref="chart:mean-value"/>
+        <xs:element minOccurs="0" ref="chart:regression-curve"/>
+        <xs:element minOccurs="0" ref="chart:error-indicator"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="chart:data-point"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:chart-series-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="values-cell-range-address" type="text:cellRangeAddress"/>
+  <xs:attribute name="label-cell-address" type="text:cellAddress"/>
+  <xs:attribute name="attached-axis" type="text:string"/>
+  <xs:element name="domain">
+    <xs:complexType>
+      <xs:attribute ref="table:cell-range-address"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:attribute ref="table:cell-range-address"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data-point">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-data-point-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="repeated" type="text:nonNegativeInteger"/>
+  <xs:element name="mean-value">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-mean-value-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="error-indicator">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-error-indicator-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="regression-curve">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:chart-regression-curve-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stock-gain-marker">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-stock-marker-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stock-loss-marker">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-stock-marker-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stock-range-line">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-stock-marker-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symbol-image">
+    <xs:complexType>
+      <xs:attribute ref="xlink:href" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="scale-text" type="text:boolean"/>
+  <xs:attribute name="three-dimensional" type="text:boolean"/>
+  <xs:attribute name="deep" type="text:boolean"/>
+  <xs:attribute name="symbol-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="automatic"/>
+        <xs:enumeration value="named-symbol"/>
+        <xs:enumeration value="image"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="symbol-name">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="square"/>
+        <xs:enumeration value="diamond"/>
+        <xs:enumeration value="arrow-down"/>
+        <xs:enumeration value="arrow-up"/>
+        <xs:enumeration value="arrow-right"/>
+        <xs:enumeration value="arrow-left"/>
+        <xs:enumeration value="bow-tie"/>
+        <xs:enumeration value="hourglass"/>
+        <xs:enumeration value="circle"/>
+        <xs:enumeration value="star"/>
+        <xs:enumeration value="x"/>
+        <xs:enumeration value="plus"/>
+        <xs:enumeration value="asterisk"/>
+        <xs:enumeration value="horizontal-bar"/>
+        <xs:enumeration value="vertical-bar"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="symbol-width" type="text:nonNegativeLength"/>
+  <xs:attribute name="symbol-height" type="text:nonNegativeLength"/>
+  <xs:attribute name="vertical" type="text:boolean"/>
+  <xs:attribute name="connect-bars" type="text:boolean"/>
+  <xs:attribute name="gap-width" type="text:integer"/>
+  <xs:attribute name="overlap" type="text:integer"/>
+  <xs:attribute name="japanese-candle-stick" type="text:boolean"/>
+  <xs:attribute name="interpolation">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="cubic-spline"/>
+        <xs:enumeration value="b-spline"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="spline-order" type="text:positiveInteger"/>
+  <xs:attribute name="spline-resolution" type="text:positiveInteger"/>
+  <xs:attribute name="pie-offset" type="text:nonNegativeInteger"/>
+  <xs:attribute name="lines" type="text:boolean"/>
+  <xs:attribute name="solid-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="cuboid"/>
+        <xs:enumeration value="cylinder"/>
+        <xs:enumeration value="cone"/>
+        <xs:enumeration value="pyramid"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="stacked" type="text:boolean"/>
+  <xs:attribute name="percentage" type="text:boolean"/>
+  <xs:attribute name="link-data-style-to-source" type="text:boolean"/>
+  <xs:attribute name="visible" type="text:boolean"/>
+  <xs:attribute name="logarithmic" type="text:boolean"/>
+  <xs:attribute name="maximum" type="text:double"/>
+  <xs:attribute name="minimum" type="text:double"/>
+  <xs:attribute name="origin" type="text:double"/>
+  <xs:attribute name="interval-major" type="text:double"/>
+  <xs:attribute name="interval-minor-divisor" type="text:positiveInteger"/>
+  <xs:attribute name="tick-marks-major-inner" type="text:boolean"/>
+  <xs:attribute name="tick-marks-major-outer" type="text:boolean"/>
+  <xs:attribute name="tick-marks-minor-inner" type="text:boolean"/>
+  <xs:attribute name="tick-marks-minor-outer" type="text:boolean"/>
+  <xs:attribute name="display-label" type="text:boolean"/>
+  <xs:attribute name="text-overlap" type="text:boolean"/>
+  <xs:attribute name="label-arrangement">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="side-by-side"/>
+        <xs:enumeration value="stagger-even"/>
+        <xs:enumeration value="stagger-odd"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="data-label-number">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="value"/>
+        <xs:enumeration value="percentage"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="data-label-text" type="text:boolean"/>
+  <xs:attribute name="data-label-symbol" type="text:boolean"/>
+  <xs:attribute name="mean-value" type="text:boolean"/>
+  <xs:attribute name="error-category">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="variance"/>
+        <xs:enumeration value="standard-deviation"/>
+        <xs:enumeration value="percentage"/>
+        <xs:enumeration value="error-margin"/>
+        <xs:enumeration value="constant"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="error-percentage" type="text:double"/>
+  <xs:attribute name="error-margin" type="text:double"/>
+  <xs:attribute name="error-lower-limit" type="text:double"/>
+  <xs:attribute name="error-upper-limit" type="text:double"/>
+  <xs:attribute name="error-upper-indicator" type="text:boolean"/>
+  <xs:attribute name="error-lower-indicator" type="text:boolean"/>
+  <xs:attribute name="series-source">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="columns"/>
+        <xs:enumeration value="rows"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="regression-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="linear"/>
+        <xs:enumeration value="logarithmic"/>
+        <xs:enumeration value="exponential"/>
+        <xs:enumeration value="power"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

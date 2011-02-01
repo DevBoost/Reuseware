@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_tA0UsClVEeCnM9JgOl9MNA" type="Compositionprogram" name="SecureCustomer.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_uOj6MClVEeCnM9JgOl9MNA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uOkhQClVEeCnM9JgOl9MNA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_uXGLIClVEeCnM9JgOl9MNA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uXGyMClVEeCnM9JgOl9MNA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uXHZQClVEeCnM9JgOl9MNA" x="-169" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uXGLISlVEeCnM9JgOl9MNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uXGLIilVEeCnM9JgOl9MNA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uXGLIylVEeCnM9JgOl9MNA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='Customer.java']/@portInstances[portName='getName_Entry',fragmentRoleName='MethodEntry',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uXGLJClVEeCnM9JgOl9MNA" x="281" y="81"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_uXInYClVEeCnM9JgOl9MNA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uXJOcClVEeCnM9JgOl9MNA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uXJOcSlVEeCnM9JgOl9MNA" x="-158" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uXInYSlVEeCnM9JgOl9MNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uXInYilVEeCnM9JgOl9MNA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_uXInYylVEeCnM9JgOl9MNA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='Customer.java']/@portInstances[portName='getSSN_Entry',fragmentRoleName='MethodEntry',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uXInZClVEeCnM9JgOl9MNA" x="281" y="18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bhlLwSlXEeCVCK7rrCPvog" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bhnoAClXEeCVCK7rrCPvog" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bhnoASlXEeCVCK7rrCPvog" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bhly0ClXEeCVCK7rrCPvog"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bhly0SlXEeCVCK7rrCPvog" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_bhly0ilXEeCVCK7rrCPvog"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='Customer.java']/@portInstances[portName='Customer',fragmentRoleName='Statement',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bhly0ylXEeCVCK7rrCPvog" x="-19" y="54"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uOj6MSlVEeCnM9JgOl9MNA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uOj6MilVEeCnM9JgOl9MNA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uOj6MylVEeCnM9JgOl9MNA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='Customer.java']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uOj6NClVEeCnM9JgOl9MNA" x="45" y="162" width="282" height="109"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_xM8W4ClVEeCnM9JgOl9MNA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xM898ClVEeCnM9JgOl9MNA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_xNIkIClVEeCnM9JgOl9MNA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xNJLMClVEeCnM9JgOl9MNA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xNJLMSlVEeCnM9JgOl9MNA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_xNIkISlVEeCnM9JgOl9MNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_xNIkIilVEeCnM9JgOl9MNA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_xNIkIylVEeCnM9JgOl9MNA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='SecurityCheckFragment.java']/@portInstances[portName='SecurityCheckFragment',fragmentRoleName='Statement',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xNIkJClVEeCnM9JgOl9MNA" x="-19" y="18"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_xM8W4SlVEeCnM9JgOl9MNA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_xM8W4ilVEeCnM9JgOl9MNA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_xM8W4ylVEeCnM9JgOl9MNA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='SecurityCheckFragment.java']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xM8W5ClVEeCnM9JgOl9MNA" x="432" y="162" width="226" height="55"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_e_akkClXEeCVCK7rrCPvog" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_bysClXEeCVCK7rrCPvog" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_e_33kClXEeCVCK7rrCPvog" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_e_4eoClXEeCVCK7rrCPvog" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_e_5FsClXEeCVCK7rrCPvog" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_e_33kSlXEeCVCK7rrCPvog"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_e_33kilXEeCVCK7rrCPvog" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_e_33kylXEeCVCK7rrCPvog"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='SecurityCheckFragment.java2']/@portInstances[portName='SecurityCheckFragment',fragmentRoleName='Statement',fracolNamespace=['org','reuseware','application','reusejava','compositionSystem']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_33lClXEeCVCK7rrCPvog" x="-19" y="18"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_e_akkSlXEeCVCK7rrCPvog"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_e_akkilXEeCVCK7rrCPvog" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_e_akkylXEeCVCK7rrCPvog"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="SecureCustomer.ucl#//@fragmentInstances[name='SecurityCheckFragment.java2']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_aklClXEeCVCK7rrCPvog" x="432" y="225" width="226" height="46"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_tA0UsSlVEeCnM9JgOl9MNA"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="SecureCustomer.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_yL4EUClVEeCnM9JgOl9MNA" type="4001" source="_xNIkIClVEeCnM9JgOl9MNA" target="_uXInYClVEeCnM9JgOl9MNA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_yL4EUSlVEeCnM9JgOl9MNA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yL4EUilVEeCnM9JgOl9MNA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="SecureCustomer.ucl#//@compositionLinks.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yL4EUylVEeCnM9JgOl9MNA" points="[-10, 1, 77, -12]$[-77, 11, 10, -2]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_hgW3UClXEeCVCK7rrCPvog" type="4001" source="_e_33kClXEeCVCK7rrCPvog" target="_uXGLIClVEeCnM9JgOl9MNA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_hgW3USlXEeCVCK7rrCPvog"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_hgW3UilXEeCVCK7rrCPvog" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="SecureCustomer.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hgW3UylXEeCVCK7rrCPvog" points="[-10, -4, 77, 27]$[-77, -30, 10, 1]"/>
+  </edges>
+</notation:Diagram>

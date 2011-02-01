@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>modelplex</UCPI>
+  <UCPI>cim</UCPI>
+  <UCPI>tidlibrary</UCPI>
+  <UCPI>level2</UCPI>
+  <UCPI>logicalInterfaces</UCPI>
+  <UCPI>wirelessDynamicIPInterface</UCPI>
+  <UCPI>wirelessDynamicIPInterface.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='dhcpClient.cim']/@portInstances[portName='contents',fragmentRoleName='Element',fracolNamespace=['org','reuseware','application','cim','fracol']]" target="//@fragmentInstances[name='CORE']/@portInstances[portName='extension',fragmentRoleName='Core',fracolNamespace=['org','reuseware','application','cim','fracol']]"/>
+  <compositionLinks source="//@fragmentInstances[name='ipConnectedToGateway.cim']/@portInstances[portName='contents',fragmentRoleName='Element',fracolNamespace=['org','reuseware','application','cim','fracol']]" target="//@fragmentInstances[name='CORE']/@portInstances[portName='extension',fragmentRoleName='Core',fracolNamespace=['org','reuseware','application','cim','fracol']]"/>
+  <compositionLinks source="//@fragmentInstances[name='ipConnectedToGateway.cim']/@portInstances[portName='IPConnectedToGateway',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='dhcpClient.cim']/@portInstances[portName='?Dependency',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <compositionLinks source="//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='contents',fragmentRoleName='Element',fracolNamespace=['org','reuseware','application','cim','fracol']]" target="//@fragmentInstances[name='CORE']/@portInstances[portName='extension',fragmentRoleName='Core',fracolNamespace=['org','reuseware','application','cim','fracol']]"/>
+  <compositionLinks source="//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='*EndPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='ipConnectedToGateway.cim']/@portInstances[portName='IPConnectedToGateway',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <compositionLinks source="//@fragmentInstances[name='dhcpClient.cim']/@portInstances[portName='DHCPClient',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='*EndPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <fragmentInstances name="CORE" targetPhysicalLocation="out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>cim</UFI>
+    <UFI>lib</UFI>
+    <UFI>EmptyCore.cim</UFI>
+    <portInstances fracolName="CIMReuseCore.fracol" fragmentRoleName="Core" portName="extension" targetLinks="//@compositionLinks.0 //@compositionLinks.1 //@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>modelplex</targetUFI>
+    <targetUFI>cim</targetUFI>
+    <targetUFI>tidlibrary</targetUFI>
+    <targetUFI>level2</targetUFI>
+    <targetUFI>logicalInterfaces</targetUFI>
+    <targetUFI>wirelessDynamicIPInterface</targetUFI>
+    <targetUFI>wirelessDynamicIPInterface.cim</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="dhcpClient.cim">
+    <UFI>org</UFI>
+    <UFI>modelplex</UFI>
+    <UFI>cim</UFI>
+    <UFI>tidlibrary</UFI>
+    <UFI>level1</UFI>
+    <UFI>protocols</UFI>
+    <UFI>dhcpClient</UFI>
+    <UFI>dhcpClient.cim</UFI>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <portInstances fracolName="CIMReuseCore.fracol" fragmentRoleName="Element" portName="contents" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="DHCPClient" sourceLinks="//@compositionLinks.5">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="?Dependency" targetLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="CIMReuseAttributes.fracol" fragmentRoleName="AttributeHolder" portName="%DHCPClient">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+      <settings property="value" value="PDADHCPClient"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>modelplex</targetUFI>
+    <targetUFI>cim</targetUFI>
+    <targetUFI>tidlibrary</targetUFI>
+    <targetUFI>level1</targetUFI>
+    <targetUFI>protocols</targetUFI>
+    <targetUFI>dhcpClient</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>dhcpClient.cim</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="ipConnectedToGateway.cim">
+    <UFI>org</UFI>
+    <UFI>modelplex</UFI>
+    <UFI>cim</UFI>
+    <UFI>tidlibrary</UFI>
+    <UFI>level1</UFI>
+    <UFI>protocols</UFI>
+    <UFI>ipConnectedToGateway</UFI>
+    <UFI>ipConnectedToGateway.cim</UFI>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <portInstances fracolName="CIMReuseCore.fracol" fragmentRoleName="Element" portName="contents" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="IPConnectedToGateway" sourceLinks="//@compositionLinks.2" targetLinks="//@compositionLinks.4">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="CIMReuseAttributes.fracol" fragmentRoleName="AttributeHolder" portName="%IPConnectedToGateway">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+      <settings property="value" value="+PDALANIP"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>modelplex</targetUFI>
+    <targetUFI>cim</targetUFI>
+    <targetUFI>tidlibrary</targetUFI>
+    <targetUFI>level1</targetUFI>
+    <targetUFI>protocols</targetUFI>
+    <targetUFI>ipConnectedToGateway</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>ipConnectedToGateway.cim</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="wifiInterface.cim">
+    <UFI>org</UFI>
+    <UFI>modelplex</UFI>
+    <UFI>cim</UFI>
+    <UFI>tidlibrary</UFI>
+    <UFI>level1</UFI>
+    <UFI>physicalInterfaces</UFI>
+    <UFI>wifiInterface</UFI>
+    <UFI>wifiInterface.cim</UFI>
+    <arguments key="layoutStrategy" value="hsort"/>
+    <portInstances fracolName="CIMReuseCore.fracol" fragmentRoleName="Element" portName="contents" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="WiFiPort">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="WiFiAccessPoint">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="*EndPoint" sourceLinks="//@compositionLinks.4" targetLinks="//@compositionLinks.5">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="*ExtensionPoints">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+      <settings property="*EndPoint" value="-"/>
+    </portInstances>
+    <portInstances fracolName="CIMReuseAttributes.fracol" fragmentRoleName="AttributeHolder" portName="%WiFiPort">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+      <settings property="value" value="+PDAWiFiPort"/>
+    </portInstances>
+    <portInstances fracolName="CIMReuseAttributes.fracol" fragmentRoleName="AttributeHolder" portName="%WiFiAccessPoint">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>cim</fracolNamespace>
+      <fracolNamespace>fracol</fracolNamespace>
+      <settings property="value" value="+PDAWiFiAccessPoint"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>modelplex</targetUFI>
+    <targetUFI>cim</targetUFI>
+    <targetUFI>tidlibrary</targetUFI>
+    <targetUFI>level1</targetUFI>
+    <targetUFI>physicalInterfaces</targetUFI>
+    <targetUFI>wifiInterface</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>wifiInterface.cim</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

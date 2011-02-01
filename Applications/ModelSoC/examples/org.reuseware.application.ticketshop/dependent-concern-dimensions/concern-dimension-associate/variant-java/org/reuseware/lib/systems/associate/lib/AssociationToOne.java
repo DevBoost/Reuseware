@@ -1,0 +1,11 @@
+public class CLASS_SLOT {
+	private CLASS_SLOT NAME_LOWER_CASE_HOOK;
+
+	public void setNAME_HOOK(CLASS_SLOT NAME_LOWER_CASE_HOOK) {
+		this.NAME_LOWER_CASE_HOOK = NAME_LOWER_CASE_HOOK;
+	}
+	public CLASS_SLOT getNAME_HOOK() {
+		return this.NAME_LOWER_CASE_HOOK;
+	}
+
+}

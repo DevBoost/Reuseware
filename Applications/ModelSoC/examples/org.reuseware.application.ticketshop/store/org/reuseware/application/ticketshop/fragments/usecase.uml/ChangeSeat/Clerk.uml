@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="Clerk">
+    <ownedComment xmi:id="_IvLG8E3wEd-XpZWKfy4CbQ" annotatedElement="_Hyy-QE3wEd-XpZWKfy4CbQ">
+      <body>Shipment M2 (before) (inSet)</body>
+    </ownedComment>
+    <ownedComment xmi:id="_SOYzYE3wEd-XpZWKfy4CbQ" annotatedElement="_Hyy-QE3wEd-XpZWKfy4CbQ">
+      <body>Address add (after)</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Hyy-QE3wEd-XpZWKfy4CbQ" name="Clerk"/>
+  </packagedElement>
+</uml:Model>

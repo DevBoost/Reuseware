@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:secprop="http://www.emftext.org/language/SecProp" xmi:id="_KYfecBYnEd-EhugkQj8rbQ" type="Secprop" name="Account_acc1.secprop_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_PyFZUBYnEd-EhugkQj8rbQ" type="2002" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_PyGAYBYnEd-EhugkQj8rbQ" type="5004"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_PyGAYRYnEd-EhugkQj8rbQ" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_RmdhABYnEd-EhugkQj8rbQ" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_RmeIERYnEd-EhugkQj8rbQ" type="5003"/>
+        <element xmi:type="secprop:Encryption" href="Account_acc1.secprop#//@data.0/@securityInformation.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RmeIEBYnEd-EhugkQj8rbQ" x="17" y="22" height="46"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_S0IOABYnEd-EhugkQj8rbQ" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_S0I1EBYnEd-EhugkQj8rbQ" type="5002"/>
+        <element xmi:type="secprop:Access" href="Account_acc1.secprop#//@data.0/@securityInformation.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S0IOARYnEd-EhugkQj8rbQ" x="80" y="22" width="55" height="46"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_PyFZURYnEd-EhugkQj8rbQ"/>
+    <element xmi:type="secprop:Data" href="Account_acc1.secprop#//@data.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PyFZUhYnEd-EhugkQj8rbQ" x="9" y="9" width="271" height="145"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_KYfecRYnEd-EhugkQj8rbQ"/>
+  <element xmi:type="secprop:SecPropModel" href="Account_acc1.secprop#/"/>
+</notation:Diagram>

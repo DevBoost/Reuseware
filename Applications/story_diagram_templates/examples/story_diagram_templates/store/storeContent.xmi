@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.reuseware.coconut.store:Store xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.store="http://reuseware.org/coconut/store" baseUFI="reuseware:/">
+  <fileNames>de/fujaba/templates/largeTank.story</fileNames>
+  <fileNames>de/fujaba/templates/widgetTemplate.storydiag</fileNames>
+  <fileNames>de/fujaba/models/widgetsDemo.storydiag</fileNames>
+  <fileNames>de/fujaba/templates/smallTank.storydiag</fileNames>
+  <fileNames>de/fujaba/models/widgetsDemo.story</fileNames>
+  <fileNames>de/fujaba/templates/smallTank.story</fileNames>
+  <fileNames>de/fujaba/models/widgetTemplateInstantiation.fc</fileNames>
+  <fileNames>de/fujaba/templates/widgetTemplate.story</fileNames>
+  <fileNames>de/fujaba/composition_system/storyTemplates.rex</fileNames>
+  <fileNames>de/fujaba/models/widgetTemplateInstantiation.fcdi</fileNames>
+  <fileNames>de/fujaba/models/widgets.text.ecore</fileNames>
+  <fileNames>de/fujaba/composition_system/storyTemplatesCP.rex</fileNames>
+  <fileNames>de/fujaba/models/widgets.ecore</fileNames>
+  <fileNames>de/fujaba/templates/largeTank.storydiag</fileNames>
+</org.reuseware.coconut.store:Store>

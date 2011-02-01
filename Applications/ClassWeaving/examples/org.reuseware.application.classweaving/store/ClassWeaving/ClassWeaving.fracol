@@ -1,0 +1,12 @@
+fracol ClassWeaving.ClassWeaving {
+
+	fragment role Core {
+		dynamic port type JoinPoint;
+  	}
+	fragment role Advice {
+    	dynamic port type AdviceContent;
+  	}
+	contributing association Weave {
+		Advice.AdviceContent --> Core.JoinPoint
+	}
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_TVTNgBikEd6capPFbzLBBw" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_TYsfwBikEd6capPFbzLBBw" type="2030">
+    <children xmi:type="notation:Node" xmi:id="_TYtt4BikEd6capPFbzLBBw" type="5059"/>
+    <children xmi:type="notation:Node" xmi:id="_TY1psBikEd6capPFbzLBBw" type="5060"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_TYsfwRikEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:LogicalModule" href="4PortEthernetIPInterface.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TYsfwhikEd6capPFbzLBBw" x="405" y="396"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TY2QwBikEd6capPFbzLBBw" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_TY4F8BikEd6capPFbzLBBw" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_TY4tABikEd6capPFbzLBBw" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_TY2QwRikEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="4PortEthernetIPInterface.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TY230BikEd6capPFbzLBBw" x="180" y="487"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TY5UEBikEd6capPFbzLBBw" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_TY6iMBikEd6capPFbzLBBw" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_TY6iMRikEd6capPFbzLBBw" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_TY57IBikEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="4PortEthernetIPInterface.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TY57IRikEd6capPFbzLBBw" x="334" y="487"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TY6iMhikEd6capPFbzLBBw" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_TY7JQBikEd6capPFbzLBBw" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_TY7wUBikEd6capPFbzLBBw" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_TY6iMxikEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="4PortEthernetIPInterface.cim#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TY6iNBikEd6capPFbzLBBw" x="488" y="487"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TY8XYBikEd6capPFbzLBBw" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_TY8XYxikEd6capPFbzLBBw" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_TY8-cBikEd6capPFbzLBBw" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_TY8XYRikEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="4PortEthernetIPInterface.cim#//@elements.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TY8XYhikEd6capPFbzLBBw" x="642" y="487"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TY9lgBikEd6capPFbzLBBw" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_TZB28BikEd6capPFbzLBBw" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_TZSVoBikEd6capPFbzLBBw" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_TY9lgRikEd6capPFbzLBBw" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="4PortEthernetIPInterface.cim#//@elements.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TY9lghikEd6capPFbzLBBw" x="378" y="648"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_TVTNgRikEd6capPFbzLBBw"/>
+  <element xmi:type="cim:CIM_Model" href="4PortEthernetIPInterface.cim#/"/>
+</notation:Diagram>

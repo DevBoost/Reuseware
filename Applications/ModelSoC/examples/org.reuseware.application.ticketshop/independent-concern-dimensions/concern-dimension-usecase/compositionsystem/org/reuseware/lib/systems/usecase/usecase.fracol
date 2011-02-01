@@ -1,0 +1,6 @@
+fracol org.reuseware.lib.systems.usecase.usecase { 
+
+	fragment role UseCase {
+		static port type Name;
+	}
+} 

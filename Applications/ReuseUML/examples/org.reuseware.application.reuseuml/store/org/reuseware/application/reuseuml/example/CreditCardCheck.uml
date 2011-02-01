@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ReuseUMLActivity="http:///schemas/ReuseUMLActivity/_MoH2EOEwEdyvQ9PsRVzwyg/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/ReuseUMLActivity/_MoH2EOEwEdyvQ9PsRVzwyg/0 ../compositionSystem/ReuseUMLActivity.profile.uml#_MoIdIOEwEdyvQ9PsRVzwyg">
+  <uml:Model xmi:id="idModel" name="ItemOrderProcessingModel">
+    <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="ItemOrderProcessingPackage">
+      <packagedElement xmi:type="uml:Activity" xmi:id="idActivity" name="CreditCardCheck">
+        <node xmi:type="uml:InitialNode" xmi:id="_EmfzkNh0Edu1mMb-MiZLnw" name="InitialNode" outgoing="_JQ15MJK4Edysg6UWTl9OeQ"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_mRe1kNh2Edu1mMb-MiZLnw" name="FINISH" incoming="_LOkxNpK4Edysg6UWTl9OeQ"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_r-sQANh2Edu1mMb-MiZLnw" name="CANCEL" incoming="_QxkftpK4Edysg6UWTl9OeQ"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_PqjNQJK4Edysg6UWTl9OeQ" name="DecisionNodeCREDIT" outgoing="_QxkftpK4Edysg6UWTl9OeQ _LOkxNpK4Edysg6UWTl9OeQ" incoming="_MDqy1pX9EdyU7-xax85AfA"/>
+        <node xmi:type="uml:CallOperationAction" xmi:id="_EM6R8JX9EdyU7-xax85AfA" name="CreditCardCheck" outgoing="_MDqy1pX9EdyU7-xax85AfA" incoming="_JQ15MJK4Edysg6UWTl9OeQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JQ15MJK4Edysg6UWTl9OeQ" name="" source="_EmfzkNh0Edu1mMb-MiZLnw" target="_EM6R8JX9EdyU7-xax85AfA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_JQ15MZK4Edysg6UWTl9OeQ" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_JQ15MpK4Edysg6UWTl9OeQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_LOkxNpK4Edysg6UWTl9OeQ" name="Yes" source="_PqjNQJK4Edysg6UWTl9OeQ" target="_mRe1kNh2Edu1mMb-MiZLnw">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_LOkxN5K4Edysg6UWTl9OeQ" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_LOkxOJK4Edysg6UWTl9OeQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QxkftpK4Edysg6UWTl9OeQ" name="No" source="_PqjNQJK4Edysg6UWTl9OeQ" target="_r-sQANh2Edu1mMb-MiZLnw">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_Qxkft5K4Edysg6UWTl9OeQ" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_QxkfuJK4Edysg6UWTl9OeQ" value="1"/>
+        </edge>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_MDqy1pX9EdyU7-xax85AfA" name="" source="_EM6R8JX9EdyU7-xax85AfA" target="_PqjNQJK4Edysg6UWTl9OeQ">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_MDrZ4JX9EdyU7-xax85AfA" value="true"/>
+          <weight xmi:type="uml:LiteralInteger" xmi:id="_MDrZ4ZX9EdyU7-xax85AfA" value="1"/>
+        </edge>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="__9mucOEzEdyvQ9PsRVzwyg">
+      <eAnnotations xmi:id="__9muceEzEdyvQ9PsRVzwyg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../compositionSystem/ReuseUMLActivity.profile.uml#_MoIdIOEwEdyvQ9PsRVzwyg"/>
+      </eAnnotations>
+      <appliedProfile href="../compositionSystem/ReuseUMLActivity.profile.uml#_CDfIUPJfEduwl6ngIl8Ldw"/>
+    </profileApplication>
+  </uml:Model>
+  <ReuseUMLActivity:Slot xmi:id="_BHdScOE0EdyvQ9PsRVzwyg" pointName="IN" portName="CreditCardCheck" base_ActivityNode="_EmfzkNh0Edu1mMb-MiZLnw"/>
+  <ReuseUMLActivity:Slot xmi:id="_E8rQgOE0EdyvQ9PsRVzwyg" pointName="OUT_YES" portName="CreditCardCheck" base_ActivityNode="_mRe1kNh2Edu1mMb-MiZLnw"/>
+  <ReuseUMLActivity:Slot xmi:id="_H07QAOE0EdyvQ9PsRVzwyg" pointName="OUT_NO" portName="CreditCardCheck" base_ActivityNode="_r-sQANh2Edu1mMb-MiZLnw"/>
+</xmi:XMI>

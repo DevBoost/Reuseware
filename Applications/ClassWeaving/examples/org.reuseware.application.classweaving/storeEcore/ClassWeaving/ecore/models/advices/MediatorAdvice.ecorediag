@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_wgeQALGSEd2w5bOiLRmiCA" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_wg678LGSEd2w5bOiLRmiCA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_whBpoLGSEd2w5bOiLRmiCA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_whHJMLGSEd2w5bOiLRmiCA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_whHJMbGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_whHJMrGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_whHJM7GSEd2w5bOiLRmiCA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_whHwQLGSEd2w5bOiLRmiCA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_whHwQbGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_whHwQrGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_whHwQ7GSEd2w5bOiLRmiCA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_wg678bGSEd2w5bOiLRmiCA" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="0"/>
+    <element xmi:type="ecore:EClass" href="MediatorAdvice.ecore#//Colleague"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wg678rGSEd2w5bOiLRmiCA" x="153" y="198"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_whI-YLGSEd2w5bOiLRmiCA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_whKMgLGSEd2w5bOiLRmiCA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_whKMgbGSEd2w5bOiLRmiCA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_whKMgrGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_whKMg7GSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_whKMhLGSEd2w5bOiLRmiCA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_whKzkLGSEd2w5bOiLRmiCA" type="5002">
+      <children xmi:type="notation:Node" xmi:id="_whN24LGSEd2w5bOiLRmiCA" type="2002">
+        <element xmi:type="ecore:EOperation" href="MediatorAdvice.ecore#//Mediator/register"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_whN24bGSEd2w5bOiLRmiCA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_whKzkbGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_whKzkrGSEd2w5bOiLRmiCA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_whKzk7GSEd2w5bOiLRmiCA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_whI-YbGSEd2w5bOiLRmiCA" fontName="Lucida Grande" fontHeight="10" fillColor="13761016" lineColor="0"/>
+    <element xmi:type="ecore:EClass" href="MediatorAdvice.ecore#//Mediator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_whI-YrGSEd2w5bOiLRmiCA" x="117" y="63"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_wgeQAbGSEd2w5bOiLRmiCA"/>
+  <element xmi:type="ecore:EPackage" href="MediatorAdvice.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_whPsELGSEd2w5bOiLRmiCA" type="3002" source="_wg678LGSEd2w5bOiLRmiCA" target="_whI-YLGSEd2w5bOiLRmiCA">
+    <children xmi:type="notation:Node" xmi:id="_whQ6MLGSEd2w5bOiLRmiCA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_whQ6MbGSEd2w5bOiLRmiCA" x="-18" y="-27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_whRhQLGSEd2w5bOiLRmiCA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_whRhQbGSEd2w5bOiLRmiCA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_whPsEbGSEd2w5bOiLRmiCA" lineColor="0"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_whPsErGSEd2w5bOiLRmiCA" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="MediatorAdvice.ecore#//Colleague/mediator"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_whPsE7GSEd2w5bOiLRmiCA" points="[2, -1, 0, 89]$[2, -89, 0, 1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wjVWwLGSEd2w5bOiLRmiCA" id="(0.21,0.025)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wjV90LGSEd2w5bOiLRmiCA" id="(0.32954547,0.9787234)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_whRhQrGSEd2w5bOiLRmiCA" type="3002" source="_whI-YLGSEd2w5bOiLRmiCA" target="_wg678LGSEd2w5bOiLRmiCA">
+    <children xmi:type="notation:Node" xmi:id="_whSIULGSEd2w5bOiLRmiCA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_whSIUbGSEd2w5bOiLRmiCA" x="-36" y="-32"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_whSIUrGSEd2w5bOiLRmiCA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_whSIU7GSEd2w5bOiLRmiCA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_whRhQ7GSEd2w5bOiLRmiCA" lineColor="0"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_whRhRLGSEd2w5bOiLRmiCA" fontName="Lucida Grande" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="MediatorAdvice.ecore#//Mediator/colleagues"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_whRhRbGSEd2w5bOiLRmiCA" points="[1, 1, 5, -90]$[-3, 89, 1, -2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wjWk4LGSEd2w5bOiLRmiCA" id="(0.6931818,0.9787234)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wjXL8LGSEd2w5bOiLRmiCA" id="(0.82,0.05)"/>
+  </edges>
+</notation:Diagram>

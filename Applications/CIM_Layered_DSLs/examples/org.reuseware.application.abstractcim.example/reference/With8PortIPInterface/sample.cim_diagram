@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_dgJpwBkZEd6wNoVhn4yKPQ" type="CIMLevelZero" name="EmptyCore.cim_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_dgJpwRkZEd6wNoVhn4yKPQ" type="2092">
+    <children xmi:type="notation:Node" xmi:id="_dgJpwhkZEd6wNoVhn4yKPQ" type="5183"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJpwxkZEd6wNoVhn4yKPQ" type="5184"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJpxBkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:ComputerSystem" href="reuseware:/myModels/sample.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJpxRkZEd6wNoVhn4yKPQ" x="-1" y="-1"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJpxhkZEd6wNoVhn4yKPQ" type="2030">
+    <children xmi:type="notation:Node" xmi:id="_dgJpxxkZEd6wNoVhn4yKPQ" type="5059"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJpyBkZEd6wNoVhn4yKPQ" type="5060"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJpyRkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:LogicalModule" href="reuseware:/myModels/sample.cim#//@elements.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJpyhkZEd6wNoVhn4yKPQ" x="-1" y="-1"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJpyxkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJpzBkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJpzRkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJpzhkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJpzxkZEd6wNoVhn4yKPQ" x="-523" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJp0BkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJp0RkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJp0hkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJp0xkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJp1BkZEd6wNoVhn4yKPQ" x="-369" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJp1RkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJp1hkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJp1xkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJp2BkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJp2RkZEd6wNoVhn4yKPQ" x="-215" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJp2hkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJp2xkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJp3BkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJp3RkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJp3hkZEd6wNoVhn4yKPQ" x="-61" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJp3xkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJp4BkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJp4RkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJp4hkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJp4xkZEd6wNoVhn4yKPQ" x="93" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJp5BkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJp5RkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJp5hkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJp5xkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.10"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgJp6BkZEd6wNoVhn4yKPQ" x="247" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgJp6RkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgJp6hkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgJp6xkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgJp7BkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.11"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ0BkZEd6wNoVhn4yKPQ" x="401" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ0RkZEd6wNoVhn4yKPQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ0hkZEd6wNoVhn4yKPQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ0xkZEd6wNoVhn4yKPQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ1BkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="reuseware:/myModels/sample.cim#//@elements.12"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ1RkZEd6wNoVhn4yKPQ" x="555" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ1hkZEd6wNoVhn4yKPQ" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ1xkZEd6wNoVhn4yKPQ" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ2BkZEd6wNoVhn4yKPQ" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ2RkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="reuseware:/myModels/sample.cim#//@elements.13"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ2hkZEd6wNoVhn4yKPQ" x="17" y="260"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ2xkZEd6wNoVhn4yKPQ" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ3BkZEd6wNoVhn4yKPQ" type="5005"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ3RkZEd6wNoVhn4yKPQ" type="5006"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ3hkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiPort" href="reuseware:/myModels/sample.cim#//@elements.14"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ3xkZEd6wNoVhn4yKPQ" x="1075" y="-1"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ4BkZEd6wNoVhn4yKPQ" type="2034">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ4RkZEd6wNoVhn4yKPQ" type="5067"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ4hkZEd6wNoVhn4yKPQ" type="5068"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ4xkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiEndPoint" href="reuseware:/myModels/sample.cim#//@elements.15"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ5BkZEd6wNoVhn4yKPQ" x="1057" y="81"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ5RkZEd6wNoVhn4yKPQ" type="2048">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ5hkZEd6wNoVhn4yKPQ" type="5095"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ5xkZEd6wNoVhn4yKPQ" type="5096"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ6BkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:WiFiEndpointSettings" href="reuseware:/myModels/sample.cim#//@elements.16"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ6RkZEd6wNoVhn4yKPQ" x="1282" y="71"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ6hkZEd6wNoVhn4yKPQ" type="2004">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ6xkZEd6wNoVhn4yKPQ" type="5007"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ7BkZEd6wNoVhn4yKPQ" type="5008"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ7RkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:ProtocolService" href="reuseware:/myModels/sample.cim#//@elements.17"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ7hkZEd6wNoVhn4yKPQ" x="-1" y="-1"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ7xkZEd6wNoVhn4yKPQ" type="2025">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ8BkZEd6wNoVhn4yKPQ" type="5049"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ8RkZEd6wNoVhn4yKPQ" type="5050"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ8hkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:RangeOfIPAddresses" href="reuseware:/myModels/sample.cim#//@elements.18"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ8xkZEd6wNoVhn4yKPQ" x="-19" y="152"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ9BkZEd6wNoVhn4yKPQ" type="2079">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ9RkZEd6wNoVhn4yKPQ" type="5157"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ9hkZEd6wNoVhn4yKPQ" type="5158"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ9xkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:UDPProtocolEndpoint" href="reuseware:/myModels/sample.cim#//@elements.19"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ-BkZEd6wNoVhn4yKPQ" x="-127" y="80"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ-RkZEd6wNoVhn4yKPQ" type="2035">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ-hkZEd6wNoVhn4yKPQ" type="5069"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKQ-xkZEd6wNoVhn4yKPQ" type="5070"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKQ_BkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:NATService" href="reuseware:/myModels/sample.cim#//@elements.20"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKQ_RkZEd6wNoVhn4yKPQ" x="1485" y="-1"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKQ_hkZEd6wNoVhn4yKPQ" type="2044">
+    <children xmi:type="notation:Node" xmi:id="_dgKQ_xkZEd6wNoVhn4yKPQ" type="5087"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKRABkZEd6wNoVhn4yKPQ" type="5088"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKRARkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:NATListBasedSettings" href="reuseware:/myModels/sample.cim#//@elements.21"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKRAhkZEd6wNoVhn4yKPQ" x="1458" y="89"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKRAxkZEd6wNoVhn4yKPQ" type="2061">
+    <children xmi:type="notation:Node" xmi:id="_dgKRBBkZEd6wNoVhn4yKPQ" type="5121"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKRBRkZEd6wNoVhn4yKPQ" type="5122"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKRBhkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:FilterList" href="reuseware:/myModels/sample.cim#//@elements.22"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKRBxkZEd6wNoVhn4yKPQ" x="1467" y="179"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dgKRCBkZEd6wNoVhn4yKPQ" type="2052">
+    <children xmi:type="notation:Node" xmi:id="_dgKRCRkZEd6wNoVhn4yKPQ" type="5103"/>
+    <children xmi:type="notation:Node" xmi:id="_dgKRChkZEd6wNoVhn4yKPQ" type="5104"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dgKRCxkZEd6wNoVhn4yKPQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPHeadersFilter" href="reuseware:/myModels/sample.cim#//@elements.23"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dgKRDBkZEd6wNoVhn4yKPQ" x="1476" y="278"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_dgKRDRkZEd6wNoVhn4yKPQ"/>
+  <element xmi:type="cim:CIM_Model" href="reuseware:/myModels/sample.cim#/"/>
+</notation:Diagram>

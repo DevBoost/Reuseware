@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_NhCTYBilEd6gGoP9gUErXQ" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_NjcHIBilEd6gGoP9gUErXQ" type="2030">
+    <children xmi:type="notation:Node" xmi:id="_NjdVQBilEd6gGoP9gUErXQ" type="5059"/>
+    <children xmi:type="notation:Node" xmi:id="_NjgYkBilEd6gGoP9gUErXQ" type="5060"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_NjcHIRilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:LogicalModule" href="8PortEthernetIPInterface.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NjcHIhilEd6gGoP9gUErXQ" x="522" y="9"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_NjhmsBilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjiNwBilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_Nji00BilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_NjhmsRilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NjhmshilEd6gGoP9gUErXQ" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Njjb4BilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjkC8BilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_NjkC8RilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Njjb4RilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Njjb4hilEd6gGoP9gUErXQ" x="154" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_NjkqABilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjkqAxilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_NjlREBilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_NjkqARilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NjkqAhilEd6gGoP9gUErXQ" x="308" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_NjlRERilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_Njl4IBilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_Njl4IRilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_NjlREhilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NjlRExilEd6gGoP9gUErXQ" x="462" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Njl4IhilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjmfMBilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_NjmfMRilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Njl4IxilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Njl4JBilEd6gGoP9gUErXQ" x="616" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_NjnGQBilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjntUBilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_NjntURilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_NjnGQRilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NjnGQhilEd6gGoP9gUErXQ" x="770" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_NjoUYBilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjoUYxilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_Njo7cBilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_NjoUYRilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NjoUYhilEd6gGoP9gUErXQ" x="924" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Njo7cRilEd6gGoP9gUErXQ" type="2028">
+    <children xmi:type="notation:Node" xmi:id="_NjpigBilEd6gGoP9gUErXQ" type="5055"/>
+    <children xmi:type="notation:Node" xmi:id="_NjrXsBilEd6gGoP9gUErXQ" type="5056"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Njo7chilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:EthernetPort" href="8PortEthernetIPInterface.cim#//@elements.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Njo7cxilEd6gGoP9gUErXQ" x="1078" y="100"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Njr-wBilEd6gGoP9gUErXQ" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_Njtz8BilEd6gGoP9gUErXQ" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_NjubABilEd6gGoP9gUErXQ" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Njr-wRilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="8PortEthernetIPInterface.cim#//@elements.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Njr-whilEd6gGoP9gUErXQ" x="540" y="270"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_NhCTYRilEd6gGoP9gUErXQ"/>
+  <element xmi:type="cim:CIM_Model" href="8PortEthernetIPInterface.cim#/"/>
+</notation:Diagram>

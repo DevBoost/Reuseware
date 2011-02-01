@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_rsLLMCVeEeCigM-OVvFScQ" type="Compositionprogram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_ukjtkCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukkUoCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukjtkSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukjtkiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukjtkyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3AClerk']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukjtlCVeEeCigM-OVvFScQ" x="315" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukliwCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukmJ0CVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukliwSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukliwiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukliwyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='CLASS_CORE']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uklixCVeEeCigM-OVvFScQ" x="1053"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukmw4CVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uknX8CVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukmw4SVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukmw4iVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukmw4yVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3AShipment']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukmw5CVeEeCigM-OVvFScQ" x="729" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukn_ACVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukomECVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukn_ASVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukn_AiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukn_AyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3AAddress']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukn_BCVeEeCigM-OVvFScQ" x="549" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukpNICVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukp0MCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukpNISVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukpNIiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukpNIyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3AClerk2Shipment']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukpNJCVeEeCigM-OVvFScQ" x="52" y="455"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukqbQCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukrCUCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukqbQSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukqbQiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukqbQyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3AClerk2Address']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukqbRCVeEeCigM-OVvFScQ" x="270" y="279"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukrpYCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uksQcyVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukrpYSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uksQcCVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uksQcSVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3ACustomer']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uksQciVeEeCigM-OVvFScQ" x="981" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uks3gCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uktekyVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uks3gSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uktekCVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uktekSVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3ASeat']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uktekiVeEeCigM-OVvFScQ" x="1206" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukuFoCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukussCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukuFoSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukuFoiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukuFoyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3ACustomer2Seat']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukuFpCVeEeCigM-OVvFScQ" x="1116" y="279"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukvTwCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukv60CVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukvTwSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukvTwiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukvTwyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3ACustomer2Address']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukvTxCVeEeCigM-OVvFScQ" x="531" y="279"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukwh4CVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukxI8yVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukwh4SVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukxI8CVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukxI8SVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3ACustomer2Shipment']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukxI8iVeEeCigM-OVvFScQ" x="819" y="279"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ukxwACVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukyXEyVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukxwASVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukyXECVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukyXESVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3AHall']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukyXEiVeEeCigM-OVvFScQ" x="1359" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uky-ICVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ukzlNCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ukzlMCVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ukzlMSVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_ukzlMiVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3AHall2Seat']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukzlMyVeEeCigM-OVvFScQ" x="1377" y="279"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uk0zUCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uk0zVSVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uk0zUSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uk0zUiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uk0zUyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3ABank']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uk0zVCVeEeCigM-OVvFScQ" x="1548" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uk1aYCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uk3PkCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uk1aYSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uk2BcCVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uk2BcSVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Class%3AAccount']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uk2BciVeEeCigM-OVvFScQ" x="1746" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uk4dsCVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uk5EwCVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uk4dsSVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uk4dsiVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uk4dsyVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3ABank2Account']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uk4dtCVeEeCigM-OVvFScQ" x="1611" y="279"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_uk5r0CVeEeCigM-OVvFScQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uk5r1SVeEeCigM-OVvFScQ" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_uk5r0SVeEeCigM-OVvFScQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uk5r0iVeEeCigM-OVvFScQ" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_uk5r0yVeEeCigM-OVvFScQ"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="Main.ucl#//@fragmentInstances[name='Association%3ACustomer2Account']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uk5r1CVeEeCigM-OVvFScQ" x="1863" y="279"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_rsLLMSVeEeCigM-OVvFScQ"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:DerivedCompositionProgram" href="Main.ucl#/"/>
+</notation:Diagram>

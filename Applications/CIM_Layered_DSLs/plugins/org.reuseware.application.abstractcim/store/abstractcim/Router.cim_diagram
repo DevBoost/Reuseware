@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_6zpxwBilEd6gGoP9gUErXQ" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_61EuEBilEd6gGoP9gUErXQ" type="2092">
+    <children xmi:type="notation:Node" xmi:id="_61QUQBilEd6gGoP9gUErXQ" type="5183"/>
+    <children xmi:type="notation:Node" xmi:id="_61VMwBilEd6gGoP9gUErXQ" type="5184"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_61EuERilEd6gGoP9gUErXQ" fontName="Lucida Grande"/>
+    <element xmi:type="cim:ComputerSystem" href="Router.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_61EuEhilEd6gGoP9gUErXQ" x="27" y="18"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_6zpxwRilEd6gGoP9gUErXQ"/>
+  <element xmi:type="cim:CIM_Model" href="Router.cim#/"/>
+</notation:Diagram>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="Example Application developed with the ModelSoC Approach" icon="icons/mda.gif" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.ticketshop.ExampleUnzipperNewWizard" 
+      	project="true" id="org.reuseware.application.ticketshop.plugin">
+      </wizard>   
+   </extension>
+</plugin>

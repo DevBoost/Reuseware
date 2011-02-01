@@ -1,0 +1,16 @@
+fracol org.reuseware.application.reusejava.compositionSystem.ReuseJava {
+	
+	fragment role MethodEntry {
+		static port type Name;
+		dynamic port type EntryHook;
+	}
+	
+	fragment role Statement {
+		dynamic port type StatementCode;
+	}
+	
+	contributing association Assoc1 {
+		Statement.StatementCode --> MethodEntry.EntryHook
+	} 
+
+}

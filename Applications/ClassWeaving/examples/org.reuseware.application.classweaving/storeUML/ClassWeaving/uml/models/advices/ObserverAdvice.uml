@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="adviceObserverPattern">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="adviceObserverPattern">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QgGHsLIqEd2WxpzczPM5yA" name="Observer">
+      <ownedOperation xmi:id="_b5pZ4LIqEd2WxpzczPM5yA" name="update"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RR2UwLIqEd2WxpzczPM5yA" name="Subject">
+      <ownedOperation xmi:id="_diSLoLIqEd2WxpzczPM5yA" name="attach">
+        <ownedParameter xmi:id="_l7vJ4LIqEd2WxpzczPM5yA" name="observer" type="_QgGHsLIqEd2WxpzczPM5yA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ePhsILIqEd2WxpzczPM5yA" name="detach">
+        <ownedParameter xmi:id="_iIb3YLIqEd2WxpzczPM5yA" name="observer" type="_QgGHsLIqEd2WxpzczPM5yA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_e3cAsLIqEd2WxpzczPM5yA" name="notify"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UiDhQLIqEd2WxpzczPM5yA" name="A_&lt;observer>_&lt;subject>" memberEnd="_UiDhQbIqEd2WxpzczPM5yA _UiDhRLIqEd2WxpzczPM5yA">
+      <ownedEnd xmi:id="_UiDhQbIqEd2WxpzczPM5yA" name="observer" visibility="public" type="_QgGHsLIqEd2WxpzczPM5yA" association="_UiDhQLIqEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UiDhQrIqEd2WxpzczPM5yA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UiDhQ7IqEd2WxpzczPM5yA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_UiDhRLIqEd2WxpzczPM5yA" name="subject" type="_RR2UwLIqEd2WxpzczPM5yA" association="_UiDhQLIqEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UiDhRbIqEd2WxpzczPM5yA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UiDhRrIqEd2WxpzczPM5yA"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

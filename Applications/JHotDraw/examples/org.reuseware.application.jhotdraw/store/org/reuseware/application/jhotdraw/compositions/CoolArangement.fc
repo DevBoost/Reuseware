@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <iD>
+    <segments>org</segments>
+    <segments>reuseware</segments>
+    <segments>application</segments>
+    <segments>jhotdraw</segments>
+    <segments>compositions</segments>
+    <segments>CoolArangement.fc</segments>
+  </iD>
+  <compositionLinks source="//@fragmentInstances[name='FigureInstantiation.java']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='Editor.java']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='TriangleFigure.java']/@portInstances[portName='TriangleFigure',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='FigureInstantiation.java']/@portInstances[portName='figures_type',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='FigureInstantiation.java2']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='Editor.java']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='EllipseFigure.java']/@portInstances[portName='EllipseFigure',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='FigureInstantiation.java2']/@portInstances[portName='figures_type',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='EllipseFigure.java2']/@portInstances[portName='EllipseFigure',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='FigureInstantiation.java3']/@portInstances[portName='figures_type',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='DiamondFigure.java']/@portInstances[portName='DiamondFigure',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='FigureInstantiation.java4']/@portInstances[portName='figures_type',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='FigureInstantiation.java4']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='Editor.java']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <compositionLinks source="//@fragmentInstances[name='FigureInstantiation.java3']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]" target="//@fragmentInstances[name='Editor.java']/@portInstances[portName='main',fragmentRoleName='Default',compositionSystemID=['org','reuseware','lib','systems','default.csys']]"/>
+  <fragmentInstances name="EllipseFigure.java" reference="true">
+    <UFI>org</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>draw</UFI>
+    <UFI>EllipseFigure.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="EllipseFigure" sourceLinks="//@compositionLinks.3">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>draw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>EllipseFigure.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="EllipseFigure.java2" reference="true">
+    <UFI>org</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>draw</UFI>
+    <UFI>EllipseFigure.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="EllipseFigure" sourceLinks="//@compositionLinks.4">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>draw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>EllipseFigure.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="TriangleFigure.java" reference="true">
+    <UFI>org</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>draw</UFI>
+    <UFI>TriangleFigure.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="TriangleFigure" sourceLinks="//@compositionLinks.1">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>draw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>TriangleFigure.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="DiamondFigure.java" reference="true">
+    <UFI>org</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>draw</UFI>
+    <UFI>DiamondFigure.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="DiamondFigure" sourceLinks="//@compositionLinks.5">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>draw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>DiamondFigure.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="FigureInstantiation.java">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>FigureInstantiation.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="main" sourceLinks="//@compositionLinks.0">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="figures_type" targetLinks="//@compositionLinks.1">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="name" value="triFigure"/>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="postion">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="x" value="20"/>
+      <settings property="y" value="30"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>FigureInstantiation.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="Editor.java" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>Editor.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="name" value="CoolEditor"/>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="main" targetLinks="//@compositionLinks.0 //@compositionLinks.2 //@compositionLinks.6 //@compositionLinks.7">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>CoolEditor.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="FigureInstantiation.java2">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>FigureInstantiation.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="name" value="FatFigure"/>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="main" sourceLinks="//@compositionLinks.2">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="figures_type" targetLinks="//@compositionLinks.3">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="postion">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="x" value="13"/>
+      <settings property="y" value="45"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>FigureInstantiation.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="FigureInstantiation.java3">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>FigureInstantiation.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="name" value="otherFig"/>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="main" sourceLinks="//@compositionLinks.7">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="figures_type" targetLinks="//@compositionLinks.4">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="postion">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="x" value="46"/>
+      <settings property="y" value="3"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>FigureInstantiation.java</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="FigureInstantiation.java4">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>jhotdraw</UFI>
+    <UFI>FigureInstantiation.java</UFI>
+    <portInstances fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="name" value="diamon"/>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="main" sourceLinks="//@compositionLinks.6">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="figures_type" targetLinks="//@compositionLinks.5">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="postion">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="x" value="150"/>
+      <settings property="y" value="34"/>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>jhotdraw</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>FigureInstantiation.java</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

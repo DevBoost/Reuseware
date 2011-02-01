@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:LANConnectivitySegment" caption="%WifiNetwork" elementName="%WifiNetwork" members="//@elements.1" instanceID="%WifiNetwork" connectivityStatus="" LANID="%SSID" connectivityType="Other" otherTypeDescription="_802_11g"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="*Members"/>
+</cim:CIM_Model>

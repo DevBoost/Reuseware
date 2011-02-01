@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueflow:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:valueflow="http://www.emftext.org/language/valueflow" name="something">
+  <agents name="something">
+    <states xsi:type="valueflow:TakeState" name="Seat_N" nextState="//@agents.0/@states.1"/>
+    <states xsi:type="valueflow:GiveState" name="Account_acc1" nextState="//@agents.0/@states.2" previousState="//@agents.0/@states.0" value="Account"/>
+    <states xsi:type="valueflow:GiveState" name="Address_add1" nextState="//@agents.0/@states.3" previousState="//@agents.0/@states.1" value="Address"/>
+    <states xsi:type="valueflow:TakeState" name="Shipment_M" previousState="//@agents.0/@states.2"/>
+  </agents>
+</valueflow:Model>

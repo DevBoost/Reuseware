@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueflow:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:valueflow="http://www.emftext.org/language/valueflow">
+  <agents name="noname">
+    <states xsi:type="valueflow:GiveState" name="Seat_N" value=""/>
+  </agents>
+</valueflow:Model>

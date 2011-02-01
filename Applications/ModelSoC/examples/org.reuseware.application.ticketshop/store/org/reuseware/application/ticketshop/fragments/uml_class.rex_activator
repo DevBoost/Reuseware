@@ -1,0 +1,10 @@
+
+
+
+
+
+
+compositionlanguage org.reuseware.lib.systems.class.cl.odt(format='class.uml',layoutStrategy='hsort',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.class.cl.usecase_uml(format='class.uml',layoutStrategy='hsort',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.dataclass.cl.usecase_uml(format='class.uml',layoutStrategy='hsort',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.associate.cl.usecase_uml(format='class.uml',layoutStrategy='hsort',outFolder='out')

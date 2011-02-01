@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <elementImport xmi:id="_jQyu4DF7Ed2yz_kaSjuIKQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_jQ0kEDF7Ed2yz_kaSjuIKQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_jQ0kETF7Ed2yz_kaSjuIKQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="DeliverPizzaClasses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_gbqxUDF6Ed2mV9Z0JtzXAA" name="Car">
+      <ownedAttribute xmi:id="_klYYsDF6Ed2mV9Z0JtzXAA" name="inGarage"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zNht0DF6Ed2yz_kaSjuIKQ" name="Printer">
+      <ownedOperation xmi:id="_2rRnEDF6Ed2yz_kaSjuIKQ" name="printOrder">
+        <ownedParameter xmi:id="_-Do7wDF6Ed2yz_kaSjuIKQ" name="order" type="_6JezUDF6Ed2yz_kaSjuIKQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6JezUDF6Ed2yz_kaSjuIKQ" name="ExtensionFor_Order">
+      <ownedAttribute xmi:id="_NuPMYDF7Ed2yz_kaSjuIKQ" name="processed">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lp5UQDF7Ed2yz_kaSjuIKQ" name="timeToDeliver">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_u8FRUDF7Ed2yz_kaSjuIKQ" name="ExtensionFor_Pizza">
+      <ownedAttribute xmi:id="_p3D4QDF7Ed2yz_kaSjuIKQ" name="temperatureAtDelivery">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

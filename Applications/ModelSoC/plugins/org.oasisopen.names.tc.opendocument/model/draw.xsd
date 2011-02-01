@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:attribute name="style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="layer-set">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:layer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="layer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-layer-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name">
+    <xs:attribute name="name" use="required" form="qualified" type="text:string"/>
+  </xs:attributeGroup>
+  <xs:attribute name="protected" type="text:boolean"/>
+  <xs:attribute name="display">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="always"/>
+        <xs:enumeration value="screen"/>
+        <xs:enumeration value="printer"/>
+        <xs:enumeration value="none"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="page">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group minOccurs="0" ref="text:office-forms"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:shape"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="presentation:animations"/>
+          <xs:element ref="text:animation-element"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="presentation:notes"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-presentation-header-footer-attlist"/>
+      <xs:attributeGroup ref="text:draw-page-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="master-page-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="id">
+    <xs:attribute name="id" use="required" form="qualified" type="text:ID"/>
+  </xs:attributeGroup>
+  <xs:attribute name="nav-order" type="text:IDREFS"/>
+  <xs:element name="rect">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-rect-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="corner-radius" type="text:nonNegativeLength"/>
+  <xs:element name="line">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-line-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="polyline">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-points-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="points" type="text:points"/>
+  <xs:element name="polygon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-points-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="regular-polygon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-regular-polygon-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="concave">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="false"/>
+        <xs:enumeration value="true"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="sharpness" type="text:percent"/>
+  <xs:attribute name="corners" type="text:positiveInteger"/>
+  <xs:element name="path">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-path-data-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="circle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-circle-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-circle-ellipse-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="kind">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="full"/>
+        <xs:enumeration value="section"/>
+        <xs:enumeration value="cut"/>
+        <xs:enumeration value="arc"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="start-angle" type="text:double"/>
+  <xs:attribute name="end-angle" type="text:double"/>
+  <xs:element name="ellipse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-circle-ellipse-attlist"/>
+      <xs:attributeGroup ref="text:draw-ellipse-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="connector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-connector-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="type">
+    <xs:attribute name="type" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="standard"/>
+          <xs:enumeration value="lines"/>
+          <xs:enumeration value="line"/>
+          <xs:enumeration value="curve"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="start-shape" type="text:IDREF"/>
+  <xs:attribute name="start-glue-point" type="text:nonNegativeInteger"/>
+  <xs:attribute name="end-shape" type="text:IDREF"/>
+  <xs:attribute name="end-glue-point" type="text:nonNegativeInteger"/>
+  <xs:attribute name="line-skew">
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list>
+            <xs:simpleType>
+              <xs:union memberTypes="text:length">
+                <xs:simpleType>
+                  <xs:union memberTypes="text:length text:length"/>
+                </xs:simpleType>
+              </xs:union>
+            </xs:simpleType>
+          </xs:list>
+        </xs:simpleType>
+        <xs:minLength value="1"/>
+        <xs:maxLength value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="caption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-caption-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="caption-point-x" type="text:coordinate"/>
+  <xs:attribute name="caption-point-y" type="text:coordinate"/>
+  <xs:element name="measure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-measure-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="control">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-control-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="control" type="text:IDREF"/>
+  <xs:element name="page-thumbnail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-page-thumbnail-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:presentation-shape-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="page-number" type="text:positiveInteger"/>
+  <xs:element name="g">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:shape"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-g-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-z-index-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-name-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-id-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-style-name-attlist"/>
+      <xs:attributeGroup ref="text:common-text-spreadsheet-shape-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="caption-id" type="text:IDREF"/>
+  <xs:attribute name="transform" type="text:string"/>
+  <xs:attribute name="class-names" type="text:styleNameRefs"/>
+  <xs:attribute name="text-style-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layer" type="xs:string"/>
+  <xs:attribute name="z-index" type="text:nonNegativeInteger"/>
+  <xs:element name="glue-point">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-glue-point-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="id1">
+    <xs:attribute name="id" use="required" form="qualified" type="text:nonNegativeInteger"/>
+  </xs:attributeGroup>
+  <xs:attribute name="align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="top-left"/>
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="top-right"/>
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="bottom-left"/>
+        <xs:enumeration value="bottom-right"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="escape-direction">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="up"/>
+        <xs:enumeration value="down"/>
+        <xs:enumeration value="horizontal"/>
+        <xs:enumeration value="vertical"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="frame">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="draw:text-box"/>
+          <xs:element ref="draw:image"/>
+          <xs:element ref="draw:object"/>
+          <xs:element ref="draw:object-ole"/>
+          <xs:element ref="draw:applet"/>
+          <xs:element ref="draw:floating-frame"/>
+          <xs:element ref="draw:plugin"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:element minOccurs="0" ref="draw:image-map"/>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="draw:contour-polygon"/>
+          <xs:element ref="draw:contour-path"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-rel-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+      <xs:attributeGroup ref="text:presentation-shape-attlist"/>
+      <xs:attributeGroup ref="text:draw-frame-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="copy-of" type="text:string"/>
+  <xs:element name="text-box">
+    <xs:complexType>
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="text:text-content"/>
+      <xs:attributeGroup ref="text:draw-text-box-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="chain-next-name" type="text:string"/>
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="office:binary-data"/>
+        <xs:group ref="text:draw-text"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-image-attlist"/>
+      <xs:attribute ref="xlink:href"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:show"/>
+      <xs:attributeGroup ref="xlink:actuate1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="filter-name" type="text:string"/>
+  <xs:element name="object">
+    <xs:complexType>
+      <xs:choice minOccurs="0">
+        <xs:element ref="office:document"/>
+        <xs:element ref="math:math"/>
+      </xs:choice>
+      <xs:attributeGroup ref="text:draw-object-attlist"/>
+      <xs:attribute ref="xlink:href"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:show"/>
+      <xs:attributeGroup ref="xlink:actuate1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="object-ole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="office:binary-data"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-object-ole-attlist"/>
+      <xs:attribute ref="xlink:href"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:show"/>
+      <xs:attributeGroup ref="xlink:actuate1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="notify-on-update-of-ranges" type="text:string"/>
+  <xs:attribute name="class-id"/>
+  <xs:element name="applet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:param"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-applet-attlist"/>
+      <xs:attribute ref="xlink:href"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:show"/>
+      <xs:attributeGroup ref="xlink:actuate1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="code"/>
+  <xs:attribute name="object"/>
+  <xs:attribute name="archive"/>
+  <xs:attribute name="may-script" type="text:boolean"/>
+  <xs:element name="plugin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:param"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-plugin-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-data-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="mime-type"/>
+  <xs:element name="param">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-param-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name1">
+    <xs:attribute name="name" use="required" form="qualified"/>
+  </xs:attributeGroup>
+  <xs:attribute name="value"/>
+  <xs:element name="floating-frame">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-floating-frame-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-data-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="frame-name" type="text:string"/>
+  <xs:element name="contour-polygon">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-contour-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-points-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contour-path">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-contour-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-path-data-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="recreate-on-edit" type="text:boolean"/>
+  <xs:element name="a">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="draw:frame"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-a-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image-map">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="draw:area-rectangle"/>
+        <xs:element ref="draw:area-circle"/>
+        <xs:element ref="draw:area-polygon"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="area-rectangle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-area-attlist"/>
+      <xs:attributeGroup ref="svg:x"/>
+      <xs:attributeGroup ref="svg:y"/>
+      <xs:attributeGroup ref="svg:width"/>
+      <xs:attributeGroup ref="svg:height"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="area-circle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-area-attlist"/>
+      <xs:attribute ref="svg:cx" use="required"/>
+      <xs:attribute ref="svg:cy" use="required"/>
+      <xs:attribute ref="svg:r" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="area-polygon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:common-draw-area-attlist"/>
+      <xs:attributeGroup ref="svg:x"/>
+      <xs:attributeGroup ref="svg:y"/>
+      <xs:attributeGroup ref="svg:width"/>
+      <xs:attributeGroup ref="svg:height"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-points-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="nohref">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="nohref"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="custom-shape">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="svg:title"/>
+        <xs:element minOccurs="0" ref="svg:desc"/>
+        <xs:element minOccurs="0" ref="office:event-listeners"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:glue-point"/>
+        <xs:group ref="text:draw-text"/>
+        <xs:element minOccurs="0" ref="draw:enhanced-geometry"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-custom-shape-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-position-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-size-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-shape-with-text-and-styles-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-caption-id-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="engine" type="text:namespacedToken"/>
+  <xs:attribute name="data" type="text:string"/>
+  <xs:element name="enhanced-geometry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:equation"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="draw:handle"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="text:draw-enhanced-geometry-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="type1">
+    <xs:attribute name="type" use="required" form="qualified" type="text:custom-shape-type"/>
+  </xs:attributeGroup>
+  <xs:attribute name="mirror-vertical" type="text:boolean"/>
+  <xs:attribute name="mirror-horizontal" type="text:boolean"/>
+  <xs:attribute name="text-rotate-angle" type="text:double"/>
+  <xs:attribute name="extrusion-allowed" type="text:boolean"/>
+  <xs:attribute name="text-path-allowed" type="text:boolean"/>
+  <xs:attribute name="concentric-gradient-fill-allowed" type="text:boolean"/>
+  <xs:attribute name="extrusion" type="text:boolean"/>
+  <xs:attribute name="extrusion-brightness" type="text:percent"/>
+  <xs:attribute name="extrusion-depth">
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list>
+            <xs:simpleType>
+              <xs:union memberTypes="text:length text:double"/>
+            </xs:simpleType>
+          </xs:list>
+        </xs:simpleType>
+        <xs:length value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="extrusion-diffusion" type="text:percent"/>
+  <xs:attribute name="extrusion-number-of-line-segments" type="text:integer"/>
+  <xs:attribute name="extrusion-light-face" type="text:boolean"/>
+  <xs:attribute name="extrusion-first-light-harsh" type="text:boolean"/>
+  <xs:attribute name="extrusion-second-light-harsh" type="text:boolean"/>
+  <xs:attribute name="extrusion-first-light-level" type="text:percent"/>
+  <xs:attribute name="extrusion-second-light-level" type="text:percent"/>
+  <xs:attribute name="extrusion-first-light-direction" type="text:vector3D"/>
+  <xs:attribute name="extrusion-second-light-direction" type="text:vector3D"/>
+  <xs:attribute name="extrusion-metal" type="text:boolean"/>
+  <xs:attribute name="extrusion-rotation-angle">
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list>
+            <xs:simpleType>
+              <xs:union memberTypes="text:double text:double"/>
+            </xs:simpleType>
+          </xs:list>
+        </xs:simpleType>
+        <xs:length value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="extrusion-rotation-center" type="text:vector3D"/>
+  <xs:attribute name="extrusion-shininess" type="text:percent"/>
+  <xs:attribute name="extrusion-skew">
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list>
+            <xs:simpleType>
+              <xs:union memberTypes="text:double text:double"/>
+            </xs:simpleType>
+          </xs:list>
+        </xs:simpleType>
+        <xs:length value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="extrusion-specularity" type="text:percent"/>
+  <xs:attribute name="extrusion-viewpoint" type="text:point3D"/>
+  <xs:attribute name="extrusion-origin">
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list>
+            <xs:simpleType>
+              <xs:union memberTypes="text:double text:double"/>
+            </xs:simpleType>
+          </xs:list>
+        </xs:simpleType>
+        <xs:length value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="extrusion-color" type="text:boolean"/>
+  <xs:attribute name="enhanced-path" type="text:string"/>
+  <xs:attribute name="path-stretchpoint-x" type="text:double"/>
+  <xs:attribute name="path-stretchpoint-y" type="text:double"/>
+  <xs:attribute name="text-areas" type="text:string"/>
+  <xs:attribute name="glue-points" type="text:string"/>
+  <xs:attribute name="glue-point-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="segments"/>
+        <xs:enumeration value="rectangle"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="glue-point-leaving-directions"/>
+  <xs:attribute name="text-path" type="text:boolean"/>
+  <xs:attribute name="text-path-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="normal"/>
+        <xs:enumeration value="path"/>
+        <xs:enumeration value="shape"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-path-scale">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="path"/>
+        <xs:enumeration value="shape"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-path-same-letter-heights" type="text:boolean"/>
+  <xs:attribute name="modifiers" type="text:string"/>
+  <xs:element name="equation">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-equation-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="formula" type="text:string"/>
+  <xs:element name="handle">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-handle-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="handle-mirror-vertical" type="text:boolean"/>
+  <xs:attribute name="handle-mirror-horizontal" type="text:boolean"/>
+  <xs:attribute name="handle-switched" type="text:boolean"/>
+  <xs:attribute name="handle-position" type="text:string"/>
+  <xs:attribute name="handle-range-x-minimum" type="text:string"/>
+  <xs:attribute name="handle-range-x-maximum" type="text:string"/>
+  <xs:attribute name="handle-range-y-minimum" type="text:string"/>
+  <xs:attribute name="handle-range-y-maximum" type="text:string"/>
+  <xs:attribute name="handle-polar" type="text:string"/>
+  <xs:attribute name="handle-radius-range-minimum" type="text:string"/>
+  <xs:attribute name="handle-radius-range-maximum" type="text:string"/>
+  <xs:attribute name="shape-id" type="text:IDREF"/>
+  <xs:attribute name="color" type="text:color"/>
+  <xs:element name="gradient">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-draw-gradient-attlist"/>
+      <xs:attributeGroup ref="text:draw-gradient-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="name2">
+    <xs:attribute name="name" use="required" form="qualified" type="text:styleName"/>
+  </xs:attributeGroup>
+  <xs:attribute name="display-name" type="text:string"/>
+  <xs:attributeGroup name="style">
+    <xs:attribute name="style" use="required" form="qualified" type="text:gradient-style"/>
+  </xs:attributeGroup>
+  <xs:attribute name="cx" type="text:percent"/>
+  <xs:attribute name="cy" type="text:percent"/>
+  <xs:attribute name="angle" type="text:integer"/>
+  <xs:attribute name="border" type="text:percent"/>
+  <xs:attribute name="start-color" type="text:color"/>
+  <xs:attribute name="end-color" type="text:color"/>
+  <xs:attribute name="start-intensity" type="text:percent"/>
+  <xs:attribute name="end-intensity" type="text:percent"/>
+  <xs:element name="hatch">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-hatch-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="style1">
+    <xs:attribute name="style" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="single"/>
+          <xs:enumeration value="double"/>
+          <xs:enumeration value="triple"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="distance" type="text:length"/>
+  <xs:attribute name="rotation" type="text:integer"/>
+  <xs:element name="fill-image">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-fill-image-attlist"/>
+      <xs:attribute ref="xlink:href" use="required"/>
+      <xs:attribute ref="xlink:type" default="simple"/>
+      <xs:attributeGroup ref="xlink:show"/>
+      <xs:attributeGroup ref="xlink:actuate1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opacity">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:common-draw-gradient-attlist"/>
+      <xs:attributeGroup ref="text:draw-opacity-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="start" type="text:percent"/>
+  <xs:attribute name="end" type="text:percent"/>
+  <xs:element name="marker">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-marker-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-viewbox-attlist"/>
+      <xs:attributeGroup ref="text:common-draw-path-data-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stroke-dash">
+    <xs:complexType>
+      <xs:attributeGroup ref="text:draw-stroke-dash-attlist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="style2">
+    <xs:attribute name="style" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="rect"/>
+          <xs:enumeration value="round"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="dots1" type="text:integer"/>
+  <xs:attribute name="dots1-length" type="text:length"/>
+  <xs:attribute name="dots2" type="text:integer"/>
+  <xs:attribute name="dots2-length" type="text:length"/>
+  <xs:attribute name="opacity" type="text:percent"/>
+  <xs:attribute name="stroke">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="dash"/>
+        <xs:enumeration value="solid"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="stroke-dash">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="stroke-dash-names" type="text:styleNameRefs"/>
+  <xs:attribute name="marker-start">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="marker-end">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="marker-start-width" type="text:length"/>
+  <xs:attribute name="marker-end-width" type="text:length"/>
+  <xs:attribute name="marker-start-center" type="text:boolean"/>
+  <xs:attribute name="marker-end-center" type="text:boolean"/>
+  <xs:attribute name="stroke-linejoin">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="miter"/>
+        <xs:enumeration value="round"/>
+        <xs:enumeration value="bevel"/>
+        <xs:enumeration value="middle"/>
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="inherit"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="symbol-color" type="text:color"/>
+  <xs:attribute name="auto-grow-width" type="text:boolean"/>
+  <xs:attribute name="auto-grow-height" type="text:boolean"/>
+  <xs:attribute name="fit-to-size" type="text:boolean"/>
+  <xs:attribute name="fit-to-contour" type="text:boolean"/>
+  <xs:attribute name="textarea-vertical-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="middle"/>
+        <xs:enumeration value="bottom"/>
+        <xs:enumeration value="justify"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="textarea-horizontal-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="justify"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="color-mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="greyscale"/>
+        <xs:enumeration value="mono"/>
+        <xs:enumeration value="watermark"/>
+        <xs:enumeration value="standard"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="color-inversion" type="text:boolean"/>
+  <xs:attribute name="luminance" type="text:percent"/>
+  <xs:attribute name="contrast" type="text:percent"/>
+  <xs:attribute name="gamma" type="text:percent"/>
+  <xs:attribute name="red" type="text:percent"/>
+  <xs:attribute name="green" type="text:percent"/>
+  <xs:attribute name="blue" type="text:percent"/>
+  <xs:attribute name="image-opacity" type="text:percent"/>
+  <xs:attribute name="shadow">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="visible"/>
+        <xs:enumeration value="hidden"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="shadow-offset-x" type="text:length"/>
+  <xs:attribute name="shadow-offset-y" type="text:length"/>
+  <xs:attribute name="shadow-color" type="text:color"/>
+  <xs:attribute name="shadow-opacity" type="text:percent"/>
+  <xs:attribute name="start-line-spacing-horizontal" type="text:distance"/>
+  <xs:attribute name="start-line-spacing-vertical" type="text:distance"/>
+  <xs:attribute name="end-line-spacing-horizontal" type="text:distance"/>
+  <xs:attribute name="end-line-spacing-vertical" type="text:distance"/>
+  <xs:attribute name="line-distance" type="text:distance"/>
+  <xs:attribute name="guide-overhang" type="text:length"/>
+  <xs:attribute name="guide-distance" type="text:distance"/>
+  <xs:attribute name="start-guide" type="text:length"/>
+  <xs:attribute name="end-guide" type="text:length"/>
+  <xs:attribute name="placing">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="below"/>
+        <xs:enumeration value="above"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="parallel" type="text:boolean"/>
+  <xs:attribute name="measure-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="automatic"/>
+        <xs:enumeration value="left-outside"/>
+        <xs:enumeration value="inside"/>
+        <xs:enumeration value="right-outside"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="measure-vertical-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="automatic"/>
+        <xs:enumeration value="above"/>
+        <xs:enumeration value="below"/>
+        <xs:enumeration value="center"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="unit">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="automatic"/>
+        <xs:enumeration value="mm"/>
+        <xs:enumeration value="cm"/>
+        <xs:enumeration value="m"/>
+        <xs:enumeration value="km"/>
+        <xs:enumeration value="pt"/>
+        <xs:enumeration value="pc"/>
+        <xs:enumeration value="inch"/>
+        <xs:enumeration value="ft"/>
+        <xs:enumeration value="mi"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="show-unit" type="text:boolean"/>
+  <xs:attribute name="decimal-places" type="text:nonNegativeInteger"/>
+  <xs:attribute name="caption-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="straight-line"/>
+        <xs:enumeration value="angled-line"/>
+        <xs:enumeration value="angled-connector-line"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="caption-angle-type">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="fixed"/>
+        <xs:enumeration value="free"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="caption-angle" type="text:nonNegativeInteger"/>
+  <xs:attribute name="caption-gap" type="text:distance"/>
+  <xs:attribute name="caption-escape-direction">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="horizontal"/>
+        <xs:enumeration value="vertical"/>
+        <xs:enumeration value="auto"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="caption-escape">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="caption-line-length" type="text:length"/>
+  <xs:attribute name="caption-fit-line-length" type="text:boolean"/>
+  <xs:attribute name="wrap-influence-on-position">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="iterative"/>
+        <xs:enumeration value="once-concurrent"/>
+        <xs:enumeration value="once-successive"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="frame-display-scrollbar" type="text:boolean"/>
+  <xs:attribute name="frame-display-border" type="text:boolean"/>
+  <xs:attribute name="frame-margin-horizontal" type="text:nonNegativePixelLength"/>
+  <xs:attribute name="frame-margin-vertical" type="text:nonNegativePixelLength"/>
+  <xs:attribute name="visible-area-left" type="text:nonNegativeLength"/>
+  <xs:attribute name="visible-area-top" type="text:nonNegativeLength"/>
+  <xs:attribute name="visible-area-width" type="text:positiveLength"/>
+  <xs:attribute name="visible-area-height" type="text:positiveLength"/>
+  <xs:attribute name="ole-draw-aspect" type="text:nonNegativeInteger"/>
+  <xs:attribute name="fill">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="solid"/>
+        <xs:enumeration value="bitmap"/>
+        <xs:enumeration value="gradient"/>
+        <xs:enumeration value="hatch"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fill-color" type="text:color"/>
+  <xs:attribute name="secondary-fill-color" type="text:color"/>
+  <xs:attribute name="fill-gradient-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="gradient-step-count" type="text:nonNegativeInteger"/>
+  <xs:attribute name="fill-hatch-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fill-hatch-solid" type="text:boolean"/>
+  <xs:attribute name="fill-image-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fill-image-width">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fill-image-height">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fill-image-ref-point-x" type="text:percent"/>
+  <xs:attribute name="fill-image-ref-point-y" type="text:percent"/>
+  <xs:attribute name="fill-image-ref-point">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="top-left"/>
+        <xs:enumeration value="top"/>
+        <xs:enumeration value="top-right"/>
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="bottom-left"/>
+        <xs:enumeration value="bottom"/>
+        <xs:enumeration value="bottom-right"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="tile-repeat-offset"/>
+  <xs:attribute name="opacity-name">
+    <xs:simpleType>
+      <xs:union memberTypes="text:styleNameRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:length value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="background-size">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="full"/>
+        <xs:enumeration value="border"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

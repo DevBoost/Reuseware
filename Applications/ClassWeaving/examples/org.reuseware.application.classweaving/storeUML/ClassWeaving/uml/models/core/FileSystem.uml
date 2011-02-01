@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <elementImport xmi:id="_q-uYELIpEd2WxpzczPM5yA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_q-u_ILIpEd2WxpzczPM5yA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_q-u_IbIpEd2WxpzczPM5yA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="FileSystem">
+    <packagedElement xmi:type="uml:Class" xmi:id="_4pJWILIoEd2WxpzczPM5yA" name="FileSystem"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6Mk3wLIoEd2WxpzczPM5yA" name="FSFile">
+      <ownedAttribute xmi:id="_0Gd_sLIpEd2WxpzczPM5yA" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4jWasLIpEd2WxpzczPM5yA" name="content">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7aZVwLIoEd2WxpzczPM5yA" name="FSFolder">
+      <ownedAttribute xmi:id="_k3etALIpEd2WxpzczPM5yA" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9xXNKrIoEd2WxpzczPM5yA" name="A_&lt;fileSystem>_&lt;fSFolder>" memberEnd="_9xXNK7IoEd2WxpzczPM5yA _9xXNLrIoEd2WxpzczPM5yA">
+      <ownedEnd xmi:id="_9xXNK7IoEd2WxpzczPM5yA" name="fileSystem" type="_4pJWILIoEd2WxpzczPM5yA" association="_9xXNKrIoEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xXNLLIoEd2WxpzczPM5yA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xXNLbIoEd2WxpzczPM5yA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_9xXNLrIoEd2WxpzczPM5yA" name="fSFolder" type="_7aZVwLIoEd2WxpzczPM5yA" aggregation="composite" association="_9xXNKrIoEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xXNL7IoEd2WxpzczPM5yA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xXNMLIoEd2WxpzczPM5yA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KDg7SrIpEd2WxpzczPM5yA" name="A_&lt;fSFolder>_&lt;fSFolder>" memberEnd="_KDg7S7IpEd2WxpzczPM5yA _KDg7TrIpEd2WxpzczPM5yA">
+      <ownedEnd xmi:id="_KDg7S7IpEd2WxpzczPM5yA" name="subFolders" type="_7aZVwLIoEd2WxpzczPM5yA" aggregation="composite" association="_KDg7SrIpEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KDg7TLIpEd2WxpzczPM5yA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KDg7TbIpEd2WxpzczPM5yA"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_KDg7TrIpEd2WxpzczPM5yA" name="parentFolder" type="_7aZVwLIoEd2WxpzczPM5yA" association="_KDg7SrIpEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KDg7T7IpEd2WxpzczPM5yA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KDg7ULIpEd2WxpzczPM5yA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WShOyrIpEd2WxpzczPM5yA" name="A_&lt;fSFolder>_&lt;fSFile>" memberEnd="_WShOy7IpEd2WxpzczPM5yA _WShOzrIpEd2WxpzczPM5yA">
+      <ownedEnd xmi:id="_WShOy7IpEd2WxpzczPM5yA" name="fSFolder" type="_7aZVwLIoEd2WxpzczPM5yA" association="_WShOyrIpEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WShOzLIpEd2WxpzczPM5yA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WShOzbIpEd2WxpzczPM5yA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_WShOzrIpEd2WxpzczPM5yA" name="fSFile" type="_6Mk3wLIoEd2WxpzczPM5yA" aggregation="composite" association="_WShOyrIpEd2WxpzczPM5yA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WShOz7IpEd2WxpzczPM5yA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WShO0LIpEd2WxpzczPM5yA"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

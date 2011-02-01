@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.reuseware.coconut.store:Store xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.store="http://reuseware.org/coconut/store" baseUFI="reuseware:/">
+  <fileNames>org/reuseware/lib/facets/java/common.fdef</fileNames>
+  <fileNames>org/reuseware/lib/systems/jhotdraw/cm/jhotdraw.rex</fileNames>
+  <fileNames>org/reuseware/lib/systems/jhotdraw/cm/java.rex</fileNames>
+</org.reuseware.coconut.store:Store>

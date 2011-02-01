@@ -1,0 +1,11 @@
+compositionsystem FragmentContentReuse
+{
+	fragment role EmptyCore {
+		static port extension;
+	}	
+	fragment role Element {
+		static port contents;
+	}
+	
+	contribution Element.contents --> EmptyCore.extension;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:WiFiPort" elementName="+WiFiPort" name="WiFiPort" requestedState="Enabled" creationClassName="WiFiPort" deviceId="WiFiPort" systemCreationClassName="ComputerSystem" systemName="" portImplementsEndPoint="//@elements.1 //@elements.4" linkTechnology="Other" otherLinktechnology="WiFi" permanentAddress=""/>
+  <elements xsi:type="cim:WiFiEndPoint" elementName="+WiFiAccessPoint" dependencies="//@elements.3" elementSettingData="//@elements.2" name="WiFiAccessPoint" requestedState="Enabled" creationClassName="WiFiEndPoint" systemCreationClassName="ComputerSystem" systemName="" protocolIFType="_802_11g"/>
+  <elements xsi:type="cim:ElementSettingData" caption="WiFiSettings" elementName="WiFiSettings" isNext="Is Next" settingData="//@elements.3"/>
+  <elements xsi:type="cim:WiFiEndpointSettings" caption="WiFiEndpointSettings" elementName="WiFiEndpointSettings" configurationName="WiFiEndpointSettings" instanceID="WiFiEndpointSettings" authenticationMethod="SharedKey" BSSType="Infrastructure" encryptionMethod="WEP" SSID="WIFI_SSID">
+    <keys>WEP_KEY</keys>
+  </elements>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="*EndPoint"/>
+</cim:CIM_Model>

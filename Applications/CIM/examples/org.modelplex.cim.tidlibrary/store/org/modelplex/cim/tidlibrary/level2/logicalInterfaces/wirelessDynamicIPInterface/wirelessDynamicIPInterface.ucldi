@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_VrP6oCI9EeCTTblpCKwUtA" type="Compositionprogram" name="wirelessDynamicIPInterface.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_aZzUcCI9EeCTTblpCKwUtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aZz7gCI9EeCTTblpCKwUtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_aa1PMCI9EeCTTblpCKwUtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_aa2dUCI9EeCTTblpCKwUtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aa2dUSI9EeCTTblpCKwUtA" x="-71" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_aa1PMSI9EeCTTblpCKwUtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_aa1PMiI9EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_aa1PMyI9EeCTTblpCKwUtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='dhcpClient.cim']/@portInstances[portName='DHCPClient',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aa1PNCI9EeCTTblpCKwUtA" x="73" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_aa4SgCI9EeCTTblpCKwUtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_aa45kCI9EeCTTblpCKwUtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aa45kSI9EeCTTblpCKwUtA" x="-81" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_aa4SgSI9EeCTTblpCKwUtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_aa4SgiI9EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_aa4SgyI9EeCTTblpCKwUtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='dhcpClient.cim']/@portInstances[portName='?Dependency',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aa4ShCI9EeCTTblpCKwUtA" x="73" y="-19"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_aZzUcSI9EeCTTblpCKwUtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_aZzUciI9EeCTTblpCKwUtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_aZzUcyI9EeCTTblpCKwUtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='dhcpClient.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aZzUdCI9EeCTTblpCKwUtA" x="63" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_920vQCJUEeCFVJfWUr6Mew" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_922kcCJUEeCFVJfWUr6Mew" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_93UegCJUEeCFVJfWUr6Mew" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_93VFkCJUEeCFVJfWUr6Mew" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_93VFkSJUEeCFVJfWUr6Mew" x="24" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_93UegSJUEeCFVJfWUr6Mew"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_93UegiJUEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_93UegyJUEeCFVJfWUr6Mew"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='ipConnectedToGateway.cim']/@portInstances[portName='IPConnectedToGateway',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_93UehCJUEeCFVJfWUr6Mew" x="199" y="-19"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_920vQSJUEeCFVJfWUr6Mew"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_920vQiJUEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_920vQyJUEeCFVJfWUr6Mew"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='ipConnectedToGateway.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_920vRCJUEeCFVJfWUr6Mew" x="279" y="90"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BinrkCJVEeCFVJfWUr6Mew" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BioSoCJVEeCFVJfWUr6Mew" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_BjdZECJVEeCFVJfWUr6Mew" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BjenMCJVEeCFVJfWUr6Mew" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BjenMSJVEeCFVJfWUr6Mew" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BjdZESJVEeCFVJfWUr6Mew"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BjdZEiJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BjdZEyJVEeCFVJfWUr6Mew"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='WiFiPort',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BjdZFCJVEeCFVJfWUr6Mew" x="99" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_BjhDcCJVEeCFVJfWUr6Mew" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BjiRkCJVEeCFVJfWUr6Mew" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BjiRkSJVEeCFVJfWUr6Mew" x="24" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BjhDcSJVEeCFVJfWUr6Mew"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BjhDciJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BjhDcyJVEeCFVJfWUr6Mew"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='WiFiAccessPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BjhDdCJVEeCFVJfWUr6Mew" x="72" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Bjkt0CJVEeCFVJfWUr6Mew" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BjpmUCJVEeCFVJfWUr6Mew" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BjpmUSJVEeCFVJfWUr6Mew" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Bjkt0SJVEeCFVJfWUr6Mew"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Bjkt0iJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_Bjkt0yJVEeCFVJfWUr6Mew"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='*EndPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Bjkt1CJVEeCFVJfWUr6Mew" x="9" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_BjspoCJVEeCFVJfWUr6Mew" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Bjt3wCJVEeCFVJfWUr6Mew" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Bjt3wSJVEeCFVJfWUr6Mew" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BjspoSJVEeCFVJfWUr6Mew"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BjspoiJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_BjspoyJVEeCFVJfWUr6Mew"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='wifiInterface.cim']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BjsppCJVEeCFVJfWUr6Mew" x="126" y="18"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BinrkSJVEeCFVJfWUr6Mew"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BinrkiJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_BinrkyJVEeCFVJfWUr6Mew"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="wirelessDynamicIPInterface.ucl#//@fragmentInstances[name='wifiInterface.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BinrlCJVEeCFVJfWUr6Mew" x="576" y="90"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_VrQhsCI9EeCTTblpCKwUtA"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="wirelessDynamicIPInterface.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="__nDWwCJUEeCFVJfWUr6Mew" type="4001" source="_93UegCJUEeCFVJfWUr6Mew" target="_aa4SgCI9EeCTTblpCKwUtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="__nDWwSJUEeCFVJfWUr6Mew"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__nDWwiJUEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="wirelessDynamicIPInterface.ucl#//@compositionLinks.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__nDWwyJUEeCFVJfWUr6Mew" points="[-10, -1, 232, -1]$[-244, -10, -2, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Hn3LgCJVEeCFVJfWUr6Mew" type="4001" source="_Bjkt0CJVEeCFVJfWUr6Mew" target="_93UegCJUEeCFVJfWUr6Mew">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Hn3LgSJVEeCFVJfWUr6Mew"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Hn3LgiJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="wirelessDynamicIPInterface.ucl#//@compositionLinks.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Hn3LgyJVEeCFVJfWUr6Mew" points="[-2, -2, 97, 63]$[-89, -66, 10, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Hn-gQCJVEeCFVJfWUr6Mew" id="(0.1,0.35)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Ieji8CJVEeCFVJfWUr6Mew" type="4001" source="_aa1PMCI9EeCTTblpCKwUtA" target="_Bjkt0CJVEeCFVJfWUr6Mew">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_Ieji8SJVEeCFVJfWUr6Mew"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Ieji8iJVEeCFVJfWUr6Mew" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="wirelessDynamicIPInterface.ucl#//@compositionLinks.5"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ieji8yJVEeCFVJfWUr6Mew" points="[10, 2, -439, 2]$[439, 2, -10, 2]"/>
+  </edges>
+</notation:Diagram>

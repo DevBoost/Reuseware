@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.reuseware.coconut.store:Store xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.store="http://reuseware.org/coconut/store" baseUFI="reuseware:/">
+  <fileNames>org/reuseware/application/jhotdraw/Editor.java.fdesc</fileNames>
+  <fileNames>org/reuseware/application/jhotdraw/FigureInstantiation.java</fileNames>
+  <fileNames>org/reuseware/application/jhotdraw/compositions/CoolArangement.fcdi</fileNames>
+  <fileNames>org/reuseware/application/jhotdraw/jhotdraw.rex_activator</fileNames>
+  <fileNames>org/reuseware/application/jhotdraw/FigureInstantiation.java.fdesc</fileNames>
+  <fileNames>org/reuseware/application/jhotdraw/Editor.java</fileNames>
+  <fileNames>org/reuseware/application/jhotdraw/compositions/CoolArangement.fc</fileNames>
+</org.reuseware.coconut.store:Store>

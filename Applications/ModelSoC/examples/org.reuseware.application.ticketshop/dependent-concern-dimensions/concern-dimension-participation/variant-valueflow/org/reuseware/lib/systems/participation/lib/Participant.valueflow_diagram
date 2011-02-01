@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:valueflow="http://www.emftext.org/language/valueflow" xmi:id="_cV5TsBpPEd-hWqBep_H8HQ" type="Valueflow" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_TTgbQBpREd-U5ax2qtXZXQ" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TThCUBpREd-U5ax2qtXZXQ" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_TThCURpREd-U5ax2qtXZXQ" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_TTgbQRpREd-U5ax2qtXZXQ"/>
+    <element xmi:type="valueflow:Agent" href="Participant.valueflow#//@agents.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TTgbQhpREd-U5ax2qtXZXQ" width="649" height="127"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_cV5TsRpPEd-hWqBep_H8HQ"/>
+  <element xmi:type="valueflow:Model" href="Participant.valueflow#/"/>
+</notation:Diagram>

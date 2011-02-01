@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ProtocolService" caption="DHCPServer" description="DHCPServer" elementName="DHCPServer" hostedDependency="//@elements.1" name="DHCPServer" requestedState="Enabled" creationClassName="ProtocolService" started="true" systemCreationClassName="ComputerSystem" systemName="PersonalComputer" serviceAccessBySAP="//@elements.2" otherProtocol="DHCP" protocol="Other"/>
+  <elements xsi:type="cim:RangeOfIPAddresses" caption="DHCPIPRange" description="DHCPIPRange" elementName="LANDHCPIPRange" instanceID="LANDHCPIPRange" startAddress="192.168.1.10" endAddress="192.168.1.254" addressType="IPv4"/>
+  <elements xsi:type="cim:UDPProtocolEndpoint" elementName="DHCPListeningPort" name="DHCPListeningPort" creationClassName="UDPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" protocolIFType="IPv4" portNumber="67"/>
+</cim:CIM_Model>

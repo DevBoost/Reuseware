@@ -1,0 +1,21 @@
+fracol org.modelplex.cim._fracol.CIMLevel3 {
+
+	fragment role ProviderRouter {
+		static port routerIP; 
+		static port wanIP; 
+	}
+
+	fragment role IPNetwork {
+		static port name;
+		static port ipAddress;
+		static port submask;
+		static port members;
+	}
+	
+	configuring association IPNetwork2ProviderRouterIP {
+		IPNetwork.members --> ProviderRouter.routerIP
+	}
+	configuring association IPNetwork2ProviderRouterWanIP {
+		IPNetwork.members --> ProviderRouter.wanIP
+	}
+}

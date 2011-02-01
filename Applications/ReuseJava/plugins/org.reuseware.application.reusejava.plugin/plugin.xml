@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="Example Composition System for Java" icon="icons/java.png" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.reusejava.ExampleUnzipperNewWizard" 
+      	project="true" id="org.reuseware.application.reusejava.plugin">
+      </wizard>   
+   </extension>
+</plugin>

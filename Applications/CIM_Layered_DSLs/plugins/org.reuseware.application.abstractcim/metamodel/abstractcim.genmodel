@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.reuseware.application.abstractcim/src-gen"
+    editDirectory="/org.reuseware.application.abstractcim.edit/src-gen" editorDirectory="/org.reuseware.application.abstractcim.editor/src-gen"
+    modelPluginID="org.reuseware.application.abstractcim" modelName="Abstractcim"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>abstractcim.ecore</foreignModel>
+  <genPackages prefix="Abstractcim" basePackage="org.reuseware.application" disposableProviderFactory="true"
+      ecorePackage="abstractcim.ecore#/">
+    <genClasses ecoreClass="abstractcim.ecore#//CimModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstractcim.ecore#//CimModel/contents"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="abstractcim.ecore#//CimModelElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractcim.ecore#//CimModelElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="abstractcim.ecore#//Interface"/>
+    <genClasses image="false" ecoreClass="abstractcim.ecore#//IPInterface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractcim.ecore#//IPInterface/ipV4Address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractcim.ecore#//IPInterface/subnetMask"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractcim.ecore#//Router">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//Router/devices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//Router/services"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//Router/forwardingServices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//Router/filterList"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractcim.ecore#//EthernetIPInterface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractcim.ecore#//EthernetIPInterface/numPort"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractcim.ecore#//ADSLIPInterface"/>
+    <genClasses ecoreClass="abstractcim.ecore#//WifiInterface">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//WifiInterface/endPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractcim.ecore#//DHCPServer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractcim.ecore#//DHCPServer/startAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstractcim.ecore#//DHCPServer/endAddress"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//DHCPServer/bindsTo"/>
+    </genClasses>
+    <genClasses ecoreClass="abstractcim.ecore#//NATService">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstractcim.ecore#//NATService/endPoint"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

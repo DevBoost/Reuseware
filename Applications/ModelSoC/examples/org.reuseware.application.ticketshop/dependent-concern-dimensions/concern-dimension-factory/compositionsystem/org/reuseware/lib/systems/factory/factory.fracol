@@ -1,0 +1,28 @@
+fracol org.reuseware.lib.systems.factory.factory { 
+
+	fragment role Factory {
+		static port type Product;
+	} 
+
+	fragment role Receiver {
+		static port type Slot;
+	}
+
+	fragment role TwinReceiver {
+		static port type Slot1;
+		static port type Slot2;
+	}
+
+	configuring association Produce {
+		Factory.Product --> Receiver.Slot
+	}
+
+	configuring association Produce1 {
+		Factory.Product --> TwinReceiver.Slot1
+	}
+
+	configuring association Produce2 {
+		Factory.Product --> TwinReceiver.Slot2	
+	}
+
+} 

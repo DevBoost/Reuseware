@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_eNZO4CV_EeCsOIfnX6yosA" activeDiagram="_eNZO4SV_EeCsOIfnX6yosA">
+  <model href="ChangeSeat.usecase.uml#_eNWyoSV_EeCsOIfnX6yosA"/>
+  <diagrams xmi:id="_eNZO4SV_EeCsOIfnX6yosA" position="0,0" size="100,100" name="No name" viewport="0,0">
+    <property xmi:id="_eNZO4iV_EeCsOIfnX6yosA" key="pageFormatName" value="A0"/>
+    <property xmi:id="_eNZO4yV_EeCsOIfnX6yosA" key="diagramWidth" value="3364"/>
+    <property xmi:id="_eNZO5CV_EeCsOIfnX6yosA" key="diagramHeight" value="4756"/>
+    <property xmi:id="_eNZO5SV_EeCsOIfnX6yosA" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_eNZO5iV_EeCsOIfnX6yosA" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_eNZO5yV_EeCsOIfnX6yosA" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_eNZ18CV_EeCsOIfnX6yosA" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_eNZ18SV_EeCsOIfnX6yosA" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_eNZ18iV_EeCsOIfnX6yosA" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ18yV_EeCsOIfnX6yosA" presentation="org.topcased.modeler.uml.usecasediagram">
+      <element href="ChangeSeat.usecase.uml#_eNWyoSV_EeCsOIfnX6yosA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_eNZ19CV_EeCsOIfnX6yosA" position="109,31" size="166,59">
+      <anchorage xmi:id="_eNZ19SV_EeCsOIfnX6yosA" graphEdge="_eNZ1_CV_EeCsOIfnX6yosA"/>
+      <anchorage xmi:id="_eNZ19iV_EeCsOIfnX6yosA" graphEdge="_eNZ2BSV_EeCsOIfnX6yosA"/>
+      <anchorage xmi:id="_eNZ19yV_EeCsOIfnX6yosA" graphEdge="_eNZ2DiV_EeCsOIfnX6yosA"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ1-CV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNWyoiV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_eNZ1-SV_EeCsOIfnX6yosA" position="-1,-1" size="84,93">
+      <anchorage xmi:id="_eNZ1-iV_EeCsOIfnX6yosA" graphEdge="_eNZ1_CV_EeCsOIfnX6yosA"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ1-yV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNWyoyV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_eNZ1_CV_EeCsOIfnX6yosA" anchor="_eNZ1-iV_EeCsOIfnX6yosA _eNZ19SV_EeCsOIfnX6yosA">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ1_SV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNWypCV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_eNZ1_iV_EeCsOIfnX6yosA" visible="false" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_eNZ1_yV_EeCsOIfnX6yosA" visible="false" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_eNZ2ACV_EeCsOIfnX6yosA" id="nameEdgeObject" offset="0,10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_eNZ2ASV_EeCsOIfnX6yosA" id="stereotypeEdgeObject" offset="0,-10"/>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_eNZ2AiV_EeCsOIfnX6yosA" position="-1,-1" size="84,93">
+      <anchorage xmi:id="_eNZ2AyV_EeCsOIfnX6yosA" graphEdge="_eNZ2BSV_EeCsOIfnX6yosA"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ2BCV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNWyqyV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_eNZ2BSV_EeCsOIfnX6yosA" anchor="_eNZ2AyV_EeCsOIfnX6yosA _eNZ19iV_EeCsOIfnX6yosA">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ2BiV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNWyrCV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_eNZ2ByV_EeCsOIfnX6yosA" visible="false" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_eNZ2CCV_EeCsOIfnX6yosA" visible="false" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_eNZ2CSV_EeCsOIfnX6yosA" id="nameEdgeObject" offset="0,10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_eNZ2CiV_EeCsOIfnX6yosA" id="stereotypeEdgeObject" offset="0,-10"/>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_eNZ2CyV_EeCsOIfnX6yosA" position="-1,-1" size="84,93">
+      <anchorage xmi:id="_eNZ2DCV_EeCsOIfnX6yosA" graphEdge="_eNZ2DiV_EeCsOIfnX6yosA"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ2DSV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNXZtSV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_eNZ2DiV_EeCsOIfnX6yosA" anchor="_eNZ2DCV_EeCsOIfnX6yosA _eNZ19yV_EeCsOIfnX6yosA">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_eNZ2DyV_EeCsOIfnX6yosA" presentation="default">
+        <element href="ChangeSeat.usecase.uml#_eNXZtiV_EeCsOIfnX6yosA"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_eNZ2ECV_EeCsOIfnX6yosA" visible="false" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_eNZ2ESV_EeCsOIfnX6yosA" visible="false" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_eNZ2EiV_EeCsOIfnX6yosA" id="nameEdgeObject" offset="0,10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_eNZ2EyV_EeCsOIfnX6yosA" id="stereotypeEdgeObject" offset="0,-10"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

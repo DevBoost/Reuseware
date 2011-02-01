@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:secprop="http://www.emftext.org/language/SecProp" xmi:id="_HuvLIBZtEd-qVtAJa3HQdA" type="Secprop" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_HuvLIRZtEd-qVtAJa3HQdA"/>
+  <element xmi:type="secprop:SecPropModel" href="UseCase.secprop#/"/>
+</notation:Diagram>

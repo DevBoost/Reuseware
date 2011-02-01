@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_CDfIUPJfEduwl6ngIl8Ldw" name="ReuseUMLActivity" metamodelReference="_3ua4UPJmEduwl6ngIl8Ldw">
+  <eAnnotations xmi:id="_SGwBgfJoEduwl6ngIl8Ldw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_MoIdIOEwEdyvQ9PsRVzwyg" name="ReuseUMLActivity" nsURI="http:///schemas/ReuseUMLActivity/_MoH2EOEwEdyvQ9PsRVzwyg/0" nsPrefix="ReuseUMLActivity">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_MoIdIeEwEdyvQ9PsRVzwyg" name="Anchor" eSuperTypes="_MoIdJOEwEdyvQ9PsRVzwyg">
+        <eAnnotations xmi:id="_MoIdIuEwEdyvQ9PsRVzwyg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pM0UQPJfEduwl6ngIl8Ldw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_MoIdJOEwEdyvQ9PsRVzwyg" name="VariationPoint" abstract="true">
+        <eAnnotations xmi:id="_MoIdJeEwEdyvQ9PsRVzwyg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_lBSAkPJiEduwl6ngIl8Ldw"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MoIdJuEwEdyvQ9PsRVzwyg" name="pointName" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_MoIdKOEwEdyvQ9PsRVzwyg" name="portName" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_MoIdKuEwEdyvQ9PsRVzwyg" name="base_ActivityNode" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/2.1.0/UML#//ActivityNode"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_MoIdLOEwEdyvQ9PsRVzwyg" name="Slot" eSuperTypes="_MoIdJOEwEdyvQ9PsRVzwyg">
+        <eAnnotations xmi:id="_MoIdLeEwEdyvQ9PsRVzwyg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fLkKYPJiEduwl6ngIl8Ldw"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_3ua4UPJmEduwl6ngIl8Ldw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_pM0UQPJfEduwl6ngIl8Ldw" name="Anchor">
+    <generalization xmi:id="_tF5-UPJiEduwl6ngIl8Ldw" general="_lBSAkPJiEduwl6ngIl8Ldw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_fLkKYPJiEduwl6ngIl8Ldw" name="Slot">
+    <generalization xmi:id="_p2ol8PJiEduwl6ngIl8Ldw" general="_lBSAkPJiEduwl6ngIl8Ldw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_lBSAkPJiEduwl6ngIl8Ldw" name="VariationPoint" isAbstract="true">
+    <ownedAttribute xmi:id="_9Ojc4PJiEduwl6ngIl8Ldw" name="pointName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_4_PHUPJjEduwl6ngIl8Ldw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7RA0AFV8Edyvn-Kf7QEobA" name="portName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_7RA0AVV8Edyvn-Kf7QEobA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t_3HAFV8Edyvn-Kf7QEobA" name="base_ActivityNode" association="_V8GMAFV8Edyvn-Kf7QEobA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ActivityNode"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_V8GMAFV8Edyvn-Kf7QEobA" name="ActivityNode_VariationPoint" memberEnd="_V8GMAVV8Edyvn-Kf7QEobA _t_3HAFV8Edyvn-Kf7QEobA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_V8GMAVV8Edyvn-Kf7QEobA" name="extension_VariationPoint" type="_lBSAkPJiEduwl6ngIl8Ldw" aggregation="composite" association="_V8GMAFV8Edyvn-Kf7QEobA"/>
+  </packagedElement>
+</uml:Profile>

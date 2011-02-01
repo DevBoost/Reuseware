@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="TakeOrder">
+    <packagedElement xmi:type="uml:Class" xmi:id="_RVvYMDFzEd2A1p8LtiDTWg" name="Phone">
+      <ownedOperation xmi:id="_SpxL4DFzEd2A1p8LtiDTWg" name="takeCall"/>
+      <ownedOperation xmi:id="_TxZiUDFzEd2A1p8LtiDTWg" name="hangUp"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_acL_UDFzEd2A1p8LtiDTWg" name="ExtensionFor_OrderSystem">
+      <ownedOperation xmi:id="_ugyOsjF2Ed2A1p8LtiDTWg" name="addOrder">
+        <ownedParameter xmi:id="_wWi2cDF2Ed2A1p8LtiDTWg" name="newOrder" type="_ykulQDF2Ed2A1p8LtiDTWg"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ykulQDF2Ed2A1p8LtiDTWg" name="ExtensionFor_Order">
+      <ownedOperation xmi:id="_BW54wDF6Ed2mV9Z0JtzXAA" name="addPizza">
+        <ownedParameter xmi:id="_RcAUEDF6Ed2mV9Z0JtzXAA" name="newPizza" type="_L8BdUDF6Ed2mV9Z0JtzXAA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L8BdUDF6Ed2mV9Z0JtzXAA" name="ExtensionFor_Pizza"/>
+  </packagedElement>
+</uml:Model>

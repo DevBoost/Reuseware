@@ -1,0 +1,24 @@
+fracol org.reuseware.lib.systems.app.app { 
+
+	fragment role Main {
+		static port type Rec;
+		static port type Name;
+	} 
+
+	fragment role Execution {
+		static port type Contrib;
+		static port type Executable;
+	} 
+
+	fragment role Executable {
+		static port type Self;
+	} 
+
+	contributing association Execute {
+		Execution.Contrib --> Main.Rec
+	}
+	configuring association AddExecutable {
+		Execution.Executable --> Executable.Self
+	}
+
+} 

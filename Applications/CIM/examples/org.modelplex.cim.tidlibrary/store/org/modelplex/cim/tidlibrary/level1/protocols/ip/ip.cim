@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:IPProtocolEndpoint" description="IP address" elementName="+IP" name="%IP" requestedState="Enabled" creationClassName="IPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="" nameFormat="" otherTypeDescription="" protocolIFType="IPv4" addressOrigin="Static" IPv4Address="192.168.1.1" subnetMask="255.255.255.0"/>
+</cim:CIM_Model>

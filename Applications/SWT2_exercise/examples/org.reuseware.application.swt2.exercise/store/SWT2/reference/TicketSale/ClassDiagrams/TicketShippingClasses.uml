@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <elementImport xmi:id="_i0MZwDI8Ed2hrontCqL0bw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_i0QrMDI8Ed2hrontCqL0bw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_i0QrMTI8Ed2hrontCqL0bw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="TicketOrderClasses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_LeKugDI8Ed2hrontCqL0bw" name="ExtensionFor_Ticket">
+      <ownedAttribute xmi:id="_O02WcDI8Ed2hrontCqL0bw" name="shipped">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V20kYDI8Ed2hrontCqL0bw" name="Customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XBVPuDI8Ed2hrontCqL0bw" name="Association1" memberEnd="_XBVPuTI8Ed2hrontCqL0bw _XBVPvDI8Ed2hrontCqL0bw">
+      <ownedEnd xmi:id="_XBVPuTI8Ed2hrontCqL0bw" name="customer" type="_V20kYDI8Ed2hrontCqL0bw" association="_XBVPuDI8Ed2hrontCqL0bw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBVPujI8Ed2hrontCqL0bw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBVPuzI8Ed2hrontCqL0bw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_XBVPvDI8Ed2hrontCqL0bw" name="tickets" type="_LeKugDI8Ed2hrontCqL0bw" isUnique="false" association="_XBVPuDI8Ed2hrontCqL0bw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBVPvTI8Ed2hrontCqL0bw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBVPvjI8Ed2hrontCqL0bw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

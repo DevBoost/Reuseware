@@ -1,0 +1,3 @@
+invariants for unknown : 
+	actor unknown : [GIVE_VALUE some] --> [TAKE_VALUE some].
+. 

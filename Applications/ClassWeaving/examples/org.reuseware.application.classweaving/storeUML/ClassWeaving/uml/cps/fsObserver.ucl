@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>ClassWeaving</UCPI>
+  <UCPI>uml</UCPI>
+  <UCPI>cps</UCPI>
+  <UCPI>fsObserver.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.uml2']/@portInstances[portName='Subject',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem']/@portInstances[portName='FSFolder',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.uml']/@portInstances[portName='Observer',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem']/@portInstances[portName='FileSystem',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.uml']/@portInstances[portName='Subject',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem']/@portInstances[portName='FSFile',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='ObserverAdvice.uml2']/@portInstances[portName='Observer',fragmentRoleName='Advice',fracolNamespace=['ClassWeaving']]" target="//@fragmentInstances[name='FileSystem']/@portInstances[portName='FileSystem',fragmentRoleName='Core',fracolNamespace=['ClassWeaving']]"/>
+  <fragmentInstances name="ObserverAdvice.uml2" targetPhysicalLocation="out">
+    <UFI>ClassWeaving</UFI>
+    <UFI>uml</UFI>
+    <UFI>models</UFI>
+    <UFI>advices</UFI>
+    <UFI>ObserverAdvice.uml</UFI>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Observer" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Subject" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances name="FileSystem" targetPhysicalLocation="out" target="true">
+    <UFI>ClassWeaving</UFI>
+    <UFI>uml</UFI>
+    <UFI>models</UFI>
+    <UFI>core</UFI>
+    <UFI>FileSystem.uml</UFI>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Core" portName="FileSystem" targetLinks="//@compositionLinks.1 //@compositionLinks.3">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Core" portName="FSFile" targetLinks="//@compositionLinks.2">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Core" portName="FSFolder" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <targetUFI>ClassWeaving</targetUFI>
+    <targetUFI>uml</targetUFI>
+    <targetUFI>models</targetUFI>
+    <targetUFI>core_composed</targetUFI>
+    <targetUFI>FileSystem.uml</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="ObserverAdvice.uml" targetPhysicalLocation="out">
+    <UFI>ClassWeaving</UFI>
+    <UFI>uml</UFI>
+    <UFI>models</UFI>
+    <UFI>advices</UFI>
+    <UFI>ObserverAdvice.uml</UFI>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Observer" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ClassWeaving.fracol" fragmentRoleName="Advice" portName="Subject" sourceLinks="//@compositionLinks.2">
+      <fracolNamespace>ClassWeaving</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

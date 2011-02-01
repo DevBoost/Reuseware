@@ -1,0 +1,63 @@
+@namespace(uri="http://www.reuseware.org/application/abstractcim", prefix="abstractcim")
+package abstractcim;
+
+@reuseware.root(
+	targetPort="EmptyCore.extension",
+	sourcePort="Element.contents",
+	targetUFI="abstractcim/EmptyCore.cim"
+	)
+class CimModel {
+	val CimModelElement[*] contents;
+}
+
+@reuseware.fragment(label="name")
+abstract class CimModelElement {
+	@reuseware.property(port="name")
+	attr String name;
+}
+
+@reuseware.fragment(
+	UFI="abstractcim/ethernetHub.cim"
+	)
+class Hub extends CimModelElement {
+	@reuseware.multiplicity(
+		UFI="abstractcim/ethernetPort.cim",
+		sourcePort="EthernetPort.ethernetPort", 
+		targetPort="Hub.ethernetPortHook",
+		references="ips")
+	attr Integer numPort;
+	@reuseware.link (
+		sourcePort="EthernetPort.ipHook",
+		targetPort="IP.ip"
+	)
+	ref IP[*] ips;
+}
+
+@reuseware.fragment(
+	UFIExpr="
+	if (self.static) return Seqeunce {
+	 'abstractcim','staticIp.cim' 
+	}; 
+	else return Seqeunce {
+	 'abstractcim','dynamicIp.cim' 
+	}; 
+	")
+class IP extends CimModelElement {
+	@reuseware.property(port="IP.ipV4Address")
+	attr String ipV4Address;
+	@reuseware.property(port="IP.subnetMask")
+	attr String subnetMask;
+	attr Boolean static;
+}
+
+@reuseware.fragment(
+	UFI="abstractcim/ipNetwork.cim"
+	)
+class Network extends CimModelElement {
+	@reuseware.property(port="Network.number")
+	attr Integer number;
+	@reuseware.property(port="Network.subnetMask")
+	attr String subnetMask;
+	@reuseware.link(sourcePort="Network.memberHook",targetPort="IP.ip")
+	ref IP[*] ips;
+}

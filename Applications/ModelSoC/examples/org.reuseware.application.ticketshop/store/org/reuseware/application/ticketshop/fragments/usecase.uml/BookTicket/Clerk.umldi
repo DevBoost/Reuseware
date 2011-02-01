@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_vq2t4E3vEd-XpZWKfy4CbQ" activeDiagram="_vq2t4U3vEd-XpZWKfy4CbQ">
+  <model href="Clerk.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_vq2t4U3vEd-XpZWKfy4CbQ" position="0,0" size="100,100" name="Clerk" viewport="0,0">
+    <property xmi:id="_vrBtAE3vEd-XpZWKfy4CbQ" key="pageFormatName" value="A4"/>
+    <property xmi:id="_vrBtAU3vEd-XpZWKfy4CbQ" key="diagramWidth" value="840"/>
+    <property xmi:id="_vrBtAk3vEd-XpZWKfy4CbQ" key="diagramHeight" value="1188"/>
+    <property xmi:id="_vrBtA03vEd-XpZWKfy4CbQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_vrBtBE3vEd-XpZWKfy4CbQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_vrBtBU3vEd-XpZWKfy4CbQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_vrBtBk3vEd-XpZWKfy4CbQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_vrBtB03vEd-XpZWKfy4CbQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_vrBtCE3vEd-XpZWKfy4CbQ" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_vq2t4k3vEd-XpZWKfy4CbQ" presentation="org.topcased.modeler.uml.usecasediagram">
+      <element href="Clerk.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_HyxwIE3wEd-XpZWKfy4CbQ" position="56,58" size="80,80">
+      <anchorage xmi:id="_RQ3bME3wEd-XpZWKfy4CbQ" graphEdge="_RQ4CQE3wEd-XpZWKfy4CbQ _VkiP0E3wEd-XpZWKfy4CbQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_HyxwIU3wEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Clerk.uml#_Hyy-QE3wEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_IvJ40E3wEd-XpZWKfy4CbQ" position="22,7" size="150,25">
+      <anchorage xmi:id="_RQ20IE3wEd-XpZWKfy4CbQ" graphEdge="_RQ4CQE3wEd-XpZWKfy4CbQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_IvJ40U3wEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Clerk.uml#_IvLG8E3wEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_RQ4CQE3wEd-XpZWKfy4CbQ" anchor="_RQ20IE3wEd-XpZWKfy4CbQ _RQ3bME3wEd-XpZWKfy4CbQ">
+      <semanticModel xsi:type="di:SimpleSemanticModelElement" xmi:id="_RQ4CQU3wEd-XpZWKfy4CbQ" presentation="default" typeInfo="CommentLink"/>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_SOXlQE3wEd-XpZWKfy4CbQ" position="36,171" size="124,25">
+      <anchorage xmi:id="_VkgaoE3wEd-XpZWKfy4CbQ" graphEdge="_VkiP0E3wEd-XpZWKfy4CbQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_SOXlQU3wEd-XpZWKfy4CbQ" presentation="default">
+        <element href="Clerk.uml#_SOYzYE3wEd-XpZWKfy4CbQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_VkiP0E3wEd-XpZWKfy4CbQ" anchor="_VkgaoE3wEd-XpZWKfy4CbQ _RQ3bME3wEd-XpZWKfy4CbQ">
+      <semanticModel xsi:type="di:SimpleSemanticModelElement" xmi:id="_VkiP0U3wEd-XpZWKfy4CbQ" presentation="default" typeInfo="CommentLink"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

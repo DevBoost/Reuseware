@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ComputerSystem" description="%Description" elementName="+System" installDate="" name="%System" requestedState="Enabled" creationClassName="ComputerSystem" systemDevices="//@elements.1" primaryOwnerName="" hostedServices="//@elements.2" hostedForwardingServices="//@elements.4" hostedFilterList="//@elements.3"/>
+  <elements xsi:type="cim:LogicalModule" elementName="*Modules" name="*Modules"/>
+  <elements xsi:type="cim:ProtocolService" elementName="?HostedService" name="?HostedService"/>
+  <elements xsi:type="cim:FilterList" elementName="?FilterList" name="?FilterList"/>
+  <elements xsi:type="cim:NATService" description="" elementName="?HostedForwardingService" name="?HostedForwardingService" requestedState="Enabled" creationClassName="" started="true" systemCreationClassName="" systemName="" protocolType=""/>
+</cim:CIM_Model>

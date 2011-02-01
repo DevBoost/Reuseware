@@ -1,0 +1,30 @@
+fracol org.reuseware.lib.systems.associate.associate {
+
+	fragment role Core {
+		static port type Rec;
+	}
+
+	fragment role Associated {
+		static port type Self;
+	}
+
+	fragment role Association {
+		static port type Contrib;
+		static port type Source;
+		static port type Target;
+		static port type Name;
+		static port type NameLowerCase;
+	}
+
+	contributing association Contribution {
+		Association.Contrib --> Core.Rec
+	}
+
+	configuring association AssociationSource {
+		Association.Source --> Associated.Self
+	}
+	configuring association AssociationTarget {
+		Association.Target --> Associated.Self
+	}
+
+}

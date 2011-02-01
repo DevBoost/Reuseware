@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<secprop:SecPropModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:secprop="http://www.emftext.org/language/SecProp">
+  <elements name="Hall"/>
+  <elements name="Customer"/>
+  <elements name="Clerk"/>
+  <channels name="Seat_newSeat" source="//@elements.0" target="//@elements.1"/>
+  <channels name="Seat_oldSeat" source="//@elements.1" target="//@elements.0"/>
+  <channels name="Address_add" source="//@elements.1" target="//@elements.2"/>
+  <channels name="Shipment_M2" source="//@elements.2" target="//@elements.1"/>
+</secprop:SecPropModel>

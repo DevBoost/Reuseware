@@ -1,0 +1,15 @@
+fracol org.reuseware.lib.systems.participation.participation { 
+
+	fragment role Participant {
+		static port type Contrib;
+		static port type Name; 
+	}
+
+	fragment role Collaboration {
+		static port type Rec;
+	} 
+
+	contributing association Participation {
+		Participant.Contrib --> Collaboration.Rec
+	} 
+} 

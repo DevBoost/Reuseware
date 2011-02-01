@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_pH-mwCV3EeCsOIfnX6yosA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_pH-mwSV3EeCsOIfnX6yosA" name="">
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH-mwiV3EeCsOIfnX6yosA" name="Hall"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH-mwyV3EeCsOIfnX6yosA" name="Seat"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH-mxCV3EeCsOIfnX6yosA" name="Seat" memberEnd="_pH-mxSV3EeCsOIfnX6yosA _pH-myCV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH-myCV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH-mxSV3EeCsOIfnX6yosA" name="SOURCE" type="_pH-mwiV3EeCsOIfnX6yosA" association="_pH-mxCV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH-mxiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH-mxyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH-myCV3EeCsOIfnX6yosA" name="TARGET" visibility="public" type="_pH-mwyV3EeCsOIfnX6yosA" association="_pH-mxCV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH-mySV3EeCsOIfnX6yosA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH-myiV3EeCsOIfnX6yosA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH-myyV3EeCsOIfnX6yosA" name="Customer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH-mzCV3EeCsOIfnX6yosA" name="Address"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH-mzSV3EeCsOIfnX6yosA" name="Shipment"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH-mziV3EeCsOIfnX6yosA" name="Seat" memberEnd="_pH-mzyV3EeCsOIfnX6yosA _pH-m0iV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH-m0iV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH-mzyV3EeCsOIfnX6yosA" name="SOURCE" type="_pH-myyV3EeCsOIfnX6yosA" association="_pH-mziV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH-m0CV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH-m0SV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH-m0iV3EeCsOIfnX6yosA" name="TARGET" type="_pH-mwyV3EeCsOIfnX6yosA" association="_pH-mziV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH-m0yV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH-m1CV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH-m1SV3EeCsOIfnX6yosA" name="Address" memberEnd="_pH-m1iV3EeCsOIfnX6yosA _pH_N0CV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH_N0CV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH-m1iV3EeCsOIfnX6yosA" name="SOURCE" type="_pH-myyV3EeCsOIfnX6yosA" association="_pH-m1SV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH-m1yV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH-m2CV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH_N0CV3EeCsOIfnX6yosA" name="TARGET" type="_pH-mzCV3EeCsOIfnX6yosA" association="_pH-m1SV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N0SV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N0iV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH_N0yV3EeCsOIfnX6yosA" name="Shipment" memberEnd="_pH_N1CV3EeCsOIfnX6yosA _pH_N1yV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH_N1yV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH_N1CV3EeCsOIfnX6yosA" name="SOURCE" type="_pH-myyV3EeCsOIfnX6yosA" association="_pH_N0yV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N1SV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N1iV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH_N1yV3EeCsOIfnX6yosA" name="TARGET" type="_pH-mzSV3EeCsOIfnX6yosA" association="_pH_N0yV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N2CV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N2SV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH_N2iV3EeCsOIfnX6yosA" name="Clerk"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH_N2yV3EeCsOIfnX6yosA" name="Shipment" memberEnd="_pH_N3CV3EeCsOIfnX6yosA _pH_N3yV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH_N3yV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH_N3CV3EeCsOIfnX6yosA" name="SOURCE" type="_pH_N2iV3EeCsOIfnX6yosA" association="_pH_N2yV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N3SV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N3iV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH_N3yV3EeCsOIfnX6yosA" name="TARGET" visibility="public" type="_pH-mzSV3EeCsOIfnX6yosA" association="_pH_N2yV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N4CV3EeCsOIfnX6yosA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N4SV3EeCsOIfnX6yosA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH_N4iV3EeCsOIfnX6yosA" name="Address" memberEnd="_pH_N4yV3EeCsOIfnX6yosA _pH_N5iV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH_N5iV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH_N4yV3EeCsOIfnX6yosA" name="SOURCE" type="_pH_N2iV3EeCsOIfnX6yosA" association="_pH_N4iV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N5CV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N5SV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH_N5iV3EeCsOIfnX6yosA" name="TARGET" type="_pH-mzCV3EeCsOIfnX6yosA" association="_pH_N4iV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N5yV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N6CV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH_N6SV3EeCsOIfnX6yosA" name="Account"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH_N6iV3EeCsOIfnX6yosA" name="Account" memberEnd="_pH_N6yV3EeCsOIfnX6yosA _pH_N7iV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH_N7iV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH_N6yV3EeCsOIfnX6yosA" name="SOURCE" type="_pH-myyV3EeCsOIfnX6yosA" association="_pH_N6iV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N7CV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N7SV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH_N7iV3EeCsOIfnX6yosA" name="TARGET" type="_pH_N6SV3EeCsOIfnX6yosA" association="_pH_N6iV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N7yV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N8CV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pH_N8SV3EeCsOIfnX6yosA" name="Bank"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pH_N8iV3EeCsOIfnX6yosA" name="Account" memberEnd="_pH_N8yV3EeCsOIfnX6yosA _pH_N9iV3EeCsOIfnX6yosA" navigableOwnedEnd="_pH_N9iV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_pH_N8yV3EeCsOIfnX6yosA" name="SOURCE" type="_pH_N8SV3EeCsOIfnX6yosA" association="_pH_N8iV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N9CV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_N9SV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pH_N9iV3EeCsOIfnX6yosA" name="TARGET" visibility="public" type="_pH_N6SV3EeCsOIfnX6yosA" association="_pH_N8iV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pH_N9yV3EeCsOIfnX6yosA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pH_04CV3EeCsOIfnX6yosA"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

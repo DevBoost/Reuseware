@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="app">
+  <elementImport xmi:id="_Zy3zYAbKEeCQF8R02KviXg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="org.reuseware.application.uml2java.example">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QImtgAbKEeCQF8R02KviXg" name="Bakery">
+      <ownedOperation xmi:id="_S31T4AbKEeCQF8R02KviXg" name="buy">
+        <ownedParameter xmi:id="_UWHPwAbKEeCQF8R02KviXg" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_dQnFkAbKEeCQF8R02KviXg" name="return" type="_RfV28AbKEeCQF8R02KviXg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RfV28AbKEeCQF8R02KviXg" name="Item"/>
+  </packagedElement>
+</uml:Model>

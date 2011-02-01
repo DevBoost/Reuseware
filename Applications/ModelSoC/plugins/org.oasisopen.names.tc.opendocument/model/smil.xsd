@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" schemaLocation="fo.xsd"/>
+  <xs:attribute name="calcMode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="discrete"/>
+        <xs:enumeration value="linear"/>
+        <xs:enumeration value="paced"/>
+        <xs:enumeration value="spline"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="type" type="text:string"/>
+  <xs:attribute name="subtype" type="text:string"/>
+  <xs:attribute name="direction">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="forward"/>
+        <xs:enumeration value="reverse"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="fadeColor">
+    <xs:attribute name="fadeColor" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="forward"/>
+          <xs:enumeration value="reverse"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="mode">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="in"/>
+        <xs:enumeration value="out"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="targetElement" type="text:IDREF"/>
+  <xs:attribute name="attributeName" type="text:string"/>
+  <xs:attribute name="values" type="text:string"/>
+  <xs:attribute name="from" type="text:string"/>
+  <xs:attribute name="by" type="text:string"/>
+  <xs:attribute name="keyTimes" type="text:string"/>
+  <xs:attribute name="keySplines" type="text:string"/>
+  <xs:attribute name="accumulate">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="sum"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="additive">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="replace"/>
+        <xs:enumeration value="sum"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="to" type="text:string"/>
+  <xs:attribute name="begin" type="text:string"/>
+  <xs:attribute name="end" type="text:string"/>
+  <xs:attribute name="dur" type="text:string"/>
+  <xs:attribute name="endsync">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="first"/>
+        <xs:enumeration value="last"/>
+        <xs:enumeration value="all"/>
+        <xs:enumeration value="media"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="repeatDur" type="text:string"/>
+  <xs:attribute name="repeatCount">
+    <xs:simpleType>
+      <xs:union memberTypes="text:nonNegativeInteger">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="indefinite"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fill">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="remove"/>
+        <xs:enumeration value="freeze"/>
+        <xs:enumeration value="hold"/>
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="default"/>
+        <xs:enumeration value="transition"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="fillDefault">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="remove"/>
+        <xs:enumeration value="freeze"/>
+        <xs:enumeration value="hold"/>
+        <xs:enumeration value="transition"/>
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="inherit"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="restart">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="never"/>
+        <xs:enumeration value="always"/>
+        <xs:enumeration value="whenNotActive"/>
+        <xs:enumeration value="default"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="restartDefault">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="never"/>
+        <xs:enumeration value="always"/>
+        <xs:enumeration value="whenNotActive"/>
+        <xs:enumeration value="inherit"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="accelerate" type="text:double"/>
+  <xs:attribute name="decelerate" type="text:double"/>
+  <xs:attribute name="autoReverse" type="text:boolean"/>
+  <xs:attributeGroup name="fadeColor1">
+    <xs:attribute name="fadeColor" use="required" form="qualified" type="text:color"/>
+  </xs:attributeGroup>
+</xs:schema>

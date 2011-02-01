@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:EthernetPort" description="Ethernet port" elementName="+EthernetPort" name="EthernetPort" creationClassName="EthernetPort" deviceId="EthernetPort" systemCreationClassName="ComputerSystem" systemName="" portType="10-100BaseT" portImplementsEndPoint="//@elements.1" linkTechnology="Ethernet"/>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="*Endpoint"/>
+</cim:CIM_Model>

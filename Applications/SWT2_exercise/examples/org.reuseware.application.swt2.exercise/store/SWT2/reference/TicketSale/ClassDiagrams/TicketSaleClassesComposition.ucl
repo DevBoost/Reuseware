@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>SWT2</UCPI>
+  <UCPI>reference</UCPI>
+  <UCPI>TicketSale</UCPI>
+  <UCPI>ClassDiagrams</UCPI>
+  <UCPI>TicketSaleClassesComposition.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='TicketShippingClasses.uml']/@portInstances[portName='ExtensionFor_Ticket',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='TicketSaleDataModel.uml']/@portInstances[portName='Ticket',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <compositionLinks source="//@fragmentInstances[name='TicketShippingClasses.uml']/@portInstances[portName='TicketOrderClasses_NewClasses',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]" target="//@fragmentInstances[name='TicketSaleDataModel.uml']/@portInstances[portName='DataModel_ExtensionPoint',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+  <fragmentInstances name="TicketSaleDataModel.uml" targetPhysicalLocation="out" target="true">
+    <UFI>SWT2</UFI>
+    <UFI>reference</UFI>
+    <UFI>TicketSale</UFI>
+    <UFI>ClassDiagrams</UFI>
+    <UFI>TicketSaleDataModel.uml</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="DataModel_ExtensionPoint" targetLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="DataModel_NewClasses">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="Ticket" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <targetUFI>SWT2</targetUFI>
+    <targetUFI>reference</targetUFI>
+    <targetUFI>TicketSale</targetUFI>
+    <targetUFI>ClassDiagrams_composed</targetUFI>
+    <targetUFI>TicketSaleDataModel.uml</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="TicketShippingClasses.uml" targetPhysicalLocation="out">
+    <UFI>SWT2</UFI>
+    <UFI>reference</UFI>
+    <UFI>TicketSale</UFI>
+    <UFI>ClassDiagrams</UFI>
+    <UFI>TicketShippingClasses.uml</UFI>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="TicketOrderClasses_ExtensionPoint">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="TicketOrderClasses_NewClasses" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="Customer">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="default.fracol" fragmentRoleName="Default" portName="ExtensionFor_Ticket" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>lib</fracolNamespace>
+      <fracolNamespace>systems</fracolNamespace>
+    </portInstances>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

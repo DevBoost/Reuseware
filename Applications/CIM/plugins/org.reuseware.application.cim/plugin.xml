@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.reuseware.sokan.resource.pluginStore">
+      <pluginStore
+            folder="store/">
+      </pluginStore>
+   </extension>
+   
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="Modelplex CIM Library" icon="icons/cim.gif" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.modelplex.cim.tidlibrary.ExampleUnzipperNewWizard" 
+      	project="true" id="org.modelplex.cim.tidlibrary">
+      </wizard>   
+   </extension>
+</plugin>

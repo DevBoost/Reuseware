@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+<extension point="org.reuseware.coconut.compositionprogram.derivedCompositionProgramUpdateOperation">
+<derivedCompositionProgramUpdateOperation
+	class="org.reuseware.application.abstractcim.composer.EpsilonBasedUpdateOperation">
+	</derivedCompositionProgramUpdateOperation>
+</extension>
+
+<extension point="org.reuseware.coconut.resource.fragmentStores">
+<fragmentfiles
+	extension="abstractcim"
+	diagramExtension="abstractcim_diagram">
+</fragmentfiles>
+</extension>
+</plugin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="CBSE Exercise (UML)" icon="icons/st.png" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.cbse.exercise.ExampleUnzipperNewWizard" 
+      	project="true" id="org.reuseware.application.cbse.example">
+      </wizard>   
+   </extension>
+</plugin>

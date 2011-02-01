@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:secprop="http://www.emftext.org/language/SecProp" xmi:id="_mJHB4CV3EeCsOIfnX6yosA" type="Secprop" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_mJHB4SV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJHB4iV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="ChangeSeat.secprop#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJHB4yV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mJHo8CV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJHo8SV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="ChangeSeat.secprop#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJHo8iV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_mJHo8yV3EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_mJHo9CV3EeCsOIfnX6yosA" type="5001"/>
+    <element xmi:type="secprop:Element" href="ChangeSeat.secprop#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mJHo9SV3EeCsOIfnX6yosA" x="-1" y="-1" width="82" height="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_mJHo9iV3EeCsOIfnX6yosA"/>
+  <element xmi:type="secprop:SecPropModel" href="ChangeSeat.secprop#/"/>
+</notation:Diagram>

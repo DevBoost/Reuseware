@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: es.tid.cim.edit;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Activator: es.tid.cim.provider.CIMLevelZeroEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Export-Package: es.tid.cim.provider
+Require-Bundle: org.eclipse.core.runtime,
+ es.tid.cim;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

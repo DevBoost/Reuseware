@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_QFssYMIdEd2sTpTNseW9lw">
+  <elementImport xmi:id="_QFssYcIdEd2sTpTNseW9lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_QFssYsIdEd2sTpTNseW9lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_QFssY8IdEd2sTpTNseW9lw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_QFssZMIdEd2sTpTNseW9lw" name="FileSystem">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QFssZcIdEd2sTpTNseW9lw" name="FileSystem">
+      <ownedOperation xmi:id="_QFssZsIdEd2sTpTNseW9lw" name="update"/>
+      <ownedOperation xmi:id="_QFssZ8IdEd2sTpTNseW9lw" name="update"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QFssaMIdEd2sTpTNseW9lw" name="FSFile">
+      <ownedAttribute xmi:id="_QFssacIdEd2sTpTNseW9lw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QFssasIdEd2sTpTNseW9lw" name="content">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_QFssa8IdEd2sTpTNseW9lw" name="attach">
+        <ownedParameter xmi:id="_QFssbMIdEd2sTpTNseW9lw" name="observer" type="_QFssZcIdEd2sTpTNseW9lw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_QFssbcIdEd2sTpTNseW9lw" name="detach">
+        <ownedParameter xmi:id="_QFssbsIdEd2sTpTNseW9lw" name="observer" type="_QFssZcIdEd2sTpTNseW9lw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_QFssb8IdEd2sTpTNseW9lw" name="notify"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QFsscMIdEd2sTpTNseW9lw" name="FSFolder">
+      <ownedAttribute xmi:id="_QFssccIdEd2sTpTNseW9lw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_QFsscsIdEd2sTpTNseW9lw" name="attach">
+        <ownedParameter xmi:id="_QFssc8IdEd2sTpTNseW9lw" name="observer" type="_QFssZcIdEd2sTpTNseW9lw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_QFssdMIdEd2sTpTNseW9lw" name="detach">
+        <ownedParameter xmi:id="_QFssdcIdEd2sTpTNseW9lw" name="observer" type="_QFssZcIdEd2sTpTNseW9lw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_QFssdsIdEd2sTpTNseW9lw" name="notify"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QFssd8IdEd2sTpTNseW9lw" name="A_&lt;fileSystem>_&lt;fSFolder>" memberEnd="_QFwWwMIdEd2sTpTNseW9lw _QFwWw8IdEd2sTpTNseW9lw">
+      <ownedEnd xmi:id="_QFwWwMIdEd2sTpTNseW9lw" name="fileSystem" type="_QFssZcIdEd2sTpTNseW9lw" association="_QFssd8IdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwWwcIdEd2sTpTNseW9lw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwWwsIdEd2sTpTNseW9lw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_QFwWw8IdEd2sTpTNseW9lw" name="fSFolder" type="_QFsscMIdEd2sTpTNseW9lw" aggregation="composite" association="_QFssd8IdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwWxMIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwWxcIdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QFwWxsIdEd2sTpTNseW9lw" name="A_&lt;fSFolder>_&lt;fSFolder>" memberEnd="_QFwWx8IdEd2sTpTNseW9lw _QFwWysIdEd2sTpTNseW9lw">
+      <ownedEnd xmi:id="_QFwWx8IdEd2sTpTNseW9lw" name="subFolders" type="_QFsscMIdEd2sTpTNseW9lw" aggregation="composite" association="_QFwWxsIdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwWyMIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwWycIdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_QFwWysIdEd2sTpTNseW9lw" name="parentFolder" type="_QFsscMIdEd2sTpTNseW9lw" association="_QFwWxsIdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwWy8IdEd2sTpTNseW9lw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwWzMIdEd2sTpTNseW9lw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QFwWzcIdEd2sTpTNseW9lw" name="A_&lt;fSFolder>_&lt;fSFile>" memberEnd="_QFwWzsIdEd2sTpTNseW9lw _QFwW0cIdEd2sTpTNseW9lw">
+      <ownedEnd xmi:id="_QFwWzsIdEd2sTpTNseW9lw" name="fSFolder" type="_QFsscMIdEd2sTpTNseW9lw" association="_QFwWzcIdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwWz8IdEd2sTpTNseW9lw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwW0MIdEd2sTpTNseW9lw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_QFwW0cIdEd2sTpTNseW9lw" name="fSFile" type="_QFssaMIdEd2sTpTNseW9lw" aggregation="composite" association="_QFwWzcIdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwW0sIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwW08IdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QFwW1MIdEd2sTpTNseW9lw" name="A_&lt;observer>_&lt;subject>" memberEnd="_QFwW1cIdEd2sTpTNseW9lw _QFwW2MIdEd2sTpTNseW9lw">
+      <ownedEnd xmi:id="_QFwW1cIdEd2sTpTNseW9lw" name="observer" visibility="public" type="_QFssZcIdEd2sTpTNseW9lw" association="_QFwW1MIdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwW1sIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwW18IdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_QFwW2MIdEd2sTpTNseW9lw" name="subject" type="_QFsscMIdEd2sTpTNseW9lw" association="_QFwW1MIdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwW2cIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwW2sIdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QFwW28IdEd2sTpTNseW9lw" name="A_&lt;observer>_&lt;subject>" memberEnd="_QFwW3MIdEd2sTpTNseW9lw _QFwW38IdEd2sTpTNseW9lw">
+      <ownedEnd xmi:id="_QFwW3MIdEd2sTpTNseW9lw" name="observer" visibility="public" type="_QFssZcIdEd2sTpTNseW9lw" association="_QFwW28IdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwW3cIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwW3sIdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_QFwW38IdEd2sTpTNseW9lw" name="subject" type="_QFssaMIdEd2sTpTNseW9lw" association="_QFwW28IdEd2sTpTNseW9lw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFwW4MIdEd2sTpTNseW9lw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFwW4cIdEd2sTpTNseW9lw"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

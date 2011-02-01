@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FragmentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:description="http://description/1.0">
+  <iD>
+    <segments>org</segments>
+    <segments>modelplex</segments>
+    <segments>cim</segments>
+    <segments>tidlibrary</segments>
+    <segments>level3</segments>
+    <segments>networkLinks</segments>
+    <segments>wifiNetwork</segments>
+    <segments>wifiNetwork.cim.fdesc</segments>
+  </iD>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>ElementType</typeID>
+    <valueNames>Physical</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Connection</typeID>
+    <valueNames>Wifi</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Protocol</typeID>
+    <valueNames>IP</valueNames>
+    <valueNames>DHCP</valueNames>
+    <valueNames>TCP</valueNames>
+    <valueNames>SSH</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>CIM_Schema V2.21.0</typeID>
+    <valueNames>CIM_Device</valueNames>
+    <valueNames>CIM_Interop</valueNames>
+    <valueNames>CIM_Physical</valueNames>
+  </facets>
+  <facets>
+    <typeID>cim_facets</typeID>
+    <typeID>CIMfacets.fdef</typeID>
+    <typeID>Structure</typeID>
+    <valueNames>SingleConcept</valueNames>
+  </facets>
+  <properties name="Name" value="Wifi Network"/>
+  <properties name="Author" value="Telefonica"/>
+  <properties name="Version" value=""/>
+  <properties name="Hint" value="This describes a complete wireless network."/>
+  <ID>cimlib</ID>
+  <ID>level1</ID>
+  <ID>wifiNetwork</ID>
+  <ID>wifiNetwork.cim.fdesc</ID>
+</description:FragmentDescription>

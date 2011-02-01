@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_XlHvQMfwEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_X1jX8MfwEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_X1jX8cfwEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_X1jX8sfwEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_X1jX88fwEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="ADSL Static  IP Interface" fillColor="16745727" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X1jX9MfwEd6WrsmzKVDL7w" x="27" y="9" width="181" height="265"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Xmck8MfwEd6WrsmzKVDL7w" type="2036">
+    <children xmi:type="notation:Node" xmi:id="_XmdMAMfwEd6WrsmzKVDL7w" type="5071"/>
+    <children xmi:type="notation:Node" xmi:id="_XmdMAcfwEd6WrsmzKVDL7w" type="5072"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Xmck8cfwEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:ADSLModem" href="adslStaticIPInterface.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xmck8sfwEd6WrsmzKVDL7w" x="72" y="216"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_XmdMAsfwEd6WrsmzKVDL7w" type="2093">
+    <children xmi:type="notation:Node" xmi:id="_XmdzEMfwEd6WrsmzKVDL7w" type="5185"/>
+    <children xmi:type="notation:Node" xmi:id="_XmdzEcfwEd6WrsmzKVDL7w" type="5186"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_XmdMA8fwEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:NetworkPort" href="adslStaticIPInterface.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XmdMBMfwEd6WrsmzKVDL7w" x="54" y="144"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_XmdzEsfwEd6WrsmzKVDL7w" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_XmeaIsfwEd6WrsmzKVDL7w" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_XmeaI8fwEd6WrsmzKVDL7w" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_XmeaIMfwEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="adslStaticIPInterface.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XmeaIcfwEd6WrsmzKVDL7w" x="54" y="63"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_XlHvQcfwEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="adslStaticIPInterface.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_XmiEgMfwEd6WrsmzKVDL7w" type="4061" source="_Xmck8MfwEd6WrsmzKVDL7w" target="_XmdMAsfwEd6WrsmzKVDL7w">
+    <children xmi:type="notation:Node" xmi:id="_XmiEhMfwEd6WrsmzKVDL7w" type="6061">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XmiEhcfwEd6WrsmzKVDL7w" y="40"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_XmiEgcfwEd6WrsmzKVDL7w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XmiEgsfwEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XmiEg8fwEd6WrsmzKVDL7w" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XmqnYsfwEd6WrsmzKVDL7w" id="(0.4954128440366973,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XmqnY8fwEd6WrsmzKVDL7w" id="(0.4961832061068702,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_XmjSoMfwEd6WrsmzKVDL7w" type="4060" source="_XmdMAsfwEd6WrsmzKVDL7w" target="_XmdzEsfwEd6WrsmzKVDL7w">
+    <children xmi:type="notation:Node" xmi:id="_Xmj5scfwEd6WrsmzKVDL7w" type="6060">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Xmj5ssfwEd6WrsmzKVDL7w" x="-3" y="21"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_XmjSocfwEd6WrsmzKVDL7w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XmjSosfwEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Xmj5sMfwEd6WrsmzKVDL7w" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XmqnYMfwEd6WrsmzKVDL7w" id="(0.4961832061068702,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XmqnYcfwEd6WrsmzKVDL7w" id="(0.49586776859504134,0.0)"/>
+  </edges>
+</notation:Diagram>

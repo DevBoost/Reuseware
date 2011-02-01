@@ -1,0 +1,15 @@
+fracol org.reuseware.lib.systems.trigger.trigger { 
+
+	fragment role Container {
+		static port type Rec;
+	} 
+
+	fragment role Trigger {
+		static port type Contrib;
+	}
+
+	contributing association Contribution {
+		Trigger.Contrib --> Container.Rec
+	}
+
+} 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<widgets:Panel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:widgets="http://fujaba.de/widgets.ecore" xsi:schemaLocation="http://fujaba.de/widgets.ecore widgets.ecore">
+  <widgets name="login" type="TextField"/>
+  <widgets name="password" type="PasswordField"/>
+  <widgets name="submit" type="Button"/>
+</widgets:Panel>

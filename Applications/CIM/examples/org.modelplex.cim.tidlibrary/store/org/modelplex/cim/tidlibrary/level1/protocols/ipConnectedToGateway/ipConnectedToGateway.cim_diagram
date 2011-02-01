@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_KrD-gMfuEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_K89m0MfuEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_K89m0cfuEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_K89m0sfuEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_K89m08fuEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="IP connected to Gateway" fillColor="10265827" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K89m1MfuEd6WrsmzKVDL7w" x="46" y="34" width="349" height="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_K8-N4MfuEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_K8-N4cfuEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_K8-N4sfuEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_K8-N48fuEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name &#x9;&#x9;--> IPProtocolEndpoint.ElementName, IPProtocolEndpoint.Name&#xD;&#xA;&#x9;&#x9;&#x9;--> RemoteServiceAccessPoint.ElementName, RemoteServiceAccessPoint.tName&#xD;&#xA;- ip address&#x9;--> IPProtocolEndpoint.IPv4Address&#xD;&#xA;- submask &#x9;--> IPProtocolEndpoint.subnetMask&#xD;&#xA;- gateway &#x9;--> RemoteServiceAccessPoint.accessInfo&#xD;&#xA;- assignment&#x9;--> IPProtocolEndpoint.addressOrigin&#xD;&#xA;&#xD;&#xA;Rules:&#xD;&#xA;- assignment values &lt;-- Static or DHCP&#xD;&#xA;- if assignment is DHCP then gateway is NULL&#xD;&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (NetworkPort)LogicalPort.portImplementsEndPoint --> (IPProtocolEndpoint)ProtocolEndpoint&#xD;&#xA;- (IPConnectivitySubnet)Collection.members --> (IPProtocolEndpoint)ProtocolEndpoint&#xD;&#xA;" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K8-N5MfuEd6WrsmzKVDL7w" x="46" y="226" width="685" height="229"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_KsKxwMfuEd6WrsmzKVDL7w" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_KsKxw8fuEd6WrsmzKVDL7w" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_KsLY0MfuEd6WrsmzKVDL7w" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_KsKxwcfuEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="ipConnectedToGateway.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KsKxwsfuEd6WrsmzKVDL7w" x="135" y="72"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_KsLY0cfuEd6WrsmzKVDL7w" type="2094">
+    <children xmi:type="notation:Node" xmi:id="_KsL_4MfuEd6WrsmzKVDL7w" type="5187"/>
+    <children xmi:type="notation:Node" xmi:id="_KsL_4cfuEd6WrsmzKVDL7w" type="5188"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_KsLY0sfuEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:RemoteServiceAccessPoint" href="ipConnectedToGateway.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KsLY08fuEd6WrsmzKVDL7w" x="117" y="153"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_KrD-gcfuEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="ipConnectedToGateway.cim#/"/>
+</notation:Diagram>

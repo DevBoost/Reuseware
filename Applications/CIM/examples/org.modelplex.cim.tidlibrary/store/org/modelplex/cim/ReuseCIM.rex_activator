@@ -1,0 +1,6 @@
+componentmodel org.reuseware.application.cim.rex.CIMReuseCore
+componentmodel org.reuseware.application.cim.rex.CIMReuse
+componentmodel org.reuseware.application.cim.rex.CIMReuseAttributes
+
+compositionlanguagesyntax org.reuseware.application.cim.rex.CIMReuseCoreSyntax
+compositionlanguagesyntax org.reuseware.application.cim.rex.CIMReuseAttributesSyntax

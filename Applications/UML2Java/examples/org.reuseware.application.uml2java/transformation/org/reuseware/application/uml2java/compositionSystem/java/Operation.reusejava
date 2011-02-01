@@ -1,0 +1,5 @@
+public class TYPE_SLOT {
+	public TYPE_SLOT OP_NAME_VALUE_HOOK(String id) {
+		<< STATEMENTS >>;
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:valueflow="http://www.emftext.org/language/valueflow" xmi:id="_eS-5gCV_EeCsOIfnX6yosA" type="Valueflow" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_eS-5gSV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS-5giV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS-5gyV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS-5hCV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="BookTicket.valueflow#//@agents.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS-5hSV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eS-5hiV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS-5hyV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS-5iCV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS-5iSV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="BookTicket.valueflow#//@agents.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS-5iiV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eS_gkCV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS_gkSV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS_gkiV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS_gkyV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="BookTicket.valueflow#//@agents.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS_glCV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eS_glSV_EeCsOIfnX6yosA" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eS_gliV_EeCsOIfnX6yosA" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eS_glyV_EeCsOIfnX6yosA" type="7001"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eS_gmCV_EeCsOIfnX6yosA"/>
+    <element xmi:type="valueflow:Agent" href="BookTicket.valueflow#//@agents.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eS_gmSV_EeCsOIfnX6yosA" x="-1" y="-1" width="649" height="127"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_eS_gmiV_EeCsOIfnX6yosA"/>
+  <element xmi:type="valueflow:Model" href="BookTicket.valueflow#/"/>
+</notation:Diagram>

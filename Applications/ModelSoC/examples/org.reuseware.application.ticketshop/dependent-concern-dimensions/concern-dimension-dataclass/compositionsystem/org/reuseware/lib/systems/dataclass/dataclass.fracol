@@ -1,0 +1,16 @@
+fracol org.reuseware.lib.systems.dataclass.dataclass {
+
+	fragment role Core {
+		static port type Rec;
+	}
+
+	fragment role Class {
+		static port type Contrib;
+		static port type Self;
+		static port type Name;
+	}
+
+	contributing association Contribution {
+		Class.Contrib --> Core.Rec
+	}
+}

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_SEllYBkZEd6wNoVhn4yKPQ">
+  <ID>myModels</ID>
+  <ID>sample.fc</ID>
+  <compositionLinks xmi:id="_SEmzgRkZEd6wNoVhn4yKPQ" source="_SEmzgBkZEd6wNoVhn4yKPQ" target="_SEmMcBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SEpPwBkZEd6wNoVhn4yKPQ" source="_SEoosRkZEd6wNoVhn4yKPQ" target="_SEmMcBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SEuIQRkZEd6wNoVhn4yKPQ" source="_SEuIQBkZEd6wNoVhn4yKPQ" target="_SEnakhkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SEvWYBkZEd6wNoVhn4yKPQ" source="_SEuvURkZEd6wNoVhn4yKPQ" target="_SEmMcBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SExyoRkZEd6wNoVhn4yKPQ" source="_SExyoBkZEd6wNoVhn4yKPQ" target="_SEnakhkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SEzAwBkZEd6wNoVhn4yKPQ" source="_SEyZsRkZEd6wNoVhn4yKPQ" target="_SEmMcBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE018BkZEd6wNoVhn4yKPQ" source="_SE0O4RkZEd6wNoVhn4yKPQ" target="_SE0O4BkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE1dABkZEd6wNoVhn4yKPQ" source="_SE018RkZEd6wNoVhn4yKPQ" target="_SEnakhkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE2rIBkZEd6wNoVhn4yKPQ" source="_SE2EERkZEd6wNoVhn4yKPQ" target="_SEmMcBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE6VgBkZEd6wNoVhn4yKPQ" source="_SE0O4RkZEd6wNoVhn4yKPQ" target="_SE5ucBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE6VghkZEd6wNoVhn4yKPQ" source="_SE6VgRkZEd6wNoVhn4yKPQ" target="_SE1dARkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE7joRkZEd6wNoVhn4yKPQ" source="_SE7joBkZEd6wNoVhn4yKPQ" target="_SEmMcBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE9Y0RkZEd6wNoVhn4yKPQ" source="_SE9Y0BkZEd6wNoVhn4yKPQ" target="_SE8xwRkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE_OABkZEd6wNoVhn4yKPQ" source="_SE-m8BkZEd6wNoVhn4yKPQ" target="_SE68kBkZEd6wNoVhn4yKPQ"/>
+  <compositionLinks xmi:id="_SE_1ERkZEd6wNoVhn4yKPQ" source="_SE_1EBkZEd6wNoVhn4yKPQ" target="_SE_OARkZEd6wNoVhn4yKPQ"/>
+  <fragmentInstances xmi:id="_SEllYRkZEd6wNoVhn4yKPQ" name="_core" target="true">
+    <UFI>abstractcim</UFI>
+    <UFI>EmptyCore.cim</UFI>
+    <portInstances xmi:id="_SEmMcBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="extension" targetLinks="_SEmzgRkZEd6wNoVhn4yKPQ _SEpPwBkZEd6wNoVhn4yKPQ _SEvWYBkZEd6wNoVhn4yKPQ _SEzAwBkZEd6wNoVhn4yKPQ _SE2rIBkZEd6wNoVhn4yKPQ _SE7joRkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="contents">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <targetUFI>myModels</targetUFI>
+    <targetUFI>sample.abstractcim</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances xmi:id="_SEmMcRkZEd6wNoVhn4yKPQ" name="ZyxelRouter">
+    <UFI>abstractcim</UFI>
+    <UFI>Router.cim</UFI>
+    <portInstances xmi:id="_SEmzgBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="contents" sourceLinks="_SEmzgRkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SEnakBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SEnakRkZEd6wNoVhn4yKPQ" property="name" value="ZyxelRouter"/>
+    </portInstances>
+    <portInstances xmi:id="_SEnakhkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="devices" targetLinks="_SEuIQRkZEd6wNoVhn4yKPQ _SExyoRkZEd6wNoVhn4yKPQ _SE1dABkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE1dARkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="services" targetLinks="_SE6VghkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE68kBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="forwardingServices" targetLinks="_SE_OABkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE_OARkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="filterLists" targetLinks="_SE_1ERkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="extension">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances xmi:id="_SEoosBkZEd6wNoVhn4yKPQ" name="ADSL1">
+    <UFI>abstractcim</UFI>
+    <UFI>ADSLIPInterface.cim</UFI>
+    <portInstances xmi:id="_SEoosRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="contents" sourceLinks="_SEpPwBkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SEpPwRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SEpPwhkZEd6wNoVhn4yKPQ" property="name" value="ADSL1"/>
+    </portInstances>
+    <portInstances xmi:id="_SErE8BkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="ipAddress">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SErE8RkZEd6wNoVhn4yKPQ" property="ipV4Address" value="213.125.114.75"/>
+    </portInstances>
+    <portInstances xmi:id="_SErE8hkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="subnetMask">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SErsABkZEd6wNoVhn4yKPQ" property="subnetMask" value="255.255.255.0"/>
+    </portInstances>
+    <portInstances xmi:id="_SEuIQBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="device" sourceLinks="_SEuIQRkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE9Y0BkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="ip" sourceLinks="_SE9Y0RkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="extension">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="endPoint">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="bindsTo">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances xmi:id="_SEuvUBkZEd6wNoVhn4yKPQ" name="Ethernet1">
+    <UFI>abstractcim</UFI>
+    <UFI>4PortEthernetIPInterface.cim</UFI>
+    <portInstances xmi:id="_SEuvURkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="contents" sourceLinks="_SEvWYBkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SEv9cBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SEv9cRkZEd6wNoVhn4yKPQ" property="name" value="Ethernet1"/>
+    </portInstances>
+    <portInstances xmi:id="_SEwkgBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="ipAddress">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SEwkgRkZEd6wNoVhn4yKPQ" property="ipV4Address" value="192.168.1.1"/>
+    </portInstances>
+    <portInstances xmi:id="_SExLkBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="subnetMask">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SExLkRkZEd6wNoVhn4yKPQ" property="subnetMask" value="255.255.255.0"/>
+    </portInstances>
+    <portInstances xmi:id="_SExyoBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="device" sourceLinks="_SExyoRkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE0O4RkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="ip" sourceLinks="_SE018BkZEd6wNoVhn4yKPQ _SE6VgBkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="extension">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="endPoint">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="bindsTo">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances xmi:id="_SEyZsBkZEd6wNoVhn4yKPQ" name="Wifi1">
+    <UFI>abstractcim</UFI>
+    <UFI>WifiInterface.cim</UFI>
+    <portInstances xmi:id="_SEyZsRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="contents" sourceLinks="_SEzAwBkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SEzAwRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SEzAwhkZEd6wNoVhn4yKPQ" property="name" value="Wifi1"/>
+    </portInstances>
+    <portInstances xmi:id="_SE0O4BkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="endPoint" targetLinks="_SE018BkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE018RkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="device" sourceLinks="_SE1dABkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="extension">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="bindsTo">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances xmi:id="_SE2EEBkZEd6wNoVhn4yKPQ" name="DHCP1">
+    <UFI>abstractcim</UFI>
+    <UFI>DHCPServer.cim</UFI>
+    <portInstances xmi:id="_SE2EERkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="contents" sourceLinks="_SE2rIBkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE3SMBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SE35QBkZEd6wNoVhn4yKPQ" property="name" value="DHCP1"/>
+    </portInstances>
+    <portInstances xmi:id="_SE35QRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="startAddress">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SE4gUBkZEd6wNoVhn4yKPQ" property="startAddress" value="192.168.1.10"/>
+    </portInstances>
+    <portInstances xmi:id="_SE5HYBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="endAddress">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SE5HYRkZEd6wNoVhn4yKPQ" property="endAddress" value="192.168.1.254"/>
+    </portInstances>
+    <portInstances xmi:id="_SE5ucBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="bindsTo" targetLinks="_SE6VgBkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE6VgRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="service" sourceLinks="_SE6VghkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="extension">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+  </fragmentInstances>
+  <fragmentInstances xmi:id="_SE68kRkZEd6wNoVhn4yKPQ" name="NAT1">
+    <UFI>abstractcim</UFI>
+    <UFI>NATService.cim</UFI>
+    <portInstances xmi:id="_SE7joBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="contents" sourceLinks="_SE7joRkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE7johkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="name">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings xmi:id="_SE8xwBkZEd6wNoVhn4yKPQ" property="name" value="NAT1"/>
+    </portInstances>
+    <portInstances xmi:id="_SE8xwRkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="endPoint" targetLinks="_SE9Y0RkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE-m8BkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="forwardingService" sourceLinks="_SE_OABkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances xmi:id="_SE_1EBkZEd6wNoVhn4yKPQ" fragmentRoleName="Default" portName="filterList" sourceLinks="_SE_1ERkZEd6wNoVhn4yKPQ">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="extension">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

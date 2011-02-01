@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="UML2Java Model Transformation defined as Composition System" icon="icons/gear.png" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.uml2java.ExampleUnzipperNewWizard" 
+      	project="true" id="org.reuseware.application.uml2java.plugin">
+      </wizard>   
+   </extension>
+</plugin>

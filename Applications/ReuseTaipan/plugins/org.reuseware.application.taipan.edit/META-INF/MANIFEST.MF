@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.reuseware.application.taipan.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: org.reuseware.application.taipan.provider.TaiPanEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Export-Package: org.reuseware.application.taipan.provider
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.2.0,4.0.0)",
+ org.reuseware.application.taipan;bundle-version="[1.0.0,2.0.0)";visibility:=reexport,
+ org.eclipse.emf.edit;bundle-version="[2.2.0,3.0.0)";visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

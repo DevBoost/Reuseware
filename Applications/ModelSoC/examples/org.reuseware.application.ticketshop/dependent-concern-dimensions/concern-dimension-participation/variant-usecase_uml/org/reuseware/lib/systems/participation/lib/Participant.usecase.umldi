@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_yejTcBC4Ed--XLQMea-mcQ" activeDiagram="_yejTcRC4Ed--XLQMea-mcQ">
+  <model href="Participant.usecase.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_yejTcRC4Ed--XLQMea-mcQ" position="0,0" size="100,100" name="CustomerActor" viewport="0,0">
+    <property xmi:id="_ye2OYBC4Ed--XLQMea-mcQ" key="pageFormatName" value="A0"/>
+    <property xmi:id="_ye2OYRC4Ed--XLQMea-mcQ" key="diagramWidth" value="3364"/>
+    <property xmi:id="_ye2OYhC4Ed--XLQMea-mcQ" key="diagramHeight" value="4756"/>
+    <property xmi:id="_ye2OYxC4Ed--XLQMea-mcQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_ye2OZBC4Ed--XLQMea-mcQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_ye2OZRC4Ed--XLQMea-mcQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_ye2OZhC4Ed--XLQMea-mcQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_ye2OZxC4Ed--XLQMea-mcQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_ye2OaBC4Ed--XLQMea-mcQ" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_yejTchC4Ed--XLQMea-mcQ" presentation="org.topcased.modeler.uml.usecasediagram">
+      <element href="Participant.usecase.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_zKRJ8BC4Ed--XLQMea-mcQ" position="14,16" size="84,93">
+      <anchorage xmi:id="_wY-j4B02Ed-xbb1E_Mnkzw" graphEdge="_wbGDwB02Ed-xbb1E_Mnkzw"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_zKRJ8RC4Ed--XLQMea-mcQ" presentation="default">
+        <element href="Participant.usecase.uml#_zLFpUBC4Ed--XLQMea-mcQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_kF0JIB02Ed-xbb1E_Mnkzw" position="214,23" size="136,72">
+      <anchorage xmi:id="_wY-j4R02Ed-xbb1E_Mnkzw" graphEdge="_wbGDwB02Ed-xbb1E_Mnkzw"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_kF0wMB02Ed-xbb1E_Mnkzw" presentation="default">
+        <element href="Participant.usecase.uml#_kGh60B02Ed-xbb1E_Mnkzw"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_wbGDwB02Ed-xbb1E_Mnkzw" anchor="_wY-j4B02Ed-xbb1E_Mnkzw _wY-j4R02Ed-xbb1E_Mnkzw">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_wbGDwR02Ed-xbb1E_Mnkzw" presentation="default">
+        <element href="Participant.usecase.uml#_7-J9dhDkEd-CuqEMaRlYgw"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_wbGDwh02Ed-xbb1E_Mnkzw" visible="false" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_wbGDwx02Ed-xbb1E_Mnkzw" visible="false" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_wbGDxB02Ed-xbb1E_Mnkzw" id="nameEdgeObject" offset="0,10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_wbGDxR02Ed-xbb1E_Mnkzw" id="stereotypeEdgeObject" offset="0,-10"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

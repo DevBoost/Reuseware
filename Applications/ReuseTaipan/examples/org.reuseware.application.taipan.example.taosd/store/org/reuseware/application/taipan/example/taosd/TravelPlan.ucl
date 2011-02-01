@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>reuseware</UCPI>
+  <UCPI>application</UCPI>
+  <UCPI>taipan</UCPI>
+  <UCPI>example</UCPI>
+  <UCPI>taosd</UCPI>
+  <UCPI>TravelPlan.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='tobacco',fragmentRoleName='ItemContainer',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='Ship1Cargo',fragmentRoleName='ItemHolder',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyCargo.taipan2']/@portInstances[portName='coffee',fragmentRoleName='ItemContainer',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='Ship2Cargo',fragmentRoleName='ItemHolder',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='Vehicles',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='VehicleContainer',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship1Port',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='HamburgPort',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship1Route',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='NorthernRoute',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship2Port',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='RostockPort',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='MyFlotilla.taipan2']/@portInstances[portName='ship2Route',fragmentRoleName='Flotilla',fracolNamespace=['org','reuseware','application','taipan']]" target="//@fragmentInstances[name='EuropeanSea.taipan2']/@portInstances[portName='BalticRoute',fragmentRoleName='TravelSpace',fracolNamespace=['org','reuseware','application','taipan']]"/>
+  <fragmentInstances name="MyCargo.taipan2" targetPhysicalLocation="out">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>taipan</UFI>
+    <UFI>example</UFI>
+    <UFI>taosd</UFI>
+    <UFI>MyCargo.taipan</UFI>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="VehicleContainer">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="Vehicles">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="ItemContainer" portName="tobacco" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="ItemContainer" portName="coffee" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="ItemContainer" portName="guns">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>taipan</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>taosd</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>MyCargo.taipan</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="MyFlotilla.taipan2" targetPhysicalLocation="out">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>taipan</UFI>
+    <UFI>example</UFI>
+    <UFI>taosd</UFI>
+    <UFI>MyFlotilla.taipan</UFI>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="VehicleContainer">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="Vehicles" sourceLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="ship1Route" sourceLinks="//@compositionLinks.4">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="ship2Route" sourceLinks="//@compositionLinks.6">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="ship1Port" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="ship2Port" sourceLinks="//@compositionLinks.5">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="ItemHolder" portName="Ship1Cargo" targetLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="ItemHolder" portName="Ship2Cargo" targetLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>taipan</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>taosd</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>MyFlotilla.taipan</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="EuropeanSea.taipan2" targetPhysicalLocation="out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>taipan</UFI>
+    <UFI>example</UFI>
+    <UFI>taosd</UFI>
+    <UFI>EuropeanSea.taipan</UFI>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="VehicleContainer" targetLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="BalticRoute" targetLinks="//@compositionLinks.6">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="NorthernRoute" targetLinks="//@compositionLinks.4">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="HamburgPort" targetLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="RostockPort" targetLinks="//@compositionLinks.5">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="TravelSpace" portName="StockholmPort">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="reuseTaipan.fracol" fragmentRoleName="Flotilla" portName="Vehicles">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>taipan</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>taipan</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>taosd</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>TravelPlan.taipan</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

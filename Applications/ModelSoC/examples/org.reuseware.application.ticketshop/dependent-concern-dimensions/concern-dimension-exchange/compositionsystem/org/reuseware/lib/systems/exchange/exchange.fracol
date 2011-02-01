@@ -1,0 +1,32 @@
+fracol org.reuseware.lib.systems.exchange.exchange { 
+
+	fragment role Container {
+		static port type Rec;
+	} 
+
+	fragment role Value {
+		static port type Contrib;
+		static port type Provider;
+		static port type Consumer;
+	}
+
+	fragment role Provider {
+		static port type Self;
+	}
+
+	fragment role Consumer {
+		static port type Self;
+	}
+
+	contributing association Contribution {
+		 Value.Contrib --> Container.Rec
+	} 
+
+	configuring association Provide {
+		 Value.Provider --> Provider.Self
+	}
+
+	configuring association Consume {
+		 Value.Consumer --> Consumer.Self
+	} 
+} 

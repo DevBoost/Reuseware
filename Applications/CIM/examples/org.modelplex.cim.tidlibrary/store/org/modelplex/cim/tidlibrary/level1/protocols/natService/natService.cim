@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:NATService" description="NATService" elementName="+NATService" dependencies="//@elements.1" name="NATService" requestedState="Enabled" creationClassName="NATService" started="true" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" protocolType="">
+    <NATServiceRunningOnEndpoint href="#//@elements.4"/>
+  </elements>
+  <elements xsi:type="cim:NATListBasedSettings" caption="" description="DefaultNATServiceSetting" elementName="DefaultNATServiceSetting" configurationName="DefaultNATServiceSetting" instanceID="DefaultNATServiceSetting" addressesToBeTranslated="//@elements.2"/>
+  <elements xsi:type="cim:FilterList" caption="PortAddressTranslation" description="PortAddressTranslation" elementName="+PortAddressTranslation" dependencies="//@elements.3" name="PortAddressTranslation" creationClassName="FilterList" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter"/>
+  <elements xsi:type="cim:IPHeadersFilter" caption="HTTPPortMapping" description="HTTPPortMapping" elementName="HTTPPortMapping" name="HTTPPortMapping" hdrDestPortEnd="80" hdrDestPortStart="80" hdrSrcPortEnd="80" hdrSrcPortStart="80">
+    <hdrDestAddress>9</hdrDestAddress>
+    <hdrDestAddress>1</hdrDestAddress>
+    <hdrDestAddress>168</hdrDestAddress>
+    <hdrDestAddress>192</hdrDestAddress>
+    <hdrDestAddressEndOfRange>9</hdrDestAddressEndOfRange>
+    <hdrDestAddressEndOfRange>1</hdrDestAddressEndOfRange>
+    <hdrDestAddressEndOfRange>168</hdrDestAddressEndOfRange>
+    <hdrDestAddressEndOfRange>192</hdrDestAddressEndOfRange>
+  </elements>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="?EndPoint"/>
+</cim:CIM_Model>

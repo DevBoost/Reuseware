@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_U-2CcE3oEd-uZb9cq7NKpg" activeDiagram="_U-2CcU3oEd-uZb9cq7NKpg">
+  <model href="Hall.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_U-2CcU3oEd-uZb9cq7NKpg" position="0,0" size="100,100" name="Hall" viewport="0,0">
+    <property xmi:id="_VN0SkE3oEd-uZb9cq7NKpg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_VN05oE3oEd-uZb9cq7NKpg" key="diagramWidth" value="840"/>
+    <property xmi:id="_VN05oU3oEd-uZb9cq7NKpg" key="diagramHeight" value="1188"/>
+    <property xmi:id="_VN05ok3oEd-uZb9cq7NKpg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_VN05o03oEd-uZb9cq7NKpg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_VN05pE3oEd-uZb9cq7NKpg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_VN05pU3oEd-uZb9cq7NKpg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_VN05pk3oEd-uZb9cq7NKpg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_VN05p03oEd-uZb9cq7NKpg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_U-2pgE3oEd-uZb9cq7NKpg" presentation="org.topcased.modeler.uml.usecasediagram">
+      <element href="Hall.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_WVaz0E3oEd-uZb9cq7NKpg" position="62,61" size="80,80">
+      <anchorage xmi:id="_s8_doU3oEd-uZb9cq7NKpg" graphEdge="_s92ZQE3oEd-uZb9cq7NKpg"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_WVaz0U3oEd-uZb9cq7NKpg" presentation="default">
+        <element href="Hall.uml#_WYOQME3oEd-uZb9cq7NKpg"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_Z4mmsE3oEd-uZb9cq7NKpg" position="42,18" size="147,25">
+      <anchorage xmi:id="_s8_doE3oEd-uZb9cq7NKpg" graphEdge="_s92ZQE3oEd-uZb9cq7NKpg"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Z4mmsU3oEd-uZb9cq7NKpg" presentation="default">
+        <element href="Hall.uml#_Z9BMoE3oEd-uZb9cq7NKpg"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_s92ZQE3oEd-uZb9cq7NKpg" anchor="_s8_doE3oEd-uZb9cq7NKpg _s8_doU3oEd-uZb9cq7NKpg">
+      <semanticModel xsi:type="di:SimpleSemanticModelElement" xmi:id="_s92ZQU3oEd-uZb9cq7NKpg" presentation="default" typeInfo="CommentLink"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

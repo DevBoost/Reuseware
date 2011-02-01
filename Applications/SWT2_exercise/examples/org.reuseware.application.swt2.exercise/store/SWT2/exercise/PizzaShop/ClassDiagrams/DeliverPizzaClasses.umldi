@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_f7hRoDF6Ed2mV9Z0JtzXAA" activeDiagram="_f7h4sDF6Ed2mV9Z0JtzXAA">
+  <model href="DeliverPizzaClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_f7h4sDF6Ed2mV9Z0JtzXAA" position="0,0" size="100,100" name="DeliverPizzaClasses" viewport="0,0">
+    <property xmi:id="_f8JjwDF6Ed2mV9Z0JtzXAA" key="pageFormatName" value="A4"/>
+    <property xmi:id="_f8JjwTF6Ed2mV9Z0JtzXAA" key="diagramWidth" value="840"/>
+    <property xmi:id="_f8JjwjF6Ed2mV9Z0JtzXAA" key="diagramHeight" value="1188"/>
+    <property xmi:id="_f8JjwzF6Ed2mV9Z0JtzXAA" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_f8JjxDF6Ed2mV9Z0JtzXAA" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_f8JjxTF6Ed2mV9Z0JtzXAA" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_f8JjxjF6Ed2mV9Z0JtzXAA" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_f8JjxzF6Ed2mV9Z0JtzXAA" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_f8JjyDF6Ed2mV9Z0JtzXAA" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_f7h4sTF6Ed2mV9Z0JtzXAA" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="DeliverPizzaClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_gbpjMDF6Ed2mV9Z0JtzXAA" position="28,32" size="100,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_gbpjMTF6Ed2mV9Z0JtzXAA" presentation="default">
+        <element href="DeliverPizzaClasses.uml#_gbqxUDF6Ed2mV9Z0JtzXAA"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_gbpjMjF6Ed2mV9Z0JtzXAA">
+        <property xmi:id="_gbpjMzF6Ed2mV9Z0JtzXAA" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_gbpjNDF6Ed2mV9Z0JtzXAA" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_gbqxUDF6Ed2mV9Z0JtzXAA"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_klJvMDF6Ed2mV9Z0JtzXAA" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_klJvMTF6Ed2mV9Z0JtzXAA" presentation="default">
+            <element href="DeliverPizzaClasses.uml#_klYYsDF6Ed2mV9Z0JtzXAA"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_gbpjNTF6Ed2mV9Z0JtzXAA">
+        <property xmi:id="_gbpjNjF6Ed2mV9Z0JtzXAA" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_gbpjNzF6Ed2mV9Z0JtzXAA" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_gbqxUDF6Ed2mV9Z0JtzXAA"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_zNcOQDF6Ed2yz_kaSjuIKQ" position="29,91" size="278,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_zNcOQTF6Ed2yz_kaSjuIKQ" presentation="default">
+        <element href="DeliverPizzaClasses.uml#_zNht0DF6Ed2yz_kaSjuIKQ"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_zNcOQjF6Ed2yz_kaSjuIKQ">
+        <property xmi:id="_zNcOQzF6Ed2yz_kaSjuIKQ" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_zNcORDF6Ed2yz_kaSjuIKQ" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_zNht0DF6Ed2yz_kaSjuIKQ"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_zNcORTF6Ed2yz_kaSjuIKQ">
+        <property xmi:id="_zNcORjF6Ed2yz_kaSjuIKQ" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_zNcORzF6Ed2yz_kaSjuIKQ" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_zNht0DF6Ed2yz_kaSjuIKQ"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_2rN8sDF6Ed2yz_kaSjuIKQ" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_2rN8sTF6Ed2yz_kaSjuIKQ" presentation="default">
+            <element href="DeliverPizzaClasses.uml#_2rRnEDF6Ed2yz_kaSjuIKQ"/>
+          </semanticModel>
+        </contained>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_6JeMQDF6Ed2yz_kaSjuIKQ" position="57,195" size="294,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_6JeMQTF6Ed2yz_kaSjuIKQ" presentation="default">
+        <element href="DeliverPizzaClasses.uml#_6JezUDF6Ed2yz_kaSjuIKQ"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_6JeMQjF6Ed2yz_kaSjuIKQ">
+        <property xmi:id="_6JeMQzF6Ed2yz_kaSjuIKQ" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_6JeMRDF6Ed2yz_kaSjuIKQ" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_6JezUDF6Ed2yz_kaSjuIKQ"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_NuNXMDF7Ed2yz_kaSjuIKQ" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_NuNXMTF7Ed2yz_kaSjuIKQ" presentation="default">
+            <element href="DeliverPizzaClasses.uml#_NuPMYDF7Ed2yz_kaSjuIKQ"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" xmi:id="_lp4tMDF7Ed2yz_kaSjuIKQ" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_lp4tMTF7Ed2yz_kaSjuIKQ" presentation="default">
+            <element href="DeliverPizzaClasses.uml#_lp5UQDF7Ed2yz_kaSjuIKQ"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_6JeMRTF6Ed2yz_kaSjuIKQ">
+        <property xmi:id="_6JeMRjF6Ed2yz_kaSjuIKQ" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_6JeMRzF6Ed2yz_kaSjuIKQ" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_6JezUDF6Ed2yz_kaSjuIKQ"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_u8EDMDF7Ed2yz_kaSjuIKQ" position="56,302" size="297,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_u8EDMTF7Ed2yz_kaSjuIKQ" presentation="default">
+        <element href="DeliverPizzaClasses.uml#_u8FRUDF7Ed2yz_kaSjuIKQ"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_u8EDMjF7Ed2yz_kaSjuIKQ">
+        <property xmi:id="_u8EDMzF7Ed2yz_kaSjuIKQ" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_u8EDNDF7Ed2yz_kaSjuIKQ" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_u8FRUDF7Ed2yz_kaSjuIKQ"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_p3DRMDF7Ed2yz_kaSjuIKQ" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_p3DRMTF7Ed2yz_kaSjuIKQ" presentation="default">
+            <element href="DeliverPizzaClasses.uml#_p3D4QDF7Ed2yz_kaSjuIKQ"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_u8EDNTF7Ed2yz_kaSjuIKQ">
+        <property xmi:id="_u8EDNjF7Ed2yz_kaSjuIKQ" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_u8EDNzF7Ed2yz_kaSjuIKQ" presentation="default">
+          <element href="DeliverPizzaClasses.uml#_u8FRUDF7Ed2yz_kaSjuIKQ"/>
+        </semanticModel>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

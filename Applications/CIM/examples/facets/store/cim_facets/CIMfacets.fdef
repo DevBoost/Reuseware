@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FacetDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://description/1.0">
+  <iD>
+    <segments>cim_facets</segments>
+    <segments>CIMfacets.fdef</segments>
+  </iD>
+  <facetTypes xsi:type="description:ListFacet" name="Protocol" multiValue="true" description="This describes which protocol is used to communicate.">
+    <values name="IP" description="Internet Protocol"/>
+    <values name="DHCP" description="Dynamic Host Configuration Protocol"/>
+    <values name="TCP" description="Transmission Control Protocol"/>
+    <values name="IPX" description="Internetwork Packet Exchange"/>
+    <values name="MPLS" description="Multiprotocol Label Switching"/>
+    <values name="Telnet" description=""/>
+    <values name="SSH" description="Secure Shell"/>
+  </facetTypes>
+  <facetTypes xsi:type="description:ListFacet" name="Connection" multiValue="true" description="This describs which sort of connection was used.">
+    <values name="Ethernet" description="Just connected via ordanary ethernet cable."/>
+    <values name="Wifi" description="This is a wirless connection"/>
+  </facetTypes>
+  <facetTypes xsi:type="description:ListFacet" name="Device" multiValue="true" description="Which sort of physical devices where used?">
+    <values name="Hub" description="Simply network note."/>
+    <values name="Router" description="Network note and gateway to the internet."/>
+    <values name="Home Device" description="Combination of router and a number of services."/>
+    <values name="Modem" description="Device to go online via a telefon line."/>
+    <values name="Port" description="A place to plug something in."/>
+  </facetTypes>
+  <facetTypes xsi:type="description:ListFacet" name="CIM_Schema V2.21.0" multiValue="true" description="CIM is composed of a Specification and a Schema. &#xA;The Schema provides the actual model descriptions, &#xA;while the Specification defines the details &#xA;for integration with other management models.">
+    <values name="CIM_Application" description=""/>
+    <values name="CIM_Core" description=""/>
+    <values name="CIM_Database" description=""/>
+    <values name="CIM_Device" description=""/>
+    <values name="CIM_Event" description=""/>
+    <values name="CIM_Interop" description=""/>
+    <values name="CIM_Metrics" description=""/>
+    <values name="CIM_Physical" description=""/>
+    <values name="CIM_Policy" description=""/>
+    <values name="CIM_Security" description=""/>
+    <values name="CIM_System" description=""/>
+    <values name="CIM_User" description=""/>
+  </facetTypes>
+  <facetTypes xsi:type="description:ListFacet" name="Structure" description="Describes briefly the inner structure of the given concept.">
+    <values name="SingleConcept" description="Fragment has a very simple structure."/>
+    <values name="MultiConcept" description="Fragemten has a quit complex inner structure."/>
+  </facetTypes>
+  <facetTypes xsi:type="description:ListFacet" name="ElementType" description="Describes whether the concept exists in the physical world or not.">
+    <values name="Logical" description="Just a virtual concept."/>
+    <values name="Physical" description="This concept does exist."/>
+  </facetTypes>
+  <ID>cim_facets</ID>
+  <ID>CIMfacets.fdef</ID>
+</description:FacetDefinition>

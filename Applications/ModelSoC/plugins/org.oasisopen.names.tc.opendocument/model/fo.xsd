@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="math.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/2002/xforms" schemaLocation="xforms.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" schemaLocation="anim.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" schemaLocation="chart.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:config:1.0" schemaLocation="config.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" schemaLocation="number.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" schemaLocation="dr3d.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" schemaLocation="draw.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:form:1.0" schemaLocation="form.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" schemaLocation="meta.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:office:1.0" schemaLocation="office.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" schemaLocation="presentation.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:script:1.0" schemaLocation="script.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" schemaLocation="smil.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:style:1.0" schemaLocation="style.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" schemaLocation="svg.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:table:1.0" schemaLocation="table.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:opendocument:xmlns:text:1.0" schemaLocation="odf.xsd"/>
+  <xs:attribute name="language" type="text:languageCode"/>
+  <xs:attribute name="country" type="text:countryCode"/>
+  <xs:attributeGroup name="min-height">
+    <xs:attribute name="min-height" use="required" form="qualified">
+      <xs:simpleType>
+        <xs:union memberTypes="text:length text:percent"/>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attribute name="min-width">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="max-height">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="max-width">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="page-width" type="text:length"/>
+  <xs:attribute name="page-height" type="text:length"/>
+  <xs:attributeGroup name="min-height1">
+    <xs:attribute name="min-height" use="required" form="qualified" type="text:length"/>
+  </xs:attributeGroup>
+  <xs:attribute name="font-variant" type="text:fontVariant"/>
+  <xs:attribute name="text-transform">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="none"/>
+        <xs:enumeration value="lowercase"/>
+        <xs:enumeration value="uppercase"/>
+        <xs:enumeration value="capitalize"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="color" type="text:color"/>
+  <xs:attribute name="font-family" type="text:string"/>
+  <xs:attribute name="font-size">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveLength text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="letter-spacing">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="normal"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="font-style" type="text:fontStyle"/>
+  <xs:attribute name="text-shadow" type="text:shadowType"/>
+  <xs:attribute name="font-weight" type="text:fontWeight"/>
+  <xs:attribute name="hyphenate" type="text:boolean"/>
+  <xs:attribute name="hyphenation-remain-char-count" type="text:positiveInteger"/>
+  <xs:attribute name="hyphenation-push-char-count" type="text:positiveInteger"/>
+  <xs:attribute name="line-height">
+    <xs:simpleType>
+      <xs:union memberTypes="text:nonNegativeLength text:percent">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="normal"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-align-last">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="start"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="justify"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="keep-together">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="always"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="widows" type="text:nonNegativeInteger"/>
+  <xs:attribute name="orphans" type="text:nonNegativeInteger"/>
+  <xs:attribute name="hyphenation-keep">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="page"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="hyphenation-ladder-count">
+    <xs:simpleType>
+      <xs:union memberTypes="text:positiveInteger">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="no-limit"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-indent">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="text-align">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="start"/>
+        <xs:enumeration value="end"/>
+        <xs:enumeration value="left"/>
+        <xs:enumeration value="right"/>
+        <xs:enumeration value="center"/>
+        <xs:enumeration value="justify"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="margin-left">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="margin-right">
+    <xs:simpleType>
+      <xs:union memberTypes="text:length text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="margin-top">
+    <xs:simpleType>
+      <xs:union memberTypes="text:nonNegativeLength text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="margin-bottom">
+    <xs:simpleType>
+      <xs:union memberTypes="text:nonNegativeLength text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="margin">
+    <xs:simpleType>
+      <xs:union memberTypes="text:nonNegativeLength text:percent"/>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="break-before">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="column"/>
+        <xs:enumeration value="page"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="break-after">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="column"/>
+        <xs:enumeration value="page"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="background-color">
+    <xs:simpleType>
+      <xs:union memberTypes="text:color">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="transparent"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="border" type="text:string"/>
+  <xs:attribute name="border-top" type="text:string"/>
+  <xs:attribute name="border-bottom" type="text:string"/>
+  <xs:attribute name="border-left" type="text:string"/>
+  <xs:attribute name="border-right" type="text:string"/>
+  <xs:attribute name="padding" type="text:nonNegativeLength"/>
+  <xs:attribute name="padding-top" type="text:nonNegativeLength"/>
+  <xs:attribute name="padding-bottom" type="text:nonNegativeLength"/>
+  <xs:attribute name="padding-left" type="text:nonNegativeLength"/>
+  <xs:attribute name="padding-right" type="text:nonNegativeLength"/>
+  <xs:attribute name="keep-with-next">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="auto"/>
+        <xs:enumeration value="always"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="column-count" type="text:positiveInteger"/>
+  <xs:attribute name="column-gap" type="text:length"/>
+  <xs:attribute name="start-indent" type="text:length"/>
+  <xs:attribute name="end-indent" type="text:length"/>
+  <xs:attribute name="space-before" type="text:length"/>
+  <xs:attribute name="space-after" type="text:length"/>
+  <xs:attribute name="wrap-option">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="no-wrap"/>
+        <xs:enumeration value="wrap"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="width" type="text:positiveLength"/>
+  <xs:attribute name="height" type="text:positiveLength"/>
+  <xs:attribute name="clip" type="text:string"/>
+</xs:schema>

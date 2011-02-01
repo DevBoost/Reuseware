@@ -1,0 +1,5 @@
+invariants for PLACEHOLDER : 
+	counter Hall : [ Seat set including newSeat] --> [ Seat set including oldSeat] . 
+	actor Clerk : [ Shipment set including M2] --> [ Address add] . 
+	actor Customer : [ Address add, Seat oldSeat] --> [ Seat newSeat, Shipment M2] . 
+. 

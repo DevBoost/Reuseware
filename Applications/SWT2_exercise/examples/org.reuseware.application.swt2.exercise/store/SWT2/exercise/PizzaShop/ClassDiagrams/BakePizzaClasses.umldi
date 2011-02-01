@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_LlrhQDF3Ed2A1p8LtiDTWg" activeDiagram="_LlrhQTF3Ed2A1p8LtiDTWg">
+  <model href="BakePizzaClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_LlrhQTF3Ed2A1p8LtiDTWg" position="0,0" size="100,100" name="BakePizzaClasses" viewport="0,0">
+    <property xmi:id="_Ll48oDF3Ed2A1p8LtiDTWg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_Ll48oTF3Ed2A1p8LtiDTWg" key="diagramWidth" value="840"/>
+    <property xmi:id="_Ll48ojF3Ed2A1p8LtiDTWg" key="diagramHeight" value="1188"/>
+    <property xmi:id="_Ll48ozF3Ed2A1p8LtiDTWg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_Ll48pDF3Ed2A1p8LtiDTWg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_Ll48pTF3Ed2A1p8LtiDTWg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_Ll48pjF3Ed2A1p8LtiDTWg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_Ll48pzF3Ed2A1p8LtiDTWg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_Ll48qDF3Ed2A1p8LtiDTWg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_LlrhQjF3Ed2A1p8LtiDTWg" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="BakePizzaClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_MOLrsDF3Ed2A1p8LtiDTWg" position="30,24" size="360,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_MOLrsTF3Ed2A1p8LtiDTWg" presentation="default">
+        <element href="BakePizzaClasses.uml#_MOMSwDF3Ed2A1p8LtiDTWg"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_MOLrsjF3Ed2A1p8LtiDTWg">
+        <property xmi:id="_MOLrszF3Ed2A1p8LtiDTWg" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_MOLrtDF3Ed2A1p8LtiDTWg" presentation="default">
+          <element href="BakePizzaClasses.uml#_MOMSwDF3Ed2A1p8LtiDTWg"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_MOLrtTF3Ed2A1p8LtiDTWg">
+        <property xmi:id="_MOLrtjF3Ed2A1p8LtiDTWg" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_MOLrtzF3Ed2A1p8LtiDTWg" presentation="default">
+          <element href="BakePizzaClasses.uml#_MOMSwDF3Ed2A1p8LtiDTWg"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_epYbsDF3Ed2A1p8LtiDTWg" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_epYbsTF3Ed2A1p8LtiDTWg" presentation="default">
+            <element href="BakePizzaClasses.uml#_epZCwDF3Ed2A1p8LtiDTWg"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" xmi:id="_kjfpsDF3Ed2A1p8LtiDTWg" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_kjfpsTF3Ed2A1p8LtiDTWg" presentation="default">
+            <element href="BakePizzaClasses.uml#_kjgQwDF3Ed2A1p8LtiDTWg"/>
+          </semanticModel>
+        </contained>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_O5KEMDF3Ed2A1p8LtiDTWg" position="50,220" size="215,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_O5KEMTF3Ed2A1p8LtiDTWg" presentation="default">
+        <element href="BakePizzaClasses.uml#_O5LSUDF3Ed2A1p8LtiDTWg"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_O5KEMjF3Ed2A1p8LtiDTWg">
+        <property xmi:id="_O5KEMzF3Ed2A1p8LtiDTWg" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_O5KENDF3Ed2A1p8LtiDTWg" presentation="default">
+          <element href="BakePizzaClasses.uml#_O5LSUDF3Ed2A1p8LtiDTWg"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_3NV5sDF3Ed2A1p8LtiDTWg" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_3NV5sTF3Ed2A1p8LtiDTWg" presentation="default">
+            <element href="BakePizzaClasses.uml#_3NXH0DF3Ed2A1p8LtiDTWg"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_O5KENTF3Ed2A1p8LtiDTWg">
+        <property xmi:id="_O5KENjF3Ed2A1p8LtiDTWg" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_O5KENzF3Ed2A1p8LtiDTWg" presentation="default">
+          <element href="BakePizzaClasses.uml#_O5LSUDF3Ed2A1p8LtiDTWg"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_UEQaoDF4Ed2mV9Z0JtzXAA" position="52,156" size="217,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_UERBsDF4Ed2mV9Z0JtzXAA" presentation="default">
+        <element href="BakePizzaClasses.uml#_UEUsEDF4Ed2mV9Z0JtzXAA"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_UERBsTF4Ed2mV9Z0JtzXAA">
+        <property xmi:id="_UERBsjF4Ed2mV9Z0JtzXAA" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_UERBszF4Ed2mV9Z0JtzXAA" presentation="default">
+          <element href="BakePizzaClasses.uml#_UEUsEDF4Ed2mV9Z0JtzXAA"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_UERBtDF4Ed2mV9Z0JtzXAA">
+        <property xmi:id="_UERBtTF4Ed2mV9Z0JtzXAA" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_UERBtjF4Ed2mV9Z0JtzXAA" presentation="default">
+          <element href="BakePizzaClasses.uml#_UEUsEDF4Ed2mV9Z0JtzXAA"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_prsnsDF5Ed2mV9Z0JtzXAA" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_prsnsTF5Ed2mV9Z0JtzXAA" presentation="default">
+            <element href="BakePizzaClasses.uml#_pruc4DF5Ed2mV9Z0JtzXAA"/>
+          </semanticModel>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

@@ -1,0 +1,75 @@
+@namespace(uri="http://www.reuseware.org/application/abstractcim", prefix="abstractcim")
+package abstractcim;
+
+@reuseware.root(
+	targetPort="extension",
+	sourcePort="contents",
+	targetUFI="abstractcim/EmptyCore.cim"
+	)
+class CimModel {
+	val CimModelElement[*] contents;
+}
+
+@reuseware.fragment(label="name")
+abstract class CimModelElement {
+	@reuseware.property(port="name")
+	attr String name;
+}
+
+abstract class Interface extends CimModelElement{
+}
+
+abstract class IPInterface extends Interface {
+	@reuseware.property(port="ipAddress")
+	attr String ipV4Address;
+	@reuseware.property(port="subnetMask")
+	attr String subnetMask;
+}
+
+@reuseware.fragment(UFI="abstractcim/Router.cim")
+class Router extends CimModelElement {
+	@reuseware.link(sourcePort="devices",targetPort="device")
+	ref Interface[*] devices;
+	@reuseware.link(sourcePort="services",targetPort="service")
+	ref DHCPServer services;
+	@reuseware.link(sourcePort="forwardingServices",targetPort="forwardingService")
+	ref NATService forwardingServices;
+	@reuseware.link(sourcePort="filterLists",targetPort="filterList")
+	ref NATService filterList;		
+}
+
+@reuseware.fragment(
+	UFIExpr="
+		if (self.numPort = 4) return 'abstractcim/4PortEthernetIPInterface.cim';
+		if (self.numPort = 8) return 'abstractcim/8PortEthernetIPInterface.cim';"
+)
+class EthernetIPInterface extends IPInterface {
+	attr Integer numPort;
+}
+
+@reuseware.fragment(UFI="abstractcim/ADSLIPInterface.cim")
+class ADSLIPInterface extends IPInterface {
+}
+
+@reuseware.fragment(UFI="abstractcim/WifiInterface.cim")
+class WifiInterface extends Interface {
+	@reuseware.link(sourcePort="endPoint",targetPort="ip")
+	ref IPInterface endPoint;
+}
+
+@reuseware.fragment(UFI="abstractcim/DHCPServer.cim")
+class DHCPServer extends CimModelElement {
+	@reuseware.property(port="startAddress")
+	attr String startAddress;
+	@reuseware.property(port="endAddress")
+	attr String endAddress;
+
+	@reuseware.link(sourcePort="bindsTo",targetPort="ip")
+	ref IPInterface bindsTo;
+}
+
+@reuseware.fragment(UFI="abstractcim/NATService.cim")
+class NATService extends CimModelElement {
+	@reuseware.link(sourcePort="endPoint",targetPort="ip")
+	ref IPInterface endPoint;
+}

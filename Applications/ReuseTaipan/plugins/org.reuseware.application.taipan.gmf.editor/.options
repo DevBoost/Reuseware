@@ -1,0 +1,7 @@
+# Tracing options for the org.reuseware.application.taipan.gmf.editor plug-in
+
+# Common issues
+org.reuseware.application.taipan.gmf.editor/debug=false
+
+# Visual IDs
+org.reuseware.application.taipan.gmf.editor/debug/visualID=false

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FacetDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://description/1.0">
+  <ID>org</ID>
+  <ID>reuseware</ID>
+  <ID>lib</ID>
+  <ID>facets</ID>
+  <ID>java</ID>
+  <ID>common.fdef</ID>
+  <facetTypes xsi:type="description:ListFacet" name="Meta Package" description="This is the part of the language the fragment was implemented in.">
+    <derivationData xsi:type="description:DirectDerivation" derivatorID="OCL" rule="eRootClass.ePackage.name"/>
+   <values name="java" description="Java Programming Language"/>
+   <values name="cim" description="Common Information Metamodel"/> 
+ </facetTypes>
+  <facetTypes xsi:type="description:ListFacet" name="Application Field" description="Area of application.">
+    <derivationData xsi:type="description:DirectDerivation" derivatorID="OCL" rule="contents->any(true).oclAsType(java::containers::CompilationUnit).namespaces->at(contents->any(true).oclAsType(java::containers::CompilationUnit).namespaces->size())"/>
+    <values name="complex" description="Complex Numbers"/>
+    <values name="random" description="Random Numbers"/>
+ 
+  </facetTypes>
+  
+  <facetTypes xsi:type="description:ListFacet" name="Configurable" description="If the shape has additional state">
+    <derivationData xsi:type="description:DirectDerivation" derivatorID="OCL" rule="contents->any(true).oclAsType(java::containers::CompilationUnit).classifiers->any(true).members->select(e | e.oclIsTypeOf(java::members::Field))->size() > 1"/>
+  </facetTypes>
+  
+  <facetTypes xsi:type="description:ListFacet" name="Shape" description="Kind of shape">
+    <derivationData xsi:type="description:DirectDerivation" derivatorID="OCL" rule="if idAsString().contains('Rect') then 'rectangular' else if idAsString().contains('Tri') then 'triangular' else 'other' endif endif"/>
+  </facetTypes>
+</description:FacetDefinition>

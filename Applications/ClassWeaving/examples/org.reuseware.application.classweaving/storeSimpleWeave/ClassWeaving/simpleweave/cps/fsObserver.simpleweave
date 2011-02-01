@@ -1,0 +1,11 @@
+type uml
+core <ClassWeaving/_TYPE_/models/core/FileSystem._TYPE_> {
+	weave observeFolder : <ClassWeaving/_TYPE_/models/advices/ObserverAdvice._TYPE_> {
+	  Observer into FileSystem
+	  Subject into FSFolder
+	}
+	weave observeFile : <ClassWeaving/_TYPE_/models/advices/ObserverAdvice._TYPE_> {
+	  Observer into FileSystem
+	  Subject into FSFile
+	}
+}

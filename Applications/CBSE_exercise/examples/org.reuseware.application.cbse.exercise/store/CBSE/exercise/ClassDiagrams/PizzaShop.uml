@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="DataModelPizzaShop">
+  <elementImport xmi:id="_jJ_LADF1Ed2A1p8LtiDTWg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_jKDccDF1Ed2A1p8LtiDTWg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_jKEDgDF1Ed2A1p8LtiDTWg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="PizzaShop">
+    <packagedElement xmi:type="uml:Class" xmi:id="_XjZNQDFzEd2A1p8LtiDTWg" name="OrderSystem"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_acL_UDFzEd2A1p8LtiDTWg" name="Order"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bjPG9zFzEd2A1p8LtiDTWg" name="Association1" memberEnd="_bjPG-DFzEd2A1p8LtiDTWg _bjPG-zFzEd2A1p8LtiDTWg">
+      <ownedEnd xmi:id="_bjPG-DFzEd2A1p8LtiDTWg" name="orderSystem" type="_XjZNQDFzEd2A1p8LtiDTWg" association="_bjPG9zFzEd2A1p8LtiDTWg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bjPG-TFzEd2A1p8LtiDTWg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bjPG-jFzEd2A1p8LtiDTWg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_bjPG-zFzEd2A1p8LtiDTWg" name="orders" type="_acL_UDFzEd2A1p8LtiDTWg" isUnique="false" association="_bjPG9zFzEd2A1p8LtiDTWg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bjPG_DFzEd2A1p8LtiDTWg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bjPG_TFzEd2A1p8LtiDTWg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BnIU0DF0Ed2A1p8LtiDTWg" name="Hook_Pizza" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bTDgcDF0Ed2A1p8LtiDTWg" name="Association2" memberEnd="_bTDgcTF0Ed2A1p8LtiDTWg _bTDgdDF0Ed2A1p8LtiDTWg">
+      <ownedEnd xmi:id="_bTDgcTF0Ed2A1p8LtiDTWg" name="source" type="_acL_UDFzEd2A1p8LtiDTWg" association="_bTDgcDF0Ed2A1p8LtiDTWg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bTDgcjF0Ed2A1p8LtiDTWg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bTDgczF0Ed2A1p8LtiDTWg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_bTDgdDF0Ed2A1p8LtiDTWg" name="orderedPizzas" type="_BnIU0DF0Ed2A1p8LtiDTWg" isUnique="false" association="_bTDgcDF0Ed2A1p8LtiDTWg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bTDgdTF0Ed2A1p8LtiDTWg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bTDgdjF0Ed2A1p8LtiDTWg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KPMhYDF1Ed2A1p8LtiDTWg" name="PizzaSalami">
+      <generalization xmi:id="_nR4NczF1Ed2A1p8LtiDTWg" general="_BnIU0DF0Ed2A1p8LtiDTWg"/>
+      <ownedAttribute xmi:id="_xyJuQDF1Ed2A1p8LtiDTWg" name="extraHot">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XS0vwDF1Ed2A1p8LtiDTWg" name="PizzaHawai">
+      <generalization xmi:id="_nqDc4TF1Ed2A1p8LtiDTWg" general="_BnIU0DF0Ed2A1p8LtiDTWg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YchiwDF1Ed2A1p8LtiDTWg" name="PizzaFunghi">
+      <generalization xmi:id="_n-usYDF1Ed2A1p8LtiDTWg" general="_BnIU0DF0Ed2A1p8LtiDTWg"/>
+      <ownedAttribute xmi:id="_rpiKMDF1Ed2A1p8LtiDTWg" name="withCheeseCrust">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,7 @@
+# Tracing options for the levelZero.diagram plug-in
+
+# Common issues
+levelZero.diagram/debug=false
+
+# Visual IDs
+levelZero.diagram/debug/visualID=false

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<description:FragmentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:description="http://description/1.0">
+  <ID>org</ID>
+  <ID>jhotdraw</ID>
+  <ID>draw</ID>
+  <ID>EllipseFigure.java.fdesc</ID>
+  <properties name="Name" value="EllipseFigure"/>
+  <properties name="Author" value=""/>
+  <properties name="Version" value=""/>
+  <properties name="Hint" value=""/>
+</description:FragmentDescription>

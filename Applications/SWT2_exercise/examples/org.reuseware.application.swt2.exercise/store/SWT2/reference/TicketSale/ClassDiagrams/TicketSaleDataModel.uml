@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <elementImport xmi:id="_q58OUDI7Ed2Ce_UcFkjmeQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_q581YDI7Ed2Ce_UcFkjmeQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_q581YTI7Ed2Ce_UcFkjmeQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="DataModel">
+    <packagedElement xmi:type="uml:Class" xmi:id="_jWUE0DI7Ed2Ce_UcFkjmeQ" name="Ticket">
+      <ownedAttribute xmi:id="_kwVy0DI7Ed2Ce_UcFkjmeQ" name="show">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m3TfUDI7Ed2Ce_UcFkjmeQ" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

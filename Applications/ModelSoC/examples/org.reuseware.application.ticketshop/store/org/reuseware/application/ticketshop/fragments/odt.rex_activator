@@ -1,0 +1,3 @@
+compositionlanguage org.reuseware.lib.systems.usecase.cl.odt(format='odt',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.odt(format='odt',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.usecase_uml(format='odt',outFolder='out')

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<taipan:Aquatory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:taipan="http://www.reuseware.org/application/taipan">
+  <ports xsi:type="taipan:Port" location="Hamburg"/>
+  <ports xsi:type="taipan:Port" location="Rostock"/>
+  <ports xsi:type="taipan:Port" location="Stockholm"/>
+  <routes xsi:type="taipan:Route" source="//@ports.1" destination="//@ports.2" description="BalticRoute" reliability="0.8"/>
+  <routes xsi:type="taipan:Route" source="//@ports.0" destination="//@ports.2" description="NorthernRoute" reliability="0.8"/>
+  <ships name="Ship1" destination="//@ports.0" route="//@routes.1">
+    <cargo xsi:type="taipan:LargeItem" article="tobacco"/>
+  </ships>
+  <ships name="Ship2" destination="//@ports.1" route="//@routes.0">
+    <cargo xsi:type="taipan:LargeItem" article="coffee"/>
+  </ships>
+  <ships xsi:type="taipan:Warship" name="WarShip1">
+    <escortOrder ships="//@ships.0"/>
+  </ships>
+  <ships xsi:type="taipan:Warship" name="WarShip2">
+    <escortOrder ships="//@ships.1"/>
+  </ships>
+</taipan:Aquatory>

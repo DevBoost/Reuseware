@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_i_eaEMftEd6WrsmzKVDL7w" type="CIMLevelZero" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_jlf4QMftEd6WrsmzKVDL7w" type="Note">
+    <children xmi:type="notation:Node" xmi:id="_jlf4QcftEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_jlf4QsftEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_jlf4Q8ftEd6WrsmzKVDL7w" fontHeight="14" bold="true" description="DHCP Client" fillColor="4227072" lineColor="0"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jlf4RMftEd6WrsmzKVDL7w" x="22" y="22" width="253" height="156"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_jlgfUMftEd6WrsmzKVDL7w" type="Text">
+    <children xmi:type="notation:Node" xmi:id="_jlgfUcftEd6WrsmzKVDL7w" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_jlgfUsftEd6WrsmzKVDL7w" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_jlgfU8ftEd6WrsmzKVDL7w" description="Properties:&#xD;&#xA;- name&#x9;--> DHCPProtocolEndpoint.ElementName, DHCPProtocolEndpoint.Name&#xD;&#xA;&#x9;&#x9;--> RemoteServiceAccessPoint.ElementName, RemoteServiceAccessPoint.Name&#xD;&#xA;&#xD;&#xA;Relationships:&#xD;&#xA;- (NetworkPort)LogicalPort.portImplementsEndPoint --> (DHCPProtocolEndpoint)ProtocolEndpoint&#xD;&#xA;- (IPProtocolEndpoint)ServiceAccessPoint.SAPSAPDependency --> (DHCPProtocolEndpoint)ServiceAccessPoint" lineColor="8047085"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jlgfVMftEd6WrsmzKVDL7w" x="22" y="190" width="625" height="97"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_jA4IQMftEd6WrsmzKVDL7w" type="2094">
+    <children xmi:type="notation:Node" xmi:id="_jA4vUMftEd6WrsmzKVDL7w" type="5187"/>
+    <children xmi:type="notation:Node" xmi:id="_jA4vUcftEd6WrsmzKVDL7w" type="5188"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_jA4IQcftEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:RemoteServiceAccessPoint" href="dhcpClient.cim#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jA4IQsftEd6WrsmzKVDL7w" x="63" y="126"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_jA5WYMftEd6WrsmzKVDL7w" type="2051">
+    <children xmi:type="notation:Node" xmi:id="_jA5WY8ftEd6WrsmzKVDL7w" type="5101"/>
+    <children xmi:type="notation:Node" xmi:id="_jA5WZMftEd6WrsmzKVDL7w" type="5102"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_jA5WYcftEd6WrsmzKVDL7w" fontName="Lucida Grande"/>
+    <element xmi:type="cim:DHCPProtocolEndpoint" href="dhcpClient.cim#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jA5WYsftEd6WrsmzKVDL7w" x="72" y="63"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_22FaIATgEd-mRrkioYeU3g" type="2078">
+    <children xmi:type="notation:Node" xmi:id="_22GoQATgEd-mRrkioYeU3g" type="5155"/>
+    <children xmi:type="notation:Node" xmi:id="_22HPUATgEd-mRrkioYeU3g" type="5156"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_22FaIQTgEd-mRrkioYeU3g" fontName="Lucida Grande" fillColor="8047085"/>
+    <element xmi:type="cim:IPProtocolEndpoint" href="dhcpClient.cim#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_22FaIgTgEd-mRrkioYeU3g" x="369" y="27"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_i_eaEcftEd6WrsmzKVDL7w"/>
+  <element xmi:type="cim:CIM_Model" href="dhcpClient.cim#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_y9R8kATgEd-mRrkioYeU3g" type="4027" source="_jA5WYMftEd6WrsmzKVDL7w" target="_jA4IQMftEd6WrsmzKVDL7w">
+    <children xmi:type="notation:Node" xmi:id="_y9eJ0ATgEd-mRrkioYeU3g" type="6027">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_y9ew4ATgEd-mRrkioYeU3g" y="40"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_y9R8kQTgEd-mRrkioYeU3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_y9R8kgTgEd-mRrkioYeU3g" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_y9R8kwTgEd-mRrkioYeU3g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_YuEoQAThEd-mRrkioYeU3g" type="4029" source="_jA5WYMftEd6WrsmzKVDL7w" target="_22FaIATgEd-mRrkioYeU3g">
+    <children xmi:type="notation:Node" xmi:id="_YuKu4AThEd-mRrkioYeU3g" type="6029">
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_YuKu4QThEd-mRrkioYeU3g" x="74" y="43"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_YuEoQQThEd-mRrkioYeU3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_YuEoQgThEd-mRrkioYeU3g" fontName="Lucida Grande"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YuEoQwThEd-mRrkioYeU3g" points="[69, -8, -219, 28]$[341, -16, 53, 20]"/>
+  </edges>
+</notation:Diagram>

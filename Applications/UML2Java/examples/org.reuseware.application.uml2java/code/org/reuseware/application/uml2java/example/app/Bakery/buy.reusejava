@@ -1,0 +1,11 @@
+/* This is a 'StatementUnit' which contains, in contrast to 
+ * 'CompilationUnits', only a list of statements
+ */
+statements BakeryBuyImplementation {
+	return null;
+}
+
+
+
+
+

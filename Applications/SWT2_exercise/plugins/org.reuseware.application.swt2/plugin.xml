@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard name="SWT2 Exercise (UML)" icon="icons/st.png" 
+      	category="org.reuseware.coconut.ui/org.reuseware.coconut.ui.examples" 
+      	class="org.reuseware.application.swt2.exercise.ExampleUnzipperNewWizard" 
+      	project="true" id="org.reuseware.application.swt2.example">
+      </wizard>   
+   </extension>
+</plugin>

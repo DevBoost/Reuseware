@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_xt-F8DGCEd2b1M54IbKc-w" activeDiagram="_xt-F8TGCEd2b1M54IbKc-w">
+  <model href="TicketSaleStateMachine.uml#idStateMachine"/>
+  <diagrams xmi:id="_xt-F8TGCEd2b1M54IbKc-w" position="0,0" size="100,100" name="TicketSale" viewport="0,0">
+    <property xmi:id="_x0UlkDGCEd2b1M54IbKc-w" key="pageFormatName" value="A2"/>
+    <property xmi:id="_x0UlkTGCEd2b1M54IbKc-w" key="diagramWidth" value="1680"/>
+    <property xmi:id="_x0UlkjGCEd2b1M54IbKc-w" key="diagramHeight" value="2376"/>
+    <property xmi:id="_x0UlkzGCEd2b1M54IbKc-w" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_x0UllDGCEd2b1M54IbKc-w" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_x0UllTGCEd2b1M54IbKc-w" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_x0UlljGCEd2b1M54IbKc-w" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_x0UllzGCEd2b1M54IbKc-w" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_x0UlmDGCEd2b1M54IbKc-w" key="orientation" value="landscape"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_xt-F8jGCEd2b1M54IbKc-w" presentation="org.topcased.modeler.uml.statemachinediagram">
+      <element href="TicketSaleStateMachine.uml#idStateMachine"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_xt-F8zGCEd2b1M54IbKc-w" position="0,0" size="0,0">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_xt-F9DGCEd2b1M54IbKc-w" presentation="default">
+        <element href="TicketSaleStateMachine.uml#idRegion"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_ywWI8DGCEd2b1M54IbKc-w" position="170,99" size="156,42">
+        <anchorage xmi:id="_VXvawTGDEd2b1M54IbKc-w" graphEdge="_VX_SYDGDEd2b1M54IbKc-w _VlVx4DGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ywWI8TGCEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_ywoc0DGCEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_4MAgYDGCEd2b1M54IbKc-w" position="250,31" size="20,20">
+        <anchorage xmi:id="_VXvawDGDEd2b1M54IbKc-w" graphEdge="_VX_SYDGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_4MAgYTGCEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_4MDjsDGCEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_4sNqcDGCEd2b1M54IbKc-w" position="169,194" size="165,30">
+        <anchorage xmi:id="_VlUjwDGDEd2b1M54IbKc-w" graphEdge="_VlVx4DGDEd2b1M54IbKc-w _aSLUcDGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_4sNqcTGCEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_4sPfoDGCEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_MSoQYDGDEd2b1M54IbKc-w" position="267,300" size="160,36">
+        <anchorage xmi:id="_ZmvKwDGDEd2b1M54IbKc-w" graphEdge="_ZmwY4DGDEd2b1M54IbKc-w _aFpUUDGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_MSoQYTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_MSqsoDGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_Q5qs8DGDEd2b1M54IbKc-w" position="47,299" size="143,38">
+        <anchorage xmi:id="_ZYZMwDGDEd2b1M54IbKc-w" graphEdge="_ZYaa4DGDEd2b1M54IbKc-w _Z2F1YDGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Q5qs8TGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_Q5uXUDGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_VX_SYDGDEd2b1M54IbKc-w" anchor="_VXvawDGDEd2b1M54IbKc-w _VXvawTGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_VX_SYTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_VX_SYzGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_VX_SYjGDEd2b1M54IbKc-w" visible="false" id="nameEdgeObject"/>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_VlVx4DGDEd2b1M54IbKc-w" anchor="_VXvawTGDEd2b1M54IbKc-w _VlUjwDGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_VlVx4TGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_VlVx4zGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_VlVx4jGDEd2b1M54IbKc-w" visible="false" id="nameEdgeObject"/>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_WUy44DGDEd2b1M54IbKc-w" position="229,256" size="40,30">
+        <anchorage xmi:id="_Z2EnQDGDEd2b1M54IbKc-w" graphEdge="_Z2F1YDGDEd2b1M54IbKc-w _aFpUUDGDEd2b1M54IbKc-w _aSLUcDGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_WUy44TGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_WU5mkDGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_W0u9MDGDEd2b1M54IbKc-w" position="108,410" size="24,22">
+        <anchorage xmi:id="_ZYZMwTGDEd2b1M54IbKc-w" graphEdge="_ZYaa4DGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_W0u9MTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_W0wyYDGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_Xq6XQDGDEd2b1M54IbKc-w" position="334,397" size="26,26">
+        <anchorage xmi:id="_ZmvKwTGDEd2b1M54IbKc-w" graphEdge="_ZmwY4DGDEd2b1M54IbKc-w"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Xq6XQTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_Xq6XQjGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_ZYaa4DGDEd2b1M54IbKc-w" anchor="_ZYZMwDGDEd2b1M54IbKc-w _ZYZMwTGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ZYaa4TGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_ZYaa4zGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_ZYaa4jGDEd2b1M54IbKc-w" visible="false" id="nameEdgeObject"/>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_ZmwY4DGDEd2b1M54IbKc-w" anchor="_ZmvKwDGDEd2b1M54IbKc-w _ZmvKwTGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ZmwY4TGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_ZmwY4zGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_ZmwY4jGDEd2b1M54IbKc-w" visible="false" id="nameEdgeObject"/>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_Z2F1YDGDEd2b1M54IbKc-w" anchor="_Z2EnQDGDEd2b1M54IbKc-w _ZYZMwDGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Z2F1YTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_Z2F1YzGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_Z2F1YjGDEd2b1M54IbKc-w" id="nameEdgeObject" offset="-5,-12"/>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_aFpUUDGDEd2b1M54IbKc-w" anchor="_Z2EnQDGDEd2b1M54IbKc-w _ZmvKwDGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_aFpUUTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_aFpUUzGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_aFpUUjGDEd2b1M54IbKc-w" id="nameEdgeObject" offset="18,-12"/>
+      </contained>
+      <contained xsi:type="di:GraphEdge" xmi:id="_aSLUcDGDEd2b1M54IbKc-w" anchor="_VlUjwDGDEd2b1M54IbKc-w _Z2EnQDGDEd2b1M54IbKc-w">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_aSLUcTGDEd2b1M54IbKc-w" presentation="default">
+          <element href="TicketSaleStateMachine.uml#_aSLUczGDEd2b1M54IbKc-w"/>
+        </semanticModel>
+        <contained xsi:type="di:EdgeObjectOffset" xmi:id="_aSLUcjGDEd2b1M54IbKc-w" visible="false" id="nameEdgeObject"/>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

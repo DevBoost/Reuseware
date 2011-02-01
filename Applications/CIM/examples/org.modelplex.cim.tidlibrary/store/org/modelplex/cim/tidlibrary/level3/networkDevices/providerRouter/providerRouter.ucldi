@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram" xmi:id="_QnMBgCJWEeCSfOO35mChtA" type="Compositionprogram" name="providerRouter.ucldi" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_V1pDYCJWEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_V1q4kCJWEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_V3YIwCJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_V3Yv0CJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V3ZW4CJWEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_V3YIwSJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_V3YIwiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_V3YIwyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='System',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3YIxCJWEeCSfOO35mChtA" x="116" y="1"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_V3bzICJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_V3caMCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V3caMSJWEeCSfOO35mChtA" x="-91" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_V3bzISJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_V3bzIiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_V3bzIyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='?HostedService',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3bzJCJWEeCSfOO35mChtA" x="-19" y="27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_V3e2cCJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_V3gEkCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V3gEkSJWEeCSfOO35mChtA" x="-59" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_V3e2cSJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_V3e2ciJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_V3e2cyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='?FilterList',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3e2dCJWEeCSfOO35mChtA" x="-19" y="1"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_V3ig0CJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_V3jH4CJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V3ju8CJWEeCSfOO35mChtA" x="-157" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_V3ig0SJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_V3ig0iJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_V3ig0yJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='?HostedForwardingService',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3ig1CJWEeCSfOO35mChtA" x="9" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_V3mLMCJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_V3myQCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V3nZUCJWEeCSfOO35mChtA" x="24" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_V3mLMSJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_V3mLMiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_V3mLMyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='*Modules',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3mLNCJWEeCSfOO35mChtA" x="81" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_V3p1kCJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_V3qcoCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_V3rDsCJWEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_V3p1kSJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_V3p1kiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_V3p1kyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']/@portInstances[portName='*ExtensionPoints',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3p1lCJWEeCSfOO35mChtA" x="116" y="27"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_V1pDYSJWEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_V1pDYiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_V1pDYyJWEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="providerRouter.ucl#//@fragmentInstances[name='system.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V1pDZCJWEeCSfOO35mChtA" x="153" y="36"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_h3MwwCJWEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_h3NX0CJWEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_h4UyICJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_h4WAQCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_h4WAQSJWEeCSfOO35mChtA" x="24" y="-4"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_h4UyISJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_h4UyIiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_h4UyIyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='adslStaticIPInterface.cim']/@portInstances[portName='ADSLModem',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h4UyJCJWEeCSfOO35mChtA" x="81" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_h4X1cCJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_h4ZDkCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_h4ZDkSJWEeCSfOO35mChtA" x="-42" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_h4X1cSJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_h4X1ciJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_h4X1cyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='adslStaticIPInterface.cim']/@portInstances[portName='WANIP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h4X1dCJWEeCSfOO35mChtA" x="-19" y="18"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_h3MwwSJWEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_h3MwwiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_h3MwwyJWEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="providerRouter.ucl#//@fragmentInstances[name='adslStaticIPInterface.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h3MwxCJWEeCSfOO35mChtA" x="153" y="207"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_lphy4CJWEeCSfOO35mChtA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lpjBACJWEeCSfOO35mChtA" type="5002"/>
+    <children xmi:type="notation:Node" xmi:id="_lq5r4CJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lq6S8CJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lq6S8SJWEeCSfOO35mChtA" y="5"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_lq5r4SJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_lq5r4iJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_lq5r4yJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='ethernetIPInterface.cim']/@portInstances[portName='BuiltInHub',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lq5r5CJWEeCSfOO35mChtA" x="18" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_lq8vMCJWEeCSfOO35mChtA" type="3001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lq99UCJWEeCSfOO35mChtA" type="5001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lq99USJWEeCSfOO35mChtA" x="-15" y="9"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_lq8vMSJWEeCSfOO35mChtA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_lq8vMiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_lq8vMyJWEeCSfOO35mChtA"/>
+      <element xmi:type="org.reuseware.coconut.compositionprogram:PortInstance" href="providerRouter.ucl#//@fragmentInstances[name='ethernetIPInterface.cim']/@portInstances[portName='IP',fragmentRoleName='Default',fracolNamespace=['org','reuseware','lib','systems']]"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lq8vNCJWEeCSfOO35mChtA" x="-19" y="9"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_lphy4SJWEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_lphy4iJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_lphy4yJWEeCSfOO35mChtA"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:FragmentInstance" href="providerRouter.ucl#//@fragmentInstances[name='ethernetIPInterface.cim']"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lphy5CJWEeCSfOO35mChtA" x="441" y="36"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_QnMBgSJWEeCSfOO35mChtA"/>
+  <element xmi:type="org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram" href="providerRouter.ucl#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_sN0mUCJWEeCSfOO35mChtA" type="4001" source="_V3mLMCJWEeCSfOO35mChtA" target="_lq5r4CJWEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_sN0mUSJWEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sN0mUiJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="providerRouter.ucl#//@compositionLinks.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sN0mUyJWEeCSfOO35mChtA" points="[6, 0, -208, -3]$[211, 1, -3, -2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sN8iICJWEeCSfOO35mChtA" id="(0.7,0.2)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sN8iISJWEeCSfOO35mChtA" id="(0.15,0.35)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_ubc7gCJWEeCSfOO35mChtA" type="4001" source="_h4UyICJWEeCSfOO35mChtA" target="_V3mLMCJWEeCSfOO35mChtA">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_ubc7gSJWEeCSfOO35mChtA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ubc7giJWEeCSfOO35mChtA" fontName="Lucida Grande"/>
+    <element xmi:type="org.reuseware.coconut.compositionprogram:CompositionLink" href="providerRouter.ucl#//@compositionLinks.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ubc7gyJWEeCSfOO35mChtA" points="[0, -3, -9, 93]$[1, -86, -8, 10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ubkQQCJWEeCSfOO35mChtA" id="(0.5,0.15)"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ProtocolService" caption="DHCPServer" description="DHCPServer" elementName="+DHCPServer" dependencies="//@elements.2" hostedDependency="//@elements.1" name="DHCPServer" requestedState="Enabled" creationClassName="ProtocolService" started="true" systemCreationClassName="ComputerSystem" systemName="PersonalComputer" serviceAccessBySAP="//@elements.3" otherProtocol="DHCP" protocol="Other"/>
+  <elements xsi:type="cim:RangeOfIPAddresses" caption="DHCPIPRange" description="DHCPIPRange" elementName="LANDHCPIPRange" instanceID="LANDHCPIPRange" startAddress="192.168.1.10" endAddress="192.168.1.254" addressType="IPv4"/>
+  <elements xsi:type="cim:DNSSettingData" caption="" elementName="DefaultDNSforDHCP" configurationName="DefaultDNSforDHCP" instanceID="DefaultDNSforDHCP" addressOrigin="Other">
+    <DNSServerAddresses>80.58.0.33</DNSServerAddresses>
+    <DNSServerAddresses>80.58.32.97</DNSServerAddresses>
+  </elements>
+  <elements xsi:type="cim:UDPProtocolEndpoint" elementName="DHCPListeningPort" name="DHCPListeningPort" creationClassName="UDPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="ZyxelRouter" protocolIFType="IPv4" portNumber="67">
+    <bindsTo href="#//@elements.4"/>
+  </elements>
+  <elements xsi:type="cim:IPProtocolEndpoint" elementName="?BindsTo"/>
+</cim:CIM_Model>

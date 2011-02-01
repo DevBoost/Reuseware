@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <iD>
+    <segments>de</segments>
+    <segments>fujaba</segments>
+    <segments>models</segments>
+    <segments>widgetTemplateInstantiation.fc</segments>
+  </iD>
+  <compositionLinks source="//@fragmentInstances[name='widgetTemplate.story']/@portInstances[compositionSystemID=['org','reuseware','lib','systems','default.csys'],fragmentRoleName='Default',portName='TEMPLATE']" target="//@fragmentInstances[name='widgetsDemo.story']/@portInstances[compositionSystemID=['org','reuseware','lib','systems','default.csys'],fragmentRoleName='Default',portName='%3C+name+%3E%20']"/>
+  <compositionLinks source="//@fragmentInstances[name='widgetTemplate.story2']/@portInstances[compositionSystemID=['org','reuseware','lib','systems','default.csys'],fragmentRoleName='Default',portName='TEMPLATE']" target="//@fragmentInstances[name='widgetsDemo.story']/@portInstances[compositionSystemID=['org','reuseware','lib','systems','default.csys'],fragmentRoleName='Default',portName='%3C+name+%3E%20']"/>
+  <compositionLinks source="//@fragmentInstances[name='widgetTemplate.story3']/@portInstances[compositionSystemID=['org','reuseware','lib','systems','default.csys'],fragmentRoleName='Default',portName='TEMPLATE']" target="//@fragmentInstances[name='widgetsDemo.story']/@portInstances[compositionSystemID=['org','reuseware','lib','systems','default.csys'],fragmentRoleName='Default',portName='%3C+name+%3E%20']"/>
+  <fragmentInstances name="widgetsDemo.story" target="true">
+    <UFI>de</UFI>
+    <UFI>fujaba</UFI>
+    <UFI>models</UFI>
+    <UFI>widgetsDemo.story</UFI>
+    <portInstances fragmentRoleName="Default" portName="&lt;+name+> " targetLinks="//@compositionLinks.0 //@compositionLinks.1 //@compositionLinks.2">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="stringParameters">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="&lt;+name+> instantiates de/fujaba/templates/widgetTemplate.story"/>
+    </portInstances>
+    <targetUFI>de</targetUFI>
+    <targetUFI>fujaba</targetUFI>
+    <targetUFI>models</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>widgetsDemo.story</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="widgetTemplate.story">
+    <UFI>de</UFI>
+    <UFI>fujaba</UFI>
+    <UFI>templates</UFI>
+    <UFI>widgetTemplate.story</UFI>
+    <portInstances fragmentRoleName="Default" portName="TEMPLATE" sourceLinks="//@compositionLinks.0">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="stringParameters">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="&lt;+widgetName+>" value="submit"/>
+      <settings property="&lt;+type+>" value="Button"/>
+    </portInstances>
+    <targetUFI>de</targetUFI>
+    <targetUFI>fujaba</targetUFI>
+    <targetUFI>templates</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>widgetTemplate.story</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="widgetTemplate.story2">
+    <UFI>de</UFI>
+    <UFI>fujaba</UFI>
+    <UFI>templates</UFI>
+    <UFI>widgetTemplate.story</UFI>
+    <portInstances fragmentRoleName="Default" portName="TEMPLATE" sourceLinks="//@compositionLinks.1">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="stringParameters">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="&lt;+widgetName+>" value="password"/>
+      <settings property="&lt;+type+>" value="PasswordField"/>
+    </portInstances>
+    <targetUFI>de</targetUFI>
+    <targetUFI>fujaba</targetUFI>
+    <targetUFI>templates</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>widgetTemplate.story</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="widgetTemplate.story3">
+    <UFI>de</UFI>
+    <UFI>fujaba</UFI>
+    <UFI>templates</UFI>
+    <UFI>widgetTemplate.story</UFI>
+    <portInstances fragmentRoleName="Default" portName="TEMPLATE" sourceLinks="//@compositionLinks.2">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+    </portInstances>
+    <portInstances fragmentRoleName="Default" portName="stringParameters">
+      <compositionSystemID>org</compositionSystemID>
+      <compositionSystemID>reuseware</compositionSystemID>
+      <compositionSystemID>lib</compositionSystemID>
+      <compositionSystemID>systems</compositionSystemID>
+      <compositionSystemID>default.csys</compositionSystemID>
+      <settings property="&lt;+widgetName+>" value="login"/>
+      <settings property="&lt;+type+>" value="TextField"/>
+    </portInstances>
+    <targetUFI>de</targetUFI>
+    <targetUFI>fujaba</targetUFI>
+    <targetUFI>templates</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>widgetTemplate.story</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

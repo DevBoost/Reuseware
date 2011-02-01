@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_BFCd8DGAEd2yz_kaSjuIKQ" activeDiagram="_BFCd8TGAEd2yz_kaSjuIKQ">
+  <model href="TakeOrderStateMachine.uml#idStateMachine"/>
+  <diagrams xmi:id="_BFCd8TGAEd2yz_kaSjuIKQ" position="0,0" size="100,100" name="TakeOrderStateMachine" viewport="0,25">
+    <property xmi:id="_BFM2ADGAEd2yz_kaSjuIKQ" key="pageFormatName" value="A4"/>
+    <property xmi:id="_BFM2ATGAEd2yz_kaSjuIKQ" key="diagramWidth" value="840"/>
+    <property xmi:id="_BFM2AjGAEd2yz_kaSjuIKQ" key="diagramHeight" value="1188"/>
+    <property xmi:id="_BFM2AzGAEd2yz_kaSjuIKQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_BFM2BDGAEd2yz_kaSjuIKQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_BFM2BTGAEd2yz_kaSjuIKQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_BFM2BjGAEd2yz_kaSjuIKQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_BFM2BzGAEd2yz_kaSjuIKQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_BFM2CDGAEd2yz_kaSjuIKQ" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_BFCd8jGAEd2yz_kaSjuIKQ" presentation="org.topcased.modeler.uml.statemachinediagram">
+      <element href="TakeOrderStateMachine.uml#idStateMachine"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_BFCd8zGAEd2yz_kaSjuIKQ" position="0,0" size="0,0">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_BFCd9DGAEd2yz_kaSjuIKQ" presentation="default">
+        <element href="TakeOrderStateMachine.uml#idRegion"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_C6Es8DGAEd2yz_kaSjuIKQ" position="73,78" size="312,406">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_C6Es8TGAEd2yz_kaSjuIKQ" presentation="default">
+          <element href="TakeOrderStateMachine.uml#_C6GiIDGAEd2yz_kaSjuIKQ"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_C6Es8jGAEd2yz_kaSjuIKQ">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_C6Es8zGAEd2yz_kaSjuIKQ" presentation="default">
+            <element href="TakeOrderStateMachine.uml#_C6GiITGAEd2yz_kaSjuIKQ"/>
+          </semanticModel>
+          <contained xsi:type="di:GraphNode" xmi:id="_IdX9cDGAEd2yz_kaSjuIKQ" position="68,49" size="118,40">
+            <anchorage xmi:id="_fhGXwDGAEd2yz_kaSjuIKQ" graphEdge="_fhG-0DGAEd2yz_kaSjuIKQ _wfnHUDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_IdX9cTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_IdZyoDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_Nh4ZIDGAEd2yz_kaSjuIKQ" position="67,120" size="125,40">
+            <anchorage xmi:id="_XHXssDGAEd2yz_kaSjuIKQ" graphEdge="_XHY60DGAEd2yz_kaSjuIKQ _fhG-0DGAEd2yz_kaSjuIKQ _fwgswDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Nh4ZITGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_Nh6OUDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_P7gi8DGAEd2yz_kaSjuIKQ" position="28,191" size="187,39">
+            <anchorage xmi:id="_WklIsDGAEd2yz_kaSjuIKQ" graphEdge="_WklvwDGAEd2yz_kaSjuIKQ _fwgswDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_P7hKADGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_P7i_MDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_UqOU0DGAEd2yz_kaSjuIKQ" position="104,268" size="40,30">
+            <anchorage xmi:id="_WklIsTGAEd2yz_kaSjuIKQ" graphEdge="_WklvwDGAEd2yz_kaSjuIKQ _XHY60DGAEd2yz_kaSjuIKQ _f9agUDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_UqOU0TGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_UqZT8DGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_WklvwDGAEd2yz_kaSjuIKQ" anchor="_WklIsDGAEd2yz_kaSjuIKQ _WklIsTGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_WklvwTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_WklvwzGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_WklvwjGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject" offset="42,0"/>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_XHY60DGAEd2yz_kaSjuIKQ" anchor="_WklIsTGAEd2yz_kaSjuIKQ _XHXssDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_XHY60TGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_XHY60zGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_XHY60jGAEd2yz_kaSjuIKQ" id="nameEdgeObject" offset="-12,82"/>
+            <waypoints>[106, 0, 101, 143]</waypoints>
+            <waypoints>[106, -143, 101, 0]</waypoints>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_aYzBMDGAEd2yz_kaSjuIKQ" position="110,334" size="29,24">
+            <anchorage xmi:id="_f9Z5QDGAEd2yz_kaSjuIKQ" graphEdge="_f9agUDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_aYzBMTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_aY0PUDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_fhG-0DGAEd2yz_kaSjuIKQ" anchor="_fhGXwDGAEd2yz_kaSjuIKQ _XHXssDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_fhG-0TGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_fhG-0zGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_fhG-0jGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject"/>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_fwgswDGAEd2yz_kaSjuIKQ" anchor="_XHXssDGAEd2yz_kaSjuIKQ _WklIsDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_fwgswTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_fwgswzGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_fwgswjGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject"/>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_f9agUDGAEd2yz_kaSjuIKQ" anchor="_WklIsTGAEd2yz_kaSjuIKQ _f9Z5QDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_f9agUTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_f9agUzGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_f9agUjGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject" offset="-44,-4"/>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_v42CQDGAEd2yz_kaSjuIKQ" position="114,8" size="20,20">
+            <anchorage xmi:id="_wfl5MDGAEd2yz_kaSjuIKQ" graphEdge="_wfnHUDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_v42CQTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_v43QYDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_wfnHUDGAEd2yz_kaSjuIKQ" anchor="_wfl5MDGAEd2yz_kaSjuIKQ _fhGXwDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_wfnHUTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrderStateMachine.uml#_wfnHUzGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_wfnHUjGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject"/>
+          </contained>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

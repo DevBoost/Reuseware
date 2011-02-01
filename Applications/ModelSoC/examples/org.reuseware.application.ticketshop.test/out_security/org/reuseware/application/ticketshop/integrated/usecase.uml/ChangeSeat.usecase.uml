@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_l-lz8CV3EeCsOIfnX6yosA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_l-lz8SV3EeCsOIfnX6yosA" name="">
+    <ownedComment xmi:id="_l-lz8iV3EeCsOIfnX6yosA" annotatedElement="_l-lz-yV3EeCsOIfnX6yosA">
+      <body>SeatD newSeatore) (inSet=true</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz8yV3EeCsOIfnX6yosA" annotatedElement="_l-mbByV3EeCsOIfnX6yosA">
+      <body>SeatD newSeater) (inSet=false</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz9CV3EeCsOIfnX6yosA" annotatedElement="_l-mbByV3EeCsOIfnX6yosA">
+      <body>SeatD oldSeatore) (inSet=false</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz9SV3EeCsOIfnX6yosA" annotatedElement="_l-lz-yV3EeCsOIfnX6yosA">
+      <body>SeatD oldSeater) (inSet=true</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz9iV3EeCsOIfnX6yosA" annotatedElement="_l-mbByV3EeCsOIfnX6yosA">
+      <body>Addresaddbefore) (inSet=Ifalse</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz9yV3EeCsOIfnX6yosA" annotatedElement="_l-mbDyV3EeCsOIfnX6yosA">
+      <body>Addresaddafter) (inSet=Ifalse</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz-CV3EeCsOIfnX6yosA" annotatedElement="_l-mbDyV3EeCsOIfnX6yosA">
+      <body>ShipmeM2(before) (inSet=Itrue</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-lz-SV3EeCsOIfnX6yosA" annotatedElement="_l-mbByV3EeCsOIfnX6yosA">
+      <body>ShipmeM2(after) (inSet=Ifalse</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_l-lz-iV3EeCsOIfnX6yosA" name="ChangeSeat"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-lz-yV3EeCsOIfnX6yosA" name="Hall"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-mbACV3EeCsOIfnX6yosA" name="HallParticipatesInUseCase" memberEnd="_l-mbASV3EeCsOIfnX6yosA _l-mbBCV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-mbBCV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-mbASV3EeCsOIfnX6yosA" name="actor" type="_l-lz-yV3EeCsOIfnX6yosA" association="_l-mbACV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-mbAiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-mbAyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-mbBCV3EeCsOIfnX6yosA" name="useCase" type="_l-lz-iV3EeCsOIfnX6yosA" association="_l-mbACV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-mbBSV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-mbBiV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-mbByV3EeCsOIfnX6yosA" name="Customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-mbCCV3EeCsOIfnX6yosA" name="CustomerParticipatesInUseCase" memberEnd="_l-mbCSV3EeCsOIfnX6yosA _l-mbDCV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-mbDCV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-mbCSV3EeCsOIfnX6yosA" name="actor" type="_l-mbByV3EeCsOIfnX6yosA" association="_l-mbCCV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-mbCiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-mbCyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-mbDCV3EeCsOIfnX6yosA" name="useCase" type="_l-lz-iV3EeCsOIfnX6yosA" association="_l-mbCCV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-mbDSV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-mbDiV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-mbDyV3EeCsOIfnX6yosA" name="Clerk"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-mbECV3EeCsOIfnX6yosA" name="ClerkParticipatesInUseCase" memberEnd="_l-mbESV3EeCsOIfnX6yosA _l-mbFCV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-mbFCV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-mbESV3EeCsOIfnX6yosA" name="actor" type="_l-mbDyV3EeCsOIfnX6yosA" association="_l-mbECV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-mbEiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-mbEyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-mbFCV3EeCsOIfnX6yosA" name="useCase" type="_l-lz-iV3EeCsOIfnX6yosA" association="_l-mbECV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-mbFSV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-mbFiV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

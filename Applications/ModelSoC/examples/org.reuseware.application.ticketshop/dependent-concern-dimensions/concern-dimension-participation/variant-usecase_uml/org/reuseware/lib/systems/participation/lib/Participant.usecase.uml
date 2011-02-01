@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_w8IxIM37EdqwVrslYOdUDA" name="">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zLFpUBC4Ed--XLQMea-mcQ" name="NAME"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7-J9dhDkEd-CuqEMaRlYgw" name="_ParticipatesInUseCase" memberEnd="_7-J9dxDkEd-CuqEMaRlYgw _7-J9ehDkEd-CuqEMaRlYgw" navigableOwnedEnd="_7-J9ehDkEd-CuqEMaRlYgw">
+      <ownedEnd xmi:id="_7-J9dxDkEd-CuqEMaRlYgw" name="actor" type="_zLFpUBC4Ed--XLQMea-mcQ" association="_7-J9dhDkEd-CuqEMaRlYgw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7-J9eBDkEd-CuqEMaRlYgw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7-J9eRDkEd-CuqEMaRlYgw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_7-J9ehDkEd-CuqEMaRlYgw" name="useCase" type="_kGh60B02Ed-xbb1E_Mnkzw" association="_7-J9dhDkEd-CuqEMaRlYgw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7-J9exDkEd-CuqEMaRlYgw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7-J9fBDkEd-CuqEMaRlYgw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kGh60B02Ed-xbb1E_Mnkzw" name="USECASE"/>
+  </packagedElement>
+</uml:Model>

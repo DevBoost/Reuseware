@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:valueflow="http://www.emftext.org/language/valueflow" xmi:id="_NRufABpREd-U5ax2qtXZXQ" type="Valueflow" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_OeUN8BpREd-U5ax2qtXZXQ" type="2001" fontName="Lucida Grande">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OeU1ABpREd-U5ax2qtXZXQ" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OeU1ARpREd-U5ax2qtXZXQ" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_OeYfYBpREd-U5ax2qtXZXQ" type="3001" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_OeYfYhpREd-U5ax2qtXZXQ" type="5001"/>
+        <element xmi:type="valueflow:GiveState" href="Value.valueflow#//@agents.0/@states.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OeYfYRpREd-U5ax2qtXZXQ" x="8" y="4"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_OeZGcBpREd-U5ax2qtXZXQ" type="3002" fontName="Lucida Grande">
+        <children xmi:type="notation:DecorationNode" xmi:id="_OeZGchpREd-U5ax2qtXZXQ" type="5002"/>
+        <element xmi:type="valueflow:TakeState" href="Value.valueflow#//@agents.0/@states.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OeZGcRpREd-U5ax2qtXZXQ" x="98" y="4"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_OeUN8RpREd-U5ax2qtXZXQ"/>
+    <element xmi:type="valueflow:Agent" href="Value.valueflow#//@agents.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OeUN8hpREd-U5ax2qtXZXQ" width="325" height="226"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_NRufARpREd-U5ax2qtXZXQ"/>
+  <element xmi:type="valueflow:Model" href="Value.valueflow#/"/>
+</notation:Diagram>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cim:CIM_Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cim="http://www.tid.es/cim">
+  <elements xsi:type="cim:ComputerSystem" caption="" description="" elementName="PDA" name="PDA" requestedState="Enabled" creationClassName="ComputerSystem" systemDevices="//@elements.5">
+    <dedicated>Other</dedicated>
+    <otherDedicatedDescriptions>PDA</otherDedicatedDescriptions>
+  </elements>
+  <elements xsi:type="cim:IPProtocolEndpoint" description="PDA IP address" elementName="PDALANIP" name="PDALANIP" remoteAccessAvailableToElement="//@elements.2" requestedState="Enabled" creationClassName="IPProtocolEndpint" systemCreationClassName="ComputerSystem" systemName="PDA" SAPSAPDependency="//@elements.4" nameFormat="" protocolIFType="IPv4" addressOrigin="DHCP" IPv4Address="192.168.1.11" subnetMask="255.255.255.0"/>
+  <elements xsi:type="cim:RemoteServiceAccessPoint" description="LANDefaultGatewayRemoteServiceAccess" elementName="LANDefaultGatewayRemoteServiceAccess" name="LANDefaultGatewayRemoteServiceAccess" requestedState="Enabled" creationClassName="RemoteServiceAccessPoint" systemCreationClassName="ComputerSystem" systemName="PDA" accessInfo="192.168.1.1" accessContext="Default Gateway" infoFormat="IPv4 Address"/>
+  <elements xsi:type="cim:RemoteServiceAccessPoint" description="DHCPServerRemoteServiceAccess" elementName="DHCPServerRemoteServiceAccess" name="DHCPServerRemoteServiceAccess" requestedState="Enabled" creationClassName="RemoteServiceAccessPoint" systemCreationClassName="ComputerSystem" systemName="PDA" accessInfo="192.168.1.1" accessContext="DHCP Server"/>
+  <elements xsi:type="cim:DHCPProtocolEndpoint" caption="PDADHCPClient" description="PDADHCPClient" elementName="PDADHCPClient" name="PDADHCPClient" remoteAccessAvailableToElement="//@elements.3" requestedState="Enabled" creationClassName="DHCPProtocolEndpoint" systemCreationClassName="ComputerSystem" systemName="PDA" protocolIFType="IPv4"/>
+  <elements xsi:type="cim:WiFiPort" elementName="PDAWiFiPort" name="PDAWiFiPort" requestedState="Enabled" creationClassName="WiFiPort" deviceId="PDAWiFiPort" systemCreationClassName="ComputerSystem" systemName="PDA" portImplementsEndPoint="//@elements.1 //@elements.6 //@elements.4" linkTechnology="Other" otherLinktechnology="WiFi" permanentAddress=""/>
+  <elements xsi:type="cim:WiFiEndPoint" elementName="PDAWiFiAccessPoint" dependencies="//@elements.8" elementSettingData="//@elements.7" name="PDAWiFiAccessPoint" requestedState="Enabled" creationClassName="WiFiEndPoint" systemCreationClassName="ComputerSystem" systemName="PDA" protocolIFType="_802_11g"/>
+  <elements xsi:type="cim:ElementSettingData" caption="PDAWiFiSettings" elementName="PDAWiFiSettings" isNext="Is Next" settingData="//@elements.8"/>
+  <elements xsi:type="cim:WiFiEndpointSettings" caption="PDAWiFiEndpointSettings" elementName="PDAWiFiEndpointSettings" configurationName="PDAWiFiEndpointSettings" instanceID="WiFiEndpointSettings" authenticationMethod="SharedKey" BSSType="Infrastructure" encryptionMethod="WEP" SSID="WIFI_SSID">
+    <keys>WEP_KEY</keys>
+  </elements>
+</cim:CIM_Model>

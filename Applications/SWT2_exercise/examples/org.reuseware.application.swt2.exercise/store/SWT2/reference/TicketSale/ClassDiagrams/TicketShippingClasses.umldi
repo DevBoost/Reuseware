@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_JqcHEDI8Ed2hrontCqL0bw" activeDiagram="_JqcHETI8Ed2hrontCqL0bw">
+  <model href="TicketShippingClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_JqcHETI8Ed2hrontCqL0bw" position="0,0" size="100,100" name="TicketOrderClasses" viewport="0,0">
+    <property xmi:id="_JqslwDI8Ed2hrontCqL0bw" key="pageFormatName" value="A4"/>
+    <property xmi:id="_JqslwTI8Ed2hrontCqL0bw" key="diagramWidth" value="840"/>
+    <property xmi:id="_JqslwjI8Ed2hrontCqL0bw" key="diagramHeight" value="1188"/>
+    <property xmi:id="_JqslwzI8Ed2hrontCqL0bw" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_JqslxDI8Ed2hrontCqL0bw" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_JqslxTI8Ed2hrontCqL0bw" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_JqtM0DI8Ed2hrontCqL0bw" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_JqtM0TI8Ed2hrontCqL0bw" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_JqtM0jI8Ed2hrontCqL0bw" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_JqcHEjI8Ed2hrontCqL0bw" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="TicketShippingClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_LeDZwDI8Ed2hrontCqL0bw" position="144,153" size="197,-1">
+      <anchorage xmi:id="_XA-DUTI8Ed2hrontCqL0bw" graphEdge="_XBVPsDI8Ed2hrontCqL0bw"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_LeEA0DI8Ed2hrontCqL0bw" presentation="default">
+        <element href="TicketShippingClasses.uml#_LeKugDI8Ed2hrontCqL0bw"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_LeEA0TI8Ed2hrontCqL0bw">
+        <property xmi:id="_LeEA0jI8Ed2hrontCqL0bw" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_LeEA0zI8Ed2hrontCqL0bw" presentation="default">
+          <element href="TicketShippingClasses.uml#_LeKugDI8Ed2hrontCqL0bw"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_O0l3wDI8Ed2hrontCqL0bw" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_O0l3wTI8Ed2hrontCqL0bw" presentation="default">
+            <element href="TicketShippingClasses.uml#_O02WcDI8Ed2hrontCqL0bw"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_LeEA1DI8Ed2hrontCqL0bw">
+        <property xmi:id="_LeEA1TI8Ed2hrontCqL0bw" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_LeEA1jI8Ed2hrontCqL0bw" presentation="default">
+          <element href="TicketShippingClasses.uml#_LeKugDI8Ed2hrontCqL0bw"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_V2zWQDI8Ed2hrontCqL0bw" position="192,45" size="100,-1">
+      <anchorage xmi:id="_XA-DUDI8Ed2hrontCqL0bw" graphEdge="_XBVPsDI8Ed2hrontCqL0bw"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_V2zWQTI8Ed2hrontCqL0bw" presentation="default">
+        <element href="TicketShippingClasses.uml#_V20kYDI8Ed2hrontCqL0bw"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_V2zWQjI8Ed2hrontCqL0bw">
+        <property xmi:id="_V2zWQzI8Ed2hrontCqL0bw" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_V2zWRDI8Ed2hrontCqL0bw" presentation="default">
+          <element href="TicketShippingClasses.uml#_V20kYDI8Ed2hrontCqL0bw"/>
+        </semanticModel>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_V2zWRTI8Ed2hrontCqL0bw">
+        <property xmi:id="_V2zWRjI8Ed2hrontCqL0bw" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_V2zWRzI8Ed2hrontCqL0bw" presentation="default">
+          <element href="TicketShippingClasses.uml#_V20kYDI8Ed2hrontCqL0bw"/>
+        </semanticModel>
+      </contained>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_XBVPsDI8Ed2hrontCqL0bw" anchor="_XA-DUDI8Ed2hrontCqL0bw _XA-DUTI8Ed2hrontCqL0bw">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_XBVPsTI8Ed2hrontCqL0bw" presentation="default">
+        <element href="TicketShippingClasses.uml#_XBVPuDI8Ed2hrontCqL0bw"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_XBVPsjI8Ed2hrontCqL0bw" id="srcNameEdgeObject" uDistance="10" vDistance="10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_XBVPszI8Ed2hrontCqL0bw" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_XBVPtDI8Ed2hrontCqL0bw" id="targetNameEdgeObject" uDistance="10" vDistance="10"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_XBVPtTI8Ed2hrontCqL0bw" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_XBVPtjI8Ed2hrontCqL0bw" visible="false" id="middleNameEdgeObject" offset="0,10"/>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_XBVPtzI8Ed2hrontCqL0bw" id="stereotypeEdgeObject" offset="0,-10"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

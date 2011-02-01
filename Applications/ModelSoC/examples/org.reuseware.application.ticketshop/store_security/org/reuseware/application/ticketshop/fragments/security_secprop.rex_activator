@@ -1,0 +1,10 @@
+compositionlanguage org.reuseware.lib.systems.usecase.cl.odt(format='secprop',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.odt(format='secprop',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.participation.cl.usecase_uml(format='secprop',outFolder='out')
+compositionlanguage org.reuseware.lib.systems.exchange.cl.usecase_uml(format='secprop',outFolder='out')
+
+compositionlanguage org.reuseware.lib.systems.security.cl.secprop(format='secprop',outFolder='out')
+
+
+//components: The security information definitions in SecProp
+componentmodel org.reuseware.lib.systems.security.cm.secprop

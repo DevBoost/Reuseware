@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_l-r6kCV3EeCsOIfnX6yosA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_l-r6kSV3EeCsOIfnX6yosA" name="">
+    <ownedComment xmi:id="_l-r6kiV3EeCsOIfnX6yosA" annotatedElement="_l-shpCV3EeCsOIfnX6yosA">
+      <body>true</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-r6kyV3EeCsOIfnX6yosA" annotatedElement="_l-shrCV3EeCsOIfnX6yosA">
+      <body>false</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-r6lCV3EeCsOIfnX6yosA" annotatedElement="_l-shrCV3EeCsOIfnX6yosA">
+      <body>Accounacc1before) (inSet=false</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-r6lSV3EeCsOIfnX6yosA" annotatedElement="_l-shvCV3EeCsOIfnX6yosA">
+      <body>Accounacc1after) (inSet=true</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-r6liV3EeCsOIfnX6yosA" annotatedElement="_l-shrCV3EeCsOIfnX6yosA">
+      <body>Addresadd1before) (inSet=false</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-shoCV3EeCsOIfnX6yosA" annotatedElement="_l-shtCV3EeCsOIfnX6yosA">
+      <body>Addresadd1after) (inSet=false</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-shoSV3EeCsOIfnX6yosA" annotatedElement="_l-shtCV3EeCsOIfnX6yosA">
+      <body>ShipmeM(before) (inSet=INtrue</body>
+    </ownedComment>
+    <ownedComment xmi:id="_l-shoiV3EeCsOIfnX6yosA" annotatedElement="_l-shrCV3EeCsOIfnX6yosA">
+      <body>ShipmeM(after) (inSet=INfalse</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_l-shoyV3EeCsOIfnX6yosA" name="BookTicket"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-shpCV3EeCsOIfnX6yosA" name="Hall"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-shpSV3EeCsOIfnX6yosA" name="HallParticipatesInUseCase" memberEnd="_l-shpiV3EeCsOIfnX6yosA _l-shqSV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-shqSV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-shpiV3EeCsOIfnX6yosA" name="actor" type="_l-shpCV3EeCsOIfnX6yosA" association="_l-shpSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shpyV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shqCV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-shqSV3EeCsOIfnX6yosA" name="useCase" type="_l-shoyV3EeCsOIfnX6yosA" association="_l-shpSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shqiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shqyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-shrCV3EeCsOIfnX6yosA" name="Customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-shrSV3EeCsOIfnX6yosA" name="CustomerParticipatesInUseCase" memberEnd="_l-shriV3EeCsOIfnX6yosA _l-shsSV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-shsSV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-shriV3EeCsOIfnX6yosA" name="actor" type="_l-shrCV3EeCsOIfnX6yosA" association="_l-shrSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shryV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shsCV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-shsSV3EeCsOIfnX6yosA" name="useCase" type="_l-shoyV3EeCsOIfnX6yosA" association="_l-shrSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shsiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shsyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-shtCV3EeCsOIfnX6yosA" name="Clerk"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-shtSV3EeCsOIfnX6yosA" name="ClerkParticipatesInUseCase" memberEnd="_l-shtiV3EeCsOIfnX6yosA _l-shuSV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-shuSV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-shtiV3EeCsOIfnX6yosA" name="actor" type="_l-shtCV3EeCsOIfnX6yosA" association="_l-shtSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shtyV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shuCV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-shuSV3EeCsOIfnX6yosA" name="useCase" type="_l-shoyV3EeCsOIfnX6yosA" association="_l-shtSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shuiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shuyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l-shvCV3EeCsOIfnX6yosA" name="Bank"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l-shvSV3EeCsOIfnX6yosA" name="BankParticipatesInUseCase" memberEnd="_l-shviV3EeCsOIfnX6yosA _l-shwSV3EeCsOIfnX6yosA" navigableOwnedEnd="_l-shwSV3EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_l-shviV3EeCsOIfnX6yosA" name="actor" type="_l-shvCV3EeCsOIfnX6yosA" association="_l-shvSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shvyV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shwCV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l-shwSV3EeCsOIfnX6yosA" name="useCase" type="_l-shoyV3EeCsOIfnX6yosA" association="_l-shvSV3EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l-shwiV3EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l-shwyV3EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="idModel" name="TicketSaleModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="TicketSalePackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="TicketSaleStateMachine">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:State" xmi:id="_ywoc0DGCEd2b1M54IbKc-w" name="Hook_TicketOrder"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_4MDjsDGCEd2b1M54IbKc-w" name="Pseudostate1"/>
+        <subvertex xmi:type="uml:State" xmi:id="_4sPfoDGCEd2b1M54IbKc-w" name="CheckTicketAvailability"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MSqsoDGDEd2b1M54IbKc-w" name="Hook_TicketShipping"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Q5uXUDGDEd2b1M54IbKc-w" name="SendAppologies"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_WU5mkDGDEd2b1M54IbKc-w" name="Pseudostate2" kind="choice"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_W0wyYDGDEd2b1M54IbKc-w" name="FinalState1"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_Xq6XQjGDEd2b1M54IbKc-w" name="FinalState2"/>
+        <transition xmi:id="_VX_SYzGDEd2b1M54IbKc-w" name="Transition1" target="_ywoc0DGCEd2b1M54IbKc-w" source="_4MDjsDGCEd2b1M54IbKc-w"/>
+        <transition xmi:id="_VlVx4zGDEd2b1M54IbKc-w" name="Transition2" target="_4sPfoDGCEd2b1M54IbKc-w" source="_ywoc0DGCEd2b1M54IbKc-w"/>
+        <transition xmi:id="_ZYaa4zGDEd2b1M54IbKc-w" name="Transition3" target="_W0wyYDGDEd2b1M54IbKc-w" source="_Q5uXUDGDEd2b1M54IbKc-w"/>
+        <transition xmi:id="_ZmwY4zGDEd2b1M54IbKc-w" name="Transition4" target="_Xq6XQjGDEd2b1M54IbKc-w" source="_MSqsoDGDEd2b1M54IbKc-w"/>
+        <transition xmi:id="_Z2F1YzGDEd2b1M54IbKc-w" name="No" target="_Q5uXUDGDEd2b1M54IbKc-w" source="_WU5mkDGDEd2b1M54IbKc-w"/>
+        <transition xmi:id="_aFpUUzGDEd2b1M54IbKc-w" name="Yes" target="_MSqsoDGDEd2b1M54IbKc-w" source="_WU5mkDGDEd2b1M54IbKc-w"/>
+        <transition xmi:id="_aSLUczGDEd2b1M54IbKc-w" name="Transition7" target="_WU5mkDGDEd2b1M54IbKc-w" source="_4sPfoDGCEd2b1M54IbKc-w"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

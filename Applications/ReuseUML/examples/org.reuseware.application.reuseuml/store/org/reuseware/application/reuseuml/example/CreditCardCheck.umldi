@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_y7zv8DU4Edyu2NgstWGcFw" activeDiagram="_y7zv8TU4Edyu2NgstWGcFw">
+  <model href="CreditCardCheck.uml#idActivity"/>
+  <diagrams xmi:id="_y7zv8TU4Edyu2NgstWGcFw" position="0,0" size="100,100" name="Sales Order Processing" viewport="80,0">
+    <property xmi:id="_y7zv8jU4Edyu2NgstWGcFw" key="pageFormatName" value="A2"/>
+    <property xmi:id="_y7zv8zU4Edyu2NgstWGcFw" key="diagramWidth" value="1680"/>
+    <property xmi:id="_y7zv9DU4Edyu2NgstWGcFw" key="diagramHeight" value="2376"/>
+    <property xmi:id="_y7zv9TU4Edyu2NgstWGcFw" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_y7zv9jU4Edyu2NgstWGcFw" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_y7zv9zU4Edyu2NgstWGcFw" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_y7zv-DU4Edyu2NgstWGcFw" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_y7zv-TU4Edyu2NgstWGcFw" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_y7zv-jU4Edyu2NgstWGcFw" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_y7zv-zU4Edyu2NgstWGcFw" presentation="org.topcased.modeler.uml.activitydiagram">
+      <element href="CreditCardCheck.uml#idActivity"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_y7zwCjU4Edyu2NgstWGcFw" position="588,18" size="20,23">
+      <property xmi:id="_YX-6QYY9EdyP5OOK2-KIuA" key="font" value="Lucida Grande-regular-12"/>
+      <anchorage xmi:id="_5ZbfIJK4Edysg6UWTl9OeQ" graphEdge="_JQ1SIJK4Edysg6UWTl9OeQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_y7zwDDU4Edyu2NgstWGcFw" presentation="default">
+        <element href="CreditCardCheck.uml#_EmfzkNh0Edu1mMb-MiZLnw"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_y785_DU4Edyu2NgstWGcFw" position="1021,15" size="30,30">
+      <property xmi:id="_YX-6RoY9EdyP5OOK2-KIuA" key="font" value="Lucida Grande-regular-12"/>
+      <anchorage xmi:id="_9b5PAJK4Edysg6UWTl9OeQ" graphEdge="_LOkxMJK4Edysg6UWTl9OeQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_y785_jU4Edyu2NgstWGcFw" presentation="default">
+        <element href="CreditCardCheck.uml#_mRe1kNh2Edu1mMb-MiZLnw"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_y785_zU4Edyu2NgstWGcFw" position="950,85" size="30,30">
+      <property xmi:id="_YX-6R4Y9EdyP5OOK2-KIuA" key="font" value="Lucida Grande-regular-12"/>
+      <anchorage xmi:id="_0bxGkNSIEdyvzaFlmF9HZg" graphEdge="_QxkfsJK4Edysg6UWTl9OeQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_y786ATU4Edyu2NgstWGcFw" presentation="default">
+        <element href="CreditCardCheck.uml#_r-sQANh2Edu1mMb-MiZLnw"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_JQ1SIJK4Edysg6UWTl9OeQ" anchor="_5ZbfIJK4Edysg6UWTl9OeQ _HHEV8JX9EdyU7-xax85AfA">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_JQ1SIZK4Edysg6UWTl9OeQ" presentation="default">
+        <element href="CreditCardCheck.uml#_JQ15MJK4Edysg6UWTl9OeQ"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_JQ1SIpK4Edysg6UWTl9OeQ" id="stereotypeEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_JQ1SI5K4Edysg6UWTl9OeQ" visible="false" id="guardEdgeObject" uDistance="6" vDistance="6"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_JQ1SJJK4Edysg6UWTl9OeQ" visible="false" id="weightEdgeObject" uDistance="-30" vDistance="-75"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_JQ1SJZK4Edysg6UWTl9OeQ" id="nameEdgeObject" uDistance="6" vDistance="6"/>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_LOkxMJK4Edysg6UWTl9OeQ" anchor="_Qxj4oJK4Edysg6UWTl9OeQ _9b5PAJK4Edysg6UWTl9OeQ">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_LOkxMZK4Edysg6UWTl9OeQ" presentation="default">
+        <element href="CreditCardCheck.uml#_LOkxNpK4Edysg6UWTl9OeQ"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_LOkxMpK4Edysg6UWTl9OeQ" id="stereotypeEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_LOkxM5K4Edysg6UWTl9OeQ" visible="false" id="guardEdgeObject" uDistance="6" vDistance="6"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_LOkxNJK4Edysg6UWTl9OeQ" visible="false" id="weightEdgeObject" uDistance="6" vDistance="-6"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_LOkxNZK4Edysg6UWTl9OeQ" id="nameEdgeObject" uDistance="13" vDistance="-3"/>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_PmkFIJK4Edysg6UWTl9OeQ" position="952,15" size="30,32">
+      <anchorage xmi:id="_Qxj4oJK4Edysg6UWTl9OeQ" graphEdge="_MDqy0JX9EdyU7-xax85AfA _QxkfsJK4Edysg6UWTl9OeQ _LOkxMJK4Edysg6UWTl9OeQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_PmkFIZK4Edysg6UWTl9OeQ" presentation="default">
+        <element href="CreditCardCheck.uml#_PqjNQJK4Edysg6UWTl9OeQ"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_QxkfsJK4Edysg6UWTl9OeQ" anchor="_Qxj4oJK4Edysg6UWTl9OeQ _0bxGkNSIEdyvzaFlmF9HZg">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_QxkfsZK4Edysg6UWTl9OeQ" presentation="default">
+        <element href="CreditCardCheck.uml#_QxkftpK4Edysg6UWTl9OeQ"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_QxkfspK4Edysg6UWTl9OeQ" id="stereotypeEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_Qxkfs5K4Edysg6UWTl9OeQ" visible="false" id="guardEdgeObject" uDistance="16"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_QxkftJK4Edysg6UWTl9OeQ" visible="false" id="weightEdgeObject" uDistance="-9" vDistance="-19"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_QxkftZK4Edysg6UWTl9OeQ" id="nameEdgeObject" uDistance="22" vDistance="-4"/>
+    </contained>
+    <contained xsi:type="di:GraphNode" xmi:id="_EI4tkJX9EdyU7-xax85AfA" position="697,5" size="150,50">
+      <anchorage xmi:id="_HHEV8JX9EdyU7-xax85AfA" graphEdge="_MDqy0JX9EdyU7-xax85AfA _JQ1SIJK4Edysg6UWTl9OeQ"/>
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_EI4tkZX9EdyU7-xax85AfA" presentation="default">
+        <element href="CreditCardCheck.uml#_EM6R8JX9EdyU7-xax85AfA"/>
+      </semanticModel>
+    </contained>
+    <contained xsi:type="di:GraphEdge" xmi:id="_MDqy0JX9EdyU7-xax85AfA" anchor="_HHEV8JX9EdyU7-xax85AfA _Qxj4oJK4Edysg6UWTl9OeQ">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_MDqy0ZX9EdyU7-xax85AfA" presentation="default">
+        <element href="CreditCardCheck.uml#_MDqy1pX9EdyU7-xax85AfA"/>
+      </semanticModel>
+      <contained xsi:type="di:EdgeObjectOffset" xmi:id="_MDqy0pX9EdyU7-xax85AfA" id="stereotypeEdgeObject"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_MDqy05X9EdyU7-xax85AfA" visible="false" id="guardEdgeObject" uDistance="6" vDistance="6"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_MDqy1JX9EdyU7-xax85AfA" visible="false" id="weightEdgeObject" uDistance="6" vDistance="-6"/>
+      <contained xsi:type="di:EdgeObjectUV" xmi:id="_MDqy1ZX9EdyU7-xax85AfA" id="nameEdgeObject" uDistance="223" vDistance="78"/>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

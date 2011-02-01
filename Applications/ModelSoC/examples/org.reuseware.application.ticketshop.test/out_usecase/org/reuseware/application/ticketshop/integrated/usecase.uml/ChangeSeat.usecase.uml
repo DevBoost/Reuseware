@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_eNWyoCV_EeCsOIfnX6yosA">
+  <packagedElement xmi:type="uml:Package" xmi:id="_eNWyoSV_EeCsOIfnX6yosA" name="">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_eNWyoiV_EeCsOIfnX6yosA" name="ChangeSeat"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_eNWyoyV_EeCsOIfnX6yosA" name="Hall"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eNWypCV_EeCsOIfnX6yosA" name="HallParticipatesInUseCase" memberEnd="_eNWypSV_EeCsOIfnX6yosA _eNWyqCV_EeCsOIfnX6yosA" navigableOwnedEnd="_eNWyqCV_EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_eNWypSV_EeCsOIfnX6yosA" name="actor" type="_eNWyoyV_EeCsOIfnX6yosA" association="_eNWypCV_EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNWypiV_EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNWypyV_EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_eNWyqCV_EeCsOIfnX6yosA" name="useCase" type="_eNWyoiV_EeCsOIfnX6yosA" association="_eNWypCV_EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNWyqSV_EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNWyqiV_EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_eNWyqyV_EeCsOIfnX6yosA" name="Customer"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eNWyrCV_EeCsOIfnX6yosA" name="CustomerParticipatesInUseCase" memberEnd="_eNWyrSV_EeCsOIfnX6yosA _eNXZsiV_EeCsOIfnX6yosA" navigableOwnedEnd="_eNXZsiV_EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_eNWyrSV_EeCsOIfnX6yosA" name="actor" type="_eNWyqyV_EeCsOIfnX6yosA" association="_eNWyrCV_EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNXZsCV_EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNXZsSV_EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_eNXZsiV_EeCsOIfnX6yosA" name="useCase" type="_eNWyoiV_EeCsOIfnX6yosA" association="_eNWyrCV_EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNXZsyV_EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNXZtCV_EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_eNXZtSV_EeCsOIfnX6yosA" name="Clerk"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eNXZtiV_EeCsOIfnX6yosA" name="ClerkParticipatesInUseCase" memberEnd="_eNXZtyV_EeCsOIfnX6yosA _eNXZuiV_EeCsOIfnX6yosA" navigableOwnedEnd="_eNXZuiV_EeCsOIfnX6yosA">
+      <ownedEnd xmi:id="_eNXZtyV_EeCsOIfnX6yosA" name="actor" type="_eNXZtSV_EeCsOIfnX6yosA" association="_eNXZtiV_EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNXZuCV_EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNXZuSV_EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_eNXZuiV_EeCsOIfnX6yosA" name="useCase" type="_eNWyoiV_EeCsOIfnX6yosA" association="_eNXZtiV_EeCsOIfnX6yosA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eNXZuyV_EeCsOIfnX6yosA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eNXZvCV_EeCsOIfnX6yosA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

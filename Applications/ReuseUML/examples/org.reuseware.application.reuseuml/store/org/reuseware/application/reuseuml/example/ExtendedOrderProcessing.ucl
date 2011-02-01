@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.reuseware.coconut.compositionprogram="http://reuseware.org/coconut/compositionprogram">
+  <UCPI>org</UCPI>
+  <UCPI>reuseware</UCPI>
+  <UCPI>application</UCPI>
+  <UCPI>reuseuml</UCPI>
+  <UCPI>example</UCPI>
+  <UCPI>ExtendedOrderProcessing.ucl</UCPI>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='DebitCardCheck.uml']/@portInstances[portName='Contents',fragmentRoleName='ActivityAspect',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]" target="//@fragmentInstances[name='OrderProcessing.uml']/@portInstances[portName='ContentsHook',fragmentRoleName='ActivityCore',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='DebitCardCheck.uml']/@portInstances[portName='DebitCardCheck',fragmentRoleName='ActivityAspect',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]" target="//@fragmentInstances[name='OrderProcessing.uml']/@portInstances[portName='CheckActivities',fragmentRoleName='ActivityCore',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]"/>
+  <compositionLinks empty="true" source="//@fragmentInstances[name='CreditCardCheck.uml']/@portInstances[portName='CreditCardCheck',fragmentRoleName='ActivityAspect',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]" target="//@fragmentInstances[name='OrderProcessing.uml']/@portInstances[portName='CheckActivities',fragmentRoleName='ActivityCore',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]"/>
+  <compositionLinks source="//@fragmentInstances[name='CreditCardCheck.uml']/@portInstances[portName='Contents',fragmentRoleName='ActivityAspect',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]" target="//@fragmentInstances[name='OrderProcessing.uml']/@portInstances[portName='ContentsHook',fragmentRoleName='ActivityCore',fracolNamespace=['org','reuseware','application','reuseuml','compositionSystem']]"/>
+  <fragmentInstances name="OrderProcessing.uml" targetPhysicalLocation="out" target="true">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>reuseuml</UFI>
+    <UFI>example</UFI>
+    <UFI>OrderProcessing.uml</UFI>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityCore" portName="ContentsHook" targetLinks="//@compositionLinks.0 //@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityCore" portName="CheckActivities" targetLinks="//@compositionLinks.1 //@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityAspect" portName="Contents">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>reuseuml</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>OrderProcessing.uml</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="DebitCardCheck.uml" targetPhysicalLocation="out">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>reuseuml</UFI>
+    <UFI>example</UFI>
+    <UFI>DebitCardCheck.uml</UFI>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityCore" portName="ContentsHook">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityAspect" portName="Contents" sourceLinks="//@compositionLinks.0">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityAspect" portName="DebitCardCheck" sourceLinks="//@compositionLinks.1">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>reuseuml</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>DebitCardCheck.uml</targetUFI>
+  </fragmentInstances>
+  <fragmentInstances name="CreditCardCheck.uml" targetPhysicalLocation="out">
+    <UFI>org</UFI>
+    <UFI>reuseware</UFI>
+    <UFI>application</UFI>
+    <UFI>reuseuml</UFI>
+    <UFI>example</UFI>
+    <UFI>CreditCardCheck.uml</UFI>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityCore" portName="ContentsHook">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityAspect" portName="Contents" sourceLinks="//@compositionLinks.3">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <portInstances fracolName="ReuseUMLActivity.fracol" fragmentRoleName="ActivityAspect" portName="CreditCardCheck" sourceLinks="//@compositionLinks.2">
+      <fracolNamespace>org</fracolNamespace>
+      <fracolNamespace>reuseware</fracolNamespace>
+      <fracolNamespace>application</fracolNamespace>
+      <fracolNamespace>reuseuml</fracolNamespace>
+      <fracolNamespace>compositionSystem</fracolNamespace>
+    </portInstances>
+    <targetUFI>org</targetUFI>
+    <targetUFI>reuseware</targetUFI>
+    <targetUFI>application</targetUFI>
+    <targetUFI>reuseuml</targetUFI>
+    <targetUFI>example</targetUFI>
+    <targetUFI>composed</targetUFI>
+    <targetUFI>CreditCardCheck.uml</targetUFI>
+  </fragmentInstances>
+</org.reuseware.coconut.compositionprogram:PhysicalCompositionProgram>

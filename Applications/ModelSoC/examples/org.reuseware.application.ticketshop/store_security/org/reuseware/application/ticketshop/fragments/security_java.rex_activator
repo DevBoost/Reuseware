@@ -1,0 +1,10 @@
+
+
+
+
+
+compositionlanguage org.reuseware.lib.systems.security.cl.secprop(format='java',outFolder='out')
+
+
+//components: The security information definitions in Java
+componentmodel org.reuseware.lib.systems.security.cm.java    
