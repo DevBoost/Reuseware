@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 
-import cim.CimPackage;
+import es.tid.cim.CimPackage;
 
 public class CimMetamodelTool {
 
