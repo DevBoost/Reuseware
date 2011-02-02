@@ -186,14 +186,6 @@ public class TestUtil {
 	public static boolean addressSameArtifacts(List<IndexRow> expected,
 			List<IndexRow> actual) {
 
-		int check = CoreUtil.trivialCollectionEqual(expected, actual);
-		switch (check) {
-		case -1:
-			return false;
-		case 1:
-			return true;
-		}
-
 		boolean contains;
 		for (IndexRow eRow : expected) {
 			contains = false;
