@@ -520,7 +520,7 @@ public class AsResource extends org.eclipse.emf.ecore.resource.impl.ResourceImpl
 			// need to catch the exception here.
 			try {
 				org.eclipse.emf.validation.service.ModelValidationService service = org.eclipse.emf.validation.service.ModelValidationService.getInstance();
-				org.eclipse.emf.validation.service.IBatchValidator validator = (org.eclipse.emf.validation.service.IBatchValidator) service.newValidator(org.eclipse.emf.validation.model.EvaluationMode.BATCH);
+				org.eclipse.emf.validation.service.IBatchValidator validator = (org.eclipse.emf.validation.service.IBatchValidator) service.<org.eclipse.emf.ecore.EObject, org.eclipse.emf.validation.service.IBatchValidator>newValidator(org.eclipse.emf.validation.model.EvaluationMode.BATCH);
 				validator.setIncludeLiveConstraints(true);
 				org.eclipse.core.runtime.IStatus status = validator.validate(root);
 				addStatus(status, root);
