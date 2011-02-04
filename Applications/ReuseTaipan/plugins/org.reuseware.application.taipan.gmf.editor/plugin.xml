@@ -57,7 +57,7 @@ Contributors:
       <?gmfgen generated="true"?>
   	  <wizard
   	     name="%newWizardName"
-  	     icon="../org.reuseware.application.taipan.editor/icons/full/obj16/TaiPanModelFile.gif"
+  	     icon="icons/obj16/TaiPanModelFile.gif"
   	     category="org.eclipse.ui.Examples"
   	     class="org.reuseware.application.taipan.gmf.editor.part.TaiPanCreationWizard"
   	     id="org.reuseware.application.taipan.gmf.editor.part.TaiPanCreationWizardID">
