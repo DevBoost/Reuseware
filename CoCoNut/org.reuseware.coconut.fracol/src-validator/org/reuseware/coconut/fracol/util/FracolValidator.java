@@ -242,6 +242,13 @@ public class FracolValidator extends EObjectValidator
 		return result;
 	}
 	
+	@Override
+	public boolean validate_EveryProxyResolves(EObject eObject,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		// errors are sufficiently reported by EMFText
+		return true;
+	}
+	
 	protected void addError(DiagnosticChain diagnostics, String message, EObject data) {
 		diagnostics.add(new BasicDiagnostic(
 				Diagnostic.ERROR,
