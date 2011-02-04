@@ -149,6 +149,24 @@ public final class EvaluatorUtil {
 	}
 	
 	/**
+	 * Evaluates the expression towards a boolean value.
+	 * 
+	 * @param iD id of the fragment on which the expression is to be evaluated
+	 * @param context an element in the fragment on which the expression is to be evaluated
+	 * @param expression the unparsed expression as string
+	 * @param args additional arguments to be used in the evaluation
+	 * @param nullValue the boolean value that should be returned if the expression is null
+	 * 
+	 * @return the result of the evaluation
+	 */
+	public static boolean eval(List<String> iD, EObject context, String expression, Map<String, String> args, boolean nullValue) {
+		if (expression == null || "".equals(expression)) {
+			return nullValue;
+		}
+		return eval(iD, context, expression, args);
+	}
+	
+	/**
 	 * Evaluates the expression towards a boolean value (with a list of elements as context).
 	 * 
 	 * @param iD id of the fragment on which the expression is to be evaluated
@@ -167,6 +185,24 @@ public final class EvaluatorUtil {
 		} else {
 			return evaluator.eval(iD, context, expression, args);
 		}
+	}
+	
+	/**
+	 * Evaluates the expression towards a boolean value (with a list of elements as context).
+	 * 
+	 * @param iD id of the fragment on which the expression is to be evaluated
+	 * @param context an elements in the fragment on which the expression is to be evaluated
+	 * @param expression the unparsed expression as string
+	 * @param args additional arguments to be used in the evaluation 
+	 * @param nullValue the boolean value that should be returned if the expression is null
+	 * 
+	 * @return the result of the evaluation
+	 */
+	public static boolean eval(List<String> iD, List<EObject> context, String expression, Map<String, String> args, boolean nullValue) {
+		if (expression == null || "".equals(expression)) {
+			return nullValue;
+		}
+		return eval(iD, context, expression, args);
 	}
 
 	/**
