@@ -459,9 +459,13 @@ public class CompositionprogramValidator extends EObjectValidator
 				addWarning(diagnostics, 
 						"Fragment " + fragmentInstance.getUFI() + " not found",
 						cause);
+			} else if (eStructuralFeature
+					.equals(CompositionprogramPackage.Literals.COMPOSITION_PROGRAM__UCPI)) {
+				// ignore warnings about empty UCPIs, since these are only follow-up problems
 			} else {
 				diagnostics.add(tempDiagnostics);
 			}
+
 		}
 		return result;
 	}
