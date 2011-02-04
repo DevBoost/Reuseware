@@ -1,6 +1,5 @@
 package org.reuseware.sokan.test.index.tests;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -90,7 +89,7 @@ public class IndexUtilTest {
 		FacetedResponse rsp = indexUtil.getFacetedResponse(req);
 		assertNotNull(rsp);
 		assertNotNull(rsp.getContent());
-		assertEquals(44, rsp.getContent().size()); // 42?
+		assertTrue(44 == rsp.getContent().size()); // 42?
 
 		// color=Dark
 		// query for "Dark" might fail, because of facet value "Dark orange"
@@ -100,7 +99,7 @@ public class IndexUtilTest {
 		rsp = indexUtil.getFacetedResponse(req);
 		assertNotNull(rsp);
 		assertNotNull(rsp.getContent());
-		assertEquals(33, rsp.getContent().size());
+		assertTrue(33 == rsp.getContent().size());
 
 		// color=orange
 		// query for "orange" might fail, because of facet value "Dark orange"
@@ -110,7 +109,7 @@ public class IndexUtilTest {
 		rsp = indexUtil.getFacetedResponse(req);
 		assertNotNull(rsp);
 		assertNotNull(rsp.getContent());
-		assertEquals(3, rsp.getContent().size());
+		assertTrue(3 == rsp.getContent().size());
 
 		// color=Brown,Dark
 		// simple double value on one field
@@ -120,7 +119,7 @@ public class IndexUtilTest {
 		rsp = indexUtil.getFacetedResponse(req);
 		assertNotNull(rsp);
 		assertNotNull(rsp.getContent());
-		assertEquals(77, rsp.getContent().size()); // 73
+		assertTrue(77 == rsp.getContent().size()); // 73
 	}
 
 	@Test

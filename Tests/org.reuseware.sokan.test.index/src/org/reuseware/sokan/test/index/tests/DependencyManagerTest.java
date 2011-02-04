@@ -3,7 +3,6 @@ package org.reuseware.sokan.test.index.tests;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -340,21 +339,22 @@ public class DependencyManagerTest {
 
 		assertNotNull(fLvlDeps);
 		//2 because A3 itself is included
-		assertEquals(2,fLvlDeps.getUpdateMap().size());
+		assertTrue(2 == fLvlDeps.getUpdateMap().size());
+		
 
 		idString = "A13";
 		fLvlDeps = DependencyTestUtil.invokeDependencyCalculator(
 				idString);
 		
 		assertNotNull(fLvlDeps);
-		assertEquals(2, fLvlDeps.getUpdateMap().size());
+		assertTrue(2 == fLvlDeps.getUpdateMap().size());
 
 		idString = "A50_1,A50_2,A50_3,A50_4";
 		fLvlDeps = DependencyTestUtil.invokeDependencyCalculator(
 				idString);
 		
 		assertNotNull(fLvlDeps);
-		assertEquals(7, fLvlDeps.getUpdateMap().size());
+		assertTrue(7 == fLvlDeps.getUpdateMap().size());
 	}
 
 	/* TODO #1559: Rewrite this test for cyclic dependencies between artifacts

@@ -1,7 +1,7 @@
 package org.reuseware.sokan.test.index.tests;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -33,7 +33,7 @@ public class MultiValueTest {
 
 		List<IndexRow> rows = IndexUtil.INSTANCE.getIndex(req);
 		assertNotNull(rows);
-		assertEquals(29, rows.size()); // 18?
+		assertTrue(29 == rows.size()); // 18?
 	}
 
 	@Test
@@ -45,7 +45,7 @@ public class MultiValueTest {
 
 		List<IndexRow> rows = IndexUtil.INSTANCE.getIndex(req);
 		assertNotNull(rows);
-		assertEquals(6, rows.size()); // 5?
+		assertTrue(6 == rows.size()); // 5?
 	}
 
 	@Test
@@ -57,7 +57,7 @@ public class MultiValueTest {
 
 		List<IndexRow> rows = IndexUtil.INSTANCE.getIndex(req);
 		assertNotNull(rows);
-		assertEquals(67, rows.size()); // 55?
+		assertTrue(67 == rows.size()); // 55?
 	}
 
 	@Test
@@ -72,6 +72,6 @@ public class MultiValueTest {
 			if (!values.contains(row.getMetaData().getSingle(color)))
 				values.add(row.getMetaData().getSingle(color));
 		}
-		assertEquals(2, values.size());
+		assertTrue(2 == values.size());
 	}
 }

@@ -1,6 +1,6 @@
 package org.reuseware.sokan.test.misc.cases;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -42,13 +42,13 @@ public class IndexNotifyTest {
 		lis.add(lis1);
 		init(lis, expected, "testSinglePassive");
 
-		assertEquals(expected, lis1.getMyValue());
+		assertTrue(expected == lis1.getMyValue());
 
 		expected = 12;
 		INDEX.setValue(expected);
 
-		assertEquals(expected, lis1.getMyValue());
-		assertEquals(1, lis1.getInvokeCounter());
+		assertTrue(expected == lis1.getMyValue());
+		assertTrue(1 == lis1.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -60,7 +60,7 @@ public class IndexNotifyTest {
 		lis.add(lis2);
 		init(lis, expected, "testSingleActive");
 
-		assertEquals(expected, lis2.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
 
 		expected = 10;
 		try {
@@ -69,8 +69,8 @@ public class IndexNotifyTest {
 			e.printStackTrace();
 		}
 
-		assertEquals(expected + 1, lis2.getMyValue());
-		assertEquals(1, lis2.getInvokeCounter());
+		assertTrue(expected + 1 == lis2.getMyValue());
+		assertTrue(1 == lis2.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -83,17 +83,17 @@ public class IndexNotifyTest {
 		lis.add(lis2);
 		init(lis, expected, "testPassiveActive");
 
-		assertEquals(expected, lis1.getMyValue());
-		assertEquals(expected, lis2.getMyValue());
+		assertTrue(expected == lis1.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
 
 		expected = 10;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis1.getMyValue());
-		assertEquals(expected + 1, lis2.getMyValue());
+		assertTrue(expected + 1 == lis1.getMyValue());
+		assertTrue(expected + 1 == lis2.getMyValue());
 
-		assertEquals(2, lis1.getInvokeCounter());
-		assertEquals(1, lis2.getInvokeCounter());
+		assertTrue(2 == lis1.getInvokeCounter());
+		assertTrue(1 == lis2.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -106,24 +106,24 @@ public class IndexNotifyTest {
 		lis.add(lis2);
 		init(lis, expected, "testPassiveActive2");
 
-		assertEquals(expected, lis1.getMyValue());
-		assertEquals(expected, lis2.getMyValue());
+		assertTrue(expected == lis1.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
 
 		expected = 10;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis1.getMyValue());
-		assertEquals(expected + 1, lis2.getMyValue());
-		assertEquals(2, lis1.getInvokeCounter());
-		assertEquals(1, lis2.getInvokeCounter());
+		assertTrue(expected + 1 == lis1.getMyValue());
+		assertTrue(expected + 1 == lis2.getMyValue());
+		assertTrue(2 == lis1.getInvokeCounter());
+		assertTrue(1 == lis2.getInvokeCounter());
 
 		expected = 20;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis1.getMyValue());
-		assertEquals(expected + 1, lis2.getMyValue());
-		assertEquals(3, lis1.getInvokeCounter());
-		assertEquals(2, lis2.getInvokeCounter());
+		assertTrue(expected + 1 == lis1.getMyValue());
+		assertTrue(expected + 1 == lis2.getMyValue());
+		assertTrue(3 == lis1.getInvokeCounter());
+		assertTrue(2 == lis2.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -136,17 +136,17 @@ public class IndexNotifyTest {
 		lis.add(lis1);
 		init(lis, expected, "testActivePassive");
 
-		assertEquals(expected, lis1.getMyValue());
-		assertEquals(expected, lis2.getMyValue());
+		assertTrue(expected == lis1.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
 
 		expected = 10;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis1.getMyValue());
-		assertEquals(expected + 1, lis2.getMyValue());
+		assertTrue(expected + 1 == lis1.getMyValue());
+		assertTrue(expected + 1 == lis2.getMyValue());
 
-		assertEquals(1, lis1.getInvokeCounter());
-		assertEquals(1, lis2.getInvokeCounter());
+		assertTrue(1 == lis1.getInvokeCounter());
+		assertTrue(1 == lis2.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -160,20 +160,20 @@ public class IndexNotifyTest {
 		lis.add(lis4);
 		init(lis, expected, "testPassiveActivePassive");
 
-		assertEquals(expected, lis1.getMyValue());
-		assertEquals(expected, lis2.getMyValue());
-		assertEquals(expected, lis4.getMyValue());
+		assertTrue(expected == lis1.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
+		assertTrue(expected == lis4.getMyValue());
 
 		expected = 10;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis1.getMyValue());
-		assertEquals(expected + 1, lis2.getMyValue());
-		assertEquals(expected + 1, lis4.getMyValue());
+		assertTrue(expected + 1 == lis1.getMyValue());
+		assertTrue(expected + 1 == lis2.getMyValue());
+		assertTrue(expected + 1 == lis4.getMyValue());
 
-		assertEquals(2, lis1.getInvokeCounter());
-		assertEquals(1, lis2.getInvokeCounter());
-		assertEquals(1, lis4.getInvokeCounter());
+		assertTrue(2 == lis1.getInvokeCounter());
+		assertTrue(1 == lis2.getInvokeCounter());
+		assertTrue(1 == lis4.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -186,17 +186,17 @@ public class IndexNotifyTest {
 		lis.add(lis2);
 		init(lis, expected, "testActiveActive");
 
-		assertEquals(expected, lis3.getMyValue());
-		assertEquals(expected, lis2.getMyValue());
+		assertTrue(expected == lis3.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
 
 		expected = 13;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis3.getMyValue());
-		assertEquals(expected + 2, lis2.getMyValue());
+		assertTrue(expected + 1 == lis3.getMyValue());
+		assertTrue(expected + 2 == lis2.getMyValue());
 
-		assertEquals(1, lis3.getInvokeCounter());
-		assertEquals(1, lis2.getInvokeCounter());
+		assertTrue(1 == lis3.getInvokeCounter());
+		assertTrue(1 == lis2.getInvokeCounter());
 
 		remove(lis);
 	}
@@ -210,37 +210,37 @@ public class IndexNotifyTest {
 		lis.add(lis2);
 		lis.add(lis4);
 		init(lis, expected, "testActivePassiveActivePassive");
-
-		assertEquals(expected, lis3.getMyValue());
-		assertEquals(expected, lis1.getMyValue());
-		assertEquals(expected, lis2.getMyValue());
-		assertEquals(expected, lis4.getMyValue());
+		
+		assertTrue(expected == lis3.getMyValue());
+		assertTrue(expected == lis1.getMyValue());
+		assertTrue(expected == lis2.getMyValue());
+		assertTrue(expected == lis4.getMyValue());
 
 		expected = 13;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis3.getMyValue());
-		assertEquals(expected + 2, lis1.getMyValue());
-		assertEquals(expected + 2, lis2.getMyValue());
-		assertEquals(expected + 2, lis4.getMyValue());
+		assertTrue(expected + 1 == lis3.getMyValue());
+		assertTrue(expected + 2 == lis1.getMyValue());
+		assertTrue(expected + 2 == lis2.getMyValue());
+		assertTrue(expected + 2 == lis4.getMyValue());
 
-		assertEquals(1, lis3.getInvokeCounter());
-		assertEquals(2, lis1.getInvokeCounter());
-		assertEquals(1, lis2.getInvokeCounter());
-		assertEquals(1, lis4.getInvokeCounter());
+		assertTrue(1 == lis3.getInvokeCounter());
+		assertTrue(2 == lis1.getInvokeCounter());
+		assertTrue(1 == lis2.getInvokeCounter());
+		assertTrue(1 == lis4.getInvokeCounter());
 
 		expected = 23;
 		INDEX.setValue(expected);
 
-		assertEquals(expected + 1, lis3.getMyValue());
-		assertEquals(expected + 2, lis1.getMyValue());
-		assertEquals(expected + 2, lis2.getMyValue());
-		assertEquals(expected + 2, lis4.getMyValue());
+		assertTrue(expected + 1 == lis3.getMyValue());
+		assertTrue(expected + 2 == lis1.getMyValue());
+		assertTrue(expected + 2 == lis2.getMyValue());
+		assertTrue(expected + 2 == lis4.getMyValue());
 
-		assertEquals(2, lis3.getInvokeCounter());
-		assertEquals(3, lis1.getInvokeCounter());
-		assertEquals(2, lis2.getInvokeCounter());
-		assertEquals(2, lis4.getInvokeCounter());
+		assertTrue(2 == lis3.getInvokeCounter());
+		assertTrue(3 == lis1.getInvokeCounter());
+		assertTrue(2 == lis2.getInvokeCounter());
+		assertTrue(2 == lis4.getInvokeCounter());
 
 		remove(lis);
 	}

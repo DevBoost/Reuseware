@@ -1,6 +1,7 @@
 package org.reuseware.sokan.test.indexer.tests;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 
@@ -74,8 +75,8 @@ public class MultiPhaseCommitTest {
 		String b8Time = metaData.getSingle(b8TimeStamp);
 		String c8Time = metaData.getSingle(c8TimeStamp);
 		String d8Time = metaData.getSingle(d8TimeStamp);
-		assertEquals(-1, TestUtil.compareDate(b8Time, c8Time));
-		assertEquals(-1, TestUtil.compareDate(c8Time, d8Time));
+		assertTrue(-1 == TestUtil.compareDate(b8Time, c8Time));
+		assertTrue(-1 == TestUtil.compareDate(c8Time, d8Time));
 
 		CoreUtil.print(row);
 	}
