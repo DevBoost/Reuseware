@@ -278,7 +278,7 @@ public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompo
 		//check that the files contained in the exercise are also contained in the solution
 		//to ensure that the exercise was updated along with the solution.
 		//the composition itself is then checked on the solution below.
-		assertFolderStructureContainedIn(cbseExerciseProject, "store", cbseSolutionProject, "store");
+		assertFolderStructureContainedIn(cbseExerciseProject, "store", cbseSolutionProject, "store", false);
 		
 		initOutStore(cbseSolutionProject);
 		
@@ -311,7 +311,7 @@ public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompo
 		//check that the files contained in the exercise are also contained in the solution
 		//to ensure that the exercise was updated along with the solution.
 		//the composition itself is then checked on the solution below.
-		assertFolderStructureContainedIn(swt2ExerciseProject, "store", swt2SolutionProject, "store");
+		assertFolderStructureContainedIn(swt2ExerciseProject, "store", swt2SolutionProject, "store", false);
 		
 		initOutStore(swt2SolutionProject);
 		

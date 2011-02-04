@@ -23,6 +23,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import junit.framework.TestCase;
 
@@ -334,16 +336,17 @@ public abstract class AbstractReusewareCompositionTest extends TestCase {
 
 	protected void assertFolderStructureContainedIn(
 			String project1ID, String folder1Name,
-			String project2ID, String folder2Name) throws Exception {
+			String project2ID, String folder2Name,
+			boolean ignoreLineOrder) throws Exception {
 		
 		File folder1 = new File(".." + File.separator + project1ID + File.separator + folder1Name);
 		File folder2 = new File(".." + File.separator + project2ID + File.separator + folder2Name);
 		
-		assertFolderStructureContainedIn(folder1, folder2);
+		assertFolderStructureContainedIn(folder1, folder2, ignoreLineOrder);
 	}
 	
 	
-	protected void assertFolderStructureContainedIn(File containedFolder, File containingFolder) throws Exception {
+	protected void assertFolderStructureContainedIn(File containedFolder, File containingFolder, boolean ignoreLineOrder) throws Exception {
 		
 		File[] containedFileList = containedFolder.listFiles();
 		File[] containingFileList = containingFolder.listFiles();
@@ -362,7 +365,7 @@ public abstract class AbstractReusewareCompositionTest extends TestCase {
 					if (containedFile.getName().equals(containingFile.getName())) {
 						found = true;
 						if (containedFile.isDirectory()) {
-							assertFolderStructureContainedIn(containedFile, containingFile);
+							assertFolderStructureContainedIn(containedFile, containingFile, ignoreLineOrder);
 						}
 						else {
 							//compare file content
@@ -376,14 +379,24 @@ public abstract class AbstractReusewareCompositionTest extends TestCase {
 						    String s1 = new String(buffer1);
 						    String s2 = new String(buffer2);
 						    
-						    //because in some exercises files get extended, we only compare
-						    //the beginning of the file and cut the last character (which should be "}")
-						    if (s1.length() < s2.length() ) {
-						    	s1 = s1.substring(0, s1.length() - 1);
-						    	s2 = s2.substring(0, s1.length());
+						    if (ignoreLineOrder) {
+						    	SortedSet<String> s1LineList = new TreeSet<String>(Arrays.asList(s1.split("\n")));
+						    	SortedSet<String> s2LineList = new TreeSet<String>(Arrays.asList(s2.split("\n")));
+						    	Iterator<String> s1Iterator = s1LineList.iterator();
+						    	Iterator<String> s2Iterator = s2LineList.iterator();
+						    	while (s1Iterator.hasNext() && s2Iterator.hasNext()) {
+							    	assertEquals("File content differs: " + containingFile.getName(), s1Iterator.next(), s2Iterator.next());
+						    	}
 						    }
-						    
-						    assertEquals("File content differs: " + containingFile.getName(), s1, s2);
+						    else {
+							    //because in some exercises files get extended, we only compare
+							    //the beginning of the file and cut the last character (which should be "}")
+							    if (s1.length() < s2.length() ) {
+							    	s1 = s1.substring(0, s1.length() - 1);
+							    	s2 = s2.substring(0, s1.length());
+							    }
+							    assertEquals("File content differs: " + containingFile.getName(), s1, s2);
+						    }
 						}
 					}
 				}

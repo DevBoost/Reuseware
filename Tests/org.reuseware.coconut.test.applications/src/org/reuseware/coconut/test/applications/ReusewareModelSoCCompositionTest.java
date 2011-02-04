@@ -123,7 +123,7 @@ public class ReusewareModelSoCCompositionTest extends AbstractReusewareCompositi
 		assertRegisterFragmentStore(exampleProject, 
 				"store", fileExtensions, true);
 		
-		assertFolderStructureContainedIn(exampleProject, "out", testProject, "out_usecase");
+		assertFolderStructureContainedIn(exampleProject, "out", testProject, "out_usecase", true);
 	}
 	
 	@Test
@@ -223,7 +223,7 @@ public class ReusewareModelSoCCompositionTest extends AbstractReusewareCompositi
 		assertRegisterFragmentStore(exampleProject, 
 				"dependent-concern-dimensions/concern-dimension-app/variant-java", fileExtensions);
 		
-		assertFolderStructureContainedIn(exampleProject, "out", testProject, "out_complete");
+		assertFolderStructureContainedIn(exampleProject, "out", testProject, "out_complete", true);
 	}
 	
 	@Test
@@ -250,7 +250,7 @@ public class ReusewareModelSoCCompositionTest extends AbstractReusewareCompositi
 		assertRegisterFragmentStore(exampleProject, 
 				"store_security", fileExtensions);
 		
-		assertFolderStructureContainedIn(exampleProject, "out", testProject, "out_security");
+		assertFolderStructureContainedIn(exampleProject, "out", testProject, "out_security", true);
 	}
 
 
