@@ -62,13 +62,10 @@ public abstract class CompositionAssociationEndReferenceResolver implements IFra
 		}
 		
 		for (PortType portType : role.getPortTypes()) {
-			if (resolveFuzzy) {
-				if (portType.getName().startsWith(identifier)) {
-					result.addMapping(portType.getName(), portType);
-				}
-			} else {
-				if (portType.getName().equals(identifier)) {
-					result.addMapping(identifier, portType);
+			if (identifier.equals(portType.getName()) || resolveFuzzy) {
+				result.addMapping(portType.getName(), portType);
+				if (!resolveFuzzy) {
+					break;
 				}
 			}
 		}
