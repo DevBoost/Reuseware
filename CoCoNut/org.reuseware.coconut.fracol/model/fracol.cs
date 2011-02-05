@@ -1,5 +1,5 @@
 //*******************************************************************************
-// Copyright (c) 2006-2010 
+// Copyright (c) 2006-2011 
 // Software Technology Group, Dresden University of Technology
 // 
 // All rights reserved. This program and the accompanying materials
@@ -16,7 +16,7 @@ FOR <http://reuseware.org/coconut/fracol> <fracol.genmodel>
 START FragmentCollaboration
 
 OPTIONS {
-    licenceHeader = "platform:/resource/org.reuseware.coconut/licence.txt";
+    licenceHeader = "../../org.reuseware.coconut/licence.txt";
     
     resourceUIPluginID = "org.reuseware.comogen.fracol.ui";
     uiBasePackage      = "org.reuseware.comogen.fracol.ui";
