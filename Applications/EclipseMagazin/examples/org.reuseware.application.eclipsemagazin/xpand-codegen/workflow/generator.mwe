@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<workflow>
+	<property name="classModel" value="org.reuseware.application.eclipsemagazin/models-composed/pizzashop/class_diagrams/composed/Core.uml" />
+	<property name="smModel" value="org.reuseware.application.eclipsemagazin/models-composed/pizzashop/state_machines/composed/PizzaShop.uml" />
+
+	<property name="src-gen" value="src-gen" />
+	
+	<!-- set up EMF for standalone execution -->
+	<bean class="org.eclipse.emf.mwe.utils.StandaloneSetup" >
+		<platformUri value=".."/>
+	</bean>
+	
+	<bean class="org.eclipse.xtend.typesystem.uml2.Setup" standardUML2Setup="true" />
+
+	<!-- load models -->
+	<component class="org.eclipse.emf.mwe.utils.Reader">
+		<uri value="platform:/resource/${classModel}" />
+		<modelSlot value="classModel" />
+	</component>
+	<component class="org.eclipse.emf.mwe.utils.Reader">
+		<uri value="platform:/resource/${smModel}" />
+		<modelSlot value="smModel" />
+	</component>
+	
+	<!--  generate code -->
+	<component class="org.eclipse.xpand2.Generator">
+		<metaModel class="org.eclipse.xtend.typesystem.uml2.UML2MetaModel"/>
+		<expand
+			value="template::UMLClass2Java::main FOR classModel" />
+		<outlet path="${src-gen}" >
+			<postprocessor class="org.eclipse.xpand2.output.JavaBeautifier" />
+		</outlet>
+	</component>
+	<component class="org.eclipse.xpand2.Generator">
+		<metaModel class="org.eclipse.xtend.typesystem.uml2.UML2MetaModel"/>
+		<expand
+			value="template::UMLStateMachine2Java::main FOR smModel" />
+		<outlet path="${src-gen}" >
+			<postprocessor class="org.eclipse.xpand2.output.JavaBeautifier" />
+		</outlet>
+	</component>
+</workflow>

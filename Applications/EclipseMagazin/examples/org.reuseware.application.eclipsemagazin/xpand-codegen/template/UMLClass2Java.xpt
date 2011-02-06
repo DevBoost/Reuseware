@@ -1,0 +1,38 @@
+«IMPORT uml»
+
+«DEFINE main FOR Model»
+	«FOREACH packagedElement.typeSelect(Package) AS p»
+		«EXPAND javaClass FOREACH p.packagedElement.typeSelect(Class)»
+	«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE javaClass FOR Class»
+	«FILE ""+package.name+"/"+name+".java"»
+		package «package.name»;
+	
+		public class «name» {
+			«FOREACH ownedAttribute AS f»
+				private «f.type.name» «f.name»;
+				
+				public void «"set"+f.name.toString().toFirstUpper()»(«f.type.name» «f.name») {
+					this.«f.name» = «f.name»;
+				}
+				
+				public «f.type.name» «"get"+f.name.toString().toFirstUpper()»() {
+					return «f.name»;
+				}
+			«ENDFOREACH»
+			«FOREACH package.packagedElement.typeSelect(Association).select(e|e.ownedEnd.get(0).type == this) AS f»
+				private «f.ownedEnd.get(1).type.name» «f.name»;
+				
+				public void «"set"+f.name.toString().toFirstUpper()»(«f.ownedEnd.get(1).type.name» «f.name») {
+					this.«f.name» = «f.name»;
+				}
+				
+				public «f.ownedEnd.get(1).type.name» «"get"+f.name.toString().toFirstUpper()»() {
+					return «f.name»;
+				}
+			«ENDFOREACH»
+		}
+	«ENDFILE»
+«ENDDEFINE»

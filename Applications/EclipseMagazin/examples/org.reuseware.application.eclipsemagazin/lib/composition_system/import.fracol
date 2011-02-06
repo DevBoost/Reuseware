@@ -1,0 +1,15 @@
+fracol composition_system.import {
+
+	// Abschnitt: "Model-Komponenten Import"
+	fragment role ImportingModel {
+		dynamic port type ImportStatement;
+	}
+	
+	fragment role ModelComponent {
+		dynamic port type Contents;
+	}
+	
+	contributing association Import {
+		ModelComponent.Contents --> ImportingModel.ImportStatement
+	}
+}

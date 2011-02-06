@@ -1,0 +1,14 @@
+fracol composition_system.merge {
+
+	fragment role CoreModel {
+		dynamic port type CoreClass;
+	}
+	
+	fragment role ExtensionModel {
+		dynamic port type ExtensionClass;
+	}
+
+	contributing association Merge {
+		ExtensionModel.ExtensionClass --> CoreModel.CoreClass
+	}
+}

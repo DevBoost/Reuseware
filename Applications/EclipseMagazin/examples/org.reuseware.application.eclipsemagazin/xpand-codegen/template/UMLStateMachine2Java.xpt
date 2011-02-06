@@ -1,0 +1,40 @@
+«IMPORT uml»
+
+«DEFINE main FOR Model»
+	«FOREACH packagedElement.typeSelect(Package) AS p»
+		«EXPAND javaClass FOREACH p.packagedElement.typeSelect(StateMachine)»
+	«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE javaClass FOR StateMachine»
+	«FILE ""+package.name+"/"+name+"Skeleton.java"»
+		package «package.name»;
+		
+		public class «name»Skeleton {
+			public static void main(String[] args) {
+				«FOREACH region AS r»
+					«EXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)»
+				«ENDFOREACH»
+			}
+		}
+	«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE hook FOR Pseudostate»
+	System.out.println("Starting: «name»");
+	«name»: ;
+	«IF !outgoing.isEmpty»
+		«EXPAND hook FOR (State)outgoing.get(0).target»
+	«ENDIF»
+«ENDDEFINE»
+
+«DEFINE hook FOR State»
+	System.out.println("Executing: «name»");
+	«name»: ;
+	«IF !outgoing.isEmpty»
+		«EXPAND hook FOR (State)outgoing.get(0).target»
+	«ENDIF»
+	«FOREACH region AS r»
+		«EXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)»
+	«ENDFOREACH»
+«ENDDEFINE»
