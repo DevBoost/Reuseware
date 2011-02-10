@@ -270,7 +270,7 @@ public final class SolrUtil {
 		try {
 			if (Platform.isRunning()) {
 		 		Bundle bundle = Platform.getBundle(SolrConst.PLUGIN_ID);
-				IPath path = new Path("conf" + File.separator + inputFile);
+				IPath path = new Path("src-conf" + File.separator + inputFile);
 				in = FileLocator.find(bundle, path, null).openStream();
 			} else {
 				in = SolrUtil.class.getResourceAsStream("../../../../../" + inputFile);
