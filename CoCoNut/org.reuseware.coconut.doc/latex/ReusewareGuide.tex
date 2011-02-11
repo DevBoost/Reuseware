@@ -6,6 +6,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{ifpdf}
 
 % For tables
 \usepackage{array}
@@ -15,6 +16,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
 \usepackage[scaled]{luximono}
+
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
 
 \typearea{12}
 \clubpenalty = 10000
@@ -44,13 +47,18 @@
 
 \begin{center}
 
-\includegraphics[width=0.9\textwidth]{../latex/figures/ReusewareLogo.png}
+\ifpdf
+	\includegraphics[width=0.9\textwidth]{figures/ReusewareLogo.pdf}
+\else
+	\includegraphics[width=0.9\textwidth]{figures/ReusewareLogo.png}
+\fi
+
 
 
 \vspace{3cm}
 {
-\fontsize{60}{60}
-\textsc{User Guide}
+\fontsize{40}{40}
+\changefont{phv}{m}{n}{USER GUIDE}
 }
 \end{center}
 
@@ -64,24 +72,15 @@
 % ====
 
 % === ToC
-\cleardoublepage
-
 \tableofcontents
 
-\renewcommand{\listfigurename}{List of Figures}
-\listoffigures
-\cleardoublepage
-
-\renewcommand{\lstlistlistingname}{List of Listings\vspace{3mm}}
-\lstlistoflistings
-\cleardoublepage
 
 \mainmatter
 % ===
 
 \chapter{Introduction}
 
-\chapter{Foundations}
+\chapter{Getting Started}
 \input{foundations}
 
 \chapter{Developing Composition Systems}
