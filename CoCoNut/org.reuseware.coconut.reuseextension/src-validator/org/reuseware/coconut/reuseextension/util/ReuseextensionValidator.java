@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
-import org.reuseware.coconut.reuseextension.*;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.reuseware.coconut.fracol.CompositionAssociation;
 import org.reuseware.coconut.fracol.DynamicPortType;
@@ -502,6 +501,11 @@ public class ReuseextensionValidator extends EObjectValidator
 	public boolean validateHookDerivationRule_NotDefinedForCrossReference(
 			HookDerivationRule hookDerivationRule, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+		
+		if (hookDerivationRule.getEBoundFeature().eIsProxy()) {
+			//an error is already reported that the feature was not found at all
+			return true;
+		}
 		
 		if (hookDerivationRule.getEBoundFeature() instanceof EReference
 				&& !((EReference) hookDerivationRule.getEBoundFeature()).isContainment()) {
