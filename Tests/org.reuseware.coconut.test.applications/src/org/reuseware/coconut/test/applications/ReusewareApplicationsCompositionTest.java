@@ -14,8 +14,6 @@
 package org.reuseware.coconut.test.applications;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map.Entry;
 
 import org.eclipse.emf.common.util.URI;
@@ -32,6 +30,7 @@ import org.emftext.language.java.resource.JavaSourceOrClassFileResourceFactoryIm
 import org.emftext.language.java.resource.java.IJavaOptions;
 import org.emftext.language.java.resource.util.JavaPostProcessor;
 import org.emftext.language.java.reusejava.ReusejavaPackage;
+import org.emftext.language.java.reusejava.resource.reusejava.IReusejavaOptions;
 import org.emftext.language.java.reusejava.resource.reusejava.mopp.ReusejavaResourceFactory;
 import org.emftext.language.java.reusejava.resource.util.ReuseJavaPostProcessor;
 import org.emftext.language.modelquery.resource.CustomModelqueryResourceFactory;
@@ -454,12 +453,10 @@ public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompo
 		JavaPostProcessor javaPostProcessor = new JavaPostProcessor();
 		ReuseJavaPostProcessor reuseJavaPostProcessor = new ReuseJavaPostProcessor();
 		
-		List<Object> ppList = new ArrayList<Object>();
-		ppList.add(javaPostProcessor);
-		ppList.add(reuseJavaPostProcessor);
-		
 		resourceSet.getLoadOptions().put(IJavaOptions.RESOURCE_POSTPROCESSOR_PROVIDER,
-				ppList);
+				javaPostProcessor);
+		resourceSet.getLoadOptions().put(IReusejavaOptions.RESOURCE_POSTPROCESSOR_PROVIDER,
+				reuseJavaPostProcessor);
 		resourceSet.getLoadOptions().put(JavaClasspath.OPTION_ALWAYS_USE_FULLY_QUALIFIED_NAMES,
 				Boolean.TRUE);
 		return resourceSet;
