@@ -502,6 +502,9 @@ public class ReuseextensionValidator extends EObjectValidator
 			HookDerivationRule hookDerivationRule, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		
+		if (hookDerivationRule.getEBoundFeature() == null) {
+			return true;
+		}
 		if (hookDerivationRule.getEBoundFeature().eIsProxy()) {
 			//an error is already reported that the feature was not found at all
 			return true;
