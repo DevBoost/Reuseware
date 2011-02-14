@@ -1,8 +1,9 @@
-compositionlanguage org.reuseware.lib.systems.associate.cl.ucinv
+compositionlanguage org.reuseware.lib.systems.associate.cl.ucinv(format,outFolder)
 implements org.reuseware.lib.systems.associate.associate
 epackages <http://www.emftext.org/language/UseCaseInvariant> 
 rootclass UseCaseModel
-ucpi = $ufi.replace('fragments','integrated').replace('ucinv',format).trim(1).append('Main.ucl')$ {
+ucpi = $ufi.replace('fragments','integrated').replace('ucinv',format).trim(1).append('Main.ucl')$ 
+location = $outFolder$ {
 
 	//Values that are given away
 	fragment role Association {

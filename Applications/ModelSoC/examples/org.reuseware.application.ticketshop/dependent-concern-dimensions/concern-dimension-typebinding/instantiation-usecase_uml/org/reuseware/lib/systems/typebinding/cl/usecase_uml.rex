@@ -3,7 +3,7 @@ implements org.reuseware.lib.systems.typebinding.typebinding
 epackages <http://www.eclipse.org/uml2/3.0.0/UML>
 rootclass Model
 ucpi = $ufi.replace('fragments','integrated').replace('usecase.uml',format).trim(2).append('Main.ucl')$
-location =  $outFolder$ {
+location = $outFolder$ {
 
 	//Bind Counter Classes
 	association Binding {

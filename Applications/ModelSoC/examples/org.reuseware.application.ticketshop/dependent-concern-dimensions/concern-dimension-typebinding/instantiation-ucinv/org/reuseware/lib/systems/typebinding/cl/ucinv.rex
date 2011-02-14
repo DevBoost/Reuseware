@@ -3,7 +3,7 @@ implements org.reuseware.lib.systems.typebinding.typebinding
 epackages <http://www.emftext.org/language/UseCaseInvariant> 
 rootclass UseCaseModel
 ucpi = $ufi.replace('fragments','integrated').replace('ucinv',format).trim(1).append('Main.ucl')$
-location =  $outFolder$ {
+location = $outFolder$ {
 
 	//Bind Counter Classes
 	association Binding {

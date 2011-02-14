@@ -1,9 +1,9 @@
-compositionlanguage org.reuseware.lib.systems.flow.cl.valueflow(format)
+compositionlanguage org.reuseware.lib.systems.flow.cl.valueflow(format,outFolder)
 implements org.reuseware.lib.systems.flow.flow
 epackages <http://www.emftext.org/language/valueflow>
 rootclass Model
 ucpi = $ufi.replace('fragments','integrated').replace('valueflow',format).trim(2).append('Main.ucl')$
-{ 
+location = $outFolder$ {
     //1 = Give; 2 = Take
 	association Flow1To1 {
 		GiveState if $nextState.oclIsTypeOf(GiveState)$ {

@@ -1,8 +1,9 @@
-compositionlanguage org.reuseware.lib.systems.participation.cl.ucinv
+compositionlanguage org.reuseware.lib.systems.participation.cl.ucinv(format,outFolder)
 implements org.reuseware.lib.systems.participation.participation
 epackages <http://www.emftext.org/language/UseCaseInvariant> 
 rootclass UseCaseModel
-ucpi = $ufi.replace('fragments','integrated').replace('ucinv',format).trim(1).append('Main.ucl')$ {
+ucpi = $ufi.replace('fragments','integrated').replace('ucinv',format).trim(1).append('Main.ucl')$
+location = $outFolder$ {
 
 	fragment role Participant {
 		CounterActor { 	//to add counter actors
