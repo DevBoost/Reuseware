@@ -22,7 +22,7 @@ rootclass uml::Model { // Wurzelelement jedes UML Modells
     port type Contents { 
       // In unserem Fall sollen alle 'UML States' die Kinder-ZustŠnde
       // enthalten (eine nicht leere Region haben) als wiederverwendbare
-      // Komponenten zur verfŸgung stehen.
+      // Komponenten zur VerfŸgung stehen.
       uml::State is prototype if $not region->isEmpty()$ {
         port = $'Contents'$
       }
