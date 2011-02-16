@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_BFCd8DGAEd2yz_kaSjuIKQ" activeDiagram="_BFCd8TGAEd2yz_kaSjuIKQ">
+  <model href="TakeOrder.uml#idStateMachine"/>
+  <diagrams xmi:id="_BFCd8TGAEd2yz_kaSjuIKQ" position="0,0" size="100,100" name="TakeOrderStateMachine" viewport="0,0">
+    <property xmi:id="_BFM2ADGAEd2yz_kaSjuIKQ" key="pageFormatName" value="A5"/>
+    <property xmi:id="_BFM2ATGAEd2yz_kaSjuIKQ" key="diagramWidth" value="592"/>
+    <property xmi:id="_BFM2AjGAEd2yz_kaSjuIKQ" key="diagramHeight" value="840"/>
+    <property xmi:id="_BFM2AzGAEd2yz_kaSjuIKQ" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_BFM2BDGAEd2yz_kaSjuIKQ" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_BFM2BTGAEd2yz_kaSjuIKQ" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_BFM2BjGAEd2yz_kaSjuIKQ" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_BFM2BzGAEd2yz_kaSjuIKQ" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_BFM2CDGAEd2yz_kaSjuIKQ" key="orientation" value="landscape"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_BFCd8jGAEd2yz_kaSjuIKQ" presentation="org.topcased.modeler.uml.statemachinediagram">
+      <element href="TakeOrder.uml#idStateMachine"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_BFCd8zGAEd2yz_kaSjuIKQ" position="0,0" size="0,0">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_BFCd9DGAEd2yz_kaSjuIKQ" presentation="default">
+        <element href="TakeOrder.uml#idRegion"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_C6Es8DGAEd2yz_kaSjuIKQ" position="14,11" size="140,179">
+        <anchorage xmi:id="_IbNA0Dj6EeCk3ozZzuDzHQ"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_C6Es8TGAEd2yz_kaSjuIKQ" presentation="default">
+          <element href="TakeOrder.uml#_C6GiIDGAEd2yz_kaSjuIKQ"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_C6Es8jGAEd2yz_kaSjuIKQ">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_C6Es8zGAEd2yz_kaSjuIKQ" presentation="default">
+            <element href="TakeOrder.uml#_C6GiITGAEd2yz_kaSjuIKQ"/>
+          </semanticModel>
+          <contained xsi:type="di:GraphNode" xmi:id="_IdX9cDGAEd2yz_kaSjuIKQ" position="5,43" size="118,20">
+            <anchorage xmi:id="_fhGXwDGAEd2yz_kaSjuIKQ" graphEdge="_fhG-0DGAEd2yz_kaSjuIKQ _wfnHUDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_IdX9cTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrder.uml#_IdZyoDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_Nh4ZIDGAEd2yz_kaSjuIKQ" position="3,82" size="125,20">
+            <anchorage xmi:id="_XHXssDGAEd2yz_kaSjuIKQ" graphEdge="_fhG-0DGAEd2yz_kaSjuIKQ _cA4m8Dj6EeCk3ozZzuDzHQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_Nh4ZITGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrder.uml#_Nh6OUDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_aYzBMDGAEd2yz_kaSjuIKQ" position="53,123" size="20,20">
+            <anchorage xmi:id="_cA1joDj6EeCk3ozZzuDzHQ" graphEdge="_cA4m8Dj6EeCk3ozZzuDzHQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_aYzBMTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrder.uml#_aY0PUDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_fhG-0DGAEd2yz_kaSjuIKQ" anchor="_fhGXwDGAEd2yz_kaSjuIKQ _XHXssDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_fhG-0TGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrder.uml#_fhG-0zGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_fhG-0jGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject"/>
+          </contained>
+          <contained xsi:type="di:GraphNode" xmi:id="_v42CQDGAEd2yz_kaSjuIKQ" position="28,5" size="-1,-1">
+            <property xmi:id="__FkHIDj5EeCk3ozZzuDzHQ" key="name" value="hide"/>
+            <anchorage xmi:id="_wfl5MDGAEd2yz_kaSjuIKQ" graphEdge="_wfnHUDGAEd2yz_kaSjuIKQ"/>
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_v42CQTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrder.uml#_v43QYDGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_wfnHUDGAEd2yz_kaSjuIKQ" anchor="_wfl5MDGAEd2yz_kaSjuIKQ _fhGXwDGAEd2yz_kaSjuIKQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_wfnHUTGAEd2yz_kaSjuIKQ" presentation="default">
+              <element href="TakeOrder.uml#_wfnHUzGAEd2yz_kaSjuIKQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_wfnHUjGAEd2yz_kaSjuIKQ" visible="false" id="nameEdgeObject"/>
+          </contained>
+          <contained xsi:type="di:GraphEdge" xmi:id="_cA4m8Dj6EeCk3ozZzuDzHQ" anchor="_XHXssDGAEd2yz_kaSjuIKQ _cA1joDj6EeCk3ozZzuDzHQ">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_cA4m8Tj6EeCk3ozZzuDzHQ" presentation="default">
+              <element href="TakeOrder.uml#_cA51EDj6EeCk3ozZzuDzHQ"/>
+            </semanticModel>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_cA4m8jj6EeCk3ozZzuDzHQ" visible="false" id="nameEdgeObject"/>
+            <contained xsi:type="di:EdgeObjectOffset" xmi:id="_cA4m8zj6EeCk3ozZzuDzHQ" visible="false" id="TransitionStereotypeEdgeObject"/>
+          </contained>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

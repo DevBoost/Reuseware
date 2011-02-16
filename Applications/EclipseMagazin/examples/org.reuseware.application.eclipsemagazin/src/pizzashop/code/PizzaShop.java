@@ -1,21 +1,29 @@
 package pizzashop.code;
 
+import javax.swing.JOptionPane;
+
 import pizzashop.Order;
-import pizzashop.Pizza;
 
 public class PizzaShop {
 
-	private static  Order order = null;
-	
-	public static void Delivery() {
+	private static  
+		Order order = null;
+	{ getClientAddress: {	 
 		order = new Order();
+		String customerName =
+			JOptionPane.showInputDialog(null,
+				"Enter Name", "Question",
+				JOptionPane.QUESTION_MESSAGE);
+
+		order.setCustomer(
+			customerName);
+		System.out.println(
+			"Recorded Customer: "
+			+ customerName);
+	} }
+	
+	{ getProductDetails: {
 		
-		System.out.println(" -- setting customer details --");
-		
-		order.setCustomer("Somebody");
-		
-		System.out.println(" -- adding ordered pizzas --");
-		
-		order.setPizzas(new Pizza());
-	}
+		System.out.println("Get Details...");
+	} }
 }

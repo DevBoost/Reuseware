@@ -11,6 +11,9 @@ location = $'src-composed'$ {
 			ufi = $ufi$
 			target ufi = $ufi.trim(1).append(ufi.segment(-1).substring(1,ufi.segment(-1).length()-'Skeleton.java'.length())).appendExtension('java')$
 			target location = $'src-composed'$
+			port ImportStatement {
+				$'name'$ = $ufi.segment(-1).substring(1,ufi.segment(-1).length()-'Skeleton.java'.length())$
+			}
 		}
 	}
 
@@ -28,6 +31,16 @@ location = $'src-composed'$ {
 			-->
 			fragment = $ufi$
 			port = $name$
+		}
+	}
+	
+	association Import {
+		java::classifiers::Class {
+			fragment = $ufi.trim(1).append('code').append(ufi.segment(-1))$
+			port = $'Contents'$
+			-->
+			fragment = $ufi$
+			port = $'ImportStatement'$
 		}
 	}
 

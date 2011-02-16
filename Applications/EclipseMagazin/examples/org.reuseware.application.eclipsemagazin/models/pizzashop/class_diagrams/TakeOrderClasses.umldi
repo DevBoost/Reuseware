@@ -14,7 +14,8 @@
     <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_QZBRQjFzEd2A1p8LtiDTWg" presentation="org.topcased.modeler.uml.classdiagram">
       <element href="TakeOrderClasses.uml#_w8IxIM37EdqwVrslYOdUDA"/>
     </semanticModel>
-    <contained xsi:type="di:GraphNode" xmi:id="_ykt-MDF2Ed2A1p8LtiDTWg" position="42,32" size="175,-1">
+    <contained xsi:type="di:GraphNode" xmi:id="_ykt-MDF2Ed2A1p8LtiDTWg" position="36,5" size="106,-1">
+      <property xmi:id="_jvGTADj-EeCvy-djqMF6uw" key="backgroundColor" value="255,255,255"/>
       <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ykt-MTF2Ed2A1p8LtiDTWg" presentation="default">
         <element href="TakeOrderClasses.uml#_ykulQDF2Ed2A1p8LtiDTWg"/>
       </semanticModel>
@@ -36,7 +37,8 @@
         </semanticModel>
       </contained>
     </contained>
-    <contained xsi:type="di:GraphNode" xmi:id="_L8APMDF6Ed2mV9Z0JtzXAA" position="42,91" size="179,-1">
+    <contained xsi:type="di:GraphNode" xmi:id="_L8APMDF6Ed2mV9Z0JtzXAA" position="37,73" size="107,-1">
+      <property xmi:id="_jvFE4Dj-EeCvy-djqMF6uw" key="backgroundColor" value="255,255,255"/>
       <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_L8APMTF6Ed2mV9Z0JtzXAA" presentation="default">
         <element href="TakeOrderClasses.uml#_L8BdUDF6Ed2mV9Z0JtzXAA"/>
       </semanticModel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="TakeOrderStateMachineModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="TakeOrderStateMachinePackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="TakeOrder">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:State" xmi:id="_C6GiIDGAEd2yz_kaSjuIKQ" name="TakeOrder">
+          <region xmi:id="_C6GiITGAEd2yz_kaSjuIKQ" name="Region1">
+            <subvertex xmi:type="uml:State" xmi:id="_IdZyoDGAEd2yz_kaSjuIKQ" name="getClientAddress"/>
+            <subvertex xmi:type="uml:State" xmi:id="_Nh6OUDGAEd2yz_kaSjuIKQ" name="getProductDetails"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_aY0PUDGAEd2yz_kaSjuIKQ" name="TakeOrderFinal"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_v43QYDGAEd2yz_kaSjuIKQ" name="TakeOrderInit"/>
+            <transition xmi:id="_fhG-0zGAEd2yz_kaSjuIKQ" name="Transition2" source="_IdZyoDGAEd2yz_kaSjuIKQ" target="_Nh6OUDGAEd2yz_kaSjuIKQ"/>
+            <transition xmi:id="_wfnHUzGAEd2yz_kaSjuIKQ" name="Transition3" source="_v43QYDGAEd2yz_kaSjuIKQ" target="_IdZyoDGAEd2yz_kaSjuIKQ"/>
+            <transition xmi:id="_cA51EDj6EeCk3ozZzuDzHQ" name="Transition1" kind="local" source="_Nh6OUDGAEd2yz_kaSjuIKQ" target="_aY0PUDGAEd2yz_kaSjuIKQ"/>
+          </region>
+        </subvertex>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

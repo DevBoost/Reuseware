@@ -12,16 +12,6 @@ public class Pizza {
 		return size;
 	}
 
-	private int temperatureAtDelivery;
-
-	public void setTemperatureAtDelivery(int temperatureAtDelivery) {
-		this.temperatureAtDelivery = temperatureAtDelivery;
-	}
-
-	public int getTemperatureAtDelivery() {
-		return temperatureAtDelivery;
-	}
-
 	private int prize;
 
 	public void setPrize(int prize) {
@@ -30,6 +20,16 @@ public class Pizza {
 
 	public int getPrize() {
 		return prize;
+	}
+
+	private int temperatureAtDelivery;
+
+	public void setTemperatureAtDelivery(int temperatureAtDelivery) {
+		this.temperatureAtDelivery = temperatureAtDelivery;
+	}
+
+	public int getTemperatureAtDelivery() {
+		return temperatureAtDelivery;
 	}
 
 }

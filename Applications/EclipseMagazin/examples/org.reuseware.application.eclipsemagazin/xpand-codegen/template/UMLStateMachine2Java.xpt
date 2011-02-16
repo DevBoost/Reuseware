@@ -11,7 +11,8 @@
 		package «package.name»;
 		
 		public class «name»Skeleton {
-			public static void main(String[] args) {
+			public static void main(
+				String[] args) {
 				«FOREACH region AS r»
 					«EXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)»
 				«ENDFOREACH»
@@ -22,19 +23,20 @@
 
 «DEFINE hook FOR Pseudostate»
 	System.out.println("Starting: «name»");
-	«name»: ;
 	«IF !outgoing.isEmpty»
 		«EXPAND hook FOR (State)outgoing.get(0).target»
 	«ENDIF»
 «ENDDEFINE»
 
 «DEFINE hook FOR State»
-	System.out.println("Executing: «name»");
-	«name»: ;
-	«IF !outgoing.isEmpty»
-		«EXPAND hook FOR (State)outgoing.get(0).target»
+	«IF region.isEmpty»
+		System.out.println("Executing: «name»");
+		«name»: ;
 	«ENDIF»
 	«FOREACH region AS r»
 		«EXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)»
 	«ENDFOREACH»
+	«IF !outgoing.isEmpty»
+		«EXPAND hook FOR (State)outgoing.get(0).target»
+	«ENDIF»
 «ENDDEFINE»

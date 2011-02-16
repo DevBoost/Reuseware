@@ -12,6 +12,16 @@ public class Order {
 		return customer;
 	}
 
+	private boolean active;
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public boolean getActive() {
+		return active;
+	}
+
 	private boolean processed;
 
 	public void setProcessed(boolean processed) {
@@ -30,16 +40,6 @@ public class Order {
 
 	public int getTimeToDeliver() {
 		return timeToDeliver;
-	}
-
-	private boolean active;
-
-	public void setActive(boolean active) {
-		this.active = active;
-	}
-
-	public boolean getActive() {
-		return active;
 	}
 
 	private Pizza pizzas;

@@ -8,18 +8,18 @@
             <subvertex xmi:type="uml:State" xmi:id="_uEPTIDMXEd2IKMqzSzwKng" name="PrepareDough"/>
             <subvertex xmi:type="uml:State" xmi:id="_xqtqkDMXEd2IKMqzSzwKng" name="PutStuffOnDough"/>
             <subvertex xmi:type="uml:State" xmi:id="_0wizEDMXEd2IKMqzSzwKng" name="Bake"/>
-            <subvertex xmi:type="uml:Pseudostate" xmi:id="_6vNJ4DMXEd2IKMqzSzwKng" name="Pseudostate2"/>
-            <subvertex xmi:type="uml:FinalState" xmi:id="_ANzgkDMYEd2IKMqzSzwKng" name="FinalState1"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_6vNJ4DMXEd2IKMqzSzwKng" name="BakePizzaInit"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_ANzgkDMYEd2IKMqzSzwKng" name="BakePizzaFinal"/>
             <transition xmi:id="_-s8KwzMXEd2IKMqzSzwKng" name="Transition2" source="_6vNJ4DMXEd2IKMqzSzwKng" target="_uEPTIDMXEd2IKMqzSzwKng"/>
             <transition xmi:id="_-2nrMzMXEd2IKMqzSzwKng" name="Transition3" source="_uEPTIDMXEd2IKMqzSzwKng" target="_xqtqkDMXEd2IKMqzSzwKng"/>
             <transition xmi:id="__HpJwzMXEd2IKMqzSzwKng" name="Transition4" source="_xqtqkDMXEd2IKMqzSzwKng" target="_0wizEDMXEd2IKMqzSzwKng"/>
-            <transition xmi:id="_BoZ2UTMYEd2IKMqzSzwKng" name="Transition6" source="_0wizEDMXEd2IKMqzSzwKng" target="_ANzgkDMYEd2IKMqzSzwKng"/>
+            <transition xmi:id="_BoZ2UTMYEd2IKMqzSzwKng" name="Transition1" source="_0wizEDMXEd2IKMqzSzwKng" target="_ANzgkDMYEd2IKMqzSzwKng"/>
           </region>
         </subvertex>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MxJFUDMYEd2IKMqzSzwKng" name="Init"/>
-        <subvertex xmi:type="uml:State" xmi:id="_NMGjADMYEd2IKMqzSzwKng" name="import lib/state_machines/DeliveryStateMachine.uml"/>
-        <subvertex xmi:type="uml:State" xmi:id="_RMTCADMYEd2IKMqzSzwKng" name="Hook_PizzaDelivery"/>
-        <subvertex xmi:type="uml:FinalState" xmi:id="_TzgU0DMYEd2IKMqzSzwKng" name="FinalState1"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MxJFUDMYEd2IKMqzSzwKng" name="PizzaShopInit"/>
+        <subvertex xmi:type="uml:State" xmi:id="_NMGjADMYEd2IKMqzSzwKng" name="import lib/state_machines/TakeOrder.uml"/>
+        <subvertex xmi:type="uml:State" xmi:id="_RMTCADMYEd2IKMqzSzwKng" name="import lib/state_machines/Delivery.uml"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_TzgU0DMYEd2IKMqzSzwKng" name="PizzaShopFinal"/>
         <transition xmi:id="_UplBMDMYEd2IKMqzSzwKng" name="Transition1" source="_r_biwDMXEd2IKMqzSzwKng" target="_RMTCADMYEd2IKMqzSzwKng"/>
         <transition xmi:id="_U5N_szMYEd2IKMqzSzwKng" name="Transition2" source="_RMTCADMYEd2IKMqzSzwKng" target="_TzgU0DMYEd2IKMqzSzwKng"/>
         <transition xmi:id="_VW1IwDMYEd2IKMqzSzwKng" name="Transition3" source="_MxJFUDMYEd2IKMqzSzwKng" target="_NMGjADMYEd2IKMqzSzwKng"/>

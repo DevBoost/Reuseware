@@ -1,25 +1,27 @@
 package pizzashop;
 
 public class PizzaShopSkeleton {
+	
 	public static void main(String[] args) {
 
-		System.out.println("Starting: Init");
-		Init : ;
+		System.out.println(
+				"Starting: PizzaShopInit");
 
-		System.out.println("Executing: Delivery");
-		Delivery : ;
+		System.out.println(
+				"Starting: TakeOrderInit");
 
-		System.out.println("Executing: BakePizza");
-		BakePizza : ;
+		System.out.println(
+				"Executing: getClientAddress");
+		getClientAddress : ;
 
-		System.out.println("Executing: Hook_PizzaDelivery");
-		Hook_PizzaDelivery : ;
+		System.out.println(
+				"Executing: getProductDetails");
+		getProductDetails : ;
 
-		System.out.println("Executing: FinalState1");
-		FinalState1 : ;
+		System.out.println("Executing: TakeOrderFinal");
+		TakeOrderFinal : ;
 
-		System.out.println("Starting: Pseudostate2");
-		Pseudostate2 : ;
+		System.out.println("Starting: BakePizzaInit");
 
 		System.out.println("Executing: PrepareDough");
 		PrepareDough : ;
@@ -30,11 +32,10 @@ public class PizzaShopSkeleton {
 		System.out.println("Executing: Bake");
 		Bake : ;
 
-		System.out.println("Executing: FinalState1");
-		FinalState1 : ;
+		System.out.println("Executing: BakePizzaFinal");
+		BakePizzaFinal : ;
 
 		System.out.println("Starting: Pseudostate1");
-		Pseudostate1 : ;
 
 		System.out.println("Executing: DriveToClient");
 		DriveToClient : ;
@@ -50,6 +51,9 @@ public class PizzaShopSkeleton {
 
 		System.out.println("Executing: FinalState1");
 		FinalState1 : ;
+
+		System.out.println("Executing: PizzaShopFinal");
+		PizzaShopFinal : ;
 
 	}
 }

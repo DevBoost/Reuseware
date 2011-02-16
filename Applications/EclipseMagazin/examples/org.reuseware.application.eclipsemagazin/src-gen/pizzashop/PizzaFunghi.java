@@ -2,14 +2,14 @@ package pizzashop;
 
 public class PizzaFunghi {
 
-	private boolean withCheeseCrust;
+	private boolean cheeseCrust;
 
-	public void setWithCheeseCrust(boolean withCheeseCrust) {
-		this.withCheeseCrust = withCheeseCrust;
+	public void setCheeseCrust(boolean cheeseCrust) {
+		this.cheeseCrust = cheeseCrust;
 	}
 
-	public boolean getWithCheeseCrust() {
-		return withCheeseCrust;
+	public boolean getCheeseCrust() {
+		return cheeseCrust;
 	}
 
 }

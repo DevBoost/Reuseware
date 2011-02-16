@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="DeliverryStateMachineModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="DeliveryStateMachinePackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="DeliverryStateMachine">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:State" xmi:id="_7WfuIDF8Ed2yz_kaSjuIKQ" name="Delivery">
+          <region xmi:id="_7WgVMDF8Ed2yz_kaSjuIKQ" name="Region1">
+            <subvertex xmi:type="uml:State" xmi:id="_-B9O0DF8Ed2yz_kaSjuIKQ" name="DriveToClient"/>
+            <subvertex xmi:type="uml:State" xmi:id="_AbSdsDF9Ed2yz_kaSjuIKQ" name="ExchangeProductForMoney"/>
+            <subvertex xmi:type="uml:State" xmi:id="_JSERIDF9Ed2yz_kaSjuIKQ" name="DriveBack"/>
+            <subvertex xmi:type="uml:State" xmi:id="_MQdU4DF9Ed2yz_kaSjuIKQ" name="ReportDeliveryResult"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_Rj_rEDF9Ed2yz_kaSjuIKQ" name="Pseudostate1"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_YvPw0DF9Ed2yz_kaSjuIKQ" name="FinalState1"/>
+            <transition xmi:id="_SrookzF9Ed2yz_kaSjuIKQ" name="Transition1" source="_Rj_rEDF9Ed2yz_kaSjuIKQ" target="_-B9O0DF8Ed2yz_kaSjuIKQ"/>
+            <transition xmi:id="_S-w_8zF9Ed2yz_kaSjuIKQ" name="Transition2" source="_-B9O0DF8Ed2yz_kaSjuIKQ" target="_AbSdsDF9Ed2yz_kaSjuIKQ"/>
+            <transition xmi:id="_TOsSUzF9Ed2yz_kaSjuIKQ" name="Transition3" source="_AbSdsDF9Ed2yz_kaSjuIKQ" target="_JSERIDF9Ed2yz_kaSjuIKQ"/>
+            <transition xmi:id="_TfjY0zF9Ed2yz_kaSjuIKQ" name="Transition4" source="_JSERIDF9Ed2yz_kaSjuIKQ" target="_MQdU4DF9Ed2yz_kaSjuIKQ"/>
+            <transition xmi:id="_Z9IgQzF9Ed2yz_kaSjuIKQ" name="Transition5" source="_MQdU4DF9Ed2yz_kaSjuIKQ" target="_YvPw0DF9Ed2yz_kaSjuIKQ"/>
+          </region>
+        </subvertex>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

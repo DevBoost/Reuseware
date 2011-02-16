@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="idModel" name="FeedDogStateMachineModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="idPackage" name="FeedDogStateMachinePackage">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="idStateMachine" name="FeedDogStateMachine">
+      <region xmi:id="idRegion" name="MainRegion">
+        <subvertex xmi:type="uml:State" xmi:id="_DHAXwDMXEd2IKMqzSzwKng" name="FeedMyDog">
+          <region xmi:id="_DHAXwTMXEd2IKMqzSzwKng" name="Region1">
+            <subvertex xmi:type="uml:State" xmi:id="_1i2EoDMVEd2IKMqzSzwKng" name="CheckIfDogIsHungry"/>
+            <subvertex xmi:type="uml:State" xmi:id="_abTaIDMWEd2IKMqzSzwKng" name="LetTheDogEat"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_jox2UDMWEd2IKMqzSzwKng" name="Pseudostate2" kind="choice"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_zWMxcDMWEd2IKMqzSzwKng" name="Pseudostate3" kind="choice"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_1d-9UDMWEd2IKMqzSzwKng" name="FinalState2"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_5r8A8DMVEd2IKMqzSzwKng" name="Pseudostate1"/>
+            <subvertex xmi:type="uml:State" xmi:id="_ZK5iMDMWEd2IKMqzSzwKng" name="FillFoodIntoBowl"/>
+            <subvertex xmi:type="uml:State" xmi:id="_0LkvsDMVEd2IKMqzSzwKng" name="OpenCan"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_46xpwDMVEd2IKMqzSzwKng" name="FinalState1"/>
+          </region>
+        </subvertex>
+        <transition xmi:id="_iX-80DMWEd2IKMqzSzwKng" name="Transition1" source="_5r8A8DMVEd2IKMqzSzwKng" target="_1i2EoDMVEd2IKMqzSzwKng"/>
+        <transition xmi:id="_iivbUzMWEd2IKMqzSzwKng" name="Transition2" source="_1i2EoDMVEd2IKMqzSzwKng" target="_zWMxcDMWEd2IKMqzSzwKng"/>
+        <transition xmi:id="_iwT9QDMWEd2IKMqzSzwKng" name="Transition3" source="_0LkvsDMVEd2IKMqzSzwKng" target="_ZK5iMDMWEd2IKMqzSzwKng"/>
+        <transition xmi:id="_i9NJwzMWEd2IKMqzSzwKng" name="Transition4" source="_ZK5iMDMWEd2IKMqzSzwKng" target="_abTaIDMWEd2IKMqzSzwKng"/>
+        <transition xmi:id="_kP_AQzMWEd2IKMqzSzwKng" name="Transition5" source="_abTaIDMWEd2IKMqzSzwKng" target="_jox2UDMWEd2IKMqzSzwKng"/>
+        <transition xmi:id="_kf_yMzMWEd2IKMqzSzwKng" name="Transition6" source="_jox2UDMWEd2IKMqzSzwKng" target="_46xpwDMVEd2IKMqzSzwKng"/>
+        <transition xmi:id="_ljXTszMWEd2IKMqzSzwKng" name="dogBarksForMore" source="_jox2UDMWEd2IKMqzSzwKng" target="_0LkvsDMVEd2IKMqzSzwKng"/>
+        <transition xmi:id="_2r4T0DMWEd2IKMqzSzwKng" name="notHungry" source="_zWMxcDMWEd2IKMqzSzwKng" target="_1d-9UDMWEd2IKMqzSzwKng"/>
+        <transition xmi:id="_26XbwzMWEd2IKMqzSzwKng" name="Transition8" source="_zWMxcDMWEd2IKMqzSzwKng" target="_0LkvsDMVEd2IKMqzSzwKng"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

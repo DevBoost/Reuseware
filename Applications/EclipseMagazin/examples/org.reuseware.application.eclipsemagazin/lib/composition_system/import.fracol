@@ -1,15 +1,25 @@
+// Eine 'Fragment Collaboration' (Fracol) definiert neue Arten von 
+// Komponenten und deren Zusammenspiel. Eine Komponentenart wird als 
+// 'Fragment Role' bezeichnet. Jede Komponentenart besitzt eine Menge 
+// von 'Port Types', die durch 'Associations' verbunden sind.
 fracol composition_system.import {
 
-	// Abschnitt: "Model-Komponenten Import"
-	fragment role ImportingModel {
-		dynamic port type ImportStatement;
-	}
-	
-	fragment role ModelComponent {
-		dynamic port type Contents;
-	}
-	
-	contributing association Import {
-		ModelComponent.Contents --> ImportingModel.ImportStatement
-	}
+  // Die erste Komponentenart ist das importierende Modell.
+  fragment role ImportingModel {
+    // Es enthŠlt Import-Statments um das Importieren von
+    // Modellkomponenten zu veranlassen.
+    dynamic port type ImportStatement;
+  }
+  
+  // Die zweite Komponentenart ist die importierte Modellkomponente.
+  fragment role ModelComponent {
+    // Die Modellkomponente hat einen Inhalt der importiert wird.
+    dynamic port type Contents;
+  }
+  
+  // Der Inhalt einer Modellkomponente kann wŠhrend der Komposition
+  // ein Import-Statement ersetzen.
+  contributing association Import {
+    ModelComponent.Contents --> ImportingModel.ImportStatement
+  }
 }
