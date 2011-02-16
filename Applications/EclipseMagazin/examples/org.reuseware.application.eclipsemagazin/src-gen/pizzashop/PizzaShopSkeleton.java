@@ -1,21 +1,16 @@
 package pizzashop;
 
 public class PizzaShopSkeleton {
-	
 	public static void main(String[] args) {
 
-		System.out.println(
-				"Starting: PizzaShopInit");
+		System.out.println("Starting: PizzaShopInit");
 
-		System.out.println(
-				"Starting: TakeOrderInit");
+		System.out.println("Starting: TakeOrderInit");
 
-		System.out.println(
-				"Executing: getClientAddress");
+		System.out.println("Executing: getClientAddress");
 		getClientAddress : ;
 
-		System.out.println(
-				"Executing: getProductDetails");
+		System.out.println("Executing: getProductDetails");
 		getProductDetails : ;
 
 		System.out.println("Executing: TakeOrderFinal");
@@ -35,7 +30,7 @@ public class PizzaShopSkeleton {
 		System.out.println("Executing: BakePizzaFinal");
 		BakePizzaFinal : ;
 
-		System.out.println("Starting: Pseudostate1");
+		System.out.println("Starting: DeliveryInit");
 
 		System.out.println("Executing: DriveToClient");
 		DriveToClient : ;
@@ -49,8 +44,8 @@ public class PizzaShopSkeleton {
 		System.out.println("Executing: ReportDeliveryResult");
 		ReportDeliveryResult : ;
 
-		System.out.println("Executing: FinalState1");
-		FinalState1 : ;
+		System.out.println("Executing: DeliveryFinal");
+		DeliveryFinal : ;
 
 		System.out.println("Executing: PizzaShopFinal");
 		PizzaShopFinal : ;
