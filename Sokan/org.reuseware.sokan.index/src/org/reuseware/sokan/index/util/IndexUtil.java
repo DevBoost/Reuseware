@@ -373,6 +373,22 @@ public final class IndexUtil {
 	public void removeArtifact(IResource resource) {
 		remove(ResourceUtil.uriFrom(resource), false);
 	}
+	
+	/**
+	 * Removes the artifact represented by the given index row from the index.
+	 * 
+	 * @param row the index row
+	 */
+	public void removeArtifact(IndexRow row) {
+		if (row == null) {
+			return;
+		}
+		URI uri = ResourceUtil.uriFrom(row.getPhyURI());
+		if (uri == null) {
+			return;
+		}
+		comCache.getDeletedResources().add(uri);
+	}
 
 	/**
 	 * Shutdown the index system.
@@ -656,7 +672,5 @@ public final class IndexUtil {
 		this.persistencyManager = persistencyManager;
 		this.indexerManager = new IndexerManager(persistencyManager);
 	}
-
-
 
 }

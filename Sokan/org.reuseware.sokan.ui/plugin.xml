@@ -18,6 +18,19 @@
       </objectContribution>
       <objectContribution
             adaptable="true"
+            objectClass="org.eclipse.core.resources.IProject"
+            nameFilter="*"
+            id="org.reuseware.sokan.ui.contContainer">
+         <action
+               class="org.reuseware.sokan.ui.internal.actions.CleanIndexAction"
+               enablesFor="+"
+               id="org.reuseware.sokan.ui.internal.actions.CleanIndexAction"
+               label="Clean Index"
+               menubarPath="org.reuseware.sokan.ui.menuSokan/additions">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
             objectClass="org.eclipse.core.resources.IContainer"
             nameFilter="*"
             id="org.reuseware.sokan.ui.contContainer">

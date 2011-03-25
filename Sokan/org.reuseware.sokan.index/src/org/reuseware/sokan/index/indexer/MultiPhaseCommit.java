@@ -24,6 +24,7 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.reuseware.sokan.FacetedRequest;
 import org.reuseware.sokan.ID;
 import org.reuseware.sokan.IndexMetaData;
 import org.reuseware.sokan.IndexRow;
@@ -34,6 +35,7 @@ import org.reuseware.sokan.index.IndexCache;
 import org.reuseware.sokan.index.SokanIndexPlugin;
 import org.reuseware.sokan.index.persister.PersistencyManager;
 import org.reuseware.sokan.index.util.CoreUtil;
+import org.reuseware.sokan.index.util.FacetUtil;
 import org.reuseware.sokan.index.util.IndexUtil;
 import org.reuseware.sokan.index.util.ResourceUtil;
 
@@ -370,15 +372,18 @@ public class MultiPhaseCommit {
 
 
 	private IndexTransaction buildRemoveTransaction(Set<URI> remResources) {
-		if (remResources == null) {
+		if (remResources == null || remResources.isEmpty()) {
 			return null;
 		}
 
-		List<ID> remIDs = ResourceUtil.idListFromURIs(remResources);
-
-		IndexTransaction trans = SokanFactory.eINSTANCE
-				.createIndexTransaction();
-		trans.getRemArtifacts().addAll(remIDs);
+		IndexTransaction trans = SokanFactory.eINSTANCE.createIndexTransaction();
+		for (URI uri : remResources) {
+			FacetedRequest request = FacetUtil.buildFacetedRequest(
+					"phyURI", new String[] {uri.toString()});
+			for (IndexRow row : IndexUtil.INSTANCE.getIndex(request)) {
+				trans.getRemArtifacts().add(row.getArtifactID());
+			}
+		}
 
 		return trans;
 	}
