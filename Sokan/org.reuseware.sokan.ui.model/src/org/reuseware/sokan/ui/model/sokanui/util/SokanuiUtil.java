@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -149,9 +150,18 @@ public class SokanuiUtil {
 	}
 	
 	private static void updateArtifact(Container container, ID id, boolean recreate, ResourceSet resourceSet) {
-		if (container == null) return;
 		if (id == null) return;
 		
+		// unload resources that might have been loaded on demand
+		URI uri = ResourceUtil.uriFrom(id);
+		if (uri != null) {
+			Resource resource = resourceSet.getResource(uri, false);
+			if (resource != null) {
+				resource.unload();
+			}
+		}
+
+		if (container == null) return;
 		if (!container.areElementsLoaded()) return;
 		
 		//removes existing if any
