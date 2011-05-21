@@ -16,14 +16,14 @@ FOR <http://reuseware.org/coconut/fracol> <fracol.genmodel>
 START FragmentCollaboration
 
 OPTIONS {
-    licenceHeader = "../../org.reuseware.coconut/licence.txt";
-    
-    resourceUIPluginID = "org.reuseware.comogen.fracol.ui";
-    uiBasePackage      = "org.reuseware.comogen.fracol.ui";
-    
-    additionalDependencies= "org.reuseware.coconut.resource";
-    
-    disableEValidators = "false";
+	licenceHeader = "../../org.reuseware.coconut/licence.txt";
+
+	resourceUIPluginID = "org.reuseware.comogen.fracol.ui";
+	uiBasePackage      = "org.reuseware.comogen.fracol.ui";
+
+	additionalDependencies= "org.reuseware.coconut.resource";
+
+	disableEValidators = "false";
     	
 	usePredefinedTokens = "false";
 	
@@ -31,6 +31,8 @@ OPTIONS {
 	overrideAntlrPlugin = "false";
 	overrideUIPluginXML = "false";
 	overridePluginActivator = "false";
+	disableLaunchSupport = "true";
+	disableDebugSupport = "true";
 }
 
 

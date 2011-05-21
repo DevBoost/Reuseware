@@ -4,6 +4,8 @@ START AbstractSyntax
 
 OPTIONS{
 	usePredefinedTokens="false";
+	disableLaunchSupport = "true";
+	disableDebugSupport = "true";
 }
  
 TOKENS{ 

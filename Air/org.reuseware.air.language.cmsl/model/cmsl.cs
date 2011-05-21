@@ -2,6 +2,11 @@ SYNTAXDEF cmsl
 FOR <http://www.reuseware.org/air/language/cmsl> <cmsl.genmodel>
 START GrammarExtension
 
+OPTIONS {
+	disableLaunchSupport = "true";
+	disableDebugSupport = "true";
+}
+
 TOKENS{ 
 		DEFINE ESTRING  $'%' (~('\n'))* $;
 		DEFINE ESTRING1 $('a'..'z') ('A'..'Z' | 'a'..'z' | '0'..'9' | '_' | '-')*$;

@@ -31,6 +31,8 @@ OPTIONS {
 	overrideProposalPostProcessor = "false";
 	overrideAntlrPlugin = "false";
 	overrideUIPluginXML = "false";
+	disableLaunchSupport = "true";
+	disableDebugSupport = "true";
 }
 
 
