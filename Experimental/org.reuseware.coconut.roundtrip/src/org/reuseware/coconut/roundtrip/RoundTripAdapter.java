@@ -1,12 +1,12 @@
 /*******************************************************************************
- * Copyright (c) 2006-2010
+ * Copyright (c) 2006-2011
  * Software Technology Group, Dresden University of Technology
- * 
+ *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
- * 
+ *
  * Contributors:
  * Software Technology Group - TU Dresden, Germany
  *      - initial API and implementation
@@ -41,7 +41,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil.Copier;
 /**
  * FIXME: This code is copied from an old version of the CopiedFromAdapter in the org.reuseware.coconut.fragment
  *        All round-trip functionality should go somewhere separate...
- * 
+ *
  * TODO mseifert: remove all the code that confirms or discards modifications.
  *                these actions must be performed separately.
  */
@@ -70,9 +70,9 @@ public class RoundTripAdapter extends AdapterImpl {
 
 	/**
 	 * Standard constructor
-	 * 
+	 *
 	 * This constructor is used when adding adapters to each element of a syntax tree
-	 * 
+	 *
 	 * @param original The original element in source fragment
 	 * @param contextObject The source fragment
 	 */
@@ -86,11 +86,11 @@ public class RoundTripAdapter extends AdapterImpl {
 		}
 	}
 
-	
+
 	/**
-	 * Constructor used when adding a new element during model editing. This constructor is 
+	 * Constructor used when adding a new element during model editing. This constructor is
 	 * needed because eResource is null when new elements are added.
-	 * 
+	 *
 	 * @param original The original element in source fragment
 	 * @param contextObject The source fragment
 	 * @param originalUFI The UFI of the original element
@@ -107,7 +107,7 @@ public class RoundTripAdapter extends AdapterImpl {
 
 
 	/**
-	 * Adds new elements to the source fragment. This method is called if all 
+	 * Adds new elements to the source fragment. This method is called if all
 	 * conflicts are resolved and adding should be propagated.
 	 */
 	public void confirmAddElements() {
@@ -116,7 +116,7 @@ public class RoundTripAdapter extends AdapterImpl {
 		//System.out.println(hashCode() + ": confirmAddElements() newValue = " + newValue);
 		RoundTripAdapter newAdapter = new RoundTripAdapter(newValue,
 			this.contextObject, this.eResource);
-		
+
 		//System.out.println(hashCode() + ": confirmAddElements() feature = " + feature);
 		//System.out.println(hashCode() + ": confirmAddElements() feature = " + feature.getEContainingClass());
 		EObject originalContainer = original.eContainer();
@@ -124,7 +124,7 @@ public class RoundTripAdapter extends AdapterImpl {
 		Object list = original.eGet(original.eClass().getEStructuralFeature(feature.getName()));
 		EList<EObject> originalList = castUnchecked(list);
 		//System.out.println(hashCode() + ": confirmAddElements() listInOriginal = " + originalList);
-		
+
 		if (originalList != null && copyValues != null) {
 
 			//newAdapter.openerUFI = this.openerUFI;
@@ -136,7 +136,7 @@ public class RoundTripAdapter extends AdapterImpl {
 				originalList.add(newValue);
 			}
 		}
-	
+
 		saveOriginalFragment();
 		newAdapter.active = true;
 
@@ -149,7 +149,7 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Method for adding new elements temporary to the source fragment. This is used when 
+	 * Method for adding new elements temporary to the source fragment. This is used when
 	 * a compare view is being opened.
 	 */
 	public void addTemporary() {
@@ -157,11 +157,11 @@ public class RoundTripAdapter extends AdapterImpl {
 		Collection<EObject> tmpCopied = copier.copyAll(getOriginalValues());
 		Iterator<EObject> contents = tmpCopied.iterator();
 		tmp = new BasicEList<EObject>();
-	
+
 		while (contents.hasNext()) {
 			tmp.add(contents.next());
 		}
-	
+
 		confirmAddElements();
 	}
 
@@ -177,11 +177,11 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Method for changing an element temporary to the source fragment. This is used when 
+	 * Method for changing an element temporary to the source fragment. This is used when
 	 * a compare view is being opened.
 	 */
 	public void changeTemporary() {
-	
+
 		active = false;
 		oldChangedValue = original.eGet(feature);
 		original.eSet(feature, newValue);
@@ -191,10 +191,10 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * 
-	 * Changes an element in the source fragment. This method is called if all 
+	 *
+	 * Changes an element in the source fragment. This method is called if all
 	 * conflicts are resolved and changes should be propagated.
-	 * 
+	 *
 	 */
 	public void confirmChangeAttribute() {
 		//TODO because original might be reloaded... we need to handle this in some uniform way
@@ -213,17 +213,17 @@ public class RoundTripAdapter extends AdapterImpl {
 				original.eSet(feature, copy);
 			}
 		}
-		
+
 		saveOriginalFragment();
-	
+
 	}
 
 	/**
-	 * Method for removing the new added element from the edited model. 
-	 * This is called if conflicts arose from adding an element. 
+	 * Method for removing the new added element from the edited model.
+	 * This is called if conflicts arose from adding an element.
 	 */
 	public void discardAdd() {
-		
+
 		// TODO #689: also remove elements from diagram, not only from model (e.g. TopCased)
 		active = false;
 		copy.eSet(feature, getOriginalValues());
@@ -232,8 +232,8 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Method for undoing the changes at an element in the edited model. 
-	 * This is called if conflicts arose from changing an element. 
+	 * Method for undoing the changes at an element in the edited model.
+	 * This is called if conflicts arose from changing an element.
 	 */
 	public void discardChange() {
 
@@ -244,8 +244,8 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Method for undoing removal of an element from the edited model. 
-	 * This is called if conflicts arose from removing an element. 
+	 * Method for undoing removal of an element from the edited model.
+	 * This is called if conflicts arose from removing an element.
 	 */
 	public void discardRemove() {
 
@@ -260,21 +260,21 @@ public class RoundTripAdapter extends AdapterImpl {
 	 * Searches for extensions that implement the IConflictResolver interface.
 	 */
 	private Collection<IModificationHandler> getRegisteredModificationHandlers() {
-	
+
 		Collection<IModificationHandler> handlers = new ArrayList<IModificationHandler>();
-	
+
 		IExtensionRegistry extensionRegistry = Platform.getExtensionRegistry();
 		if (extensionRegistry == null) {
 			return handlers;
 		}
-		
+
 		IExtensionPoint extensionPoint = extensionRegistry
 			.getExtensionPoint("org.reuseware.coconut.fragment.modificationHandler");
 		IExtension[] extensions = extensionPoint.getExtensions();
-		
+
 		for (int i = 0; i < extensions.length; i++) {
 			IConfigurationElement[] elements = extensions[i].getConfigurationElements();
-		
+
 			for (int j = 0; j < elements.length; j++) {
 				try {
 					handlers.add((IModificationHandler) elements[j].createExecutableExtension("class"));
@@ -339,7 +339,7 @@ public class RoundTripAdapter extends AdapterImpl {
 	@SuppressWarnings("unchecked")
 	/**
 	 * Method that is called when the adapted element is changed.
-	 * 
+	 *
 	 * @param notification The notification holding change type and additional informations
 	 */
 	public void notifyChanged(Notification notification) {
@@ -347,12 +347,12 @@ public class RoundTripAdapter extends AdapterImpl {
 		copy = (EObject) notification.getNotifier();
 		newValue = notification.getNewValue();
 		oldValue = notification.getOldValue();
-		
+
 		if (!active) {
 			return;
 		}
 		type = notification.getEventType();
-		
+
 		// non-list feature
 		//if (feature.getUpperBound() == 1) {
 		if (type == Notification.SET) {
@@ -360,9 +360,9 @@ public class RoundTripAdapter extends AdapterImpl {
 
 		} else if (type == Notification.ADD || type == Notification.REMOVE ||
 				type == Notification.ADD_MANY || type == Notification.REMOVE_MANY) {
-			
+
 			idx = notification.getPosition();
-			
+
 			copyValues = (EList<EObject>) copy.eGet(feature);
 
 			// Remove elements
@@ -384,7 +384,7 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Notifies all registered listeners about the addition 
+	 * Notifies all registered listeners about the addition
 	 * of an element.
 	 */
 	private void notifyAdd() {
@@ -398,7 +398,7 @@ public class RoundTripAdapter extends AdapterImpl {
 			//in case of remove copy.eResource() == null
 			if (copy.eResource() != null) {
 				uri = copy.eResource().getURI();
-			}	
+			}
 			handler.handle(modificationType, uri, this);
 		}
 	}
@@ -430,7 +430,7 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Method for removing elements temporary from the source fragment. This is used when 
+	 * Method for removing elements temporary from the source fragment. This is used when
 	 * a compare view is being opened.
 	 */
 	public void removeTemporary() {
@@ -439,7 +439,7 @@ public class RoundTripAdapter extends AdapterImpl {
 		getOriginalValues().remove(idx);
 		saveOriginalFragment();
 	}
-	
+
 	/**
 	 * Saves the source fragment after changes are propagated.
 	 */
@@ -468,7 +468,7 @@ public class RoundTripAdapter extends AdapterImpl {
 	}
 
 	/**
-	 * Undo the propagation of changing an element.  
+	 * Undo the propagation of changing an element.
 	 */
 	public void unchange() {
 		active = false;
