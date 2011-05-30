@@ -1,42 +1,42 @@
-ÇIMPORT umlÈ
+Â«IMPORT umlÂ»
 
-ÇDEFINE main FOR ModelÈ
-	ÇFOREACH packagedElement.typeSelect(Package) AS pÈ
-		ÇEXPAND javaClass FOREACH p.packagedElement.typeSelect(StateMachine)È
-	ÇENDFOREACHÈ
-ÇENDDEFINEÈ
+Â«DEFINE main FOR ModelÂ»
+	Â«FOREACH packagedElement.typeSelect(Package) AS pÂ»
+		Â«EXPAND javaClass FOREACH p.packagedElement.typeSelect(StateMachine)Â»
+	Â«ENDFOREACHÂ»
+Â«ENDDEFINEÂ»
 
-ÇDEFINE javaClass FOR StateMachineÈ
-	ÇFILE ""+package.name+"/"+name+"Skeleton.java"È
-		package Çpackage.nameÈ;
+Â«DEFINE javaClass FOR StateMachineÂ»
+	Â«FILE ""+package.name+"/"+name+"Skeleton.java"Â»
+		package Â«package.nameÂ»;
 		
-		public class ÇnameÈSkeleton {
+		public class Â«nameÂ»Skeleton {
 			public static void main(
 				String[] args) {
-				ÇFOREACH region AS rÈ
-					ÇEXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)È
-				ÇENDFOREACHÈ
+				Â«FOREACH region AS rÂ»
+					Â«EXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)Â»
+				Â«ENDFOREACHÂ»
 			}
 		}
-	ÇENDFILEÈ
-ÇENDDEFINEÈ
+	Â«ENDFILEÂ»
+Â«ENDDEFINEÂ»
 
-ÇDEFINE hook FOR PseudostateÈ
-	System.out.println("Starting: ÇnameÈ");
-	ÇIF !outgoing.isEmptyÈ
-		ÇEXPAND hook FOR (State)outgoing.get(0).targetÈ
-	ÇENDIFÈ
-ÇENDDEFINEÈ
+Â«DEFINE hook FOR PseudostateÂ»
+	System.out.println("Starting: Â«nameÂ»");
+	Â«IF !outgoing.isEmptyÂ»
+		Â«EXPAND hook FOR (State)outgoing.get(0).targetÂ»
+	Â«ENDIFÂ»
+Â«ENDDEFINEÂ»
 
-ÇDEFINE hook FOR StateÈ
-	ÇIF region.isEmptyÈ
-		System.out.println("Executing: ÇnameÈ");
-		ÇnameÈ: ;
-	ÇENDIFÈ
-	ÇFOREACH region AS rÈ
-		ÇEXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)È
-	ÇENDFOREACHÈ
-	ÇIF !outgoing.isEmptyÈ
-		ÇEXPAND hook FOR (State)outgoing.get(0).targetÈ
-	ÇENDIFÈ
-ÇENDDEFINEÈ
+Â«DEFINE hook FOR StateÂ»
+	Â«IF region.isEmptyÂ»
+		System.out.println("Executing: Â«nameÂ»");
+		Â«nameÂ»: ;
+	Â«ENDIFÂ»
+	Â«FOREACH region AS rÂ»
+		Â«EXPAND hook FOR r.subvertex.typeSelect(Pseudostate).get(0)Â»
+	Â«ENDFOREACHÂ»
+	Â«IF !outgoing.isEmptyÂ»
+		Â«EXPAND hook FOR (State)outgoing.get(0).targetÂ»
+	Â«ENDIFÂ»
+Â«ENDDEFINEÂ»

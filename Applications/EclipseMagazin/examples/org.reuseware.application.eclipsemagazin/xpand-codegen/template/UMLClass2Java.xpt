@@ -1,38 +1,38 @@
-ÇIMPORT umlÈ
+Â«IMPORT umlÂ»
 
-ÇDEFINE main FOR ModelÈ
-	ÇFOREACH packagedElement.typeSelect(Package) AS pÈ
-		ÇEXPAND javaClass FOREACH p.packagedElement.typeSelect(Class)È
-	ÇENDFOREACHÈ
-ÇENDDEFINEÈ
+Â«DEFINE main FOR ModelÂ»
+	Â«FOREACH packagedElement.typeSelect(Package) AS pÂ»
+		Â«EXPAND javaClass FOREACH p.packagedElement.typeSelect(Class)Â»
+	Â«ENDFOREACHÂ»
+Â«ENDDEFINEÂ»
 
-ÇDEFINE javaClass FOR ClassÈ
-	ÇFILE ""+package.name+"/"+name+".java"È
-		package Çpackage.nameÈ;
+Â«DEFINE javaClass FOR ClassÂ»
+	Â«FILE ""+package.name+"/"+name+".java"Â»
+		package Â«package.nameÂ»;
 	
-		public class ÇnameÈ {
-			ÇFOREACH ownedAttribute AS fÈ
-				private Çf.type.nameÈ Çf.nameÈ;
+		public class Â«nameÂ» {
+			Â«FOREACH ownedAttribute AS fÂ»
+				private Â«f.type.nameÂ» Â«f.nameÂ»;
 				
-				public void Ç"set"+f.name.toString().toFirstUpper()È(Çf.type.nameÈ Çf.nameÈ) {
-					this.Çf.nameÈ = Çf.nameÈ;
+				public void Â«"set"+f.name.toString().toFirstUpper()Â»(Â«f.type.nameÂ» Â«f.nameÂ») {
+					this.Â«f.nameÂ» = Â«f.nameÂ»;
 				}
 				
-				public Çf.type.nameÈ Ç"get"+f.name.toString().toFirstUpper()È() {
-					return Çf.nameÈ;
+				public Â«f.type.nameÂ» Â«"get"+f.name.toString().toFirstUpper()Â»() {
+					return Â«f.nameÂ»;
 				}
-			ÇENDFOREACHÈ
-			ÇFOREACH package.packagedElement.typeSelect(Association).select(e|e.ownedEnd.get(0).type == this) AS fÈ
-				private Çf.ownedEnd.get(1).type.nameÈ Çf.nameÈ;
+			Â«ENDFOREACHÂ»
+			Â«FOREACH package.packagedElement.typeSelect(Association).select(e|e.ownedEnd.get(0).type == this) AS fÂ»
+				private Â«f.ownedEnd.get(1).type.nameÂ» Â«f.nameÂ»;
 				
-				public void Ç"set"+f.name.toString().toFirstUpper()È(Çf.ownedEnd.get(1).type.nameÈ Çf.nameÈ) {
-					this.Çf.nameÈ = Çf.nameÈ;
+				public void Â«"set"+f.name.toString().toFirstUpper()Â»(Â«f.ownedEnd.get(1).type.nameÂ» Â«f.nameÂ») {
+					this.Â«f.nameÂ» = Â«f.nameÂ»;
 				}
 				
-				public Çf.ownedEnd.get(1).type.nameÈ Ç"get"+f.name.toString().toFirstUpper()È() {
-					return Çf.nameÈ;
+				public Â«f.ownedEnd.get(1).type.nameÂ» Â«"get"+f.name.toString().toFirstUpper()Â»() {
+					return Â«f.nameÂ»;
 				}
-			ÇENDFOREACHÈ
+			Â«ENDFOREACHÂ»
 		}
-	ÇENDFILEÈ
-ÇENDDEFINEÈ
+	Â«ENDFILEÂ»
+Â«ENDDEFINEÂ»
