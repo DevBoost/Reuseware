@@ -68,7 +68,7 @@ public class ProjectOpenListener implements IResourceChangeListener {
 									project.build(
 											IndexBuilder.FULL_BUILD, 
 											IndexBuilder.BUILDER_ID,
-											Collections.emptyMap(), monitor);
+											Collections.<String,String>emptyMap(), monitor);
 								} catch (CoreException e) {
 									SokanIndexPlugin.logError("", e);
 								}
