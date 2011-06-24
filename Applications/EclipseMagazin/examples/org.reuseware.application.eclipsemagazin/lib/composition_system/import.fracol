@@ -6,7 +6,7 @@ fracol composition_system.import {
 
   // Die erste Komponentenart ist das importierende Modell.
   fragment role ImportingModel {
-    // Es enthŠlt Import-Statments um das Importieren von
+    // Es enthÃ¤lt Import-Statments um das Importieren von
     // Modellkomponenten zu veranlassen.
     dynamic port type ImportStatement;
   }
@@ -17,7 +17,7 @@ fracol composition_system.import {
     dynamic port type Contents;
   }
   
-  // Der Inhalt einer Modellkomponente kann wŠhrend der Komposition
+  // Der Inhalt einer Modellkomponente kann wÃ¤hrend der Komposition
   // ein Import-Statement ersetzen.
   contributing association Import {
     ModelComponent.Contents --> ImportingModel.ImportStatement

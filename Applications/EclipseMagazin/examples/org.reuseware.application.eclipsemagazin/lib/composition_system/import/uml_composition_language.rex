@@ -12,7 +12,7 @@ location = $'models-composed'$ {
       fragment = $ufi$
       // Die ID (ufi) eines importierenden Modells.
       ufi = $ufi$
-      // Wie ist die ID (ufi) des zugehörigen komponierten Modells?
+      // Wie ist die ID (ufi) des zugeh√∂rigen komponierten Modells?
       target ufi = $ufi.trim(1).append('composed').append(ufi.segment(-1))$
       // In welchem Ordner sollen komponierte Modelle abgelegt werden?
       target location = $'models-composed'$
