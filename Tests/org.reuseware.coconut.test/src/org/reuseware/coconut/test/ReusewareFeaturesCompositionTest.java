@@ -316,7 +316,7 @@ public class ReusewareFeaturesCompositionTest extends AbstractReusewareCompositi
 		
 		assertTrue("Cyclic dependency expected",
 				allOutput.toString().contains(
-				"[Sokan] Possible cyclic dependency (involved artivatcts: [[org, reuseware, test, basic, cyclicDependency, cyclicDependencyComposed.ecore]])"));
+				"[Sokan] Possible cyclic dependency (involved artifacts: [[org, reuseware, test, basic, cyclicDependency, cyclicDependencyComposed.ecore]])"));
 		
 		System.setErr(origError);
 		err.close();
