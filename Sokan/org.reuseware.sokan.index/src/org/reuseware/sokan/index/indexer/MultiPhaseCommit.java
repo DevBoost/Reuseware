@@ -177,7 +177,7 @@ public class MultiPhaseCommit {
 					involved.add(id);
 				}
 			}			
-			SokanIndexPlugin.logError("Possible cyclic dependency (involved artivatcts: " + involved + ")", null);
+			SokanIndexPlugin.logError("Possible cyclic dependency (involved artifacts: " + involved + ")", null);
 		}
 		
 		// remove deleted
