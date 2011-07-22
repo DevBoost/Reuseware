@@ -144,14 +144,19 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	private long computeModificationStamp(ResourceSetInfo info) {
 		int result = 0;
 		for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 				.hasNext();) {
 			Resource nextResource = it.next();
-			IFile file = WorkspaceSynchronizer.getFile(nextResource);
+			// !BEGIN MODIFICATION
+			IFile file = null;
+			if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+				file = WorkspaceSynchronizer.getFile(nextResource);
+			}
+			// !END MODIFICATION
 			if (file != null) {
 				if (file.getLocation() != null) {
 					result += file.getLocation().toFile().lastModified();
@@ -361,7 +366,7 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	protected void doValidateState(Object element, Object computationContext)
 			throws CoreException {
@@ -371,7 +376,12 @@ public class CompositionprogramDocumentProvider extends
 			for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 					.hasNext();) {
 				Resource nextResource = it.next();
-				IFile file = WorkspaceSynchronizer.getFile(nextResource);
+				// !BEGIN MODIFICATION
+				IFile file = null;
+				if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+					file = WorkspaceSynchronizer.getFile(nextResource);
+				}
+				// !END MODIFICATION
 				if (file != null && file.isReadOnly()) {
 					files2Validate.add(file);
 				}
@@ -437,7 +447,7 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	protected void updateCache(Object element) throws CoreException {
 		ResourceSetInfo info = getResourceSetInfo(element);
@@ -445,7 +455,12 @@ public class CompositionprogramDocumentProvider extends
 			for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 					.hasNext();) {
 				Resource nextResource = it.next();
-				IFile file = WorkspaceSynchronizer.getFile(nextResource);
+				// !BEGIN MODIFICATION
+				IFile file = null;
+				if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+					file = WorkspaceSynchronizer.getFile(nextResource);
+				}
+				// !END MODIFICATION
 				if (file != null && file.isReadOnly()) {
 					info.setReadOnly(true);
 					info.setModifiable(false);
@@ -481,7 +496,7 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	protected ISchedulingRule getResetRule(Object element) {
 		ResourceSetInfo info = getResourceSetInfo(element);
@@ -490,7 +505,12 @@ public class CompositionprogramDocumentProvider extends
 			for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 					.hasNext();) {
 				Resource nextResource = it.next();
-				IFile file = WorkspaceSynchronizer.getFile(nextResource);
+				// !BEGIN MODIFICATION
+				IFile file = null;
+				if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+					file = WorkspaceSynchronizer.getFile(nextResource);
+				}
+				// !END MODIFICATION
 				if (file != null) {
 					rules.add(ResourcesPlugin.getWorkspace().getRuleFactory()
 							.modifyRule(file));
@@ -504,7 +524,7 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	protected ISchedulingRule getSaveRule(Object element) {
 		ResourceSetInfo info = getResourceSetInfo(element);
@@ -513,7 +533,12 @@ public class CompositionprogramDocumentProvider extends
 			for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 					.hasNext();) {
 				Resource nextResource = it.next();
-				IFile file = WorkspaceSynchronizer.getFile(nextResource);
+				// !BEGIN MODIFICATION
+				IFile file = null;
+				if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+					file = WorkspaceSynchronizer.getFile(nextResource);
+				}
+				// !END MODIFICATION
 				if (file != null) {
 					rules.add(computeSchedulingRule(file));
 				}
@@ -526,7 +551,7 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	protected ISchedulingRule getSynchronizeRule(Object element) {
 		ResourceSetInfo info = getResourceSetInfo(element);
@@ -535,7 +560,12 @@ public class CompositionprogramDocumentProvider extends
 			for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 					.hasNext();) {
 				Resource nextResource = it.next();
-				IFile file = WorkspaceSynchronizer.getFile(nextResource);
+				// !BEGIN MODIFICATION
+				IFile file = null;
+				if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+					file = WorkspaceSynchronizer.getFile(nextResource);
+				}
+				// !END MODIFICATION
 				if (file != null) {
 					rules.add(ResourcesPlugin.getWorkspace().getRuleFactory()
 							.refreshRule(file));
@@ -549,7 +579,7 @@ public class CompositionprogramDocumentProvider extends
 	}
 
 	/**
-	 * @generated
+	 * @generated NOT
 	 */
 	protected ISchedulingRule getValidateStateRule(Object element) {
 		ResourceSetInfo info = getResourceSetInfo(element);
@@ -558,7 +588,12 @@ public class CompositionprogramDocumentProvider extends
 			for (Iterator<Resource> it = info.getLoadedResourcesIterator(); it
 					.hasNext();) {
 				Resource nextResource = it.next();
-				IFile file = WorkspaceSynchronizer.getFile(nextResource);
+				// !BEGIN MODIFICATION
+				IFile file = null;
+				if (nextResource != null && nextResource.getURI().isPlatformResource()) {
+					file = WorkspaceSynchronizer.getFile(nextResource);
+				}
+				// !END MODIFICATION
 				if (file != null) {
 					files.add(file);
 				}
@@ -748,7 +783,12 @@ public class CompositionprogramDocumentProvider extends
 	 */
 	protected void handleElementChanged(ResourceSetInfo info,
 			Resource changedResource, IProgressMonitor monitor) {
-		IFile file = WorkspaceSynchronizer.getFile(changedResource);
+		// !BEGIN MODIFICATION
+		IFile file = null;
+		if (changedResource != null && changedResource.getURI().isPlatformResource()) {
+			file = WorkspaceSynchronizer.getFile(changedResource);
+		}
+		// !END MODIFICATION
 		if (file != null) {
 			try {
 				file.refreshLocal(IResource.DEPTH_INFINITE, monitor);
