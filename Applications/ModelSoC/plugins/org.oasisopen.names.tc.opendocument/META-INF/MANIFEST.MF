@@ -72,6 +72,5 @@ Export-Package: org.oasisopen.names.tc.opendocument.xmlns.animation,
  org.w3.xlink.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.emf.ecore.xmi;visibility:=reexport,
- org.reuseware.coconut.resource
+ org.eclipse.emf.ecore.xmi;visibility:=reexport
 Bundle-ActivationPolicy: lazy
