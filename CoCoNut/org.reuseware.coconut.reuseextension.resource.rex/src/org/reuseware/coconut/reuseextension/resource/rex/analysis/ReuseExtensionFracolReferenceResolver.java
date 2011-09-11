@@ -57,7 +57,7 @@ public class ReuseExtensionFracolReferenceResolver implements
 			result.addMapping(identifier, target);
 		}
 			
-		result.setErrorMessage("Fracol '" + fracolID + "' not defind or registered");
+		result.setErrorMessage("Fracol '" + fracolID + "' not defined or registered");
 	}
 	
 	/**

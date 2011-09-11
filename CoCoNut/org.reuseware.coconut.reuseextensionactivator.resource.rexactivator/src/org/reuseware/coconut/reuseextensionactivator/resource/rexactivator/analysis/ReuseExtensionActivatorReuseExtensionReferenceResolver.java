@@ -75,7 +75,7 @@ public class ReuseExtensionActivatorReuseExtensionReferenceResolver
 		}
 
 		result.setErrorMessage("Reuse extension '" + rexID.toString()
-				+ "' not defind or registered");
+				+ "' not defined or registered");
 	}
 	
 	/**
