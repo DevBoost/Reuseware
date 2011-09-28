@@ -100,7 +100,7 @@ public class RexProposalPostProcessor {
 					if (addEscape) {
 						proposalString = "$" + proposalString + "$";
 					}
-					newProposals.add(new RexCompletionProposal(proposalString, expressionStart, true, 
+					newProposals.add(new RexCompletionProposal(null, proposalString, expressionStart, true, 
 							placeholderProposal.getStructuralFeature(), ruleContext));
 				}
 				
@@ -121,7 +121,7 @@ public class RexProposalPostProcessor {
 					insertString = insertString.substring(0, insertString.length() - ".fracol".length());
 					
 					RexCompletionProposal proposal = new RexCompletionProposal(
-							insertString, placeholderProposal.getPrefix(), true, 
+							null, insertString, placeholderProposal.getPrefix(), true, 
 							placeholderProposal.getStructuralFeature(), placeholderProposal.getContainer());
 					newProposals.add(proposal);
 				}
