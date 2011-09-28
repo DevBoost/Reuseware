@@ -56,7 +56,7 @@ public class Rex_activatorProposalPostProcessor {
 					
 					if (insertString.startsWith(prefix)) {
 						Rex_activatorCompletionProposal proposal = new Rex_activatorCompletionProposal(
-								insertString, prototypeProposal.getPrefix(), true, 
+								null, insertString, prototypeProposal.getPrefix(), true, 
 								prototypeProposal.getStructuralFeature(), prototypeProposal.getContainer());
 						newProposals.add(proposal);							
 					}
