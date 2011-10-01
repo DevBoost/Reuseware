@@ -30,12 +30,12 @@ import org.reuseware.coconut.reuseextensionactivator.ReuseExtensionActivatorList
 public abstract class AbstractReusewareTestHelper {
 	
 	protected ReuseResourceAccess access;
-	protected AbstractReusewareCompositionTest test;
+	protected AbstractReusewareCompositionTestCase test;
 	
 	public void setAccess(ReuseResourceAccess access) {
 		this.access = access;
 	}
-	public void setTest(AbstractReusewareCompositionTest test) {
+	public void setTest(AbstractReusewareCompositionTestCase test) {
 		this.test = test;
 	}
 	
@@ -62,7 +62,7 @@ public abstract class AbstractReusewareTestHelper {
 		File storeFolder = new File(storeFolderPath);
 		TestCase.assertTrue("Folder " + storeFolder + " should exist.", storeFolder.exists());
 		
-		String tempFolderPath = "../" + exampleID + "/" + AbstractReusewareCompositionTest.TEMP_STORE_URI;
+		String tempFolderPath = "../" + exampleID + "/" + AbstractReusewareCompositionTestCase.TEMP_STORE_URI;
 		File tempFolder = new File(tempFolderPath);
 		
 		URI storeFolderURI   = createURI(storeFolder.getCanonicalPath()); 

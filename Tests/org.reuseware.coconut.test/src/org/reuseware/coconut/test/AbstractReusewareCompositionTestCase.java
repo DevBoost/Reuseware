@@ -67,7 +67,7 @@ import org.reuseware.coconut.reuseextension.evaluator.ocl.PlainOCLEvaluator;
 import org.reuseware.coconut.reuseextension.resource.rex.mopp.RexResourceFactory;
 import org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.mopp.Rex_activatorResourceFactory;
 
-public abstract class AbstractReusewareCompositionTest extends TestCase {
+public abstract class AbstractReusewareCompositionTestCase extends TestCase {
 	public static final String TEMP_STORE_URI = "out";
 	
 	public static Map<?,?> getLoadOption() {

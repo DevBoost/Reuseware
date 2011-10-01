@@ -29,7 +29,7 @@ import org.reuseware.coconut.compositionprogram.FragmentInstance;
 import org.reuseware.coconut.fragment.ComposedFragment;
 import org.reuseware.coconut.fragment.Fragment;
 
-public class ReusewareFeaturesCompositionTest extends AbstractReusewareCompositionTest {
+public class ReusewareFeaturesCompositionTest extends AbstractReusewareCompositionTestCase {
 	
 	@Override
 	public AbstractReusewareTestHelper getTestHelper() {

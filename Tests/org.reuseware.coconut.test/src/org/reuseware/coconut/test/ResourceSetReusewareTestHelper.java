@@ -18,10 +18,10 @@ public class ResourceSetReusewareTestHelper extends AbstractReusewareTestHelper 
 	@Override
 	protected void initReuseResources() throws IOException {
 		reuseResourceSet = new ReuseResourceSet();
-		reuseResourceSet.getLoadOptions().putAll(AbstractReusewareCompositionTest.getLoadOption());	
+		reuseResourceSet.getLoadOptions().putAll(AbstractReusewareCompositionTestCase.getLoadOption());	
 		
 		access = new ResourceSetReuseResourceAccess(reuseResourceSet,
-						URI.createFileURI(new File(AbstractReusewareCompositionTest.TEMP_STORE_URI).getCanonicalPath()));
+						URI.createFileURI(new File(AbstractReusewareCompositionTestCase.TEMP_STORE_URI).getCanonicalPath()));
 		ResourceSetReuseResourceDependencyCalculator dependencyCalculator = 
 			new ResourceSetReuseResourceDependencyCalculator(reuseResourceSet);
 		ResourceSetFragmentCompositionInterfaceCreator ciCreator =
