@@ -40,12 +40,12 @@ import org.emftext.language.valueflow.ValueflowPackage;
 import org.junit.Test;
 import org.oasisopen.names.tc.opendocument.xmlns.office.OfficePackage;
 import org.oasisopen.names.tc.opendocument.xmlns.office.util.OfficeResourceFactoryImpl;
-import org.reuseware.coconut.test.AbstractReusewareCompositionTest;
+import org.reuseware.coconut.test.AbstractReusewareCompositionTestCase;
 import org.reuseware.coconut.test.AbstractReusewareTestHelper;
 import org.reuseware.coconut.test.sokan.SokanReusewareTestHelper;
 import org.reuseware.sokan.index.util.IndexUtil;
 
-public class ReusewareModelSoCCompositionTest extends AbstractReusewareCompositionTest {
+public class ReusewareModelSoCCompositionTest extends AbstractReusewareCompositionTestCase {
 
 	protected final String exampleProject = "org.reuseware.application.ticketshop";
 	protected final String testProject = "org.reuseware.application.ticketshop.test";

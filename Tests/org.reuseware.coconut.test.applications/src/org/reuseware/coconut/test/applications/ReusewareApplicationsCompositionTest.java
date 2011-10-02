@@ -40,14 +40,14 @@ import org.emftext.language.simpleweave.resource.simpleweave.mopp.SimpleweaveRes
 import org.junit.Test;
 import org.reuseware.application.taipan.TaiPanPackage;
 import org.reuseware.coconut.fragment.Fragment;
-import org.reuseware.coconut.test.AbstractReusewareCompositionTest;
+import org.reuseware.coconut.test.AbstractReusewareCompositionTestCase;
 import org.reuseware.coconut.test.AbstractReusewareTestHelper;
 import org.reuseware.coconut.test.sokan.SokanReusewareTestHelper;
 import org.reuseware.sokan.index.util.IndexUtil;
 
 import es.tid.cim.CimPackage;
 
-public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompositionTest {
+public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompositionTestCase {
 
 	@Override
 	public AbstractReusewareTestHelper getTestHelper() {
