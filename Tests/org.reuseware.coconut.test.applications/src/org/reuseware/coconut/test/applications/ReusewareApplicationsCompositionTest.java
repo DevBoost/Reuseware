@@ -27,8 +27,6 @@ import org.eclipse.uml2.uml.resource.UMLResource;
 import org.emftext.language.java.JavaClasspath;
 import org.emftext.language.java.JavaPackage;
 import org.emftext.language.java.resource.JavaSourceOrClassFileResourceFactoryImpl;
-import org.emftext.language.java.resource.java.IJavaOptions;
-import org.emftext.language.java.resource.util.JavaPostProcessor;
 import org.emftext.language.java.reusejava.ReusejavaPackage;
 import org.emftext.language.java.reusejava.resource.reusejava.IReusejavaOptions;
 import org.emftext.language.java.reusejava.resource.reusejava.mopp.ReusejavaResourceFactory;
@@ -38,7 +36,6 @@ import org.emftext.language.simpleweave.SimpleweavePackage;
 import org.emftext.language.simpleweave.WModel;
 import org.emftext.language.simpleweave.resource.simpleweave.mopp.SimpleweaveResourceFactory;
 import org.junit.Test;
-import org.reuseware.application.taipan.TaiPanPackage;
 import org.reuseware.coconut.fragment.Fragment;
 import org.reuseware.coconut.test.AbstractReusewareCompositionTestCase;
 import org.reuseware.coconut.test.AbstractReusewareTestHelper;
@@ -450,11 +447,8 @@ public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompo
 	
 	protected ResourceSet newResourceSet() {
 		ResourceSet resourceSet = super.newResourceSet();
-		JavaPostProcessor javaPostProcessor = new JavaPostProcessor();
 		ReuseJavaPostProcessor reuseJavaPostProcessor = new ReuseJavaPostProcessor();
 		
-		resourceSet.getLoadOptions().put(IJavaOptions.RESOURCE_POSTPROCESSOR_PROVIDER,
-				javaPostProcessor);
 		resourceSet.getLoadOptions().put(IReusejavaOptions.RESOURCE_POSTPROCESSOR_PROVIDER,
 				reuseJavaPostProcessor);
 		resourceSet.getLoadOptions().put(JavaClasspath.OPTION_ALWAYS_USE_FULLY_QUALIFIED_NAMES,

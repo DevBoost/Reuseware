@@ -14,7 +14,6 @@
 package org.reuseware.coconut.test.applications;
 
 import java.io.File;
-import java.util.Collections;
 import java.util.Map.Entry;
 
 import org.eclipse.emf.common.util.URI;
@@ -29,8 +28,6 @@ import org.eclipse.uml2.uml.resource.UMLResource;
 import org.emftext.language.java.JavaClasspath;
 import org.emftext.language.java.JavaPackage;
 import org.emftext.language.java.resource.JavaSourceOrClassFileResourceFactoryImpl;
-import org.emftext.language.java.resource.java.IJavaOptions;
-import org.emftext.language.java.resource.util.JavaPostProcessor;
 import org.emftext.language.modelquery.resource.CustomModelqueryResourceFactory;
 import org.emftext.language.secprop.SecpropPackage;
 import org.emftext.language.secprop.resource.SecpropResourceFactoryDelegator;
@@ -332,9 +329,6 @@ public class ReusewareModelSoCCompositionTest extends AbstractReusewareCompositi
 	
 	protected ResourceSet newResourceSet() {
 		ResourceSet resourceSet = super.newResourceSet();
-		JavaPostProcessor javaPostProcessor = new JavaPostProcessor();
-		resourceSet.getLoadOptions().put(IJavaOptions.RESOURCE_POSTPROCESSOR_PROVIDER,
-				Collections.singletonList(javaPostProcessor));
 		resourceSet.getLoadOptions().put(JavaClasspath.OPTION_ALWAYS_USE_FULLY_QUALIFIED_NAMES,
 				Boolean.TRUE);
 		return resourceSet;
