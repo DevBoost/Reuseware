@@ -36,6 +36,7 @@ import org.emftext.language.simpleweave.SimpleweavePackage;
 import org.emftext.language.simpleweave.WModel;
 import org.emftext.language.simpleweave.resource.simpleweave.mopp.SimpleweaveResourceFactory;
 import org.junit.Test;
+import org.reuseware.application.taipan.TaiPanPackage;
 import org.reuseware.coconut.fragment.Fragment;
 import org.reuseware.coconut.test.AbstractReusewareCompositionTestCase;
 import org.reuseware.coconut.test.AbstractReusewareTestHelper;
