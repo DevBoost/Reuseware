@@ -13,6 +13,8 @@
  ******************************************************************************/
 package org.reuseware.coconut.fracol.resource.fracol.mopp;
 
+import org.eclipse.core.runtime.IStatus;
+
 
 /**
  * A singleton class for the text resource plugin with
@@ -90,11 +92,20 @@ public class FracolPlugin extends org.eclipse.core.runtime.Plugin {
 	 * @return the status object describing the error
 	 */
 	public static org.eclipse.core.runtime.IStatus logError(String message, Throwable exception) {
+		return log(IStatus.ERROR, message, exception);
+	}
+
+	public static org.eclipse.core.runtime.IStatus logWarning(String message, Throwable exception) {
+		return log(IStatus.WARNING, message, exception);
+	}
+
+	private static org.eclipse.core.runtime.IStatus log(int type, String message,
+			Throwable exception) {
 		org.eclipse.core.runtime.IStatus status;
 		if (exception != null) {
-			status = new org.eclipse.core.runtime.Status(org.eclipse.core.runtime.IStatus.ERROR, FracolPlugin.PLUGIN_ID, 0, message, exception);
+			status = new org.eclipse.core.runtime.Status(type, FracolPlugin.PLUGIN_ID, 0, message, exception);
 		} else {
-			status = new org.eclipse.core.runtime.Status(org.eclipse.core.runtime.IStatus.ERROR, FracolPlugin.PLUGIN_ID, message);
+			status = new org.eclipse.core.runtime.Status(type, FracolPlugin.PLUGIN_ID, message);
 			//do not log; covered by validation
 			return null;
 		}
