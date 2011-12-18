@@ -13,7 +13,6 @@
 	<classpathentry kind="lib" path="lib/commons-io-1.4.jar"/>
 	<classpathentry kind="lib" path="lib/easymock.jar"/>
 	<classpathentry kind="lib" path="lib/geronimo-stax-api_1.0_spec-1.0.1.jar"/>
-	<classpathentry kind="lib" path="lib/junit-4.3.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-analyzers-2.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-core-2.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-highlighter-2.9.1.jar"/>
