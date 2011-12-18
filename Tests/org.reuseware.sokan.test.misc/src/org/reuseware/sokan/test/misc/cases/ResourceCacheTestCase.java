@@ -22,7 +22,7 @@ import org.reuseware.sokan.test.util.TestUtil;
  * @author Matthias Schmidt
  *
  */
-public class ResourceCacheTest {
+public class ResourceCacheTestCase {
 	private ResourceCacheData data = new ResourceCacheData();
 
 	@Before

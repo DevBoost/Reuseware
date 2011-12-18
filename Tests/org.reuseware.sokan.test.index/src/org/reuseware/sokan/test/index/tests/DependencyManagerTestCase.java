@@ -16,7 +16,7 @@ import org.reuseware.sokan.test.util.TestData;
 
 
 
-public class DependencyManagerTest {
+public class DependencyManagerTestCase {
 	private static final TestData data = TestData.INSTANCE;
 
 	@Before

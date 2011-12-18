@@ -17,7 +17,7 @@ import org.reuseware.sokan.index.util.ResourceUtil;
  * @author Matthias Schmidt
  *
  */
-public class IDContainmentTest {
+public class IDContainmentTestCase {
 
 	private ID id1;
 	private ID id1Other;

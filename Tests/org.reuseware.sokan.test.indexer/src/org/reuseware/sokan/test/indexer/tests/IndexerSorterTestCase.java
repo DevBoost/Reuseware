@@ -10,7 +10,7 @@ import org.reuseware.sokan.test.util.SorterData;
 import org.reuseware.sokan.test.util.TestUtil;
 
 
-public class IndexerSorterTest {
+public class IndexerSorterTestCase {
 	private static final SorterData sData = SorterData.INSTANCE;
 
 	@Test

@@ -17,7 +17,7 @@ import org.reuseware.sokan.test.misc.notify.PassiveListener;
  * @author Matthias Schmidt
  * 
  */
-public class IndexNotifyTest {
+public class IndexNotifyTestCase {
 	private static MockIndex INDEX = MockIndex.INSTANCE;
 	private PassiveListener lis1;
 	private ActiveListener lis2;

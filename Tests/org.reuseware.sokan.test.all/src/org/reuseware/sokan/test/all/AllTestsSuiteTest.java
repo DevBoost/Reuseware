@@ -27,10 +27,10 @@ import org.reuseware.sokan.test.index.indexer.FacetColorIndexer;
 import org.reuseware.sokan.test.index.indexer.FacetSizeIndexer;
 import org.reuseware.sokan.test.index.indexer.FacetTypeIndexer;
 import org.reuseware.sokan.test.index.indexer.MultiValueIndexer;
-import org.reuseware.sokan.test.index.tests.DependencyManagerTest;
-import org.reuseware.sokan.test.index.tests.IndexNotifyDeltaTest;
-import org.reuseware.sokan.test.index.tests.IndexUtilTest;
-import org.reuseware.sokan.test.index.tests.MultiValueTest;
+import org.reuseware.sokan.test.index.tests.DependencyManagerTestCase;
+import org.reuseware.sokan.test.index.tests.IndexNotifyDeltaTestCase;
+import org.reuseware.sokan.test.index.tests.IndexUtilTestCase;
+import org.reuseware.sokan.test.index.tests.MultiValueTestCase;
 import org.reuseware.sokan.test.indexer.complex.A10Indexer;
 import org.reuseware.sokan.test.indexer.complex.A11Indexer;
 import org.reuseware.sokan.test.indexer.complex.A12Indexer;
@@ -74,17 +74,17 @@ import org.reuseware.sokan.test.indexer.list.C6Indexer;
 import org.reuseware.sokan.test.indexer.list.C7Indexer;
 import org.reuseware.sokan.test.indexer.loop.CreateIndexLoopIndexer;
 import org.reuseware.sokan.test.indexer.loop.DependencyLoopIndexer;
-import org.reuseware.sokan.test.indexer.tests.IndexerSorterTest;
-import org.reuseware.sokan.test.indexer.tests.MultiPhaseCommitTest;
+import org.reuseware.sokan.test.indexer.tests.IndexerSorterTestCase;
+import org.reuseware.sokan.test.indexer.tests.MultiPhaseCommitTestCase;
 import org.reuseware.sokan.test.indexer.tree.A8Indexer;
 import org.reuseware.sokan.test.indexer.tree.B8Indexer;
 import org.reuseware.sokan.test.indexer.tree.C8Indexer;
 import org.reuseware.sokan.test.indexer.tree.D8Indexer;
 import org.reuseware.sokan.test.indexer.trivial.A1Indexer;
 import org.reuseware.sokan.test.indexer.trivial.A2Indexer;
-import org.reuseware.sokan.test.misc.cases.IDContainmentTest;
-import org.reuseware.sokan.test.misc.cases.IndexNotifyTest;
-import org.reuseware.sokan.test.misc.cases.ResourceCacheTest;
+import org.reuseware.sokan.test.misc.cases.IDContainmentTestCase;
+import org.reuseware.sokan.test.misc.cases.IndexNotifyTestCase;
+import org.reuseware.sokan.test.misc.cases.ResourceCacheTestCase;
 import org.reuseware.sokan.test.util.SorterDataBuilder;
 import org.reuseware.sokan.test.util.TestData;
 import org.reuseware.sokan.test.util.TestDataBuilder;
@@ -94,18 +94,18 @@ import org.reuseware.sokan.test.util.TestDataBuilder;
 @RunWith(Suite.class)
 @Suite.SuiteClasses( { 
 //	SolrSchemaTest.class,
-	PreconditionTest.class, 
-	IDContainmentTest.class,
-	DependencyManagerTest.class, 
-	IndexerSorterTest.class, 
-	ResourceCacheTest.class,
-	IndexUtilTest.class,
-	MultiPhaseCommitTest.class, 
-	MultiValueTest.class,
-	IndexNotifyTest.class, 
-	IndexNotifyDeltaTest.class 
+	PreconditionTestCase.class, 
+	IDContainmentTestCase.class,
+	DependencyManagerTestCase.class, 
+	IndexerSorterTestCase.class, 
+	ResourceCacheTestCase.class,
+	IndexUtilTestCase.class,
+	MultiPhaseCommitTestCase.class, 
+	MultiValueTestCase.class,
+	IndexNotifyTestCase.class, 
+	IndexNotifyDeltaTestCase.class 
 	})
-public class AllTestSuite {
+public class AllTestsSuiteTest {
 
 	@BeforeClass
 	public static void setUp() throws IOException {

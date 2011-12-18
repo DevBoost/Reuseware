@@ -66,7 +66,7 @@ import org.reuseware.sokan.test.indexer.trivial.A1Indexer;
 import org.reuseware.sokan.test.indexer.trivial.A2Indexer;
 import org.reuseware.sokan.test.util.SorterData;
 
-public class PreconditionTest {
+public class PreconditionTestCase {
 	private static final SorterData sData = SorterData.INSTANCE;
 	
 	@Test

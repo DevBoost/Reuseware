@@ -21,7 +21,7 @@ import org.reuseware.sokan.test.indexer.tree.D8Indexer;
 import org.reuseware.sokan.test.util.TestData;
 import org.reuseware.sokan.test.util.TestUtil;
 
-public class MultiPhaseCommitTest {
+public class MultiPhaseCommitTestCase {
 	private static final TestData data = TestData.INSTANCE;
 	
 	@Test

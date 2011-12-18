@@ -22,7 +22,7 @@ import org.reuseware.sokan.test.util.TestUtil;
  * @author Matthias Schmidt
  * 
  */
-public class IndexNotifyDeltaTest {
+public class IndexNotifyDeltaTestCase {
 
 	private static final TestData DATA = TestData.INSTANCE;
 	private static final IndexUtil INDEX = IndexUtil.INSTANCE;

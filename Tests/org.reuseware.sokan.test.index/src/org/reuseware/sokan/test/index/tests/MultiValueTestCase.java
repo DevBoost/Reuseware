@@ -17,7 +17,7 @@ import org.reuseware.sokan.test.index.indexer.FacetColorIndexer;
 import org.reuseware.sokan.test.index.indexer.MultiValueIndexer;
 import org.reuseware.sokan.test.util.TestUtil;
 
-public class MultiValueTest {
+public class MultiValueTestCase {
 
 	@Before
 	public void setUp() {

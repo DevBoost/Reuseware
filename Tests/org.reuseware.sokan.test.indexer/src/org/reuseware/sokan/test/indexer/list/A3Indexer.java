@@ -6,12 +6,12 @@ import org.reuseware.sokan.ID;
 import org.reuseware.sokan.IndexMetaData;
 import org.reuseware.sokan.index.DependencyMap;
 import org.reuseware.sokan.test.indexer.AbstractIndexer;
-import org.reuseware.sokan.test.indexer.tests.IndexerSorterTest;
-import org.reuseware.sokan.test.indexer.tests.MultiPhaseCommitTest;
+import org.reuseware.sokan.test.indexer.tests.IndexerSorterTestCase;
+import org.reuseware.sokan.test.indexer.tests.MultiPhaseCommitTestCase;
 
 /**
- * This <code>Indexer</code> is used by {@link IndexerSorterTest} in an indexer
- * dependency graph. In addition, {@link MultiPhaseCommitTest} uses this class
+ * This <code>Indexer</code> is used by {@link IndexerSorterTestCase} in an indexer
+ * dependency graph. In addition, {@link MultiPhaseCommitTestCase} uses this class
  * to prove that indexers depending on other indexers get invoked after latter
  * have indexed all incoming artifacts.
  * 

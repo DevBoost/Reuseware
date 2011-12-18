@@ -6,10 +6,10 @@ import org.reuseware.sokan.ID;
 import org.reuseware.sokan.IndexMetaData;
 import org.reuseware.sokan.index.DependencyMap;
 import org.reuseware.sokan.index.indexer.Indexer;
-import org.reuseware.sokan.test.indexer.tests.IndexerSorterTest;
+import org.reuseware.sokan.test.indexer.tests.IndexerSorterTestCase;
 
 /**
- * This <code>Indexer</code> is used by {@link IndexerSorterTest} in an indexer
+ * This <code>Indexer</code> is used by {@link IndexerSorterTestCase} in an indexer
  * dependency graph. It therefore doesn't provide any meta data or artifact
  * dependencies.
  * 

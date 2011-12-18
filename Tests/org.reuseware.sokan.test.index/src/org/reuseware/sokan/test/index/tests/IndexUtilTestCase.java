@@ -30,7 +30,7 @@ import org.reuseware.sokan.test.util.TestUtil;
 
 
 
-public class IndexUtilTest {
+public class IndexUtilTestCase {
 	private static final IndexUtil indexUtil = IndexUtil.INSTANCE;
 	private static final TestData data = TestData.INSTANCE;
 
