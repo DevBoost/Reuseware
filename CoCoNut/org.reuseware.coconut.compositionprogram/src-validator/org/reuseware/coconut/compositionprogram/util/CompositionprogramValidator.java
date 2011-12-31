@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EObjectValidator;
+import org.reuseware.coconut.compositionprogram.*;
 import org.reuseware.coconut.compositionprogram.CompositionLink;
 import org.reuseware.coconut.compositionprogram.CompositionProgram;
 import org.reuseware.coconut.compositionprogram.CompositionprogramPackage;

@@ -24,6 +24,7 @@ import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
+import org.reuseware.coconut.reuseextensionactivator.*;
 import org.reuseware.coconut.reuseextension.ReuseExtension;
 import org.reuseware.coconut.reuseextensionactivator.Argument;
 import org.reuseware.coconut.reuseextensionactivator.ComponentModelSpecificationActivator;

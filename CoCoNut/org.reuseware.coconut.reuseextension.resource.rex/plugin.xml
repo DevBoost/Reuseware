@@ -59,11 +59,20 @@
 		</runtime>
 		<builder id="org.reuseware.coconut.reuseextension.resource.rex.builder">
 		</builder>
+		<builder id="org.reuseware.coconut.reuseextension.resource.rex.taskItemBuilder">
+		</builder>
 	</extension>
 	
 	<extension point="org.eclipse.core.resources.builders" id="org.reuseware.coconut.reuseextension.resource.rex.builder" name="rex Builder">
 		<builder hasNature="true">
 			<run class="org.reuseware.coconut.reuseextension.resource.rex.mopp.RexBuilderAdapter">
+			</run>
+		</builder>
+	</extension>
+	
+	<extension point="org.eclipse.core.resources.builders" id="org.reuseware.coconut.reuseextension.resource.rex.taskItemBuilder" name="rex Task Item Builder">
+		<builder hasNature="true">
+			<run class="org.reuseware.coconut.reuseextension.resource.rex.mopp.RexTaskItemBuilder">
 			</run>
 		</builder>
 	</extension>

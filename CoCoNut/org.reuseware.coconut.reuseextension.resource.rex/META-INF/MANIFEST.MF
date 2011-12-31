@@ -4,13 +4,10 @@ Bundle-Name: EMFText Parser Plugin: rex
 Bundle-SymbolicName: org.reuseware.coconut.reuseextension.resource.rex;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Vendor: Software Technology Group - TU Dresden Germany
-Require-Bundle: org.eclipse.core.resources,
+Require-Bundle: org.eclipse.core.runtime,
   org.eclipse.emf,
-  org.eclipse.emf.codegen.ecore,
   org.eclipse.emf.ecore,
-  org.eclipse.emf.ecore.edit,
   org.eclipse.emf.validation,
-  org.eclipse.emf.workspace,
   org.emftext.access;resolution:=optional,
   org.reuseware.coconut.resource,
   org.emftext.commons.antlr3_4_0,
@@ -21,6 +18,8 @@ Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.reuseware.coconut.reuseextension.resource.rex,
   org.reuseware.coconut.reuseextension.resource.rex.analysis,
   org.reuseware.coconut.reuseextension.resource.rex.mopp,
+  org.reuseware.coconut.reuseextension.resource.rex.debug,
+  org.reuseware.coconut.reuseextension.resource.rex.launch,
   org.reuseware.coconut.reuseextension.resource.rex.grammar,
   org.reuseware.coconut.reuseextension.resource.rex.util
 Bundle-Activator: org.reuseware.coconut.reuseextension.resource.rex.mopp.RexPlugin

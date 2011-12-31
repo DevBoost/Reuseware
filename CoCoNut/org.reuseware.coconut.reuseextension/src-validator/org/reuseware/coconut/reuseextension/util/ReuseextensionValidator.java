@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
+import org.reuseware.coconut.reuseextension.*;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.reuseware.coconut.fracol.CompositionAssociation;
 import org.reuseware.coconut.fracol.DynamicPortType;

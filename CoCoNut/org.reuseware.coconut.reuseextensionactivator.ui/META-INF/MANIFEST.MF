@@ -28,3 +28,4 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.reuseware.coconut.reuseextensionactivator.ui
 Bundle-Activator: org.reuseware.coconut.reuseextensionactivator.ui.Rex_activatorUIPlugin
+Import-Package: org.eclipse.ui.texteditor.spelling

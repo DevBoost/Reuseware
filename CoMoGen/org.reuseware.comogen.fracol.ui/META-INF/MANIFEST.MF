@@ -25,3 +25,4 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.reuseware.comogen.fracol.ui
 Bundle-Activator: org.reuseware.comogen.fracol.ui.FracolUIPlugin
+Import-Package: org.eclipse.ui.texteditor.spelling

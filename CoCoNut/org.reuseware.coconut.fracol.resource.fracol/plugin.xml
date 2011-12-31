@@ -59,11 +59,20 @@
 		</runtime>
 		<builder id="org.reuseware.coconut.fracol.resource.fracol.builder">
 		</builder>
+		<builder id="org.reuseware.coconut.fracol.resource.fracol.taskItemBuilder">
+		</builder>
 	</extension>
 	
 	<extension point="org.eclipse.core.resources.builders" id="org.reuseware.coconut.fracol.resource.fracol.builder" name="fracol Builder">
 		<builder hasNature="true">
 			<run class="org.reuseware.coconut.fracol.resource.fracol.mopp.FracolBuilderAdapter">
+			</run>
+		</builder>
+	</extension>
+	
+	<extension point="org.eclipse.core.resources.builders" id="org.reuseware.coconut.fracol.resource.fracol.taskItemBuilder" name="fracol Task Item Builder">
+		<builder hasNature="true">
+			<run class="org.reuseware.coconut.fracol.resource.fracol.mopp.FracolTaskItemBuilder">
 			</run>
 		</builder>
 	</extension>

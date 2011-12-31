@@ -57,6 +57,15 @@
 			<run class="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.mopp.Rex_activatorNature">
 			</run>
 		</runtime>
+		<builder id="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.taskItemBuilder">
+		</builder>
+	</extension>
+	
+	<extension point="org.eclipse.core.resources.builders" id="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.taskItemBuilder" name="rex_activator Task Item Builder">
+		<builder hasNature="true">
+			<run class="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.mopp.Rex_activatorTaskItemBuilder">
+			</run>
+		</builder>
 	</extension>
 	
 	<extension-point id="org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.default_load_options" name="Default Load Options" schema="schema/default_load_options.exsd">
