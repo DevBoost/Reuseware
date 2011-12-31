@@ -16,6 +16,8 @@ package org.reuseware.coconut.test.applications;
 import java.io.File;
 import java.util.Map.Entry;
 
+import static org.junit.Assert.*;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -35,6 +37,7 @@ import org.emftext.language.modelquery.resource.CustomModelqueryResourceFactory;
 import org.emftext.language.simpleweave.SimpleweavePackage;
 import org.emftext.language.simpleweave.WModel;
 import org.emftext.language.simpleweave.resource.simpleweave.mopp.SimpleweaveResourceFactory;
+import org.junit.Before;
 import org.junit.Test;
 import org.reuseware.application.taipan.TaiPanPackage;
 import org.reuseware.coconut.fragment.Fragment;
@@ -53,8 +56,8 @@ public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompo
 		//return new ResourceSetReusewareTestHelper();
 	}
 	 
-	@Test
-	public void testInit() throws Exception {
+	@Before
+	public void init() throws Exception {
 		
 		for(Entry<Object, Object> entry : newResourceSet().getLoadOptions().entrySet()) {
 			IndexUtil.INSTANCE.addLoadOption(entry.getKey().toString(), entry.getValue());

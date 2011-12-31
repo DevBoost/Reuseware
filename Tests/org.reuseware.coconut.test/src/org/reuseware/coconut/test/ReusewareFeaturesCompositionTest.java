@@ -17,11 +17,14 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.PrintStream;
 
+import static org.junit.Assert.*;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+import org.junit.Before;
 import org.junit.Test;
 import org.reuseware.coconut.compositionprogram.CompositionLink;
 import org.reuseware.coconut.compositionprogram.CompositionProgram;
@@ -37,8 +40,8 @@ public class ReusewareFeaturesCompositionTest extends AbstractReusewareCompositi
 		return new ResourceSetReusewareTestHelper();
 	}
 	
-	@Test
-	public void testInit() throws Exception {
+	@Before
+	public void init() throws Exception {
 		// out store
 		File outStoreFolder = new File("../org.reuseware.coconut.test/out");
 		AbstractReusewareTestHelper.deleteDirectory(outStoreFolder, false, false);

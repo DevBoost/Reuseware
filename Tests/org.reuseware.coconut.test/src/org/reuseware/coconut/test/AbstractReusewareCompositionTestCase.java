@@ -26,7 +26,7 @@ import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import junit.framework.TestCase;
+import static org.junit.Assert.*;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.compare.diff.metamodel.AttributeChange;
@@ -67,7 +67,7 @@ import org.reuseware.coconut.reuseextension.evaluator.ocl.PlainOCLEvaluator;
 import org.reuseware.coconut.reuseextension.resource.rex.mopp.RexResourceFactory;
 import org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.mopp.Rex_activatorResourceFactory;
 
-public abstract class AbstractReusewareCompositionTestCase extends TestCase {
+public abstract class AbstractReusewareCompositionTestCase {
 	public static final String TEMP_STORE_URI = "out";
 	
 	public static Map<?,?> getLoadOption() {
