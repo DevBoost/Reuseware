@@ -7,7 +7,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import junit.framework.TestCase;
 
@@ -83,7 +86,7 @@ public abstract class AbstractReusewareTestHelper {
 	}
 	
 	protected void assertRegisterCompositionSystems(File folder, URI tempStoreBaseURI) throws IOException {
-		for(File file : folder.listFiles()) {
+		for(File file : listFilesOrdered(folder)) {
 			if(file.isDirectory()) {
 				assertRegisterCompositionSystems(file, tempStoreBaseURI);
 			}
@@ -96,7 +99,7 @@ public abstract class AbstractReusewareTestHelper {
 	}
 	
 	protected void assertRegisterReuseExtensions(File folder, URI tempStoreBaseURI) throws IOException {
-		for(File file : folder.listFiles()) {
+		for(File file : listFilesOrdered(folder)) {
 			if(file.isDirectory()) {
 				assertRegisterReuseExtensions(file, tempStoreBaseURI);
 			}
@@ -109,7 +112,7 @@ public abstract class AbstractReusewareTestHelper {
 	}
 	
 	protected void assertRegisterReuseExtensionActivators(File folder, URI tempStoreBaseURI, boolean allowErrors) throws IOException {
-		for(File file : folder.listFiles()) {
+		for(File file : listFilesOrdered(folder)) {
 			if(file.isDirectory()) {
 				assertRegisterReuseExtensionActivators(file, tempStoreBaseURI, allowErrors);
 			}
@@ -122,7 +125,7 @@ public abstract class AbstractReusewareTestHelper {
 	}
 	
 	protected void assertRegisterFragments(File folder, URI tempStoreBaseURI, String [] fileExtensions) throws IOException {
-		for(File file : folder.listFiles()) {
+		for(File file : listFilesOrdered(folder)) {
 			if(file.isDirectory()) {
 				assertRegisterFragments(file, tempStoreBaseURI, fileExtensions);
 			}
@@ -135,7 +138,7 @@ public abstract class AbstractReusewareTestHelper {
 	}
 	
 	protected void assertRegisterCompositionPrograms(File folder, URI tempStoreBaseURI) throws IOException {
-		for(File file : folder.listFiles()) {
+		for(File file : listFilesOrdered(folder)) {
 			if(file.isDirectory()) {
 				assertRegisterCompositionPrograms(file, tempStoreBaseURI);
 			}
@@ -280,6 +283,27 @@ public abstract class AbstractReusewareTestHelper {
 			String ext = file.getName().substring(file.getName().lastIndexOf(".") + 1);
 			return ext;
 		}	
+	}
+	
+	private Set<File> listFilesOrdered(File parent) {
+		Set<File> result = new TreeSet<File>(new Comparator<File>() {
+	
+			public int compare(File f1, File f2) {
+				if (!f1.isDirectory() && f2.isDirectory()) {
+					//directories first, files second
+					return 1;
+				}
+				if (f1.isDirectory() && !f2.isDirectory()) {
+					//directories first, files second
+					return -1;
+				}
+				return f1.getName().compareTo(f2.getName());
+			}
+		});
+		
+		result.addAll(Arrays.asList(parent.listFiles()));
+		
+		return result;
 	}
 	
 	abstract protected void initReuseResources() throws IOException;

@@ -142,7 +142,6 @@ public abstract class AbstractReusewareCompositionTestCase {
 				fragment instanceof PhysicalFragment);
 	}
 
-	
 	protected boolean isLinkValid(CompositionLink link) { 
 		if(!link.isValid()) {
 			System.out.println("  Can not match: " +
@@ -154,16 +153,13 @@ public abstract class AbstractReusewareCompositionTestCase {
 			System.out.println("  Empty link: " +
 					link.getSource().getFragmentRoleName() + "." + link.getSource().getPortName() + " ----> " +
 					link.getTarget().getFragmentRoleName() + "." + link.getTarget().getPortName());
-			
 			return false;
-		} else {
-			System.out.println("  Link ok: "
-					+ link.getSource().getFragmentRoleName() + "."
-					+ link.getSource().getPortName() + " ----> "
-					+ link.getTarget().getFragmentRoleName() + "."
-					+ link.getTarget().getPortName());
-
 		}
+		System.out.println("  Link ok: "
+				+ link.getSource().getFragmentRoleName() + "."
+				+ link.getSource().getPortName() + " ----> "
+				+ link.getTarget().getFragmentRoleName() + "."
+				+ link.getTarget().getPortName());
 		return true;
 	}
 	
@@ -301,7 +297,7 @@ public abstract class AbstractReusewareCompositionTestCase {
 		boolean result = true;
 		for(CompositionLink link : compositionProgram.getCompositionLinks()) {
 			link.match();
-			result = result && isLinkValid(link);
+			result = isLinkValid(link) && result;
 		}
 		assertTrue("Invalid links in " + compositionProgram.getUCPI(), result);
 		
