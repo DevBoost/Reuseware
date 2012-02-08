@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Gmf
 Bundle-SymbolicName: org.reuseware.lacome.layoutlanguage.gmf;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Export-Package: org.reuseware.lacome.layoutlanguage.gmf
 Require-Bundle: org.eclipse.emf.ecore,

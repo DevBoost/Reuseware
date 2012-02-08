@@ -56,4 +56,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.reuseware.coconut.ui,
  org.reuseware.coconut.compositionprogram.resource.ucl
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

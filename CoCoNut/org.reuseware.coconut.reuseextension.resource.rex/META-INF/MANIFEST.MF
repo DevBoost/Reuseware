@@ -14,7 +14,7 @@ Require-Bundle: org.eclipse.core.runtime,
   org.reuseware.coconut.reuseextension,
   org.reuseware.coconut.fracol
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.reuseextension.resource.rex,
   org.reuseware.coconut.reuseextension.resource.rex.analysis,
   org.reuseware.coconut.reuseextension.resource.rex.mopp,

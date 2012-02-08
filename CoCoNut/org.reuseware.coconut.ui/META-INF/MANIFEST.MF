@@ -21,7 +21,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.reuseware.coconut.resource,
  org.reuseware.coconut.resource.sokan,
  org.reuseware.coconut.fragment.edit
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.reuseware.coconut.ui.CoCoNutUIPlugin
 Export-Package: org.reuseware.coconut.ui,

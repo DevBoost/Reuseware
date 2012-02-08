@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Applications
 Bundle-SymbolicName: org.reuseware.coconut.test.applications
 Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.junit4,
  org.reuseware.coconut.test,
  org.reuseware.coconut.test.sokan,

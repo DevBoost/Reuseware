@@ -11,7 +11,7 @@ Require-Bundle: org.eclipse.ui,
  org.reuseware.sokan.index.solr,
  org.reuseware.sokan.test;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.sokan.test.index.emodeler,
  org.reuseware.sokan.test.index.indexer,
  org.reuseware.sokan.test.index.tests

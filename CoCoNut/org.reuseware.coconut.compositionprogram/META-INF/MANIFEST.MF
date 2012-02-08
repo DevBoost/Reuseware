@@ -9,7 +9,7 @@ Bundle-Version: 0.9.1.v200911130906
 Bundle-ClassPath: .
 Bundle-Vendor: Software Technology Group - TU Dresden Germany
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.compositionprogram,org.reuseware
  .coconut.compositionprogram.impl,org.reuseware.coconut.compositionpro
  gram.util

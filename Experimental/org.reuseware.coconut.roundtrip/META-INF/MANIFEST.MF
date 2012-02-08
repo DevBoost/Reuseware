@@ -7,7 +7,7 @@ Bundle-SymbolicName: org.reuseware.coconut.roundtrip; singleton:=true
 Bundle-Version: 0.9.1.v200911130906
 Export-Package: org.reuseware.coconut.roundtrip,org.reuseware.coconut.
  roundtrip.impl
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.reuseware.coconut,
  org.reuseware.coconut.compositionprogram,
  org.reuseware.coconut.fragment,

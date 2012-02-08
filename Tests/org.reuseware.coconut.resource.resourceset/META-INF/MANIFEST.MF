@@ -13,5 +13,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.reuseware.coconut.compositionprogram.resource.ucl,
  org.eclipse.emf.ecore.xmi
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.resource.resourceset

@@ -13,7 +13,7 @@ Require-Bundle: org.eclipse.core.runtime,
   org.emftext.commons.antlr3_4_0,
   org.reuseware.coconut.fracol
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.fracol.resource.fracol,
   org.reuseware.coconut.fracol.resource.fracol.analysis,
   org.reuseware.coconut.fracol.resource.fracol.mopp,

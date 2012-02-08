@@ -22,6 +22,6 @@ Require-Bundle: org.eclipse.core.resources,
   org.emftext.commons.antlr3_2_0,
   org.reuseware.air.language.abstractsyntax
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.air.language.abstractsyntax.resource.as.ui
 Bundle-Activator: org.reuseware.air.language.abstractsyntax.resource.as.ui.AsUIPlugin

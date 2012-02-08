@@ -35,5 +35,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.validation;visibility:=reexport,
  org.eclipse.gef;visibility:=reexport,
  org.eclipse.gmf.runtime.notation;visibility:=reexport
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy

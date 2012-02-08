@@ -15,7 +15,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.reuseware.coconut.ui.eclipse,
  org.reuseware.coconut.roundtrip
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.roundtrip.interactive,
  org.reuseware.coconut.roundtrip.interactive.impl,
  org.reuseware.coconut.roundtrip.interactive.listener

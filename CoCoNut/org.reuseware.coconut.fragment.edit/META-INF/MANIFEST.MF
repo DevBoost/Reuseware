@@ -11,7 +11,7 @@ Bundle-Activator: org.reuseware.coconut.fragment.provider.FragmentEdit
  Plugin$Implementation
 Bundle-Vendor: Software Technology Group - TU Dresden Germany
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.fragment.provider
 Require-Bundle: org.eclipse.core.runtime,
  org.reuseware.coconut.reuseextension,

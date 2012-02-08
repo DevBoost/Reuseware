@@ -10,5 +10,5 @@ Require-Bundle: org.junit4,
  org.reuseware.sokan.test,
  org.reuseware.sokan.index.solr
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.sokan.test.misc.cases

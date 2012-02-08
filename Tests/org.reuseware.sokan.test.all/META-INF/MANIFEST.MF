@@ -12,4 +12,4 @@ Require-Bundle: org.junit4,
  org.reuseware.sokan.test.misc,
  org.reuseware.sokan.test.exampleindexer
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

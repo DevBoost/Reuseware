@@ -8,7 +8,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources,
  org.reuseware.sokan;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.sokan.index,
  org.reuseware.sokan.index.emodeler,
  org.reuseware.sokan.index.indexer,

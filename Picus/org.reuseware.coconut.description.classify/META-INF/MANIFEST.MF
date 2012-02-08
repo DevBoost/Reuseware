@@ -11,7 +11,7 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.reuseware.
  coconut.description,org.eclipse.core.resources,org.reuseware.coconut.
  ui.eclipse,org.eclipse.ocl.ecore,org.junit
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.reuseware.coconut.description.classify,org.reusewa
  re.coconut.description.classify.test,org.reuseware.coconut.descriptio
  n.classify.views.describe,org.reuseware.coconut.description.classify.
