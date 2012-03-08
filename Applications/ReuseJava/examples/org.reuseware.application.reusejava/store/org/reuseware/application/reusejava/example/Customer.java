@@ -1,13 +1,14 @@
 package org.reuseware.application.reusejava.example;
 
-public class Customer { 
+public class Customer {
 	String name;
 	String ssn;
 
-	public String getName(){ 
+	public String getName() {
 		return name; 
-	} 
-	public String getSSN(){ 
+	}
+	
+	public String getSSN() {
 		return ssn;
 	}
 }

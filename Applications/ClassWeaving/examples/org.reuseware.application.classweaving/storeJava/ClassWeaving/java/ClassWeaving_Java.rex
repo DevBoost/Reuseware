@@ -22,7 +22,13 @@ rootclass java::containers::CompilationUnit {
   			java::classifiers::Class is slot {
     			port = $name$
   			}
-  			java::members::Member.name is value hook {
+  			java::members::Field.name is value hook {
+  				port = $self.getParentConcreteClassifier().name$
+  				point = $'name'$
+  				begin idx = $name.length()-1$
+  				end idx = $name.length()-1$
+  			}
+   			java::members::Method.name is value hook {
   				port = $self.getParentConcreteClassifier().name$
   				point = $'name'$
   				begin idx = $name.length()-1$

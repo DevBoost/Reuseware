@@ -12,7 +12,7 @@ public class Observer {
 		Iterator<Subject> it;
 		it = subjects.iterator();
 		
-		while(it.hasNext()) {
+		while (it.hasNext()) {
 			Subject subject;
 			subject = it.next();
 			subject.notify();
