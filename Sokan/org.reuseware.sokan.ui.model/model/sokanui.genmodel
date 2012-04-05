@@ -1,42 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2006-2011&#xA;Software Technology Group, Dresden University of Technology&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0 &#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA;  Software Technology Group - TU Dresden, Germany &#xA;     - initial API and implementation&#xA;"
-    modelDirectory="/org.reuseware.sokan.ui.model/src" modelPluginID="org.reuseware.sokan.ui.model"
-    modelName="Sokanui" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
-    copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.reuseware.sokan/model/sokan.genmodel#//sokan">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><genmodel:GenModel xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xmi="http://www.omg.org/XMI" complianceLevel="5.0" copyrightFields="false" copyrightText="/*******************************************************************************&#10; * Copyright (c) 2006-2012&#10; * Software Technology Group, Dresden University of Technology&#10; * DevBoost GmbH, Berlin, Amtsgericht Charlottenburg, HRB 140026&#10; *&#10; * All rights reserved. This program and the accompanying materials&#10; * are made available under the terms of the Eclipse Public License v1.0&#10; * which accompanies this distribution, and is available at&#10; * http://www.eclipse.org/legal/epl-v10.html&#10; *&#10; * Contributors:&#10; *   Software Technology Group - TU Dresden, Germany;&#10; *   DevBoost GmbH - Berlin, Germany&#10; *      - initial API and implementation&#10; ******************************************************************************/&#10;" importerID="org.eclipse.emf.importer.ecore" modelDirectory="/org.reuseware.sokan.ui.model/src" modelName="Sokanui" modelPluginID="org.reuseware.sokan.ui.model" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.reuseware.sokan/model/sokan.genmodel#//sokan" xmi:version="2.0">
   <foreignModel>sokanui.ecore</foreignModel>
-  <genPackages prefix="Sokanui" basePackage="org.reuseware.sokan.ui.model" disposableProviderFactory="true"
-      ecorePackage="sokanui.ecore#/">
+  <genPackages basePackage="org.reuseware.sokan.ui.model" disposableProviderFactory="true" ecorePackage="sokanui.ecore#/" prefix="Sokanui">
     <genDataTypes ecoreDataType="sokanui.ecore#//ResourceSet"/>
-    <genClasses image="false" ecoreClass="sokanui.ecore#//Root">
-      <genFeatures property="Readonly" notify="false" createChild="false" propertySortChoices="true"
-          ecoreFeature="ecore:EReference sokanui.ecore#//Root/visibleTypes"/>
+    <genClasses ecoreClass="sokanui.ecore#//Root" image="false">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//Root/visibleTypes" notify="false" property="Readonly" propertySortChoices="true"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokanui.ecore#//Root/resourceSet"/>
     </genClasses>
     <genClasses ecoreClass="sokanui.ecore#//RootPackage">
-      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//RootPackage/packages"/>
+      <genFeatures children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//RootPackage/packages" property="None"/>
     </genClasses>
     <genClasses ecoreClass="sokanui.ecore#//RootFolder">
-      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//RootFolder/folders"/>
+      <genFeatures children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//RootFolder/folders" property="None"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="sokanui.ecore#//IdentifiableElement">
-      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute sokanui.ecore#//IdentifiableElement/id"/>
+    <genClasses ecoreClass="sokanui.ecore#//IdentifiableElement" image="false">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokanui.ecore#//IdentifiableElement/id" property="Readonly"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="sokanui.ecore#//Container">
-      <genFeatures property="None" children="true" createChild="false" propertySortChoices="true"
-          ecoreFeature="ecore:EReference sokanui.ecore#//Container/elements"/>
+    <genClasses ecoreClass="sokanui.ecore#//Container" image="false">
+      <genFeatures children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//Container/elements" property="None" propertySortChoices="true"/>
       <genOperations ecoreOperation="sokanui.ecore#//Container/areElementsLoaded"/>
     </genClasses>
     <genClasses ecoreClass="sokanui.ecore#//Package"/>
     <genClasses ecoreClass="sokanui.ecore#//Folder">
-      <genFeatures property="None" children="true" createChild="false" propertySortChoices="true"
-          ecoreFeature="ecore:EReference sokanui.ecore#//Folder/subFolders"/>
+      <genFeatures children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//Folder/subFolders" property="None" propertySortChoices="true"/>
     </genClasses>
     <genClasses ecoreClass="sokanui.ecore#//Artifact">
-      <genFeatures property="None" children="true" createChild="false" propertySortChoices="true"
-          ecoreFeature="ecore:EReference sokanui.ecore#//Artifact/contents"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sokanui.ecore#//Artifact/indexRow"/>
+      <genFeatures children="true" createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//Artifact/contents" property="None" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference sokanui.ecore#//Artifact/indexRow" notify="false" propertySortChoices="true"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sokanui.ecore#//Artifact/resourceSet"/>
       <genOperations ecoreOperation="sokanui.ecore#//Artifact/areContentsLoaded"/>
     </genClasses>

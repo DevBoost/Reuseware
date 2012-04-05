@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2006-2011&#xA;Software Technology Group, Dresden University of Technology&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA;Software Technology Group - TU Dresden, Germany&#xA;     - initial API and implementation"
-    modelDirectory="/org.reuseware.coconut.fracol/src-gen" modelPluginID="org.reuseware.coconut.fracol"
-    modelName="Fracol" modelPluginClass="" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="5.0" copyrightFields="false">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><genmodel:GenModel xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xmi="http://www.omg.org/XMI" complianceLevel="5.0" copyrightFields="false" copyrightText="/*******************************************************************************&#10; * Copyright (c) 2006-2012&#10; * Software Technology Group, Dresden University of Technology&#10; * DevBoost GmbH, Berlin, Amtsgericht Charlottenburg, HRB 140026&#10; *&#10; * All rights reserved. This program and the accompanying materials&#10; * are made available under the terms of the Eclipse Public License v1.0&#10; * which accompanies this distribution, and is available at&#10; * http://www.eclipse.org/legal/epl-v10.html&#10; *&#10; * Contributors:&#10; *   Software Technology Group - TU Dresden, Germany;&#10; *   DevBoost GmbH - Berlin, Germany&#10; *      - initial API and implementation&#10; ******************************************************************************/&#10;" importerID="org.eclipse.emf.importer.ecore" modelDirectory="/org.reuseware.coconut.fracol/src-gen" modelName="Fracol" modelPluginClass="" modelPluginID="org.reuseware.coconut.fracol" xmi:version="2.0">
   <foreignModel>fracol.ecore</foreignModel>
-  <genPackages prefix="Fracol" basePackage="org.reuseware.coconut" disposableProviderFactory="true"
-      ecorePackage="fracol.ecore#/">
-    <genClasses image="false" ecoreClass="fracol.ecore#//CompositionAssociation">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end1Role"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end1"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end2Role"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end2"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/fragmentCollaboration"/>
+  <genPackages basePackage="org.reuseware.coconut" disposableProviderFactory="true" ecorePackage="fracol.ecore#/" prefix="Fracol">
+    <genClasses ecoreClass="fracol.ecore#//CompositionAssociation" image="false">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end1Role" notify="false" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end1" notify="false" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end2Role" notify="false" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/end2" notify="false" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//CompositionAssociation/fragmentCollaboration" notify="false" property="None"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fracol.ecore#//CompositionAssociation/name"/>
       <genOperations ecoreOperation="fracol.ecore#//CompositionAssociation/removeYou"/>
     </genClasses>
@@ -27,10 +20,10 @@
       <genOperations ecoreOperation="fracol.ecore#//DynamicPortType/removeYou"/>
     </genClasses>
     <genClasses ecoreClass="fracol.ecore#//FragmentCollaboration">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fracol.ecore#//FragmentCollaboration/compositionAssociations"/>
+      <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference fracol.ecore#//FragmentCollaboration/compositionAssociations" property="None"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fracol.ecore#//FragmentCollaboration/fracolName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fracol.ecore#//FragmentCollaboration/fracolNamespace"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fracol.ecore#//FragmentCollaboration/fragmentRoles"/>
+      <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference fracol.ecore#//FragmentCollaboration/fragmentRoles" property="None"/>
       <genOperations ecoreOperation="fracol.ecore#//FragmentCollaboration/getCompositionAssociation">
         <genParameters ecoreParameter="fracol.ecore#//FragmentCollaboration/getCompositionAssociation/name"/>
       </genOperations>
@@ -40,18 +33,18 @@
       <genOperations ecoreOperation="fracol.ecore#//FragmentCollaboration/removeYou"/>
     </genClasses>
     <genClasses ecoreClass="fracol.ecore#//FragmentRole">
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//FragmentRole/fragmentCollaboration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//FragmentRole/fragmentCollaboration" notify="false" property="None"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fracol.ecore#//FragmentRole/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fracol.ecore#//FragmentRole/portTypes"/>
+      <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference fracol.ecore#//FragmentRole/portTypes" property="None"/>
       <genOperations ecoreOperation="fracol.ecore#//FragmentRole/getPortType">
         <genParameters ecoreParameter="fracol.ecore#//FragmentRole/getPortType/portTypeName"/>
       </genOperations>
       <genOperations ecoreOperation="fracol.ecore#//FragmentRole/removeYou"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="fracol.ecore#//PortType">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fracol.ecore#//PortType/compositionAssociations2"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fracol.ecore#//PortType/compositionAssociations"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//PortType/fragmentRole"/>
+    <genClasses ecoreClass="fracol.ecore#//PortType" image="false">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//PortType/compositionAssociations2" notify="false" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//PortType/compositionAssociations" notify="false" propertySortChoices="true"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference fracol.ecore#//PortType/fragmentRole" notify="false" property="None"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fracol.ecore#//PortType/name"/>
       <genOperations ecoreOperation="fracol.ecore#//PortType/removeYou"/>
     </genClasses>
