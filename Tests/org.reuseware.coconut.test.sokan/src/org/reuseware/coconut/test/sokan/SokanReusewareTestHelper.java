@@ -19,6 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -107,13 +108,15 @@ public class SokanReusewareTestHelper extends AbstractReusewareTestHelper {
 	}
 
 	@Override
-	protected void initReuseResources() throws IOException {
+	protected void initReuseResources(Map<?, ?> options) throws IOException {
 		if (IndexUtil.INSTANCE.getIndexerConfigurations().isEmpty()) {
 			AbstractReusewareTestHelper.deleteDirectory(new File(".metadata"), true, true);
 			
 			IndexUtil.INSTANCE.setPersistencyManager(
 					new PersistencyManager(new SolrPersister()));
-			
+			for (Map.Entry<?, ?> entry : options.entrySet()) {
+				IndexUtil.INSTANCE.addLoadOption(entry.getKey().toString(), entry.getValue());	
+			}
 			pluginXMLReuseware();
 		}
 		

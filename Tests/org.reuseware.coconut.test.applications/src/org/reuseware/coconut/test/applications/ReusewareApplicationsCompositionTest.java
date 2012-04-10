@@ -16,6 +16,8 @@
 package org.reuseware.coconut.test.applications;
 
 import java.io.File;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 
 import static org.junit.Assert.*;
@@ -31,6 +33,7 @@ import org.eclipse.uml2.uml.resource.UMLResource;
 import org.emftext.language.java.JavaClasspath;
 import org.emftext.language.java.JavaPackage;
 import org.emftext.language.java.resource.JavaSourceOrClassFileResourceFactoryImpl;
+import org.emftext.language.java.resource.java.IJavaOptions;
 import org.emftext.language.java.reusejava.ReusejavaPackage;
 import org.emftext.language.java.reusejava.resource.reusejava.IReusejavaOptions;
 import org.emftext.language.java.reusejava.resource.reusejava.mopp.ReusejavaResourceFactory;
@@ -56,6 +59,14 @@ public class ReusewareApplicationsCompositionTest extends AbstractReusewareCompo
 	public AbstractReusewareTestHelper getTestHelper() {
 		return new SokanReusewareTestHelper();
 		//return new ResourceSetReusewareTestHelper();
+	}
+	
+	@Override
+	public Map<?, ?> getLoadOptions() {
+		Map<Object, Object> m = new LinkedHashMap<Object, Object>();
+		m.put(IJavaOptions.DISABLE_LOCATION_MAP, Boolean.TRUE);
+		m.put(IJavaOptions.DISABLE_LAYOUT_INFORMATION_RECORDING, Boolean.TRUE);
+		return m;
 	}
 	 
 	@Before

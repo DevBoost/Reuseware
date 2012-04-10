@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -321,7 +322,7 @@ public abstract class AbstractReusewareTestHelper {
 		return result;
 	}
 	
-	abstract protected void initReuseResources() throws IOException;
+	abstract protected void initReuseResources(Map<?,?> loadOptions) throws IOException;
 	
 	abstract protected void registerStore(URI storeFolderURI);
 		

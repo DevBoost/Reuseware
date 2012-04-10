@@ -17,6 +17,7 @@ package org.reuseware.coconut.test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
 import org.reuseware.coconut.resource.ReuseResources;
@@ -31,9 +32,9 @@ public class ResourceSetReusewareTestHelper extends AbstractReusewareTestHelper 
 	private ReuseResourceSet reuseResourceSet = null;
 	
 	@Override
-	protected void initReuseResources() throws IOException {
+	protected void initReuseResources(Map<?,?> loadOptions) throws IOException {
 		reuseResourceSet = new ReuseResourceSet();
-		reuseResourceSet.getLoadOptions().putAll(AbstractReusewareCompositionTestCase.getLoadOption());	
+		reuseResourceSet.getLoadOptions().putAll(loadOptions);	
 		
 		access = new ResourceSetReuseResourceAccess(reuseResourceSet,
 						URI.createFileURI(new File(AbstractReusewareCompositionTestCase.TEMP_STORE_URI).getCanonicalPath()));

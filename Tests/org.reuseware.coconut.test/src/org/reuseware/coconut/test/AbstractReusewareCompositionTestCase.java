@@ -72,7 +72,7 @@ import org.reuseware.coconut.reuseextensionactivator.resource.rexactivator.mopp.
 public abstract class AbstractReusewareCompositionTestCase {
 	public static final String TEMP_STORE_URI = "out";
 	
-	public static Map<?,?> getLoadOption() {
+	public Map<?,?> getLoadOptions() {
 		return Collections.emptyMap();
 	}
 	
@@ -336,7 +336,7 @@ public abstract class AbstractReusewareCompositionTestCase {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(
 				"ucl", new UCLResourceFactory());
 		
-		resourceSet.getLoadOptions().putAll(getLoadOption());
+		resourceSet.getLoadOptions().putAll(getLoadOptions());
 				
 		return resourceSet;
 	}
@@ -416,7 +416,7 @@ public abstract class AbstractReusewareCompositionTestCase {
 	public void setUp() throws Exception {
 		testHelper = getTestHelper();
 		testHelper.setTest(this);
-		testHelper.initReuseResources();
+		testHelper.initReuseResources(getLoadOptions());
 		
 		EvaluatorUtil.addEvaluator(new EnhancedOCLEvaluator());
 		EvaluatorUtil.addEvaluator(new PlainOCLEvaluator());
