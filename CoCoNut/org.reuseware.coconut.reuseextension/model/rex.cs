@@ -16,7 +16,7 @@ FOR <http://reuseware.org/coconut/reuseextension> <reuseextension.genmodel>
 START ComponentModelSpecification, CompositionLanguageSyntaxSpecification, CompositionLanguageSpecification 
 
 OPTIONS {
-	licenceHeader ="../../org.reuseware.coconut/licence.txt";
+	licenceHeader ="../../org.dropsbox/licence.txt";
     
 	resourceUIPluginID = "org.reuseware.comogen.reuseextension.ui";
 	uiBasePackage      = "org.reuseware.comogen.reuseextension.ui";
