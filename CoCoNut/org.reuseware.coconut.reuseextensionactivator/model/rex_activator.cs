@@ -3,7 +3,7 @@ FOR <http://reuseware.org/coconut/reuseextensionactivator> <reuseextensionactiva
 START ReuseExtensionActivatorList
 
 OPTIONS {
-	licenceHeader ="../../org.reuseware.coconut/licence.txt";
+	licenceHeader ="../../org.dropsbox/licence.txt";
     
 	resourcePluginID = "org.reuseware.coconut.reuseextensionactivator.resource.rexactivator";
 	basePackage = "org.reuseware.coconut.reuseextensionactivator.resource.rexactivator";
