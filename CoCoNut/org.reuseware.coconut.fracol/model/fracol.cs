@@ -16,7 +16,7 @@ FOR <http://reuseware.org/coconut/fracol> <fracol.genmodel>
 START FragmentCollaboration
 
 OPTIONS {
-	licenceHeader = "../../org.reuseware.coconut/licence.txt";
+	licenceHeader ="../../org.dropsbox/licence.txt";
 
 	resourceUIPluginID = "org.reuseware.comogen.fracol.ui";
 	uiBasePackage      = "org.reuseware.comogen.fracol.ui";
