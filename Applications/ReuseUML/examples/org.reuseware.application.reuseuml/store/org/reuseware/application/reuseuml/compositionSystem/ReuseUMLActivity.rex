@@ -5,7 +5,7 @@ rootclass uml::Model {
 
 	fragment role ActivityCore {
 		port type ContentsHook {
-  			uml::Activity.node is hook {}
+  			uml::Activity.ownedNode is hook {}
     		uml::Activity.edge is hook {}
 		}
 		port type ExportedAction {
@@ -18,7 +18,7 @@ rootclass uml::Model {
 	
 	fragment role ActivityAspect {
 		port type Contents {
-  			uml::Activity.node is prototype {}
+  			uml::Activity.ownedNode is prototype {}
   			uml::Activity.edge is prototype {}
 		}
 		port type ExportedAction {
