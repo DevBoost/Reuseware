@@ -123,6 +123,10 @@ public class EnhancedEcoreEnvironment extends EcoreEnvironment {
     private void defineStringOperations() {
         //iterate over the String API
     	for (Method stringMethod : String.class.getDeclaredMethods()) {
+    		if (isDefinedInOCL(stringMethod)) {
+    			continue;
+    		}
+    		
             EOperation newOperation = EcoreFactory.eINSTANCE.createEOperation();
     		boolean usable = true;
     		
@@ -166,7 +170,16 @@ public class EnhancedEcoreEnvironment extends EcoreEnvironment {
 
     }
     
-    private EClassifier javaTypeToEType(Class<?> javaType) {
+    private boolean isDefinedInOCL(Method stringMethod) {
+    	if (stringMethod.getName().equals("substring") 
+    			&& stringMethod.getParameterTypes().length == 2) {
+    		return true;
+    	}
+    	//TODO should we add more here?
+		return false;
+	}
+
+	private EClassifier javaTypeToEType(Class<?> javaType) {
     	EClassifier eClassifier = null;
     	
     	boolean isArray = javaType.isArray();
