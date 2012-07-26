@@ -47,5 +47,6 @@ Require-Bundle: org.junit4,
  org.oasisopen.names.tc.opendocument,
  org.emftext.language.java.reusejava,
  org.emftext.language.java.reusejava.resource,
- org.emftext.language.java.reusejava.resource.reusejava
+ org.emftext.language.java.reusejava.resource.reusejava,
+ com.google.guava
 Export-Package: org.reuseware.coconut.test.applications
